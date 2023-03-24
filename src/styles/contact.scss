@@ -1,0 +1,35 @@
+.contact-page {
+  .contact-element {
+    padding-top: 60px;
+    .contact-content {
+      padding: 130px 0;
+      background: #E1DDD6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .img-container {
+        width: 140px;
+      }
+      .contact-des {
+        text-align: center;
+      }
+      .title {
+        padding-bottom: 10px;
+        padding-top: 70px;
+      }
+      .line {
+        width: 132px;
+        border-top: 1px solid #000000;
+        padding-bottom: 30px;
+      }
+      .contact-phone {
+        padding-bottom: 20px;
+        padding-top: 60px;
+        text-decoration: underline;
+      }
+      .contact-mail {
+        text-decoration: underline;
+      }
+    }
+  }
+}
