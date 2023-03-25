@@ -1,25 +1,19 @@
 .home-page {
   .home-info {
-    padding-top: 47px;
+    padding-top: 50px;
     padding-bottom: 60px;
     .info-content {
       margin-left: 30px;
-      font-size: $medium_text;
-      line-height: 27px;
       .info-name {
-        font-family: 'Americana', serif;
-        font-weight: normal;
-        font-size: $heading_3;
-        line-height: 60px;
+        padding-top: 20px;
       }
     }
   }
-  .home-showcase{
+  .page-element{
     display: flex;
     justify-content: center;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #0C0C0C;
     .img-text {
-      font-size: $heading_3;
+      font-size: $heading_5;
       color: #FFFFFF;
     }
     .img-smile {
@@ -45,14 +39,11 @@
   .home-info3 {
     height: 793px;
     background: $primary_color;
-    .text-small {
-      font-size: 12px;
-    }
-    .text-normal {
-      font-size: $heading_1;
-    }
+
     .text-large {
-      font-size: 120px;
+      font-family: 'AmericanaBT', serif;
+      font-size: 100px;
+      line-height: 120px;
     }
     .brands {
       display: flex;
@@ -75,17 +66,13 @@
     .child3{
       display: flex;
       justify-content: end;
-      padding-top: 245px;
       .small-img {
-        padding-top: 215px;
         display: flex;
         justify-content: end;
       }
     }
   }
   .my-design {
-    padding: 40px 75px;
-    color: #333333;
     .des-main {
       display: flex;
       align-items: center;
@@ -99,9 +86,15 @@
     }
     .des-img-container {
       .img-des {
+        overflow: hidden;
         img {
           width: 100%;
           height: auto;
+          filter: grayscale(100%);
+          transition: filter 1.0s ease;
+        }
+        img:hover{
+          filter: grayscale(0%);
         }
       }
       padding-top: 80px;
@@ -115,7 +108,7 @@
         }
         .title-status {
           margin-left: auto;
-          color:  #999999;
+          color: $subcolor;
         }
         .content-text {
           padding-top: 10px;

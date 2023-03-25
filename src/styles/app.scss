@@ -1,12 +1,16 @@
 // variable
 $primary_color: #E1DDD6;
 $second_color: #F5EAE0;
-$heading_1: 62px;
-$heading_3:  40px;
+$subcolor: #808285;
+$heading_1: 60px;
+$heading_2: 48px;
+$heading_3: 40px;
 $heading_4: 32px;
-$heading_5: 20px;
+$heading_5: 28px;
+$heading_6: 20px;
 $medium_text: 16px;
-$small_text: 14px;
+$body_text: 14px;
+$small_text: 12px;
 
 @import "layout";
 @import "home";
@@ -17,55 +21,74 @@ html,
 body {
   min-height: 100vh;
   margin: 0;
-  overflow: scroll;
 }
 
 //scroll bar
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 0px;
   height:0px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: darkgrey;
 }
 
-
 .page-body-wrapper {
-  padding-top: 87px;
+  padding-top: 81px;
 }
 
 .heading_1 {
+  font-family: 'AmericanaBT', serif;
   font-size: $heading_1;
+  line-height: 72px;
+}
+.heading_2 {
+  font-family: 'AmericanaBT', serif;
+  font-size: $heading_2;
+  line-height: 58px;
 }
 .heading_3 {
+  font-family: 'AmericanaBT', serif;
   font-size: $heading_3;
+  line-height: 50px;
 }
 .heading_4 {
+  font-family: 'AmericanaBT', serif;
   font-size: $heading_4;
+  line-height: 40px;
 }
 .heading_5 {
+  font-family: 'AmericanaBT', serif;
   font-size: $heading_5;
+  line-height: 32px;
 }
-
-.small_text {
-  font-size: $small_text;
+.heading_6 {
+  font-family: 'FuturaPT medium', sans-serif;
+  font-size: $heading_6;
+  line-height: 25px;
+}
+.body_text {
+  font-family: 'FuturaPT book', sans-serif;
+  font-size: $body_text;
+  line-height: 21px;
 }
 .medium_text {
+  font-family: 'FuturaPT medium', sans-serif;
   font-size: $medium_text;
+  line-height: 24px;
+}
+.small_text {
+  font-family: 'FuturaPT book', sans-serif;
+  font-size: $small_text;
+  line-height: 18px;
 }
 
 .container-fluid {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-left: 65px !important;
+  padding-right: 65px !important;
 }
 .row {
   width: 100%;
   margin: 0 !important;
-}
-
-.page-element {
-  padding: 0 75px;
-  font-size: 14px;
 }
 
 .bg-primary {
@@ -115,37 +138,28 @@ body {
 }
 
 .back-to-top {
+  color: $subcolor;
   position: fixed;
   right: -10px;
-  bottom: 50%;
-
+  bottom: 20%;
   cursor: pointer;
-
-  color: #959595;
-
-  font-size: 58px;
   transform: rotate(90deg);
-  font-size: $medium_text;
-  color: #333333;
 }
 
 .get-in-touch {
+  color: $subcolor;
   position: fixed;
   left: -10px;
-  bottom: 50%;
-
+  bottom: 20%;
   cursor: pointer;
-
-  color: #959595;
-
-  font-size: 58px;
-  transform: rotate(90deg);
-  font-size: $medium_text;
-  color: #333333;
+  transform: rotate(-90deg);
 }
 .get-in-touch:hover {
-  color: #333333;
+  color: #666;
   text-decoration: none;
+}
+.back-to-top:hover {
+  color: #666;
 }
 .boder-none {
   border: none !important;

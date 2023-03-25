@@ -1,16 +1,19 @@
 @font-face {
-    font-family: 'Americana';
+    font-family: 'AmericanaBT';
     src: url('/public/fonts/Americana BT.ttf');
 }
 
 @font-face {
-    font-family: 'FuturaPT';
-    src: url('/public/fonts/FuturaPTBook.otf');
-    font-weight: normal;
+    font-family: 'Americana';
+    src: url('/public/fonts/Americana Bold BT.ttf');
 }
 
 @font-face {
-    font-family: 'FuturaPT';
+    font-family: 'FuturaPT book';
+    src: url('/public/fonts/FuturaPTBook.otf');
+}
+
+@font-face {
+    font-family: 'FuturaPT medium';
     src: url('/public/fonts/FuturaPTMedium.otf');
-    font-weight: bold;
 }

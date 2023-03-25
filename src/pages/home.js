@@ -16,45 +16,43 @@ const Home = () => {
 
   useEffect(() => {
     const interval = setTimeout(() => {
-      setIndex(index === texts.length - 1 ? 0 : index + 1)       
+      setIndex(index === texts.length - 1 ? 0 : index + 1)
     }, 2000);
   }, [currentText])
 
-    
 
-    return (
+
+  return (
       <div className="home-page">
         <div className="page-element home-info">
           <div className="container-fluid">
             <div className="row">
               <div className="col-8 d-flex">
                 <img src="./images/home/logo-icon.svg" alt="logo" loading="lazy"/>
-                <div className="info-content medium_text">
+                <div className="info-content heading_6">
                   Hello, My name is
                   <div className="info-name heading_3">
                     Nguyen Thuy Duong
                   </div>
                 </div>
               </div>
-              <div className="col-4 small_text">
-              “I'm creative, open-minded and a fast learner. I have a strong desire to know, to understand, to grow, to create, to transform, to improve and to share. My dream is to improve people's lives through my designs”
+              <div className="col-4 body_text">
+                “I'm creative, open-minded and a fast learner. I have a strong desire to know, to understand, to grow, to create, to transform, to improve and to share. My dream is to improve people's lives through my designs”
               </div>
             </div>
           </div>
         </div>
-        <div className="page-element">
-          <div className="home-showcase">
-            <div className="img-container">
-              <img src="./images/home/Showcase.png" alt="showcase" loading="lazy"/>
-              <div className="img-text heading_3">
-                Hello!
-                <img className="img-smile" src="./images/icons/smile.svg" alt="smile" loading="lazy"/>
-                <img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>
-                Welcome to my website.
-                <img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>
-                I'm delighted to share my portfolio with you!
-                <img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>
-              </div>
+        <div className="page-element container-fluid">
+          <div className="img-container">
+            <img src="./images/home/Showcase.png" alt="showcase" loading="lazy"/>
+            <div className="img-text heading_3">
+              Hello!
+              <img className="img-smile" src="./images/icons/smile.svg" alt="smile" loading="lazy"/>
+              <img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>
+              Welcome to my website.
+              <img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>
+              I'm delighted to share my portfolio with you!
+              <img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>
             </div>
           </div>
         </div>
@@ -65,7 +63,7 @@ const Home = () => {
                 <div className="info-content medium_text">
                   19/08/1998 __________
                   <div className="info-lage heading_4">
-                   I’m UX/UI Designer
+                    I’m UX/UI Designer
                   </div>
                 </div>
               </div>
@@ -96,13 +94,13 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-4 child2">
-                <img src="./images/home/Rectangle36.png" alt="Rectangle35" loading="lazy"/>
+                <img className="w-100" src="./images/home/Rectangle36.png" alt="Rectangle35" loading="lazy"/>
               </div>
               <div className="col-2 child3">
                 <div>
-                  <img src="./images/home/Rectangle34.png" alt="Rectangle35" loading="lazy"/>
+                  <img className="w-100" src="./images/home/Rectangle34.png" alt="Rectangle35" loading="lazy"/>
                   <div className="small-img">
-                    <img src="./images/home/Rectangle440.png" alt="Rectangle35" loading="lazy"/>
+                    <img className="w-100" src="./images/home/Rectangle440.png" alt="Rectangle35" loading="lazy"/>
                   </div>
                 </div>
               </div>
@@ -126,14 +124,14 @@ const Home = () => {
               <div className="col-6">
                 <div className="des-img-container">
                   <div className="img-des">
-                    <img src="./images/home/Rectangle443.png" loading="lazy"></img>
+                    <img src="./images/home/mydes_1.png" loading="lazy"></img>
                   </div>
                   <div className="des-img-content">
                     <div className="content-title">
                       <div className="title-name">
-                        <span className="des-no">01/</span> Season Cake Blog 
+                        <span className="des-no">01/</span> Season Cake Blog
                       </div>
-                      <div className="title-status">
+                      <div className="title-status body_text">
                         Finished
                       </div>
                     </div>
@@ -152,14 +150,14 @@ const Home = () => {
               <div className="col-6">
                 <div className="des-img-container">
                   <div className="img-des">
-                    <img src="./images/home/Rectangle32.png" loading="lazy"></img>
+                    <img src="./images/home/mydes_2.png" loading="lazy"></img>
                   </div>
                   <div className="des-img-content">
                     <div className="content-title">
                       <div className="title-name">
                         <span className="des-no">02/</span> Alio Yoga Website & App
                       </div>
-                      <div className="title-status">
+                      <div className="title-status body_text">
                         Finished
                       </div>
                     </div>
@@ -176,14 +174,14 @@ const Home = () => {
               <div className="col-5">
                 <div className="des-img-container">
                   <div className="img-des">
-                    <img src="./images/home/Rectangle444.png" loading="lazy"></img>
+                    <img src="./images/home/mydes_3.png" loading="lazy"></img>
                   </div>
                   <div className="des-img-content">
                     <div className="content-title">
                       <div className="title-name">
                         <span className="des-no">03/</span> Aguri Jewellery Website
                       </div>
-                      <div className="title-status">
+                      <div className="title-status body_text">
                         Finished
                       </div>
                     </div>
@@ -202,15 +200,15 @@ const Home = () => {
               <div className="col-6">
                 <div className="des-img-container">
                   <div className="img-des">
-                    <img src="./images/home/Rectangle445.png" loading="lazy"></img>
+                    <img src="./images/home/mydes_4.png" loading="lazy"></img>
                   </div>
                   <div className="des-img-content">
                     <div className="content-title">
-                      <div className="title-name">
-                        <span className="des-no">04/</span> Vérité Luxury Fashion App
+                      <div className="title-name medium_text">
+                        <span className="des-no heading_3">04/</span> Vérité Luxury Fashion App
                       </div>
-                      <div className="title-status">
-                        Finished
+                      <div className="title-status body_text">
+                        In Process
                       </div>
                     </div>
                     <div className="content-text">
@@ -226,7 +224,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    )
+  )
 }
 
 export default Home;
