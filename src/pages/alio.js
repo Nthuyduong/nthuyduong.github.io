@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
 
 const Alio = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [images] = useState([
+        "image1.png",
+        "image2.png",
+    ]);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) =>
+                prevIndex === images.length - 1 ? 0 : prevIndex + 1);
+        }, 1000);
+        return () => clearInterval(interval);
+    }, [images.length]);
+
     return (
         <div className="container-fluid alio-showcase">
             <div className="alio1 pdb-60">
@@ -44,10 +59,8 @@ const Alio = () => {
             <div className="alio3 pdb-60">
                 <div className="row ">
                     <div className="col-6 r3-left">
-                        <img className="w-100" src="./images/Pj02_yoga/line3-01.png" alt="#" loading="lazy"/>
-                        <div className="r-logo">
-                            <img className="w-100" src="./images/Pj02_yoga/line3-logo.svg" alt="#" loading="lazy"/>
-                        </div>
+                        <img className="w-100" src={require(`../../public/images/Pj02_yoga/${images[currentIndex]}`)}
+                             alt="carousel image" />
                     </div>
                     <div className="col-6 r3-right">
                         <div className="content">
