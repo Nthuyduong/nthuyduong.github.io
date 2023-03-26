@@ -8,8 +8,14 @@ const Alio = () => {
                     <div className="col-6">
                         <img className="w-100" src="./images/Pj02_yoga/line1-01.png" alt="#" loading="lazy"/>
                     </div>
-                    <div className="col-6">
+                    <div className="col-6 r1-right">
                         <img className="w-100" src="./images/Pj02_yoga/line1-02.png" alt="#" loading="lazy"/>
+                        <div className="slide-content">
+                            <div className="heading_5">You will</div>
+                            <div className="heading_1">Be Your Best</div>
+                            <div className="heading_5">If you never stop</div>
+                            <div className="heading_1">Trying & Being You</div>
+                        </div>
                     </div>
                 </div>
             </div>

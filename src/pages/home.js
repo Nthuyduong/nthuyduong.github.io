@@ -26,9 +26,9 @@ const Home = () => {
           <div className="row">
             <div className="col-8 d-flex">
               <img src="./images/home/logo-icon.svg" alt="logo" loading="lazy"/>
-              <div className="info-content heading_6">
+              <div className="info-content medium_text">
                 Hello, My name is
-                <div className="info-name heading_3">
+                <div className="info-name heading_4">
                   Nguyen Thuy Duong
                 </div>
               </div>
@@ -39,8 +39,10 @@ const Home = () => {
           </div>
         </div>
         <div className="page-element container-fluid showcase-img">
-            <div className="img-container sentence-container">
-              <img src="./images/home/Showcase.png" alt="showcase" loading="lazy"/>
+            <div className="img-container">
+              <div className="sentence-container">
+                <img src="./images/home/Showcase.png" alt="showcase" loading="lazy"/>
+              </div>
               <div className="img-text d-flex running-sentence">
                 <div className="heading_3">
                   Hello!
@@ -62,17 +64,17 @@ const Home = () => {
           <div className="container-fluid">
             <div className="row">
               <div className="col-5 d-flex">
-                <div className="info-content medium_text">
+                <div className="info-content body_text">
                   19/08/1998 __________
-                  <div className="info-lage heading_4">
+                  <div className="info-lage heading_5">
                     I’m UX/UI Designer
                   </div>
                 </div>
               </div>
-              <div className="col-1  medium_text">
+              <div className="col-1  body_text">
                 April/2023
               </div>
-              <div className="col-6 text-right medium_text">
+              <div className="col-6 text-right body_text">
                 Don't just imagine, create
               </div>
             </div>

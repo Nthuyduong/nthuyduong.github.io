@@ -119,22 +119,26 @@
 }
 .sentence-container {
   width: 100%;
-  height: 420px;
+  height: 430px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .running-sentence {
-  animation: running-sentence 20s linear infinite;
+  animation: running-sentence 10s linear infinite;
   white-space: nowrap;
 }
 
 @keyframes running-sentence {
   0% {
-    transform: translateX(20%);
+    transform: translateX(10%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-10%);
   }
 }
+
 
 @media only screen and (max-width: 1200px) {
   body {

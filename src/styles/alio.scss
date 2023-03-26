@@ -1,6 +1,15 @@
 .alio-showcase{
   background-color: $primary_color;
 }
+.r1-right{
+  position: relative;
+  .slide-content{
+    position: absolute;
+    top:40%;
+    left: 10%;
+    color: #fff;
+  }
+}
 .r2-left{
   position: relative;
   background-color: #F5EAE0;
@@ -19,5 +28,22 @@
   max-width:60em;
   .heading_6{
     margin-bottom: 30px;
+  }
+}
+
+.slide-content {
+  animation: slide-in-left 2s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-15%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
   }
 }
