@@ -4,8 +4,8 @@ import React, { useState, useEffect } from "react";
 const Alio = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [images] = useState([
-        "image1.png",
-        "image2.png",
+        "image1.webp",
+        "image2.webp",
     ]);
 
     useEffect(() => {
@@ -24,7 +24,7 @@ const Alio = () => {
                         <img className="w-100" src="./images/Pj02_yoga/line1-01.png" alt="#" loading="lazy"/>
                     </div>
                     <div className="col-6 r1-right">
-                        <img className="w-100" src="./images/Pj02_yoga/line1-02.png" alt="#" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj02_yoga/line1-02.webp" alt="#" loading="lazy"/>
                         <div className="slide-content">
                             <div className="heading_5">You will</div>
                             <div className="heading_1">Be Your Best</div>
@@ -52,7 +52,7 @@ const Alio = () => {
                         </div>
                     </div>
                     <div className="col-6">
-                        <img className="w-100" src="./images/Pj02_yoga/line2-02.png" alt="#" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj02_yoga/line2-02.webp" alt="#" loading="lazy"/>
                     </div>
                 </div>
             </div>
@@ -84,12 +84,12 @@ const Alio = () => {
             <div className="alio6 pdb-60">
                 <div className="row">
                     <div className="col-6">
-                        <img className="w-100" src="./images/Pj02_yoga/line6-01.png" alt="#" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj02_yoga/line6-01.webp" alt="#" loading="lazy"/>
                     </div>
                     <div className="col-6">
                         <img className="w-100" src="./images/Pj02_yoga/line6-02.png" alt="#" loading="lazy"/>
                         <div className="r-logo sm-img">
-                            <img className="" src="./images/Pj02_yoga/line6-02-sm.png" alt="#" loading="lazy"/>
+                            <img className="mb-3" src="./images/Pj02_yoga/line6-02-sm.webp" alt="#" loading="lazy"/>
                             <div class="heading_4 text-center">Be with you anywhere, anytime</div>
                         </div>
                     </div>
