@@ -116,8 +116,15 @@ const Home = () => {
         </div>
         <div className="page-element my-design">
           <div className="container-fluid">
-            <div className="heading_3 text-center">My Designs</div>
-            <div className="body_text"></div>
+            <div className="row my-des-title">
+              <div className="col-3"></div>
+              <div className="col-6">
+                <div className="heading_3 text-center mb-3">My Designs</div>
+                <div className="body_text text-center">User testing was an iterative process that was conducted at every milestone of the project to identify
+                  the biggest pain points in the current version.</div>
+              </div>
+              <div className="col-3"></div>
+            </div>
             <div className="row des_r1">
               <div className="col-5">
                 <div className="des_card img-des">

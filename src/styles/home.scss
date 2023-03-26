@@ -29,7 +29,7 @@
   }
   .home-info2 {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
     font-size: $medium_text;
     .info-lage {
       padding-top: 20px;
@@ -99,6 +99,7 @@
       img:hover {
         filter: grayscale(0%);
       }
+
     }
   }
 }
@@ -109,15 +110,18 @@
 .pj_intro{
   width: 80%;
 }
+.my-des-title{
+  padding-top:100px;
+  padding-bottom:60px;
+}
 .des_r1{
-  padding-bottom: 90px;
+  padding-bottom: 80px;
 }
 .sentence-container {
   width: 100%;
   height: 420px;
   overflow: hidden;
 }
-
 .running-sentence {
   animation: running-sentence 20s linear infinite;
   white-space: nowrap;
