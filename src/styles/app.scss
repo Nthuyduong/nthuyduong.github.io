@@ -1,10 +1,10 @@
-// variable
+//VARIABLE
 $primary_color: #E1DDD6;
-$second_color: #F5EAE0;
-$subcolor: #808285;
+$secondary_color: #808285;
+$subcolor: #E4E4E4;
 $heading_1: 60px;
-$heading_2: 48px;
-$heading_3: 40px;
+$heading_2: 46px;
+$heading_3: 38px;
 $heading_4: 32px;
 $heading_5: 28px;
 $heading_6: 20px;
@@ -12,18 +12,22 @@ $medium_text: 16px;
 $body_text: 14px;
 $small_text: 12px;
 
+//IMPORT
 @import "layout";
 @import "home";
 @import "about";
 @import "contact";
+@import "alio";
+@import "aguri";
 
 html,
 body {
   min-height: 100vh;
   margin: 0;
+  color: #373737 !important;
 }
 
-//scroll bar
+//SCROLL BAR
 ::-webkit-scrollbar {
   width: 0px;
   height:0px;
@@ -33,23 +37,24 @@ body {
 }
 
 .page-body-wrapper {
-  padding-top: 81px;
+  padding-top: 61px;
 }
 
+//FONT-STYLE
 .heading_1 {
   font-family: 'AmericanaBT', serif;
   font-size: $heading_1;
   line-height: 72px;
 }
 .heading_2 {
-  font-family: 'AmericanaBT', serif;
+  font-family: 'AmericanaBT';
   font-size: $heading_2;
-  line-height: 58px;
+  line-height: 56px;
 }
 .heading_3 {
   font-family: 'AmericanaBT', serif;
   font-size: $heading_3;
-  line-height: 50px;
+  line-height: 47px;
 }
 .heading_4 {
   font-family: 'AmericanaBT', serif;
@@ -62,7 +67,7 @@ body {
   line-height: 32px;
 }
 .heading_6 {
-  font-family: 'FuturaPT medium', sans-serif;
+  font-family: 'AmericanaBT', serif;
   font-size: $heading_6;
   line-height: 25px;
 }
@@ -82,6 +87,7 @@ body {
   line-height: 18px;
 }
 
+//setting
 .container-fluid {
   padding-left: 65px !important;
   padding-right: 65px !important;
@@ -90,7 +96,6 @@ body {
   width: 100%;
   margin: 0 !important;
 }
-
 .bg-primary {
   background: $primary_color;
 }
@@ -99,14 +104,25 @@ body {
   display: flex;
   flex-direction: column;
 }
+.sec_color{
+  color: $secondary_color;
+}
+.pdb-60{
+  padding-bottom: 60px;
+}
 
+//SHOWCASE HERE
+.test{
+  height: 100vh;
+  box-sizing: border-box;
+}
 .img-container {
   position: relative;
   text-align: center;
   width: 100%;
   img {
     width: 100%;
-    height: auto;
+    object-fit: contain;
   }
   .img-text {
     position: absolute;
@@ -138,7 +154,7 @@ body {
 }
 
 .back-to-top {
-  color: $subcolor;
+  color: #666;
   position: fixed;
   right: -10px;
   bottom: 20%;
@@ -147,7 +163,7 @@ body {
 }
 
 .get-in-touch {
-  color: $subcolor;
+  color: #666;
   position: fixed;
   left: -10px;
   bottom: 20%;
@@ -155,7 +171,7 @@ body {
   transform: rotate(-90deg);
 }
 .get-in-touch:hover {
-  color: #666;
+  color: #999;
   text-decoration: none;
 }
 .back-to-top:hover {

@@ -12,13 +12,13 @@ const Contact = () => {
           <div className="line"></div>
           <div className="container-fluid contact-des">
             <div className="row content-center">
-              <div className="col-6">
+              <div className="col-6 body_text">
               “I welcome any potential recruiters to contact me regarding job opportunities that match my skillset and interests. I am excited to explore new opportunities and connect with professionals in my field”
               </div>    
             </div>
           </div>
-          <div className="contact-phone">0336256655</div>
-          <div className="contact-mail">Nthduong198@gmail.com</div>
+          <div className="contact-phone body_text">0336256655</div>
+          <div className="contact-mail body_text">Nthduong198@gmail.com</div>
         </div>
       </div>
     </div>

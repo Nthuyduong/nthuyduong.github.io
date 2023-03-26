@@ -11,6 +11,8 @@ import Layout from "./components/layout";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Contact from "./pages/contact";
+import Aguri from "./pages/aguri";
+import Alio from "./pages/alio";
 
 
 const App = () => {
@@ -22,6 +24,8 @@ const App = () => {
           <Route exact path={ROUTER.HOME} component={Home}/>
           <Route path={ROUTER.ABOUT} component={About}/>
           <Route path={ROUTER.CONTACT} component={Contact}/>
+          <Route path={ROUTER.AGURI} component={Aguri}/>
+          <Route path={ROUTER.ALIO} component={Alio}/>
         </Layout>
       </Switch>  
     </Router>

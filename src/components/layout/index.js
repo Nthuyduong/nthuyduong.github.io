@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Link, useHistory } from "react-router-dom";
 import { ROUTER } from "../../utils/constants";
+
 
 const Layout = ({ children }) => {
 

@@ -8,17 +8,22 @@ const About = () => {
       </div>
       <div className="page-element">
         <div className="container-fluid about1">
-          <div className="row">
+          <div className="row row-n1">
+            <div className="col-1"></div>
+            <div className="col-4"></div>
+              <div className="title-about1-2 heading_5 ">
+                So glad to see you here!
+              </div>
+              <div className="col-6"></div>
+          </div>
+          <div className="row row-n2">
             <div className="col-1"></div>
             <div className="col-4 about1-1">
               <p>From: Nguyen Thuy Duong</p>
               <p>To: You</p>
             </div>
             <div className="col-6 about1-2">
-              <div className="title-about1-2 heading_5 ">
-                So glad to see you here!
-              </div>
-              <div className="medium_text">
+              <div className="medium_text dear">
                 Dear all
               </div>
               <div className="small_text">
@@ -36,39 +41,41 @@ const About = () => {
                 <img src="./images/about/xinh.png" alt="#" loading="lazy"></img>
               </div>
             </div>
-            <div className="col-1">
-              <div className="heading_4 sef-intoduct">Self - Introduce</div>
-            </div>
             <div className="col-2">
+              <div className="heading_3 sef-intro">Self - Introduce</div>
+            </div>
+            <div className="col-1">
 
             </div>
-            <div className="col-6">
-              <div className="small-text about-des">
-                At just 24 years old, I was always driven to find my true passion in life. After trying a few different jobs, I discovered UX/UI design and suddenly everything fell into place. I realized that this was my true passion and I was determined to pursue a career in this field. Although I am relatively new to this industry, I have worked hard to learn a lot during the past 2 years. Now I am eager to gain hands-on experience and contribute to real-world projects in the field of UX/UI Design. I believe that with a strong sense of purpose and passion for design, I can make a valuable contribution to any organization looking for a dedicated and dynamic UX/UI Designer.
-              </div>
-              <div className="about-title">
-                Basic Information
-              </div>
-              <div className="about-info">
-                Birthday: 19/08/1998
-                <img className="about-dot" src="./images/about/Ellipse27.png" alt="#" loading="lazy"></img>
-                Nationality: Local Vietnamese
-                <img className="about-dot" src="./images/about/Ellipse27.png" alt="#" loading="lazy"></img>
-                Maritality: Single
-                <img className="about-dot" src="./images/about/Ellipse27.png" alt="#" loading="lazy"></img>
-                Gender: Female
-              </div>
-              <div className="about-title">
-              Hobbies
-              </div>
-              <div className="about-info">
-                Reading
-                <img className="about-dot" src="./images/about/Ellipse27.png" alt="#" loading="lazy"></img>
-                Drawing
-                <img className="about-dot" src="./images/about/Ellipse27.png" alt="#" loading="lazy"></img>
-                Travelling
-                <img className="about-dot" src="./images/about/Ellipse27.png" alt="#" loading="lazy"></img>
-                Swimming
+            <div className="col-6 abt-content">
+              <div className="abt-inner">
+                <div className="about-des small_text">
+                  At just 24 years old, I was always driven to find my true passion in life. After trying a few different jobs, I discovered UX/UI design and suddenly everything fell into place. I realized that this was my true passion and I was determined to pursue a career in this field. Although I am relatively new to this industry, I have worked hard to learn a lot during the past 2 years. Now I am eager to gain hands-on experience and contribute to real-world projects in the field of UX/UI Design. I believe that with a strong sense of purpose and passion for design, I can make a valuable contribution to any organization looking for a dedicated and dynamic UX/UI Designer.
+                </div>
+                <div className="about-title">
+                  Basic Information
+                </div>
+                <div className="about-info">
+                  Birthday: 19/08/1998
+                  <img className="about-dot" src="./images/about/Ellipse27.png" alt="#" loading="lazy"></img>
+                  Nationality: Local Vietnamese
+                  <img className="about-dot" src="./images/about/Ellipse27.png" alt="#" loading="lazy"></img>
+                  Maritality: Single
+                  <img className="about-dot" src="./images/about/Ellipse27.png" alt="#" loading="lazy"></img>
+                  Gender: Female
+                </div>
+                <div className="about-title">
+                  Hobbies
+                </div>
+                <div className="about-info pb-0">
+                  Reading
+                  <img className="about-dot" src="./images/about/Ellipse27.png" alt="#" loading="lazy"></img>
+                  Drawing
+                  <img className="about-dot" src="./images/about/Ellipse27.png" alt="#" loading="lazy"></img>
+                  Travelling
+                  <img className="about-dot" src="./images/about/Ellipse27.png" alt="#" loading="lazy"></img>
+                  Swimming
+                </div>
               </div>
             </div>
           </div>
@@ -89,55 +96,55 @@ const About = () => {
               </div>
             </div>
             <div className="col-1"/>
-            <div className="col-1 skill-title">
+            <div className="col-1 skill-title medium_text">
               DESIGN TOOLS
             </div>
             <div className="col-2 skill-container">
               <div className="skill-item medium-text">
-                <div className="skill-no">01/</div>
-                <div className="skill-name">Figma</div>
+                <div className="skill-no body_text">01/</div>
+                <div className="skill-name body_text">Figma</div>
               </div>
               <div className="skill-item medium-text">
-                <div className="skill-no">02/</div>
-                <div className="skill-name">Adobe Illustrator</div>
+                <div className="skill-no body_text">02/</div>
+                <div className="skill-name body_text">Adobe Illustrator</div>
               </div>
               <div className="skill-item medium-text">
-                <div className="skill-no">03/</div>
-                <div className="skill-name">Adobe Photoshop</div>
+                <div className="skill-no body_text">03/</div>
+                <div className="skill-name body_text">Adobe Photoshop</div>
               </div>
               <div className="skill-item medium-text">
-                <div className="skill-no">04/</div>
-                <div className="skill-name">Adobe Indesign</div>
+                <div className="skill-no body_text">04/</div>
+                <div className="skill-name body_text">Adobe Indesign</div>
               </div>
               <div className="skill-item medium-text boder-none">
-                <div className="skill-no">05/</div>
-                <div className="skill-name">Adobe XD</div>
+                <div className="skill-no body_text">05/</div>
+                <div className="skill-name body_text">Adobe XD</div>
               </div>
             </div>
             <div className="col-1"/>
-            <div className="col-1 skill-title">
+            <div className="col-1 skill-title medium_text">
               TECH STACK
             </div>
             <div className="col-2 skill-container">
               <div className="skill-item medium-text">
-                <div className="skill-no">01/</div>
-                <div className="skill-name">HTML</div>
+                <div className="skill-no body_text">01/</div>
+                <div className="skill-name body_text">HTML</div>
               </div>
               <div className="skill-item medium-text">
-                <div className="skill-no">02/</div>
-                <div className="skill-name">CSS</div>
+                <div className="skill-no body_text">02/</div>
+                <div className="skill-name body_text">CSS</div>
               </div>
               <div className="skill-item medium-text">
-                <div className="skill-no">03/</div>
-                <div className="skill-name">JavaScript</div>
+                <div className="skill-no body_text">03/</div>
+                <div className="skill-name body_text">JavaScript</div>
               </div>
               <div className="skill-item medium-text">
-                <div className="skill-no">04/</div>
-                <div className="skill-name">Angular</div>
+                <div className="skill-no body_text">04/</div>
+                <div className="skill-name body_text">Angular</div>
               </div>
               <div className="skill-item medium-text boder-none">
-                <div className="skill-no">05/</div>
-                <div className="skill-name">React</div>
+                <div className="skill-no body_text">05/</div>
+                <div className="skill-name body_text">React</div>
               </div>
             </div>
           </div>
@@ -153,18 +160,18 @@ const About = () => {
             </div>
             <div className="col-6 core-content">
               <div className="row">
-                <div className="col-2 heading_3">
+                <div className="col-4 heading_3">
                   My Core Values
                 </div>
               </div>
               <div className="detail-container">
                 <div className="row">
-                  <div className="col-4">
+                  <div className="col-4 left-item">
                     <div className="detail-item">
                       <div className="medium_text">
                         Live with passion
                       </div>
-                      <div className="small-text detail-mid">
+                      <div className="small_text detail-mid">
                         Passion is the driving force behind success and happiness that pushes you to reach your highest potential.
                         <br />
                         “Nothing great in the world has ever been accomplished without passion.” ~ George Hegel
@@ -179,7 +186,7 @@ const About = () => {
                       <div className="medium_text">
                         Eager to learn
                       </div>
-                      <div className="small-text detail-mid">
+                      <div className="small_text detail-mid">
                       "Learn from yesterday, live for today, hope for tomorrow. The important thing is to not stop questioning." ~ Arthur Wellesley
                       </div>
                       <div className="heading_3">
@@ -187,12 +194,12 @@ const About = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-4">
+                  <div className="col-4 right-item">
                     <div className="detail-item">
                       <div className="medium_text">
                         Undeterred by the hardships
                       </div>
-                      <div className="small-text detail-mid">
+                      <div className="small_text detail-mid">
                         “Life doesn't require that we be the best, only that we try our best.” ~ H.Jackson Brown, Jr
                       </div>
                       <div className="heading_3">

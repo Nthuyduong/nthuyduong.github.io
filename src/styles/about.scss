@@ -1,7 +1,13 @@
 .about-page {
   .about1 {
+    .row-n1{
+      padding-top: 70px;
+      padding-bottom: 30px;
+    }
+    .row-n2{
+      padding-bottom:70px;
+    }
     .about1-1 {
-      padding-top: 170px;
       font-size: $small_text;
       color: #999999;
       p {
@@ -9,36 +15,43 @@
       }
     }
     .about1-2 {
-      padding-bottom: 60px;
+      .dear{
+        padding-bottom: 10px;
+      }
       .title-about1-2 {
         padding-top: 110px;
         padding-bottom: 30px;
       }
     }
-    border-bottom: 1px solid #E4E4E4;
+    border-bottom: 1px solid $subcolor;
   }
   .about2 {
     padding-top: 30px;
     padding-bottom: 130px;
-    .sef-intoduct {
+    .sef-intro {
       padding-left: 30px;
     }
+    .abt-content {
+      position: relative;
+      .abt-inner{
+        position: absolute;
+        bottom: 0;
+      }
+    }
     .about-des {
-      padding-top: 178px;
-      color: #000000;
+      color: #333;
       padding-bottom: 40px;
     }
     .about-title {
       font-size: $medium_text;
       color:  #333333;
-      padding-bottom: 20px;
+      padding-bottom: 16px;
     }
     .about-info {
       display: flex;
       align-items: center;
       font-size: $small_text;
       padding-bottom: 40px;
-      
     }
     .about-dot {
       padding: 0 20px;   
@@ -56,7 +69,6 @@
     padding-bottom: 120px;
     background: $primary_color;
     .skill-title {
-      font-size: 20px;
       text-decoration: underline;
     }
     .skill-container {
@@ -66,7 +78,7 @@
       display: flex;
       padding-top: 20px;
       padding-bottom: 10px;
-      border-bottom: 1px solid #999999;
+      border-bottom: 0.5px solid #999999;
       .skill-name {
         margin-left: auto;
       }
@@ -81,14 +93,16 @@
     }
     .core-content {
       padding-left: 15px !important;
+      position: relative;
     }
     .detail-container {
-      padding-top: 97px;
+      position: absolute;
+      bottom: 0;
     }
     .detail-mid {
       padding-top: 20px;
       padding-bottom: 40px;
-      border-top: 1px solid #999999;
+      border-top: 1px solid $subcolor;
       margin-top: 10px;
     }
     .detail-item{
@@ -99,8 +113,14 @@
         margin-top: auto;
       }
     }
+    .left-item{
+      padding-right: 10px !important;
+    }
     .mid-item {
-      padding: 0 30px !important;
+      padding: 0 10px !important;
+    }
+    .right-item{
+      padding-left: 10px !important;
     }
   }
   .about-last {
