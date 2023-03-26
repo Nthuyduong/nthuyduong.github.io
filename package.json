@@ -2,7 +2,7 @@
   "name": "Portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nthuyduong.github.io/Portfolio/",
+  "homepage": "https://github.com/Nthuyduong/nthuyduong.github.io.git",
   "dependencies": {
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
