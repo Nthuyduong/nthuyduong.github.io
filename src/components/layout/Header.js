@@ -43,10 +43,10 @@ const Header = () => {
                       <Link className="nav-link" to="/alio">Alio</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item>
-                      <Link className="nav-link" to="/">Cake-blog</Link>
+                      <Link className="nav-link" to="/season cake">Cake-blog</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item>
-                      <Link className="nav-link" to="/">Fashion-brand</Link>
+                      <Link className="nav-link" to="/verite">Fashion-brand</Link>
                     </NavDropdown.Item>
                   </NavDropdown>
                   <Nav><Link className="nav-link" to="/contact">CONTACT</Link></Nav>

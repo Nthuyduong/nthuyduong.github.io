@@ -1,4 +1,4 @@
-.alio-showcase{
+.product-showcase{
   background-color: $primary_color;
 }
 .r1-right{
@@ -45,17 +45,16 @@
     }
   }
 }
+
 .slide-content {
   animation: slide-in-left 2s ease-out forwards;
   opacity: 0;
 }
-
 @keyframes slide-in-left {
   from {
     transform: translateX(-15%);
     opacity: 0;
   }
-
   to {
     transform: translateX(0%);
     opacity: 1;

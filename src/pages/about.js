@@ -153,9 +153,7 @@ const About = () => {
       <div className="page-element core-value">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-6 core-img">
-
-            </div>
+            <div className="col-6 core-img"/>
             <div className="col-6 core-content">
               <div className="row">
                 <div className="col-4 heading_3">

@@ -3,5 +3,7 @@ export const ROUTER = {
   ABOUT: '/about',
   CONTACT: '/contact',
   AGURI: '/aguri',
-  ALIO: '/alio'
+  ALIO: '/alio',
+  FASHION: '/verite',
+  CAKE: '/season cake',
 }

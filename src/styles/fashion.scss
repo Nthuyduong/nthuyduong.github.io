@@ -1,0 +1,27 @@
+.showcase{
+  position: relative;
+  .showcase-inner{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .line{
+    border-bottom: 1px solid #fff;
+    width: 80%;
+  }
+  .dot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.light-text{
+  color: #fff;
+}
+.mx-max{
+  margin-left:60px;
+  margin-right: 60px;
+}

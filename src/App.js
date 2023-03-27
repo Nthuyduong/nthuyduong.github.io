@@ -13,7 +13,8 @@ import About from "./pages/about";
 import Contact from "./pages/contact";
 import Aguri from "./pages/aguri";
 import Alio from "./pages/alio";
-
+import Fashion from "./pages/fashion"
+import Cake from "./pages/cake";
 
 const App = () => {
 
@@ -26,6 +27,8 @@ const App = () => {
           <Route path={ROUTER.CONTACT} component={Contact}/>
           <Route path={ROUTER.AGURI} component={Aguri}/>
           <Route path={ROUTER.ALIO} component={Alio}/>
+          <Route path={ROUTER.FASHION} component={Fashion}/>
+          <Route path={ROUTER.CAKE} component={Cake}/>
         </Layout>
       </Switch>  
     </Router>
