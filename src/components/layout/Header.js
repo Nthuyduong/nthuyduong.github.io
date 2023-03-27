@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import { ROUTER } from "../../utils/constants";
+import {ROUTER} from "../../utils/constants";
 import { useHistory, useParams } from "react-router-dom";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -26,6 +26,10 @@ const Header = () => {
     }
   }, [])
 
+  const getActive = (routerNames = []) => {
+    return routerNames.includes(routerNames, history.location.pathname) ? 'active' : '';
+  }
+
   return (
     <div className={`active ${show && 'hidden'}`}>
       <Navbar className="header navbar" expand="lg">
@@ -34,22 +38,22 @@ const Header = () => {
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                   <Nav><Link className="nav-link" to="/">HOME</Link></Nav>
-                  <Nav><Link className="nav-link" to="/about">ABOUT</Link></Nav>
+                  <Nav><Link to={ROUTER.ABOUT} className={`nav-link ${getActive([ROUTER.ABOUT])}`}>ABOUT</Link></Nav>
                   <NavDropdown title="DESIGNS" id="basic-nav-dropdown">
                     <NavDropdown.Item>
-                      <Link className="nav-link" to="/aguri">AGURI</Link>
+                      <Link to={ROUTER.AGURI} className="nav-link">AGURI</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item>
-                      <Link className="nav-link" to="/alio">Alio</Link>
+                      <Link to={ROUTER.ALIO} className="nav-link">Alio</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item>
-                      <Link className="nav-link" to="/season cake">Cake-blog</Link>
+                      <Link to={ROUTER.CAKE} className="nav-link">Cake-blog</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item>
-                      <Link className="nav-link" to="/verite">Fashion-brand</Link>
+                      <Link to={ROUTER.FASHION} className="nav-link">Fashion-brand</Link>
                     </NavDropdown.Item>
                   </NavDropdown>
-                  <Nav><Link className="nav-link" to="/contact">CONTACT</Link></Nav>
+                  <Nav><Link to={ROUTER.CONTACT} className="nav-link">CONTACT</Link></Nav>
                 </Nav>
               </Navbar.Collapse>
             </div>

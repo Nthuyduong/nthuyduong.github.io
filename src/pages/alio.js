@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-
 const Alio = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [images] = useState([
@@ -54,7 +53,7 @@ const Alio = () => {
                 <div className="alio2 pdb-60">
                     <div className="row">
                         <div className="col-6 r2-left">
-                            <div className="content">
+                            <div className="content2">
                                 <div className="heading_6">Introduction</div>
                                 <div className="body_text">
                                     “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,
@@ -80,7 +79,7 @@ const Alio = () => {
                                  alt="carousel image" />
                         </div>
                         <div className="col-6 r3-right">
-                            <div className="content">
+                            <div className="content2">
                                 <div className="heading_6">The Logotype</div>
                                 <div className="body_text">
                                     “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,

@@ -38,7 +38,7 @@ const Fashion = () => {
                             <img className="w-100" src="./images/Pj04_fashion/line2-01.png" alt="#" loading="lazy"/>
                         </div>
                         <div className="col-6">
-                            <div className="content">
+                            <div className="content2">
                                 <div className="heading_6">Introduction</div>
                                 <div className="body_text">
                                     “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,

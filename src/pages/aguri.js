@@ -27,7 +27,7 @@ const Aguri = () => {
                 <div className="ag-line3 pdb-60">
                     <div className="row">
                         <div className="col-6">
-                            <div className="content">
+                            <div className="content2">
                                 <div className="heading_6">Introduction</div>
                                 <div className="body_text">
                                     “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,

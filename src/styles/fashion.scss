@@ -7,7 +7,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
+  .image-left{
+    position: relative;
+  }
+  .content-right{
+    top:30%;
+    position: absolute;
+    right: 60px;
+  }
   .line{
     border-bottom: 1px solid #fff;
     width: 80%;
@@ -22,6 +29,6 @@
   color: #fff;
 }
 .mx-max{
-  margin-left:60px;
+  margin-left: 60px;
   margin-right: 60px;
 }
