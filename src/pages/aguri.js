@@ -6,17 +6,17 @@ const Aguri = () => {
             <div className="ag-line1">
                 <div className="row">
                     <div className="col-6">
-                        <img className="w-100" src="./images/Pj03_aguri/line1-01.png" alt="#" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj03_aguri/line1-01.webp" alt="#" loading="lazy"/>
                     </div>
                     <div className="col-6">
-                        <img className="w-100" src="./images/Pj03_aguri/line1-02.png" alt="#" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj03_aguri/line1-02.webp" alt="#" loading="lazy"/>
                     </div>
                 </div>
             </div>
             <div className="ag-line2">
                 <div className="row">
                     <div className="col-6">
-                        <img className="w-100" src="./images/Pj03_aguri/line2-01.png" alt="#" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj03_aguri/line2-01.webp" alt="#" loading="lazy"/>
                     </div>
                     <div className="col-6">
 
@@ -29,7 +29,7 @@ const Aguri = () => {
 
                     </div>
                     <div className="col-6">
-                        <img className="w-100" src="./images/Pj03_aguri/line3-02.png" alt="#" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj03_aguri/line3-02.webp" alt="#" loading="lazy"/>
                     </div>
                 </div>
             </div>

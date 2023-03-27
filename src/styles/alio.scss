@@ -30,7 +30,21 @@
     margin-bottom: 30px;
   }
 }
-
+.alio5{
+  position: relative;
+  img{
+    max-height: 900px;
+  }
+  .show{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    img{
+     max-width: 1100px;
+    }
+  }
+}
 .slide-content {
   animation: slide-in-left 2s ease-out forwards;
   opacity: 0;
