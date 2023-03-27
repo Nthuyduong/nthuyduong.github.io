@@ -96,7 +96,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-1"/>
-            <div className="col-1 skill-title medium_text">
+            <div className="col-1 skill-title body_text">
               DESIGN TOOLS
             </div>
             <div className="col-2 skill-container">
@@ -122,7 +122,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-1"/>
-            <div className="col-1 skill-title medium_text">
+            <div className="col-1 skill-title body_text">
               TECH STACK
             </div>
             <div className="col-2 skill-container">
@@ -154,9 +154,7 @@ const About = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-6 core-img">
-              <div className="img-container">
-                <img src="./images/about/Crystal_Paperweights_864x6401.png" alt="#" loading="lazy"></img>
-              </div>
+
             </div>
             <div className="col-6 core-content">
               <div className="row">

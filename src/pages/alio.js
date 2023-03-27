@@ -119,7 +119,7 @@ const Alio = () => {
                     </div>
                 </div>
             </div>
-            <div className="alio7">
+            <div className="alio7 pdb-60">
                 <img className="w-100" src="./images/Pj02_yoga/line7.png" alt="#" loading="lazy"/>
             </div>
 
