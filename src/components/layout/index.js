@@ -11,30 +11,31 @@ const Layout = ({ children }) => {
   }
 
   const history = useHistory();
-
+  
   const isRouter = (routerNames = []) => {
-      return routerNames.includes(routerNames, history.location.pathname);
+    return routerNames.includes(history.location.pathname);
   }
 
-  const getNavbar = () => {
-      const excludeRouter = [ROUTER.CONTACT, ROUTER.CAKE, ROUTER.ALIO, ROUTER.AGURI, ROUTER.FASHION];
-      if (!isRouter(excludeRouter)) {
-          return (<Header />)
-      } else {
-          return '';
-      }
+  const getAction = () => {
+    if (!isRouter([ROUTER.CONTACT])) {
+      return (
+        <>
+          <div className="back-to-top body_text" onClick={() => { scrollToTop() }}>Back to top</div>
+          <Link to="/contact" className="get-in-touch body_text">Get in touch</Link>
+        </>
+      )
+    }
+    return <></>
   }
 
   return (
     <div className="page">
       <Header />
-      {getNavbar()}
       <div className={`page-body-wrapper ${!isRouter([ROUTER.CONTACT, ROUTER.CAKE, ROUTER.ALIO, ROUTER.AGURI, ROUTER.FASHION]) ? 'page-body-with-nav' : ''}`}>
         {children}
       </div>
       <Footer />
-      <div className="back-to-top body_text" onClick={() => { scrollToTop() }}>Back to top</div>
-      <Link to="/contact" className="get-in-touch body_text">Get in touch</Link>
+      {getAction()}
     </div>
   )
 }
