@@ -14,7 +14,7 @@ const Fashion = () => {
                             </div>
                             <div className="col-7 content-right">
                                 <img className="mb-5" src="./images/Pj04_fashion/logo.svg" alt="#" loading="lazy"/>
-                                <div className="heading_5 light-text">Luxury Fashion Brand</div>
+                                <div className="heading_5 light-text">LUXURY FASHION BRAND</div>
                                 <div className="line my-4"></div>
                                 <div className="d-flex text-line">
                                     <div className="heading_6 light-text">Be Free</div>
@@ -53,20 +53,26 @@ const Fashion = () => {
                     </div>
                 </div>
                 <div className="verite_line3 pdb-60">
-                    <div className="col-6">
-                        <img className="w-100" src="./images/Pj04_fashion/line3-01.png" alt="#" loading="lazy"/>
+                    <div className="row">
+                        <div className="col-6">
+                            <img className="w-100" src="./images/Pj04_fashion/line3-01.png" alt="#" loading="lazy"/>
+                        </div>
+                        <div className="col-6">
+                            <img className="w-100" src="./images/Pj04_fashion/line3-02.png" alt="#" loading="lazy"/>
+                        </div>
                     </div>
-                    <div className="col-6"></div>
                 </div>
                 <div className="verite_line4 pdb-60">
                     <img className="w-100" src="./images/Pj04_fashion/line4.png" alt="#" loading="lazy"/>
                 </div>
                 <div className="verite_line5 pdb-60">
-                    <div className="col-6">
-
-                    </div>
-                    <div className="col-6">
-                        <img className="w-100" src="./images/Pj04_fashion/line5-02.png" alt="#" loading="lazy"/>
+                    <div className="row">
+                        <div className="col-6">
+                            <img className="w-100" src="./images/Pj04_fashion/line5-01.png" alt="#" loading="lazy"/>
+                        </div>
+                        <div className="col-6">
+                            <img className="w-100" src="./images/Pj04_fashion/line5-02.png" alt="#" loading="lazy"/>
+                        </div>
                     </div>
                 </div>
             </div>
