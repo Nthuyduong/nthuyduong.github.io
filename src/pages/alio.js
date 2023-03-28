@@ -84,7 +84,12 @@ const Alio = () => {
                             </div>
                         </div>
                         <div className="col-6">
-                            <img className="w-100" src="./images/Pj02_yoga/line2-02.webp" alt="#" loading="lazy"/>
+                            <div className="alio2-left">
+                                <img className="w-100" src="./images/Pj02_yoga/line2-02-lg.png" alt="#" loading="lazy"/>
+                                <div className="img-inner">
+                                    <img className="" src="./images/Pj02_yoga/line2-02-sm.png" alt="#" loading="lazy"/>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,7 +122,7 @@ const Alio = () => {
                 <div className="alio5 pdb-60">
                     <img className="w-100" src="./images/Pj02_yoga/line5-bg.png" alt="#" loading="lazy"/>
                     <div className="show">
-                        <img src={require(`../../public/images/Pj02_yoga/${showcase[currentImageIndex]}`)} alt="#" loading="lazy"/>
+                        <img className="" src={require(`../../public/images/Pj02_yoga/${showcase[currentImageIndex]}`)} alt="#" loading="lazy"/>
                     </div>
                 </div>
                 <div className="alio6 pdb-60">
