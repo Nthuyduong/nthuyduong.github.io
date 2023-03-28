@@ -4,6 +4,9 @@ import Footer from "./Footer";
 import { Link, useHistory } from "react-router-dom";
 import { ROUTER } from "../../utils/constants";
 import { useLocation } from 'react-router-dom';
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const Layout = ({ children }) => {
 
@@ -37,11 +40,12 @@ const Layout = ({ children }) => {
                 <Footer />
                 <div className="back-to-top btt2 body_text" onClick={() => { scrollToTop() }}>Back to top</div>
                 <div className="top-to-btm">
-                    <i className="fa-sharp fa-solid fa-arrow-up icon-up"></i>
+                    <FontAwesomeIcon icon="fa-solid fa-arrow-up icon-up" />
+                    <FontAwesomeIcon icon="fa-solid fa-arrow-up icon-up" />
                     <div className="">
                         <div className="body_text position">1/10</div>
                     </div>
-                    <i className="fa-sharp fa-solid fa-arrow-down icon-down"></i>
+                    <FontAwesomeIcon icon="fa-solid fa-arrow-down icon-down" />
                 </div>
             </div>
         );

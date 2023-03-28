@@ -31,6 +31,22 @@ const Alio = () => {
         return () => clearInterval(interval);
     }, [logo.length]);
 
+    const [currentShowcaseIndex, setCurrentShowcaseIndex] = useState(0);
+    const [showcase] = useState(
+        [
+            "showcase1.png",
+            "showcase2.png",
+            "showcase3.png",
+        ]
+    )
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentShowcaseIndex((prevIndex) =>
+                prevIndex === showcase.length - 1 ? 0 : prevIndex + 1);
+        }, 800);
+        return () => clearInterval(interval);
+    }, [showcase.length]);
+
     return (
         <div className="container-fluid">
             <div className="product-showcase">
@@ -101,7 +117,7 @@ const Alio = () => {
                 <div className="alio5 pdb-60">
                     <img className="w-100" src="./images/Pj02_yoga/line5-bg.png" alt="#" loading="lazy"/>
                     <div className="show">
-                        <img src="./images/Pj02_yoga/image5.1.png" alt="#" loading="lazy"/>
+                        <img src={require(`../../public/images/Pj02_yoga/${showcase[currentImageIndex]}`)} alt="#" loading="lazy"/>
                     </div>
                 </div>
                 <div className="alio6 pdb-60">
