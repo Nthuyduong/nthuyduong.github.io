@@ -15,6 +15,9 @@ import Aguri from "./pages/aguri";
 import Alio from "./pages/alio";
 import Fashion from "./pages/fashion"
 import Cake from "./pages/cake";
+import "@fortawesome/fontawesome-svg-core"
+import "@fortawesome/react-fontawesome"
+
 
 const App = () => {
 
