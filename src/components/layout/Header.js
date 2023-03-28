@@ -5,10 +5,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 
 const Header = () => {
-
-  const history = useHistory();
 
   const [show, setShow] = useState(false)
   const controlNavbar = () => {
@@ -26,19 +25,23 @@ const Header = () => {
     }
   }, [])
 
-  const getActive = (routerNames = []) => {
-    return routerNames.includes(routerNames, history.location.pathname) ? 'active' : '';
-  }
+  //hide and show navbar if the current pathname includes any of the values in the withouSidebarRoutes array
+  // const withouSidebarRoutes = [ROUTER.CONTACT, ROUTER.ALIO, ROUTER.CAKE, ROUTER.AGURI, ROUTER.FASHION];
+  //
+  // const { pathname } = useLocation();
+  // if (withouSidebarRoutes.some((item) => pathname.includes(item)))
+  //   return null;
 
   return (
     <div className={`active ${show && 'hidden'}`}>
+      {/*{withouSidebarRoutes.some((item) => pathname.includes(item)) ? null : (*/}
       <Navbar className="header navbar" expand="lg">
             <div className="header-content">
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                   <Nav><Link className="nav-link" to="/">HOME</Link></Nav>
-                  <Nav><Link to={ROUTER.ABOUT} className={`nav-link ${getActive([ROUTER.ABOUT])}`}>ABOUT</Link></Nav>
+                  <Nav><Link to={ROUTER.ABOUT} className="nav-link">ABOUT</Link></Nav>
                   <NavDropdown title="DESIGNS" id="basic-nav-dropdown">
                     <NavDropdown.Item>
                       <Link to={ROUTER.AGURI} className="nav-link">AGURI</Link>
@@ -58,6 +61,7 @@ const Header = () => {
               </Navbar.Collapse>
             </div>
           </Navbar>
+          {/*)}*/}
     </div>
   )
 }
