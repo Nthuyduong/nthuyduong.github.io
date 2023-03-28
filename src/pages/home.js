@@ -43,35 +43,36 @@ const Home = () => {
               <div className="sentence-container">
                 <img src="./images/home/Showcase.png" alt="showcase" loading="lazy"/>
               </div>
-              <div className="img-text">
-                <div className="content">
-                  <div className="content__container">
-                    <p className="content__container__text heading_2">
-                      Hello
-                    </p>
+              {/*<div className="img-text">*/}
+              {/*  <div className="content">*/}
+              {/*    <div className="content__container">*/}
+              {/*      <p className="content__container__text heading_2">*/}
+              {/*        Hello*/}
+              {/*      </p>*/}
 
-                    <ul className="content__container__list">
-                      <li className="content__container__list__item heading_3">
-                        Welcome !
-                      </li>
-                      <li className="content__container__list__item heading_3">Glad you here</li>
-                      <li className="content__container__list__item heading_3">This's my portfolio</li>
-                    </ul>
-                  </div>
+              {/*      <ul className="content__container__list">*/}
+              {/*        <li className="content__container__list__item heading_3">*/}
+              {/*          Welcome !*/}
+              {/*        </li>*/}
+              {/*        <li className="content__container__list__item heading_3">Glad you here</li>*/}
+              {/*        <li className="content__container__list__item heading_3">This's my portfolio</li>*/}
+              {/*      </ul>*/}
+              {/*    </div>*/}
+              {/*  </div>*/}
+              <div className="img-text">
+                <div className="heading_3">
+                  Hello!
                 </div>
-                {/*<div className="heading_3">*/}
-                {/*  Hello!*/}
-                {/*</div>*/}
-                {/*<img className="img-smile mx-3" src="./images/icons/smile.svg" alt="smile" loading="lazy"/>*/}
-                {/*<img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>*/}
-                {/*<div className="heading_3 mx-3">*/}
-                {/*  Welcome to my website.*/}
-                {/*</div>*/}
-                {/*<img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>*/}
-                {/*<div className="heading_3 mr-3">*/}
-                {/*  I'm delighted to share my portfolio with you!*/}
-                {/*</div>*/}
-                {/*<img className="img-ellipe mr-3" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>*/}
+                <img className="img-smile mx-3" src="./images/icons/smile.svg" alt="smile" loading="lazy"/>
+                <img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>
+                <div className="heading_3 mx-3">
+                  Welcome to my website.
+                </div>
+                <img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>
+                <div className="heading_3 mr-3">
+                  I'm delighted to share my portfolio with you!
+                </div>
+                <img className="img-ellipe mr-3" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>
               </div>
             </div>
           </div>
