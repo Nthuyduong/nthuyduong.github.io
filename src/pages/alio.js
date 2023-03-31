@@ -135,13 +135,23 @@ const Alio = () => {
                             <div className="r-logo sm-img">
                                 <img className="mb-4" src={require(`../../public/images/Pj02_yoga/${logo[currentLogoIndex]}`)}
                                      alt="carousel image" />
-                                <div className="heading_6 text-center">BE WITH YOU ANYWHERE, ANYTIME</div>
+                                <div className="heading_6 text-light text-center">BE WITH YOU ANYWHERE, ANYTIME</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="alio7 pdb-60">
                     <img className="w-100" src="./images/Pj02_yoga/line7.png" alt="#" loading="lazy"/>
+                </div>
+                <div className="alio8">
+                    <div className="row">
+                        <div className="col-6">
+                            <img className="w-100" src="./images/Pj02_yoga/line7-01.png" alt="#" loading="lazy"/>
+                        </div>
+                        <div className="col-6">
+                            <img className="w-100" src="./images/Pj02_yoga/line7-02.png" alt="#" loading="lazy"/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
