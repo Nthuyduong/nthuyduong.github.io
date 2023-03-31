@@ -32,20 +32,21 @@ const Alio = () => {
     }, [logo.length]);
 
     const [currentShowcaseIndex, setCurrentShowcaseIndex] = useState(0);
-    const [showcase] = useState(
+    const [Showcase] = useState(
         [
-            "showcase1.png",
-            "showcase2.png",
-            "showcase3.png",
+            "Showcase1.png",
+            "Showcase2.png",
+            "Showcase3.png",
+            "Showcase4.png",
         ]
     )
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentShowcaseIndex((prevIndex) =>
-                prevIndex === showcase.length - 1 ? 0 : prevIndex + 1);
-        }, 800);
+                prevIndex === Showcase.length - 1 ? 0 : prevIndex + 1);
+        }, 900);
         return () => clearInterval(interval);
-    }, [showcase.length]);
+    }, [Showcase.length]);
 
     return (
         <div className="container-fluid">
@@ -120,9 +121,9 @@ const Alio = () => {
                     <img className="w-100" src="./images/Pj02_yoga/line4.webp" alt="#" loading="lazy"/>
                 </div>
                 <div className="alio5 pdb-60">
-                    <img className="w-100" src="./images/Pj02_yoga/line5-bg.png" alt="#" loading="lazy"/>
-                    <div className="show">
-                        <img className="" src={require(`../../public/images/Pj02_yoga/${showcase[currentImageIndex]}`)} alt="#" loading="lazy"/>
+                    {/*<img className="w-100" src="./images/Pj02_yoga/line5-bg.png" alt="#" loading="lazy"/>*/}
+                    <div className="">
+                        <img className="w-100" src={require(`../../public/images/Pj02_yoga/${Showcase[currentImageIndex]}`)} alt="#" loading="lazy"/>
                     </div>
                 </div>
                 <div className="alio6 pdb-60">
@@ -143,13 +144,45 @@ const Alio = () => {
                 <div className="alio7 pdb-60">
                     <img className="w-100" src="./images/Pj02_yoga/line7.png" alt="#" loading="lazy"/>
                 </div>
-                <div className="alio8">
+                <div className="alio8 pdb-60">
                     <div className="row">
                         <div className="col-6">
                             <img className="w-100" src="./images/Pj02_yoga/line7-01.png" alt="#" loading="lazy"/>
                         </div>
                         <div className="col-6">
                             <img className="w-100" src="./images/Pj02_yoga/line7-02.png" alt="#" loading="lazy"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="row more-pj">
+                <div className="col-4 more-pj-1">
+                    <div className="">
+                        <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
+                        <div className="body_text pj_name">Aguri Jewellery Website</div>
+                        <div className="small_text pj_intro">
+                            User testing was an iterative process that was conducted at every milestone of the project to identify
+                            the biggest pain points in the current version.
+                        </div>
+                    </div>
+                </div>
+                <div className="col-4 more-pj-2">
+                    <div className="">
+                        <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
+                        <div className="body_text pj_name">Verite Fashion App</div>
+                        <div className="small_text pj_intro">
+                            User testing was an iterative process that was conducted at every milestone of the project to identify
+                            the biggest pain points in the current version.
+                        </div>
+                    </div>
+                </div>
+                <div className="col-4 more-pj-3">
+                    <div className="">
+                        <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
+                        <div className="body_text pj_name">Alio Yoga Website</div>
+                        <div className="small_text pj_intro">
+                            User testing was an iterative process that was conducted at every milestone of the project to identify
+                            the biggest pain points in the current version.
                         </div>
                     </div>
                 </div>
