@@ -40,6 +40,7 @@ const Layout = ({ children }) => {
                     {children}
                 </div>
                 <Footer />
+
                 <div className="back-to-top btt2 body_text" onClick={() => { scrollToTop() }}>Back to top</div>
                 <div className="top-to-btm">
                     <FontAwesomeIcon icon="fa-solid fa-arrow-up icon-up" />

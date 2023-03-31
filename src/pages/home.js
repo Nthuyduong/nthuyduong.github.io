@@ -25,7 +25,7 @@ const Home = () => {
         <div className="page-element home-info container-fluid">
           <div className="row">
             <div className="col-8 d-flex">
-              <img src="./images/home/logo-icon.svg" alt="logo" loading="lazy"/>
+              <img className="main-logo" src="./images/home/logo-icon.svg" alt="logo" loading="lazy"/>
               <div className="info-content medium_text">
                 Hello, My name is
                 <div className="info-name heading_4">
@@ -82,7 +82,7 @@ const Home = () => {
               <div className="col-5 d-flex">
                 <div className="info-content body_text">
                   19/08/1998 __________
-                  <div className="info-lage heading_5">
+                  <div className="heading_4 mt-3">
                     I’m UX/UI Designer
                   </div>
                 </div>
@@ -144,7 +144,7 @@ const Home = () => {
               <div className="col-3"></div>
             </div>
             <div className="row des_r1">
-              <div className="col-5">
+              <div className="col-lg-5 col-sm-12">
                 <div className="des_card img-des">
                   <img className="w-100" src="./images/home/mydes_1.png" alt="logo" loading="lazy"/>
                   <div className="d-flex mt-3 mb-2">
@@ -159,7 +159,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-1"/>
-              <div className="col-6">
+              <div className="col-lg-6 col-sm-12">
                 <div className="des_card img-des">
                   <img className="w-100" src="./images/home/mydes_2.png" alt="logo" loading="lazy"/>
                   <div className="d-flex mt-3 mb-2">
@@ -175,7 +175,7 @@ const Home = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-6">
+              <div className="col-lg-6 col-sm-12">
                 <div className="des_card img-des">
                   <img className="w-100" src="./images/home/mydes_3.png" alt="logo" loading="lazy"/>
                   <div className="d-flex mt-3 mb-2">
@@ -190,7 +190,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-1"/>
-              <div className="col-5">
+              <div className="col-lg-5 col-sm-12">
                 <div className="des_card img-des">
                   <img className="w-100" src="./images/home/mydes_4.png" alt="logo" loading="lazy"/>
                   <div className="d-flex mt-3 mb-2">
