@@ -195,18 +195,18 @@ body {
     transform: rotate(-90deg);
   }
   .icon-up{
+    color: #666;
     position: fixed;
-    left: 10px;
-    top: 15%;
+    left: 25px;
+    top: 10%;
     cursor: pointer;
-    transform: rotate(-90deg);
   }
   .icon-down{
+    color: #666;
     position: fixed;
-    left: -8px;
-    bottom: 5%;
+    left: 25px;
+    bottom: 10%;
     cursor: pointer;
-    transform: rotate(-90deg);
   }
 }
 .btt2{

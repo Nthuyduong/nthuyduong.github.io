@@ -156,7 +156,7 @@ const Alio = () => {
                 </div>
             </div>
             <div className="row more-pj">
-                <div className="col-4 more-pj-1">
+                <div className="col-4 more-1">
                     <div className="">
                         <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
                         <div className="body_text pj_name">Aguri Jewellery Website</div>
@@ -166,7 +166,7 @@ const Alio = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-4 more-pj-2">
+                <div className="col-4 more-2">
                     <div className="">
                         <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
                         <div className="body_text pj_name">Verite Fashion App</div>
@@ -176,7 +176,7 @@ const Alio = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-4 more-pj-3">
+                <div className="col-4 more-3">
                     <div className="">
                         <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
                         <div className="body_text pj_name">Alio Yoga Website</div>

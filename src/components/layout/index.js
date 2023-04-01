@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import "@fortawesome/fontawesome-svg-core"
 import "@fortawesome/react-fontawesome"
+import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 const Layout = ({ children }) => {
   // Scroll button function
@@ -60,13 +61,11 @@ const Layout = ({ children }) => {
 
                 <div className="back-to-top btt2 body_text" onClick={() => { scrollToTop() }}>Back to top</div>
                 <div className="top-to-btm">
-                    <div className="body_text icon-up" onClick={handleScrollUp}>Scroll top</div>
-                    {/*<FontAwesomeIcon icon="fa-solid fa-arrow-up icon-up" />*/}
+                    <FontAwesomeIcon className="icon-up" icon={faArrowUp} onClick={handleScrollUp}/>
                     <div className="">
                         <div className="body_text position">1/10</div>
                     </div>
-                    {/*<FontAwesomeIcon icon="fa-solid fa-arrow-down icon-down" />*/}
-                    <div className="body_text icon-down" onClick={handleScrollDown}>Scroll bottom</div>
+                    <FontAwesomeIcon className="icon-down" icon={faArrowDown} onClick={handleScrollDown}/>
                 </div>
             </div>
         );
