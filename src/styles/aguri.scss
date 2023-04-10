@@ -1,10 +1,15 @@
 .line4-right{
   background-color: #F5EAE0;
 }
-.line6-inner{
+.ag-line6{
   background-color: #F5EAE0;
-  position: relative;
-  height:600px
+  .inner{
+    padding:60px 100px;
+  }
+  img{
+    border: 1px solid #808080;
+  }
+
 }
 .line6-img{
   position: absolute;

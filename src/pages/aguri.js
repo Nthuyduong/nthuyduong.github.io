@@ -9,13 +9,14 @@ const Aguri = () => {
             "buy2.png",
             "buy3.png",
             "buy4.png",
+            "buy5.png",
         ]
     )
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentBuyIndex((prevIndex) =>
                 prevIndex === buy.length - 1 ? 0 : prevIndex + 1);
-        }, 900);
+        }, 950);
         return () => clearInterval(interval);
     }, [buy.length]);
 
@@ -74,14 +75,15 @@ const Aguri = () => {
                         </div>
                     </div>
                     <div className="ag-line5 pdb-60">
-                        <img className="w-100" src="./images/Pj03_aguri/product-detail.png" alt="#" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj03_aguri/home.png" alt="#" loading="lazy"/>
                     </div>
                     <div className="ag-line6 pdb-60">
-                        <div className="line6-inner">
-                            <div className="line6-img">
-                                <img className="w-100" src={require(`../../public/images/Pj03_aguri/${buy[currentBuyIndex]}`)} alt="#" loading="lazy"/>
-                            </div>
+                        <div className="inner">
+                            <img className="w-100" src={require(`../../public/images/Pj03_aguri/${buy[currentBuyIndex]}`)} alt="#" loading="lazy"/>
                         </div>
+                    </div>
+                    <div className="ag-line6">
+
                     </div>
                 </div>
             </div>
