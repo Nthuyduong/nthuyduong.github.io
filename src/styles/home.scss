@@ -85,20 +85,17 @@
       }
     }
   }
-  .my-design {
-    .img-des {
-      overflow: hidden;
-      img {
-        width: 100%;
-        height: auto;
-        filter: grayscale(100%);
-        transition: all 1s ease;
-      }
-      img:hover {
-        filter: grayscale(0%);
-      }
-
-    }
+}
+.img-des {
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: all 1s ease;
+  }
+  img:hover {
+    filter: grayscale(0%);
   }
 }
 .pj_name{

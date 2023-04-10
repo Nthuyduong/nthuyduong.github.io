@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Carousel from 'react-bootstrap/Carousel';
 
 const Alio = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -48,141 +49,187 @@ const Alio = () => {
         return () => clearInterval(interval);
     }, [Showcase.length]);
 
+
+    const [index, setIndex] = useState(0);
+    const handleSelect = (selectedIndex, e) => {
+        setIndex(selectedIndex);
+    };
+
     return (
-        <div className="container-fluid">
-            <div className="product-showcase">
-                <div className="alio1 pdb-60">
-                    <div className="row">
-                        <div className="col-6">
-                            <img className="w-100" src="./images/Pj02_yoga/line1-01.png" alt="#" loading="lazy"/>
-                        </div>
-                        <div className="col-6 r1-right">
-                            <img className="w-100" src="./images/Pj02_yoga/line1-02.webp" alt="#" loading="lazy"/>
-                            <div className="slide-content">
-                                <div className="heading_5">You will</div>
-                                <div className="heading_1 my-2">Be Your Best</div>
-                                <div className="heading_5">If you never stop</div>
-                                <div className="heading_1 mt-2">Trying & Being You</div>
+        <div>
+            <div className="container-fluid">
+                <div className="product-showcase">
+                    <div className="alio1 pdb-60">
+                        <div className="row">
+                            <div className="col-6">
+                                <img className="w-100" src="./images/Pj02_yoga/line1-01.png" alt="#" loading="lazy"/>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="alio2 pdb-60">
-                    <div className="row">
-                        <div className="col-6 r2-left">
-                            <div className="content2">
-                                <div className="heading_6">Introduction</div>
-                                <div className="body_text">
-                                    “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,
-                                    semi precious and artificial jewelleries. They sell these jewelleries under different brand names.
-                                    The quality of the products are renowned for striking features such as smooth polish,
-                                    stunning design and excelling clarity, look and feature, and luster. “AGURI JEWELLERY” is one
-                                    of the leading manufacturers and suppliers of precious, semi precious and artificial jewelleries.
-                                    They sell these jewelleries under different brand names. The quality of the products are
-                                    renowned for striking features such as smooth polish, stunning design and excelling clarity,
-                                    look and feature, and luster.
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-6">
-                            <div className="alio2-left">
-                                <img className="w-100" src="./images/Pj02_yoga/line2-02-lg.png" alt="#" loading="lazy"/>
-                                <div className="img-inner">
-                                    <img className="" src="./images/Pj02_yoga/line2-02-sm.png" alt="#" loading="lazy"/>
+                            <div className="col-6 r1-right">
+                                <img className="w-100" src="./images/Pj02_yoga/line1-02.webp" alt="#" loading="lazy"/>
+                                <div className="slide-content">
+                                    <div className="heading_5">You will</div>
+                                    <div className="heading_1 my-2">Be Your Best</div>
+                                    <div className="heading_5">If you never stop</div>
+                                    <div className="heading_1 mt-2">Trying & Being You</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="alio3 pdb-60">
-                    <div className="row ">
-                        <div className="col-6 r3-left">
-                            <img className="w-100" src={require(`../../public/images/Pj02_yoga/${images[currentImageIndex]}`)}
-                                 alt="carousel image" />
-                        </div>
-                        <div className="col-6 r3-right">
-                            <div className="content2">
-                                <div className="heading_6">The Logotype</div>
-                                <div className="body_text">
-                                    “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,
-                                    semi precious and artificial jewelleries. They sell these jewelleries under different brand names.
-                                    The quality of the products are renowned for striking features such as smooth polish,
-                                    stunning design and excelling clarity, look and feature, and luster. “AGURI JEWELLERY” is one
-                                    of the leading manufacturers and suppliers of precious, semi precious and artificial jewelleries.
-                                    They sell these jewelleries under different brand names. The quality of the products are
-                                    renowned for striking features such as smooth polish, stunning design and excelling clarity,
-                                    look and feature, and luster.
+                    <div className="alio2 pdb-60">
+                        <div className="row">
+                            <div className="col-6 r2-left">
+                                <div className="content2">
+                                    <div className="heading_6">Introduction</div>
+                                    <div className="body_text">
+                                        “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,
+                                        semi precious and artificial jewelleries. They sell these jewelleries under different brand names.
+                                        The quality of the products are renowned for striking features such as smooth polish,
+                                        stunning design and excelling clarity, look and feature, and luster. “AGURI JEWELLERY” is one
+                                        of the leading manufacturers and suppliers of precious, semi precious and artificial jewelleries.
+                                        They sell these jewelleries under different brand names. The quality of the products are
+                                        renowned for striking features such as smooth polish, stunning design and excelling clarity,
+                                        look and feature, and luster.
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-6">
+                                <div className="alio2-left">
+                                    <img className="w-100" src="./images/Pj02_yoga/line2-02-lg.png" alt="#" loading="lazy"/>
+                                    <div className="img-inner">
+                                        <img className="" src="./images/Pj02_yoga/line2-02-sm.png" alt="#" loading="lazy"/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="alio4 pdb-60">
-                    <img className="w-100" src="./images/Pj02_yoga/line4.webp" alt="#" loading="lazy"/>
-                </div>
-                <div className="alio5 pdb-60">
-                    {/*<img className="w-100" src="./images/Pj02_yoga/line5-bg.png" alt="#" loading="lazy"/>*/}
-                    <div className="">
-                        <img className="w-100" src={require(`../../public/images/Pj02_yoga/${Showcase[currentImageIndex]}`)} alt="#" loading="lazy"/>
-                    </div>
-                </div>
-                <div className="alio6 pdb-60">
-                    <div className="row">
-                        <div className="col-6">
-                            <img className="w-100" src="./images/Pj02_yoga/line6-01.png" alt="#" loading="lazy"/>
-                        </div>
-                        <div className="col-6">
-                            <img className="w-100" src="./images/Pj02_yoga/line6-02.png" alt="#" loading="lazy"/>
-                            <div className="r-logo sm-img">
-                                <img className="mb-4" src={require(`../../public/images/Pj02_yoga/${logo[currentLogoIndex]}`)}
+                    <div className="alio3 pdb-60">
+                        <div className="row ">
+                            <div className="col-6 r3-left">
+                                <img className="w-100" src={require(`../../public/images/Pj02_yoga/${images[currentImageIndex]}`)}
                                      alt="carousel image" />
-                                <div className="heading_6 text-light text-center">BE WITH YOU ANYWHERE, ANYTIME</div>
+                            </div>
+                            <div className="col-6 r3-right">
+                                <div className="content2">
+                                    <div className="heading_6">The Logotype</div>
+                                    <div className="body_text">
+                                        “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,
+                                        semi precious and artificial jewelleries. They sell these jewelleries under different brand names.
+                                        The quality of the products are renowned for striking features such as smooth polish,
+                                        stunning design and excelling clarity, look and feature, and luster. “AGURI JEWELLERY” is one
+                                        of the leading manufacturers and suppliers of precious, semi precious and artificial jewelleries.
+                                        They sell these jewelleries under different brand names. The quality of the products are
+                                        renowned for striking features such as smooth polish, stunning design and excelling clarity,
+                                        look and feature, and luster.
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="alio7 pdb-60">
-                    <img className="w-100" src="./images/Pj02_yoga/line7.png" alt="#" loading="lazy"/>
-                </div>
-                <div className="alio8 pdb-60">
-                    <div className="row">
-                        <div className="col-6">
-                            <img className="w-100" src="./images/Pj02_yoga/line7-01.png" alt="#" loading="lazy"/>
+                    <div className="alio4 pdb-60">
+                        <img className="w-100" src="./images/Pj02_yoga/line4.webp" alt="#" loading="lazy"/>
+                    </div>
+                    <div className="alio5 pdb-60">
+                        <Carousel fade activeIndex={index} onSelect={handleSelect}>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block w-100"
+                                    src="./images/Pj02_yoga/Showcase1.png"
+                                    alt="First slide"
+                                />
+                                <Carousel.Caption>
+                                    <h3>First slide label</h3>
+                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block w-100"
+                                    src="./images/Pj02_yoga/Showcase2.png"
+                                    alt="Second slide"
+                                />
+
+                                <Carousel.Caption>
+                                    <h3>Second slide label</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block w-100"
+                                    src="./images/Pj02_yoga/Showcase4.png"
+                                    alt="Third slide"
+                                />
+
+                                <Carousel.Caption>
+                                    <h3>Third slide label</h3>
+                                    <p>
+                                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                    </p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                        </Carousel>
+
+                    </div>
+                    <div className="alio6 pdb-60">
+                        <div className="row">
+                            <div className="col-6">
+                                <img className="w-100" src="./images/Pj02_yoga/line6-01.png" alt="#" loading="lazy"/>
+                            </div>
+                            <div className="col-6">
+                                <img className="w-100" src="./images/Pj02_yoga/line6-02.png" alt="#" loading="lazy"/>
+                                <div className="r-logo sm-img">
+                                    <img className="mb-4" src={require(`../../public/images/Pj02_yoga/${logo[currentLogoIndex]}`)}
+                                         alt="carousel image" />
+                                    <div className="heading_6 text-light text-center">BE WITH YOU ANYWHERE, ANYTIME</div>
+                                </div>
+                            </div>
                         </div>
-                        <div className="col-6">
-                            <img className="w-100" src="./images/Pj02_yoga/line7-02.png" alt="#" loading="lazy"/>
+                    </div>
+                    <div className="alio7 pdb-60">
+                        <img className="w-100" src="./images/Pj02_yoga/line7.png" alt="#" loading="lazy"/>
+                    </div>
+                    <div className="alio8 pdb-60">
+                        <div className="row">
+                            <div className="col-6">
+                                <img className="w-100" src="./images/Pj02_yoga/line7-01.png" alt="#" loading="lazy"/>
+                            </div>
+                            <div className="col-6">
+                                <img className="w-100" src="./images/Pj02_yoga/line7-02.png" alt="#" loading="lazy"/>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="row more-pj">
-                <div className="col-4 more-1">
-                    <div className="">
-                        <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
-                        <div className="body_text pj_name">Aguri Jewellery Website</div>
-                        <div className="small_text pj_intro">
-                            User testing was an iterative process that was conducted at every milestone of the project to identify
-                            the biggest pain points in the current version.
+            <div className="contain mt-30">
+                <div className="row more-pj">
+                    <div className="col-4 more-1">
+                        <div className="img-des">
+                            <img className="w-100 mb-3" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
+                            <div className="body_text pj_name mb-2">Aguri Jewellery Website</div>
+                            <div className="small_text pj_intro">
+                                User testing was an iterative process that was conducted at every milestone of the project to identify
+                                the biggest pain points in the current version.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="col-4 more-2">
-                    <div className="">
-                        <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
-                        <div className="body_text pj_name">Verite Fashion App</div>
-                        <div className="small_text pj_intro">
-                            User testing was an iterative process that was conducted at every milestone of the project to identify
-                            the biggest pain points in the current version.
+                    <div className="col-4 more-2">
+                        <div className="img-des">
+                            <img className="w-100 mb-3" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
+                            <div className="body_text pj_name mb-2">Verite Fashion App</div>
+                            <div className="small_text pj_intro">
+                                User testing was an iterative process that was conducted at every milestone of the project to identify
+                                the biggest pain points in the current version.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="col-4 more-3">
-                    <div className="">
-                        <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
-                        <div className="body_text pj_name">Alio Yoga Website</div>
-                        <div className="small_text pj_intro">
-                            User testing was an iterative process that was conducted at every milestone of the project to identify
-                            the biggest pain points in the current version.
+                    <div className="col-4 more-3">
+                        <div className="img-des">
+                            <img className="w-100 mb-3" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
+                            <div className="body_text pj_name mb-2">Alio Yoga Website</div>
+                            <div className="small_text pj_intro">
+                                User testing was an iterative process that was conducted at every milestone of the project to identify
+                                the biggest pain points in the current version.
+                            </div>
                         </div>
                     </div>
                 </div>

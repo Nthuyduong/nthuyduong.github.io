@@ -112,7 +112,9 @@ body {
 .pdb-60{
   padding-bottom: 60px;
 }
-
+.mt-30{
+  margin-top:30px;
+}
 //SHOWCASE HERE
 .test{
   height: 100vh;
@@ -211,4 +213,14 @@ body {
 }
 .btt2{
   bottom: 45% !important;
+}
+.contain{
+  padding-left: 50px;
+  padding-right:50px;
+  .more-pj{
+    .col-4{
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
 }
