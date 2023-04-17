@@ -45,7 +45,7 @@ const Alio = () => {
         const interval = setInterval(() => {
             setCurrentShowcaseIndex((prevIndex) =>
                 prevIndex === Showcase.length - 1 ? 0 : prevIndex + 1);
-        }, 900);
+        }, 1000);
         return () => clearInterval(interval);
     }, [Showcase.length]);
 
@@ -129,46 +129,7 @@ const Alio = () => {
                         <img className="w-100" src="./images/Pj02_yoga/line4.webp" alt="#" loading="lazy"/>
                     </div>
                     <div className="alio5 pdb-60">
-                        <Carousel fade activeIndex={index} onSelect={handleSelect}>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src="./images/Pj02_yoga/Showcase1.png"
-                                    alt="First slide"
-                                />
-                                <Carousel.Caption>
-                                    <h3>First slide label</h3>
-                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src="./images/Pj02_yoga/Showcase2.png"
-                                    alt="Second slide"
-                                />
-
-                                <Carousel.Caption>
-                                    <h3>Second slide label</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src="./images/Pj02_yoga/Showcase4.png"
-                                    alt="Third slide"
-                                />
-
-                                <Carousel.Caption>
-                                    <h3>Third slide label</h3>
-                                    <p>
-                                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                                    </p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                        </Carousel>
-
+                        <img className="w-100" src={require(`../../public/images/Pj02_yoga/${Showcase[currentLogoIndex]}`)}/>
                     </div>
                     <div className="alio6 pdb-60">
                         <div className="row">
@@ -197,6 +158,9 @@ const Alio = () => {
                                 <img className="w-100" src="./images/Pj02_yoga/line7-02.png" alt="#" loading="lazy"/>
                             </div>
                         </div>
+                    </div>
+                    <div className="alio9 pdb-60">
+                        <img className="w-100" src="./images/Pj02_yoga/line9.png" alt="#" loading="lazy"/>
                     </div>
                 </div>
             </div>

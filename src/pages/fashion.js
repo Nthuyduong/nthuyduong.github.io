@@ -32,12 +32,8 @@ const Fashion = () => {
                             </div>
                         </div>
                     </div>
-
                     <div className="verite_line2 pdb-60">
                         <div className="row">
-                            <div className="col-6">
-                                <img className="w-100" src="./images/Pj04_fashion/line2-01.png" alt="#" loading="lazy"/>
-                            </div>
                             <div className="col-6">
                                 <div className="content2">
                                     <div className="heading_6">Introduction</div>
@@ -51,7 +47,13 @@ const Fashion = () => {
                                     </div>
                                 </div>
                             </div>
+                            <div className="col-6">
+                                <img className="w-100" src="./images/Pj04_fashion/line2-01.png" alt="#" loading="lazy"/>
+                            </div>
                         </div>
+                    </div>
+                    <div className="verite-show1 pdb-60">
+                        <img className="mb-4 w-100" src="./images/Pj04_fashion/verite-show.png" alt="#" loading="lazy"/>
                     </div>
                     <div className="verite_line3 pdb-60">
                         <div className="row">

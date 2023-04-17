@@ -60,19 +60,19 @@ const Home = () => {
               {/*    </div>*/}
               {/*  </div>*/}
               <div className="img-text">
-                <div className="heading_3">
+                <div className="heading_4 text-light">
                   Hello!
                 </div>
-                <img className="img-smile mx-3" src="./images/icons/smile.svg" alt="smile" loading="lazy"/>
+                <img className="img-smile mx-4" src="./images/icons/smile.svg" alt="smile" loading="lazy"/>
                 <img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>
-                <div className="heading_3 mx-3">
+                <div className="heading_4 mx-4 text-light">
                   Welcome to my website.
                 </div>
                 <img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>
-                <div className="heading_3 mr-3">
+                <div className="heading_4 mx-4 text-light">
                   I'm delighted to share my portfolio with you!
                 </div>
-                <img className="img-ellipe mr-3" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>
+                <img className="img-ellipe mr-4" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>
               </div>
             </div>
           </div>

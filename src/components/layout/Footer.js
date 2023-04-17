@@ -20,7 +20,7 @@ const Header = () => {
             <p>Follow on <a href="https://www.behance.net/thydngnguyn31">Behance</a></p>
           </div>
           <div className="col-4">
-          I'm a UX/UI designer here to help create intuitive and visually appealing digital interfaces for the best possible user experience.<a className="read-more" href="#">Read more</a>
+          I'm an UX/UI designer here to help create intuitive and visually appealing digital interfaces for the best possible user experience.<a className="read-more" href="#">Read more</a>
           </div>
         </div>
       </div>

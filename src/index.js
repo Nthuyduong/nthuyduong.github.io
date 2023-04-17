@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap";
 import "@fortawesome/fontawesome-svg-core"
 import "@fortawesome/react-fontawesome"
+import "./fonts.scss";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
