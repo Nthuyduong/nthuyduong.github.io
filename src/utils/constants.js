@@ -5,5 +5,5 @@ export const ROUTER = {
   AGURI: '/aguri',
   ALIO: '/alio',
   FASHION: '/verite',
-  CAKE: '/season cake',
+  CAKE: '/cake',
 }

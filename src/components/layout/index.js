@@ -14,15 +14,15 @@ import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 const Layout = ({ children }) => {
   // Scroll button function
   const [scrollPosition, setScrollPosition] = useState(0);
-
+  //scroll up a new position
   const handleScrollUp = () => {
-    const newPosition = scrollPosition - 800; // adjust the number of pixels to scroll up/down
+    const newPosition = scrollPosition - 820; // adjust the number of pixels to scroll up/down
     setScrollPosition(newPosition);
     window.scrollTo({ top: newPosition, behavior: 'smooth' });
   };
-
+  //scroll down a new position
   const handleScrollDown = () => {
-    const newPosition = scrollPosition + 800; // adjust the number of pixels to scroll up/down
+    const newPosition = scrollPosition + 820; // adjust the number of pixels to scroll up/down
     setScrollPosition(newPosition);
     window.scrollTo({ top: newPosition, behavior: 'smooth' });
   };
@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
 
   //Hide and Display side nav bar
   const discardElement = [ROUTER.CONTACT];
-  const withoutElement = [ROUTER.CONTACT, ROUTER.ALIO, ROUTER.CAKE, ROUTER.AGURI, ROUTER.FASHION];
+  const withoutElement = [ROUTER.ALIO, ROUTER.CAKE, ROUTER.AGURI, ROUTER.FASHION];
 
   const { pathname } = useLocation();
   //Hide Side Nav

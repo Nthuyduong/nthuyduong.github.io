@@ -112,6 +112,9 @@ body {
 .pdb-60{
   padding-bottom: 60px;
 }
+.mdb-60{
+  margin-bottom:60px;
+}
 .mt-30{
   margin-top:30px;
 }
@@ -214,13 +217,20 @@ body {
 .btt2{
   bottom: 45% !important;
 }
-.contain{
-  padding-left: 50px;
-  padding-right:50px;
-  .more-pj{
-    .col-4{
-      padding-left: 15px !important;
-      padding-right: 15px !important;
+.more-project{
+  margin-top:90px;
+  .contain{
+    padding-left: 50px;
+    padding-right:50px;
+    .more-pj{
+      .col-4{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        .pj_name{
+          margin-bottom: 10px;
+          margin-top:20px;
+        }
+      }
     }
   }
 }
@@ -232,4 +242,15 @@ body {
       padding-left:0px !important;
     }
   }
+}
+
+.ag-line6{
+  background-color: #F5EAE0;
+  .inner{
+    padding:60px 100px;
+  }
+  img{
+    border: 1px solid #808080;
+  }
+
 }

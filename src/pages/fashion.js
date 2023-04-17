@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const Fashion = () => {
     return(
@@ -80,35 +81,43 @@ const Fashion = () => {
                     </div>
                 </div>
             </div>
-            <div className="contain">
-                <div className="row more-pj">
-                    <div className="col-4 more-1">
-                        <div className="">
-                            <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
-                            <div className="body_text pj_name">Aguri Jewellery Website</div>
-                            <div className="small_text pj_intro">
-                                User testing was an iterative process that was conducted at every milestone of the project to identify
-                                the biggest pain points in the current version.
+            <div className="more-project">
+                <div className="contain">
+                    <div className="row more-pj">
+                        <div className="col-4 more-1">
+                            <div className="img-des">
+                                <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
+                                <div className="body_text pj_name">
+                                    <Link to="/aguri">Aguri Jewellery Website</Link>
+                                </div>
+                                <div className="small_text pj_intro">
+                                    User testing was an iterative process that was conducted at every milestone of the project to identify
+                                    the biggest pain points in the current version.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-4 more-2">
-                        <div className="">
-                            <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
-                            <div className="body_text pj_name">Verite Fashion App</div>
-                            <div className="small_text pj_intro">
-                                User testing was an iterative process that was conducted at every milestone of the project to identify
-                                the biggest pain points in the current version.
+                        <div className="col-4">
+                            <div className="img-des">
+                                <img className="w-100" src="./images/home/more-4.png" alt="logo" loading="lazy"/>
+                                <div className="body_text pj_name">
+                                    Season Cake Blog
+                                </div>
+                                <div className="small_text pj_intro">
+                                    User testing was an iterative process that was conducted at every milestone of the project to identify
+                                    the biggest pain points in the current version.
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-4 more-3">
-                        <div className="">
-                            <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
-                            <div className="body_text pj_name">Alio Yoga Website</div>
-                            <div className="small_text pj_intro">
-                                User testing was an iterative process that was conducted at every milestone of the project to identify
-                                the biggest pain points in the current version.
+                        <div className="col-4 more-2">
+                            <div className="img-des">
+                                <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
+                                <div className="body_text pj_name">
+                                    Alio Yoga Website
+                                </div>
+                                <div className="small_text pj_intro">
+                                    User testing was an iterative process that was conducted at every milestone of the project to identify
+                                    the biggest pain points in the current version.
+                                </div>
                             </div>
                         </div>
                     </div>

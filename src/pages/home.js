@@ -43,22 +43,6 @@ const Home = () => {
               <div className="sentence-container">
                 <img src="./images/home/Showcase.png" alt="showcase" loading="lazy"/>
               </div>
-              {/*<div className="img-text">*/}
-              {/*  <div className="content">*/}
-              {/*    <div className="content__container">*/}
-              {/*      <p className="content__container__text heading_2">*/}
-              {/*        Hello*/}
-              {/*      </p>*/}
-
-              {/*      <ul className="content__container__list">*/}
-              {/*        <li className="content__container__list__item heading_3">*/}
-              {/*          Welcome !*/}
-              {/*        </li>*/}
-              {/*        <li className="content__container__list__item heading_3">Glad you here</li>*/}
-              {/*        <li className="content__container__list__item heading_3">This's my portfolio</li>*/}
-              {/*      </ul>*/}
-              {/*    </div>*/}
-              {/*  </div>*/}
               <div className="img-text">
                 <div className="heading_4 text-light">
                   Hello!
