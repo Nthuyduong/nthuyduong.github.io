@@ -4,9 +4,7 @@ import Footer from "./Footer";
 import { Link, useHistory } from "react-router-dom";
 import { ROUTER } from "../../utils/constants";
 import { useLocation } from 'react-router-dom';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import "@fortawesome/fontawesome-svg-core"
 import "@fortawesome/react-fontawesome"
 import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
@@ -14,15 +12,16 @@ import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 const Layout = ({ children }) => {
   // Scroll button function
   const [scrollPosition, setScrollPosition] = useState(0);
+
   //scroll up a new position
   const handleScrollUp = () => {
-    const newPosition = scrollPosition - 820; // adjust the number of pixels to scroll up/down
+    const newPosition = scrollPosition - 800; // adjust the number of pixels to scroll up/down
     setScrollPosition(newPosition);
     window.scrollTo({ top: newPosition, behavior: 'smooth' });
   };
   //scroll down a new position
   const handleScrollDown = () => {
-    const newPosition = scrollPosition + 820; // adjust the number of pixels to scroll up/down
+    const newPosition = scrollPosition + 800; // adjust the number of pixels to scroll up/down
     setScrollPosition(newPosition);
     window.scrollTo({ top: newPosition, behavior: 'smooth' });
   };
