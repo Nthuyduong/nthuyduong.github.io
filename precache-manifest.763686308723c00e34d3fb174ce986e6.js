@@ -1,43 +1,47 @@
 self.__precacheManifest = [
   {
-    "revision": "35003005696c062f67ed",
-    "url": "/static/css/main.d8513a80.chunk.css"
+    "revision": "2b37cd569d8d7665d7d1",
+    "url": "/static/css/main.253f8e73.chunk.css"
   },
   {
-    "revision": "35003005696c062f67ed",
-    "url": "/static/js/main.71662dd6.chunk.js"
+    "revision": "2b37cd569d8d7665d7d1",
+    "url": "/static/js/main.180b1dc3.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "d663cba95a11ea3ad696",
+    "revision": "2261b9fe18f82dc0bf26",
     "url": "/static/css/2.9f473672.chunk.css"
   },
   {
-    "revision": "d663cba95a11ea3ad696",
-    "url": "/static/js/2.322367e4.chunk.js"
+    "revision": "2261b9fe18f82dc0bf26",
+    "url": "/static/js/2.76856c21.chunk.js"
+  },
+  {
+    "revision": "4a66957a1e84848a4e8fbfa8dff404e2",
+    "url": "/static/media/buy1.4a66957a.png"
   },
   {
     "revision": "52d4bc9354b1bc3c8ff612666fdfe5a3",
-    "url": "/static/media/buy1.52d4bc93.png"
+    "url": "/static/media/buy2.52d4bc93.png"
   },
   {
     "revision": "d711abca4f10ea4f826316e4d00473f1",
-    "url": "/static/media/buy2.d711abca.png"
+    "url": "/static/media/buy3.d711abca.png"
   },
   {
     "revision": "bc2d30c8625cfe246871f7cff52cfc2a",
-    "url": "/static/media/buy3.bc2d30c8.png"
+    "url": "/static/media/buy4.bc2d30c8.png"
   },
   {
     "revision": "3d69b9eaa6429d6e839c0d65ea090f2b",
-    "url": "/static/media/buy4.3d69b9ea.png"
+    "url": "/static/media/buy5.3d69b9ea.png"
   },
   {
     "revision": "b647038ab9d76dd451a13da1656009d8",
-    "url": "/static/media/buy5.b647038a.png"
+    "url": "/static/media/buy6.b647038a.png"
   },
   {
     "revision": "60c49e3779b9282e1fc14151974b30e8",
@@ -48,16 +52,16 @@ self.__precacheManifest = [
     "url": "/static/media/home.2c34ec9a.png"
   },
   {
-    "revision": "32ab497e1387dbebb4d08ac6f393b21c",
-    "url": "/static/media/line1-01.32ab497e.webp"
+    "revision": "74db1645717aa7e8d8df272a094ced66",
+    "url": "/static/media/line1-01.74db1645.png"
   },
   {
     "revision": "ecec916b73a5b3adfdde7b396989c809",
     "url": "/static/media/line1-02.ecec916b.webp"
   },
   {
-    "revision": "5c9adc4dcd9eaf66546772096bddd548",
-    "url": "/static/media/line2-01.5c9adc4d.webp"
+    "revision": "47b1e0921dc24ddc50bbc80d4596f5ce",
+    "url": "/static/media/line2-01.47b1e092.png"
   },
   {
     "revision": "b5bfee82002408ec476ceb17f2f9a052",
@@ -69,7 +73,7 @@ self.__precacheManifest = [
   },
   {
     "revision": "47a944bf9aafa9aca1db53108879e00e",
-    "url": "/static/media/product-detail.47a944bf.png"
+    "url": "/static/media/line7.47a944bf.png"
   },
   {
     "revision": "85bc91f3086e4430c62893aff3b5c44d",
@@ -160,23 +164,55 @@ self.__precacheManifest = [
     "url": "/static/media/logo3.be28589c.svg"
   },
   {
+    "revision": "64d90db69bac7bb9501624ab0659c40f",
+    "url": "/static/media/about.64d90db6.png"
+  },
+  {
+    "revision": "5311b63ba142a846343a124581be440c",
+    "url": "/static/media/cake1.5311b63b.png"
+  },
+  {
+    "revision": "0d0b548168507ad171d91e9ea63a4b75",
+    "url": "/static/media/cake2.0d0b5481.png"
+  },
+  {
+    "revision": "a7ddbe6f13310b0e47ee8957e38c0f62",
+    "url": "/static/media/cake3.a7ddbe6f.png"
+  },
+  {
+    "revision": "143c15415b58fb8dade6985917e7061c",
+    "url": "/static/media/cake4.143c1541.png"
+  },
+  {
+    "revision": "b08da2d70525c36c6d47b267cd94453f",
+    "url": "/static/media/cake5.b08da2d7.png"
+  },
+  {
+    "revision": "05d0d4bc016d8bcc926a045baa8899df",
+    "url": "/static/media/detail.05d0d4bc.png"
+  },
+  {
     "revision": "77664138d99e9c37c88e6b8fc527290e",
     "url": "/static/media/line2-01.77664138.png"
   },
   {
-    "revision": "4091681ca288118ba1b5012bddae32bf",
-    "url": "/static/media/show1.4091681c.png"
+    "revision": "b38b94d14699ee982d058bc0dc139cdc",
+    "url": "/static/media/show1.b38b94d1.png"
   },
   {
-    "revision": "3bc0611a87091667729252a0cb7f6314",
-    "url": "/static/media/show2.3bc0611a.png"
+    "revision": "86dd8a3ff2771fc9581236c1f1cff3ac",
+    "url": "/static/media/show2.86dd8a3f.png"
+  },
+  {
+    "revision": "c46f92e0bb2207b8af18dba9ab1ce3fb",
+    "url": "/static/media/show3.c46f92e0.png"
   },
   {
     "revision": "1777ac2bac2aa16c7e96c9c9b0e780d0",
     "url": "/static/media/core.1777ac2b.jpg"
   },
   {
-    "revision": "b495ab8ddad3f59ec717f9452247e246",
+    "revision": "96dbea872aa3b11023c4d6bcdd272576",
     "url": "/index.html"
   }
 ];
