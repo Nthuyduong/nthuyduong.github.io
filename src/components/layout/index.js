@@ -78,7 +78,7 @@ const Layout = ({ children }) => {
       </div>
       <Footer />
         <div className="back-to-top body_text" onClick={() => { scrollToTop() }}>Back to top</div>
-        <Link to="/contact" className="get-in-touch body_text">Get in touch now</Link>
+        <Link to="/contact" className="get-in-touch body_text">Get in touch</Link>
     </div>
   )
 }
