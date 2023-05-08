@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {Link} from "react-router-dom";
+import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const Aguri = () => {
 
@@ -90,8 +92,11 @@ const Aguri = () => {
                         <div className="col-4 more-1">
                             <div className="img-des">
                                 <img className="w-100" src="./images/home/more-4.png" alt="logo" loading="lazy"/>
-                                <div className="body_text pj_name">
-                                    <Link to="/aguri">Season Cake Blog</Link>
+                                <div className="d-flex title-pj">
+                                    <div className="body_text pj_name">
+                                        Season Cake Blog
+                                    </div>
+                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
                                 <div className="small_text pj_intro">
                                     User testing was an iterative process that was conducted at every milestone of the project to identify
@@ -102,7 +107,10 @@ const Aguri = () => {
                         <div className="col-4">
                             <div className="img-des">
                                 <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
-                                <div className="body_text pj_name">Verite Fashion App</div>
+                                <div className=""d-flex title-pj>
+                                    <div className="body_text pj_name">Verite Fashion App</div>
+                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                </div>
                                 <div className="small_text pj_intro">
                                     User testing was an iterative process that was conducted at every milestone of the project to identify
                                     the biggest pain points in the current version.
@@ -112,7 +120,10 @@ const Aguri = () => {
                         <div className="col-4 more-2">
                             <div className="img-des">
                                 <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
-                                <div className="body_text pj_name">Alio Yoga Website</div>
+                                <div className="d-flex title-pj">
+                                    <div className="body_text pj_name">Alio Yoga Website</div>
+                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                </div>
                                 <div className="small_text pj_intro">
                                     User testing was an iterative process that was conducted at every milestone of the project to identify
                                     the biggest pain points in the current version.

@@ -1,5 +1,6 @@
+
 .product-showcase{
-  background-color: $primary_color;
+  background-color: #F0F0EA;
 }
 .r1-right{
   position: relative;
@@ -46,6 +47,7 @@
   animation: slide-in-left 2s ease-out forwards;
   opacity: 0;
 }
+
 @keyframes slide-in-left {
   from {
     transform: translateX(-15%);

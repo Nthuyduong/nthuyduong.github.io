@@ -235,7 +235,7 @@ body {
   }
 }
 .dropdown-menu{
-  left:45px !important;
+  left:47px !important;
   margin-top:10px !important;
   .dropdown-item{
     .nav-link{
@@ -253,4 +253,12 @@ body {
     border: 1px solid #808080;
   }
 
+}
+//MORE PROJECT
+.title-pj .pj_name{
+  margin-right: auto;
+}
+.title-pj .icon-right{
+  display: flex;
+  align-items: center;
 }

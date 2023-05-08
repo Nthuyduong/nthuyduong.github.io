@@ -7,7 +7,7 @@ import { useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "@fortawesome/fontawesome-svg-core"
 import "@fortawesome/react-fontawesome"
-import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import {faArrowDown, faArrowRight, faArrowUp} from "@fortawesome/free-solid-svg-icons";
 
 const Layout = ({ children }) => {
   // Scroll button function
