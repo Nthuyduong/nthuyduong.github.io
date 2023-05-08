@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "901497e01dfa6c607be1",
-    "url": "/static/css/main.fc813e42.chunk.css"
+    "revision": "9d3f74e597ee4c949e76",
+    "url": "/static/css/main.609b9c05.chunk.css"
   },
   {
-    "revision": "901497e01dfa6c607be1",
-    "url": "/static/js/main.cf2e3359.chunk.js"
+    "revision": "9d3f74e597ee4c949e76",
+    "url": "/static/js/main.38774405.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "ac4048b151e7e6b1b905",
+    "revision": "5f734a9f4f5af279fff7",
     "url": "/static/css/2.9f473672.chunk.css"
   },
   {
-    "revision": "ac4048b151e7e6b1b905",
-    "url": "/static/js/2.4179fdca.chunk.js"
+    "revision": "5f734a9f4f5af279fff7",
+    "url": "/static/js/2.92621a12.chunk.js"
   },
   {
     "revision": "4a66957a1e84848a4e8fbfa8dff404e2",
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "url": "/static/media/line1-01.74db1645.png"
   },
   {
-    "revision": "ecec916b73a5b3adfdde7b396989c809",
-    "url": "/static/media/line1-02.ecec916b.webp"
+    "revision": "ae4f38a070058653948d1901b742f85e",
+    "url": "/static/media/line1-02.ae4f38a0.png"
   },
   {
     "revision": "47b1e0921dc24ddc50bbc80d4596f5ce",
@@ -168,24 +168,36 @@ self.__precacheManifest = [
     "url": "/static/media/about.64d90db6.png"
   },
   {
+    "revision": "fd24121331dac591ece6416fc9d60864",
+    "url": "/static/media/cake1.fd241213.png"
+  },
+  {
+    "revision": "428069c1a99555cc96f52d24b39dea77",
+    "url": "/static/media/cake2.428069c1.png"
+  },
+  {
+    "revision": "d957748fa39d31bb49700258fb5b18a3",
+    "url": "/static/media/cake3.d957748f.png"
+  },
+  {
     "revision": "5311b63ba142a846343a124581be440c",
-    "url": "/static/media/cake1.5311b63b.png"
+    "url": "/static/media/cake4.5311b63b.png"
   },
   {
     "revision": "0d0b548168507ad171d91e9ea63a4b75",
-    "url": "/static/media/cake2.0d0b5481.png"
+    "url": "/static/media/cake5.0d0b5481.png"
   },
   {
     "revision": "a7ddbe6f13310b0e47ee8957e38c0f62",
-    "url": "/static/media/cake3.a7ddbe6f.png"
+    "url": "/static/media/cake6.a7ddbe6f.png"
   },
   {
     "revision": "143c15415b58fb8dade6985917e7061c",
-    "url": "/static/media/cake4.143c1541.png"
+    "url": "/static/media/cake7.143c1541.png"
   },
   {
     "revision": "b08da2d70525c36c6d47b267cd94453f",
-    "url": "/static/media/cake5.b08da2d7.png"
+    "url": "/static/media/cake8.b08da2d7.png"
   },
   {
     "revision": "05d0d4bc016d8bcc926a045baa8899df",
@@ -212,7 +224,7 @@ self.__precacheManifest = [
     "url": "/static/media/core.1777ac2b.jpg"
   },
   {
-    "revision": "bf9180cd878959ef024b074c5062bbfe",
+    "revision": "1393c46a995eadca76c3e60e6dd4d60a",
     "url": "/index.html"
   }
 ];
