@@ -34,15 +34,22 @@ const Aguri = () => {
                                 <img className="w-100" src="./images/Pj03_aguri/line1-01.png" alt="#" loading="lazy"/>
                             </div>
                             <div className="col-6">
-                                <img className="w-100" src="./images/Pj03_aguri/line1-02.webp" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj03_aguri/line1-02.png" alt="#" loading="lazy"/>
                             </div>
+                        </div>
+                    </div>
+                    <div className="pdb-60 ag-intro">
+                        <div></div>
+                        <div className="row">
+                            <div className="col-6"></div>
+                            <div className="col-6"></div>
                         </div>
                     </div>
                     <div className="ag-line2 pdb-60">
                         <div className="row">
                             <div className="col-6 line2-left">
                                 <div className="content2">
-                                    <div className="heading_6">Introduction</div>
+                                    <div className="heading_6">Logotype</div>
                                     <div className="body_text mb-5">
                                         “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,
                                         semi precious and artificial jewelleries. They sell these jewelleries under different brand names.

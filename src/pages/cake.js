@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
+import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const Cake = () => {
 
@@ -27,6 +29,9 @@ const Cake = () => {
             "cake3.png",
             "cake4.png",
             "cake5.png",
+            "cake6.png",
+            "cake7.png",
+            "cake8.png",
         ]
     )
     useEffect(() => {
@@ -41,6 +46,9 @@ const Cake = () => {
         <div>
             <div className="container-fluid">
                 <div className="product-showcase">
+                    <div className="cake-banner pdb-60">
+                        <img className="w-100" src="https://i.imgur.com/RLSInkn.png"/>
+                    </div>
                     <div className="">
                         <div className="row">
                             <div className="col-6"></div>
@@ -101,8 +109,11 @@ const Cake = () => {
                         <div className="col-4 more-1">
                             <div className="img-des">
                                 <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
-                                <div className="body_text pj_name">
-                                    <Link to="/aguri">Aguri Jewellery Website</Link>
+                                <div className="d-flex title-pj">
+                                    <div className="body_text pj_name">
+                                        Aguri Jewellery Website
+                                    </div>
+                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
                                 <div className="small_text pj_intro">
                                     User testing was an iterative process that was conducted at every milestone of the project to identify
@@ -113,7 +124,10 @@ const Cake = () => {
                         <div className="col-4">
                             <div className="img-des">
                                 <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
-                                <div className="body_text pj_name">Verite Fashion App</div>
+                                <div className="d-flex title-pj">
+                                    <div className="body_text pj_name">Verite Fashion App</div>
+                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                </div>
                                 <div className="small_text pj_intro">
                                     User testing was an iterative process that was conducted at every milestone of the project to identify
                                     the biggest pain points in the current version.
@@ -123,7 +137,10 @@ const Cake = () => {
                         <div className="col-4 more-2">
                             <div className="img-des">
                                 <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
-                                <div className="body_text pj_name">Alio Yoga Website</div>
+                                <div className="d-flex title-pj">
+                                    <div className="body_text pj_name">Alio Yoga Website</div>
+                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                </div>
                                 <div className="small_text pj_intro">
                                     User testing was an iterative process that was conducted at every milestone of the project to identify
                                     the biggest pain points in the current version.

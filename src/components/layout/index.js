@@ -10,6 +10,10 @@ import "@fortawesome/react-fontawesome"
 import {faArrowDown, faArrowRight, faArrowUp} from "@fortawesome/free-solid-svg-icons";
 
 const Layout = ({ children }) => {
+    //sount scroll behavior
+    const [countdown, setCountdown] = useState(1);
+
+    const scrollDistance = 800;
   // Scroll button function
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -18,12 +22,18 @@ const Layout = ({ children }) => {
     const newPosition = scrollPosition - 800; // adjust the number of pixels to scroll up/down
     setScrollPosition(newPosition);
     window.scrollTo({ top: newPosition, behavior: 'smooth' });
+
   };
   //scroll down a new position
   const handleScrollDown = () => {
     const newPosition = scrollPosition + 800; // adjust the number of pixels to scroll up/down
     setScrollPosition(newPosition);
     window.scrollTo({ top: newPosition, behavior: 'smooth' });
+
+    //count the number of scroll behavior
+    const newCountdown = Math.floor(newPosition / scrollDistance) + 1;
+    setCountdown(newCountdown);
+
   };
 
   //Back-to-top function
@@ -62,7 +72,7 @@ const Layout = ({ children }) => {
                 <div className="top-to-btm">
                     <FontAwesomeIcon className="icon-up" icon={faArrowUp} onClick={handleScrollUp}/>
                     <div className="">
-                        <div className="body_text position">1/10</div>
+                        <div className="body_text position">1/{countdown}</div>
                     </div>
                     <FontAwesomeIcon className="icon-down" icon={faArrowDown} onClick={handleScrollDown}/>
                 </div>
