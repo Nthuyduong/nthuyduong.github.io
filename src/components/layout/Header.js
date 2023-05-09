@@ -25,13 +25,6 @@ const Header = () => {
     }
   }, [])
 
-  //hide and show navbar if the current pathname includes any of the values in the withouSidebarRoutes array
-  // const withouSidebarRoutes = [ROUTER.CONTACT, ROUTER.ALIO, ROUTER.CAKE, ROUTER.AGURI, ROUTER.FASHION];
-  //
-  // const { pathname } = useLocation();
-  // if (withouSidebarRoutes.some((item) => pathname.includes(item)))
-  //   return null;
-
   return (
     <div className={`active ${show && 'hidden'}`}>
       {/*{withouSidebarRoutes.some((item) => pathname.includes(item)) ? null : (*/}

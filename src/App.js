@@ -3,7 +3,6 @@ import {
   Route,
   HashRouter as Router,
   Switch,
-  DefaultRoute,
 } from "react-router-dom";
 
 import { ROUTER } from "./utils/constants";
