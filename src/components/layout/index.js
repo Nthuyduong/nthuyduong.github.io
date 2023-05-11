@@ -54,7 +54,6 @@ const Layout = ({ children }) => {
                 <div className={`page-body-wrapper`}>
                     {children}
                 </div>
-                <Footer />
             </div>
         );
     }

@@ -48,7 +48,7 @@ const Home = () => {
               <img className="main-logo" src="./images/home/logo-icon.svg" alt="logo" loading="lazy"/>
               <div className="info-content medium_text">
                 Hello, My name is
-                <div className="info-name heading_4">
+                <div className="info-name heading_2">
                   Nguyen Thuy Duong
                 </div>
               </div>
@@ -131,7 +131,7 @@ const Home = () => {
             <div className="row my-des-title">
               <div className="col-3"></div>
               <div className="col-6">
-                <div className="heading_3 text-center mb-3">My Designs</div>
+                <div className="heading_2 text-center mb-3">My Designs</div>
                 <div className="body_text text-center">Step into the world of a passionate UI designer's portfolio.
                   Witness the evolution of my skills as I create intuitive interfaces and explore the realm of captivating design.</div>
               </div>
