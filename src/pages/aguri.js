@@ -47,7 +47,7 @@ const Aguri = () => {
                             <div className="col-6 text-center intro-right">
                                 <div className="intro-inner">
                                     <div className="inner-content content2">
-                                        <div className="heading_5">Introduction</div>
+                                        <div className="heading_4">Introduction</div>
                                         <div className="body_text">
                                             “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,
                                             semi precious and artificial jewelleries. They sell these jewelleries under different brand names.
@@ -63,7 +63,7 @@ const Aguri = () => {
                         <div className="row">
                             <div className="col-6 line2-left">
                                 <div className="content2">
-                                    <div className="heading_5">Logotype</div>
+                                    <div className="heading_4">Logotype</div>
                                     <div className="body_text mb-5">
                                         “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,
                                         semi precious and artificial jewelleries. They sell these jewelleries under different brand names.

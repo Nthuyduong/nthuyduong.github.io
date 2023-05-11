@@ -62,7 +62,7 @@ const Cake = () => {
                             </div>
                             <div className="col-6 cake-intro-content">
                                 <div className="content2">
-                                    <div className="heading_5">Introduction</div>
+                                    <div className="heading_4">Introduction</div>
                                     <div className="body_text">
                                         “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,
                                         semi precious and artificial jewelleries. They sell these jewelleries under different brand names.
