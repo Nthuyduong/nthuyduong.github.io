@@ -1,8 +1,31 @@
+.intro-section{
+
+}
 .line2-left{
   background-color: #F5EAE0;
 }
 .line4-right{
   background-color: #F5EAE0;
+}
+.intro-section{
+  position: relative;
+  .intro-right{
+    background-color: #F5EAE0;
+    .intro-inner{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width:520px;
+      height: 90%;
+      border: 1px grey solid;
+      border-radius: 20px;
+      .inner-content{
+        position:absolute;
+        top:40%;
+      }
+    }
+  }
 }
 
 
