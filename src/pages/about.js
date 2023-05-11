@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="about-page">
       <div className="img-container">
-        <img src="./images/about/Showcase.png" loading="lazy" alt="#"></img>
+        <img className="w-100" src="./images/about/Showcase.png" loading="lazy" alt="#"></img>
       </div>
       <div className="page-element">
         <div className="container-fluid about1">
@@ -38,7 +38,7 @@ const About = () => {
           <div className="row">
             <div className="col-3">
               <div className="img-container">
-                <img src="./images/about/xinh.png" alt="#" loading="lazy"></img>
+                <img className="w-100" src="./images/about/me.png" alt="#" loading="lazy"></img>
               </div>
             </div>
             <div className="col-2">
@@ -85,7 +85,7 @@ const About = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-4 skill-common">
-              <div className="heading_4">
+              <div className="heading_3">
                 My Skill
               </div>
               <div className="medium_text mid-text">
@@ -151,10 +151,10 @@ const About = () => {
         </div>
       </div>
       <div className="page-element core-value">
-        <div className="container-fluid">
+        <div className="">
           <div className="row">
-            <div className="col-6 core-img"/>
-            <div className="col-6 core-content">
+            <div className="col-5 core-img"></div>
+            <div className="col-7 core-content">
               <div className="row">
                 <div className="col-4 heading_3">
                   My Core Values
@@ -167,12 +167,12 @@ const About = () => {
                       <div className="medium_text">
                         Live with passion
                       </div>
-                      <div className="small_text detail-mid">
+                      <div className="small_text detail-line">
                         Passion is the driving force behind success and happiness that pushes you to reach your highest potential.
                         <br />
                         “Nothing great in the world has ever been accomplished without passion.” ~ George Hegel
                       </div>
-                      <div className="heading_3">
+                      <div className="heading_2">
                         01/
                       </div>
                     </div>
@@ -182,10 +182,10 @@ const About = () => {
                       <div className="medium_text">
                         Eager to learn
                       </div>
-                      <div className="small_text detail-mid">
+                      <div className="small_text detail-line">
                       "Learn from yesterday, live for today, hope for tomorrow. The important thing is to not stop questioning." ~ Arthur Wellesley
                       </div>
-                      <div className="heading_3">
+                      <div className="heading_2 detail-title-btm">
                         02/
                       </div>
                     </div>
@@ -195,10 +195,10 @@ const About = () => {
                       <div className="medium_text">
                         Undeterred by the hardships
                       </div>
-                      <div className="small_text detail-mid">
+                      <div className="small_text detail-line">
                         “Life doesn't require that we be the best, only that we try our best.” ~ H.Jackson Brown, Jr
                       </div>
-                      <div className="heading_3">
+                      <div className="heading_2 detail-title-btm">
                         03/
                       </div>
                     </div>

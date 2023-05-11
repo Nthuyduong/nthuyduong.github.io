@@ -58,6 +58,7 @@ const Aguri = () => {
                             </div>
                         </div>
                     </div>
+
                     <div className="ag-line2 pdb-60">
                         <div className="row">
                             <div className="col-6 line2-left">

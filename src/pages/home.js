@@ -1,6 +1,26 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const Home = () => {
+  //dynamically moving sentence
+  // const sentenceRef = useRef(null);
+
+  // useEffect(() => {
+  //     const sentenceWidth = sentenceRef.current.getBoundingClientRect().width;
+  //     const containerWidth = sentenceRef.current.parentElement.offsetWidth;
+  //     const travelDistance = sentenceWidth + containerWidth;
+  //
+  //       const animation = sentenceRef.current.animate(
+  //           [{transform: `translateX(${containerWidth}px)`}, {transform: `translateX(-${travelDistance}px)`}],
+  //           {
+  //             duration: 8000, // Adjust the duration as needed
+  //             iterations: Infinity,
+  //             easing: 'linear'
+  //           }
+  //       )
+  //     }
+  // )
+
+  //Change text
   const texts = [
     "MEANINGFUL",
     "BEAUTIFUL",
@@ -38,28 +58,18 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="page-element container-fluid showcase-img">
-            <div className="img-container">
-              <div className="sentence-container">
-                <img src="./images/home/Showcase.png" alt="showcase" loading="lazy"/>
-              </div>
-              <div className="img-text">
-                <div className="heading_4 text-light">
-                  Hello!
-                </div>
-                <img className="img-smile mx-4" src="./images/icons/smile.svg" alt="smile" loading="lazy"/>
-                <img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>
-                <div className="heading_4 mx-4 text-light">
-                  Welcome to my website.
-                </div>
-                <img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>
-                <div className="heading_4 mx-4 text-light">
-                  I'm delighted to share my portfolio with you!
-                </div>
-                <img className="img-ellipe mr-4" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/>
-              </div>
+        <div className="container-fluid ntd-showcase">
+          <div className="showcase-img">
+            <div className="sentence-container">
+              <span className="heading_4 text-light">Hello</span><span><img className="img-smile" src="./images/icons/smile.svg" alt="smile" loading="lazy"/></span>
+              <span><img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/></span><span className="heading_4 text-light">Welcome to my website.</span>
+              <span><img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/></span><span className="heading_4 text-light">I'm delighted to share my portfolio with you!</span>
             </div>
           </div>
+        </div>
+        <div>
+
+        </div>
         <div className="page-element home-info2">
           <div className="container-fluid">
             <div className="row">
@@ -122,8 +132,8 @@ const Home = () => {
               <div className="col-3"></div>
               <div className="col-6">
                 <div className="heading_3 text-center mb-3">My Designs</div>
-                <div className="body_text text-center">User testing was an iterative process that was conducted at every milestone of the project to identify
-                  the biggest pain points in the current version.</div>
+                <div className="body_text text-center">Step into the world of a passionate UI designer's portfolio.
+                  Witness the evolution of my skills as I create intuitive interfaces and explore the realm of captivating design.</div>
               </div>
               <div className="col-3"></div>
             </div>
@@ -133,7 +143,7 @@ const Home = () => {
                   <img className="w-100" src="./images/home/mydes_1.png" alt="logo" loading="lazy"/>
                   <div className="d-flex mt-3 mb-2">
                     <div className="heading_5 mr-2">01/</div>
-                    <div className="body_text pj_name">Aguri Jewellery Website</div>
+                    <div className="body_text pj_name">Season Cake Blog</div>
                     <div className="body_text ml-auto">Finished</div>
                   </div>
                   <div className="small_text pj_intro">
@@ -148,7 +158,7 @@ const Home = () => {
                   <img className="w-100" src="./images/home/mydes_2.png" alt="logo" loading="lazy"/>
                   <div className="d-flex mt-3 mb-2">
                     <div className="heading_5 mr-2">02/</div>
-                    <div className="body_text pj_name">Season Cake Blog</div>
+                    <div className="body_text pj_name">Aguri Jewellery Website</div>
                     <div className="body_text ml-auto">Finished</div>
                   </div>
                   <div className="small_text pj_intro">
@@ -168,8 +178,8 @@ const Home = () => {
                     <div className="body_text ml-auto">Finished</div>
                   </div>
                   <div className="small_text pj_intro">
-                    User testing was an iterative process that was conducted at every milestone of the project to identify
-                    the biggest pain points in the current version.
+                    Unwind with our UI design project for a yoga, Pilates, and meditation website. Immerse yourself in
+                    serene interfaces that inspire tranquility
                   </div>
                 </div>
               </div>

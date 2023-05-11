@@ -83,12 +83,10 @@
         margin-left: auto;
       }
     }
-    
   }
   .core-value {
-    padding-top: 130px;
-    padding-bottom: 190px;
 
+    padding: 130px 65px 190px 65px;
     .core-img {
       background-image: url("../img/core.jpg");
       padding-top:100px;
@@ -99,39 +97,40 @@
       background-size: 100%;
     }
     .core-content {
-      padding-left: 15px !important;
+      padding-left: 30px !important;
       position: relative;
     }
     .detail-container {
+      bottom:0;
       position: absolute;
-      bottom: 0;
-    }
-    .detail-mid {
-      padding-top: 20px;
-      padding-bottom: 40px;
-      border-top: 1px solid $subcolor;
-      margin-top: 10px;
-    }
-    .detail-item{
-      flex-direction: column;
-      display: flex;
-      height: 100%;
-      .heading_3 {
-        margin-top: auto;
+      .detail-item{
+        height: 100%;
+        .heading_2 {
+          margin-top:30px;
+        }
+        .detail-title-btm{
+          position: absolute;
+          bottom:0;
+        }
+        .detail-line {
+          padding-top: 20px;
+          border-top: 1px solid $subcolor;
+          margin-top: 10px;
+        }
       }
-    }
-    .left-item{
-      padding-right: 10px !important;
-    }
-    .mid-item {
-      padding: 0 5px !important;
-    }
-    .right-item{
-      padding-left: 10px !important;
+      .left-item{
+        padding-right: 15px !important;
+      }
+      .mid-item {
+        padding-left: 15px !important;
+        padding-right:15px !important;
+      }
+      .right-item{
+        padding-left: 15px !important;
+      }
     }
   }
   .about-last {
-
     .last-content {
       width: 100%;
       display: flex;

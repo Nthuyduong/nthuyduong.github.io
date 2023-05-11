@@ -118,30 +118,7 @@ body {
 .mt-30{
   margin-top:30px;
 }
-//SHOWCASE HERE
-.test{
-  height: 100vh;
-  box-sizing: border-box;
-}
-.img-container {
-  position: relative;
-  text-align: center;
-  width: 100%;
-  img {
-    width: 100%;
-    object-fit: contain;
-  }
-  .img-text {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
+
 
 .text-center {
   text-align: center;
