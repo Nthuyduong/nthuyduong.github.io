@@ -135,12 +135,12 @@ const Aguri = () => {
                             <div className="img-des">
                                 <img className="w-100" src="./images/home/more-4.png" alt="logo" loading="lazy"/>
                                 <div className="d-flex title-pj">
-                                    <div className="body_text pj_name">
+                                    <div className="medium_text pj_name">
                                         Season Cake Blog
                                     </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
-                                <div className="small_text pj_intro">
+                                <div className="w-100 body_text pj_intro">
                                     User testing was an iterative process that was conducted at every milestone of the project to identify
                                     the biggest pain points in the current version.
                                 </div>
@@ -150,10 +150,10 @@ const Aguri = () => {
                             <div className="img-des">
                                 <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
                                 <div className="d-flex title-pj">
-                                    <div className="body_text pj_name">Verite Fashion App</div>
+                                    <div className="medium_text pj_name">Verite Fashion App</div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
-                                <div className="small_text pj_intro">
+                                <div className="w-100 body_text pj_intro">
                                     User testing was an iterative process that was conducted at every milestone of the project to identify
                                     the biggest pain points in the current version.
                                 </div>
@@ -163,10 +163,10 @@ const Aguri = () => {
                             <div className="img-des">
                                 <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
                                 <div className="d-flex title-pj">
-                                    <div className="body_text pj_name">Alio Yoga Website</div>
+                                    <div className="medium_text pj_name">Alio Yoga Website</div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
-                                <div className="small_text pj_intro">
+                                <div className="w-100 body_text pj_intro">
                                     User testing was an iterative process that was conducted at every milestone of the project to identify
                                     the biggest pain points in the current version.
                                 </div>

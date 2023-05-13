@@ -143,9 +143,9 @@ const Alio = () => {
                             <div className="col-6">
                                 <img className="w-100" src="./images/Pj02_yoga/line6-02.png" alt="#" loading="lazy"/>
                                 <div className="r-logo sm-img">
-                                    <img className="mb-4" src={require(`../../public/images/Pj02_yoga/${logo[currentLogoIndex]}`)}
+                                    <img className="mb-5" src={require(`../../public/images/Pj02_yoga/${logo[currentLogoIndex]}`)}
                                          alt="carousel image" />
-                                    <div className="heading_6 text-light text-center">BE WITH YOU ANYWHERE, ANYTIME</div>
+                                    <div className="medium_text text-light text-center">BE WITH YOU ANYWHERE, ANYTIME</div>
                                 </div>
                             </div>
                         </div>
@@ -175,12 +175,12 @@ const Alio = () => {
                             <div className="img-des">
                                 <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
                                 <div className="d-flex title-pj">
-                                    <div className="body_text pj_name">
+                                    <div className="medium_text pj_name">
                                         Aguri Jewellery Website
                                     </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
-                                <div className="small_text pj_intro">
+                                <div className="w-100 body_text pj_intro">
                                     User testing was an iterative process that was conducted at every milestone of the project to identify
                                     the biggest pain points in the current version.
                                 </div>
@@ -190,12 +190,12 @@ const Alio = () => {
                             <div className="img-des">
                                 <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
                                 <div className="d-flex title-pj">
-                                    <div className="body_text pj_name">
+                                    <div className="medium_text pj_name">
                                         Verite Fashion App
                                     </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
-                                <div className="small_text pj_intro">
+                                <div className="w-100 body_text pj_intro">
                                     User testing was an iterative process that was conducted at every milestone of the project to identify
                                     the biggest pain points in the current version.
                                 </div>
@@ -205,12 +205,12 @@ const Alio = () => {
                             <div className="img-des">
                                 <img className="w-100" src="./images/home/more-4.png" alt="logo" loading="lazy"/>
                                 <div className="d-flex title-pj">
-                                    <div className="body_text pj_name">
+                                    <div className="medium_text pj_name">
                                         Season Cake Blog
                                     </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
-                                <div className="small_text pj_intro">
+                                <div className="w-100 body_text pj_intro">
                                     User testing was an iterative process that was conducted at every milestone of the project to identify
                                     the biggest pain points in the current version.
                                 </div>

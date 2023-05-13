@@ -153,7 +153,9 @@ const About = () => {
       <div className="page-element core-value">
         <div className="">
           <div className="row">
-            <div className="col-5 core-img"></div>
+            <div className="col-5">
+              <img className="w-100 about-dot" src="./images/about/mycore.png" alt="#" loading="lazy"></img>
+            </div>
             <div className="col-7 core-content">
               <div className="row">
                 <div className="col-4 heading_2">

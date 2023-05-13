@@ -9,7 +9,7 @@ const Fashion = () => {
             <div className="container-fluid">
                 <div className="product-showcase">
                     <div className="showcase pdb-60">
-                        <img className="w-100" src="./images/Pj04_fashion/banner.png" alt="#" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj04_fashion/banner2.png" alt="#" loading="lazy"/>
                         <div className="showcase-inner">
                             <div className="row">
                                 <div className="col-1"/>
