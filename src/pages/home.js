@@ -48,7 +48,7 @@ const Home = () => {
               <img className="main-logo" src="./images/home/logo-icon.svg" alt="logo" loading="lazy"/>
               <div className="info-content medium_text">
                 Hello, My name is
-                <div className="info-name heading_2">
+                <div className="info-name heading_3">
                   Nguyen Thuy Duong
                 </div>
               </div>
