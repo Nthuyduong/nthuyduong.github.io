@@ -1,7 +1,7 @@
 .about-page {
   .about1 {
     .row-n1{
-      padding-top: 70px;
+      padding-top: 80px;
       padding-bottom: 30px;
     }
     .row-n2{
@@ -9,7 +9,7 @@
     }
     .about1-1 {
       font-size: $small_text;
-      color: #999999;
+      color: #666;
       p {
         margin-bottom: 10px !important;
       }
@@ -26,7 +26,7 @@
     border-bottom: 1px solid $subcolor;
   }
   .about2 {
-    padding-top: 30px;
+    padding-top: 100px;
     padding-bottom: 130px;
     .sef-intro {
       padding-left: 30px;
@@ -45,16 +45,15 @@
     .about-title {
       font-size: $medium_text;
       color:  #333333;
-      padding-bottom: 16px;
+      padding-bottom: 14px;
     }
     .about-info {
       display: flex;
       align-items: center;
-      font-size: $small_text;
       padding-bottom: 40px;
     }
     .about-dot {
-      padding: 0 20px;   
+      padding: 0 15px;
     }
   }
   .about-skill {
@@ -70,6 +69,7 @@
     background: $primary_color;
     .skill-title {
       text-decoration: underline;
+      font-family: 'SFUFutura-md', sans-serif;
     }
     .skill-container {
       padding-top: 30px;
@@ -85,8 +85,7 @@
     }
   }
   .core-value {
-
-    padding: 130px 65px 190px 65px;
+    padding: 130px 65px 200px 65px;
     .core-img {
       background-image: url("../img/core.jpg");
       padding-top:100px;
@@ -105,8 +104,8 @@
       position: absolute;
       .detail-item{
         height: 100%;
-        .heading_2 {
-          margin-top:30px;
+        .heading_3 {
+          margin-top:60px;
         }
         .detail-title-btm{
           position: absolute;

@@ -7,7 +7,7 @@ $heading_2: 46px;
 $heading_3: 38px;
 $heading_4: 32px;
 $heading_5: 28px;
-$heading_6: 20px;
+$heading_6: 24px;
 $medium_text: 16px;
 $body_text: 14px;
 $small_text: 12px;
@@ -28,6 +28,9 @@ body {
   min-height: 100vh;
   margin: 0;
   color: #373737 !important;
+}
+a{
+  color:#333 !important;
 }
 
 //SCROLL BAR
@@ -159,7 +162,7 @@ body {
 }
 
 .back-to-top {
-  color: #666;
+  color: #333;
   position: fixed;
   right: -5px;
   bottom: 20%;
@@ -168,7 +171,7 @@ body {
 }
 
 .get-in-touch {
-  color: #666;
+  color: #333;
   position: fixed;
   left: -5px;
   bottom: 20%;
@@ -176,7 +179,7 @@ body {
   transform: rotate(-90deg);
 }
 .get-in-touch:hover {
-  color: #999;
+  color: #666;
   text-decoration: none;
 }
 .back-to-top:hover {
