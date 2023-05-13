@@ -116,7 +116,9 @@ const Cake = () => {
                                 </Link>
                                 <div className="d-flex title-pj">
                                     <div className="medium_text pj_name">
-                                        Aguri Jewellery Website
+                                        <Link to={ROUTER.AGURI}>
+                                            Aguri Jewellery Website
+                                        </Link>
                                     </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
@@ -132,7 +134,9 @@ const Cake = () => {
                                     <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
                                 </Link>
                                 <div className="d-flex title-pj">
-                                    <div className="medium-text pj_name">Verite Fashion App</div>
+                                    <div className="medium-text pj_name">
+                                        <Link to={ROUTER.FASHION}>Verite Fashion App</Link>
+                                    </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
                                 <div className="w-100 body_text pj_intro">
@@ -147,7 +151,9 @@ const Cake = () => {
                                     <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
                                 </Link>
                                 <div className="d-flex title-pj">
-                                    <div className="medium_text pj_name">Alio Yoga Website</div>
+                                    <div className="medium_text pj_name">
+                                        <Link to={ROUTER.ALIO}>Alio Yoga Website</Link>
+                                    </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
                                 <div className=" w-100 body_text pj_intro">

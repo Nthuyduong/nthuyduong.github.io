@@ -178,7 +178,9 @@ const Alio = () => {
                                 </Link>
                                 <div className="d-flex title-pj">
                                     <div className="medium_text pj_name">
-                                        Aguri Jewellery Website
+                                        <Link to={ROUTER.AGURI}>
+                                            Aguri Jewellery Website
+                                        </Link>
                                     </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
@@ -195,7 +197,9 @@ const Alio = () => {
                                 </Link>
                                 <div className="d-flex title-pj">
                                     <div className="medium_text pj_name">
-                                        Verite Fashion App
+                                        <Link to={ROUTER.FASHION}>
+                                            Verite Fashion App
+                                        </Link>
                                     </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
@@ -212,7 +216,9 @@ const Alio = () => {
                                 </Link>
                                 <div className="d-flex title-pj">
                                     <div className="medium_text pj_name">
-                                        Season Cake Blog
+                                        <Link to={ROUTER.CAKE}>
+                                            Season Cake Blog
+                                        </Link>
                                     </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>

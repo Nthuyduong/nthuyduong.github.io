@@ -19,7 +19,7 @@ const Fashion = () => {
                                 </div>
                                 <div className="col-7 content-right">
                                     <img className="mb-5" src="./images/Pj04_fashion/logo.svg" alt="#" loading="lazy"/>
-                                    <div className="heading_5 light-text">LUXURY FASHION BRAND</div>
+                                    <div className="heading_4 light-text">LUXURY FASHION BRAND</div>
                                     <div className="line my-4"></div>
                                     <div className="d-flex text-line">
                                         <div className="heading_6 light-text">Be Free</div>
