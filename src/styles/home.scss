@@ -118,7 +118,7 @@
     width: 100%;
     height: auto;
     filter: grayscale(100%);
-    transition: all 1s ease;
+    transition: all 0.5s ease;
   }
   img:hover {
     filter: grayscale(0%);
@@ -131,8 +131,8 @@
 .pj_intro{
   width: 80%;
 }
-.my-des-title{
-  padding-top:130px;
+.mydes-title{
+  padding-top:120px;
   padding-bottom:70px;
 }
 .des_r1{

@@ -8,6 +8,25 @@ import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 
 const Header = () => {
+  //Hover NavDropdown
+  const [isOpen, setIsOpen] = useState(false);
+  const timeoutRef = useRef(null);
+
+  const handleMouseEnter = () => {
+    clearTimeout(timeoutRef.current); // Clear any previous timeout
+    setIsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    // Add a slight delay before closing the dropdown
+    timeoutRef.current = setTimeout(() => {
+      setIsOpen(false);
+    }, 40);
+  };
+
+  const handleItemClick = () => {
+    setIsOpen(false); // Hide the dropdown when an item is clicked
+  };
 
   const [show, setShow] = useState(false)
   const controlNavbar = () => {
@@ -30,12 +49,16 @@ const Header = () => {
       {/*{withouSidebarRoutes.some((item) => pathname.includes(item)) ? null : (*/}
       <Navbar className="header navbar" expand="lg">
             <div className="header-content">
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Toggle aria-controls="basic-navbar-nav"/>
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                   <Nav><Link className="nav-link" to="/">HOME</Link></Nav>
                   <Nav><Link to={ROUTER.ABOUT} className="nav-link">ABOUT</Link></Nav>
-                  <NavDropdown title={<span as={Link} to="/designs">DESIGNS</span>} id="basic-nav-dropdown">
+                  <NavDropdown onMouseEnter={handleMouseEnter}
+                               onMouseLeave={handleMouseLeave}
+                               title={<Link to="/designs">DESIGNS</Link>}
+                               show={isOpen}
+                               id="basic-nav-dropdown">
                     <NavDropdown.Item>
                       <Link to={ROUTER.ALIO} className="nav-link">Alio</Link>
                     </NavDropdown.Item>
