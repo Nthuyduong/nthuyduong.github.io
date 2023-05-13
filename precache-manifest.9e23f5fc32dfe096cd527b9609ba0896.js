@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "4f13d3696187f963fd4e",
+    "revision": "b0ea5bf75870f37e5387",
     "url": "/static/css/main.ee913507.chunk.css"
   },
   {
-    "revision": "4f13d3696187f963fd4e",
-    "url": "/static/js/main.4753b87c.chunk.js"
+    "revision": "b0ea5bf75870f37e5387",
+    "url": "/static/js/main.1b95d972.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "9b6659a7b5fcd6a1682e",
+    "revision": "45fc5b8efad24e24057f",
     "url": "/static/css/2.9f473672.chunk.css"
   },
   {
-    "revision": "9b6659a7b5fcd6a1682e",
-    "url": "/static/js/2.f5ba5a6b.chunk.js"
+    "revision": "45fc5b8efad24e24057f",
+    "url": "/static/js/2.08b708c5.chunk.js"
   },
   {
     "revision": "4a66957a1e84848a4e8fbfa8dff404e2",
@@ -240,6 +240,10 @@ self.__precacheManifest = [
     "url": "/static/media/Showcase.9690010c.png"
   },
   {
+    "revision": "c10f1b4a7754f4c792a5b249af27d22f",
+    "url": "/static/media/SFUFuturaBook.c10f1b4a.TTF"
+  },
+  {
     "revision": "37ce14f5652279358b9449cbcaa55c9a",
     "url": "/static/media/SFUFuturaLightOblique.37ce14f5.TTF"
   },
@@ -252,15 +256,11 @@ self.__precacheManifest = [
     "url": "/static/media/Americana Bold BT.d6a448ad.ttf"
   },
   {
-    "revision": "c10f1b4a7754f4c792a5b249af27d22f",
-    "url": "/static/media/SFUFuturaBook.c10f1b4a.TTF"
-  },
-  {
     "revision": "6aa81ad8a396cb3226339310cfa74aa3",
     "url": "/static/media/SFUFuturaRegular.6aa81ad8.TTF"
   },
   {
-    "revision": "fd81ff5c5ba64f8bc699539c3fb060d8",
+    "revision": "6ee845e78e29e03f61f10b2e3952ab93",
     "url": "/index.html"
   }
 ];
