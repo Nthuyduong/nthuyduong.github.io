@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "2fae952272e5a488ef06",
-    "url": "/static/css/main.53fdb642.chunk.css"
+    "revision": "4f13d3696187f963fd4e",
+    "url": "/static/css/main.ee913507.chunk.css"
   },
   {
-    "revision": "2fae952272e5a488ef06",
-    "url": "/static/js/main.7b456ea0.chunk.js"
+    "revision": "4f13d3696187f963fd4e",
+    "url": "/static/js/main.4753b87c.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "91daa0b8153550485f91",
+    "revision": "9b6659a7b5fcd6a1682e",
     "url": "/static/css/2.9f473672.chunk.css"
   },
   {
-    "revision": "91daa0b8153550485f91",
-    "url": "/static/js/2.8b3e4904.chunk.js"
+    "revision": "9b6659a7b5fcd6a1682e",
+    "url": "/static/js/2.f5ba5a6b.chunk.js"
   },
   {
     "revision": "4a66957a1e84848a4e8fbfa8dff404e2",
@@ -176,6 +176,10 @@ self.__precacheManifest = [
     "url": "/static/media/about.64d90db6.png"
   },
   {
+    "revision": "8e5403371934b20de51dd27eab765597",
+    "url": "/static/media/cake-banner.8e540337.png"
+  },
+  {
     "revision": "fd24121331dac591ece6416fc9d60864",
     "url": "/static/media/cake1.fd241213.png"
   },
@@ -240,10 +244,6 @@ self.__precacheManifest = [
     "url": "/static/media/SFUFuturaLightOblique.37ce14f5.TTF"
   },
   {
-    "revision": "c10f1b4a7754f4c792a5b249af27d22f",
-    "url": "/static/media/SFUFuturaBook.c10f1b4a.TTF"
-  },
-  {
     "revision": "c52aad82e004d1deefb4d583e2727566",
     "url": "/static/media/Americana BT.c52aad82.ttf"
   },
@@ -252,11 +252,15 @@ self.__precacheManifest = [
     "url": "/static/media/Americana Bold BT.d6a448ad.ttf"
   },
   {
+    "revision": "c10f1b4a7754f4c792a5b249af27d22f",
+    "url": "/static/media/SFUFuturaBook.c10f1b4a.TTF"
+  },
+  {
     "revision": "6aa81ad8a396cb3226339310cfa74aa3",
     "url": "/static/media/SFUFuturaRegular.6aa81ad8.TTF"
   },
   {
-    "revision": "3ab34099749cbbc399851e786c2c9991",
+    "revision": "fd81ff5c5ba64f8bc699539c3fb060d8",
     "url": "/index.html"
   }
 ];
