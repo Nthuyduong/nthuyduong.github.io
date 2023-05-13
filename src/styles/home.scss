@@ -69,12 +69,6 @@
   .home-info3 {
     background: $primary_color;
     padding-top:80px;
-    .text-large {
-      padding: 10px 0;
-      font-family: 'AmericanaBT', serif;
-      font-size: 94px;
-      line-height: 115px;
-    }
     .brands-left{
       padding-right:15px !important;
     }
@@ -144,7 +138,14 @@
 .des_r1{
   padding-bottom: 80px;
 }
-
+//
+.decor-line{
+  width: 100%;
+}
+.mydes-content{
+  position: absolute;
+  bottom: 10%;
+}
 
 @media only screen and (max-width: 1200px) {
   body {

@@ -24,6 +24,7 @@ $small_text: 12px;
 
 html,
 body {
+  font-family: 'SFUFutura',sans-serif;
   min-height: 100vh;
   margin: 0;
   color: #373737 !important;
@@ -44,7 +45,7 @@ body {
 
 //FONT-STYLE
 .heading_1 {
-  font-family: 'AmericanaBT', serif;
+  font-family: 'AmericanaBT',serif;
   font-size: $heading_1;
   line-height: $heading_1*1,25;
 }
@@ -74,21 +75,41 @@ body {
   line-height: 25px;
 }
 .body_text {
-  font-family: 'SFUFutura regular', sans-serif;
+  font-family: 'SFUFutura', sans-serif;
   font-size: $body_text;
   line-height: 21px;
 }
 .medium_text {
-  font-family: 'SFUFutura regular', sans-serif;
+  font-family: 'SFUFutura-md', sans-serif;
   font-size: $medium_text;
   line-height: 24px;
 }
 .small_text {
-  font-family: 'SFUFutura regular', sans-serif;
+  font-family: 'SFUFutura', sans-serif;
   font-size: $small_text;
   line-height: 18px;
 }
-
+.text-large {
+  padding: 10px 0;
+  font-family: 'AmericanaBT', serif;
+  font-size: 94px;
+  line-height: 115px;
+}
+.text-large-2{
+  font-size: $heading_1;
+  line-height: $heading_1*1,25;
+}
+.decor-line{
+  display: flex;
+  align-self: center;
+  height: 1px;
+  background: black;
+}
+.text-italic{
+  font-size: $heading_1;
+  line-height: $heading_1*1,25;
+  font-family:'SFUFutura', sans-serif;
+}
 //setting
 .container-fluid {
   padding-left: 65px !important;

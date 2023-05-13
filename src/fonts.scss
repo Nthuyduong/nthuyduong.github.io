@@ -1,29 +1,29 @@
 @font-face {
   font-family: 'AmericanaBT';
-  src: url('/public/fonts/Americana BT.ttf');
+  src: url('font/Americana BT.ttf');
 }
 
 @font-face {
   font-family: 'Americana';
-  src: url('/public/fonts/Americana Bold BT.ttf');
+  src: url('font/Americana Bold BT.ttf');
+}
+
+//@font-face {
+//  font-family: 'FuturaPTbook';
+//  src: url('font/FuturaPTBook.otf');
+//}
+
+@font-face {
+  font-family: 'SFUFutura-itl';
+  src: url('font/SFUFuturaLightOblique.TTF');
 }
 
 @font-face {
-  font-family: 'FuturaPT book';
-  src: url('/public/fonts/FuturaPTBook.otf');
+  font-family: 'SFUFutura';
+  src: url('font/SFUFuturaBook.TTF');
 }
 
 @font-face {
-  font-family: 'FuturaPT medium';
-  src: url('/public/fonts/FuturaPTMedium.otf');
-}
-
-@font-face {
-  font-family: 'SFUFutura regular';
-  src: url('/public/fonts/SFUFuturaBook.ttf');
-}
-
-@font-face {
-  font-family: 'SFUFutura medium';
-  src: url('/public/fonts/SFUFuturaRegular.ttf');
+  font-family: 'SFUFutura-md';
+  src: url('font/SFUFuturaRegular.TTF');
 }

@@ -215,7 +215,7 @@ const About = () => {
           <div className="container-fluid">
             <div className="row">
               <div className="col-2"></div>
-              <div className="col-8">
+              <div className="col-8 heading_4">
                 “The surest way to make your dreams come true is to live them. Dreams don’t work unless you take action.”
               </div>
               <div className="col-2"></div>

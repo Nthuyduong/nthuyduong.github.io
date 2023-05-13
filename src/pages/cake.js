@@ -78,11 +78,7 @@ const Cake = () => {
                     <div className="pdb-60">
                         <div className="">
                             <img className="w-100" src={require(`../../public/images/Pj01_cake/${show[currentShowIndex]}`)} alt="#" loading="lazy"/>
-                            <div className="d-flex mt-3">
-                                <div className="medium_text">Hello Foodlovers</div>
-                                <div className="medium_text ml-auto">We're Season Cake Blog</div>
-                                <div className="medium_text ml-auto">Since 19/08/2020</div>
-                            </div>
+
                         </div>
                     </div>
                     <div className="pdb-60">
@@ -93,13 +89,18 @@ const Cake = () => {
                             </div>
                         </div>
                     </div>
+
                     <div className="ag-line6 mdb-60">
                         <div className="inner">
                             <img className="w-100" src={require(`../../public/images/Pj01_cake/${cake[currentCakeIndex]}`)} alt="#" loading="lazy"/>
                         </div>
                     </div>
                     <div className="pdb-60">
-                        <img className="w-100" src="./images/Pj01_cake/detail.png" alt="#" loading="lazy"/>
+                        <div className="">
+                            <div className="">
+                                <img className="w-100" src="./images/Pj01_cake/detail.png" alt="#" loading="lazy"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

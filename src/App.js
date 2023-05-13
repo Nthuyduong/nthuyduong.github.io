@@ -14,10 +14,9 @@ import Aguri from "./pages/aguri";
 import Alio from "./pages/alio";
 import Fashion from "./pages/fashion"
 import Cake from "./pages/cake";
-import "@fortawesome/fontawesome-svg-core"
+import Designs from "./pages/designs";
+import "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/react-fontawesome"
-
-
 
 const App = () => {
 
@@ -32,6 +31,7 @@ const App = () => {
           <Route path={ROUTER.ALIO} component={Alio}/>
           <Route path={ROUTER.FASHION} component={Fashion}/>
           <Route path={ROUTER.CAKE} component={Cake}/>
+          <Route path={ROUTER.DESIGNS} component={Designs}/>
         </Layout>
       </Switch>  
     </Router>

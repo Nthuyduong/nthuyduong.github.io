@@ -6,4 +6,5 @@ export const ROUTER = {
   ALIO: '/alio',
   FASHION: '/verite',
   CAKE: '/cake',
+  DESIGNS: '/designs',
 }
