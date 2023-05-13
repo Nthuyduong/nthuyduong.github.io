@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
+import {Link} from "react-router-dom";
+import {ROUTER} from "../utils/constants";
 
 const Home = () => {
   //dynamically moving sentence
@@ -163,13 +165,15 @@ const Home = () => {
             <div className="row des_r1">
               <div className="col-lg-5 col-sm-12">
                 <div className="des_card img-des">
-                  <img className="w-100" src="./images/home/mydes_1.png" alt="logo" loading="lazy"/>
+                  <Link to={ROUTER.CAKE}>
+                    <img className="w-100" src="./images/home/mydes_1.png" alt="logo" loading="lazy"/>
+                  </Link>
                   <div className="d-flex mt-3 mb-2">
                     <div className="heading_5 mr-2">01/</div>
                     <div className="medium_text pj_name">Season Cake Blog</div>
                     <div className="small_text ml-auto">Finished</div>
                   </div>
-                  <div className="small_text pj_intro">
+                  <div className="body_text w-100 pj_intro">
                     User testing was an iterative process that was conducted at every milestone of the project to identify
                     the biggest pain points in the current version.
                   </div>
@@ -178,13 +182,15 @@ const Home = () => {
               <div className="col-1"/>
               <div className="col-lg-6 col-sm-12">
                 <div className="des_card img-des">
-                  <img className="w-100" src="./images/home/mydes_2.png" alt="logo" loading="lazy"/>
+                  <Link to={ROUTER.AGURI}>
+                    <img className="w-100" src="./images/home/mydes_2.png" alt="logo" loading="lazy"/>
+                  </Link>
                   <div className="d-flex mt-3 mb-2">
                     <div className="heading_5 mr-2">02/</div>
                     <div className="medium_text pj_name">Aguri Jewellery Website</div>
                     <div className="small_text ml-auto">Finished</div>
                   </div>
-                  <div className="small_text pj_intro">
+                  <div className="w-100 body_text pj_intro">
                     User testing was an iterative process that was conducted at every milestone of the project to identify
                     the biggest pain points in the current version.
                   </div>
@@ -194,13 +200,15 @@ const Home = () => {
             <div className="row">
               <div className="col-lg-6 col-sm-12">
                 <div className="des_card img-des">
-                  <img className="w-100" src="./images/home/mydes_3.png" alt="logo" loading="lazy"/>
+                  <Link to={ROUTER.ALIO}>
+                    <img className="w-100" src="./images/home/mydes_3.png" alt="logo" loading="lazy"/>
+                  </Link>
                   <div className="d-flex mt-3 mb-2">
                     <div className="heading_5 mr-2">03/</div>
                     <div className="medium_text pj_name">Alio Yoga Website & App</div>
                     <div className="small_text ml-auto">Finished</div>
                   </div>
-                  <div className="small_text pj_intro">
+                  <div className="w-100 body_text pj_intro">
                     Unwind with our UI design project for a yoga, Pilates, and meditation website. Immerse yourself in
                     serene interfaces that inspire tranquility
                   </div>
@@ -209,13 +217,15 @@ const Home = () => {
               <div className="col-1"/>
               <div className="col-lg-5 col-sm-12">
                 <div className="des_card img-des">
-                  <img className="w-100" src="./images/home/mydes_4.png" alt="logo" loading="lazy"/>
+                  <Link to={ROUTER.FASHION}>
+                    <img className="w-100" src="./images/home/mydes_4.png" alt="logo" loading="lazy"/>
+                  </Link>
                   <div className="d-flex mt-3 mb-2">
                     <div className="heading_5 mr-2">04/</div>
-                    <div className="body_text pj_name">Vérité Luxury Fashion App</div>
+                    <div className="medium_text pj_name">Vérité Luxury Fashion App</div>
                     <div className="body_text ml-auto">Finished</div>
                   </div>
-                  <div className="small_text pj_intro">
+                  <div className="w-100 body_text pj_intro">
                     User testing was an iterative process that was conducted at every milestone of the project to identify
                     the biggest pain points in the current version.
                   </div>

@@ -43,10 +43,10 @@ const Header = () => {
                       <Link to={ROUTER.AGURI} className="nav-link">AGURI</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item>
-                      <Link to={ROUTER.CAKE} className="nav-link">Cake-blog</Link>
+                      <Link to={ROUTER.FASHION} className="nav-link">Fashion brand</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Item>
-                      <Link to={ROUTER.FASHION} className="nav-link">Fashion-brand</Link>
+                      <Link to={ROUTER.CAKE} className="nav-link">Cake blog</Link>
                     </NavDropdown.Item>
                   </NavDropdown>
                   <Nav><Link to={ROUTER.CONTACT} className="nav-link">CONTACT</Link></Nav>
