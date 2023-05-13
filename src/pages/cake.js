@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {ROUTER} from "../utils/constants";
 
 const Cake = () => {
 
@@ -110,7 +111,9 @@ const Cake = () => {
                     <div className="row more-pj">
                         <div className="col-4 more-1">
                             <div className="img-des">
-                                <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
+                                <Link to={ROUTER.AGURI}>
+                                    <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
+                                </Link>
                                 <div className="d-flex title-pj">
                                     <div className="medium_text pj_name">
                                         Aguri Jewellery Website
@@ -125,7 +128,9 @@ const Cake = () => {
                         </div>
                         <div className="col-4">
                             <div className="img-des">
-                                <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
+                                <Link to={ROUTER.FASHION}>
+                                    <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
+                                </Link>
                                 <div className="d-flex title-pj">
                                     <div className="medium-text pj_name">Verite Fashion App</div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
@@ -138,7 +143,9 @@ const Cake = () => {
                         </div>
                         <div className="col-4 more-2">
                             <div className="img-des">
-                                <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
+                                <Link to={ROUTER.ALIO}>
+                                    <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
+                                </Link>
                                 <div className="d-flex title-pj">
                                     <div className="medium_text pj_name">Alio Yoga Website</div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />

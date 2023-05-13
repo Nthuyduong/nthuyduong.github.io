@@ -173,7 +173,9 @@ const Alio = () => {
                     <div className="row more-pj">
                         <div className="col-4 more-1">
                             <div className="img-des">
-                                <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
+                                <Link to={ROUTER.AGURI}>
+                                    <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
+                                </Link>
                                 <div className="d-flex title-pj">
                                     <div className="medium_text pj_name">
                                         Aguri Jewellery Website
@@ -188,7 +190,9 @@ const Alio = () => {
                         </div>
                         <div className="col-4">
                             <div className="img-des">
-                                <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
+                                <Link to={ROUTER.FASHION}>
+                                    <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
+                                </Link>
                                 <div className="d-flex title-pj">
                                     <div className="medium_text pj_name">
                                         Verite Fashion App
@@ -203,7 +207,9 @@ const Alio = () => {
                         </div>
                         <div className="col-4 more-2">
                             <div className="img-des">
-                                <img className="w-100" src="./images/home/more-4.png" alt="logo" loading="lazy"/>
+                                <Link to={ROUTER.CAKE}>
+                                    <img className="w-100" src="./images/home/more-4.png" alt="logo" loading="lazy"/>
+                                </Link>
                                 <div className="d-flex title-pj">
                                     <div className="medium_text pj_name">
                                         Season Cake Blog
