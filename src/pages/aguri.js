@@ -30,11 +30,27 @@ const Aguri = () => {
                 <div className="product-showcase">
                     <div className="ag-line1 pdb-60">
                         <div className="row">
-                            <div className="col-6">
-                                <img className="w-100" src="./images/Pj03_aguri/line1-01.png" alt="#" loading="lazy"/>
+                            <div className="col-6 line1-left">
+                                <div className="line1-left-inner">
+                                    <div className="content-top text-center">
+                                        <div className="heading_3 mb-1">RADIANT ELEGANCE</div>
+                                        <div className="heading_4">Our Utmost Pride</div>
+                                    </div>
+                                    <img className="" src="./images/Pj03_aguri/line1-center.png" alt="#" loading="lazy"/>
+                                    <div className="content-bottom text-center">
+                                        <div className="heading_2 mb-5">JOIN US</div>
+                                        <div className="body_text">
+                                            We're the leading manufacturers and suppliers of precious
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="col-6">
+                            <div className="col-6 line1-right">
                                 <img className="w-100" src="./images/Pj03_aguri/line1-02.png" alt="#" loading="lazy"/>
+                                <div className="line-right-content text-center">
+                                    <div className="heading_6 mb-2">We are</div>
+                                    <div className="heading_4">JEWLLERY BRAND</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -50,7 +66,7 @@ const Aguri = () => {
                                         <div className="heading_4">Introduction</div>
                                         <div className="body_text">
                                             “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,
-                                            semi precious and artificial jewelleries. They sell these jewelleries under different brand names.
+                                            semi precious and artificial jewelleries. We sell these jewelleries under different brand names.
                                             The quality of the products are renowned for striking features.
                                         </div>
                                     </div>
@@ -74,11 +90,16 @@ const Aguri = () => {
                                         renowned for striking features such as smooth polish, stunning design and excelling clarity,
                                         look and feature, and luster.
                                     </div>
-                                    <div className="small_text text-right font-italic">Visit: https://nthuyduong.github.io/aguri/#/</div>
+                                    <div className="small_text text-right font-italic">
+                                        <a href="https://nthuyduong.github.io/aguri/#/" target="_blank">Visit: https://nthuyduong.github.io/aguri/#/</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="col-6">
-                                <img className="w-100" src="./images/Pj03_aguri/line3-02.webp" alt="#" loading="lazy"/>
+                            <div className="col-6 line2-right">
+                                <img className="w-100" src="./images/Pj03_aguri/line3-02.png" alt="#" loading="lazy"/>
+                                <div>
+                                    <img className="aguri-logo" src="./images/Pj03_aguri/logo.svg" alt="#" loading="lazy"/>
+                                </div>
                             </div>
                         </div>
                     </div>

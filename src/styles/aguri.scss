@@ -1,9 +1,49 @@
 .intro-section{
 
 }
-.line2-left{
-  background-color: #F5EAE0;
+.line1-left{
+  position: relative;
+  .line1-left-inner{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+  .content-top{
+    position: relative;
+    top: 70px;
+    z-index: 2;
+    .heading_3{
+      width: max-content;
+    }
+  }
+  .content-bottom{
+    position:relative;
+    bottom:30px;
+  }
 }
+.line1-right{
+  .line-right-content{
+    position: absolute;;
+    bottom: 8%;
+    left: 30%;
+    color:#ccc;
+  }
+}
+.ag-line2{
+  .line2-left{
+    background-color: #F5EAE0;
+  }
+  .line2-right{
+    .aguri-logo{
+      position:absolute;;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
 .line4-right{
   background-color: #F5EAE0;
 }
