@@ -93,12 +93,14 @@ const Fashion = () => {
                                     <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
                                 </Link>
                                 <div className="d-flex title-pj">
-                                    <div className="body_text pj_name">
-                                        Aguri Jewellery Website
+                                    <div className="medium_text pj_name">
+                                        <Link to={ROUTER.AGURI}>
+                                            Aguri Jewellery Website
+                                        </Link>
                                     </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
-                                <div className="small_text pj_intro">
+                                <div className="body_text pj_intro">
                                     User testing was an iterative process that was conducted at every milestone of the project to identify
                                     the biggest pain points in the current version.
                                 </div>
@@ -110,12 +112,14 @@ const Fashion = () => {
                                     <img className="w-100" src="./images/home/more-4.png" alt="logo" loading="lazy"/>
                                 </Link>
                                 <div className="d-flex title-pj">
-                                    <div className="body_text pj_name">
-                                        Season Cake Blog
+                                    <div className="medium_text pj_name">
+                                        <Link to={ROUTER.CAKE}>
+                                            Season Cake Blog
+                                        </Link>
                                     </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
-                                <div className="small_text pj_intro">
+                                <div className="body_text pj_intro">
                                     User testing was an iterative process that was conducted at every milestone of the project to identify
                                     the biggest pain points in the current version.
                                 </div>
@@ -127,12 +131,14 @@ const Fashion = () => {
                                     <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
                                 </Link>
                                 <div className="d-flex title-pj">
-                                    <div className="body_text pj_name">
-                                        Alio Yoga Website
+                                    <div className="medium_text pj_name">
+                                        <Link to={ROUTER.ALIO}>
+                                            Alio Yoga Website
+                                        </Link>
                                     </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
-                                <div className="small_text pj_intro">
+                                <div className="body_text pj_intro">
                                     User testing was an iterative process that was conducted at every milestone of the project to identify
                                     the biggest pain points in the current version.
                                 </div>
