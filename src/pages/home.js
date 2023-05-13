@@ -53,7 +53,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4 body_text">
+            <div className="col-4 body_text text-right">
               “I'm creative, open-minded and a fast learner. I have a strong desire to know, to understand, to grow, to create, to transform, to improve and to share. My dream is to improve people's lives through my designs”
             </div>
           </div>
@@ -61,9 +61,9 @@ const Home = () => {
         <div className="container-fluid ntd-showcase">
           <div className="showcase-img">
             <div className="sentence-container">
-              <span className="heading_4 text-light">Hello</span><span><img className="img-smile" src="./images/icons/smile.svg" alt="smile" loading="lazy"/></span>
-              <span><img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/></span><span className="heading_4 text-light">Welcome to my website.</span>
-              <span><img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/></span><span className="heading_4 text-light">I'm delighted to share my portfolio with you!</span>
+              <span className="heading_5 text-light">Hello</span><span><img className="img-smile" src="./images/icons/smile.svg" alt="smile" loading="lazy"/></span>
+              <span><img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/></span><span className="heading_5 text-light">Welcome to my website.</span>
+              <span><img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/></span><span className="heading_5 text-light">I'm delighted to share my portfolio with you!</span>
             </div>
           </div>
         </div>
@@ -133,7 +133,9 @@ const Home = () => {
               <div className="col-6">
                 <div className="d-flex">
                   <div className="text-large-2 text-italic">My</div>
-                  <div><img className="img-ellipe mx-4" src="./images/icons/ellipse-bl.svg" alt="smile" loading="lazy"/></div>
+                  <div className="dot-bl">
+                    <img className="img-ellipe-bl mx-4" src="./images/icons/ellipse-bl.svg" alt="smile" loading="lazy"/>
+                  </div>
                   <div className="heading_1">DESIGNS</div>
                 </div>
                 <div className="d-flex">
@@ -164,8 +166,8 @@ const Home = () => {
                   <img className="w-100" src="./images/home/mydes_1.png" alt="logo" loading="lazy"/>
                   <div className="d-flex mt-3 mb-2">
                     <div className="heading_5 mr-2">01/</div>
-                    <div className="body_text pj_name">Season Cake Blog</div>
-                    <div className="body_text ml-auto">Finished</div>
+                    <div className="medium_text pj_name">Season Cake Blog</div>
+                    <div className="small_text ml-auto">Finished</div>
                   </div>
                   <div className="small_text pj_intro">
                     User testing was an iterative process that was conducted at every milestone of the project to identify
@@ -179,8 +181,8 @@ const Home = () => {
                   <img className="w-100" src="./images/home/mydes_2.png" alt="logo" loading="lazy"/>
                   <div className="d-flex mt-3 mb-2">
                     <div className="heading_5 mr-2">02/</div>
-                    <div className="body_text pj_name">Aguri Jewellery Website</div>
-                    <div className="body_text ml-auto">Finished</div>
+                    <div className="medium_text pj_name">Aguri Jewellery Website</div>
+                    <div className="small_text ml-auto">Finished</div>
                   </div>
                   <div className="small_text pj_intro">
                     User testing was an iterative process that was conducted at every milestone of the project to identify
@@ -195,8 +197,8 @@ const Home = () => {
                   <img className="w-100" src="./images/home/mydes_3.png" alt="logo" loading="lazy"/>
                   <div className="d-flex mt-3 mb-2">
                     <div className="heading_5 mr-2">03/</div>
-                    <div className="body_text pj_name">Alio Yoga Website & App</div>
-                    <div className="body_text ml-auto">Finished</div>
+                    <div className="medium_text pj_name">Alio Yoga Website & App</div>
+                    <div className="small_text ml-auto">Finished</div>
                   </div>
                   <div className="small_text pj_intro">
                     Unwind with our UI design project for a yoga, Pilates, and meditation website. Immerse yourself in
