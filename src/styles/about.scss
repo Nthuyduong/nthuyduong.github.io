@@ -57,6 +57,8 @@
     }
   }
   .about-skill {
+    padding-top: 140px;
+    padding-bottom: 140px;
     .skill-common {
       color: #000000;
       .mid-text {
@@ -64,8 +66,6 @@
         padding-bottom: 20px;
       }
     }
-    padding-top: 123px;
-    padding-bottom: 120px;
     background: $primary_color;
     .skill-title {
       text-decoration: underline;

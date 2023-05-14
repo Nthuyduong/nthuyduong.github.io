@@ -1,8 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import {ROUTER} from "../utils/constants";
 
 const Designs = () =>{
+    // const offsetY = 110;
+    // const offsetX = 80;
+    // const [showText, setShowText] = useState(false);
+    // const [textPosition, setTextPosition] = useState({ x: 0, y: 0 });
+    //
+    // const handleMouseEnter = () => {
+    //     setShowText(true);
+    // };
+    //
+    // const handleMouseLeave = () => {
+    //     setShowText(false);
+    // };
+    //
+    // const handleMouseMove = (event) => {
+    //     const { clientX, clientY } = event;
+    //     setTextPosition({ x: clientX, y: clientY });
+    // };
+
     return(
         <div>
             <div className="my-design">
@@ -31,11 +49,11 @@ const Designs = () =>{
                         <div className="col-4">
                             <div className="byme">
                                 <div className="d-flex">
-                                    <div className="text-large-2">By</div>
+                                    <div className="text-large-2 byme2">By</div>
                                     <div className="dot-bl">
-                                        <img className="img-ellipe-bl mx-4" src="./images/icons/ellipse-bl.svg" alt="smile" loading="lazy"/>
+                                        <img className="img-ellipe-99 mx-4" src="./images/icons/ellipse-99.svg" alt="smile" loading="lazy"/>
                                     </div>
-                                    <div className="heading_1 myname">NthDuong</div>
+                                    <div className="heading_1 myname byme2">NthDuong</div>
                                     <div></div>
                                 </div>
                             </div>
@@ -52,9 +70,16 @@ const Designs = () =>{
                     <div className="row">
                         <div className="col-3 project-odd">
                             <div className="heading_2 mb-2">01</div>
-                            <Link to={ROUTER.CAKE}>
-                                <img className="w-100 project-img" src="./images/design/des-1.png" alt="logo" loading="lazy"/>
-                            </Link>
+
+                                <Link to={ROUTER.CAKE}>
+                                    <img
+                                        className="w-100 project-img" src="./images/design/des-1.png"
+                                        alt="logo"
+                                        loading="lazy"
+                                        />
+
+                                </Link>
+
                             <div className="medium_text mt-3">
                                 <Link to={ROUTER.CAKE}>
                                     Season Cake Blog
@@ -66,9 +91,16 @@ const Designs = () =>{
                         </div>
                         <div className="col-3 project-even">
                             <div className="heading_2 mb-2">02</div>
-                            <Link to={ROUTER.AGURI}>
-                                <img className="w-100 project-img" src="./images/design/des-2.png" alt="logo" loading="lazy"/>
-                            </Link>
+
+                                <Link to={ROUTER.AGURI}>
+                                    <img
+                                        className="w-100 project-img"
+                                        src="./images/design/des-2.png"
+                                        alt="logo"
+                                        loading="lazy"
+                                    />
+                                </Link>
+
                             <div className="medium_text mt-3">
                                 <Link to={ROUTER.AGURI}>
                                     Aguri Jewellery Website
