@@ -35,17 +35,29 @@
     background-color: #F5EAE0;
   }
   .line2-right{
-    .aguri-logo{
+    .line2-right-inner{
       position:absolute;;
       top:50%;
       left:50%;
       transform: translate(-50%, -50%);
+      .mid-txt{
+        padding-left: 33px;
+        padding-right:33px;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+      }
     }
   }
 }
 
-.line4-right{
-  background-color: #F5EAE0;
+.ag-line4{
+  .fix-img{
+    background-image: url("../img/line2-01.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+  }
 }
 .intro-section{
   position: relative;

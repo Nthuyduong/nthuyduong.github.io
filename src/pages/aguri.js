@@ -50,7 +50,7 @@ const Aguri = () => {
                                 <img className="w-100" src="./images/Pj03_aguri/line1-02.png" alt="#" loading="lazy"/>
                                 <div className="line-right-content text-center">
                                     <div className="heading_6 mb-2">We are</div>
-                                    <div className="heading_4">JEWLLERY BRAND</div>
+                                    <div className="heading_4">JEWELLERY BRAND</div>
                                 </div>
                             </div>
                         </div>
@@ -98,8 +98,14 @@ const Aguri = () => {
                             </div>
                             <div className="col-6 line2-right">
                                 <img className="w-100" src="./images/Pj03_aguri/line3-02.png" alt="#" loading="lazy"/>
-                                <div>
+                                <div className="line2-right-inner">
                                     <img className="aguri-logo" src="./images/Pj03_aguri/logo.svg" alt="#" loading="lazy"/>
+                                    <div className="d-flex text-light mt-4">
+                                        <div className="medium-text">Timeless</div>
+                                        <div className="medium-text mx-auto mid-txt">Iconic</div>
+                                        <div className="medium-text">Elegant</div>
+                                    </div>
+                                    <div className="heading_5 text-light text-center mt-5">JEWELLERY BRAND</div>
                                 </div>
                             </div>
                         </div>
@@ -114,8 +120,8 @@ const Aguri = () => {
                     </div>
                     <div className="ag-line4 pdb-60">
                         <div className="row">
-                            <div className="col-6 ">
-                                <img className="w-100" src="./images/Pj03_aguri/line2-01.png" alt="#" loading="lazy"/>
+                            <div className="col-6 fix-img">
+                                {/*<img className="w-100" src="./images/Pj03_aguri/line2-01.png" alt="#" loading="lazy"/>*/}
                             </div>
                             <div className="col-6 line4-left">
                                 <img className="w-100" src="./images/Pj03_aguri/cate.png" alt="#" loading="lazy"/>
@@ -139,7 +145,9 @@ const Aguri = () => {
                                 </Link>
                                 <div className="d-flex title-pj">
                                     <div className="medium_text pj_name">
-                                        Season Cake Blog
+                                        <Link to={ROUTER.CAKE}>
+                                            Season Cake Blog
+                                        </Link>
                                     </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
@@ -155,7 +163,9 @@ const Aguri = () => {
                                     <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
                                 </Link>
                                 <div className="d-flex title-pj">
-                                    <div className="medium_text pj_name">Verite Fashion App</div>
+                                    <div className="medium_text pj_name">
+                                        <Link to={ROUTER.FASHION}>Verite Fashion App</Link>
+                                    </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
                                 <div className="w-100 body_text pj_intro">
@@ -170,7 +180,11 @@ const Aguri = () => {
                                     <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
                                 </Link>
                                 <div className="d-flex title-pj">
-                                    <div className="medium_text pj_name">Alio Yoga Website</div>
+                                    <div className="medium_text pj_name">
+                                        <Link to={ROUTER.ALIO}>
+                                            Alio Yoga Website
+                                        </Link>
+                                    </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
                                 <div className="w-100 body_text pj_intro">
