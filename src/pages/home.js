@@ -128,91 +128,209 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="page-element">
-          <div className="container-fluid">
-            <div className="row mydes-title">
-              <div className="col-3"></div>
-              <div className="col-6">
-                <div className="heading_2 text-center mb-4">My Designs</div>
-                <div className="body_text text-center">
-                  Step into the world of a passionate UI designer's portfolio.
-                  Witness the evolution of my skills as I create intuitive interfaces and explore the realm of captivating design.
+        <div>
+          <div className="my-design">
+            <div className="container-fluid">
+              <div className="row my-des-title">
+                <div className="col-6">
+                  <div className="d-flex">
+                    <div className="text-large-2">My</div>
+                    <div className="dot-bl">
+                      <img className="img-ellipe-bl mx-4" src="./images/icons/ellipse-bl.svg" alt="smile" loading="lazy"/>
+                    </div>
+                    <div className="heading_1">DESIGNS</div>
+                  </div>
+                  <div className="d-flex">
+                    <div className="text-large-2">for</div>
+                    <div className="line decor-line mx-3"></div>
+                    <div className="heading_1">UNIQUE</div>
+                  </div>
+                  <div className="d-flex">
+                    <div className="heading_1">&</div>
+                    <div className="text-large-2 mx-4">soulful</div>
+                    <div className="heading_1">BRANDS</div>
+                  </div>
                 </div>
-              <div className="col-3"></div>
+                <div className="col-2"></div>
+                <div className="col-4">
+                  <div className="byme">
+                    <div className="d-flex">
+                      <div className="text-large-2 byme2">By</div>
+                      <div className="dot-bl">
+                        <img className="img-ellipe-99 mx-4" src="./images/icons/ellipse-99.svg" alt="smile" loading="lazy"/>
+                      </div>
+                      <div className="heading_1 myname byme2">NthDuong</div>
+                      <div></div>
+                    </div>
+                  </div>
+                  <div className="body_text text-right mydes-content">
+                    "Step into the world of a passionate UI designer's portfolio. Witness the evolution of my skills as I
+                    create intuitive interfaces and explore the realm of captivating design."
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="row des_r1">
-              <div className="col-lg-5 col-sm-12">
-                <div className="des_card img-des">
+          </div>
+          <div className="my-project">
+            <div className="">
+              <div className="row">
+                <div className="col-3 project-odd">
+                  <div className="heading_2 mb-2">01</div>
+
                   <Link to={ROUTER.CAKE}>
-                    <img className="w-100" src="./images/home/mydes_1.png" alt="logo" loading="lazy"/>
+                    <img
+                        className="w-100 project-img" src="./images/design/des-1.png"
+                        alt="logo"
+                        loading="lazy"
+                    />
+
                   </Link>
-                  <div className="d-flex mt-3 mb-2">
-                    <div className="heading_5 mr-2">01/</div>
-                    <div className="medium_text pj_name">Season Cake Blog</div>
-                    <div className="small_text ml-auto">Finished</div>
+
+                  <div className="medium_text mt-3">
+                    <Link to={ROUTER.CAKE}>
+                      Season Cake Blog
+                    </Link>
                   </div>
-                  <div className="body_text w-100 pj_intro">
-                    User testing was an iterative process that was conducted at every milestone of the project to identify
-                    the biggest pain points in the current version.
+                  <div className="body_text w-100 mt-2">
+                    User testing was an iterative process that was at every milestone of the project to.
                   </div>
                 </div>
-              </div>
-              <div className="col-1"/>
-              <div className="col-lg-6 col-sm-12">
-                <div className="des_card img-des">
+                <div className="col-3 project-even">
+                  <div className="heading_2 mb-2">02</div>
+
                   <Link to={ROUTER.AGURI}>
-                    <img className="w-100" src="./images/home/mydes_2.png" alt="logo" loading="lazy"/>
+                    <img
+                        className="w-100 project-img"
+                        src="./images/design/des-2.png"
+                        alt="logo"
+                        loading="lazy"
+                    />
                   </Link>
-                  <div className="d-flex mt-3 mb-2">
-                    <div className="heading_5 mr-2">02/</div>
-                    <div className="medium_text pj_name">Aguri Jewellery Website</div>
-                    <div className="small_text ml-auto">Finished</div>
+
+                  <div className="medium_text mt-3">
+                    <Link to={ROUTER.AGURI}>
+                      Aguri Jewellery Website
+                    </Link>
                   </div>
-                  <div className="w-100 body_text pj_intro">
-                    User testing was an iterative process that was conducted at every milestone of the project to identify
-                    the biggest pain points in the current version.
+                  <div className="body_text w-100 mt-2">
+                    User testing was an iterative process that was at every milestone of the project to.
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-lg-6 col-sm-12">
-                <div className="des_card img-des">
-                  <Link to={ROUTER.ALIO}>
-                    <img className="w-100" src="./images/home/mydes_3.png" alt="logo" loading="lazy"/>
-                  </Link>
-                  <div className="d-flex mt-3 mb-2">
-                    <div className="heading_5 mr-2">03/</div>
-                    <div className="medium_text pj_name">Alio Yoga Website & App</div>
-                    <div className="small_text ml-auto">Finished</div>
-                  </div>
-                  <div className="w-100 body_text pj_intro">
-                    Unwind with our UI design project for a yoga, Pilates, and meditation website. Immerse yourself in
-                    serene interfaces that inspire tranquility
-                  </div>
-                </div>
-              </div>
-              <div className="col-1"/>
-              <div className="col-lg-5 col-sm-12">
-                <div className="des_card img-des">
+                <div className="col-3 project-odd">
+                  <div className="heading_2 mb-2">03</div>
                   <Link to={ROUTER.FASHION}>
-                    <img className="w-100" src="./images/home/mydes_4.png" alt="logo" loading="lazy"/>
+                    <img className="w-100 project-img" src="./images/design/des-3.png" alt="logo" loading="lazy"/>
                   </Link>
-                  <div className="d-flex mt-3 mb-2">
-                    <div className="heading_5 mr-2">04/</div>
-                    <div className="medium_text pj_name">Vérité Luxury Fashion App</div>
-                    <div className="body_text ml-auto">Finished</div>
+                  <div className="medium_text mt-3">
+                    <Link to={ROUTER.FASHION}>Fashion App</Link>
                   </div>
-                  <div className="w-100 body_text pj_intro">
-                    User testing was an iterative process that was conducted at every milestone of the project to identify
-                    the biggest pain points in the current version.
+                  <div className="body_text w-100 mt-2">
+                    User testing was an iterative process that was at every milestone of the project to.
+                  </div>
+                </div>
+                <div className="col-3 project-even">
+                  <div className="heading_2 mb-2">04</div>
+                  <Link to={ROUTER.ALIO}>
+                    <img className="w-100 project-img" src="./images/design/des-4.png" alt="logo" loading="lazy"/>
+                  </Link>
+                  <div className="medium_text mt-3">
+                    <Link to={ROUTER.ALIO}>
+                      Alio Yoga Website & App
+                    </Link>
+                  </div>
+                  <div className="body_text w-100 mt-2">
+                    User testing was an iterative process that was at every milestone of the project to.
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        {/*<div className="page-element">*/}
+        {/*  <div className="container-fluid">*/}
+        {/*    <div className="row mydes-title">*/}
+        {/*      <div className="col-3"></div>*/}
+        {/*      <div className="col-6">*/}
+        {/*        <div className="heading_2 text-center mb-4">My Designs</div>*/}
+        {/*        <div className="body_text text-center">*/}
+        {/*          Step into the world of a passionate UI designer's portfolio.*/}
+        {/*          Witness the evolution of my skills as I create intuitive interfaces and explore the realm of captivating design.*/}
+        {/*        </div>*/}
+        {/*      <div className="col-3"></div>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*    <div className="row des_r1">*/}
+        {/*      <div className="col-lg-5 col-sm-12">*/}
+        {/*        <div className="des_card img-des">*/}
+        {/*          <Link to={ROUTER.CAKE}>*/}
+        {/*            <img className="w-100" src="./images/home/mydes_1.png" alt="logo" loading="lazy"/>*/}
+        {/*          </Link>*/}
+        {/*          <div className="d-flex mt-3 mb-2">*/}
+        {/*            <div className="heading_5 mr-2">01/</div>*/}
+        {/*            <div className="medium_text pj_name">Season Cake Blog</div>*/}
+        {/*            <div className="small_text ml-auto">Finished</div>*/}
+        {/*          </div>*/}
+        {/*          <div className="body_text w-100 pj_intro">*/}
+        {/*            User testing was an iterative process that was conducted at every milestone of the project to identify*/}
+        {/*            the biggest pain points in the current version.*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*      <div className="col-1"/>*/}
+        {/*      <div className="col-lg-6 col-sm-12">*/}
+        {/*        <div className="des_card img-des">*/}
+        {/*          <Link to={ROUTER.AGURI}>*/}
+        {/*            <img className="w-100" src="./images/home/mydes_2.png" alt="logo" loading="lazy"/>*/}
+        {/*          </Link>*/}
+        {/*          <div className="d-flex mt-3 mb-2">*/}
+        {/*            <div className="heading_5 mr-2">02/</div>*/}
+        {/*            <div className="medium_text pj_name">Aguri Jewellery Website</div>*/}
+        {/*            <div className="small_text ml-auto">Finished</div>*/}
+        {/*          </div>*/}
+        {/*          <div className="w-100 body_text pj_intro">*/}
+        {/*            User testing was an iterative process that was conducted at every milestone of the project to identify*/}
+        {/*            the biggest pain points in the current version.*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*    <div className="row">*/}
+        {/*      <div className="col-lg-6 col-sm-12">*/}
+        {/*        <div className="des_card img-des">*/}
+        {/*          <Link to={ROUTER.ALIO}>*/}
+        {/*            <img className="w-100" src="./images/home/mydes_3.png" alt="logo" loading="lazy"/>*/}
+        {/*          </Link>*/}
+        {/*          <div className="d-flex mt-3 mb-2">*/}
+        {/*            <div className="heading_5 mr-2">03/</div>*/}
+        {/*            <div className="medium_text pj_name">Alio Yoga Website & App</div>*/}
+        {/*            <div className="small_text ml-auto">Finished</div>*/}
+        {/*          </div>*/}
+        {/*          <div className="w-100 body_text pj_intro">*/}
+        {/*            Unwind with our UI design project for a yoga, Pilates, and meditation website. Immerse yourself in*/}
+        {/*            serene interfaces that inspire tranquility*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*      <div className="col-1"/>*/}
+        {/*      <div className="col-lg-5 col-sm-12">*/}
+        {/*        <div className="des_card img-des">*/}
+        {/*          <Link to={ROUTER.FASHION}>*/}
+        {/*            <img className="w-100" src="./images/home/mydes_4.png" alt="logo" loading="lazy"/>*/}
+        {/*          </Link>*/}
+        {/*          <div className="d-flex mt-3 mb-2">*/}
+        {/*            <div className="heading_5 mr-2">04/</div>*/}
+        {/*            <div className="medium_text pj_name">Vérité Luxury Fashion App</div>*/}
+        {/*            <div className="body_text ml-auto">Finished</div>*/}
+        {/*          </div>*/}
+        {/*          <div className="w-100 body_text pj_intro">*/}
+        {/*            User testing was an iterative process that was conducted at every milestone of the project to identify*/}
+        {/*            the biggest pain points in the current version.*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
       </div>
   )
 }

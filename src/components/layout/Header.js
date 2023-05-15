@@ -61,11 +61,7 @@ const Header = () => {
                       ABOUT
                     </Link>
                   </Nav>
-                  <NavDropdown onMouseEnter={handleMouseEnter}
-                               onMouseLeave={handleMouseLeave}
-                               title={<Link to="/designs">DESIGNS</Link>}
-                               show={isOpen}
-                               id="basic-nav-dropdown">
+                  <NavDropdown title={<span as={Link} to="/designs">DESIGNS</span>} id="basic-nav-dropdown">
                     <NavDropdown.Item>
                       <Link to={ROUTER.ALIO} className="nav-link">Alio</Link>
                     </NavDropdown.Item>
