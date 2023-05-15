@@ -49,6 +49,20 @@ const Cake = () => {
                 <div className="product-showcase">
                     <div className="cake-banner pdb-60">
                         <img className="w-100" src="./images/Pj01_cake/cake-banner.png" alt="#" loading="lazy"/>
+                        <div className="showcase-content">
+                            <div className="row">
+                                <div className="col-3"></div>
+                                <div className="col-6 text-center">
+                                    <div className="heading_4 mb-3 text-light">SEASON CAKE BLOG</div>
+                                    <div className="body-text text-light">
+                                        There are many food blog websites existing, but over the years I gained more experience
+                                        in baking and this is where I am now, sharing my passion for creative special cakes,
+                                        my favorite recipes and healthy baking.
+                                    </div>
+                                </div>
+                                <div className="col-3"></div>
+                            </div>
+                        </div>
                         {/*<img className="w-100" src="https://i.imgur.com/RLSInkn.png"/>*/}
                     </div>
                     <div className="">
