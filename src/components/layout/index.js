@@ -12,6 +12,7 @@ import {faArrowDown, faArrowRight, faArrowUp} from "@fortawesome/free-solid-svg-
 const Layout = ({ children }) => {
     //sount scroll behavior
     const [countdown, setCountdown] = useState(1);
+    const [countup, setCountup] = useState(1);
 
     const scrollDistance = 800;
   // Scroll button function
@@ -22,6 +23,9 @@ const Layout = ({ children }) => {
     const newPosition = scrollPosition - 800; // adjust the number of pixels to scroll up/down
     setScrollPosition(newPosition);
     window.scrollTo({ top: newPosition, behavior: 'smooth' });
+
+      const newCountup = Math.floor(newPosition / scrollDistance) - 1;
+      setCountup(newCountup);
 
   };
   //scroll down a new position
@@ -71,7 +75,7 @@ const Layout = ({ children }) => {
                 <div className="top-to-btm">
                     <FontAwesomeIcon className="icon-up" icon={faArrowUp} onClick={handleScrollUp}/>
                     <div className="">
-                        <div className="body_text position">1/{countdown}</div>
+                        <div className="body_text position">{countdown}/10</div>
                     </div>
                     <FontAwesomeIcon className="icon-down" icon={faArrowDown} onClick={handleScrollDown}/>
                 </div>

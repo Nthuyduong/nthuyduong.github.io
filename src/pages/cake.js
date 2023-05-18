@@ -53,8 +53,8 @@ const Cake = () => {
                             <div className="row">
                                 <div className="col-3"></div>
                                 <div className="col-6 text-center">
-                                    <div className="heading_4 mb-3 text-light">SEASON CAKE BLOG</div>
-                                    <div className="body-text text-light">
+                                    <div className="heading_4 mb-3">SEASON CAKE BLOG</div>
+                                    <div className="body-text">
                                         There are many food blog websites existing, but over the years I gained more experience
                                         in baking and this is where I am now, sharing my passion for creative special cakes,
                                         my favorite recipes and healthy baking.
@@ -94,12 +94,13 @@ const Cake = () => {
                     <div className="pdb-60">
                         <div className="">
                             <img className="w-100" src={require(`../../public/images/Pj01_cake/${show[currentShowIndex]}`)} alt="#" loading="lazy"/>
-
                         </div>
                     </div>
                     <div className="pdb-60">
                         <div className="row">
-                            <div className="col-6"></div>
+                            <div className="col-6">
+                                <img className="w-100" src="./images/Pj01_cake/about-left.png" alt="#" loading="lazy"/>
+                            </div>
                             <div className="col-6">
                                 <img className="w-100" src="./images/Pj01_cake/about.png" alt="#" loading="lazy"/>
                             </div>
