@@ -87,6 +87,9 @@ const Cake = () => {
                                         of the leading manufacturers and suppliers of precious, semi precious and artificial jewelleries.
                                         They sell these jewelleries under different brand names.
                                     </div>
+                                    <div className="small_text text-right font-italic">
+                                        <a href="https://nthuyduong.github.io/CakeBlog/#/" target="_blank">Visit: https://nthuyduong.github.io/CakeBlog/#/</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
