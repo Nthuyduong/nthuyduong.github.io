@@ -10,7 +10,7 @@ import "@fortawesome/react-fontawesome"
 import {faArrowDown, faArrowRight, faArrowUp} from "@fortawesome/free-solid-svg-icons";
 
 const Layout = ({ children }) => {
-    //sount scroll behavior
+    //count scroll behavior
     const [countdown, setCountdown] = useState(1);
     const [countup, setCountup] = useState(1);
 
