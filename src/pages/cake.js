@@ -79,13 +79,13 @@ const Cake = () => {
                             <div className="col-6 cake-intro-content">
                                 <div className="content2">
                                     <div className="heading_4">Introduction</div>
-                                    <div className="body_text">
-                                        “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,
-                                        semi precious and artificial jewelleries. They sell these jewelleries under different brand names.
-                                        The quality of the products are renowned for striking features such as smooth polish,
-                                        stunning design and excelling clarity, look and feature, and luster. “AGURI JEWELLERY” is one
-                                        of the leading manufacturers and suppliers of precious, semi precious and artificial jewelleries.
-                                        They sell these jewelleries under different brand names.
+                                    <div className="body_text mb-5">
+                                        Season Cake Blog is a vibrant platform dedicated to all things cake. We are passionate
+                                        about sharing the artistry, creativity, and joy of cake baking. Through our curated
+                                        content, tantalizing recipes, and expert tips, we aim to inspire and empower bakers
+                                        of all levels to create extraordinary cakes that are not only visually stunning but
+                                        also deliciously unforgettable. Join our thriving community, unleash your inner baker,
+                                        and embark on a sweet journey of endless possibilities.
                                     </div>
                                     <div className="small_text text-right font-italic">
                                         <a href="https://nthuyduong.github.io/CakeBlog/#/" target="_blank">Visit: https://nthuyduong.github.io/CakeBlog/#/</a>
@@ -99,12 +99,18 @@ const Cake = () => {
                             <img className="w-100" src={require(`../../public/images/Pj01_cake/${show[currentShowIndex]}`)} alt="#" loading="lazy"/>
                         </div>
                     </div>
-                    <div className="pdb-60">
+                    <div className="pdb-60 cake-abtpage">
                         <div className="row">
-                            <div className="col-6">
-                                <img className="w-100" src="./images/Pj01_cake/about-left.png" alt="#" loading="lazy"/>
+                            <div className="col-6 cake-abtpage-left">
+                                <div className="about-contain">
+                                    <div className="heading_3 text-center title-top">SEASON CAKE BLOG</div>
+                                    <div>
+                                        <img className="" src="./images/Pj01_cake/about-left.png" alt="#" loading="lazy"/>
+                                    </div>
+                                    <div className="heading_3 text-center title-btm">THIS OUR MADE</div>
+                                </div>
                             </div>
-                            <div className="col-6">
+                            <div className="col-6 cake-abtpage-right">
                                 <img className="w-100" src="./images/Pj01_cake/about.png" alt="#" loading="lazy"/>
                             </div>
                         </div>

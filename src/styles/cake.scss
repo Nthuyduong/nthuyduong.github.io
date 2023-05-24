@@ -1,10 +1,32 @@
 .cake-intro-content{
   //background-color: #F5EAE0;
 }
+
 .cake-banner{
   position: relative;
   .showcase-content{
     position: absolute;
     top:68%;
+  }
+}
+//
+.cake-abtpage{
+  .cake-abtpage-left{
+    background-color: #F5EAE0;
+    .about-contain{
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .title-top{
+        position: absolute;
+        top: -20px;
+      }
+      .title-btm{
+        position: absolute;
+        bottom: -5%;
+        left: 10%;
+      }
+    }
   }
 }

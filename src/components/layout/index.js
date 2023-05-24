@@ -26,8 +26,8 @@ const Layout = ({ children }) => {
 
       const newCountup = Math.floor(newPosition / scrollDistance) - 1;
       setCountup(newCountup);
-
   };
+
   //scroll down a new position
   const handleScrollDown = () => {
     const newPosition = scrollPosition + 800; // adjust the number of pixels to scroll up/down
@@ -37,7 +37,6 @@ const Layout = ({ children }) => {
     //count the number of scroll behavior
     const newCountdown = Math.floor(newPosition / scrollDistance) + 1;
     setCountdown(newCountdown);
-
   };
 
   //Back-to-top function
@@ -61,6 +60,7 @@ const Layout = ({ children }) => {
             </div>
         );
     }
+
   //Display Side Nav
   if (withoutElement.some((route) => pathname.includes(route))) {
         return (
