@@ -85,14 +85,12 @@ const Alio = () => {
                                 <div className="content2">
                                     <div className="heading_4">Introduction</div>
                                     <div className="body_text">
-                                        “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,
-                                        semi precious and artificial jewelleries. They sell these jewelleries under different brand names.
-                                        The quality of the products are renowned for striking features such as smooth polish,
-                                        stunning design and excelling clarity, look and feature, and luster. “AGURI JEWELLERY” is one
-                                        of the leading manufacturers and suppliers of precious, semi precious and artificial jewelleries.
-                                        They sell these jewelleries under different brand names. The quality of the products are
-                                        renowned for striking features such as smooth polish, stunning design and excelling clarity,
-                                        look and feature, and luster.
+                                        Welcome to Alio, Pilate, and Meditation! Our website is your sanctuary for holistic
+                                        wellness and mindful living. Discover the power of Alio for dynamic fitness, Pilate
+                                        for strength and flexibility, and meditation for inner peace. Join our nurturing
+                                        community and embark on a transformative journey of self-care and rejuvenation.
+                                        Experience the synergy of Alio, Pilate, and Meditation as you nurture your body,
+                                        calm your mind, and find balance in everyday life.
                                     </div>
                                 </div>
                             </div>
@@ -184,9 +182,8 @@ const Alio = () => {
                                     </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
-                                <div className="w-100 body_text pj_intro">
-                                    User testing was an iterative process that was conducted at every milestone of the project to identify
-                                    the biggest pain points in the current version.
+                                <div className="w-100 body_text pj_intro w-100">
+                                    Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
                                 </div>
                             </div>
                         </div>
@@ -203,9 +200,8 @@ const Alio = () => {
                                     </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
-                                <div className="w-100 body_text pj_intro">
-                                    User testing was an iterative process that was conducted at every milestone of the project to identify
-                                    the biggest pain points in the current version.
+                                <div className="w-100 body_text pj_intro w-100">
+                                    Indulge in luxury and style with our timeless fashion brand, redefining elegance and sophistication.
                                 </div>
                             </div>
                         </div>
@@ -222,9 +218,8 @@ const Alio = () => {
                                     </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
-                                <div className="w-100 body_text pj_intro">
-                                    User testing was an iterative process that was conducted at every milestone of the project to identify
-                                    the biggest pain points in the current version.
+                                <div className="w-100 body_text pj_intro w-100">
+                                    Indulge in the delectable world of Cake Blog, where sweetness and creativity come together.
                                 </div>
                             </div>
                         </div>

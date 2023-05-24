@@ -42,12 +42,12 @@ const Fashion = () => {
                                 <div className="content2">
                                     <div className="heading_4">Introduction</div>
                                     <div className="body_text">
-                                        “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,
-                                        semi precious and artificial jewelleries. They sell these jewelleries under different brand names.
-                                        The quality of the products are renowned for striking features such as smooth polish,
-                                        stunning design and excelling clarity, look and feature, and luster. “AGURI JEWELLERY” is one
-                                        of the leading manufacturers and suppliers of precious, semi precious and artificial jewelleries.
-                                        They sell these jewelleries under different brand names.
+                                        Discover the essence of French luxury fashion. Our brand captures the essence of
+                                        timeless elegance and refined craftsmanship. With meticulous attention to detail and
+                                        a passion for exquisite design, we offer a curated selection of sophisticated pieces
+                                        that epitomize French style. Embrace effortless chic and indulge in the allure of
+                                        our collections. Experience the epitome of luxury with our brand, where sophistication
+                                        meets impeccable taste.
                                     </div>
                                 </div>
                             </div>
@@ -100,9 +100,8 @@ const Fashion = () => {
                                     </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
-                                <div className="body_text pj_intro">
-                                    User testing was an iterative process that was conducted at every milestone of the project to identify
-                                    the biggest pain points in the current version.
+                                <div className="body_text pj_intro w-100">
+                                    Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
                                 </div>
                             </div>
                         </div>
@@ -119,9 +118,8 @@ const Fashion = () => {
                                     </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
-                                <div className="body_text pj_intro">
-                                    User testing was an iterative process that was conducted at every milestone of the project to identify
-                                    the biggest pain points in the current version.
+                                <div className="body_text pj_intro w-100">
+                                    Indulge in the delectable world of Cake Blog, where sweetness and creativity come together.
                                 </div>
                             </div>
                         </div>
@@ -138,9 +136,8 @@ const Fashion = () => {
                                     </div>
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
-                                <div className="body_text pj_intro">
-                                    User testing was an iterative process that was conducted at every milestone of the project to identify
-                                    the biggest pain points in the current version.
+                                <div className="body_text pj_intro w-100">
+                                    Discover a serene oasis at our Yoga, Pilates, and Meditation website, where tranquility awaits.
                                 </div>
                             </div>
                         </div>

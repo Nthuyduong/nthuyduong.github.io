@@ -163,8 +163,7 @@ const Aguri = () => {
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
                                 <div className="w-100 body_text pj_intro">
-                                    User testing was an iterative process that was conducted at every milestone of the project to identify
-                                    the biggest pain points in the current version.
+                                    Indulge in the delectable world of Cake Blog, where sweetness and creativity come together.
                                 </div>
                             </div>
                         </div>
@@ -180,8 +179,7 @@ const Aguri = () => {
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
                                 <div className="w-100 body_text pj_intro">
-                                    User testing was an iterative process that was conducted at every milestone of the project to identify
-                                    the biggest pain points in the current version.
+                                    Indulge in luxury and style with our timeless fashion brand, redefining elegance and sophistication.
                                 </div>
                             </div>
                         </div>
@@ -199,8 +197,7 @@ const Aguri = () => {
                                     <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                 </div>
                                 <div className="w-100 body_text pj_intro">
-                                    User testing was an iterative process that was conducted at every milestone of the project to identify
-                                    the biggest pain points in the current version.
+                                    Discover a serene oasis at our Yoga, Pilates, and Meditation website, where tranquility awaits.
                                 </div>
                             </div>
                         </div>

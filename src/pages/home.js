@@ -183,16 +183,14 @@ const Home = () => {
                         alt="logo"
                         loading="lazy"
                     />
-
                   </Link>
-
                   <div className="medium_text mt-3">
                     <Link to={ROUTER.CAKE}>
                       Season Cake Blog
                     </Link>
                   </div>
                   <div className="body_text w-100 mt-2">
-                    User testing was an iterative process that was at every milestone of the project to.
+                    Indulge in the delectable world of Cake Blog, where sweetness and creativity come together.
                   </div>
                 </div>
                 <div className="col-3 project-even">
@@ -213,7 +211,7 @@ const Home = () => {
                     </Link>
                   </div>
                   <div className="body_text w-100 mt-2">
-                    User testing was an iterative process that was at every milestone of the project to.
+                    Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
                   </div>
                 </div>
                 <div className="col-3 project-odd">
@@ -225,7 +223,7 @@ const Home = () => {
                     <Link to={ROUTER.FASHION}>Fashion App</Link>
                   </div>
                   <div className="body_text w-100 mt-2">
-                    User testing was an iterative process that was at every milestone of the project to.
+                    Indulge in luxury and style with our timeless fashion brand, redefining elegance and sophistication.
                   </div>
                 </div>
                 <div className="col-3 project-even">
@@ -239,7 +237,7 @@ const Home = () => {
                     </Link>
                   </div>
                   <div className="body_text w-100 mt-2">
-                    User testing was an iterative process that was at every milestone of the project to.
+                    Discover a serene oasis at our Yoga, Pilates, and Meditation website, where tranquility awaits.
                   </div>
                 </div>
               </div>
