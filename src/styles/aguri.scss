@@ -64,17 +64,22 @@
   .intro-right{
     background-color: #F5EAE0;
     .intro-inner{
+      padding-left: 60px;
+      padding-right: 60px;
+      align-items: center;
       position: absolute;
       top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      width:520px;
-      height: 90%;
-      border: 1px grey solid;
-      border-radius: 20px;
-      .inner-content{
-        position:absolute;
-        top:40%;
+      transform: translate(0, -50%);
+      //width:520px;
+      //height: 90%;
+      //border: 1px grey solid;
+      //border-radius: 20px;
+      //.inner-content{
+      //  //position:absolute;
+      //  //top:40%;
+      //}
+      .text-large{
+        color: #ccc;
       }
     }
   }

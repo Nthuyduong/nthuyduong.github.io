@@ -63,14 +63,25 @@ const Aguri = () => {
                             </div>
                             <div className="col-6 text-center intro-right">
                                 <div className="intro-inner">
-                                    <div className="inner-content content2">
-                                        <div className="heading_4">Introduction</div>
-                                        <div className="body_text">
-                                            “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,
-                                            semi precious and artificial jewelleries. We sell these jewelleries under different brand names.
-                                            The quality of the products are renowned for striking features.
-                                        </div>
+                                    <div className="text-large mb-4">AGURI</div>
+                                    <div className="medium_text">Welcome to our jewellery brand! We hope you enjoy our collection.</div>
+                                    <div className="text-large my-4">JEWELLERY</div>
+                                    <div className="small_text">
+                                        Aguri Jewellery is committed to providing high-quality jewelry pieces that meet
+                                        the needs and preferences of their customers. With a wide range of options available
+                                        under different brand names, customers can choose from an impressive selection of
+                                        designs and styles. Whether it's for a special occasion or everyday wear, Aguri
+                                        Jewellery has something for everyone.
                                     </div>
+                                    <div className="text-large mt-4">BRAND</div>
+                                    {/*<div className="inner-content content2">*/}
+                                    {/*    <div className="heading_4">Introduction</div>*/}
+                                    {/*    <div className="body_text">*/}
+                                    {/*        “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,*/}
+                                    {/*        semi precious and artificial jewelleries. We sell these jewelleries under different brand names.*/}
+                                    {/*        The quality of the products are renowned for striking features.*/}
+                                    {/*    </div>*/}
+                                    {/*</div>*/}
                                 </div>
                             </div>
                         </div>
