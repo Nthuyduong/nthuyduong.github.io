@@ -25,14 +25,14 @@ const Cake = () => {
     const [currentCakeIndex, setCurrentCakeIndex] = useState(0);
     const [cake] = useState(
         [
-            "cake1.png",
-            "cake2.png",
-            "cake3.png",
-            "cake4.png",
-            "cake5.png",
-            "cake6.png",
-            "cake7.png",
-            "cake8.png",
+            "cake1.webp",
+            "cake2.webp",
+            "cake3.webp",
+            "cake4.webp",
+            "cake5.webp",
+            "cake6.webp",
+            "cake7.webp",
+            "cake8.webp",
         ]
     )
     useEffect(() => {
@@ -48,7 +48,7 @@ const Cake = () => {
             <div className="container-fluid">
                 <div className="product-showcase">
                     <div className="cake-banner pdb-60">
-                        <img className="w-100" src="./images/Pj01_cake/cake-banner.png" alt="#" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj01_cake/cake-banner.webp" alt="#" loading="lazy"/>
                         <div className="showcase-content">
                             <div className="row">
                                 <div className="col-3"></div>
@@ -74,7 +74,7 @@ const Cake = () => {
                     <div className="pdb-60">
                         <div className="row">
                             <div className="col-6">
-                                <img className="w-100" src="./images/Pj01_cake/line2-01.png" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj01_cake/line2-01.webp" alt="#" loading="lazy"/>
                             </div>
                             <div className="col-6 cake-intro-content">
                                 <div className="content2">
@@ -124,7 +124,7 @@ const Cake = () => {
                     <div className="pdb-60">
                         <div className="">
                             <div className="">
-                                <img className="w-100" src="./images/Pj01_cake/detail.png" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj01_cake/detail.webp" alt="#" loading="lazy"/>
                             </div>
                         </div>
                     </div>
