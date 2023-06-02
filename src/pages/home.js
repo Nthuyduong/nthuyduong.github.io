@@ -104,7 +104,7 @@ const Home = () => {
                 </div>
                 <div className="d-flex">
                   <div className="col-6 brands-left">
-                    <img className="w-100" src="./images/home/Rectangle35.png" alt="Rectangle35" loading="lazy"/>
+                    <img className="w-100" src="./images/home/Rectangle35.webp" alt="Rectangle35" loading="lazy"/>
                   </div>
                   <div className="col-6 brands heading_2">
                     Brands <span className="brands-line"></span>
@@ -112,18 +112,18 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-4 child2">
-                <img className="w-100" src="./images/home/Rectangle36.png" alt="Rectangle35" loading="lazy"/>
+                <img className="w-100" src="./images/home/Rectangle36.webp" alt="Rectangle35" loading="lazy"/>
               </div>
               <div className="col-2 child3">
                 <div className="img-box">
-                  <img className="w-100" src="./images/home/Rectangle34.png" alt="Rectangle35" loading="lazy"/>
+                  <img className="w-100" src="./images/home/Rectangle34.webp" alt="Rectangle35" loading="lazy"/>
                 </div>
               </div>
             </div>
             <div className="row row-bt">
               <div className="col-6"></div>
               <div className="col-6 small-img">
-                <img className="" src="./images/home/Rectangle440.png" alt="Rectangle35" loading="lazy"/>
+                <img className="" src="./images/home/Rectangle440.webp" alt="Rectangle35" loading="lazy"/>
               </div>
             </div>
           </div>
