@@ -9,11 +9,11 @@ const Aguri = () => {
     const [currentBuyIndex, setCurrentBuyIndex] = useState(0);
     const [buy] = useState(
         [
-            "buy1.png",
-            "buy2.png",
-            "buy3.png",
-            "buy4.png",
-            "buy5.png",
+            "buy1.webp",
+            "buy2.webp",
+            "buy3.webp",
+            "buy4.webp",
+            "buy5.webp",
             "buy6.png",
         ]
     )
@@ -91,7 +91,7 @@ const Aguri = () => {
                         <div className="row">
                             <div className="col-6 line2-left">
                                 <div className="content2">
-                                    <div className="heading_4">Logotype</div>
+                                    <div className="heading_4">Introduction</div>
                                     <div className="body_text mb-5">
                                         “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,
                                         semi precious and artificial jewelleries. They sell these jewelleries under different brand names.
