@@ -8,6 +8,27 @@ import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 
 const Header = () => {
+
+  // //CREATE TAB BAR FOR EXAMPLE
+  // const tabs = [
+  //   "Profile",
+  //   "Other",
+  // ]
+  //
+  // const [currentTab, setCurrentTab] = useState(tabs[0]);
+  //
+  // const activeTab = () => {
+  //   if (CurrentTab === "Profile"){
+  //     return <Profile/>;
+  //   }
+  //   if(CurrentTab === "Other")
+  //   {
+  //     return <Other/>;
+  //   }
+  //   return '';
+  // }
+
+
   //Hover NavDropdown
   const [isOpen, setIsOpen] = useState(false);
   const timeoutRef = useRef(null);
