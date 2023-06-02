@@ -179,7 +179,7 @@ const Home = () => {
 
                   <Link to={ROUTER.CAKE}>
                     <img
-                        className="w-100 project-img" src="./images/design/des-1.png"
+                        className="w-100 project-img" src="./images/design/des-1.webp"
                         alt="logo"
                         loading="lazy"
                     />
@@ -199,7 +199,7 @@ const Home = () => {
                   <Link to={ROUTER.AGURI}>
                     <img
                         className="w-100 project-img"
-                        src="./images/design/des-2.png"
+                        src="./images/design/des-2.webp"
                         alt="logo"
                         loading="lazy"
                     />
@@ -217,7 +217,7 @@ const Home = () => {
                 <div className="col-3 project-odd">
                   <div className="heading_2 mb-2">03</div>
                   <Link to={ROUTER.FASHION}>
-                    <img className="w-100 project-img" src="./images/design/des-3.png" alt="logo" loading="lazy"/>
+                    <img className="w-100 project-img" src="./images/design/des-3.webp" alt="logo" loading="lazy"/>
                   </Link>
                   <div className="medium_text mt-3">
                     <Link to={ROUTER.FASHION}>Fashion App</Link>
@@ -229,7 +229,7 @@ const Home = () => {
                 <div className="col-3 project-even">
                   <div className="heading_2 mb-2">04</div>
                   <Link to={ROUTER.ALIO}>
-                    <img className="w-100 project-img" src="./images/design/des-4.png" alt="logo" loading="lazy"/>
+                    <img className="w-100 project-img" src="./images/design/des-4.webp" alt="logo" loading="lazy"/>
                   </Link>
                   <div className="medium_text mt-3">
                     <Link to={ROUTER.ALIO}>
