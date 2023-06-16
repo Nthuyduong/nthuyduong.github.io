@@ -66,7 +66,7 @@ const Alio = () => {
                     <div className="alio1 pdb-60">
                         <div className="row">
                             <div className="col-6">
-                                <img className="w-100" src="./images/Pj02_yoga/line1-01.png" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj02_yoga/line1-01.webp" alt="#" loading="lazy"/>
                             </div>
                             <div className="col-6 r1-right">
                                 <img className="w-100" src="./images/Pj02_yoga/line1-02.webp" alt="#" loading="lazy"/>
@@ -96,9 +96,9 @@ const Alio = () => {
                             </div>
                             <div className="col-6">
                                 <div className="alio2-left">
-                                    <img className="w-100" src="./images/Pj02_yoga/line2-02-lg.png" alt="#" loading="lazy"/>
+                                    <img className="w-100" src="./images/Pj02_yoga/line2-02-lg.webp" alt="#" loading="lazy"/>
                                     <div className="img-inner">
-                                        <img className="" src="./images/Pj02_yoga/line2-02-sm.png" alt="#" loading="lazy"/>
+                                        <img className="" src="./images/Pj02_yoga/line2-02-sm.webp" alt="#" loading="lazy"/>
                                     </div>
                                 </div>
                             </div>

@@ -10,10 +10,13 @@ import "@fortawesome/react-fontawesome"
 import {faArrowDown, faArrowRight, faArrowUp} from "@fortawesome/free-solid-svg-icons";
 
 const Layout = ({ children }) => {
+
+    //SCROLL TO DIV AND COUNT THE NUMBER
+
+
     //count scroll behavior
     const [countdown, setCountdown] = useState(1);
     const [countup, setCountup] = useState(1);
-
     const scrollDistance = 800;
   // Scroll button function
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -24,8 +27,8 @@ const Layout = ({ children }) => {
     setScrollPosition(newPosition);
     window.scrollTo({ top: newPosition, behavior: 'smooth' });
 
-      const newCountup = Math.floor(newPosition / scrollDistance) - 1;
-      setCountup(newCountup);
+    const newCountup = Math.floor(newPosition / scrollDistance) - 1;
+    setCountup(newCountup);
   };
 
   //scroll down a new position
