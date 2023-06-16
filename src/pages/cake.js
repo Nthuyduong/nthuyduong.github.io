@@ -105,13 +105,13 @@ const Cake = () => {
                                 <div className="about-contain">
                                     <div className="heading_3 text-center title-top">SEASON CAKE BLOG</div>
                                     <div>
-                                        <img className="" src="./images/Pj01_cake/about-left.png" alt="#" loading="lazy"/>
+                                        <img className="" src="./images/Pj01_cake/about-left.webp" alt="#" loading="lazy"/>
                                     </div>
                                     <div className="heading_3 text-center title-btm">THIS OUR MADE</div>
                                 </div>
                             </div>
                             <div className="col-6 cake-abtpage-right">
-                                <img className="w-100" src="./images/Pj01_cake/about.png" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj01_cake/about.webp" alt="#" loading="lazy"/>
                             </div>
                         </div>
                     </div>
