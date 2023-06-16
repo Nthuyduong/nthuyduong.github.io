@@ -11,7 +11,7 @@ const About = () => {
           <div className="row row-n1">
             <div className="col-1"></div>
             <div className="col-4"></div>
-              <div className="title-about1-2 heading_6 ">
+              <div className="title-about1-2 heading_5 ">
                 So glad to see you here!
               </div>
               <div className="col-6"></div>
@@ -42,7 +42,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-2">
-              <div className="heading_3 sef-intro">Self - Introduce</div>
+              <div className="heading_2 sef-intro">Self - Introduce</div>
             </div>
             <div className="col-1">
 
