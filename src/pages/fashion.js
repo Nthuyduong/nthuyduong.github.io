@@ -10,12 +10,12 @@ const Fashion = () => {
             <div className="container-fluid">
                 <div className="product-showcase">
                     <div className="showcase pdb-60">
-                        <img className="w-100" src="./images/Pj04_fashion/banner2.png" alt="#" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj04_fashion/banner2.webp" alt="#" loading="lazy"/>
                         <div className="showcase-inner">
                             <div className="row">
                                 <div className="col-1"/>
                                 <div className="col-4 image-left">
-                                    <img className="w-100" src="./images/Pj04_fashion/line1.png" alt="#" loading="lazy"/>
+                                    <img className="w-100" src="./images/Pj04_fashion/line1.webp" alt="#" loading="lazy"/>
                                 </div>
                                 <div className="col-7 content-right">
                                     <img className="mb-5" src="./images/Pj04_fashion/logo.svg" alt="#" loading="lazy"/>
@@ -52,33 +52,33 @@ const Fashion = () => {
                                 </div>
                             </div>
                             <div className="col-6">
-                                <img className="w-100" src="./images/Pj04_fashion/line2-01.png" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj04_fashion/line2-01.webp" alt="#" loading="lazy"/>
                             </div>
                         </div>
                     </div>
                     <div className="verite-show1 pdb-60">
-                        <img className="mb-4 w-100" src="./images/Pj04_fashion/verite-show.png" alt="#" loading="lazy"/>
+                        <img className="mb-4 w-100" src="./images/Pj04_fashion/verite-show.webp" alt="#" loading="lazy"/>
                     </div>
                     <div className="verite_line3 pdb-60">
                         <div className="row">
                             <div className="col-6">
-                                <img className="w-100" src="./images/Pj04_fashion/line3-01.png" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj04_fashion/line3-01.webp" alt="#" loading="lazy"/>
                             </div>
                             <div className="col-6">
-                                <img className="w-100" src="./images/Pj04_fashion/line3-02.png" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj04_fashion/line3-02.webp" alt="#" loading="lazy"/>
                             </div>
                         </div>
                     </div>
                     <div className="verite_line4 pdb-60">
-                        <img className="w-100" src="./images/Pj04_fashion/line4.png" alt="#" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj04_fashion/line4.webp" alt="#" loading="lazy"/>
                     </div>
                     <div className="verite_line5 pdb-60">
                         <div className="row">
                             <div className="col-6">
-                                <img className="w-100" src="./images/Pj04_fashion/line5-01.png" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj04_fashion/line5-01.webp" alt="#" loading="lazy"/>
                             </div>
                             <div className="col-6">
-                                <img className="w-100" src="./images/Pj04_fashion/line5-02.png" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj04_fashion/line5-02.webp" alt="#" loading="lazy"/>
                             </div>
                         </div>
                     </div>
