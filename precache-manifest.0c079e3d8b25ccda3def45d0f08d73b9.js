@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "686d69c2a54f7e60c63c",
+    "revision": "06ce460f6805c382a10a",
     "url": "/static/css/main.d1268b38.chunk.css"
   },
   {
-    "revision": "686d69c2a54f7e60c63c",
-    "url": "/static/js/main.d208ba29.chunk.js"
+    "revision": "06ce460f6805c382a10a",
+    "url": "/static/js/main.c5039a94.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -260,15 +260,15 @@ self.__precacheManifest = [
     "url": "/static/media/Americana Bold BT.d6a448ad.ttf"
   },
   {
-    "revision": "c10f1b4a7754f4c792a5b249af27d22f",
-    "url": "/static/media/SFUFuturaBook.c10f1b4a.TTF"
-  },
-  {
     "revision": "6aa81ad8a396cb3226339310cfa74aa3",
     "url": "/static/media/SFUFuturaRegular.6aa81ad8.TTF"
   },
   {
-    "revision": "71fbbacb3312c187b227dbc377c9fb0e",
+    "revision": "c10f1b4a7754f4c792a5b249af27d22f",
+    "url": "/static/media/SFUFuturaBook.c10f1b4a.TTF"
+  },
+  {
+    "revision": "de0d7674c7e04e3a82e41dc7f743a407",
     "url": "/index.html"
   }
 ];
