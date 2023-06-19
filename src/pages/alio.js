@@ -39,10 +39,10 @@ const Alio = () => {
     const [currentShowcaseIndex, setCurrentShowcaseIndex] = useState(0);
     const [Showcase] = useState(
         [
-            "Showcase1.png",
-            "Showcase2.png",
-            "Showcase3.png",
-            "Showcase4.png",
+            "Showcase1.webp",
+            "Showcase2.webp",
+            "Showcase3.webp",
+            "Showcase4.webp",
         ]
     )
     useEffect(() => {
@@ -149,15 +149,15 @@ const Alio = () => {
                         </div>
                     </div>
                     <div className="alio7 pdb-60">
-                        <img className="w-100" src="./images/Pj02_yoga/line7.png" alt="#" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj02_yoga/line7.webp" alt="#" loading="lazy"/>
                     </div>
                     <div className="alio8 pdb-60">
                         <div className="row">
                             <div className="col-6">
-                                <img className="w-100" src="./images/Pj02_yoga/line7-01.png" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj02_yoga/line7-01.webp" alt="#" loading="lazy"/>
                             </div>
                             <div className="col-6">
-                                <img className="w-100" src="./images/Pj02_yoga/line7-02.png" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj02_yoga/line7-02.webp" alt="#" loading="lazy"/>
                             </div>
                         </div>
                     </div>
