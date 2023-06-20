@@ -5,42 +5,36 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {ROUTER} from "../utils/constants";
 
 const Aguri = () => {
-    //Horizontal sliders image
-    const images = [
-        'DB1.png',
-        'DB2.png',
-        'DB3.png',
-        'DB4.png',
-        'DB5.png',
-        'DB6.png',
-        'DB7.png',
-        'DB8.png',
-    ];
-    const SlideImage = ({images, slideInterval = 3000}) => {
+    //Horizontal sliders image function
+    const SlideImage = ({ slideInterval = 3000 }) => {
+        const ImgDirectory = process.env.PUBLIC_URL + './images/Pj03_aguri/';
+        const images = [
+            ImgDirectory + 'DB1.png',
+            ImgDirectory + 'DB2.png',
+            ImgDirectory + 'DB3.png',
+            ImgDirectory + 'DB4.png',
+        ];
         const [currentIndex, setCurrentIndex] = useState(0);
 
         useEffect(() => {
             const interval = setInterval(() => {
-                setCurrentIndex((prevIndex) => prevIndex === images.length - 2 ? 0 : prevIndex + 2);
+                setCurrentIndex((prevIndex) => (prevIndex +1) % images.length);
             }, slideInterval);
 
             return () => clearInterval(interval);
         }, [images, slideInterval]);
 
         return (
-            <div className="slide-img">
-                <div className="slide-inner d-flex">
-                    <div className="slide-left">
-                        <img src={images[currentIndex]}/>
-                    </div>
-                    <div className="slide-right">
-                        <img src={images[(currentIndex + 1) % images.length]}/>
-                    </div>
+            <div className="slide-inner d-flex">
+                <div className="slide-left w-100">
+                    <img className="w-100" src={process.env.PUBLIC_URL + images[currentIndex]}/>
+                </div>
+                <div className="slide-right w-100">
+                    <img className="w-100" src={process.env.PUBLIC_URL + images[(currentIndex + 1) % images.length]}/>
                 </div>
             </div>
         )
     }
-
         const [currentBuyIndex, setCurrentBuyIndex] = useState(0);
         const [buy] = useState(
             [
@@ -220,9 +214,9 @@ const Aguri = () => {
                                     </div>
                                 </div>
                                 <div className="line8-img">
-                                    <div className="line8-img-inner">
-                                        <SlideImage images={images}/>
-                                    </div>
+
+                                        <SlideImage/>
+
                                 </div>
                             </div>
                         </div>

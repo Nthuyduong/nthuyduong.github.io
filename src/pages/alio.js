@@ -114,14 +114,13 @@ const Alio = () => {
                                 <div className="content2">
                                     <div className="heading_4">The Logotype</div>
                                     <div className="body_text">
-                                        “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of precious,
-                                        semi precious and artificial jewelleries. They sell these jewelleries under different brand names.
-                                        The quality of the products are renowned for striking features such as smooth polish,
-                                        stunning design and excelling clarity, look and feature, and luster. “AGURI JEWELLERY” is one
-                                        of the leading manufacturers and suppliers of precious, semi precious and artificial jewelleries.
-                                        They sell these jewelleries under different brand names. The quality of the products are
-                                        renowned for striking features such as smooth polish, stunning design and excelling clarity,
-                                        look and feature, and luster.
+                                        The logo for a yoga website embodies the essence of tranquility and self-discovery.
+                                        Designed to cater to users seeking to learn yoga, meditation, and pilates, the
+                                        logo draws inspiration from the serene act of sitting in meditation. The central
+                                        element of the logo features a figure gracefully positioned in a meditative pose,
+                                        radiating a sense of inner peace and mindfulness. Symbolizing the harmonious
+                                        integration of body and mind, the logo encapsulates the core values of the website,
+                                        inviting users to embark on a journey of self-transformation and holistic well-being.
                                     </div>
                                 </div>
                             </div>
