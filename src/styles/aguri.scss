@@ -55,8 +55,6 @@
     background-image: url("../img/line2-01.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-
-
   }
 }
 .intro-section{
@@ -80,6 +78,23 @@
       //}
       .text-large{
         color: #ccc;
+      }
+    }
+  }
+}
+.ag-line8{
+  .ag-line8-inner{
+    background-color: #F5EAE0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .line8-img{
+      .left{
+        margin-right: 15px;
+        margin-left: 60px;
+      }
+      .right{
+        margin-left: 15px;
+        margin-right: 60px;
       }
     }
   }
