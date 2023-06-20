@@ -3,38 +3,39 @@ import {Link} from "react-router-dom";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {ROUTER} from "../utils/constants";
+import Carousel from 'react-bootstrap/Carousel';
 
 const Aguri = () => {
     //Horizontal sliders image function
-    const SlideImage = ({ slideInterval = 3000 }) => {
-        const ImgDirectory = process.env.PUBLIC_URL + './images/Pj03_aguri/';
-        const images = [
-            ImgDirectory + 'DB1.png',
-            ImgDirectory + 'DB2.png',
-            ImgDirectory + 'DB3.png',
-            ImgDirectory + 'DB4.png',
-        ];
-        const [currentIndex, setCurrentIndex] = useState(0);
-
-        useEffect(() => {
-            const interval = setInterval(() => {
-                setCurrentIndex((prevIndex) => (prevIndex +1) % images.length);
-            }, slideInterval);
-
-            return () => clearInterval(interval);
-        }, [images, slideInterval]);
-
-        return (
-            <div className="slide-inner d-flex">
-                <div className="slide-left w-100">
-                    <img className="w-100" src={process.env.PUBLIC_URL + images[currentIndex]}/>
-                </div>
-                <div className="slide-right w-100">
-                    <img className="w-100" src={process.env.PUBLIC_URL + images[(currentIndex + 1) % images.length]}/>
-                </div>
-            </div>
-        )
-    }
+    // const SlideImage = ({ slideInterval = 3000 }) => {
+    //     const ImgDirectory = process.env.PUBLIC_URL + './images/Pj03_aguri/';
+    //     const images = [
+    //         ImgDirectory + 'DB1.png',
+    //         ImgDirectory + 'DB2.png',
+    //         ImgDirectory + 'DB3.png',
+    //         ImgDirectory + 'DB4.png',
+    //     ];
+    //     const [currentIndex, setCurrentIndex] = useState(0);
+    //
+    //     useEffect(() => {
+    //         const interval = setInterval(() => {
+    //             setCurrentIndex((prevIndex) => (prevIndex +1) % images.length);
+    //         }, slideInterval);
+    //
+    //         return () => clearInterval(interval);
+    //     }, [images, slideInterval]);
+    //
+    //     return (
+    //         <div className="slide-inner d-flex">
+    //             <div className="slide-left w-100">
+    //                 <img className="w-100" src={process.env.PUBLIC_URL + images[currentIndex]}/>
+    //             </div>
+    //             <div className="slide-right w-100">
+    //                 <img className="w-100" src={process.env.PUBLIC_URL + images[(currentIndex + 1) % images.length]}/>
+    //             </div>
+    //         </div>
+    //     )
+    // }
         const [currentBuyIndex, setCurrentBuyIndex] = useState(0);
         const [buy] = useState(
             [
@@ -201,7 +202,7 @@ const Aguri = () => {
                                     <div className="row">
                                         <div className="col-2"></div>
                                         <div className="col-8">
-                                            <div>“AGURI JEWELLERY” is one of the leading manufacturers and suppliers of
+                                            <div className="body_text">“AGURI JEWELLERY” is one of the leading manufacturers and suppliers of
                                                 precious, semi
                                                 precious and artificial jewelleries. They sell these jewelleries under
                                                 different brand
@@ -214,9 +215,44 @@ const Aguri = () => {
                                     </div>
                                 </div>
                                 <div className="line8-img">
-
-                                        <SlideImage/>
-
+                                    <Carousel>
+                                        <Carousel.Item interval={2000}>
+                                            <div className="slide-inner d-flex">
+                                                <div className="slide-left">
+                                                    <img className="w-100" src="./images/Pj03_aguri/DB1.png" alt="admin1"
+                                                         loading="lazy"/>
+                                                </div>
+                                                <div className="slide-right">
+                                                    <img className="w-100" src="./images/Pj03_aguri/DB2.png" alt="admin1"
+                                                         loading="lazy"/>
+                                                </div>
+                                            </div>
+                                        </Carousel.Item>
+                                        <Carousel.Item interval={2000}>
+                                            <div className="slide-inner d-flex">
+                                                <div className="slide-left">
+                                                    <img className="w-100" src="./images/Pj03_aguri/DB3.png" alt="admin1"
+                                                         loading="lazy"/>
+                                                </div>
+                                                <div className="slide-right">
+                                                    <img className="w-100" src="./images/Pj03_aguri/DB4.png" alt="admin1"
+                                                         loading="lazy"/>
+                                                </div>
+                                            </div>
+                                        </Carousel.Item>
+                                        <Carousel.Item>
+                                            <div className="slide-inner d-flex">
+                                                <div className="slide-left">
+                                                    <img className="w-100" src="./images/Pj03_aguri/DB5.png" alt="admin1"
+                                                         loading="lazy"/>
+                                                </div>
+                                                <div className="slide-right">
+                                                    <img className="w-100" src="./images/Pj03_aguri/DB6.png" alt="admin1"
+                                                         loading="lazy"/>
+                                                </div>
+                                            </div>
+                                        </Carousel.Item>
+                                    </Carousel>
                                 </div>
                             </div>
                         </div>

@@ -82,8 +82,13 @@
     }
   }
 }
-
+.ag-line8-inner{
+  background-color: #F5EAE0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .slide-inner {
+  height: 100%;
   .slide-left {
     margin-right: 15px;
     margin-left: 60px;
@@ -92,6 +97,19 @@
     margin-left: 15px;
     margin-right: 60px;
   }
+}
+.carousel-item.active{
+  height: auto;
+  background-color: transparent;
+}
+.carousel-control-prev{
+  display: none !important;
+}
+.carousel-control-next{
+  display: none !important;
+}
+.carousel-indicators {
+  display: none !important;
 }
 
 
