@@ -240,7 +240,7 @@ const Aguri = () => {
                                                 </div>
                                             </div>
                                         </Carousel.Item>
-                                        <Carousel.Item>
+                                        <Carousel.Item interval={2000}>
                                             <div className="slide-inner d-flex">
                                                 <div className="slide-left">
                                                     <img className="w-100" src="./images/Pj03_aguri/DB5.png" alt="admin1"
