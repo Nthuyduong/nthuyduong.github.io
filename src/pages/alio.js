@@ -6,6 +6,22 @@ import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const Alio = () => {
+    const [currentMobile, setCurrentMobile] = useState(0);
+    const [mobile] = useState(
+        [
+            "mobile1.webp",
+            "mobile2.png",
+            "mobile3.png",
+        ]
+    )
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentMobile((prevIndex) =>
+                prevIndex === mobile.length - 1 ? 0 : prevIndex + 1);
+        }, 1000);
+        return () => clearInterval(interval);
+    }, [mobile.length]);
+
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [images] = useState([
         "image1.webp",
@@ -148,7 +164,11 @@ const Alio = () => {
                         </div>
                     </div>
                     <div className="alio7 pdb-60">
-                        <img className="w-100" src="./images/Pj02_yoga/line7.webp" alt="#" loading="lazy"/>
+                        <div className="inner">
+                            <img className="w-100"
+                                 src={require(`../../public/images/Pj02_yoga/${mobile[currentMobile]}`)} alt="#"
+                                 loading="lazy"/>
+                        </div>
                     </div>
                     <div className="alio8 pdb-60">
                         <div className="row">
