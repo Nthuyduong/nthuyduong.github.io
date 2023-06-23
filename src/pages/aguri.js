@@ -252,6 +252,18 @@ const Aguri = () => {
                                                 </div>
                                             </div>
                                         </Carousel.Item>
+                                        <Carousel.Item>
+                                            <div className="slide-inner d-flex">
+                                                <div className="slide-left">
+                                                    <img className="w-100" src="./images/Pj03_aguri/DB7.png" alt="admin1"
+                                                         loading="lazy"/>
+                                                </div>
+                                                <div className="slide-right">
+                                                    <img className="w-100" src="./images/Pj03_aguri/DB8.png" alt="admin1"
+                                                         loading="lazy"/>
+                                                </div>
+                                            </div>
+                                        </Carousel.Item>
                                     </Carousel>
                                 </div>
                             </div>
