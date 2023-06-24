@@ -219,11 +219,11 @@ const Aguri = () => {
                                         <Carousel.Item interval={2000}>
                                             <div className="slide-inner d-flex">
                                                 <div className="slide-left">
-                                                    <img className="w-100" src="./images/Pj03_aguri/DB1.png" alt="admin1"
+                                                    <img className="w-100" src="./images/Pj03_aguri/DB1.webp" alt="admin1"
                                                          loading="lazy"/>
                                                 </div>
                                                 <div className="slide-right">
-                                                    <img className="w-100" src="./images/Pj03_aguri/DB2.png" alt="admin1"
+                                                    <img className="w-100" src="./images/Pj03_aguri/DB2.webp" alt="admin1"
                                                          loading="lazy"/>
                                                 </div>
                                             </div>
@@ -231,11 +231,11 @@ const Aguri = () => {
                                         <Carousel.Item interval={2000}>
                                             <div className="slide-inner d-flex">
                                                 <div className="slide-left">
-                                                    <img className="w-100" src="./images/Pj03_aguri/DB3.png" alt="admin1"
+                                                    <img className="w-100" src="./images/Pj03_aguri/DB3.webp" alt="admin1"
                                                          loading="lazy"/>
                                                 </div>
                                                 <div className="slide-right">
-                                                    <img className="w-100" src="./images/Pj03_aguri/DB4.png" alt="admin1"
+                                                    <img className="w-100" src="./images/Pj03_aguri/DB4.webp" alt="admin1"
                                                          loading="lazy"/>
                                                 </div>
                                             </div>
@@ -243,11 +243,11 @@ const Aguri = () => {
                                         <Carousel.Item interval={2000}>
                                             <div className="slide-inner d-flex">
                                                 <div className="slide-left">
-                                                    <img className="w-100" src="./images/Pj03_aguri/DB5.png" alt="admin1"
+                                                    <img className="w-100" src="./images/Pj03_aguri/DB5.webp" alt="admin1"
                                                          loading="lazy"/>
                                                 </div>
                                                 <div className="slide-right">
-                                                    <img className="w-100" src="./images/Pj03_aguri/DB6.png" alt="admin1"
+                                                    <img className="w-100" src="./images/Pj03_aguri/DB6.webp" alt="admin1"
                                                          loading="lazy"/>
                                                 </div>
                                             </div>
@@ -255,11 +255,11 @@ const Aguri = () => {
                                         <Carousel.Item>
                                             <div className="slide-inner d-flex">
                                                 <div className="slide-left">
-                                                    <img className="w-100" src="./images/Pj03_aguri/DB7.png" alt="admin1"
+                                                    <img className="w-100" src="./images/Pj03_aguri/DB7.webp" alt="admin1"
                                                          loading="lazy"/>
                                                 </div>
                                                 <div className="slide-right">
-                                                    <img className="w-100" src="./images/Pj03_aguri/DB8.png" alt="admin1"
+                                                    <img className="w-100" src="./images/Pj03_aguri/DB8.webp" alt="admin1"
                                                          loading="lazy"/>
                                                 </div>
                                             </div>
