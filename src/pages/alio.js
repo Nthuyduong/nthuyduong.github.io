@@ -148,6 +148,9 @@ const Alio = () => {
                     <div className="alio5 pdb-60">
                         <img className="w-100" src={require(`../../public/images/Pj02_yoga/${Showcase[currentLogoIndex]}`)}/>
                     </div>
+                    <div className="alio5.1 pdb-60">
+                        <img className="w-100" src="./images/Pj02_yoga/line5.1.png" loading="lazy"/>
+                    </div>
                     <div className="alio6 pdb-60">
                         <div className="row">
                             <div className="col-6">
