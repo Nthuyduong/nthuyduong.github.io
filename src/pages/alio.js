@@ -6,12 +6,29 @@ import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const Alio = () => {
+    const [currentMbl, setCurrentMbl] = useState(0);
+    const [mbl] = useState(
+        [
+            "mbl1.webp",
+            "mbl2.webp",
+            "mbl3.webp",
+            "mbl4.webp",
+        ]
+    )
+    useEffect(()=> {
+        const interval = setInterval(() => {
+            setCurrentMbl((prevIndex) =>
+            prevIndex === mbl.length - 1 ? 0 : prevIndex + 1);
+        }, 950);
+    return () => clearInterval(interval);
+    }, [mbl.length]);
+
     const [currentMobile, setCurrentMobile] = useState(0);
     const [mobile] = useState(
         [
             "mobile1.webp",
-            "mobile2.png",
-            "mobile3.png",
+            "mobile2.webp",
+            "mobile3.webp",
         ]
     )
     useEffect(() => {
@@ -149,7 +166,7 @@ const Alio = () => {
                         <img className="w-100" src={require(`../../public/images/Pj02_yoga/${Showcase[currentLogoIndex]}`)}/>
                     </div>
                     <div className="alio5.1 pdb-60">
-                        <img className="w-100" src="./images/Pj02_yoga/line5.1.png" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj02_yoga/line5.1.webp" loading="lazy"/>
                     </div>
                     <div className="alio6 pdb-60">
                         <div className="row">
@@ -179,12 +196,14 @@ const Alio = () => {
                                 <img className="w-100" src="./images/Pj02_yoga/line7-01.webp" alt="#" loading="lazy"/>
                             </div>
                             <div className="col-6">
-                                <img className="w-100" src="./images/Pj02_yoga/line7-02.webp" alt="#" loading="lazy"/>
+                                <img className="w-100"
+                                     src={require(`../../public/images/Pj02_yoga/${mbl[currentMbl]}`)} alt="#"
+                                     loading="lazy"/>
                             </div>
                         </div>
                     </div>
                     <div className="alio9 pdb-60">
-                        <img className="w-100" src="./images/Pj02_yoga/line9.png" alt="#" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj02_yoga/line9.webp" alt="#" loading="lazy"/>
                     </div>
                 </div>
             </div>
