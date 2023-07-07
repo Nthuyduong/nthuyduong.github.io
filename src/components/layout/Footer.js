@@ -23,7 +23,7 @@ const Header = () => {
             <div className="col-8">
               <p>Get in touch for opportunities or just say hi!</p>
               <p className="mail-info"><a href="mailto:Nthduong198@gmail.com">Nthduong198@gmail.com</a></p>
-              <p>Follow on <a href="https://www.behance.net/thydngnguyn31">Behance</a></p>
+              <p>Follow on <a href="https://www.behance.net/gallery/174317119/Thuy-Duongs-Portfolio/modules/984307513">Behance</a></p>
             </div>
             <div className="col-4 body_text">
             I'm an UX/UI designer here to help create intuitive and visually appealing digital interfaces for the best
