@@ -88,7 +88,7 @@
   padding-bottom: 60px;
 }
 .slide-inner {
-  height: 100%;
+  height: auto;
   .slide-left {
     margin-right: 15px;
     margin-left: 60px;
@@ -100,7 +100,7 @@
 }
 .carousel-item.active{
   position: unset !important;
-  height: 100%;
+  height: auto;
   background-color: transparent;
 }
 .carousel-control-prev{
