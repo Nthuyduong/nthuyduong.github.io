@@ -1,10 +1,24 @@
-import React from "react";
+import React, {useEffect, useState,} from "react";
 import {Link} from "react-router-dom";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {ROUTER} from "../utils/constants";
 
 const Fashion = () => {
+    const [currentimg, setCurrentimg] = useState(0);
+    const [img] = useState(
+        [
+            "img1.webp",
+            "img2.webp",
+        ]
+    )
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentimg((prevIndex) =>
+            prevIndex === img.length - 1 ? 0 : prevIndex + 1);
+        }, 950);
+    }, [img.length]);
+
     return(
         <div>
             <div className="container-fluid">
@@ -57,7 +71,7 @@ const Fashion = () => {
                         </div>
                     </div>
                     <div className="verite-show1 pdb-60">
-                        <img className="mb-4 w-100" src="./images/Pj04_fashion/verite-show.webp" alt="#" loading="lazy"/>
+                        <img className="mb-4 w-100" src={require(`../../public/images/Pj04_fashion/${img[currentimg]}`)} alt="#" loading="lazy"/>
                     </div>
                     <div className="verite_line3 pdb-60">
                         <div className="row">

@@ -72,7 +72,8 @@ const Aguri = () => {
                                         <div className="content-bottom text-center">
                                             <div className="heading_2 mb-5">JOIN US</div>
                                             <div className="body_text">
-                                                We're the leading manufacturers and suppliers of precious
+                                                <a href="https://nthuyduong.github.io/aguri/#/" target="_blank">Visit website:
+                                                    https://nthuyduong.github.io/aguri/#/</a>
                                             </div>
                                         </div>
                                     </div>
@@ -195,79 +196,79 @@ const Aguri = () => {
                                 <img className="w-100" src="./images/Pj03_aguri/line7.png" alt="#" loading="lazy"/>
                             </div>
                         </div>
-                        <div className="ag-line8 pdb-60">
-                            <div className="ag-line8-inner">
-                                <div className="line8-content text-center mb-5">
-                                    <div className="heading_4 mb-3">AGURI ADMIN INTERFACE</div>
-                                    <div className="row">
-                                        <div className="col-2"></div>
-                                        <div className="col-8">
-                                            <div className="body_text">“AGURI JEWELLERY” is one of the leading manufacturers and suppliers of
-                                                precious, semi
-                                                precious and artificial jewelleries. They sell these jewelleries under
-                                                different brand
-                                                names. The quality of the products are renowned for striking features
-                                                such as smooth polish,
-                                                stunning design and excelling clarity, look and feature, and luster.
-                                            </div>
-                                        </div>
-                                        <div className="col-2"></div>
-                                    </div>
-                                </div>
-                                <div className="line8-img">
-                                    <Carousel>
-                                        <Carousel.Item interval={1000}>
-                                            <div className="slide-inner d-flex">
-                                                <div className="slide-left">
-                                                    <img className="w-100" src="./images/Pj03_aguri/DB1.webp" alt="admin1"
-                                                         loading="lazy"/>
-                                                </div>
-                                                <div className="slide-right">
-                                                    <img className="w-100" src="./images/Pj03_aguri/DB2.webp" alt="admin1"
-                                                         loading="lazy"/>
-                                                </div>
-                                            </div>
-                                        </Carousel.Item>
-                                        <Carousel.Item interval={1000}>
-                                            <div className="slide-inner d-flex">
-                                                <div className="slide-left">
-                                                    <img className="w-100" src="./images/Pj03_aguri/DB3.webp" alt="admin1"
-                                                         loading="lazy"/>
-                                                </div>
-                                                <div className="slide-right">
-                                                    <img className="w-100" src="./images/Pj03_aguri/DB4.webp" alt="admin1"
-                                                         loading="lazy"/>
-                                                </div>
-                                            </div>
-                                        </Carousel.Item>
-                                        <Carousel.Item interval={1000}>
-                                            <div className="slide-inner d-flex">
-                                                <div className="slide-left">
-                                                    <img className="w-100" src="./images/Pj03_aguri/DB5.webp" alt="admin1"
-                                                         loading="lazy"/>
-                                                </div>
-                                                <div className="slide-right">
-                                                    <img className="w-100" src="./images/Pj03_aguri/DB6.webp" alt="admin1"
-                                                         loading="lazy"/>
-                                                </div>
-                                            </div>
-                                        </Carousel.Item>
-                                        <Carousel.Item>
-                                            <div className="slide-inner d-flex">
-                                                <div className="slide-left">
-                                                    <img className="w-100" src="./images/Pj03_aguri/DB7.webp" alt="admin1"
-                                                         loading="lazy"/>
-                                                </div>
-                                                <div className="slide-right">
-                                                    <img className="w-100" src="./images/Pj03_aguri/DB8.webp" alt="admin1"
-                                                         loading="lazy"/>
-                                                </div>
-                                            </div>
-                                        </Carousel.Item>
-                                    </Carousel>
-                                </div>
-                            </div>
-                        </div>
+                        {/*<div className="ag-line8 pdb-60">*/}
+                        {/*    <div className="ag-line8-inner">*/}
+                        {/*        <div className="line8-content text-center mb-5">*/}
+                        {/*            <div className="heading_4 mb-3">AGURI ADMIN INTERFACE</div>*/}
+                        {/*            <div className="row">*/}
+                        {/*                <div className="col-2"></div>*/}
+                        {/*                <div className="col-8">*/}
+                        {/*                    <div className="body_text">“AGURI JEWELLERY” is one of the leading manufacturers and suppliers of*/}
+                        {/*                        precious, semi*/}
+                        {/*                        precious and artificial jewelleries. They sell these jewelleries under*/}
+                        {/*                        different brand*/}
+                        {/*                        names. The quality of the products are renowned for striking features*/}
+                        {/*                        such as smooth polish,*/}
+                        {/*                        stunning design and excelling clarity, look and feature, and luster.*/}
+                        {/*                    </div>*/}
+                        {/*                </div>*/}
+                        {/*                <div className="col-2"></div>*/}
+                        {/*            </div>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="line8-img">*/}
+                        {/*            <Carousel>*/}
+                        {/*                <Carousel.Item interval={1000}>*/}
+                        {/*                    <div className="slide-inner d-flex">*/}
+                        {/*                        <div className="slide-left">*/}
+                        {/*                            <img className="w-100" src="./images/Pj03_aguri/DB1.webp" alt="admin1"*/}
+                        {/*                                 loading="lazy"/>*/}
+                        {/*                        </div>*/}
+                        {/*                        <div className="slide-right">*/}
+                        {/*                            <img className="w-100" src="./images/Pj03_aguri/DB2.webp" alt="admin1"*/}
+                        {/*                                 loading="lazy"/>*/}
+                        {/*                        </div>*/}
+                        {/*                    </div>*/}
+                        {/*                </Carousel.Item>*/}
+                        {/*                <Carousel.Item interval={1000}>*/}
+                        {/*                    <div className="slide-inner d-flex">*/}
+                        {/*                        <div className="slide-left">*/}
+                        {/*                            <img className="w-100" src="./images/Pj03_aguri/DB3.webp" alt="admin1"*/}
+                        {/*                                 loading="lazy"/>*/}
+                        {/*                        </div>*/}
+                        {/*                        <div className="slide-right">*/}
+                        {/*                            <img className="w-100" src="./images/Pj03_aguri/DB4.webp" alt="admin1"*/}
+                        {/*                                 loading="lazy"/>*/}
+                        {/*                        </div>*/}
+                        {/*                    </div>*/}
+                        {/*                </Carousel.Item>*/}
+                        {/*                <Carousel.Item interval={1000}>*/}
+                        {/*                    <div className="slide-inner d-flex">*/}
+                        {/*                        <div className="slide-left">*/}
+                        {/*                            <img className="w-100" src="./images/Pj03_aguri/DB5.webp" alt="admin1"*/}
+                        {/*                                 loading="lazy"/>*/}
+                        {/*                        </div>*/}
+                        {/*                        <div className="slide-right">*/}
+                        {/*                            <img className="w-100" src="./images/Pj03_aguri/DB6.webp" alt="admin1"*/}
+                        {/*                                 loading="lazy"/>*/}
+                        {/*                        </div>*/}
+                        {/*                    </div>*/}
+                        {/*                </Carousel.Item>*/}
+                        {/*                <Carousel.Item>*/}
+                        {/*                    <div className="slide-inner d-flex">*/}
+                        {/*                        <div className="slide-left">*/}
+                        {/*                            <img className="w-100" src="./images/Pj03_aguri/DB7.webp" alt="admin1"*/}
+                        {/*                                 loading="lazy"/>*/}
+                        {/*                        </div>*/}
+                        {/*                        <div className="slide-right">*/}
+                        {/*                            <img className="w-100" src="./images/Pj03_aguri/DB8.webp" alt="admin1"*/}
+                        {/*                                 loading="lazy"/>*/}
+                        {/*                        </div>*/}
+                        {/*                    </div>*/}
+                        {/*                </Carousel.Item>*/}
+                        {/*            </Carousel>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
                 <div className="more-project">
