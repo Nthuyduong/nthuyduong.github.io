@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "7adb0198925a01f5ade5",
+    "revision": "df7e6e2e8651ee828e60",
     "url": "/static/css/main.ea90a37c.chunk.css"
   },
   {
-    "revision": "7adb0198925a01f5ade5",
-    "url": "/static/js/main.f20ac5cb.chunk.js"
+    "revision": "df7e6e2e8651ee828e60",
+    "url": "/static/js/main.feddd7c2.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -344,31 +344,31 @@ self.__precacheManifest = [
     "url": "/static/media/Showcase.9690010c.png"
   },
   {
-    "revision": "37ce14f5652279358b9449cbcaa55c9a",
-    "url": "/static/media/SFUFuturaLightOblique.37ce14f5.TTF"
-  },
-  {
-    "revision": "c52aad82e004d1deefb4d583e2727566",
-    "url": "/static/media/Americana BT.c52aad82.ttf"
+    "revision": "d6a448ada9c0c7fef6e1e8f41dd299ad",
+    "url": "/static/media/Americana Bold BT.d6a448ad.ttf"
   },
   {
     "revision": "0c2b6ffa0b469f7350e1e69d9ccbd115",
     "url": "/static/media/SFUFuturaBold.0c2b6ffa.TTF"
   },
   {
+    "revision": "c52aad82e004d1deefb4d583e2727566",
+    "url": "/static/media/Americana BT.c52aad82.ttf"
+  },
+  {
     "revision": "c10f1b4a7754f4c792a5b249af27d22f",
     "url": "/static/media/SFUFuturaBook.c10f1b4a.TTF"
   },
   {
-    "revision": "d6a448ada9c0c7fef6e1e8f41dd299ad",
-    "url": "/static/media/Americana Bold BT.d6a448ad.ttf"
+    "revision": "37ce14f5652279358b9449cbcaa55c9a",
+    "url": "/static/media/SFUFuturaLightOblique.37ce14f5.TTF"
   },
   {
     "revision": "6aa81ad8a396cb3226339310cfa74aa3",
     "url": "/static/media/SFUFuturaRegular.6aa81ad8.TTF"
   },
   {
-    "revision": "971c17cbb0914cf614d32d5ab1f454f1",
+    "revision": "1236282fb0960a7bbe93bcc05fb7b995",
     "url": "/index.html"
   }
 ];
