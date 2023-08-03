@@ -61,7 +61,7 @@ const Home = () => {
                 to create, to transform, to improve and to share. My dream is to improve people's lives through my designs”
               </div>
               <div className="text-right">
-                <a className="" href="https://nthuyduong.github.io/aguri/#/" target="_blank">SEE PORTFOLIO ON BEHANCE?</a>
+                <a className="" href="https://www.behance.net/gallery/174317119/Thuy-Duongs-Portfolio/modules/984307513" target="_blank">SEE PORTFOLIO ON BEHANCE?</a>
               </div>
             </div>
           </div>
