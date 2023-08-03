@@ -56,7 +56,13 @@ const Home = () => {
               </div>
             </div>
             <div className="col-4 body_text text-right">
-              “I'm creative, open-minded and a fast learner. I have a strong desire to know, to understand, to grow, to create, to transform, to improve and to share. My dream is to improve people's lives through my designs”
+              <div className="mb-3">
+                “I'm creative, open-minded and a fast learner. I have a strong desire to know, to understand, to grow,
+                to create, to transform, to improve and to share. My dream is to improve people's lives through my designs”
+              </div>
+              <div className="text-right">
+                <a className="" href="https://nthuyduong.github.io/aguri/#/" target="_blank">SEE PORTFOLIO ON BEHANCE?</a>
+              </div>
             </div>
           </div>
         </div>

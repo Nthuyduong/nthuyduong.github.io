@@ -22,7 +22,7 @@ const Contact = () => {
             <a href="tel:+84336256655">0336256655</a>
           </div>
           <div className="contact-mail body_text">
-            <a href="mailto:Nthduong198@gmail.com.com">Nthduong198@gmail.com</a>
+            <a href="mailto:Nthduong898@gmail.com.com">Nthduong898@gmail.com</a>
           </div>
         </div>
       </div>
