@@ -88,7 +88,7 @@ const Cake = () => {
                                         and embark on a sweet journey of endless possibilities.
                                     </div>
                                     <div className="small_text text-right font-italic">
-                                        <a href="#" target="_blank">Comming soon: https://nthuyduong.github.io/CakeBlog/#/</a>
+                                        <a href="https://nthuyduong.github.io/CakeBlog/#/" target="_blank">Comming soon: https://nthuyduong.github.io/CakeBlog/#/</a>
                                     </div>
                                 </div>
                             </div>

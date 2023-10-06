@@ -144,3 +144,36 @@
     }
   }
 }
+//ABOUT TEST
+.new-about{
+  background-color: #F0EEEB;
+  img{
+    border: 1px solid #ccc;
+  }
+  .welcome-abt{
+    .welcome-abt-inner{
+      .welcome-img2{
+        position: absolute;
+        right: 0;
+        top: -78px;
+        .img-inner{
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+    .welcome-content{
+      height: 100%;
+      .my-content{
+        position: absolute;
+        bottom: 20%;
+        right: 0;
+        .content-inner{
+          font-size: 14px;
+          line-height: 1.5;
+
+        }
+      }
+    }
+  }
+}

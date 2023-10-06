@@ -82,7 +82,7 @@ const Header = () => {
                       ABOUT
                     </Link>
                   </Nav>
-                  <NavDropdown title={<span as={Link} to="/designs">DESIGNS</span>} id="basic-nav-dropdown">
+                  <NavDropdown title={<span as={Link} to={ROUTER.DESIGNS}>DESIGNS</span>} id="basic-nav-dropdown">
                     <NavDropdown.Item>
                       <Link to={ROUTER.ALIO} className="nav-link">Alio</Link>
                     </NavDropdown.Item>

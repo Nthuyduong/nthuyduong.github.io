@@ -3,24 +3,43 @@ import {Link} from "react-router-dom";
 import {ROUTER} from "../utils/constants";
 
 const Designs = () =>{
-    // const offsetY = 110;
-    // const offsetX = 80;
-    // const [showText, setShowText] = useState(false);
-    // const [textPosition, setTextPosition] = useState({ x: 0, y: 0 });
-    //
-    // const handleMouseEnter = () => {
-    //     setShowText(true);
-    // };
-    //
-    // const handleMouseLeave = () => {
-    //     setShowText(false);
-    // };
-    //
-    // const handleMouseMove = (event) => {
-    //     const { clientX, clientY } = event;
-    //     setTextPosition({ x: clientX, y: clientY });
-    // };
 
+    return (
+        <div className="my-design">
+            <div className="design-background">
+                <div className="background-text">WELCOME</div>
+            </div>
+            <div className="design-front">
+                <div className="design-title heading_1">My Designs</div>
+                <div className="my-project">
+                    <div className="design-products">
+                        <div className="row all-mydes">
+                            <div className="col-3 mydes project-odd">
+                                <div className="heading_2 mb-2">01/</div>
+                                <img className="w-100" src="./images/design/des1.png" alt="#"
+                                     loading="lazy"/>
+                            </div>
+                            <div className="col-3 mydes project-odd">
+                                <div className="heading_2 mb-2">02/</div>
+                                <img className="w-100" src="./images/design/des2.png" alt="#"
+                                     loading="lazy"/>
+                            </div>
+                            <div className="col-3 mydes project-odd">
+                                <div className="heading_2 mb-2">03/</div>
+                                <img className="w-100" src="./images/design/des3.png" alt="#"
+                                     loading="lazy"/>
+                            </div>
+                            <div className="col-3 mydes project-odd">
+                                <div className="heading_2 mb-2">04/</div>
+                                <img className="w-100" src="./images/design/des4.png" alt="#"
+                                     loading="lazy"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
 
 }
 export default Designs;

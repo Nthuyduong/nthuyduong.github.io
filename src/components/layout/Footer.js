@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useEffect } from 'react';
 
-const Header = () => {
+const Footer = () => {
 
   const history = useHistory();
 
@@ -35,4 +35,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default Footer;

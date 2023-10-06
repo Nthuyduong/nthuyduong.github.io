@@ -1,46 +1,37 @@
 .my-design{
-  margin-bottom:90px;
-  .my-des-title{
-    padding-top:130px;
-    .byme{
-      .byme2{
-        color:#999;
-      }
-      .dot-bl{
-        align-self: center;
-        .img-ellipe-99{
-          width: 13px;
+  background-color: #000;
+  height: calc(100vh - 61px);
+  position: fixed;
+  width: 100%;
+  color: #fff;
+  .design-background{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    z-index: -1;
+    .background-text{
+      font-family: Americana;
+      font-size: 330px;
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 700;
+      position: absolute;
+      bottom: -150px;
+    }
+  }
+  .design-front{
+    z-index: 1;
+    .design-title{
+      text-align: center;
+      margin-top: 32px;
+      margin-bottom: 40px;
+    }
+    .design-products{
+      .all-mydes{
+
+        .mydes{
+
         }
       }
     }
   }
-
-}
-.my-project{
-  padding-left:50px !important;
-  padding-right:50px !important;
-  .project-even{
-    top:60px;
-    padding-left:15px !important;
-    padding-right:15px !important;
-  }
-  .project-odd{
-    padding-left:15px !important;
-    padding-right:15px !important;
-  }
-  img{
-    filter: grayscale(100%);
-    transition: all 0.5s ease;
-  }
-  img:hover{
-    filter: grayscale(0);
-  }
-  //.project-image{
-  //  position: relative;
-  //  .view-text{
-  //    position: absolute;
-  //    color: rgba(0, 0, 0, 0.9);
-  //
-  //  }
-  //}
 }

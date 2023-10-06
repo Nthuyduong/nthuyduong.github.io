@@ -15,6 +15,7 @@ import Alio from "./pages/alio";
 import Fashion from "./pages/fashion"
 import Cake from "./pages/cake";
 import Designs from "./pages/designs";
+import Abouttest from "./pages/abouttest";
 import "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/react-fontawesome"
 
@@ -32,6 +33,7 @@ const App = () => {
           <Route path={ROUTER.FASHION} component={Fashion}/>
           <Route path={ROUTER.CAKE} component={Cake}/>
           <Route path={ROUTER.DESIGNS} component={Designs}/>
+          <Route path={ROUTER.ABOUTTEST} component={Abouttest}/>
         </Layout>
       </Switch>  
     </Router>

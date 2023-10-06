@@ -153,9 +153,68 @@
     width: 13px;
   }
 }
+//
+.my-design{
+  margin-bottom:90px;
+  .my-des-title{
+    padding-top:130px;
+    .byme{
+      .byme2{
+        color:#999;
+      }
+      .dot-bl{
+        align-self: center;
+        .img-ellipe-99{
+          width: 13px;
+        }
+      }
+    }
+  }
+
+}
+.my-project{
+  padding-left:50px !important;
+  padding-right:50px !important;
+  .project-even{
+    top:60px;
+    padding-left:15px !important;
+    padding-right:15px !important;
+  }
+  .project-odd{
+    padding-left:15px !important;
+    padding-right:15px !important;
+  }
+  img{
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+  }
+  img:hover{
+    filter: grayscale(0);
+  }
+  //.project-image{
+  //  position: relative;
+  //  .view-text{
+  //    position: absolute;
+  //    color: rgba(0, 0, 0, 0.9);
+  //
+  //  }
+  //}
+}
+
+@media only screen and (max-width: 1920px){
+  .body{
+    .container-fluid {
+      padding-left: 65px !important;
+      padding-right: 65px !important;
+    }
+  }
+}
 @media only screen and (max-width: 1200px) {
   body {
-
+    .container-fluid {
+      padding-left: 65px !important;
+      padding-right: 65px !important;
+    }
     .home-page{
       .home-info3{
         .text-large{
@@ -166,7 +225,7 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {
   body{
     .home-page{
       .home-info3{
@@ -233,7 +292,7 @@
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 640px) {
   body {
 
     .home-page{
@@ -244,6 +303,3 @@
   }
 }
 
-@media only screen and (max-width: 300px){
-
-}

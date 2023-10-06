@@ -7,4 +7,5 @@ export const ROUTER = {
   FASHION: '/verite',
   CAKE: '/cake',
   DESIGNS: '/designs',
+  ABOUTTEST: '/abouttest',
 }

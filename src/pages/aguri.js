@@ -72,7 +72,7 @@ const Aguri = () => {
                                         <div className="content-bottom text-center">
                                             <div className="heading_2 mb-5">JOIN US</div>
                                             <div className="body_text">
-                                                <a href="https://www.behance.net/gallery/174317119/Thuy-Duongs-Portfolio/modules/984307513" target="_blank">Visit website:
+                                                <a href="https://nthuyduong.github.io/aguri/#/" target="_blank">Visit website:
                                                     https://nthuyduong.github.io/aguri/#/</a>
                                             </div>
                                         </div>
