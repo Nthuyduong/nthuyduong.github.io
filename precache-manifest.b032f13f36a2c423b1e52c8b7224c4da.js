@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "0fb5fb0dd60a1e0ef0e3",
+    "revision": "7794dfb69936049279f4",
     "url": "/static/css/main.56c510c2.chunk.css"
   },
   {
-    "revision": "0fb5fb0dd60a1e0ef0e3",
-    "url": "/static/js/main.bf5496b2.chunk.js"
+    "revision": "7794dfb69936049279f4",
+    "url": "/static/js/main.6d6c4eef.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "f0ed16a1f8d52e4272cf",
+    "revision": "48acc8c837452b4d13d8",
     "url": "/static/css/2.9f473672.chunk.css"
   },
   {
-    "revision": "f0ed16a1f8d52e4272cf",
-    "url": "/static/js/2.9847ccb7.chunk.js"
+    "revision": "48acc8c837452b4d13d8",
+    "url": "/static/js/2.d2aaddc2.chunk.js"
   },
   {
     "revision": "3f0ce607818a2f11104d462ca91fd7d0",
@@ -344,12 +344,12 @@ self.__precacheManifest = [
     "url": "/static/media/Showcase.9690010c.png"
   },
   {
-    "revision": "0c2b6ffa0b469f7350e1e69d9ccbd115",
-    "url": "/static/media/SFUFuturaBold.0c2b6ffa.TTF"
-  },
-  {
     "revision": "37ce14f5652279358b9449cbcaa55c9a",
     "url": "/static/media/SFUFuturaLightOblique.37ce14f5.TTF"
+  },
+  {
+    "revision": "0c2b6ffa0b469f7350e1e69d9ccbd115",
+    "url": "/static/media/SFUFuturaBold.0c2b6ffa.TTF"
   },
   {
     "revision": "c52aad82e004d1deefb4d583e2727566",
@@ -368,7 +368,7 @@ self.__precacheManifest = [
     "url": "/static/media/SFUFuturaRegular.6aa81ad8.TTF"
   },
   {
-    "revision": "f3de5b9fae451b5003344f90581855df",
+    "revision": "d7e3e6817c6fd916de021405da0bc04f",
     "url": "/index.html"
   }
 ];
