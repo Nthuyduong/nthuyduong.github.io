@@ -32,6 +32,7 @@ const Header = () => {
   //Hover NavDropdown
   const [isOpen, setIsOpen] = useState(false);
   const timeoutRef = useRef(null);
+  const history = useHistory();
 
   const handleMouseEnter = () => {
     clearTimeout(timeoutRef.current); // Clear any previous timeout
@@ -44,10 +45,13 @@ const Header = () => {
       setIsOpen(false);
     }, 40);
   };
-
-  const handleItemClick = () => {
-    setIsOpen(false); // Hide the dropdown when an item is clicked
+  const handleDropdownClick = () => {
+    // Navigate to ROUTER.DESIGNS when the dropdown is clicked
+    history.push(ROUTER.DESIGNS);
   };
+  // const handleItemClick = () => {
+  //   setIsOpen(false); // Hide the dropdown when an item is clicked
+  // };
 
   const [show, setShow] = useState(false)
   const controlNavbar = () => {
@@ -82,20 +86,27 @@ const Header = () => {
                       ABOUT
                     </Link>
                   </Nav>
-                  <NavDropdown title={<span as={Link} to={ROUTER.DESIGNS}>DESIGNS</span>} id="basic-nav-dropdown">
-                    <NavDropdown.Item>
-                      <Link to={ROUTER.ALIO} className="nav-link">Alio</Link>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item>
-                      <Link to={ROUTER.AGURI} className="nav-link">AGURI</Link>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item>
-                      <Link to={ROUTER.FASHION} className="nav-link">Fashion brand</Link>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item>
-                      <Link to={ROUTER.CAKE} className="nav-link">Cake blog</Link>
-                    </NavDropdown.Item>
-                  </NavDropdown>
+                    <NavDropdown
+                        title={<span>DESIGNS</span>}
+                        id="basic-nav-dropdown"
+                        show={isOpen} // Control the show/hide state of the dropdown
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                        onClick={handleDropdownClick}
+                    >
+                      <NavDropdown.Item>
+                        <Link to={ROUTER.ALIO} className="nav-link">Alio</Link>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item>
+                        <Link to={ROUTER.AGURI} className="nav-link">AGURI</Link>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item>
+                        <Link to={ROUTER.FASHION} className="nav-link">Fashion brand</Link>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item>
+                        <Link to={ROUTER.CAKE} className="nav-link">Cake blog</Link>
+                      </NavDropdown.Item>
+                    </NavDropdown>
                   <Nav><Link to={ROUTER.CONTACT} className="nav-link">CONTACT</Link></Nav>
                 </Nav>
               </Navbar.Collapse>

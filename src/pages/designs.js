@@ -5,7 +5,7 @@ import {ROUTER} from "../utils/constants";
 const Designs = () =>{
 
     return (
-        <div className="my-design">
+        <div className="my-design2">
             <div className="design-background">
                 <div className="background-text">WELCOME</div>
             </div>
