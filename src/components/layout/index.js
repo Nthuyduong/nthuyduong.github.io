@@ -48,10 +48,11 @@ const Layout = ({ children }) => {
   }
 
   //Hide and Display side nav bar
-  const discardElement = [ROUTER.CONTACT, ROUTER.DESIGNS];
+  const discardElement = [ROUTER.CONTACT,ROUTER.DESIGNS];
   const withoutElement = [ROUTER.ALIO, ROUTER.CAKE, ROUTER.AGURI, ROUTER.FASHION];
 
   const { pathname } = useLocation();
+
   //Hide Side Nav
   if (discardElement.some((route) => pathname.includes(route))) {
         return (

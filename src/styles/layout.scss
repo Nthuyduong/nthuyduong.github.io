@@ -8,7 +8,7 @@
   display: flex;
   justify-content:center;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #fff;
   border-bottom: 1px solid #E4E4E4;
   z-index: 1000;
 }
@@ -20,7 +20,13 @@
   position: fixed;
   top: -61px;
   transition: 0.3s linear;
-
+}
+.changecl{
+  background: #000;
+  border-bottom: 1px solid #666;
+}
+.changecl a.nav-link{
+  color: #fff !important;
 }
 .header{
   padding: 0 !important;

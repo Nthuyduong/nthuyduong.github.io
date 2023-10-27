@@ -98,6 +98,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+
         <div className="page-element">
           <div className="container-fluid home-info3">
             <div className="row">
@@ -134,6 +135,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+
         <div>
           <div className="my-design">
             <div className="container-fluid">
@@ -248,6 +250,57 @@ const Home = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="my-services">
+          <div className="services">
+            <div className="container-fluid">
+              {/*<div className="heading_1">MY SERVICE</div>*/}
+              <div className="row">
+                <div className="col-6">
+                  <div className="uxsv my_svc">
+                    <div className="heading_2 text-light">UX/UI Design</div>
+                    <div>
+                      <ul className="text-light">
+                        <li>User Research</li>
+                        <li>Wireframe & Prototype</li>
+                        <li>UI for Website</li>
+                        <li>UI for Mobile</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <div className="heading_5 text-light">From $4.000</div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-6">
+                  <div className="graphicsv my_svc">
+                      <div className="heading_2">Graphic Design</div>
+                      <div>
+                        <ul className="">
+                          <li>Logo Design</li>
+                          <li>Brand Identity</li>
+                          <li>Packaging Design</li>
+                          <li>Banner Design</li>
+                          <li>Brand Book</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <div className="heading_5">From $6.000</div>
+                        <div></div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="contact-info">
+          <div className="row">
+            <div className="col-4"></div>
+            <div className="col-4"></div>
+            <div className="col-4"></div>
           </div>
         </div>
         {/*<div className="page-element">*/}

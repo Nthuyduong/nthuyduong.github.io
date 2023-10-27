@@ -35,6 +35,11 @@ const Designs = () =>{
                                      loading="lazy"/>
                             </div>
                         </div>
+                        <div className="slidebtn">
+                            <div className="my-btn">
+                                button
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

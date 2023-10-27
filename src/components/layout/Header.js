@@ -69,8 +69,25 @@ const Header = () => {
     }
   }, [])
 
+  //Change color of header - Designs page
+  const [showw, setShoww] = useState(false)
+  const uniElement = [ROUTER.DESIGNS];
+  const { pathname } = useLocation();
+  const ctlNavbar = () => {
+    if (uniElement.some((route) => pathname.includes(route))) {
+      setShoww(true)
+    }
+    else {
+      setShoww(false);
+    }
+  }
+  useEffect(() => {
+    // Call ctlNavbar whenever the pathname changes
+    ctlNavbar();
+  }, [pathname]);
+
   return (
-    <div className={`active ${show && 'hidden'}`}>
+    <div className={`active ${show && 'hidden'} ${showw && 'changecl'}`}>
       {/*{withouSidebarRoutes.some((item) => pathname.includes(item)) ? null : (*/}
       <Navbar className="header navbar" expand="lg">
             <div className="header-content">
