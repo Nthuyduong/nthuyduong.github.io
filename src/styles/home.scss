@@ -294,7 +294,6 @@
 
 @media only screen and (max-width: 640px) {
   body {
-
     .home-page{
       .main-logo{
         max-height: 47px;
@@ -310,6 +309,16 @@
   border-bottom: 1px solid #ccc;
   .my_svc{
     height: 340px;
+    .svc-list{
+      .list-main li{
+
+      }
+    }
+    .svc-price{
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+    }
   }
   .uxsv{
     margin-right: 15px;

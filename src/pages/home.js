@@ -260,15 +260,15 @@ const Home = () => {
                 <div className="col-6">
                   <div className="uxsv my_svc">
                     <div className="heading_2 text-light">UX/UI Design</div>
-                    <div>
-                      <ul className="text-light">
+                    <div className="svc-list">
+                      <ul className="text-light list-main">
                         <li>User Research</li>
                         <li>Wireframe & Prototype</li>
                         <li>UI for Website</li>
                         <li>UI for Mobile</li>
                       </ul>
                     </div>
-                    <div>
+                    <div className="svc-price">
                       <div className="heading_5 text-light">From $4.000</div>
                       <div></div>
                     </div>
@@ -277,8 +277,8 @@ const Home = () => {
                 <div className="col-6">
                   <div className="graphicsv my_svc">
                       <div className="heading_2">Graphic Design</div>
-                      <div>
-                        <ul className="">
+                      <div className="svc-list">
+                        <ul className="list-main">
                           <li>Logo Design</li>
                           <li>Brand Identity</li>
                           <li>Packaging Design</li>
@@ -286,7 +286,7 @@ const Home = () => {
                           <li>Brand Book</li>
                         </ul>
                       </div>
-                      <div>
+                      <div className="svc-price">
                         <div className="heading_5">From $6.000</div>
                         <div></div>
                       </div>
@@ -304,16 +304,16 @@ const Home = () => {
                 <div>Nthduong898@gmail.com</div>
               </div>
               <div className="col-4">
-                <div className="contact-title">My Email addres</div>
+                <div className="contact-title">My Email Addres</div>
                 <div>Nthduong898@gmail.com</div>
               </div>
               <div className="col-4">
-                <div className="contact-title">My Email addres</div>
-                <div>Nthduong898@gmail.com</div>
+                <div className="contact-title">Phone Number</div>
+                <div>(84) 336256655</div>
               </div>
             </div>
-            <div className="heading_1 lets-contact">Let’s Contact</div>
-            <div className="heading_1 with-me">With me</div>
+            <div className="heading_1 lets-contact">My Address</div>
+            <div className="heading_1 with-me">Gemek Tower, Le Trong Tan, An Khanh, Ha Noi</div>
           </div>
         </div>
         {/*Contact me*/}
