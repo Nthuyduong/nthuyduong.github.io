@@ -306,6 +306,8 @@
 
 .services{
   margin-top:90px;
+  padding-bottom: 90px;
+  border-bottom: 1px solid #ccc;
   .my_svc{
     height: 340px;
   }
@@ -318,6 +320,20 @@
     margin-left: 15px;
     background-color: #F0EEEB;
     padding: 40px 20px;
+  }
+}
+
+.contact-info{
+  margin-top: 80px;
+  .contact-title{
+    color: #999;
+    margin-bottom: 4px;
+  }
+  .lets-contact{
+    margin-top: 40px;
+  }
+  .with-me{
+    margin-left: 100px;
   }
 }
 

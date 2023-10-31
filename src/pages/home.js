@@ -297,10 +297,57 @@ const Home = () => {
           </div>
         </div>
         <div className="contact-info">
-          <div className="row">
-            <div className="col-4"></div>
-            <div className="col-4"></div>
-            <div className="col-4"></div>
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-4">
+                <div className="contact-title">My Email addres</div>
+                <div>Nthduong898@gmail.com</div>
+              </div>
+              <div className="col-4">
+                <div className="contact-title">My Email addres</div>
+                <div>Nthduong898@gmail.com</div>
+              </div>
+              <div className="col-4">
+                <div className="contact-title">My Email addres</div>
+                <div>Nthduong898@gmail.com</div>
+              </div>
+            </div>
+            <div className="heading_1 lets-contact">Let’s Contact</div>
+            <div className="heading_1 with-me">With me</div>
+          </div>
+        </div>
+        {/*Contact me*/}
+        <div className="send_message">
+          <div className="container-fluid">
+            <div className="row">
+            <div className="col-4">
+              <div className="">
+                “I welcome any potential recruiters to contact me regarding job opportunities that match my skillset and
+                interests. I am excited to explore new opportunities and connect with professionals in my field”
+              </div>
+            </div>
+            <div className="col"></div>
+            <div className="col-7">
+              <div className="row">
+                <div className="col-6 customer-name">
+                  <label>Your Name *</label>
+                  <input className="inpu" type="text" required/>
+                </div>
+                <div className="col-6 customer-phone">
+                  <label>Phone number *</label>
+                  <input className="inpu" type="text" required/>
+                </div>
+              </div>
+              <div className="customer-phone">
+                <label>Email address *</label>
+                <input className="inpu" type="text" required/>
+              </div>
+              <div className="customer-mail">
+                <label>Message *</label>
+                <textarea className="inpu" rows="4" required></textarea>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
         {/*<div className="page-element">*/}
