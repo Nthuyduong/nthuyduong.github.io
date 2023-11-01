@@ -24,6 +24,13 @@
 .changecl{
   background: #000;
   border-bottom: 1px solid #666;
+  .dropdown-menu{
+    background: #000;
+    .dropdown-item:focus, .dropdown-item:hover{
+      background: transparent;
+      color: #ccc;
+    }
+  }
 }
 .changecl a.nav-link{
   color: #fff !important;
