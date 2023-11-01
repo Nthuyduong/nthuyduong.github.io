@@ -252,50 +252,50 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="my-services">
-          <div className="services">
-            <div className="container-fluid">
-              {/*<div className="heading_1">MY SERVICE</div>*/}
-              <div className="row">
-                <div className="col-6">
-                  <div className="uxsv my_svc">
-                    <div className="heading_2 text-light">UX/UI Design</div>
-                    <div className="svc-list">
-                      <ul className="text-light list-main">
-                        <li>User Research</li>
-                        <li>Wireframe & Prototype</li>
-                        <li>UI for Website</li>
-                        <li>UI for Mobile</li>
-                      </ul>
-                    </div>
-                    <div className="svc-price">
-                      <div className="heading_5 text-light">From $4.000</div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-6">
-                  <div className="graphicsv my_svc">
-                      <div className="heading_2">Graphic Design</div>
-                      <div className="svc-list">
-                        <ul className="list-main">
-                          <li>Logo Design</li>
-                          <li>Brand Identity</li>
-                          <li>Packaging Design</li>
-                          <li>Banner Design</li>
-                          <li>Brand Book</li>
-                        </ul>
-                      </div>
-                      <div className="svc-price">
-                        <div className="heading_5">From $6.000</div>
-                        <div></div>
-                      </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/*<div className="my-services">*/}
+        {/*  <div className="services">*/}
+        {/*    <div className="container-fluid">*/}
+        {/*      /!*<div className="heading_1">MY SERVICE</div>*!/*/}
+        {/*      <div className="row">*/}
+        {/*        <div className="col-6">*/}
+        {/*          <div className="uxsv my_svc">*/}
+        {/*            <div className="heading_2 text-light">UX/UI Design</div>*/}
+        {/*            <div className="svc-list">*/}
+        {/*              <ul className="text-light list-main">*/}
+        {/*                <li>User Research</li>*/}
+        {/*                <li>Wireframe & Prototype</li>*/}
+        {/*                <li>UI for Website</li>*/}
+        {/*                <li>UI for Mobile</li>*/}
+        {/*              </ul>*/}
+        {/*            </div>*/}
+        {/*            <div className="svc-price">*/}
+        {/*              <div className="heading_5 text-light">From $4.000</div>*/}
+        {/*              <div></div>*/}
+        {/*            </div>*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*        <div className="col-6">*/}
+        {/*          <div className="graphicsv my_svc">*/}
+        {/*              <div className="heading_2">Graphic Design</div>*/}
+        {/*              <div className="svc-list">*/}
+        {/*                <ul className="list-main">*/}
+        {/*                  <li>Logo Design</li>*/}
+        {/*                  <li>Brand Identity</li>*/}
+        {/*                  <li>Packaging Design</li>*/}
+        {/*                  <li>Banner Design</li>*/}
+        {/*                  <li>Brand Book</li>*/}
+        {/*                </ul>*/}
+        {/*              </div>*/}
+        {/*              <div className="svc-price">*/}
+        {/*                <div className="heading_5">From $6.000</div>*/}
+        {/*                <div></div>*/}
+        {/*              </div>*/}
+        {/*            </div>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
         <div className="contact-info">
           <div className="container-fluid">
             <div className="row">
@@ -305,7 +305,7 @@ const Home = () => {
               </div>
               <div className="col-4">
                 <div className="contact-title">My Email Addres</div>
-                <div>Nthduong898@gmail.com</div>
+                <div>Gemek Tower, Le Trong Tan, An Khanh, Ha Noi</div>
               </div>
               <div className="col-4">
                 <div className="contact-title">Phone Number</div>
@@ -313,7 +313,7 @@ const Home = () => {
               </div>
             </div>
             <div className="heading_1 lets-contact">My Address</div>
-            <div className="heading_1 with-me">Gemek Tower, Le Trong Tan, An Khanh, Ha Noi</div>
+            <div className="heading_1 with-me">With me</div>
           </div>
         </div>
         {/*Contact me*/}
@@ -329,20 +329,20 @@ const Home = () => {
             <div className="col"></div>
             <div className="col-7">
               <div className="row">
-                <div className="col-6 customer-name">
+                <div className="col-6 customer-name contact_field">
                   <label>Your Name *</label>
                   <input className="inpu" type="text" required/>
                 </div>
-                <div className="col-6 customer-phone">
+                <div className="col-6 customer-phone contact_field">
                   <label>Phone number *</label>
                   <input className="inpu" type="text" required/>
                 </div>
               </div>
-              <div className="customer-phone">
+              <div className="customer-phone contact_field">
                 <label>Email address *</label>
                 <input className="inpu" type="text" required/>
               </div>
-              <div className="customer-mail">
+              <div className="customer-mail contact_field">
                 <label>Message *</label>
                 <textarea className="inpu" rows="4" required></textarea>
               </div>

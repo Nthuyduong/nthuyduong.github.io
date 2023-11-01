@@ -346,3 +346,14 @@
   }
 }
 
+.send_message{
+  margin-top: 80px;
+  .contact_field{
+    display: grid;
+    input{
+      border-left: none;
+      border-right: none;
+      border-top: none;
+    }
+  }
+}
