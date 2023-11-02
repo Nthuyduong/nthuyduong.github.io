@@ -312,42 +312,47 @@ const Home = () => {
                 <div>(84) 336256655</div>
               </div>
             </div>
-            <div className="heading_1 lets-contact">My Address</div>
-            <div className="heading_1 with-me">With me</div>
+            <div className="heading_1 lets-contact">Let's Contact</div>
+            <div className="heading_1 with-me">With Me</div>
           </div>
         </div>
         {/*Contact me*/}
         <div className="send_message">
           <div className="container-fluid">
             <div className="row">
-            <div className="col-4">
-              <div className="">
-                “I welcome any potential recruiters to contact me regarding job opportunities that match my skillset and
-                interests. I am excited to explore new opportunities and connect with professionals in my field”
-              </div>
-            </div>
-            <div className="col"></div>
-            <div className="col-7">
-              <div className="row">
-                <div className="col-6 customer-name contact_field">
-                  <label>Your Name *</label>
-                  <input className="inpu" type="text" required/>
-                </div>
-                <div className="col-6 customer-phone contact_field">
-                  <label>Phone number *</label>
-                  <input className="inpu" type="text" required/>
+              <div className="col-4">
+                <div className="body_text">
+                  “I welcome any potential recruiters to contact me regarding job opportunities that match my skillset and
+                  interests. I am excited to explore new opportunities and connect with professionals in my field”
                 </div>
               </div>
-              <div className="customer-phone contact_field">
-                <label>Email address *</label>
-                <input className="inpu" type="text" required/>
-              </div>
-              <div className="customer-mail contact_field">
-                <label>Message *</label>
-                <textarea className="inpu" rows="4" required></textarea>
+              <div className="col"></div>
+              <div className="col-7 contact-form">
+                {/*<form className="contact-form" onSubmit={sendEmail}>*/}
+                  <div className="row">
+                    <div className="col-6 customer-name contact_field">
+                      <label>Your Name *</label>
+                      <input className="inpu" type="text" required/>
+                    </div>
+                    <div className="col-6 customer-phone contact_field">
+                      <label>Phone number *</label>
+                      <input className="inpu" type="text" required/>
+                    </div>
+                  </div>
+                  <div className="customer-phone contact_field">
+                    <label>Email address *</label>
+                    <input className="inpu" type="text" required/>
+                  </div>
+                  <div className="customer-mail contact_field">
+                    <label>Message *</label>
+                    <textarea className="inpu" rows="4" required></textarea>
+                  </div>
+                  <div className="heading_2 send-msg-btn">
+                    <button type="submit">Send Message</button>
+                  </div>
+                {/*</form>*/}
               </div>
             </div>
-          </div>
           </div>
         </div>
         {/*<div className="page-element">*/}

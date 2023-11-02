@@ -348,9 +348,28 @@
 
 .send_message{
   margin-top: 80px;
+  background-color:#F0EEEB;
+  padding: 60px 0;
+  .contact-form{
+    .send-msg-btn{
+      margin-top: 20px;
+      button{
+        border: none;
+        background: transparent;
+      }
+    }
+  }
   .contact_field{
     display: grid;
     input{
+      background: transparent;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      border-bottom: 1px solid #999;
+    }
+    textarea{
+      background: transparent;
       border-left: none;
       border-right: none;
       border-top: none;
