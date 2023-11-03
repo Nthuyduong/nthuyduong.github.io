@@ -296,6 +296,7 @@ const Home = () => {
         {/*    </div>*/}
         {/*  </div>*/}
         {/*</div>*/}
+
         <div className="contact-info">
           <div className="container-fluid">
             <div className="row">
@@ -329,27 +330,27 @@ const Home = () => {
               <div className="col"></div>
               <div className="col-7 contact-form">
                 {/*<form className="contact-form" onSubmit={sendEmail}>*/}
-                  <div className="row">
-                    <div className="col-6 customer-name contact_field">
-                      <label>Your Name *</label>
-                      <input className="inpu" type="text" required/>
-                    </div>
-                    <div className="col-6 customer-phone contact_field">
-                      <label>Phone number *</label>
-                      <input className="inpu" type="text" required/>
-                    </div>
-                  </div>
-                  <div className="customer-phone contact_field">
-                    <label>Email address *</label>
+                <div className="row">
+                  <div className="col-6 customer-name contact_field">
+                    <label>Your Name *</label>
                     <input className="inpu" type="text" required/>
                   </div>
-                  <div className="customer-mail contact_field">
-                    <label>Message *</label>
-                    <textarea className="inpu" rows="4" required></textarea>
+                  <div className="col-6 customer-phone contact_field">
+                    <label>Phone number *</label>
+                    <input className="inpu" type="text" required/>
                   </div>
-                  <div className="heading_2 send-msg-btn">
-                    <button type="submit">Send Message</button>
-                  </div>
+                </div>
+                <div className="customer-phone contact_field">
+                  <label>Email address *</label>
+                  <input className="inpu" type="text" required/>
+                </div>
+                <div className="customer-mail contact_field">
+                  <label>Message *</label>
+                  <textarea className="inpu" rows="4" required></textarea>
+                </div>
+                <div className="heading_2 send-msg-btn">
+                  <button type="submit">Send Message</button>
+                </div>
                 {/*</form>*/}
               </div>
             </div>
