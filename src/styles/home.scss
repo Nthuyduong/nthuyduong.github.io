@@ -350,7 +350,6 @@
 }
 
 .send_message{
-  margin-top: 80px;
   padding: 60px 0;
   .contact-form{
     .customer-email{
@@ -362,6 +361,7 @@
         margin-top: 60px;
         border: none;
         background: transparent;
+        float: right;
       }
     }
   }
