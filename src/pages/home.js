@@ -1,8 +1,94 @@
-import React, { useState, useEffect, useRef } from "react";
-import {Link} from "react-router-dom";
-import {ROUTER} from "../utils/constants";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { ROUTER } from "../utils/constants";
+import InfiniteScroll from 'react-infinite-scroll-component';
 
 const Home = () => {
+  // const sentence1 = "HELLO MY NAME IS NGUYEN THUY DUONG.";
+  // const sentence2 = "WELCOME TO MY PORTFOLIO!";
+  // const sentence3 = "LET'S CONTACT WITH ME";
+  // const sentences = [
+  //   "HELLO MY NAME IS NGUYEN THUY DUONG.",
+  //   "WELCOME TO MY PORTFOLIO.",
+  //   "LET'S CONTACT WITH ME"
+  // ];
+  // const [content, setContent] = useState(sentences.join(" "));
+  // useEffect(() => {
+  //   const container = document.getElementById("scroll-container");
+  //
+  //   if (container) {
+  //     const scrollWidth = container.scrollWidth;
+  //     const containerWidth = container.clientWidth;
+  //
+  //     const scroll = () => {
+  //       if (container.scrollLeft <= 0) {
+  //         container.scrollLeft = scrollWidth;
+  //       } else {
+  //         container.scrollLeft -= 1;
+  //       }
+  //     };
+  //
+  //     const scrollInterval = setInterval(scroll, 20);
+  //
+  //     return () => {
+  //       clearInterval(scrollInterval);
+  //     };
+  //   }
+  // }, []);
+  const sentences = [
+    "HELLO MY NAME IS NGUYEN THUY DUONG.",
+    "WELCOME TO MY PORTFOLIO.",
+    "LET'S CONTACT WITH ME"
+  ];
+  const [content, setContent] = useState(sentences.join(" "));
+
+  useEffect(() => {
+    const container = document.getElementById("scroll-container");
+    const content = document.getElementById("scroll-content");
+
+    if (container && content) {
+      const scrollWidth = content.scrollWidth;
+      const containerWidth = container.clientWidth;
+
+      const scroll = () => {
+        if (content.scrollLeft >= content.scrollWidth / 2) {
+          content.scrollLeft = 0;
+        } else {
+          content.scrollLeft += 1;
+        }
+      };
+
+      const scrollInterval = setInterval(scroll, 20);
+
+      return () => {
+        clearInterval(scrollInterval);
+      };
+    }
+  }, []);
+  // const [content, setContent] = useState(sentences.join(""));
+  //
+  // useEffect(() => {
+  //   const container = document.getElementById("scroll-container");
+  //
+  //   if (container) {
+  //     const scrollWidth = container.scrollWidth;
+  //     const containerWidth = container.clientWidth;
+  //
+  //     const scroll = () => {
+  //       if (container.scrollLeft <= 0) {
+  //         container.scrollLeft = scrollWidth;
+  //       } else {
+  //         container.scrollLeft -= 1;
+  //       }
+  //     };
+  //
+  //     const scrollInterval = setInterval(scroll, 10);
+  //
+  //     return () => {
+  //       clearInterval(scrollInterval);
+  //     };
+  //   }
+  // }, []);
   //dynamically moving sentence
   // const sentenceRef = useRef(null);
 
@@ -135,7 +221,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
         <div>
           <div className="my-design">
             <div className="container-fluid">
@@ -252,51 +337,51 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/*<div className="my-services">*/}
-        {/*  <div className="services">*/}
-        {/*    <div className="container-fluid">*/}
-        {/*      /!*<div className="heading_1">MY SERVICE</div>*!/*/}
-        {/*      <div className="row">*/}
-        {/*        <div className="col-6">*/}
-        {/*          <div className="uxsv my_svc">*/}
-        {/*            <div className="heading_2 text-light">UX/UI Design</div>*/}
-        {/*            <div className="svc-list">*/}
-        {/*              <ul className="text-light list-main">*/}
-        {/*                <li>User Research</li>*/}
-        {/*                <li>Wireframe & Prototype</li>*/}
-        {/*                <li>UI for Website</li>*/}
-        {/*                <li>UI for Mobile</li>*/}
-        {/*              </ul>*/}
-        {/*            </div>*/}
-        {/*            <div className="svc-price">*/}
-        {/*              <div className="heading_5 text-light">From $4.000</div>*/}
-        {/*              <div></div>*/}
-        {/*            </div>*/}
-        {/*          </div>*/}
-        {/*        </div>*/}
-        {/*        <div className="col-6">*/}
-        {/*          <div className="graphicsv my_svc">*/}
-        {/*              <div className="heading_2">Graphic Design</div>*/}
-        {/*              <div className="svc-list">*/}
-        {/*                <ul className="list-main">*/}
-        {/*                  <li>Logo Design</li>*/}
-        {/*                  <li>Brand Identity</li>*/}
-        {/*                  <li>Packaging Design</li>*/}
-        {/*                  <li>Banner Design</li>*/}
-        {/*                  <li>Brand Book</li>*/}
-        {/*                </ul>*/}
-        {/*              </div>*/}
-        {/*              <div className="svc-price">*/}
-        {/*                <div className="heading_5">From $6.000</div>*/}
-        {/*                <div></div>*/}
-        {/*              </div>*/}
-        {/*            </div>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
-
+        <div className="my-services">
+          <div className="services">
+            <div className="container-fluid">
+              {/*<div className="heading_1">MY SERVICE</div>*/}
+              <div className="row">
+                <div className="col-6">
+                  <div className="uxsv my_svc">
+                    <div className="heading_2 text-light">UX/UI Design</div>
+                    <div className="svc-list">
+                      <ul className="text-light list-main">
+                        <li>User Research</li>
+                        <li>Wireframe & Prototype</li>
+                        <li>UI for Website</li>
+                        <li>UI for Mobile</li>
+                      </ul>
+                    </div>
+                    <div className="svc-price">
+                      <div className="heading_5 text-light">From $4.000</div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-6">
+                  <div className="graphicsv my_svc">
+                      <div className="heading_2">Graphic Design</div>
+                      <div className="svc-list">
+                        <ul className="list-main">
+                          <li>Logo Design</li>
+                          <li>Brand Identity</li>
+                          <li>Packaging Design</li>
+                          <li>Banner Design</li>
+                          <li>Brand Book</li>
+                        </ul>
+                      </div>
+                      <div className="svc-price">
+                        <div className="heading_5">From $6.000</div>
+                        <div></div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*My service*/}
         <div className="contact-info">
           <div className="container-fluid">
             <div className="row">
@@ -313,8 +398,21 @@ const Home = () => {
                 <div>(84) 336256655</div>
               </div>
             </div>
-            <div className="heading_1 lets-contact">Let's Contact</div>
-            <div className="heading_1 with-me">With Me</div>
+            {/*<div className="heading_1 lets-contact">Let's Contact</div>*/}
+            {/*<div className="heading_1 with-me">With Me</div>*/}
+          </div>
+        </div>
+        {/*DECOR TEXT*/}
+        <div className="scroll-container text-decor">
+          <div className="scroll-content">
+            <div className="scroll-text">
+              <span className="sentence-run">{sentences[0]}</span>
+              <span className="sentence-spacing"> </span>
+              <span className="sentence-run">{sentences[1]}</span>
+              <span className="sentence-spacing"> </span>
+              <span className="sentence-run">{sentences[2]}</span>
+              <span className="sentence-spacing"> </span>
+            </div>
           </div>
         </div>
         {/*Contact me*/}
@@ -330,7 +428,7 @@ const Home = () => {
               <div className="col"></div>
               <div className="col-7 contact-form">
                 {/*<form className="contact-form" onSubmit={sendEmail}>*/}
-                <div className="row">
+                <div className="row first-line-contact">
                   <div className="col-6 customer-name contact_field">
                     <label>Your Name *</label>
                     <input className="inpu" type="text" required/>
@@ -340,11 +438,11 @@ const Home = () => {
                     <input className="inpu" type="text" required/>
                   </div>
                 </div>
-                <div className="customer-phone contact_field">
+                <div className="customer-email contact_field">
                   <label>Email address *</label>
                   <input className="inpu" type="text" required/>
                 </div>
-                <div className="customer-mail contact_field">
+                <div className="customer-mess contact_field">
                   <label>Message *</label>
                   <textarea className="inpu" rows="4" required></textarea>
                 </div>

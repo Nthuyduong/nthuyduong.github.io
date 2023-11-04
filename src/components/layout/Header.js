@@ -45,13 +45,13 @@ const Header = () => {
       setIsOpen(false);
     }, 40);
   };
-  // const handleDropdownClick = () => {
-  //   // Navigate to ROUTER.DESIGNS when the dropdown is clicked
-  //   history.push(ROUTER.DESIGNS);
-  // };
-  // const handleItemClick = () => {
-  //   setIsOpen(false); // Hide the dropdown when an item is clicked
-  // };
+  const handleDropdownClick = () => {
+    // Navigate to ROUTER.DESIGNS when the dropdown is clicked
+    history.push(ROUTER.DESIGNS);
+  };
+  const handleItemClick = () => {
+    setIsOpen(false); // Hide the dropdown when an item is clicked
+  };
 
   const [show, setShow] = useState(false)
   const controlNavbar = () => {
@@ -104,12 +104,15 @@ const Header = () => {
                     </Link>
                   </Nav>
                     <NavDropdown
-                        title={<span>DESIGNS</span>}
+                        title={
+                          <Link className="" to={ROUTER.DESIGNS} className="nav-link">
+                            <span>DESIGNS</span>
+                          </Link>
+                        }
                         id="basic-nav-dropdown"
                         show={isOpen} // Control the show/hide state of the dropdown
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
-                        // onClick={handleDropdownClick}
                     >
                       <NavDropdown.Item>
                         <Link to={ROUTER.ALIO} className="nav-link">Alio</Link>

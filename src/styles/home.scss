@@ -304,9 +304,11 @@
 
 
 .services{
-  margin-top:90px;
-  padding-bottom: 90px;
   border-bottom: 1px solid #ccc;
+  .container-fluid{
+    padding-bottom: 80px;
+  }
+  margin-top:90px;
   .my_svc{
     height: 340px;
     .svc-list{
@@ -333,6 +335,7 @@
 }
 
 .contact-info{
+  padding-bottom: 80px;
   margin-top: 80px;
   .contact-title{
     color: #999;
@@ -348,12 +351,15 @@
 
 .send_message{
   margin-top: 80px;
-  background-color:#F0EEEB;
   padding: 60px 0;
   .contact-form{
+    .customer-email{
+      padding: 24px 0;
+    }
     .send-msg-btn{
-      margin-top: 20px;
+      display:block;
       button{
+        margin-top: 60px;
         border: none;
         background: transparent;
       }
@@ -375,4 +381,48 @@
       border-top: none;
     }
   }
+}
+.scroll-container.text-decor {
+  background: #F0EEEB;
+  padding: 20px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  .scroll-content {
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+    .scroll-text {
+      display: inline-block;
+      padding: 0 10px;
+      .sentence-spacing{
+        margin-right: 30px;
+      }
+      .sentence-run{
+        font-size: 48px;
+        font-family: AmericanaBT;
+      }
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+#basic-nav-dropdown{
+  display: flex;
+  .nav-link{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 8px;
+  }
+}
+.dropdown-toggle::after{
+  align-self: center;
 }
