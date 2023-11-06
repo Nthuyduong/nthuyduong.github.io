@@ -147,11 +147,42 @@
 //ABOUT TEST
 .new-about{
   background-color: #F0EEEB;
+  .about-banner-left{
+    .f-left{
+      align-self: center;
+    }
+  }
+  .about-banner-right{
+    .f-right{
+      display: flex;
+      justify-content: end;
+    }
+    .abt-banner-right-bt{
+      padding-top: 80px;
+    }
+  }
+  .raw-col{
+    flex-basis: calc(50%) !important;
+  }
   img{
     border: 1px solid #ccc;
   }
   .welcome-abt{
+    .my-h{
+      margin-left: 0 !important;
+      font-size: 72px !important;
+    }
     .welcome-abt-inner{
+      .my-row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+        .set-columns{
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+        }
+
+      }
       .welcome-img2{
         position: absolute;
         right: 0;
@@ -162,17 +193,13 @@
         }
       }
     }
-    .welcome-content{
-      height: 100%;
-      .my-content{
-        position: absolute;
-        bottom: 20%;
-        right: 0;
-        .content-inner{
-          font-size: 14px;
-          line-height: 1.5;
-
-        }
+    .my-content{
+      //position: absolute;
+      //bottom: 20%;
+      //right: 0;
+      .content-inner{
+        font-size: 14px !important;
+        line-height: 1.5;
       }
     }
   }
