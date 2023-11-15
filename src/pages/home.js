@@ -337,123 +337,123 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="my-services">
-          <div className="services">
-            <div className="container-fluid">
-              {/*<div className="heading_1">MY SERVICE</div>*/}
-              <div className="row">
-                <div className="col-6">
-                  <div className="uxsv my_svc">
-                    <div className="heading_2 text-light">UX/UI Design</div>
-                    <div className="svc-list">
-                      <ul className="text-light list-main">
-                        <li>User Research</li>
-                        <li>Wireframe & Prototype</li>
-                        <li>UI for Website</li>
-                        <li>UI for Mobile</li>
-                      </ul>
-                    </div>
-                    <div className="svc-price">
-                      <div className="heading_5 text-light">From $4.000</div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-6">
-                  <div className="graphicsv my_svc">
-                      <div className="heading_2">Graphic Design</div>
-                      <div className="svc-list">
-                        <ul className="list-main">
-                          <li>Logo Design</li>
-                          <li>Brand Identity</li>
-                          <li>Packaging Design</li>
-                          <li>Banner Design</li>
-                          <li>Brand Book</li>
-                        </ul>
-                      </div>
-                      <div className="svc-price">
-                        <div className="heading_5">From $6.000</div>
-                        <div></div>
-                      </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/*My service*/}
-        <div className="contact-info">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-4">
-                <div className="contact-title">My Email addres</div>
-                <div>Nthduong898@gmail.com</div>
-              </div>
-              <div className="col-4">
-                <div className="contact-title">My Email Addres</div>
-                <div>Gemek Tower, Le Trong Tan, An Khanh, Ha Noi</div>
-              </div>
-              <div className="col-4">
-                <div className="contact-title">Phone Number</div>
-                <div>(84) 336256655</div>
-              </div>
-            </div>
-            {/*<div className="heading_1 lets-contact">Let's Contact</div>*/}
-            {/*<div className="heading_1 with-me">With Me</div>*/}
-          </div>
-        </div>
-        {/*DECOR TEXT*/}
-        <div className="scroll-container text-decor">
-          <div className="scroll-content">
-            <div className="scroll-text">
-              <span className="sentence-run">{sentences[0]}</span>
-              <span className="sentence-spacing"> </span>
-              <span className="sentence-run">{sentences[1]}</span>
-              <span className="sentence-spacing"> </span>
-              <span className="sentence-run">{sentences[2]}</span>
-              <span className="sentence-spacing"> </span>
-            </div>
-          </div>
-        </div>
-        {/*Contact me*/}
-        <div className="send_message">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-4">
-                <div className="body_text">
-                  “I welcome any potential recruiters to contact me regarding job opportunities that match my skillset and
-                  interests. I am excited to explore new opportunities and connect with professionals in my field”
-                </div>
-              </div>
-              <div className="col"></div>
-              <div className="col-7 contact-form">
-                {/*<form className="contact-form" onSubmit={sendEmail}>*/}
-                <div className="row first-line-contact">
-                  <div className="col-6 customer-name contact_field">
-                    <label>Your Name *</label>
-                    <input className="inpu" type="text" required/>
-                  </div>
-                  <div className="col-6 customer-phone contact_field">
-                    <label>Phone number *</label>
-                    <input className="inpu" type="text" required/>
-                  </div>
-                </div>
-                <div className="customer-email contact_field">
-                  <label>Email address *</label>
-                  <input className="inpu" type="text" required/>
-                </div>
-                <div className="customer-mess contact_field">
-                  <label>Message *</label>
-                  <textarea className="inpu" rows="4" required></textarea>
-                </div>
-                <div className="heading_2 send-msg-btn">
-                  <button type="submit">Send Message</button>
-                </div>
-                {/*</form>*/}
-              </div>
-            </div>
-          </div>
-        </div>
+        {/*<div className="my-services">*/}
+        {/*  <div className="services">*/}
+        {/*    <div className="container-fluid">*/}
+        {/*      /!*<div className="heading_1">MY SERVICE</div>*!/*/}
+        {/*      <div className="row">*/}
+        {/*        <div className="col-6">*/}
+        {/*          <div className="uxsv my_svc">*/}
+        {/*            <div className="heading_2 text-light">UX/UI Design</div>*/}
+        {/*            <div className="svc-list">*/}
+        {/*              <ul className="text-light list-main">*/}
+        {/*                <li>User Research</li>*/}
+        {/*                <li>Wireframe & Prototype</li>*/}
+        {/*                <li>UI for Website</li>*/}
+        {/*                <li>UI for Mobile</li>*/}
+        {/*              </ul>*/}
+        {/*            </div>*/}
+        {/*            <div className="svc-price">*/}
+        {/*              <div className="heading_5 text-light">From $4.000</div>*/}
+        {/*              <div></div>*/}
+        {/*            </div>*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*        <div className="col-6">*/}
+        {/*          <div className="graphicsv my_svc">*/}
+        {/*              <div className="heading_2">Graphic Design</div>*/}
+        {/*              <div className="svc-list">*/}
+        {/*                <ul className="list-main">*/}
+        {/*                  <li>Logo Design</li>*/}
+        {/*                  <li>Brand Identity</li>*/}
+        {/*                  <li>Packaging Design</li>*/}
+        {/*                  <li>Banner Design</li>*/}
+        {/*                  <li>Brand Book</li>*/}
+        {/*                </ul>*/}
+        {/*              </div>*/}
+        {/*              <div className="svc-price">*/}
+        {/*                <div className="heading_5">From $6.000</div>*/}
+        {/*                <div></div>*/}
+        {/*              </div>*/}
+        {/*            </div>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
+        {/*/!*My service*!/*/}
+        {/*<div className="contact-info">*/}
+        {/*  <div className="container-fluid">*/}
+        {/*    <div className="row">*/}
+        {/*      <div className="col-4">*/}
+        {/*        <div className="contact-title">My Email addres</div>*/}
+        {/*        <div>Nthduong898@gmail.com</div>*/}
+        {/*      </div>*/}
+        {/*      <div className="col-4">*/}
+        {/*        <div className="contact-title">My Email Addres</div>*/}
+        {/*        <div>Gemek Tower, Le Trong Tan, An Khanh, Ha Noi</div>*/}
+        {/*      </div>*/}
+        {/*      <div className="col-4">*/}
+        {/*        <div className="contact-title">Phone Number</div>*/}
+        {/*        <div>(84) 336256655</div>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*    /!*<div className="heading_1 lets-contact">Let's Contact</div>*!/*/}
+        {/*    /!*<div className="heading_1 with-me">With Me</div>*!/*/}
+        {/*  </div>*/}
+        {/*</div>*/}
+        {/*/!*DECOR TEXT*!/*/}
+        {/*<div className="scroll-container text-decor">*/}
+        {/*  <div className="scroll-content">*/}
+        {/*    <div className="scroll-text">*/}
+        {/*      <span className="sentence-run">{sentences[0]}</span>*/}
+        {/*      <span className="sentence-spacing"> </span>*/}
+        {/*      <span className="sentence-run">{sentences[1]}</span>*/}
+        {/*      <span className="sentence-spacing"> </span>*/}
+        {/*      <span className="sentence-run">{sentences[2]}</span>*/}
+        {/*      <span className="sentence-spacing"> </span>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
+        {/*/!*Contact me*!/*/}
+        {/*<div className="send_message">*/}
+        {/*  <div className="container-fluid">*/}
+        {/*    <div className="row">*/}
+        {/*      <div className="col-4">*/}
+        {/*        <div className="body_text">*/}
+        {/*          “I welcome any potential recruiters to contact me regarding job opportunities that match my skillset and*/}
+        {/*          interests. I am excited to explore new opportunities and connect with professionals in my field”*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*      <div className="col"></div>*/}
+        {/*      <div className="col-7 contact-form">*/}
+        {/*        /!*<form className="contact-form" onSubmit={sendEmail}>*!/*/}
+        {/*        <div className="row first-line-contact">*/}
+        {/*          <div className="col-6 customer-name contact_field">*/}
+        {/*            <label>Your Name *</label>*/}
+        {/*            <input className="inpu" type="text" required/>*/}
+        {/*          </div>*/}
+        {/*          <div className="col-6 customer-phone contact_field">*/}
+        {/*            <label>Phone number *</label>*/}
+        {/*            <input className="inpu" type="text" required/>*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*        <div className="customer-email contact_field">*/}
+        {/*          <label>Email address *</label>*/}
+        {/*          <input className="inpu" type="text" required/>*/}
+        {/*        </div>*/}
+        {/*        <div className="customer-mess contact_field">*/}
+        {/*          <label>Message *</label>*/}
+        {/*          <textarea className="inpu" rows="4" required></textarea>*/}
+        {/*        </div>*/}
+        {/*        <div className="heading_2 send-msg-btn">*/}
+        {/*          <button type="submit">Send Message</button>*/}
+        {/*        </div>*/}
+        {/*        /!*</form>*!/*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
         {/*<div className="page-element">*/}
         {/*  <div className="container-fluid">*/}
         {/*    <div className="row mydes-title">*/}
