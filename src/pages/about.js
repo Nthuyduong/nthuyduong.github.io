@@ -128,11 +128,11 @@ const About = () => {
             <div className="col-2 skill-container">
               <div className="skill-item">
                 <div className="skill-no body_text">01/</div>
-                <div className="skill-name body_text">HTML</div>
+                <div className="skill-name body_text">HTML/SCSS</div>
               </div>
               <div className="skill-item">
                 <div className="skill-no body_text">02/</div>
-                <div className="skill-name body_text">CSS</div>
+                <div className="skill-name body_text">Tailwind/Bootstrap</div>
               </div>
               <div className="skill-item">
                 <div className="skill-no body_text">03/</div>
@@ -140,11 +140,11 @@ const About = () => {
               </div>
               <div className="skill-item">
                 <div className="skill-no body_text">04/</div>
-                <div className="skill-name body_text">Angular</div>
+                <div className="skill-name body_text">ReactJS</div>
               </div>
               <div className="skill-item boder-none">
                 <div className="skill-no body_text">05/</div>
-                <div className="skill-name body_text">React</div>
+                <div className="skill-name body_text">Angular</div>
               </div>
             </div>
           </div>

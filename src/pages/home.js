@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ROUTER } from "../utils/constants";
-import InfiniteScroll from 'react-infinite-scroll-component';
 
 const Home = () => {
   // const sentence1 = "HELLO MY NAME IS NGUYEN THUY DUONG.";
@@ -184,7 +183,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
         <div className="page-element">
           <div className="container-fluid home-info3">
             <div className="row">
