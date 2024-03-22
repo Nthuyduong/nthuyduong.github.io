@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ROUTER } from "../utils/constants";
+import Scroller from "../components/common/scroller";
+
 
 const Home = () => {
   // const sentence1 = "HELLO MY NAME IS NGUYEN THUY DUONG.";
@@ -64,48 +66,6 @@ const Home = () => {
       };
     }
   }, []);
-  // const [content, setContent] = useState(sentences.join(""));
-  //
-  // useEffect(() => {
-  //   const container = document.getElementById("scroll-container");
-  //
-  //   if (container) {
-  //     const scrollWidth = container.scrollWidth;
-  //     const containerWidth = container.clientWidth;
-  //
-  //     const scroll = () => {
-  //       if (container.scrollLeft <= 0) {
-  //         container.scrollLeft = scrollWidth;
-  //       } else {
-  //         container.scrollLeft -= 1;
-  //       }
-  //     };
-  //
-  //     const scrollInterval = setInterval(scroll, 10);
-  //
-  //     return () => {
-  //       clearInterval(scrollInterval);
-  //     };
-  //   }
-  // }, []);
-  //dynamically moving sentence
-  // const sentenceRef = useRef(null);
-
-  // useEffect(() => {
-  //     const sentenceWidth = sentenceRef.current.getBoundingClientRect().width;
-  //     const containerWidth = sentenceRef.current.parentElement.offsetWidth;
-  //     const travelDistance = sentenceWidth + containerWidth;
-  //
-  //       const animation = sentenceRef.current.animate(
-  //           [{transform: `translateX(${containerWidth}px)`}, {transform: `translateX(-${travelDistance}px)`}],
-  //           {
-  //             duration: 8000, // Adjust the duration as needed
-  //             iterations: Infinity,
-  //             easing: 'linear'
-  //           }
-  //       )
-  //     }
-  // )
 
   //Change text
   const texts = [
@@ -335,208 +295,121 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/*<div className="my-services">*/}
-        {/*  <div className="services">*/}
-        {/*    <div className="container-fluid">*/}
-        {/*      /!*<div className="heading_1">MY SERVICE</div>*!/*/}
-        {/*      <div className="row">*/}
-        {/*        <div className="col-6">*/}
-        {/*          <div className="uxsv my_svc">*/}
-        {/*            <div className="heading_2 text-light">UX/UI Design</div>*/}
-        {/*            <div className="svc-list">*/}
-        {/*              <ul className="text-light list-main">*/}
-        {/*                <li>User Research</li>*/}
-        {/*                <li>Wireframe & Prototype</li>*/}
-        {/*                <li>UI for Website</li>*/}
-        {/*                <li>UI for Mobile</li>*/}
-        {/*              </ul>*/}
-        {/*            </div>*/}
-        {/*            <div className="svc-price">*/}
-        {/*              <div className="heading_5 text-light">From $4.000</div>*/}
-        {/*              <div></div>*/}
-        {/*            </div>*/}
-        {/*          </div>*/}
-        {/*        </div>*/}
-        {/*        <div className="col-6">*/}
-        {/*          <div className="graphicsv my_svc">*/}
-        {/*              <div className="heading_2">Graphic Design</div>*/}
-        {/*              <div className="svc-list">*/}
-        {/*                <ul className="list-main">*/}
-        {/*                  <li>Logo Design</li>*/}
-        {/*                  <li>Brand Identity</li>*/}
-        {/*                  <li>Packaging Design</li>*/}
-        {/*                  <li>Banner Design</li>*/}
-        {/*                  <li>Brand Book</li>*/}
-        {/*                </ul>*/}
-        {/*              </div>*/}
-        {/*              <div className="svc-price">*/}
-        {/*                <div className="heading_5">From $6.000</div>*/}
-        {/*                <div></div>*/}
-        {/*              </div>*/}
-        {/*            </div>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
-        {/*/!*My service*!/*/}
-        {/*<div className="contact-info">*/}
-        {/*  <div className="container-fluid">*/}
-        {/*    <div className="row">*/}
-        {/*      <div className="col-4">*/}
-        {/*        <div className="contact-title">My Email addres</div>*/}
-        {/*        <div>Nthduong898@gmail.com</div>*/}
-        {/*      </div>*/}
-        {/*      <div className="col-4">*/}
-        {/*        <div className="contact-title">My Email Addres</div>*/}
-        {/*        <div>Gemek Tower, Le Trong Tan, An Khanh, Ha Noi</div>*/}
-        {/*      </div>*/}
-        {/*      <div className="col-4">*/}
-        {/*        <div className="contact-title">Phone Number</div>*/}
-        {/*        <div>(84) 336256655</div>*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*    /!*<div className="heading_1 lets-contact">Let's Contact</div>*!/*/}
-        {/*    /!*<div className="heading_1 with-me">With Me</div>*!/*/}
-        {/*  </div>*/}
-        {/*</div>*/}
-        {/*/!*DECOR TEXT*!/*/}
-        {/*<div className="scroll-container text-decor">*/}
-        {/*  <div className="scroll-content">*/}
-        {/*    <div className="scroll-text">*/}
-        {/*      <span className="sentence-run">{sentences[0]}</span>*/}
-        {/*      <span className="sentence-spacing"> </span>*/}
-        {/*      <span className="sentence-run">{sentences[1]}</span>*/}
-        {/*      <span className="sentence-spacing"> </span>*/}
-        {/*      <span className="sentence-run">{sentences[2]}</span>*/}
-        {/*      <span className="sentence-spacing"> </span>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
-        {/*/!*Contact me*!/*/}
-        {/*<div className="send_message">*/}
-        {/*  <div className="container-fluid">*/}
-        {/*    <div className="row">*/}
-        {/*      <div className="col-4">*/}
-        {/*        <div className="body_text">*/}
-        {/*          “I welcome any potential recruiters to contact me regarding job opportunities that match my skillset and*/}
-        {/*          interests. I am excited to explore new opportunities and connect with professionals in my field”*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        {/*      <div className="col"></div>*/}
-        {/*      <div className="col-7 contact-form">*/}
-        {/*        /!*<form className="contact-form" onSubmit={sendEmail}>*!/*/}
-        {/*        <div className="row first-line-contact">*/}
-        {/*          <div className="col-6 customer-name contact_field">*/}
-        {/*            <label>Your Name *</label>*/}
-        {/*            <input className="inpu" type="text" required/>*/}
-        {/*          </div>*/}
-        {/*          <div className="col-6 customer-phone contact_field">*/}
-        {/*            <label>Phone number *</label>*/}
-        {/*            <input className="inpu" type="text" required/>*/}
-        {/*          </div>*/}
-        {/*        </div>*/}
-        {/*        <div className="customer-email contact_field">*/}
-        {/*          <label>Email address *</label>*/}
-        {/*          <input className="inpu" type="text" required/>*/}
-        {/*        </div>*/}
-        {/*        <div className="customer-mess contact_field">*/}
-        {/*          <label>Message *</label>*/}
-        {/*          <textarea className="inpu" rows="4" required></textarea>*/}
-        {/*        </div>*/}
-        {/*        <div className="heading_2 send-msg-btn">*/}
-        {/*          <button type="submit">Send Message</button>*/}
-        {/*        </div>*/}
-        {/*        /!*</form>*!/*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
-        {/*<div className="page-element">*/}
-        {/*  <div className="container-fluid">*/}
-        {/*    <div className="row mydes-title">*/}
-        {/*      <div className="col-3"></div>*/}
-        {/*      <div className="col-6">*/}
-        {/*        <div className="heading_2 text-center mb-4">My Designs</div>*/}
-        {/*        <div className="body_text text-center">*/}
-        {/*          Step into the world of a passionate UI designer's portfolio.*/}
-        {/*          Witness the evolution of my skills as I create intuitive interfaces and explore the realm of captivating design.*/}
-        {/*        </div>*/}
-        {/*      <div className="col-3"></div>*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*    <div className="row des_r1">*/}
-        {/*      <div className="col-lg-5 col-sm-12">*/}
-        {/*        <div className="des_card img-des">*/}
-        {/*          <Link to={ROUTER.CAKE}>*/}
-        {/*            <img className="w-100" src="./images/home/mydes_1.png" alt="logo" loading="lazy"/>*/}
-        {/*          </Link>*/}
-        {/*          <div className="d-flex mt-3 mb-2">*/}
-        {/*            <div className="heading_5 mr-2">01/</div>*/}
-        {/*            <div className="medium_text pj_name">Season Cake Blog</div>*/}
-        {/*            <div className="small_text ml-auto">Finished</div>*/}
-        {/*          </div>*/}
-        {/*          <div className="body_text w-100 pj_intro">*/}
-        {/*            User testing was an iterative process that was conducted at every milestone of the project to identify*/}
-        {/*            the biggest pain points in the current version.*/}
-        {/*          </div>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        {/*      <div className="col-1"/>*/}
-        {/*      <div className="col-lg-6 col-sm-12">*/}
-        {/*        <div className="des_card img-des">*/}
-        {/*          <Link to={ROUTER.AGURI}>*/}
-        {/*            <img className="w-100" src="./images/home/mydes_2.png" alt="logo" loading="lazy"/>*/}
-        {/*          </Link>*/}
-        {/*          <div className="d-flex mt-3 mb-2">*/}
-        {/*            <div className="heading_5 mr-2">02/</div>*/}
-        {/*            <div className="medium_text pj_name">Aguri Jewellery Website</div>*/}
-        {/*            <div className="small_text ml-auto">Finished</div>*/}
-        {/*          </div>*/}
-        {/*          <div className="w-100 body_text pj_intro">*/}
-        {/*            User testing was an iterative process that was conducted at every milestone of the project to identify*/}
-        {/*            the biggest pain points in the current version.*/}
-        {/*          </div>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*    <div className="row">*/}
-        {/*      <div className="col-lg-6 col-sm-12">*/}
-        {/*        <div className="des_card img-des">*/}
-        {/*          <Link to={ROUTER.ALIO}>*/}
-        {/*            <img className="w-100" src="./images/home/mydes_3.png" alt="logo" loading="lazy"/>*/}
-        {/*          </Link>*/}
-        {/*          <div className="d-flex mt-3 mb-2">*/}
-        {/*            <div className="heading_5 mr-2">03/</div>*/}
-        {/*            <div className="medium_text pj_name">Alio Yoga Website & App</div>*/}
-        {/*            <div className="small_text ml-auto">Finished</div>*/}
-        {/*          </div>*/}
-        {/*          <div className="w-100 body_text pj_intro">*/}
-        {/*            Unwind with our UI design project for a yoga, Pilates, and meditation website. Immerse yourself in*/}
-        {/*            serene interfaces that inspire tranquility*/}
-        {/*          </div>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        {/*      <div className="col-1"/>*/}
-        {/*      <div className="col-lg-5 col-sm-12">*/}
-        {/*        <div className="des_card img-des">*/}
-        {/*          <Link to={ROUTER.FASHION}>*/}
-        {/*            <img className="w-100" src="./images/home/mydes_4.png" alt="logo" loading="lazy"/>*/}
-        {/*          </Link>*/}
-        {/*          <div className="d-flex mt-3 mb-2">*/}
-        {/*            <div className="heading_5 mr-2">04/</div>*/}
-        {/*            <div className="medium_text pj_name">Vérité Luxury Fashion App</div>*/}
-        {/*            <div className="body_text ml-auto">Finished</div>*/}
-        {/*          </div>*/}
-        {/*          <div className="w-100 body_text pj_intro">*/}
-        {/*            User testing was an iterative process that was conducted at every milestone of the project to identify*/}
-        {/*            the biggest pain points in the current version.*/}
-        {/*          </div>*/}
-        {/*        </div>*/}
-        {/*      </div>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
+        <div className="my-services">
+          <div className="services">
+            <div className="container-fluid">
+              {/*<div className="heading_1">MY SERVICE</div>*/}
+              <div className="row">
+                <div className="col-6">
+                  <div className="uxsv my_svc">
+                    <div className="heading_2 text-light">UX/UI Design</div>
+                    <div className="svc-list">
+                      <ul className="text-light list-main">
+                        <li>User Research</li>
+                        <li>Wireframe & Prototype</li>
+                        <li>UI for Website</li>
+                        <li>UI for Mobile</li>
+                      </ul>
+                    </div>
+                    <div className="svc-price">
+                      <div className="heading_5 text-light">From $4.000</div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-6">
+                  <div className="graphicsv my_svc">
+                      <div className="heading_2">Graphic Design</div>
+                      <div className="svc-list">
+                        <ul className="list-main">
+                          <li>Logo Design</li>
+                          <li>Brand Identity</li>
+                          <li>Packaging Design</li>
+                          <li>Banner Design</li>
+                          <li>Brand Book</li>
+                        </ul>
+                      </div>
+                      <div className="svc-price">
+                        <div className="heading_5">From $6.000</div>
+                        <div></div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*My service*/}
+        <div className="contact-info">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-4">
+                <div className="contact-title">My Email addres</div>
+                <div>Nthduong898@gmail.com</div>
+              </div>
+              <div className="col-4">
+                <div className="contact-title">My Email Addres</div>
+                <div>Gemek Tower, Le Trong Tan, An Khanh, Ha Noi</div>
+              </div>
+              <div className="col-4">
+                <div className="contact-title">Phone Number</div>
+                <div>(84) 336256655</div>
+              </div>
+            </div>
+            {/*<div className="heading_1 lets-contact">Let's Contact</div>*/}
+            {/*<div className="heading_1 with-me">With Me</div>*/}
+          </div>
+        </div>
+        {/*DECOR TEXT*/}
+        <div className="scroll-container text-decor">
+          <Scroller>
+            <div>{sentences[0]}</div>
+
+            <div>{sentences[1]}</div>
+
+            <div>{sentences[2]}</div>
+
+          </Scroller>
+        </div>
+        {/*Contact me*/}
+        <div className="send_message">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-4">
+                <div className="body_text">
+                  “I welcome any potential recruiters to contact me regarding job opportunities that match my skillset and
+                  interests. I am excited to explore new opportunities and connect with professionals in my field”
+                </div>
+              </div>
+              <div className="col"></div>
+              <div className="col-7 contact-form">
+                {/*<form className="contact-form" onSubmit={sendEmail}>*/}
+                <div className="row first-line-contact">
+                  <div className="col-6 customer-name contact_field">
+                    <label>Your Name *</label>
+                    <input className="inpu" type="text" required/>
+                  </div>
+                  <div className="col-6 customer-phone contact_field">
+                    <label>Phone number *</label>
+                    <input className="inpu" type="text" required/>
+                  </div>
+                </div>
+                <div className="customer-email contact_field">
+                  <label>Email address *</label>
+                  <input className="inpu" type="text" required/>
+                </div>
+                <div className="customer-mess contact_field">
+                  <label>Message *</label>
+                  <textarea className="inpu" rows="4" required></textarea>
+                </div>
+                <div className="heading_2 send-msg-btn">
+                  <button type="submit">Send Message</button>
+                </div>
+                {/*</form>*/}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
   )
 }

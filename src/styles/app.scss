@@ -22,6 +22,7 @@ $small_text: 12px;
 @import "fashion";
 @import "cake";
 @import "designs";
+@import "animation";
 
 html,
 body {
@@ -236,7 +237,7 @@ a{
 
 .dropdown-menu{
   left:47px !important;
-  margin-top:10px !important;
+  margin-top:19px !important;
   .dropdown-item{
     .nav-link{
       padding-left:0px !important;
