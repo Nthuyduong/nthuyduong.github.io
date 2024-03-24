@@ -23,6 +23,7 @@ $small_text: 12px;
 @import "cake";
 @import "designs";
 @import "animation";
+@import "tailwind.css";
 
 html,
 body {
@@ -153,11 +154,6 @@ a{
 
 .text-right {
   text-align: right;
-}
-
-[class*="col-"] {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
 }
 
 .back-to-top {

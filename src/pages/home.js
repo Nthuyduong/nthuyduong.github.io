@@ -36,36 +36,7 @@ const Home = () => {
   //     };
   //   }
   // }, []);
-  const sentences = [
-    "HELLO MY NAME IS NGUYEN THUY DUONG.",
-    "WELCOME TO MY PORTFOLIO.",
-    "LET'S CONTACT WITH ME"
-  ];
-  const [content, setContent] = useState(sentences.join(" "));
 
-  useEffect(() => {
-    const container = document.getElementById("scroll-container");
-    const content = document.getElementById("scroll-content");
-
-    if (container && content) {
-      const scrollWidth = content.scrollWidth;
-      const containerWidth = container.clientWidth;
-
-      const scroll = () => {
-        if (content.scrollLeft >= content.scrollWidth / 2) {
-          content.scrollLeft = 0;
-        } else {
-          content.scrollLeft += 1;
-        }
-      };
-
-      const scrollInterval = setInterval(scroll, 20);
-
-      return () => {
-        clearInterval(scrollInterval);
-      };
-    }
-  }, []);
 
   //Change text
   const texts = [
@@ -90,8 +61,8 @@ const Home = () => {
   return (
       <div className="home-page">
         <div className="page-element home-info container-fluid">
-          <div className="row">
-            <div className="col-8 d-flex">
+          <div className="grid grid-cols-12 gap-4">
+            <div className="col-span-8 d-flex">
               <img className="main-logo" src="./images/home/logo-icon.svg" alt="logo" loading="lazy"/>
               <div className="info-content medium_text">
                 Hello, My name is
@@ -100,7 +71,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4 body_text text-right">
+            <div className="col-span-4 body_text text-right">
               <div className="mb-3">
                 “I'm creative, open-minded and a fast learner. I have a strong desire to know, to understand, to grow,
                 to create, to transform, to improve and to share. My dream is to improve people's lives through my designs”
@@ -114,9 +85,9 @@ const Home = () => {
         <div className="container-fluid ntd-showcase">
           <div className="showcase-img">
             <div className="sentence-container">
-              <span className="heading_5 text-light">Hello</span><span><img className="img-smile" src="./images/icons/smile.svg" alt="smile" loading="lazy"/></span>
-              <span><img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/></span><span className="heading_5 text-light">Welcome to my website.</span>
-              <span><img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/></span><span className="heading_5 text-light">I'm delighted to share my portfolio with you!</span>
+              <span className="heading_5 text-white">Hello</span><span><img className="img-smile" src="./images/icons/smile.svg" alt="smile" loading="lazy"/></span>
+              <span><img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/></span><span className="heading_5 text-white">Welcome to my website.</span>
+              <span><img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/></span><span className="heading_5 text-white">I'm delighted to share my portfolio with you!</span>
             </div>
           </div>
         </div>
@@ -124,9 +95,9 @@ const Home = () => {
 
         </div>
         <div className="page-element home-info2">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-5 d-flex">
+          <div className="">
+            <div className="grid grid-cols-12 gap-4">
+              <div className="col-span-5 d-flex">
                 <div className="info-content body_text">
                   19/08/1998 __________
                   <div className="heading_4 mt-3">
@@ -134,10 +105,10 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-1  body_text">
+              <div className="col-span-1  body_text">
                 April/2023
               </div>
-              <div className="col-6 text-right body_text">
+              <div className="col-span-6 text-right body_text">
                 Don't just imagine, create
               </div>
             </div>
@@ -145,29 +116,31 @@ const Home = () => {
         </div>
         <div className="page-element">
           <div className="container-fluid home-info3">
-            <div className="row">
-              <div className="col-6 child1">
-                <div className="heading_2">
-                  Let’s Create
-                </div>
-                <div className="text-large">
-                  {currentText}
-                </div>
-                <div className="d-flex">
-                  <div className="col-6 brands-left">
-                    <img className="w-100" src="./images/home/Rectangle35.webp" alt="Rectangle35" loading="lazy"/>
+            <div className="grid grid-cols-12 gap-4">
+              <div className="col-span-6 grid grid-cols-6 child1">
+                <div>
+                  <div className="heading_2">
+                    Let’s Create
                   </div>
-                  <div className="col-6 brands heading_2">
-                    Brands <span className="brands-line"></span>
+                  <div className="text-large">
+                    {currentText}
+                  </div>
+                  <div className="flex">
+                    <div className="col-span-3 brands-left">
+                      <img className="w-full" src="./images/home/Rectangle35.webp" alt="Rectangle35" loading="lazy"/>
+                    </div>
+                    <div className="col-span-3 brands heading_2">
+                      Brands <span className="brands-line"></span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="col-4 child2">
-                <img className="w-100" src="./images/home/Rectangle36.webp" alt="Rectangle35" loading="lazy"/>
+              <div className="col-span-4 child2">
+                <img className="w-full" src="./images/home/Rectangle36.webp" alt="Rectangle35" loading="lazy"/>
               </div>
-              <div className="col-2 child3">
+              <div className="col-span-2 child3">
                 <div className="img-box">
-                  <img className="w-100" src="./images/home/Rectangle34.webp" alt="Rectangle35" loading="lazy"/>
+                  <img className="w-full" src="./images/home/Rectangle34.webp" alt="Rectangle35" loading="lazy"/>
                 </div>
               </div>
             </div>
@@ -182,30 +155,30 @@ const Home = () => {
         <div>
           <div className="my-design">
             <div className="container-fluid">
-              <div className="row my-des-title">
-                <div className="col-6">
-                  <div className="d-flex">
+              <div className="grid grid-cols-12 my-des-title">
+                <div className="col-span-6">
+                  <div className="flex">
                     <div className="text-large-2">My</div>
                     <div className="dot-bl">
                       <img className="img-ellipe-bl mx-4" src="./images/icons/ellipse-bl.svg" alt="smile" loading="lazy"/>
                     </div>
                     <div className="heading_1">DESIGNS</div>
                   </div>
-                  <div className="d-flex">
+                  <div className="flex">
                     <div className="text-large-2">for</div>
                     <div className="line decor-line mx-3"></div>
                     <div className="heading_1">UNIQUE</div>
                   </div>
-                  <div className="d-flex">
+                  <div className="flex">
                     <div className="heading_1">&</div>
                     <div className="text-large-2 mx-4">soulful</div>
                     <div className="heading_1">BRANDS</div>
                   </div>
                 </div>
-                <div className="col-2"></div>
-                <div className="col-4">
+                <div className="col-span-2"></div>
+                <div className="col-span-4">
                   <div className="byme">
-                    <div className="d-flex">
+                    <div className="flex">
                       <div className="text-large-2 byme2">By</div>
                       <div className="dot-bl">
                         <img className="img-ellipe-99 mx-4" src="./images/icons/ellipse-99.svg" alt="smile" loading="lazy"/>
@@ -224,13 +197,13 @@ const Home = () => {
           </div>
           <div className="my-project">
             <div className="">
-              <div className="row">
-                <div className="col-3 project-odd">
+              <div className="grid grid-cols-12 gap-4">
+                <div className="col-span-3 project-odd">
                   <div className="heading_2 mb-2">01</div>
 
                   <Link to={ROUTER.CAKE}>
                     <img
-                        className="w-100 project-img" src="./images/design/des-1.webp"
+                        className="w-full project-img" src="./images/design/des-1.webp"
                         alt="logo"
                         loading="lazy"
                     />
@@ -240,16 +213,16 @@ const Home = () => {
                       Season Cake Blog
                     </Link>
                   </div>
-                  <div className="body_text w-100 mt-2">
+                  <div className="body_text w-full mt-2">
                     Indulge in the delectable world of Cake Blog, where sweetness and creativity come together.
                   </div>
                 </div>
-                <div className="col-3 project-even">
+                <div className="col-span-3 project-even">
                   <div className="heading_2 mb-2">02</div>
 
                   <Link to={ROUTER.AGURI}>
                     <img
-                        className="w-100 project-img"
+                        className="w-full project-img"
                         src="./images/design/des-2.webp"
                         alt="logo"
                         loading="lazy"
@@ -261,33 +234,33 @@ const Home = () => {
                       Aguri Jewellery Website
                     </Link>
                   </div>
-                  <div className="body_text w-100 mt-2">
+                  <div className="body_text w-full mt-2">
                     Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
                   </div>
                 </div>
-                <div className="col-3 project-odd">
+                <div className="col-span-3 project-odd">
                   <div className="heading_2 mb-2">03</div>
                   <Link to={ROUTER.FASHION}>
-                    <img className="w-100 project-img" src="./images/design/des-3.webp" alt="logo" loading="lazy"/>
+                    <img className="w-full project-img" src="./images/design/des-3.webp" alt="logo" loading="lazy"/>
                   </Link>
                   <div className="medium_text mt-3">
                     <Link to={ROUTER.FASHION}>Fashion App</Link>
                   </div>
-                  <div className="body_text w-100 mt-2">
+                  <div className="body_text w-full mt-2">
                     Indulge in luxury and style with our timeless fashion brand, redefining elegance and sophistication.
                   </div>
                 </div>
-                <div className="col-3 project-even">
+                <div className="col-span-3 project-even">
                   <div className="heading_2 mb-2">04</div>
                   <Link to={ROUTER.ALIO}>
-                    <img className="w-100 project-img" src="./images/design/des-4.webp" alt="logo" loading="lazy"/>
+                    <img className="w-full project-img" src="./images/design/des-4.webp" alt="logo" loading="lazy"/>
                   </Link>
                   <div className="medium_text mt-3">
                     <Link to={ROUTER.ALIO}>
                       Alio Yoga Website & App
                     </Link>
                   </div>
-                  <div className="body_text w-100 mt-2">
+                  <div className="body_text w-full mt-2">
                     Discover a serene oasis at our Yoga, Pilates, and Meditation website, where tranquility awaits.
                   </div>
                 </div>
@@ -299,12 +272,12 @@ const Home = () => {
           <div className="services">
             <div className="container-fluid">
               {/*<div className="heading_1">MY SERVICE</div>*/}
-              <div className="row">
-                <div className="col-6">
+              <div className="grid grid-cols-12">
+                <div className="col-span-6">
                   <div className="uxsv my_svc">
-                    <div className="heading_2 text-light">UX/UI Design</div>
+                    <div className="heading_2 text-white">UX/UI Design</div>
                     <div className="svc-list">
-                      <ul className="text-light list-main">
+                      <ul className="text-white list-main">
                         <li>User Research</li>
                         <li>Wireframe & Prototype</li>
                         <li>UI for Website</li>
@@ -312,12 +285,12 @@ const Home = () => {
                       </ul>
                     </div>
                     <div className="svc-price">
-                      <div className="heading_5 text-light">From $4.000</div>
+                      <div className="heading_5 text-white">From $4.000</div>
                       <div></div>
                     </div>
                   </div>
                 </div>
-                <div className="col-6">
+                <div className="col-span-6">
                   <div className="graphicsv my_svc">
                       <div className="heading_2">Graphic Design</div>
                       <div className="svc-list">
@@ -342,16 +315,16 @@ const Home = () => {
         {/*My service*/}
         <div className="contact-info">
           <div className="container-fluid">
-            <div className="row">
-              <div className="col-4">
+            <div className="grid grid-cols-12">
+              <div className="col-span-4">
                 <div className="contact-title">My Email addres</div>
                 <div>Nthduong898@gmail.com</div>
               </div>
-              <div className="col-4">
+              <div className="col-span-4">
                 <div className="contact-title">My Email Addres</div>
                 <div>Gemek Tower, Le Trong Tan, An Khanh, Ha Noi</div>
               </div>
-              <div className="col-4">
+              <div className="col-span-4">
                 <div className="contact-title">Phone Number</div>
                 <div>(84) 336256655</div>
               </div>
@@ -363,33 +336,33 @@ const Home = () => {
         {/*DECOR TEXT*/}
         <div className="scroll-container text-decor">
           <Scroller>
-            <div>{sentences[0]}</div>
+            <div className="heading_4">HELLO MY NAME IS NGUYEN THUY DUONG</div>
 
-            <div>{sentences[1]}</div>
+            <div className="heading_4">WELCOME TO MY PORTFOLIO!</div>
 
-            <div>{sentences[2]}</div>
+            <div className="heading_4">LET'S CONTACT WITH ME</div>
 
           </Scroller>
         </div>
         {/*Contact me*/}
         <div className="send_message">
           <div className="container-fluid">
-            <div className="row">
-              <div className="col-4">
+            <div className="grid grid-cols-12 gap-4">
+              <div className="col-span-4">
                 <div className="body_text">
                   “I welcome any potential recruiters to contact me regarding job opportunities that match my skillset and
                   interests. I am excited to explore new opportunities and connect with professionals in my field”
                 </div>
               </div>
-              <div className="col"></div>
-              <div className="col-7 contact-form">
+              <div className="col-span-1"></div>
+              <div className="col-span-7 contact-form">
                 {/*<form className="contact-form" onSubmit={sendEmail}>*/}
-                <div className="row first-line-contact">
-                  <div className="col-6 customer-name contact_field">
+                <div className="grid grid-cols-12 gap-4 first-line-contact">
+                  <div className="col-span-6 customer-name contact_field">
                     <label>Your Name *</label>
                     <input className="inpu" type="text" required/>
                   </div>
-                  <div className="col-6 customer-phone contact_field">
+                  <div className="col-span-6 customer-phone contact_field">
                     <label>Phone number *</label>
                     <input className="inpu" type="text" required/>
                   </div>

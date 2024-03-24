@@ -3,39 +3,10 @@ import {Link} from "react-router-dom";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {ROUTER} from "../utils/constants";
-import Carousel from 'react-bootstrap/Carousel';
+// import Carousel from 'react-bootstrap/Carousel';
 
 const Aguri = () => {
-    //Horizontal sliders image function
-    // const SlideImage = ({ slideInterval = 3000 }) => {
-    //     const ImgDirectory = process.env.PUBLIC_URL + './images/Pj03_aguri/';
-    //     const images = [
-    //         ImgDirectory + 'DB1.png',
-    //         ImgDirectory + 'DB2.png',
-    //         ImgDirectory + 'DB3.png',
-    //         ImgDirectory + 'DB4.png',
-    //     ];
-    //     const [currentIndex, setCurrentIndex] = useState(0);
-    //
-    //     useEffect(() => {
-    //         const interval = setInterval(() => {
-    //             setCurrentIndex((prevIndex) => (prevIndex +1) % images.length);
-    //         }, slideInterval);
-    //
-    //         return () => clearInterval(interval);
-    //     }, [images, slideInterval]);
-    //
-    //     return (
-    //         <div className="slide-inner d-flex">
-    //             <div className="slide-left w-100">
-    //                 <img className="w-100" src={process.env.PUBLIC_URL + images[currentIndex]}/>
-    //             </div>
-    //             <div className="slide-right w-100">
-    //                 <img className="w-100" src={process.env.PUBLIC_URL + images[(currentIndex + 1) % images.length]}/>
-    //             </div>
-    //         </div>
-    //     )
-    // }
+
         const [currentBuyIndex, setCurrentBuyIndex] = useState(0);
         const [buy] = useState(
             [

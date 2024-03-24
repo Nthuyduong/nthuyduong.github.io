@@ -25,15 +25,15 @@
 }
 
 .scroller[data-speed="fast"] {
-  --_animation-duration: 10s;
+  --_animation-duration: 40s;
 }
 
 .scroller[data-speed="normal"] {
-  --_animation-duration: 30s;
+  --_animation-duration: 60s;
 }
 
 .scroller[data-speed="slow"] {
-  --_animation-duration: 50s;
+  --_animation-duration: 80s;
 }
 
 @keyframes scroll {

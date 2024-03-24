@@ -1,5 +1,4 @@
 import React, { useState, Children, cloneElement, useEffect, useRef } from "react";
-import { useWindowSize } from "../../hooks/dom";
 
 const Slider = ({
                     configs,
@@ -41,13 +40,13 @@ const Slider = ({
 
     //Nếu độ rộng của trình duyệt > 768 => sliderPerRow = sliderPerRow (3) còn không thì sẽ là sliderPerMobile (2.5)
     //dùng configs để ghi đè giá trị tương ứng của defaultConfigs
-    let sliderPerRow = window?.outerWidth > 768 ? configs.sliderPerRow : configs.sliderPerRowMobile;
-    let scrollLeft = refContent.current?.scrollLeft;
+    var sliderPerRow = window?.outerWidth > 768 ? configs.sliderPerRow : configs.sliderPerRowMobile;
+    var scrollLeft = refContent.current?.scrollLeft;
 
     //Tính toán số lượng slide tối đa có thể di  (tổng số slide - số slide hiển thị/ row)
-    let maxSlide = countChildren > sliderPerRow ? countChildren - sliderPerRow : sliderPerRow;
+    var maxSlide = countChildren > sliderPerRow ? countChildren - sliderPerRow : sliderPerRow;
     //Tính toán kích thước của một slide (100% / số slide hiển thị trên một hàng)
-    let gap = window?.outerWidth > 768 ? configs.gap : configs.gapMobile;
+    var gap = window?.outerWidth > 768 ? configs.gap : configs.gapMobile;
 
     useEffect(() => {
         handleResize();
@@ -102,7 +101,7 @@ const Slider = ({
 
     //hàm run slider
     const runSlider = () => {
-        let slides = ref.current.children;
+        var slides = ref.current.children;
         if (slides.length === 0) return;
         // Cập nhật chiều rộng của slider container
         ref.current.style.width = `calc(${(countChildren / sliderPerRow) * 100 + '%'} + ${(gap * maxSlide) / sliderPerRow + 'px'})`;
