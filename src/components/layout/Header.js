@@ -97,17 +97,17 @@ const Header = () => {
               </button>
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="hidden sm:ml-6 md:block">
-                <div className="flex space-x-4">
+              <div className="hidden w-full md:block">
+                <div className="flex space-x-4 justify-center w-full">
                   {/*Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"*/}
-                  <a href="#" className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                  <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-4 text-sm font-medium"
                      aria-current="page">HOME</a>
                   <a href="#"
-                     className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">ABOUT</a>
+                     className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-4 text-sm font-medium">ABOUT</a>
                   <a href="#"
-                     className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">DESIGNS</a>
+                     className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-4 text-sm font-medium">DESIGNS</a>
                   <a href="#"
-                     className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">CONTACT</a>
+                     className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-4 text-sm font-medium">CONTACT</a>
                 </div>
               </div>
             </div>
