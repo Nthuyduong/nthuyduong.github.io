@@ -15,13 +15,13 @@ const Footer = () => {
     return (
       <div className="footer">
         <div className="container-fluid footer-container">
-          <div className="row">
-            <div className="col-8">
+          <div className="grid grid-cols-12">
+            <div className="col-span-8">
               <p>Get in touch for opportunities or just say hi!</p>
               <p className="mail-info"><a href="mailto:Nthduong898@gmail.com">Nthduong898@gmail.com</a></p>
               <p>Follow on <a href="https://www.behance.net/gallery/174317119/Thuy-Duongs-Portfolio/modules/984307513" target="_blank">Behance</a></p>
             </div>
-            <div className="col-4 body_text">
+            <div className="col-span-4 body_text">
             I'm an UX/UI designer here to help create intuitive and visually appealing digital interfaces for the best
               possible user experience.<Link className="read-more" to="/about">Read more</Link>
             </div>

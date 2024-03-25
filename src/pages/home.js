@@ -61,12 +61,12 @@ const Home = () => {
   return (
       <div className="home-page">
         <div className="page-element home-info container-fluid">
-          <div className="grid grid-cols-12 gap-4">
-            <div className="col-span-8 d-flex">
+          <div className="grid grid-cols-12">
+            <div className="col-span-8 flex">
               <img className="main-logo" src="./images/home/logo-icon.svg" alt="logo" loading="lazy"/>
               <div className="info-content medium_text">
                 Hello, My name is
-                <div className="info-name heading_3">
+                <div className="mt-3 heading_3">
                   Nguyen Thuy Duong
                 </div>
               </div>
@@ -94,30 +94,28 @@ const Home = () => {
         <div>
 
         </div>
-        <div className="page-element home-info2">
-          <div className="">
-            <div className="grid grid-cols-12 gap-4">
-              <div className="col-span-5 d-flex">
-                <div className="info-content body_text">
-                  19/08/1998 __________
-                  <div className="heading_4 mt-3">
-                    I’m UX/UI Designer
-                  </div>
+        <div className="container-fluid mt-5 mb-7">
+          <div className="grid grid-cols-12 gap-4">
+            <div className="col-span-5 d-flex">
+              <div className="info-content body_text">
+                19/08/1998 __________
+                <div className="heading_4 mt-3">
+                  I’m UX/UI Designer
                 </div>
               </div>
-              <div className="col-span-1  body_text">
-                April/2023
-              </div>
-              <div className="col-span-6 text-right body_text">
-                Don't just imagine, create
-              </div>
+            </div>
+            <div className="col-span-1  body_text">
+              April/2023
+            </div>
+            <div className="col-span-6 text-right body_text">
+              Don't just imagine, create
             </div>
           </div>
         </div>
         <div className="page-element">
           <div className="container-fluid home-info3">
             <div className="grid grid-cols-12 gap-4">
-              <div className="col-span-6 grid grid-cols-6 child1">
+              <div className="col-span-6 child1">
                 <div>
                   <div className="heading_2">
                     Let’s Create
@@ -187,7 +185,7 @@ const Home = () => {
                       <div></div>
                     </div>
                   </div>
-                  <div className="body_text text-right mydes-content">
+                  <div className="body_text text-right mt-4">
                     "Step into the world of a passionate UI designer's portfolio. Witness the evolution of my skills as I
                     create intuitive interfaces and explore the realm of captivating design."
                   </div>
@@ -199,7 +197,7 @@ const Home = () => {
             <div className="">
               <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-3 project-odd">
-                  <div className="heading_2 mb-2">01</div>
+                  <div className="heading_2 mb-2">01/</div>
 
                   <Link to={ROUTER.CAKE}>
                     <img
@@ -218,7 +216,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="col-span-3 project-even">
-                  <div className="heading_2 mb-2">02</div>
+                  <div className="heading_2 mb-2">02/</div>
 
                   <Link to={ROUTER.AGURI}>
                     <img
@@ -239,7 +237,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="col-span-3 project-odd">
-                  <div className="heading_2 mb-2">03</div>
+                  <div className="heading_2 mb-2">03/</div>
                   <Link to={ROUTER.FASHION}>
                     <img className="w-full project-img" src="./images/design/des-3.webp" alt="logo" loading="lazy"/>
                   </Link>
@@ -251,7 +249,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="col-span-3 project-even">
-                  <div className="heading_2 mb-2">04</div>
+                  <div className="heading_2 mb-2">04/</div>
                   <Link to={ROUTER.ALIO}>
                     <img className="w-full project-img" src="./images/design/des-4.webp" alt="logo" loading="lazy"/>
                   </Link>
@@ -269,8 +267,8 @@ const Home = () => {
           </div>
         </div>
         <div className="my-services">
-          <div className="services">
-            <div className="container-fluid">
+          <div className="services container-fluid ">
+            <div className="py-7 border-solid border-y border-ccc">
               {/*<div className="heading_1">MY SERVICE</div>*/}
               <div className="grid grid-cols-12">
                 <div className="col-span-6">
@@ -284,7 +282,7 @@ const Home = () => {
                         <li>UI for Mobile</li>
                       </ul>
                     </div>
-                    <div className="svc-price">
+                    <div className="">
                       <div className="heading_5 text-white">From $4.000</div>
                       <div></div>
                     </div>
@@ -302,7 +300,7 @@ const Home = () => {
                           <li>Brand Book</li>
                         </ul>
                       </div>
-                      <div className="svc-price">
+                      <div className="">
                         <div className="heading_5">From $6.000</div>
                         <div></div>
                       </div>
@@ -321,12 +319,12 @@ const Home = () => {
                 <div>Nthduong898@gmail.com</div>
               </div>
               <div className="col-span-4">
-                <div className="contact-title">My Email Addres</div>
-                <div>Gemek Tower, Le Trong Tan, An Khanh, Ha Noi</div>
-              </div>
-              <div className="col-span-4">
                 <div className="contact-title">Phone Number</div>
                 <div>(84) 336256655</div>
+              </div>
+              <div className="col-span-4">
+                <div className="contact-title">My Email Addres</div>
+                <div>Gemek Tower, Le Trong Tan, An Khanh, Ha Noi</div>
               </div>
             </div>
             {/*<div className="heading_1 lets-contact">Let's Contact</div>*/}
@@ -336,10 +334,11 @@ const Home = () => {
         {/*DECOR TEXT*/}
         <div className="scroll-container text-decor">
           <Scroller>
+            <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy"/>
             <div className="heading_4">HELLO MY NAME IS NGUYEN THUY DUONG</div>
-
+            <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy"/>
             <div className="heading_4">WELCOME TO MY PORTFOLIO!</div>
-
+            <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy"/>
             <div className="heading_4">LET'S CONTACT WITH ME</div>
 
           </Scroller>
@@ -360,22 +359,22 @@ const Home = () => {
                 <div className="grid grid-cols-12 gap-4 first-line-contact">
                   <div className="col-span-6 customer-name contact_field">
                     <label>Your Name *</label>
-                    <input className="inpu" type="text" required/>
+                    <input className="border-solid border-b border-ccc" type="text" required/>
                   </div>
                   <div className="col-span-6 customer-phone contact_field">
                     <label>Phone number *</label>
-                    <input className="inpu" type="text" required/>
+                    <input className="border-solid border-b border-ccc" type="text" required/>
                   </div>
                 </div>
                 <div className="customer-email contact_field">
                   <label>Email address *</label>
-                  <input className="inpu" type="text" required/>
+                  <input className="border-solid border-b border-ccc" type="text" required/>
                 </div>
                 <div className="customer-mess contact_field">
                   <label>Message *</label>
-                  <textarea className="inpu" rows="4" required></textarea>
+                  <textarea className="border-solid border-b border-ccc" rows="4" required></textarea>
                 </div>
-                <div className="heading_2 send-msg-btn">
+                <div className="heading_3 send-msg-btn mt-6">
                   <button type="submit">Send Message</button>
                 </div>
                 {/*</form>*/}

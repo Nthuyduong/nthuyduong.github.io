@@ -1,3 +1,4 @@
+
 //SHOWCASE HERE
 .ntd-showcase{
   overflow: hidden;
@@ -304,7 +305,6 @@
 
 
 .services{
-  border-bottom: 1px solid #ccc;
   .container-fluid{
     padding-bottom: 80px;
   }
@@ -358,7 +358,6 @@
     .send-msg-btn{
       display:block;
       button{
-        margin-top: 60px;
         border: none;
         background: transparent;
         float: right;
@@ -367,19 +366,6 @@
   }
   .contact_field{
     display: grid;
-    input{
-      background: transparent;
-      border-left: none;
-      border-right: none;
-      border-top: none;
-      border-bottom: 1px solid #999;
-    }
-    textarea{
-      background: transparent;
-      border-left: none;
-      border-right: none;
-      border-top: none;
-    }
   }
 }
 .scroll-container.text-decor {
