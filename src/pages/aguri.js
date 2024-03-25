@@ -31,8 +31,8 @@ const Aguri = () => {
                 <div className="container-fluid">
                     <div className="product-showcase">
                         <div className="ag-line1 pdb-60">
-                            <div className="row">
-                                <div className="col-6 line1-left">
+                            <div className="grid grid-cols-12">
+                                <div className="col-span-6 line1-left">
                                     <div className="line1-left-inner">
                                         <div className="content-top text-center">
                                             <div className="heading_3 mb-1">RADIANT ELEGANCE</div>
@@ -49,10 +49,10 @@ const Aguri = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-6 line1-right">
+                                <div className="col-span-6 line1-right">
                                     <img className="w-100" src="./images/Pj03_aguri/line1-02.webp" alt="#"
                                          loading="lazy"/>
-                                    <div className="line-right-content text-center">
+                                    <div className="text-center">
                                         <div className="heading_6 mb-2">We are</div>
                                         <div className="heading_4">JEWELLERY BRAND</div>
                                     </div>
@@ -61,12 +61,12 @@ const Aguri = () => {
                         </div>
 
                         <div className="intro-section pdb-60">
-                            <div className="row">
-                                <div className="col-6">
+                            <div className="grid grid-cols-12">
+                                <div className="col-span-6">
                                     <img className="w-100" src="./images/Pj03_aguri/intro-01.webp" alt="#"
                                          loading="lazy"/>
                                 </div>
-                                <div className="col-6 text-center intro-right">
+                                <div className="col-span-6 text-center intro-right">
                                     <div className="intro-inner">
                                         <div className="text-large mb-4">AGURI</div>
                                         <div className="medium_text">Welcome to our jewellery brand! We hope you enjoy
@@ -99,9 +99,9 @@ const Aguri = () => {
                         </div>
 
                         <div className="ag-line2 pdb-60">
-                            <div className="row">
-                                <div className="col-6 line2-left">
-                                    <div className="content2">
+                            <div className="grid grid-cols-12">
+                                <div className="col-span-6 line2-left">
+                                    <div className="">
                                         <div className="heading_4">Introduction</div>
                                         <div className="body_text mb-5">
                                             “AGURI JEWELLERY” is one of the leading manufacturers and suppliers of
@@ -126,10 +126,10 @@ const Aguri = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-6 line2-right">
+                                <div className="col-span-6 line2-right">
                                     <img className="w-100" src="./images/Pj03_aguri/line3-02.webp" alt="#"
                                          loading="lazy"/>
-                                    <div className="line2-right-inner">
+                                    <div className="">
                                         <img className="aguri-logo" src="./images/Pj03_aguri/logo.svg" alt="#"
                                              loading="lazy"/>
                                         <div className="d-flex text-light mt-4">
@@ -153,11 +153,11 @@ const Aguri = () => {
                             </div>
                         </div>
                         <div className="ag-line4 pdb-60">
-                            <div className="row">
-                                <div className="col-6 fix-img">
+                            <div className="grid grid-cols-12">
+                                <div className="col-span-6 fix-img">
                                     {/*<img className="w-100" src="./images/Pj03_aguri/line2-01.png" alt="#" loading="lazy"/>*/}
                                 </div>
-                                <div className="col-6 line4-left">
+                                <div className="col-span-6 line4-left">
                                     <img className="w-100" src="./images/Pj03_aguri/cate.webp" alt="#" loading="lazy"/>
                                 </div>
                             </div>
@@ -242,10 +242,10 @@ const Aguri = () => {
                         {/*</div>*/}
                     </div>
                 </div>
-                <div className="more-project">
-                    <div className="contain">
-                        <div className="row more-pj">
-                            <div className="col-4 more-1">
+                <div className="more-project mb-8">
+                    <div className="container-fluid">
+                        <div className="grid grid-cols-12 gap-4 more-pj">
+                            <div className="col-span-4 more-1">
                                 <div className="img-des">
                                     <Link to={ROUTER.CAKE}>
                                         <img className="w-100" src="./images/home/more-4.png" alt="logo"
@@ -265,7 +265,7 @@ const Aguri = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-4">
+                            <div className="col-span-4">
                                 <div className="img-des">
                                     <Link to={ROUTER.FASHION}>
                                         <img className="w-100" src="./images/home/more-2.png" alt="logo"
@@ -283,7 +283,7 @@ const Aguri = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-4 more-2">
+                            <div className="col-span-4 more-2">
                                 <div className="img-des">
                                     <Link to={ROUTER.ALIO}>
                                         <img className="w-100" src="./images/home/more-3.png" alt="logo"

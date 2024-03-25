@@ -26,16 +26,16 @@ const Fashion = () => {
                     <div className="showcase pdb-60">
                         <img className="w-100" src="./images/Pj04_fashion/banner2.webp" alt="#" loading="lazy"/>
                         <div className="showcase-inner">
-                            <div className="row">
-                                <div className="col-1"/>
-                                <div className="col-4 image-left">
+                            <div className="grid grid-cols-12">
+                                <div className="col-span-1"/>
+                                <div className="col-span-4 image-left">
                                     <img className="w-100" src="./images/Pj04_fashion/line1.webp" alt="#" loading="lazy"/>
                                 </div>
-                                <div className="col-7 content-right">
+                                <div className="col-span-7 content-right">
                                     <img className="mb-5" src="./images/Pj04_fashion/logo.svg" alt="#" loading="lazy"/>
                                     <div className="heading_4 light-text">LUXURY FASHION BRAND</div>
                                     <div className="line my-4"></div>
-                                    <div className="d-flex text-line">
+                                    <div className="flex text-line">
                                         <div className="heading_6 light-text">Be Free</div>
                                         <div className="dot mx-max">
                                             <img className="mb-4" src="./images/Pj04_fashion/ellipse.png" alt="#" loading="lazy"/>
@@ -51,9 +51,9 @@ const Fashion = () => {
                         </div>
                     </div>
                     <div className="verite_line2 pdb-60">
-                        <div className="row">
-                            <div className="col-6">
-                                <div className="content2">
+                        <div className="grid grid-cols-12">
+                            <div className="col-span-6">
+                                <div className="">
                                     <div className="heading_4">Introduction</div>
                                     <div className="body_text">
                                         Discover the essence of French luxury fashion. Our brand captures the essence of
@@ -65,7 +65,7 @@ const Fashion = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-6">
+                            <div className="col-span-6">
                                 <img className="w-100" src="./images/Pj04_fashion/line2-01.webp" alt="#" loading="lazy"/>
                             </div>
                         </div>
@@ -74,11 +74,11 @@ const Fashion = () => {
                         <img className="mb-4 w-100" src={require(`../../public/images/Pj04_fashion/${img[currentimg]}`)} alt="#" loading="lazy"/>
                     </div>
                     <div className="verite_line3 pdb-60">
-                        <div className="row">
-                            <div className="col-6">
+                        <div className="grid grid-cols-12">
+                            <div className="col-span-6">
                                 <img className="w-100" src="./images/Pj04_fashion/line3-01.webp" alt="#" loading="lazy"/>
                             </div>
-                            <div className="col-6">
+                            <div className="col-span-6">
                                 <img className="w-100" src="./images/Pj04_fashion/line3-02.webp" alt="#" loading="lazy"/>
                             </div>
                         </div>
@@ -87,26 +87,26 @@ const Fashion = () => {
                         <img className="w-100" src="./images/Pj04_fashion/line4.webp" alt="#" loading="lazy"/>
                     </div>
                     <div className="verite_line5 pdb-60">
-                        <div className="row">
-                            <div className="col-6">
+                        <div className="grid grid-cols-12">
+                            <div className="col-span-6">
                                 <img className="w-100" src="./images/Pj04_fashion/line5-01.webp" alt="#" loading="lazy"/>
                             </div>
-                            <div className="col-6">
+                            <div className="col-span-6">
                                 <img className="w-100" src="./images/Pj04_fashion/line5-02.webp" alt="#" loading="lazy"/>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="more-project">
-                <div className="contain">
-                    <div className="row more-pj">
-                        <div className="col-4 more-1">
+            <div className="more-project mb-8">
+                <div className="container-fluid">
+                    <div className="grid grid-cols-12 gap-4 more-pj">
+                        <div className="col-span-4 more-1">
                             <div className="img-des">
                                 <Link to={ROUTER.AGURI}>
                                     <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
                                 </Link>
-                                <div className="d-flex title-pj">
+                                <div className="flex title-pj">
                                     <div className="medium_text pj_name">
                                         <Link to={ROUTER.AGURI}>
                                             Aguri Jewellery Website
@@ -119,12 +119,12 @@ const Fashion = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-4">
+                        <div className="col-span-4">
                             <div className="img-des">
                                 <Link to={ROUTER.CAKE}>
                                     <img className="w-100" src="./images/home/more-4.png" alt="logo" loading="lazy"/>
                                 </Link>
-                                <div className="d-flex title-pj">
+                                <div className="flex title-pj">
                                     <div className="medium_text pj_name">
                                         <Link to={ROUTER.CAKE}>
                                             Season Cake Blog
@@ -137,12 +137,12 @@ const Fashion = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-4 more-2">
+                        <div className="col-span-4 more-2">
                             <div className="img-des">
                                 <Link to={ROUTER.ALIO}>
                                     <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
                                 </Link>
-                                <div className="d-flex title-pj">
+                                <div className="flex title-pj">
                                     <div className="medium_text pj_name">
                                         <Link to={ROUTER.ALIO}>
                                             Alio Yoga Website

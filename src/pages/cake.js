@@ -50,9 +50,9 @@ const Cake = () => {
                     <div className="cake-banner pdb-60">
                         <img className="w-100" src="./images/Pj01_cake/cake-banner.webp" alt="#" loading="lazy"/>
                         <div className="showcase-content">
-                            <div className="row">
-                                <div className="col-3"></div>
-                                <div className="col-6 text-center">
+                            <div className="grid grid-cols-12">
+                                <div className="col-span-3"></div>
+                                <div className="col-span-6 text-center">
                                     <div className="heading_4 mb-3">SEASON CAKE BLOG</div>
                                     <div className="body-text">
                                         There are many food blog websites existing, but over the years I gained more experience
@@ -60,24 +60,24 @@ const Cake = () => {
                                         my favorite recipes and healthy baking.
                                     </div>
                                 </div>
-                                <div className="col-3"></div>
+                                <div className="col-span-3"></div>
                             </div>
                         </div>
                         {/*<img className="w-100" src="https://i.imgur.com/RLSInkn.png"/>*/}
                     </div>
                     <div className="">
-                        <div className="row">
-                            <div className="col-6"></div>
-                            <div className="col-6"></div>
+                        <div className="grid grid-cols-12">
+                            <div className="col-span-6"></div>
+                            <div className="col-span-6"></div>
                         </div>
                     </div>
                     <div className="pdb-60">
-                        <div className="row">
-                            <div className="col-6">
+                        <div className="grid grid-cols-12">
+                            <div className="col-span-6">
                                 <img className="w-100" src="./images/Pj01_cake/line2-01.webp" alt="#" loading="lazy"/>
                             </div>
-                            <div className="col-6 cake-intro-content">
-                                <div className="content2">
+                            <div className="col-span-6 cake-intro-content">
+                                <div className="">
                                     <div className="heading_4">Introduction</div>
                                     <div className="body_text mb-5">
                                         Season Cake Blog is a vibrant platform dedicated to all things cake. We are passionate
@@ -100,8 +100,8 @@ const Cake = () => {
                         </div>
                     </div>
                     <div className="pdb-60 cake-abtpage">
-                        <div className="row">
-                            <div className="col-6 cake-abtpage-left">
+                        <div className="grid grid-cols-12">
+                            <div className="col-span-6 cake-abtpage-left">
                                 <div className="about-contain">
                                     <div className="heading_3 text-center title-top">SEASON CAKE BLOG</div>
                                     <div>
@@ -110,7 +110,7 @@ const Cake = () => {
                                     <div className="heading_3 text-center title-btm">THIS OUR MADE</div>
                                 </div>
                             </div>
-                            <div className="col-6 cake-abtpage-right">
+                            <div className="col-span-6 cake-abtpage-right">
                                 <img className="w-100" src="./images/Pj01_cake/about.webp" alt="#" loading="lazy"/>
                             </div>
                         </div>
@@ -130,10 +130,10 @@ const Cake = () => {
                     </div>
                 </div>
             </div>
-            <div className="more-project">
-                <div className="contain">
-                    <div className="row more-pj">
-                        <div className="col-4 more-1">
+            <div className="more-project mb-8">
+                <div className="container-fluid">
+                    <div className="grid grid-cols-12 gap-4 more-pj">
+                        <div className="col-span-4 more-1">
                             <div className="img-des">
                                 <Link to={ROUTER.AGURI}>
                                     <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
@@ -151,7 +151,7 @@ const Cake = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-4">
+                        <div className="col-span-4">
                             <div className="img-des">
                                 <Link to={ROUTER.FASHION}>
                                     <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
@@ -167,7 +167,7 @@ const Cake = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-4 more-2">
+                        <div className="col-span-4 more-2">
                             <div className="img-des">
                                 <Link to={ROUTER.ALIO}>
                                     <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>

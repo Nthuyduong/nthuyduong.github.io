@@ -12,10 +12,12 @@ const Contact = () => {
           <div className="heading_3 title">Keep in touch</div>
           <div className="line"></div>
           <div className="container-fluid contact-des">
-            <div className="row content-center">
-              <div className="col-6 body_text">
+            <div className="grid grid-cols-12 content-center">
+              <div className="col-span-3"></div>
+              <div className="col-span-6 body_text">
               “I welcome any potential recruiters to contact me regarding job opportunities that match my skillset and interests. I am excited to explore new opportunities and connect with professionals in my field”
-              </div>    
+              </div>
+              <div className="col-span-3"></div>
             </div>
           </div>
           <div className="contact-phone body_text">

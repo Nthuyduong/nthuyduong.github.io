@@ -8,21 +8,23 @@ const About = () => {
       </div>
       <div className="page-element">
         <div className="container-fluid about1">
-          <div className="row row-n1">
-            <div className="col-1"></div>
-            <div className="col-4"></div>
+          <div className="grid grid-cols-12 row-n1">
+            <div className="col-span-1"></div>
+            <div className="col-span-4"></div>
+            <div className="col-span-6">
               <div className="title-about1-2 heading_5 ">
                 So glad to see you here!
               </div>
-              <div className="col-6"></div>
+            </div>
+            <div className="col-span-1"></div>
           </div>
-          <div className="row row-n2">
-            <div className="col-1"></div>
-            <div className="col-4 about1-1">
+          <div className="grid grid-cols-12 row-n2">
+            <div className="col-span-1"></div>
+            <div className="col-span-4 about1-1">
               <p>From: Nguyen Thuy Duong</p>
               <p>To: You</p>
             </div>
-            <div className="col-6 about1-2">
+            <div className="col-span-6 about1-2">
               <div className="medium_text dear">
                 Dear all
               </div>
@@ -30,24 +32,25 @@ const About = () => {
                 Hello and welcome to my website! I'm eager to share with you some of my UX/UI design projects and experiences. As an aspiring professional, I'm dedicated to continuous learning and growth in this field. If you're a recruiter or hiring manager interested in my skills and experience, I'd love to connect with you. Please feel free to reach out if you have any questions or if you'd like to discuss potential opportunities. Thank you for visiting my portfolio!
               </div>
             </div>
+            <div className="col-span-1"></div>
           </div>
         </div>
       </div>
       <div className="page-element">
         <div className="container-fluid about2">
-          <div className="row">
-            <div className="col-3">
+          <div className="grid grid-cols-12 gap-4">
+            <div className="col-span-3">
               <div className="img-container">
                 <img className="w-100" src="./images/about/me.webp" alt="#" loading="lazy"></img>
               </div>
             </div>
-            <div className="col-2">
+            <div className="col-span-2">
               <div className="heading_2 sef-intro">Self - Introduce</div>
             </div>
-            <div className="col-1">
+            <div className="col-span-1">
 
             </div>
-            <div className="col-6 abt-content">
+            <div className="col-span-6 abt-content">
               <div className="abt-inner">
                 <div className="about-des body_text">
                   At just 24 years old, I was always driven to find my true passion in life. After trying a few different jobs, I discovered UX/UI design and suddenly everything fell into place. I realized that this was my true passion and I was determined to pursue a career in this field. Although I am relatively new to this industry, I have worked hard to learn a lot during the past 2 years. Now I am eager to gain hands-on experience and contribute to real-world projects in the field of UX/UI Design. I believe that with a strong sense of purpose and passion for design, I can make a valuable contribution to any organization looking for a dedicated and dynamic UX/UI Designer.
@@ -83,8 +86,8 @@ const About = () => {
       </div>
       <div className="page-element about-skill">
         <div className="container-fluid">
-          <div className="row">
-            <div className="col-4 skill-common">
+          <div className="grid grid-cols-12 gap-4">
+            <div className="col-span-4 skill-common">
               <div className="heading_3">
                 My Skills
               </div>
@@ -95,11 +98,11 @@ const About = () => {
               “Learning new things brings me joy and satisfaction, as it allows me to grow, become more knowledgeable, and improve myself every day”
               </div>
             </div>
-            <div className="col-1"/>
-            <div className="col-1 skill-title body_text">
+            <div className="col-span-1"/>
+            <div className="col-span-1 skill-title body_text">
               DESIGN TOOLS
             </div>
-            <div className="col-2 skill-container">
+            <div className="col-span-2 skill-container">
               <div className="skill-item">
                 <div className="skill-no body_text">01/</div>
                 <div className="skill-name body_text">Figma</div>
@@ -121,11 +124,11 @@ const About = () => {
                 <div className="skill-name body_text">Adobe XD</div>
               </div>
             </div>
-            <div className="col-1"/>
+            <div className="col-span-1"/>
             <div className="col-1 skill-title body_text">
               TECH STACK
             </div>
-            <div className="col-2 skill-container">
+            <div className="col-span-2 skill-container">
               <div className="skill-item">
                 <div className="skill-no body_text">01/</div>
                 <div className="skill-name body_text">HTML/SCSS</div>
@@ -152,11 +155,11 @@ const About = () => {
       </div>
       <div className="page-element core-value">
         <div className="">
-          <div className="row">
-            <div className="col-5">
+          <div className="grid grid-cols-12 gap-4">
+            <div className="col-span-5">
               <img className="w-100 about-dot" src="./images/about/mycore.webp" alt="#" loading="lazy"></img>
             </div>
-            <div className="col-7 core-content">
+            <div className="col-span-7 core-content">
               <div className="row">
                 <div className="col-4 heading_2">
                   My Core Values
