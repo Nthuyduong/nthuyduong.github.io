@@ -1,12 +1,6 @@
 .about-page {
   .about1 {
-    .row-n1{
-      padding-top: 80px;
-      padding-bottom: 30px;
-    }
-    .row-n2{
-      padding-bottom:70px;
-    }
+  
     .about1-1 {
       font-size: $small_text;
       color: #666;
@@ -26,8 +20,7 @@
     border-bottom: 1px solid $subcolor;
   }
   .about2 {
-    padding-top: 100px;
-    padding-bottom: 130px;
+  
     .sef-intro {
       padding-left: 30px;
     }
@@ -57,14 +50,9 @@
     }
   }
   .about-skill {
-    padding-top: 140px;
-    padding-bottom: 140px;
+  
     .skill-common {
       color: #000000;
-      .mid-text {
-        padding-top: 30px;
-        padding-bottom: 20px;
-      }
     }
     background: $primary_color;
     .skill-title {
