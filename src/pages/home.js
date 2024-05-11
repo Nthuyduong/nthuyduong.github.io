@@ -193,8 +193,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="my-project">
-            <div className="">
+          <div className="container-fluid">
+            <div className="my-project">
               <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-3 project-odd">
                   <div className="heading_2 mb-2">01/</div>
@@ -266,10 +266,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="my-services">
+        {/* <div className="my-services">
           <div className="services container-fluid ">
             <div className="py-7 border-solid border-y border-ccc">
-              {/*<div className="heading_1">MY SERVICE</div>*/}
+              <div className="heading_1">MY SERVICE</div>
               <div className="grid grid-cols-12">
                 <div className="col-span-6">
                   <div className="uxsv my_svc">
@@ -309,9 +309,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/*My service*/}
-        <div className="contact-info">
+        {/* <div className="contact-info">
           <div className="container-fluid">
             <div className="grid grid-cols-12">
               <div className="col-span-4">
@@ -327,12 +327,10 @@ const Home = () => {
                 <div>Gemek Tower, Le Trong Tan, An Khanh, Ha Noi</div>
               </div>
             </div>
-            {/*<div className="heading_1 lets-contact">Let's Contact</div>*/}
-            {/*<div className="heading_1 with-me">With Me</div>*/}
           </div>
-        </div>
+        </div> */}
         {/*DECOR TEXT*/}
-        <div className="scroll-container text-decor">
+        <div className="scroll-container text-decor mt-8">
           <Scroller>
             <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy"/>
             <div className="heading_4">HELLO MY NAME IS NGUYEN THUY DUONG</div>
@@ -348,9 +346,27 @@ const Home = () => {
           <div className="container-fluid">
             <div className="grid grid-cols-12 gap-4">
               <div className="col-span-4">
-                <div className="body_text">
-                  “I welcome any potential recruiters to contact me regarding job opportunities that match my skillset and
-                  interests. I am excited to explore new opportunities and connect with professionals in my field”
+                <div className="grid grid-cols-4 gap-4">
+                  <div className="col-span-3">
+                    <div className="body_text">
+                    “I welcome any potential recruiters to contact me regarding job opportunities that match my skillset and
+                      interests. I am excited to explore new opportunities and connect with professionals in my field”
+                    </div>
+                  </div>
+                  <div>
+                    <img className="w-full" src="./images/home/home-contact2.png" alt="logo" loading="lazy"/>
+                  </div>
+                </div>
+                <div className="grid grid-cols-4 gap-4 mt-4">
+                  <div className="col-span-2">
+                    <img className="w-full" src="./images/home/contact-home.png" alt="logo" loading="lazy"/>
+                  </div>
+                  <div className="col-span-2 flex self-end">
+                    <div className="w-full text-right">
+                      <div className="small_text">From Nth.Duong</div>
+                      <div className="small_text">Portfolio 2024</div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="col-span-1"></div>

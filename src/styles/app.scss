@@ -1,5 +1,5 @@
 //VARIABLE
-$primary_color: #F0F0EA;
+$primary_color: #E7E4DE;
 $secondary_color: #808285;
 $subcolor: #E4E4E4;
 $heading_1: 60px;
@@ -7,7 +7,7 @@ $heading_2: 46px;
 $heading_3: 38px;
 $heading_4: 32px;
 $heading_5: 28px;
-$heading_6: 24px;
+$heading_6: 22px;
 $medium_text: 16px;
 $body_text: 14px;
 $small_text: 12px;
@@ -49,17 +49,17 @@ a{
 .heading_1 {
   font-family: 'AmericanaBT',serif;
   font-size: $heading_1;
-  line-height: $heading_1*1.25;
+  line-height: $heading_1*1.15;
 }
 .heading_2 {
   font-family: 'AmericanaBT', serif;
   font-size: $heading_2;
-  line-height: $heading_2*1.25;
+  line-height: $heading_2*1.15;
 }
 .heading_3 {
   font-family: 'AmericanaBT', serif;
   font-size: $heading_3;
-  line-height: $heading_3*1.25;
+  line-height: $heading_3*1.15;
 }
 .heading_4 {
   font-family: 'AmericanaBT', serif;
@@ -72,7 +72,7 @@ a{
   line-height: $heading_5*1.25;
 }
 .heading_6 {
-  font-family: 'AmericanaBT', serif;
+  font-family: 'SFUFutura', sans-serif;
   font-size: $heading_6;
   line-height: $heading_6*1.25;
 }

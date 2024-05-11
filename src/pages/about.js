@@ -7,12 +7,12 @@ const About = () => {
         <img className="w-100" src="./images/about/Showcase.webp" loading="lazy" alt="#"></img>
       </div>
       <div className="page-element">
-        <div className="container-fluid about1">
+        <div className="container-fluid about1 py-8">
           <div className="grid grid-cols-12 row-n1">
             <div className="col-span-1"></div>
             <div className="col-span-4"></div>
             <div className="col-span-6">
-              <div className="title-about1-2 heading_5 ">
+              <div className="heading_5 mb-4">
                 So glad to see you here!
               </div>
             </div>
@@ -25,9 +25,6 @@ const About = () => {
               <p>To: You</p>
             </div>
             <div className="col-span-6 about1-2">
-              <div className="medium_text dear">
-                Dear all
-              </div>
               <div className="body_text">
                 Hello and welcome to my website! I'm eager to share with you some of my UX/UI design projects and experiences. As an aspiring professional, I'm dedicated to continuous learning and growth in this field. If you're a recruiter or hiring manager interested in my skills and experience, I'd love to connect with you. Please feel free to reach out if you have any questions or if you'd like to discuss potential opportunities. Thank you for visiting my portfolio!
               </div>
@@ -36,7 +33,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="page-element">
+      <div className="page-element mt-8">
         <div className="container-fluid about2">
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-3">
@@ -84,14 +81,14 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="page-element about-skill">
+      <div className="page-element py-8 bg-primary mt-8">
         <div className="container-fluid">
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-4 skill-common">
-              <div className="heading_3">
+              <div className="heading_3 mb-4">
                 My Skills
               </div>
-              <div className="medium_text mid-text">
+              <div className="medium_text mid-text mb-3">
                 Skills that I have so far, to provide my clients
               </div>
               <div className="body_text">
@@ -103,24 +100,24 @@ const About = () => {
               DESIGN TOOLS
             </div>
             <div className="col-span-2 skill-container">
-              <div className="skill-item">
-                <div className="skill-no body_text">01/</div>
+              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
+                <div className="body_text mr-auto">01/</div>
                 <div className="skill-name body_text">Figma</div>
               </div>
-              <div className="skill-item">
-                <div className="skill-no body_text">02/</div>
+              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
+                <div className="body_text mr-auto">02/</div>
                 <div className="skill-name body_text">Adobe Illustrator</div>
               </div>
-              <div className="skill-item">
-                <div className="skill-no body_text">03/</div>
+              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
+                <div className="body_text mr-auto">03/</div>
                 <div className="skill-name body_text">Adobe Photoshop</div>
               </div>
-              <div className="skill-item">
-                <div className="skill-no body_text">04/</div>
+              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
+                <div className="body_text mr-auto">04/</div>
                 <div className="skill-name body_text">Adobe Indesign</div>
               </div>
-              <div className="skill-item boder-none">
-                <div className="skill-no body_text">05/</div>
+              <div className="flex">
+                <div className="body_text mr-auto">05/</div>
                 <div className="skill-name body_text">Adobe XD</div>
               </div>
             </div>
@@ -129,92 +126,76 @@ const About = () => {
               TECH STACK
             </div>
             <div className="col-span-2 skill-container">
-              <div className="skill-item">
-                <div className="skill-no body_text">01/</div>
+              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
+                <div className="body_text mr-auto">01/</div>
                 <div className="skill-name body_text">HTML/SCSS</div>
               </div>
-              <div className="skill-item">
-                <div className="skill-no body_text">02/</div>
+              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
+                <div className="body_text mr-auto">02/</div>
                 <div className="skill-name body_text">Tailwind/Bootstrap</div>
               </div>
-              <div className="skill-item">
-                <div className="skill-no body_text">03/</div>
+              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
+                <div className="body_text mr-auto">03/</div>
                 <div className="skill-name body_text">JavaScript</div>
               </div>
-              <div className="skill-item">
-                <div className="skill-no body_text">04/</div>
+              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
+                <div className="body_text mr-auto">04/</div>
                 <div className="skill-name body_text">ReactJS</div>
               </div>
-              <div className="skill-item boder-none">
-                <div className="skill-no body_text">05/</div>
-                <div className="skill-name body_text">Angular</div>
+              <div className="flex pb-1 border-b border-solid border-ccc mb-2 boder-none">
+                <div className="body_text mr-auto">05/</div>
+                <div className="skill-name body_text">Workpress</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="page-element core-value">
-        <div className="">
-          <div className="grid grid-cols-12 gap-4">
-            <div className="col-span-5">
-              <img className="w-100 about-dot" src="./images/about/mycore.webp" alt="#" loading="lazy"></img>
+      <div className="page-element container-fluid my-8">
+        <div className="heading_3 mb-4">
+          My Core Values
+        </div>
+        <div className="grid grid-cols-12 gap-4">
+          <div className="col-span-4 border border-solid border-ccc">
+            <div>
+              <img className="w-full" src="./images/about/core1.png" alt="logo" loading="lazy"/>
             </div>
-            <div className="col-span-7 core-content">
-              <div className="row">
-                <div className="col-4 heading_2">
-                  My Core Values
-                </div>
+            <div className="core-main pt-4 px-3 pb-5">
+              <div className="medium_text mb-3">Live with passion</div>
+              <div className="body_text">
+              Passion is the driving force behind success and happiness that pushes you to reach your highest potential.
+“Nothing great in the world has ever been accomplished without passion.” ~ George Hegel
               </div>
-              <div className="detail-container">
-                <div className="row">
-                  <div className="col-4 left-item">
-                    <div className="detail-item">
-                      <div className="medium_text">
-                        Live with passion
-                      </div>
-                      <div className="body_text detail-line">
-                        “Nothing great in the world has ever been accomplished without passion.” ~ George Hegel
-                      </div>
-                      <div className="heading_3">
-                        01/
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-4 mid-item">
-                    <div className="detail-item">
-                      <div className="medium_text">
-                        Eager to learn
-                      </div>
-                      <div className="body_text detail-line">
-                      "Learn from yesterday, live for today, hope for tomorrow. The important thing is to not stop questioning." ~ Arthur Wellesley
-                      </div>
-                      <div className="heading_3 detail-title-btm">
-                        02/
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-4 right-item">
-                    <div className="detail-item">
-                      <div className="medium_text">
-                        Undeterred by the hardships
-                      </div>
-                      <div className="body_text detail-line">
-                        “Life doesn't require that we be the best, only that we try our best.” ~ H.Jackson Brown, Jr
-                      </div>
-                      <div className="heading_3 detail-title-btm">
-                        03/
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div className="heading_6 mt-4">01.</div>
+            </div>
+          </div>
+          <div className="col-span-4 border border-solid border-ccc">
+            <div>
+              <img className="w-full" src="./images/about/core2.png" alt="logo" loading="lazy"/>
+            </div>
+            <div className="core-main pt-4 px-3 pb-5">
+              <div className="medium_text mb-3">Eager to learn</div>
+              <div className="body_text">
+              "Learn from yesterday, live for today, hope for tomorrow. The important thing is to not stop questioning." ~ Arthur Wellesley
               </div>
+              <div className="heading_6">02.</div>
+            </div>
+          </div>
+          <div className="col-span-4 border border-solid border-ccc">
+            <div>
+              <img className="w-full" src="./images/about/core3.png" alt="logo" loading="lazy"/>
+            </div>
+            <div className="core-main pt-4 px-3 pb-5">
+              <div className="medium_text mb-3">Undeterred by the hardships</div>
+              <div className="body_text">
+              “Life doesn't require that we be the best, only that we try our best.” ~ H.Jackson Brown, Jr
+              </div>
+              <div className="heading_6">03.</div>
             </div>
           </div>
         </div>
       </div>
-      <div className="page-element about-last">
+      <div className="mb-8 text-center">
         <div className="last-content heading_4">
-          <div className="line"></div>
           <div className="container-fluid">
             <div className="row">
               <div className="col"></div>
