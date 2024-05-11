@@ -259,3 +259,26 @@ a{
   justify-content: center;
   align-items: center;
 }
+.my-header{
+  .header-navdrop{
+    .navdrop-inner{
+      z-index: 3000;
+      display: none;
+      width: max-content;
+      background: #fff;
+      .sub-menu{
+        color: #666666;
+      }
+      .sub-menu:hover{
+        color: #000;
+      }
+    }
+  }
+  .header-navdrop:hover .navdrop-inner{
+    display: block;
+  }
+  .header-navdrop:hover .navdrop-inner{
+    display: block;
+  }
+  
+}
