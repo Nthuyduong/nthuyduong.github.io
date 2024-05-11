@@ -100,17 +100,12 @@ const Header = () => {
               <div className="hidden w-full md:block">
                 <div className="flex space-x-4 justify-center w-full">
                   {/*Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"*/}
-                  <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-4 text-sm font-medium"
-                     aria-current="page">HOME</a>
-                  
-                  <Link href={ROUTER.ABOUT}>
-                    <a href="#"
-                      className="text-gray-300 hover:text-white rounded-md px-3 py-4 text-sm font-medium">ABOUT</a>
+                  <Link to="/" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-4 text-sm font-medium" aria-current="page">HOME</Link>
+                  <Link to={ROUTER.ABOUT} className="text-gray-300 hover:text-white rounded-md px-3 py-4 text-sm font-medium">
+                    ABOUT
                   </Link>
-                  <a href="#"
-                     className="text-gray-300 hover:text-white rounded-md px-3 py-4 text-sm font-medium">DESIGNS</a>
-                  <a href="#"
-                     className="text-gray-300 hover:text-white rounded-md px-3 py-4 text-sm font-medium">CONTACT</a>
+                  <Link to={ROUTER.DESIGNS} className="text-gray-300 hover:text-white rounded-md px-3 py-4 text-sm font-medium">DESIGNS</Link>
+                  <Link to={ROUTER.CONTACT} className="text-gray-300 hover:text-white rounded-md px-3 py-4 text-sm font-medium">CONTACT</Link>
                 </div>
               </div>
             </div>
