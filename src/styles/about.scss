@@ -131,6 +131,15 @@
       padding-bottom: 30px;
     }
   }
+  .core-hover{
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    border: 10px solid transparent;
+  }
+  .core-hover:hover{
+    background-color: #F0EEEB;
+    border: 10px solid #F0EEEB; 
+  }
 }
 //ABOUT TEST
 .new-about{

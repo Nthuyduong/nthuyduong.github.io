@@ -35,7 +35,7 @@ const About = () => {
       </div>
       <div className="page-element mt-8">
         <div className="container-fluid about2">
-          <div className="grid grid-cols-12 gap-4">
+          <div className="grid grid-cols-12 gap-5">
             <div className="col-span-3">
               <div className="img-container">
                 <img className="w-100" src="./images/about/me.webp" alt="#" loading="lazy"></img>
@@ -83,7 +83,7 @@ const About = () => {
       </div>
       <div className="page-element py-8 bg-primary mt-8">
         <div className="container-fluid">
-          <div className="grid grid-cols-12 gap-4">
+          <div className="grid grid-cols-12 gap-5">
             <div className="col-span-4 skill-common">
               <div className="heading_3 mb-4">
                 My Skills
@@ -92,10 +92,10 @@ const About = () => {
                 Skills that I have so far, to provide my clients
               </div>
               <div className="body_text">
-              “Learning new things brings me joy and satisfaction, as it allows me to grow, become more knowledgeable, and improve myself every day”
+                “Learning new things brings me joy and satisfaction, as it allows me to grow, become more knowledgeable, and improve myself every day”
               </div>
             </div>
-            <div className="col-span-1"/>
+            <div className="col-span-1" />
             <div className="col-span-1 skill-title body_text">
               DESIGN TOOLS
             </div>
@@ -121,7 +121,7 @@ const About = () => {
                 <div className="skill-name body_text">Adobe XD</div>
               </div>
             </div>
-            <div className="col-span-1"/>
+            <div className="col-span-1" />
             <div className="col-1 skill-title body_text">
               TECH STACK
             </div>
@@ -150,44 +150,61 @@ const About = () => {
           </div>
         </div>
       </div>
+      {/* Educational background */}
+      <div>
+        <div className="grid grid-cols-12 gap-4">
+          <div className="col-span-3">
+            <div></div>
+          </div>
+          <div className="col-span-3"></div>
+          <div className="col-span-3"></div>
+          <div className="col-span-3"></div>
+        </div>
+      </div>
       <div className="page-element container-fluid my-8">
         <div className="heading_3 mb-4">
           My Core Values
         </div>
-        <div className="grid grid-cols-12 gap-4">
-          <div className="col-span-4 border border-solid border-ccc">
+        <div className="grid grid-cols-12 gap-5">
+          <div className="col-span-4 border border-solid border-ccc flex-col flex h-full core-hover">
             <div>
-              <img className="w-full" src="./images/about/core1.png" alt="logo" loading="lazy"/>
+              <img className="w-full" src="./images/about/core1.png" alt="logo" loading="lazy" />
             </div>
-            <div className="core-main pt-4 px-3 pb-5">
-              <div className="medium_text mb-3">Live with passion</div>
-              <div className="body_text">
-              Passion is the driving force behind success and happiness that pushes you to reach your highest potential.
-“Nothing great in the world has ever been accomplished without passion.” ~ George Hegel
+            <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border-x border-b border-solid border-ccc">
+              <div className="h-full">
+                <div className="medium_text mb-3">Live with passion</div>
+                <div className="body_text">
+                  Passion is the driving force behind success and happiness that pushes you to reach your highest potential.
+                  “Nothing great in the world has ever been accomplished without passion.” ~ George Hegel
+                </div>
               </div>
               <div className="heading_6 mt-4">01.</div>
             </div>
           </div>
-          <div className="col-span-4 border border-solid border-ccc">
+          <div className="col-span-4 border border-solid border-ccc flex-col flex h-full core-hover">
             <div>
-              <img className="w-full" src="./images/about/core2.png" alt="logo" loading="lazy"/>
+              <img className="w-full" src="./images/about/core2.png" alt="logo" loading="lazy" />
             </div>
-            <div className="core-main pt-4 px-3 pb-5">
-              <div className="medium_text mb-3">Eager to learn</div>
-              <div className="body_text">
-              "Learn from yesterday, live for today, hope for tomorrow. The important thing is to not stop questioning." ~ Arthur Wellesley
+            <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border-x border-b border-solid border-ccc">
+              <div className="h-full">
+                <div className="medium_text mb-3">Eager to learn</div>
+                <div className="body_text">
+                  "Learn from yesterday, live for today, hope for tomorrow. The important thing is to not stop questioning." ~ Arthur Wellesley
+                </div>
               </div>
               <div className="heading_6">02.</div>
             </div>
           </div>
-          <div className="col-span-4 border border-solid border-ccc">
+          <div className="col-span-4 border border-solid border-ccc flex-col flex h-full core-hover">
             <div>
-              <img className="w-full" src="./images/about/core3.png" alt="logo" loading="lazy"/>
+              <img className="w-full" src="./images/about/core3.png" alt="logo" loading="lazy" />
             </div>
-            <div className="core-main pt-4 px-3 pb-5">
-              <div className="medium_text mb-3">Undeterred by the hardships</div>
-              <div className="body_text">
-              “Life doesn't require that we be the best, only that we try our best.” ~ H.Jackson Brown, Jr
+            <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border-x border-b border-solid border-ccc">
+              <div className="h-full">
+                <div className="medium_text mb-3">Undeterred by the hardships</div>
+                <div className="body_text">
+                  “Life doesn't require that we be the best, only that we try our best.” ~ H.Jackson Brown, Jr
+                </div>
               </div>
               <div className="heading_6">03.</div>
             </div>
@@ -205,7 +222,7 @@ const About = () => {
               <div className="col"></div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
