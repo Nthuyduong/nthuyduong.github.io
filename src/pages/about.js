@@ -1,6 +1,35 @@
 import React, { useState, useEffect } from "react";
 
 const About = () => {
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const cards = entry.target.querySelectorAll('.timeline-card');
+        if (entry.isIntersecting) {
+          // Force a reflow
+          void entry.target.offsetWidth;
+          cards.forEach((card, index) => {
+            setTimeout(() => {
+              card.classList.add('timeline-active');
+            }, index * 1000);
+          });
+        } else {
+          cards.forEach((card) => {
+            card.classList.remove('timeline-active');
+          });
+        }
+    });
+    }, {
+      threshold: 0.1
+    });
+    let timelineCards = document.querySelectorAll('.timeline');
+    timelineCards.forEach((card) => {
+      observer.observe(card);
+    });
+
+  }, []);
+
   return (
     <div className="about-page">
       <div className="img-container">
@@ -12,7 +41,7 @@ const About = () => {
             <div className="col-span-1"></div>
             <div className="col-span-4"></div>
             <div className="col-span-6">
-              <div className="heading_5 mb-4">
+              <div className="heading_5 mb-4 animate slideInUp animate--delay-fast">
                 So glad to see you here!
               </div>
             </div>
@@ -25,7 +54,7 @@ const About = () => {
               <p>To: You</p>
             </div>
             <div className="col-span-6 about1-2">
-              <div className="body_text">
+              <div className="body_text cursor-text-wrp animate slideInUp animate--delay-medium">
                 Hello and welcome to my website! I'm eager to share with you some of my UX/UI design projects and experiences. As an aspiring professional, I'm dedicated to continuous learning and growth in this field. If you're a recruiter or hiring manager interested in my skills and experience, I'd love to connect with you. Please feel free to reach out if you have any questions or if you'd like to discuss potential opportunities. Thank you for visiting my portfolio!
               </div>
             </div>
@@ -159,6 +188,58 @@ const About = () => {
           <div className="col-span-3"></div>
           <div className="col-span-3"></div>
           <div className="col-span-3"></div>
+        </div>
+      </div>
+      <div className="timeline">
+        <div className="page-element container-fluid my-8 flex">
+          <div className="w-full flex flex-col gap-3 timeline-card">
+            <div className="timeline-top text-[18px]">
+              Past - 2016
+            </div>
+            <div className="timeline-line">
+              <div className="timeline-content"></div>
+            </div>
+            <div className="timeline-bottom mt-3">
+              <p className="text-[18px] mb-3">Phung Khac Khoan High School</p>
+              <p className="text-[16px]">Thach That district, Hanoi</p>
+            </div>
+          </div>
+          <div className="w-full flex flex-col gap-3 timeline-card">
+            <div className="timeline-top text-[18px]">
+              2016 - 7/2020
+            </div>
+            <div className="timeline-line">
+              <div className="timeline-content"></div>
+            </div>
+            <div className="timeline-bottom mt-3">
+              <p className="text-[18px] mb-3">HUNRE</p>
+              <p className="text-[16px]">Very good degree, GPA 3.4</p>
+            </div>
+          </div>
+          <div className="w-full flex flex-col gap-3 timeline-card">
+            <div className="timeline-top text-[18px]">
+              8/2020 - 2022
+            </div>
+            <div className="timeline-line">
+              <div className="timeline-content"></div>
+            </div>
+            <div className="timeline-bottom mt-3">
+              <p className="text-[18px] mb-3">Arena Multimedia</p>
+              <p className="text-[16px]">Graphic Design | UX/UI Design</p>
+            </div>
+          </div>
+          <div className="w-full flex flex-col gap-3 timeline-card">
+            <div className="timeline-top text-[18px]">
+              Past - 5/2022 - 2023
+            </div>
+            <div className="timeline-line">
+              <div className="timeline-content"></div>
+            </div>
+            <div className="timeline-bottom mt-3">
+              <p className="text-[18px] mb-3">FPT Aptech VietNam</p>
+              <p className="text-[16px]">Developer</p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="page-element container-fluid my-8">

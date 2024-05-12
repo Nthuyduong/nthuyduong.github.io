@@ -201,3 +201,77 @@
     }
   }
 }
+.timeline {
+  .timeline-line {
+    height: 2px;
+    background-color: #ccc;
+    position: relative;
+  }
+  .timeline-content {
+    transition: all 1s linear;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background: #000000;
+  }
+  .timeline-card {
+    .timeline-bottom {
+      transition: all 0.4s ease;
+      color: #ccc;
+    }
+    .timeline-top {
+      transition: all 0.4s ease;
+      color: #ccc;
+    }
+  }
+  .timeline-card:first-child .timeline-line::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    transform: translate(-50%, -50%);
+  }
+  .timeline-card:last-child .timeline-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+  }
+  .timeline-line::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.timeline-active {
+  .timeline-bottom {
+    color: #000 !important;
+  }
+  .timeline-top {
+    color: #000 !important;
+  }
+  .timeline-content {
+    width: 100%;
+  }
+  .timeline-line::after {
+    background-color: #000;
+  }
+}
+.timeline-active.timeline-card:last-child {
+  .timeline-content {
+    width: 200%;
+  }
+  
+}

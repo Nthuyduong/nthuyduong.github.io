@@ -1,3 +1,12 @@
+.animation-wrp {
+  cursor: none!important;
+  a {
+    cursor: none!important;
+  }
+  .back-to-top {
+    cursor: none!important;
+  }
+}
 // scrolling content
 .scroller__inner {
   padding-block: 1rem;
@@ -40,4 +49,87 @@
   to {
     transform: translate(calc(-50%));
   }
+}
+
+/* Utility classes */
+.animate {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+}
+.animated {
+  animation-play-state: running;
+}
+
+.animate.animate--infinite {
+  animation-iteration-count: infinite;
+}
+.animate.animate--delay-slow {
+  animation-delay: 1s;
+}
+.animate.animate--delay-medium {
+  animation-delay: 0.5s;
+}
+.animate.animate--delay-fast {
+  animation-delay: 0.25s;
+}
+
+.animate.animate--fast {
+  animation-duration: 0.6s;
+}
+
+.animate.animate--slow {
+  animation-duration: 3s;
+}
+
+/* Animations */
+@keyframes slideInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  80% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.slideInUp {
+  animation-name: slideInUp;
+  animation-timing-function: ease-in;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 20px; 
+  height: 20px;
+  border-radius: 50%;
+  background-image: url('../img/cursor.png');
+  background-size: cover;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, background 0.3s;
+  pointer-events: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: black;
+  border: none;
+  z-index: 999999999999;
+}
+
+.cursor-text {
+  width: 18px;
+  height: 18px;
+  transition: width 0.5s height 0.5s;
+  background-image: none;
+  background-color: transparent;
+}
+
+.cursor-img {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  backdrop-filter: blur(5px);
+  border: solid 1px black;
+  background-image: none;
 }

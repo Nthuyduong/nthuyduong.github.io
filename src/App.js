@@ -18,23 +18,26 @@ import Designs from "./pages/designs";
 import Abouttest from "./pages/abouttest";
 import "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/react-fontawesome"
+import { AnimationProvider } from "./provider/animation";
 
 const App = () => {
 
   return (
     <Router>
       <Switch>
-        <Layout>
-          <Route exact path={ROUTER.HOME} component={Home}/>
-          <Route path={ROUTER.ABOUT} component={About}/>
-          <Route path={ROUTER.CONTACT} component={Contact}/>
-          <Route path={ROUTER.AGURI} component={Aguri}/>
-          <Route path={ROUTER.ALIO} component={Alio}/>
-          <Route path={ROUTER.FASHION} component={Fashion}/>
-          <Route path={ROUTER.CAKE} component={Cake}/>
-          <Route path={ROUTER.DESIGNS} component={Designs}/>
-          <Route path={ROUTER.ABOUTTEST} component={Abouttest}/>
-        </Layout>
+        <AnimationProvider>
+          <Layout>
+            <Route exact path={ROUTER.HOME} component={Home}/>
+            <Route path={ROUTER.ABOUT} component={About}/>
+            <Route path={ROUTER.CONTACT} component={Contact}/>
+            <Route path={ROUTER.AGURI} component={Aguri}/>
+            <Route path={ROUTER.ALIO} component={Alio}/>
+            <Route path={ROUTER.FASHION} component={Fashion}/>
+            <Route path={ROUTER.CAKE} component={Cake}/>
+            <Route path={ROUTER.DESIGNS} component={Designs}/>
+            <Route path={ROUTER.ABOUTTEST} component={Abouttest}/>
+          </Layout>
+        </AnimationProvider>
       </Switch>  
     </Router>
   );
