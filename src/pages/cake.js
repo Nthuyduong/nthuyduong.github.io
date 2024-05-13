@@ -63,7 +63,7 @@ const Cake = () => {
                                 <div className="col-span-3"></div>
                             </div>
                         </div>
-                        {/*<img className="w-100" src="https://i.imgur.com/RLSInkn.png"/>*/}
+                        {/*<img className="w-100" src="https://i.imgur.com/RLSInkn.png"/>
                     </div>
                     <div className="">
                         <div className="grid grid-cols-12">
@@ -100,7 +100,7 @@ const Cake = () => {
                         </div>
                     </div>
                     <div className="pdb-60 cake-abtpage">
-                        <div className="grid grid-cols-12">
+                        {/* <div className="grid grid-cols-12">
                             <div className="col-span-6 cake-abtpage-left">
                                 <div className="about-contain">
                                     <div className="heading_3 text-center title-top">SEASON CAKE BLOG</div>
@@ -113,7 +113,7 @@ const Cake = () => {
                             <div className="col-span-6 cake-abtpage-right">
                                 <img className="w-100" src="./images/Pj01_cake/about.webp" alt="#" loading="lazy"/>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className="ag-line6 mdb-60">

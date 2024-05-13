@@ -32,10 +32,33 @@ const About = () => {
 
   return (
     <div className="about-page">
-      <div className="img-container">
+      {/* <div className="img-container">
         <img className="w-100" src="./images/about/Showcase.webp" loading="lazy" alt="#"></img>
+      </div> */}
+      {/* New banner */}
+      <div className="page-element bg-primary">
+        <div className="container-fluid about1">
+          <div className="md:grid md:grid-cols-12 gap-5">
+            <div className="col-span-1"></div>
+            <div className="col-span-4">
+              <img className="w-100" src="./images/about/banner-abt.png" alt="#" loading="lazy"></img>
+            </div>
+            <div className="col-span-6 flex items-center">
+              <div className="">
+                <div className="heading_5 mb-4 animate slideInUp animate--delay-fast">
+                  So glad to see you here!
+                </div>
+                <div className="mb-3">Dear all</div>
+                <div className="body_text cursor-text-wrp animate slideInUp animate--delay-medium">
+                  Hello and welcome to my website! I'm eager to share with you some of my UX/UI design projects and experiences. As an aspiring professional, I'm dedicated to continuous learning and growth in this field. If you're a recruiter or hiring manager interested in my skills and experience, I'd love to connect with you. Please feel free to reach out if you have any questions or if you'd like to discuss potential opportunities. Thank you for visiting my portfolio!
+                </div>
+              </div>
+            </div>
+            <div className="col-span-1"></div>
+          </div>
+        </div>
       </div>
-      <div className="page-element">
+      {/* <div className="page-element">
         <div className="container-fluid about1 py-8">
           <div className="grid grid-cols-12 row-n1">
             <div className="col-span-1"></div>
@@ -61,23 +84,21 @@ const About = () => {
             <div className="col-span-1"></div>
           </div>
         </div>
-      </div>
-      <div className="page-element mt-8">
+      </div> */}
+      <div className="page-element mt-4 md:mt-9">
         <div className="container-fluid about2">
-          <div className="grid grid-cols-12 gap-5">
+          <div className="md:grid md:grid-cols-12 gap-5">
             <div className="col-span-3">
               <div className="img-container">
                 <img className="w-100" src="./images/about/me.webp" alt="#" loading="lazy"></img>
               </div>
             </div>
-            <div className="col-span-2">
-              <div className="heading_2 sef-intro">Self - Introduce</div>
+            <div className="col-span-3">
+              <div className="heading_2 md:py-0 py-4">Self - Introduce</div>
             </div>
-            <div className="col-span-1">
-
-            </div>
-            <div className="col-span-6 abt-content">
-              <div className="abt-inner">
+            
+            <div className="col-span-6">
+              <div className="">
                 <div className="about-des body_text">
                   At just 24 years old, I was always driven to find my true passion in life. After trying a few different jobs, I discovered UX/UI design and suddenly everything fell into place. I realized that this was my true passion and I was determined to pursue a career in this field. Although I am relatively new to this industry, I have worked hard to learn a lot during the past 2 years. Now I am eager to gain hands-on experience and contribute to real-world projects in the field of UX/UI Design. I believe that with a strong sense of purpose and passion for design, I can make a valuable contribution to any organization looking for a dedicated and dynamic UX/UI Designer.
                 </div>
@@ -110,9 +131,9 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="page-element py-8 bg-primary mt-8">
+      <div className="page-element py-8 bg-primary mt-4 md:mt-9">
         <div className="container-fluid">
-          <div className="grid grid-cols-12 gap-5">
+          <div className="md:grid md:grid-cols-12 gap-5">
             <div className="col-span-4 skill-common">
               <div className="heading_3 mb-4">
                 My Skills
@@ -181,7 +202,7 @@ const About = () => {
       </div>
       {/* Educational background */}
       <div>
-        <div className="grid grid-cols-12 gap-4">
+        <div className="md:grid md:grid-cols-12 gap-4">
           <div className="col-span-3">
             <div></div>
           </div>
@@ -248,11 +269,11 @@ const About = () => {
 
         </div>
       </div>
-      <div className="page-element container-fluid my-8">
+      <div className="page-element container-fluid mt-4 md:my-9">
         <div className="heading_3 mb-5">
           My Core Values
         </div>
-        <div className="grid grid-cols-12 gap-5">
+        <div className="md:grid md:grid-cols-12 gap-5">
           <div className="col-span-4 border border-solid border-ccc flex-col flex h-full core-hover">
             <div>
               <img className="w-full" src="./images/about/core1.png" alt="logo" loading="lazy" />
@@ -298,15 +319,15 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="mb-8 text-center">
+      <div className="mb-4 md:mb-9 text-center">
         <div className="last-content heading_4">
           <div className="container-fluid">
-            <div className="row">
-              <div className="col"></div>
-              <div className="col-10 heading_4">
+            <div className="grid grid-cols-12">
+              <div className="col-span-1"></div>
+              <div className="col-span-10 heading_4">
                 “The surest way to make your dreams come true is to live them. Dreams don’t work unless you take action.”
               </div>
-              <div className="col"></div>
+              <div className="col-span-1"></div>
             </div>
           </div>
 

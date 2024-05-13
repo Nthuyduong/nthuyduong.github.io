@@ -133,8 +133,11 @@ const Aguri = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="ag-line4 pdb-60">
+                        <img className="w-100" src="./images/Pj03_aguri/mockup.png" alt="#" loading="lazy" />
+                    </div>
                     <div className="ag-line5 pdb-60">
-                        <img className="w-100" src="./images/Pj03_aguri/home.webp" alt="#" loading="lazy" />
+                        <img className="w-100" src="./images/Pj03_aguri/product-page.png" alt="#" loading="lazy" />
                     </div>
                     <div className="ag-line6 mdb-60">
                         <div className="inner">
@@ -153,11 +156,11 @@ const Aguri = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="ag-line7 pdb-60">
+                    {/* <div className="ag-line7 pdb-60">
                         <div className="inner">
                             <img className="w-100" src="./images/Pj03_aguri/line7.png" alt="#" loading="lazy" />
                         </div>
-                    </div>
+                    </div> */}
                     {/*<div className="ag-line8 pdb-60">*/}
                     {/*    <div className="ag-line8-inner">*/}
                     {/*        <div className="line8-content text-center mb-5">*/}

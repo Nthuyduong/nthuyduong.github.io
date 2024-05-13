@@ -61,9 +61,9 @@ const Home = () => {
   return (
       <div className="home-page">
         <div className="page-element home-info container-fluid">
-          <div className="grid grid-cols-12">
-            <div className="col-span-8 flex">
-              <img className="main-logo" src="./images/home/logo-icon.svg" alt="logo" loading="lazy"/>
+          <div className="md:grid md:grid-cols-12">
+            <div className="col-span-8 md:flex">
+              <img className="md:block hidden main-logo" src="./images/home/logo-icon.svg" alt="logo" loading="lazy"/>
               <div className="info-content medium_text">
                 Hello, My name is
                 <div className="mt-3 heading_3">
@@ -95,7 +95,7 @@ const Home = () => {
 
         </div>
         <div className="container-fluid mt-5 mb-7">
-          <div className="grid grid-cols-12 gap-4">
+          <div className="md:grid md:grid-cols-12 gap-4">
             <div className="col-span-5 d-flex">
               <div className="info-content body_text">
                 19/08/1998 __________
