@@ -19,7 +19,7 @@ const About = () => {
             card.classList.remove('timeline-active');
           });
         }
-    });
+      });
     }, {
       threshold: 0.1
     });
@@ -191,59 +191,65 @@ const About = () => {
         </div>
       </div>
       <div className="timeline">
-        <div className="page-element container-fluid my-8 flex">
-          <div className="w-full flex flex-col gap-3 timeline-card">
-            <div className="timeline-top text-[18px]">
-              Past - 2016
+        <div className="page-element container-fluid my-9">
+          <div className="heading_3 mb-7">
+            Educational Background
+          </div>
+          <div className="flex">
+            <div className="w-full flex flex-col gap-3 timeline-card">
+              <div className="timeline-top small_text">
+                Past - 2016
+              </div>
+              <div className="timeline-line">
+                <div className="timeline-content"></div>
+              </div>
+              <div className="timeline-bottom mt-3">
+                <p className="medium_text mb-3">Phung Khac Khoan High School</p>
+                <p className="body_text">Thach That district, Hanoi</p>
+              </div>
             </div>
-            <div className="timeline-line">
-              <div className="timeline-content"></div>
+            <div className="w-full flex flex-col gap-3 timeline-card">
+              <div className="timeline-top small_text">
+                2016 - 7/2020
+              </div>
+              <div className="timeline-line">
+                <div className="timeline-content"></div>
+              </div>
+              <div className="timeline-bottom mt-3">
+                <p className="medium_text mb-3">HUNRE</p>
+                <p className="body_text">Very good degree, GPA 3.4</p>
+              </div>
             </div>
-            <div className="timeline-bottom mt-3">
-              <p className="text-[18px] mb-3">Phung Khac Khoan High School</p>
-              <p className="text-[16px]">Thach That district, Hanoi</p>
+            <div className="w-full flex flex-col gap-3 timeline-card">
+              <div className="timeline-top small_text">
+                8/2020 - 2022
+              </div>
+              <div className="timeline-line">
+                <div className="timeline-content"></div>
+              </div>
+              <div className="timeline-bottom mt-3">
+                <p className="medium_text mb-3">Arena Multimedia</p>
+                <p className="body_text">Graphic Design | UX/UI Design</p>
+              </div>
+            </div>
+            <div className="w-full flex flex-col gap-3 timeline-card">
+              <div className="timeline-top small_text">
+                Past - 5/2022 - 2023
+              </div>
+              <div className="timeline-line">
+                <div className="timeline-content"></div>
+              </div>
+              <div className="timeline-bottom mt-3">
+                <p className="medium_text mb-3">FPT Aptech VietNam</p>
+                <p className="body_text">Developer</p>
+              </div>
             </div>
           </div>
-          <div className="w-full flex flex-col gap-3 timeline-card">
-            <div className="timeline-top text-[18px]">
-              2016 - 7/2020
-            </div>
-            <div className="timeline-line">
-              <div className="timeline-content"></div>
-            </div>
-            <div className="timeline-bottom mt-3">
-              <p className="text-[18px] mb-3">HUNRE</p>
-              <p className="text-[16px]">Very good degree, GPA 3.4</p>
-            </div>
-          </div>
-          <div className="w-full flex flex-col gap-3 timeline-card">
-            <div className="timeline-top text-[18px]">
-              8/2020 - 2022
-            </div>
-            <div className="timeline-line">
-              <div className="timeline-content"></div>
-            </div>
-            <div className="timeline-bottom mt-3">
-              <p className="text-[18px] mb-3">Arena Multimedia</p>
-              <p className="text-[16px]">Graphic Design | UX/UI Design</p>
-            </div>
-          </div>
-          <div className="w-full flex flex-col gap-3 timeline-card">
-            <div className="timeline-top text-[18px]">
-              Past - 5/2022 - 2023
-            </div>
-            <div className="timeline-line">
-              <div className="timeline-content"></div>
-            </div>
-            <div className="timeline-bottom mt-3">
-              <p className="text-[18px] mb-3">FPT Aptech VietNam</p>
-              <p className="text-[16px]">Developer</p>
-            </div>
-          </div>
+
         </div>
       </div>
       <div className="page-element container-fluid my-8">
-        <div className="heading_3 mb-4">
+        <div className="heading_3 mb-5">
           My Core Values
         </div>
         <div className="grid grid-cols-12 gap-5">
