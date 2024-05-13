@@ -111,18 +111,18 @@ const Header = () => {
                         
                       </Link>
                     </div>
-                    <div className="navdrop-inner absolute left-30 w-48 py-1 border-solid border-x border-b border-ccc dark:border-999">
-                      <div className="sub-menu block px-4 py-2 text-sm text-gray-700 dark:!text-white">
-                        <Link href={'/sub-des/5'} className="body_text nav-link">Skin concerns</Link>
+                    <div className="navdrop-inner absolute left-30 w-48 py-1 border-solid border-x border-b border-ccc">
+                      <div className="sub-menu block px-4 py-2 text-sm text-gray-700">
+                        <Link to={ROUTER.AGURI} className="body_text nav-link">Jewelry Website</Link>
                       </div>
-                      <div className="sub-menu block px-4 py-2 text-sm text-gray-700 dark:!text-white">
-                        <Link href={'/sub-des/6'} className="body_text nav-link">Tips & advices</Link>
+                      <div className="sub-menu block px-4 py-2 text-sm text-gray-700">
+                        <Link to={ROUTER.ALIO} className="body_text nav-link">Yoga App & Website</Link>
                       </div>
-                      <div className="sub-menu block px-4 py-2 text-sm text-gray-700 dark:!text-white">
-                        <Link href={'/sub-des/7'} className="body_text nav-link">Hair care</Link>
+                      <div className="sub-menu block px-4 py-2 text-sm text-gray-700">
+                        <Link to={ROUTER.CAKE} className="body_text nav-link">Cake Blog</Link>
                       </div>
-                      <div className="sub-menu block px-4 py-2 text-sm text-gray-700 dark:!text-white">
-                        <Link href={'/sub-des/8'} className="body_text nav-link">Mental health</Link>
+                      <div className="sub-menu block px-4 py-2 text-sm text-gray-700">
+                        <Link to={ROUTER.FASHION} className="body_text nav-link">Fashion Brand App</Link>
                       </div>
                     </div>
                   </div>
