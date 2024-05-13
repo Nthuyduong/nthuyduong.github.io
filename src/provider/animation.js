@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { ROUTER } from "../utils/constants";
 
 const AnimationContext = createContext();
+const router = [ROUTER.ABOUT, ROUTER.ABOUTTEST, ROUTER.HOME, ROUTER.CONTACT]
 
 export const AnimationProvider = ({ children }) => {
     
@@ -27,7 +28,7 @@ export const AnimationProvider = ({ children }) => {
         animates.forEach((animate) => {
             observer.observe(animate);
         })
-        if ([ROUTER.ABOUT, ROUTER.ABOUTTEST].includes(pathname)) {
+        if (router.includes(pathname)) {
             handleCursor();
         }
         
@@ -35,7 +36,7 @@ export const AnimationProvider = ({ children }) => {
             animates.forEach((animate) => {
                 observer.unobserve(animate);
             });
-            if ([ROUTER.ABOUT, ROUTER.ABOUTTEST].includes(pathname)) {
+            if (router.includes(pathname)) {
                 handleCursor();
             }
         }
@@ -62,7 +63,7 @@ export const AnimationProvider = ({ children }) => {
             cursor.style.top = `${y}px`;
         }
 
-        var text = Array.from(document.querySelectorAll('p, span, .cursor-text-wrp'));
+        var text = Array.from(document.querySelectorAll('p, span, body_text, .cursor-text-wrp'));
         console.log(text);
 
         text.forEach(text => {
@@ -84,11 +85,22 @@ export const AnimationProvider = ({ children }) => {
                 cursor.classList.remove('cursor-img');
             })
         })
+
+        var images = Array.from(document.querySelectorAll('input'));
+        images.forEach(image => {
+            image.addEventListener('mousemove', function () {
+                cursor.classList.add('cursor-input');
+            })
+
+            image.addEventListener('mouseleave', function () {
+                cursor.classList.remove('cursor-input');
+            })
+        })
     }
 
     return (
         <AnimationContext.Provider value={null}>
-            {[ROUTER.ABOUT, ROUTER.ABOUTTEST].includes(pathname) ? (
+            {router.includes(pathname) ? (
                 <div className="animation-wrp">
                     {children}
                 <div id="custom-cursor" className="custom-cursor"></div>

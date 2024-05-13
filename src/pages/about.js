@@ -45,11 +45,11 @@ const About = () => {
             </div>
             <div className="col-span-6 flex items-center">
               <div className="">
-                <div className="heading_5 mb-4 animate slideInUp animate--delay-fast">
+                <div className="heading_5 mb-4 animate slideInUp animate--delay-fast cursor-text-wrp">
                   So glad to see you here!
                 </div>
-                <div className="mb-3">Dear all</div>
-                <div className="body_text cursor-text-wrp animate slideInUp animate--delay-medium">
+                <div className="mb-3 animate slideInUp animate--delay-slow cursor-text-wrp">Dear all</div>
+                <div className="body_text cursor-text-wrp animate slideInUp animate--delay-slow cursor-text-wrp">
                   Hello and welcome to my website! I'm eager to share with you some of my UX/UI design projects and experiences. As an aspiring professional, I'm dedicated to continuous learning and growth in this field. If you're a recruiter or hiring manager interested in my skills and experience, I'd love to connect with you. Please feel free to reach out if you have any questions or if you'd like to discuss potential opportunities. Thank you for visiting my portfolio!
                 </div>
               </div>
@@ -94,7 +94,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-span-3">
-              <div className="heading_2 md:py-0 py-4">Self - Introduce</div>
+              <div className="heading_2 md:py-0 py-4 cursor-text-wrp">Self - Introduce</div>
             </div>
             
             <div className="col-span-6">
@@ -102,7 +102,7 @@ const About = () => {
                 <div className="about-des body_text">
                   At just 24 years old, I was always driven to find my true passion in life. After trying a few different jobs, I discovered UX/UI design and suddenly everything fell into place. I realized that this was my true passion and I was determined to pursue a career in this field. Although I am relatively new to this industry, I have worked hard to learn a lot during the past 2 years. Now I am eager to gain hands-on experience and contribute to real-world projects in the field of UX/UI Design. I believe that with a strong sense of purpose and passion for design, I can make a valuable contribution to any organization looking for a dedicated and dynamic UX/UI Designer.
                 </div>
-                <div className="about-title">
+                <div className="about-title cursor-text-wrp">
                   Basic Information
                 </div>
                 <div className="about-info body_text">
@@ -114,10 +114,10 @@ const About = () => {
                   <img className="about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   Gender: Female
                 </div>
-                <div className="about-title">
+                <div className="about-title cursor-text-wrp">
                   Hobbies
                 </div>
-                <div className="about-info pb-0 body_text">
+                <div className="about-info pb-0 body_text cursor-text-wrp">
                   Reading
                   <img className="about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   Drawing
@@ -135,40 +135,40 @@ const About = () => {
         <div className="container-fluid">
           <div className="md:grid md:grid-cols-12 gap-5">
             <div className="col-span-4 skill-common">
-              <div className="heading_3 mb-4">
+              <div className="heading_3 mb-4 cursor-text-wrp">
                 My Skills
               </div>
-              <div className="medium_text mid-text mb-3">
+              <div className="medium_text mid-text mb-3 cursor-text-wrp">
                 Skills that I have so far, to provide my clients
               </div>
-              <div className="body_text">
+              <div className="body_text cursor-text-wrp">
                 “Learning new things brings me joy and satisfaction, as it allows me to grow, become more knowledgeable, and improve myself every day”
               </div>
             </div>
             <div className="col-span-1" />
-            <div className="col-span-1 skill-title body_text">
+            <div className="col-span-1 skill-title body_text cursor-text-wrp">
               DESIGN TOOLS
             </div>
             <div className="col-span-2 skill-container">
               <div className="flex pb-1 border-b border-solid border-ccc mb-2">
-                <div className="body_text mr-auto">01/</div>
-                <div className="skill-name body_text">Figma</div>
+                <div className="cursor-text-wrp body_text mr-auto">01/</div>
+                <div className="cursor-text-wrp skill-name body_text">Figma</div>
               </div>
               <div className="flex pb-1 border-b border-solid border-ccc mb-2">
-                <div className="body_text mr-auto">02/</div>
-                <div className="skill-name body_text">Adobe Illustrator</div>
+                <div className="cursor-text-wrp body_text mr-auto">02/</div>
+                <div className="cursor-text-wrp skill-name body_text">Adobe Illustrator</div>
               </div>
               <div className="flex pb-1 border-b border-solid border-ccc mb-2">
-                <div className="body_text mr-auto">03/</div>
-                <div className="skill-name body_text">Adobe Photoshop</div>
+                <div className="cursor-text-wrp body_text mr-auto">03/</div>
+                <div className="cursor-text-wrp skill-name body_text">Adobe Photoshop</div>
               </div>
               <div className="flex pb-1 border-b border-solid border-ccc mb-2">
-                <div className="body_text mr-auto">04/</div>
-                <div className="skill-name body_text">Adobe Indesign</div>
+                <div className="cursor-text-wrp body_text mr-auto">04/</div>
+                <div className="cursor-text-wrp skill-name body_text">Adobe Indesign</div>
               </div>
               <div className="flex">
-                <div className="body_text mr-auto">05/</div>
-                <div className="skill-name body_text">Adobe XD</div>
+                <div className="cursor-text-wrp body_text mr-auto">05/</div>
+                <div className="cursor-text-wrp skill-name body_text">Adobe XD</div>
               </div>
             </div>
             <div className="col-span-1" />
@@ -177,24 +177,24 @@ const About = () => {
             </div>
             <div className="col-span-2 skill-container">
               <div className="flex pb-1 border-b border-solid border-ccc mb-2">
-                <div className="body_text mr-auto">01/</div>
-                <div className="skill-name body_text">HTML/SCSS</div>
+                <div className="cursor-text-wrp body_text mr-auto">01/</div>
+                <div className="cursor-text-wrp skill-name body_text">HTML/SCSS</div>
               </div>
               <div className="flex pb-1 border-b border-solid border-ccc mb-2">
-                <div className="body_text mr-auto">02/</div>
-                <div className="skill-name body_text">Tailwind/Bootstrap</div>
+                <div className="cursor-text-wrp body_text mr-auto">02/</div>
+                <div className="cursor-text-wrp skill-name body_text">Tailwind/Bootstrap</div>
               </div>
               <div className="flex pb-1 border-b border-solid border-ccc mb-2">
-                <div className="body_text mr-auto">03/</div>
-                <div className="skill-name body_text">JavaScript</div>
+                <div className="cursor-text-wrp body_text mr-auto">03/</div>
+                <div className="cursor-text-wrp skill-name body_text">JavaScript</div>
               </div>
               <div className="flex pb-1 border-b border-solid border-ccc mb-2">
-                <div className="body_text mr-auto">04/</div>
-                <div className="skill-name body_text">ReactJS</div>
+                <div className="cursor-text-wrp body_text mr-auto">04/</div>
+                <div className="cursor-text-wrpskill-name body_text">ReactJS</div>
               </div>
               <div className="flex pb-1 border-b border-solid border-ccc mb-2 boder-none">
-                <div className="body_text mr-auto">05/</div>
-                <div className="skill-name body_text">Workpress</div>
+                <div className="cursor-text-wrp body_text mr-auto">05/</div>
+                <div className="cursor-text-wrp skill-name body_text">Workpress</div>
               </div>
             </div>
           </div>
@@ -213,56 +213,56 @@ const About = () => {
       </div>
       <div className="timeline">
         <div className="page-element container-fluid my-9">
-          <div className="heading_3 mb-7">
+          <div className="heading_3 mb-7 cursor-text-wrp">
             Educational Background
           </div>
           <div className="flex">
             <div className="w-full flex flex-col gap-3 timeline-card">
-              <div className="timeline-top small_text">
+              <div className="timeline-top small_text cursor-text-wrp">
                 Past - 2016
               </div>
               <div className="timeline-line">
                 <div className="timeline-content"></div>
               </div>
               <div className="timeline-bottom mt-3">
-                <p className="medium_text mb-3">Phung Khac Khoan High School</p>
-                <p className="body_text">Thach That district, Hanoi</p>
+                <p className="medium_text mb-3 cursor-text-wrp">Phung Khac Khoan High School</p>
+                <p className="body_text cursor-text-wrp">Thach That district, Hanoi</p>
               </div>
             </div>
             <div className="w-full flex flex-col gap-3 timeline-card">
-              <div className="timeline-top small_text">
+              <div className="timeline-top small_text cursor-text-wrp">
                 2016 - 7/2020
               </div>
               <div className="timeline-line">
                 <div className="timeline-content"></div>
               </div>
               <div className="timeline-bottom mt-3">
-                <p className="medium_text mb-3">HUNRE</p>
-                <p className="body_text">Very good degree, GPA 3.4</p>
+                <p className="medium_text mb-3 cursor-text-wrp">HUNRE</p>
+                <p className="body_text cursor-text-wrp">Very good degree, GPA 3.4</p>
               </div>
             </div>
             <div className="w-full flex flex-col gap-3 timeline-card">
-              <div className="timeline-top small_text">
+              <div className="timeline-top small_text cursor-text-wrp">
                 8/2020 - 2022
               </div>
               <div className="timeline-line">
                 <div className="timeline-content"></div>
               </div>
               <div className="timeline-bottom mt-3">
-                <p className="medium_text mb-3">Arena Multimedia</p>
-                <p className="body_text">Graphic Design | UX/UI Design</p>
+                <p className="medium_text mb-3 cursor-text-wrp">Arena Multimedia</p>
+                <p className="body_text cursor-text-wrp">Graphic Design | UX/UI Design</p>
               </div>
             </div>
             <div className="w-full flex flex-col gap-3 timeline-card">
-              <div className="timeline-top small_text">
+              <div className="timeline-top small_text cursor-text-wrp">
                 Past - 5/2022 - 2023
               </div>
               <div className="timeline-line">
                 <div className="timeline-content"></div>
               </div>
               <div className="timeline-bottom mt-3">
-                <p className="medium_text mb-3">FPT Aptech VietNam</p>
-                <p className="body_text">Developer</p>
+                <p className="medium_text mb-3 cursor-text-wrp">FPT Aptech VietNam</p>
+                <p className="body_text cursor-text-wrp">Developer</p>
               </div>
             </div>
           </div>
@@ -270,7 +270,7 @@ const About = () => {
         </div>
       </div>
       <div className="page-element container-fluid mt-4 md:my-9">
-        <div className="heading_3 mb-5">
+        <div className="heading_3 mb-5 cursor-text-wrp">
           My Core Values
         </div>
         <div className="md:grid md:grid-cols-12 gap-5">
@@ -280,13 +280,13 @@ const About = () => {
             </div>
             <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border-x border-b border-solid border-ccc">
               <div className="h-full">
-                <div className="medium_text mb-3">Live with passion</div>
-                <div className="body_text">
+                <div className="medium_text mb-3 cursor-text-wrp">Live with passion</div>
+                <div className="body_text cursor-text-wrp">
                   Passion is the driving force behind success and happiness that pushes you to reach your highest potential.
                   “Nothing great in the world has ever been accomplished without passion.” ~ George Hegel
                 </div>
               </div>
-              <div className="heading_6 mt-4">01.</div>
+              <div className="heading_6 mt-4 cursor-text-wrp">01.</div>
             </div>
           </div>
           <div className="col-span-4 border border-solid border-ccc flex-col flex h-full core-hover">
@@ -295,12 +295,12 @@ const About = () => {
             </div>
             <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border-x border-b border-solid border-ccc">
               <div className="h-full">
-                <div className="medium_text mb-3">Eager to learn</div>
-                <div className="body_text">
+                <div className="medium_text mb-3 cursor-text-wrp">Eager to learn</div>
+                <div className="body_text cursor-text-wrp">
                   "Learn from yesterday, live for today, hope for tomorrow. The important thing is to not stop questioning." ~ Arthur Wellesley
                 </div>
               </div>
-              <div className="heading_6">02.</div>
+              <div className="heading_6 cursor-text-wrp">02.</div>
             </div>
           </div>
           <div className="col-span-4 border border-solid border-ccc flex-col flex h-full core-hover">
@@ -309,12 +309,12 @@ const About = () => {
             </div>
             <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border-x border-b border-solid border-ccc">
               <div className="h-full">
-                <div className="medium_text mb-3">Undeterred by the hardships</div>
-                <div className="body_text">
+                <div className="medium_text mb-3 cursor-text-wrp">Undeterred by the hardships</div>
+                <div className="body_text cursor-text-wrp">
                   “Life doesn't require that we be the best, only that we try our best.” ~ H.Jackson Brown, Jr
                 </div>
               </div>
-              <div className="heading_6">03.</div>
+              <div className="heading_6 cursor-text-wrp">03.</div>
             </div>
           </div>
         </div>
@@ -324,7 +324,7 @@ const About = () => {
           <div className="container-fluid">
             <div className="grid grid-cols-12">
               <div className="col-span-1"></div>
-              <div className="col-span-10 heading_4">
+              <div className="col-span-10 heading_4 cursor-text-wrp">
                 “The surest way to make your dreams come true is to live them. Dreams don’t work unless you take action.”
               </div>
               <div className="col-span-1"></div>

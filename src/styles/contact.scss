@@ -32,4 +32,22 @@
       }
     }
   }
+  .roll-animation{
+    left: 1%;
+    bottom: 15%;
+    .contact-roll{
+      .circle{
+        animation: circle 12s linear infinite;
+      }
+      
+    }
+  }
+}
+@keyframes circle{
+  0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
 }
