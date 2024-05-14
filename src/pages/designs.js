@@ -22,6 +22,16 @@ const Designs = () => {
         <div className="project-page pb-8">
             <div className="design-banner">
                 <img src="/images/design/banner-design.png" alt="design-banner2" />
+                <div className="design-banner-content flex justify-center items-center">
+                    <div className="flex m-w gap-2 items-center">
+                        <img style={{width: '120px', height: '120px'}} src="./images/flower-icon.png" alt="logo" loading="lazy" />
+                        <div className="text-white w-full">
+                            <div className="body_text">Welcome to my</div>
+                            <img className="m-2" src="./images/Creative Place.png" alt="logo" />
+                            <div className="body_text">“May the flowers remind us why the rain was so necessary”</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div></div>

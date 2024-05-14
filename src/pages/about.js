@@ -334,7 +334,7 @@ const About = () => {
         </div>
       </div>
       <div class="">
-        <div class="roll">
+        <div class="roll overflow-hidden mb-5">
           <div class="circle">
             <img className="h-[200px] w-full" src="./images/about/roll.svg" alt="logo" loading="lazy" />
           </div>

@@ -57,12 +57,34 @@
 }
 
 .design-banner::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center bottom;
+}
+.design-banner img {
   filter: grayscale(100%);
 }
-img {
-  filter: grayscale(100%);
+.design-banner::before {
+  clip-path: inset(calc(var(--y1, 20%) - 2px) calc(var(--x1, 20%) - 2px) calc(var(--y2, 20%) - 2px) calc(var(--x2, 20%) - 2px));
+  z-index: 1;
 }
 .design-banner::after {
   clip-path: inset(var(--y1, 20%) var(--x1, 40%) var(--y2, 40%) var(--x2, 40%));
-  z-index: 1;
+  z-index: 2;
+}
+.design-banner-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  pointer-events: none;
 }
