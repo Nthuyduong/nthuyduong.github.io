@@ -403,6 +403,8 @@ a{
   }
 }
 .slide-card-item.active {
+  background-color: transparent;
+  border: none;
   opacity: 1;
   z-index: 3;
   .slide-des {
