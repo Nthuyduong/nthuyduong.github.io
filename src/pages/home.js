@@ -56,7 +56,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setTimeout(() => {
       setIndex(index === texts.length - 1 ? 0 : index + 1)
-    }, 2000);
+    }, 1000);
   }, [currentText])
 
   return (
@@ -221,7 +221,7 @@ const Home = () => {
           <div className="my-project">
             <div className="grid grid-cols-12 gap-4">
               <div className="col-span-3 project-odd">
-                <div className="heading_2 mb-2 cursor-text-wrp">01/</div>
+                <div className="heading_3 mb-2 cursor-text-wrp">01.</div>
 
                 <Link to={ROUTER.CAKE}>
                   <img
@@ -230,7 +230,7 @@ const Home = () => {
                     loading="lazy"
                   />
                 </Link>
-                <div className="medium_text mt-3">
+                <div className="heading_6 mt-3 cursor-text-wrp">
                   <Link to={ROUTER.CAKE}>
                     Season Cake Blog
                   </Link>
@@ -240,7 +240,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-span-3 project-even">
-                <div className="heading_2 mb-2 cursor-text-wrp">02/</div>
+                <div className="heading_3 mb-2 cursor-text-wrp">02.</div>
 
                 <Link to={ROUTER.AGURI}>
                   <img
@@ -251,7 +251,7 @@ const Home = () => {
                   />
                 </Link>
 
-                <div className="medium_text mt-3">
+                <div className="heading_6 mt-3 cursor-text-wrp">
                   <Link to={ROUTER.AGURI}>
                     Aguri Jewellery Website
                   </Link>
@@ -261,11 +261,11 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-span-3 project-odd">
-                <div className="heading_2 mb-2 cursor-text-wrp">03/</div>
+                <div className="heading_3 mb-2 cursor-text-wrp">03.</div>
                 <Link to={ROUTER.FASHION}>
                   <img className="w-full project-img" src="./images/design/des-3.webp" alt="logo" loading="lazy" />
                 </Link>
-                <div className="medium_text mt-3">
+                <div className="heading_6 mt-3 cursor-text-wrp">
                   <Link to={ROUTER.FASHION}>Fashion App</Link>
                 </div>
                 <div className="body_text w-full mt-2 cursor-text-wrp">
@@ -273,11 +273,11 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-span-3 project-even">
-                <div className="heading_2 mb-2 cursor-text-wrp">04/</div>
+                <div className="heading_3 mb-2 cursor-text-wrp">04.</div>
                 <Link to={ROUTER.ALIO}>
                   <img className="w-full project-img" src="./images/design/des-4.webp" alt="logo" loading="lazy" />
                 </Link>
-                <div className="medium_text mt-3">
+                <div className="heading_6 mt-3 cursor-text-wrp">
                   <Link to={ROUTER.ALIO}>
                     Alio Yoga Website & App
                   </Link>

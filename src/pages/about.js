@@ -96,7 +96,7 @@ const About = () => {
             <div className="col-span-3">
               <div className="heading_2 md:py-0 py-4 cursor-text-wrp">Self - Introduce</div>
             </div>
-            
+
             <div className="col-span-6">
               <div className="">
                 <div className="about-des body_text">
@@ -319,7 +319,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="mb-4 md:mb-9 text-center">
+      <div className="mb-2 md:mb-6 text-center">
         <div className="last-content heading_4">
           <div className="container-fluid">
             <div className="grid grid-cols-12">
@@ -331,6 +331,13 @@ const About = () => {
             </div>
           </div>
 
+        </div>
+      </div>
+      <div class="">
+        <div class="roll">
+          <div class="circle">
+            <img className="h-[200px] w-full" src="./images/about/roll.svg" alt="logo" loading="lazy" />
+          </div>
         </div>
       </div>
     </div>

@@ -12,11 +12,11 @@ const Contact = () => {
       </div>
       <div className="grid grid-cols-12 gap-4">
         <div className="col-span-1"></div>
-        <div className="col-span-3">
+        <div className="col-span-3 relative">
           <div className="body_text cursor-text-wrp">
             “I welcome any potential recruiters to contact me regarding job opportunities that match my skillset and interests. I am excited to explore new opportunities and connect with professionals in my field”
           </div>
-          <div className="grid grid-cols-2 gap-4 mt-7">
+          <div className="grid grid-cols-2 gap-4 mt-8">
             <div className="cols-span-1">
               <img className="w-full" src="./images/contact/contactpage.png" alt="logo" loading="lazy" />
             </div>
@@ -27,8 +27,8 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div class="roll-animation absolute">
-            <div class="contact-roll">
+          <div class="roll-animation contact-roll absolute">
+            <div class="roll">
               <div class="circle">
                 <img className="h-[200px] w-full" src="./images/contact/contact-roll.svg" alt="logo" loading="lazy" />
               </div>

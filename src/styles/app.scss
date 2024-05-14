@@ -7,10 +7,10 @@ $heading_2: 46px;
 $heading_3: 38px;
 $heading_4: 32px;
 $heading_5: 28px;
-$heading_6: 22px;
+$heading_6: 18px;
 $medium_text: 16px;
 $body_text: 14px;
-$small_text: 12px;
+$small_text: 13px;
 
 //IMPORT
 @import "layout";
@@ -62,12 +62,12 @@ a{
   line-height: $heading_3*1.15;
 }
 .heading_4 {
-  font-family: 'AmericanaBT', serif;
+  font-family: 'SFUFutura', serif;
   font-size: $heading_4;
   line-height: $heading_4*1.25;
 }
 .heading_5 {
-  font-family: 'AmericanaBT', serif;
+  font-family: 'SFUFutura', serif;
   font-size: $heading_5;
   line-height: $heading_5*1.25;
 }

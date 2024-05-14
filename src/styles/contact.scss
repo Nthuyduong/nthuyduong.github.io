@@ -1,53 +1,63 @@
 .contact-page {
   .contact-element {
     padding-top: 60px;
+
     .contact-content {
       padding: 100px 0;
       background: #E1DDD6;
       display: flex;
       flex-direction: column;
       align-items: center;
+
       .img-container {
         width: 140px;
       }
+
       .contact-des {
         text-align: center;
       }
+
       .title {
         padding-bottom: 10px;
         padding-top: 40px;
       }
+
       .line {
         width: 132px;
         border-top: 1px solid #000000;
         padding-bottom: 40px;
       }
+
       .contact-phone {
         padding-bottom: 20px;
         padding-top: 60px;
         text-decoration: underline;
       }
+
       .contact-mail {
         text-decoration: underline;
       }
     }
   }
-  .roll-animation{
-    left: 1%;
-    bottom: 15%;
-    .contact-roll{
-      .circle{
-        animation: circle 12s linear infinite;
-      }
-      
-    }
+}
+
+.roll-animation {
+  left: -29%;
+  bottom: 2%;
+}
+
+.roll {
+  .circle {
+    animation: circle 12s linear infinite;
   }
 }
-@keyframes circle{
+
+@keyframes circle {
   0% {
     transform: rotate(0deg);
-}
-100% {
+  }
+
+  100% {
     transform: rotate(360deg);
-}
+  }
 }
