@@ -390,7 +390,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="flex flex-col-reverse gap-4 sm:mt-4 justify-end sm:flex-row sm:justify-between w-full">
-                <div className="col-span-2">
+                <div className="col-span-2 w-full">
                   <img className="w-full" src="./images/home/contact-home.png" alt="logo" loading="lazy" />
                 </div>
                 <div className="col-span-2 flex sm:self-end w-full">
