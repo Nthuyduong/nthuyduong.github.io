@@ -7,7 +7,6 @@
   background-image: url("../img/Showcase.png");
   position: relative;
   height:420px;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -202,7 +201,7 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   body{
     .home-page{
       .home-info3{
@@ -212,12 +211,12 @@
       }
     }
     .active{
-      justify-content: left;
+      justify-content: center;
       padding-left: 20px;
     }
     .container-fluid{
-      padding-left: 35px !important;
-      padding-right:35px !important;
+      padding-left: 20px;
+      padding-right:20px;
     }
     .body_text {
       font-size: 12px;
@@ -234,15 +233,21 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body {
     .active{
       justify-content: left;
       padding-left: 20px;
     }
     .container-fluid{
-      padding-left: 35px !important;
-      padding-right:35px !important;
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+    .ntd-showcase {
+      padding: 0px !important;
+    }
+    .showcase-img {
+      height: 200px;
     }
     .body_text {
       font-size: 12px;
@@ -258,12 +263,71 @@
     }
     .home-page{
       .home-info3{
+        padding-top: 40px;
+        padding-bottom: 40px;
         .text-large{
           font-size:54px;
+        }
+        position: relative;
+        .child3 {
+          position: absolute;
+          top: 0;
+          right: 0;
+          max-width: 100px;
+        }
+        .child2 {
+          position: absolute;
+          right: 0;
+          max-width: 100px;
+          bottom: 40px;
+        }
+        .brands-left {
+          min-width: 50%;
+        }
+        .heading_2 {
+          font-size: 23px;
+          line-height: normal;
+        }
+        .text-large {
+          font-size: 35px;
+          line-height: normal;
         }
       }
       .home-info2{
 
+      }
+      .home-info {
+        padding-bottom: 0;
+      }
+      .home-info .info-content {
+        margin-left: 0px;
+      
+      }
+      .ntd-name {
+        font-size: 25px;
+      }
+    }
+    .my-design {
+      margin-bottom: 30px;
+      .my-des-title {
+        padding-top: 40px;
+      }
+      .text-large-2 {
+        font-size: 35px;
+        line-height: 50px;
+      }
+      .heading_1 {
+        font-size: 35px;
+        line-height: 50px;
+      }
+      .decor-line {
+        width: 20%;
+        align-self: end;
+      }
+    }
+    .my-project {
+      img {
+        filter: grayscale(0);
       }
     }
   }

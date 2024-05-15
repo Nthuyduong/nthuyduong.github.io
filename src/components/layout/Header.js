@@ -5,6 +5,15 @@ import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 
 const Header = () => {
+  const { pathname } = useLocation();
+
+  const [openMobileMenu, setOpenMobileMenu] = useState(false);
+  const [openNavDropdown, setOpenNavDropdown] = useState(false);
+
+  useEffect(() => {
+    setOpenMobileMenu(false);
+    setOpenNavDropdown(false);
+  }, [pathname]);
 
   // //Hover NavDropdown
   // const [isOpen, setIsOpen] = useState(false);
@@ -66,35 +75,49 @@ const Header = () => {
   return (
     <div className="">
       <nav className="border-b border-solid border-ccc">
-        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-          <div className="relative flex h-16 items-center justify-between">
-            <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <div className="mx-auto max-w-7xl sm:px-2 sm:px-6 lg:px-8">
+          <div className="relative flex h-16 items-center justify-center flex-col w-full">
+            <div className={`header-mobile inset-y-0 left-0 flex items-center sm:hidden flex-col w-full ${openMobileMenu? 'header-mobile-open' : ''}`}>
               {/*Mobile menu button*/}
-              <button type="button"
-                className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                aria-controls="mobile-menu" aria-expanded="false">
-                <span className="absolute -inset-0.5"></span>
-                <span className="sr-only">Open main menu</span>
+              <div type="button"
+                className="w-full relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu" aria-expanded="false"
+                onClick={() => setOpenMobileMenu(!openMobileMenu)}
+              >
+                <div className="flex gap-1">
+                  Menu
+                  <img className='btn-header-mobile' src="/images/arrow-down.png" alt=""/>
+                </div>
+              </div>
+              <div className="w-full flex flex-col header-mobile-menu">
+                <Link to="/" className="cursor-text-wrp text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 text-4xl font-medium" aria-current="page">Home</Link>
+                <Link to={ROUTER.ABOUT} className="cursor-text-wrp text-gray-300 hover:text-white rounded-md px-3 text-4xl font-medium">About</Link>
+                <div className="header-nav-item relative header-mobile-navdrop px-3">
+                  <div 
+                    className="navdrop-title z-50 text-gray-300 hover:text-gray rounded-md pr-3 flex w-full"
+                    onClick={() => setOpenNavDropdown(!openNavDropdown)}
+                  >
+                    <Link to={ROUTER.DESIGNS} className="text-4xl font-medium dark:text-white flex nav-link"><span className="nav-text">Projects</span></Link>
+                    <span className="w-full">(04)</span>
+                  </div>
+                  <div className={`navdrop-mobile-inner left-30 w-48 ${openNavDropdown ? 'navdrop-mobile-inner-open': ''}`}>
+                    <div className="sub-menu block px-4 text-xl text-gray-700">
+                      <Link to={ROUTER.AGURI} className="nav-link">Jewelry Website</Link>
+                    </div>
+                    <div className="sub-menu block px-4 text-xl text-gray-700">
+                      <Link to={ROUTER.ALIO} className="nav-link">Yoga App & Website</Link>
+                    </div>
+                    <div className="sub-menu block px-4 text-xl text-gray-700">
+                      <Link to={ROUTER.CAKE} className="nav-link">Cake Blog</Link>
+                    </div>
+                    <div className="sub-menu block px-4 text-xl text-gray-700">
+                      <Link to={ROUTER.FASHION} className="nav-link">Fashion Brand App</Link>
+                    </div>
+                  </div>
+                </div>
 
-                {/*Icon when menu is closed.*/}
-
-                {/*Menu open: "hidden", Menu closed: "block"*/}
-
-                <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                  aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-
-                {/*Icon when menu is open.*/}
-
-                {/*Menu open: "block", Menu closed: "hidden"*/}
-
-                <svg className="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                  aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
+                <Link to={ROUTER.CONTACT} className="text-gray-300 hover:text-white rounded-md px-3 text-4xl font-medium cursor-text-wrp">Contact</Link>
+              </div>
             </div>
             <div className="my-header flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="hidden w-full md:block">
@@ -107,9 +130,7 @@ const Header = () => {
                   {/* Dropdown menu */}
                   <div className="header-nav-item relative header-navdrop">
                     <div className="navdrop-title z-50 text-gray-300 hover:text-gray rounded-md pr-3 py-4">
-                      <Link to={ROUTER.DESIGNS} className="text-sm font-medium dark:text-white flex nav-link"><span className="nav-text">Projects</span>
-                        
-                      </Link>
+                      <Link to={ROUTER.DESIGNS} className="text-sm font-medium dark:text-white flex nav-link"><span className="nav-text">Projects</span></Link>
                     </div>
                     <div className="navdrop-inner absolute left-30 w-48 py-1 border-solid border-x border-b border-ccc">
                       <div className="sub-menu block px-4 py-2 text-sm text-gray-700">
