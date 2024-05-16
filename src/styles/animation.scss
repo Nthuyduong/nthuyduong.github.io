@@ -112,7 +112,7 @@
   transform: translate(-50%, -50%);
   transition: width 0.3s, height 0.3s, background 0.3s;
   pointer-events: none;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   background-color: black;
   border: none;
   z-index: 999999999999;
@@ -130,7 +130,7 @@
   width: 18px;
   height: 18px;
   background-color: transparent;
-  backdrop-filter: blur(2px);
+  // backdrop-filter: blur(1px);
   border: solid 1px black;
   background-image: none;
 }
