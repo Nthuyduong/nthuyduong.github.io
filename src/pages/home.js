@@ -103,27 +103,12 @@ const Home = () => {
                   <div><img className="img-smile" src="./images/icons/smile.svg" alt="smile" loading="lazy" /></div>
                 </div>
               </div>
-<<<<<<< Updated upstream
-              <div className="slide-card-item heading_1 text-center text-black">
-                <div className="heading_3 text-center text-black">"Welcome to my creative world!"</div>
-              </div>
-              <div className="slide-card-item heading_1 text-center text-black">
-                <div className="heading_3 text-center text-black">"I'm delighted to share my portfolio with you!"</div>
-              </div>
-              <div className="slide-card-item heading_1 text-center text-black">
-                <div className="heading_3 text-center text-black">"I'm delighted to share my portfolio with you!"</div>
-              </div>
-              <div className="slide-card-item heading_1 text-center text-black">
-                <div className="heading_3 text-center text-black">"I'm delighted to share my portfolio with you!"</div>
-=======
               <div className="slide-card-item heading_1 text-center">
                 <div className="heading_3 text-center text-white">"I'm delighted to share my portfolio with you!"</div>
               </div>
               <div className="slide-card-item heading_1 text-center">
                 <div className="heading_3 text-center text-white">"I'm delighted to share my portfolio with you!"</div>
-
->>>>>>> Stashed changes
-              </div>
+              </div> 
             </CardSlider>
             {/* <span className="heading_5 text-white">Hello</span><span><img className="img-smile" src="./images/icons/smile.svg" alt="smile" loading="lazy"/></span>
               <span><img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/></span><span className="heading_5 text-white">Welcome to my website.</span>
