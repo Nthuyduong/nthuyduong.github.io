@@ -74,7 +74,7 @@ const Home = () => {
           </div>
           <div className="sm:hidden showcase-img"></div>
           <div className="col-span-4 body_text text-right border-b border-[#ccc] sm:border-none">
-            <div className="mb-3 cursor-text-wrp text-center sm:text-left">
+            <div className="mt-3 md:mt-0 mb-3 cursor-text-wrp text-center sm:text-left">
               “I'm creative, open-minded and a fast learner. I have a strong desire to know, to understand, to grow,
               to create, to transform, to improve and to share. My dream is to improve people's lives through my designs”
             </div>
@@ -108,7 +108,7 @@ const Home = () => {
               </div>
               <div className="slide-card-item heading_1 text-center">
                 <div className="heading_3 text-center text-white">"I'm delighted to share my portfolio with you!"</div>
-              </div> 
+              </div>
             </CardSlider>
             {/* <span className="heading_5 text-white">Hello</span><span><img className="img-smile" src="./images/icons/smile.svg" alt="smile" loading="lazy"/></span>
               <span><img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/></span><span className="heading_5 text-white">Welcome to my website.</span>
@@ -119,11 +119,11 @@ const Home = () => {
       <div>
 
       </div>
-      <div className="container-fluid mt-5 mb-7 ">
+      <div className="container-fluid mt-2 mb-4 md:mt-5 md:mb-7">
         <div className="md:grid md:grid-cols-12 gap-4">
           <div className="col-span-5 d-flex">
             <div className="info-content body_text flex sm:block justify-between items-center">
-              19/08/1998 <span className="hidden sm:block">__________</span>
+              19/08/1998
               <div className="heading_4 sm:mt-3 cursor-text-wrp hidden sm:block">
                 I’m UX/UI Designer
               </div>
@@ -400,8 +400,8 @@ const Home = () => {
             <div className="col-span-1"></div>
             <div className="col-span-12 sm:col-span-7 contact-form">
               {/*<form className="contact-form" onSubmit={sendEmail}>*/}
-              <div className="grid grid-cols-12 gap-4 first-line-contact">
-                <div className="col-span-6 customer-name contact_field">
+              <div className="md:grid md:grid-cols-12 gap-4 first-line-contact">
+                <div className="mb-4 md:mb-0 col-span-6 customer-name contact_field">
                   <label className="mb-1 cursor-text-wrp">Your Name *</label>
                   <input className="border-solid border-b border-ccc focus:outline-none focus:border-b focus:border-333" type="text" required />
                 </div>

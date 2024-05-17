@@ -37,7 +37,7 @@ const About = () => {
       </div> */}
       {/* New banner */}
       <div className="page-element bg-primary">
-        <div className="container-fluid about1">
+        <div className="container-fluid about1 md:py-0 py-6">
           <div className="md:grid md:grid-cols-12 gap-5">
             <div className="col-span-1"></div>
             <div className="col-span-4">
@@ -45,7 +45,7 @@ const About = () => {
             </div>
             <div className="col-span-6 flex items-center">
               <div className="">
-                <div className="heading_5 mb-4 animate slideInUp animate--delay-fast cursor-text-wrp">
+                <div className="md:mt-0 mt-4 heading_5 mb-4 animate slideInUp animate--delay-fast cursor-text-wrp">
                   So glad to see you here!
                 </div>
                 <div className="mb-3 animate slideInUp animate--delay-slow cursor-text-wrp">Dear all</div>
@@ -99,13 +99,13 @@ const About = () => {
 
             <div className="col-span-6">
               <div className="">
-                <div className="about-des body_text">
+                <div className=" body_text">
                   At just 24 years old, I was always driven to find my true passion in life. After trying a few different jobs, I discovered UX/UI design and suddenly everything fell into place. I realized that this was my true passion and I was determined to pursue a career in this field. Although I am relatively new to this industry, I have worked hard to learn a lot during the past 2 years. Now I am eager to gain hands-on experience and contribute to real-world projects in the field of UX/UI Design. I believe that with a strong sense of purpose and passion for design, I can make a valuable contribution to any organization looking for a dedicated and dynamic UX/UI Designer.
                 </div>
-                <div className="about-title cursor-text-wrp">
+                <div className="medium_text mb-2 cursor-text-wrp">
                   Basic Information
                 </div>
-                <div className="about-info body_text">
+                <div className="flex items-center body_text">
                   Birthday: 19/08/1998
                   <img className="about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   Nationality: Local Vietnamese
@@ -114,10 +114,10 @@ const About = () => {
                   <img className="about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   Gender: Female
                 </div>
-                <div className="about-title cursor-text-wrp">
+                <div className="medium_text mb-2 md:mt-5 cursor-text-wrp">
                   Hobbies
                 </div>
-                <div className="about-info pb-0 body_text cursor-text-wrp">
+                <div className="flex items-center pb-0 body_text cursor-text-wrp">
                   Reading
                   <img className="about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   Drawing
