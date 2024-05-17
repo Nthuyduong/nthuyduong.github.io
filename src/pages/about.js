@@ -147,7 +147,7 @@ const About = () => {
             </div>
             <div className="col-span-1" />
             <div className="col-span-1 skill-title body_text cursor-text-wrp">
-              DESIGN TOOLS
+              DESIGN SOFTWARE
             </div>
             <div className="col-span-2 skill-container">
               <div className="flex pb-1 border-b border-solid border-ccc mb-2">
@@ -166,10 +166,19 @@ const About = () => {
                 <div className="cursor-text-wrp body_text mr-auto">04/</div>
                 <div className="cursor-text-wrp skill-name body_text">Adobe Indesign</div>
               </div>
-              <div className="flex">
+              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
                 <div className="cursor-text-wrp body_text mr-auto">05/</div>
                 <div className="cursor-text-wrp skill-name body_text">Adobe XD</div>
               </div>
+              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
+                <div className="cursor-text-wrp body_text mr-auto">06/</div>
+                <div className="cursor-text-wrp skill-name body_text">Shopify</div>
+              </div>
+              <div className="flex">
+                <div className="cursor-text-wrp body_text mr-auto">07/</div>
+                <div className="cursor-text-wrp skill-name body_text">Wordpress</div>
+              </div>
+              
             </div>
             <div className="col-span-1" />
             <div className="col-1 skill-title body_text">
@@ -190,11 +199,11 @@ const About = () => {
               </div>
               <div className="flex pb-1 border-b border-solid border-ccc mb-2">
                 <div className="cursor-text-wrp body_text mr-auto">04/</div>
-                <div className="cursor-text-wrpskill-name body_text">ReactJS</div>
+                <div className="cursor-text-wrpskill-name body_text">ReactJS / Nextjs</div>
               </div>
               <div className="flex pb-1 border-b border-solid border-ccc mb-2 boder-none">
                 <div className="cursor-text-wrp body_text mr-auto">05/</div>
-                <div className="cursor-text-wrp skill-name body_text">Workpress</div>
+                <div className="cursor-text-wrp skill-name body_text">Angular</div>
               </div>
             </div>
           </div>
