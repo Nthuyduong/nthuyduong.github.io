@@ -259,7 +259,11 @@ a{
   justify-content: center;
   align-items: center;
 }
+
 .my-header{
+  z-index: 1000;
+  transition: top .3s linear, opacity 0s;
+  background: #fff;
   .header-navdrop{
     .navdrop-inner{
       z-index: 3000;
@@ -457,6 +461,9 @@ a{
 }
 
 @media screen and (max-width: 768px) {
+  .my-header {
+    display: none!important;
+  }
   .slide-card-item.before {
       z-index: 2;
       opacity: 1;
@@ -524,15 +531,20 @@ a{
   width: 60px;
 }
 .header-mobile {
+  transition: top .3s linear, opacity 0s;
+  background: #fff;
+  z-index: 1;
   .header-mobile-menu {
     position: fixed;
     top: 52px;
     left: 0;
     height: 100%;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(55px);
+    background: rgba(255, 255, 255, 0.4);
     transition: all 0.5s ease;
     opacity: 0;
     z-index: -1;
+    pointer-events: none;
   }
   .btn-header-mobile {
     transition: all 0.3s ease;
@@ -545,6 +557,7 @@ a{
   .header-mobile-menu {
     opacity: 1;
     z-index: 1000;
+    pointer-events: all;
   }
 }
 .navdrop-mobile-inner {
@@ -559,4 +572,29 @@ a{
   opacity: 1;
   height: 130px;
 
+}
+
+body:has(.header-mobile-open) {
+  overflow: hidden;
+  height: 100vh;
+}
+.section-full {
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+}
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 0 15px;
+  }
+  
+}
+.m-w{
+  width: 100%;
+  max-width: 1100px;
 }

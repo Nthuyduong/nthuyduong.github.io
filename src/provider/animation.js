@@ -10,6 +10,37 @@ export const AnimationProvider = ({ children }) => {
     const { pathname } = useLocation();
 
     useEffect(() => {
+        const handleAccordion = () => {
+            const arrcordions = document.querySelectorAll('.my-collapse');
+
+            arrcordions.forEach((accordion) => {
+                if (accordion.classList.contains('expanded')) {
+                    const content = accordion.querySelector('.content-container');
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                }
+
+                accordion.addEventListener('click', function(e) {
+                    const parent = e.target.closest('.my-collapse');
+                    
+                    if (parent) {
+                        const content = parent.querySelector('.content-container');
+                        if (parent.classList.contains('expanded')) { 
+                            parent.classList.remove('expanded');
+                            content.style.maxHeight = '0px';
+                        } else {
+                            arrcordions.forEach((collapse, i) => {
+                                collapse.classList.remove('expanded');
+                                collapse.querySelector('.content-container').style.maxHeight = '0px';
+                            });
+                            parent.classList.add('expanded');
+                            content.style.maxHeight = content.scrollHeight + 'px';
+                        }
+                    }
+                });
+            });
+        }
+        handleAccordion();
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
@@ -63,8 +94,7 @@ export const AnimationProvider = ({ children }) => {
             cursor.style.top = `${y}px`;
         }
 
-        var text = Array.from(document.querySelectorAll('p, span, body_text, .cursor-text-wrp'));
-        console.log(text);
+        var text = Array.from(document.querySelectorAll('p, span, body_text, .cursor-text-wrp'));  
 
         text.forEach(text => {
             text.addEventListener('mousemove', function() {

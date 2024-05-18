@@ -1,9 +1,9 @@
 import React, { useState, Children, cloneElement, useEffect, useRef } from "react";
 
 const Slider = ({
-                    configs,
-                    children
-                }) => {
+    configs,
+    children
+}) => {
 
     const ref = useRef(null);
     const refWrp = useRef(null);
@@ -19,7 +19,10 @@ const Slider = ({
         autoDuration: 1000,
         gap: 10,
         gapMobile: 10,
+        navigator: true,
         process: false,
+        paginate: false,
+        active: 0,
     }
 
     // toán tử spread (...) để tạo một bản sao của tất cả các thuộc tính trong đối tượng defaultConfigs
@@ -28,7 +31,7 @@ const Slider = ({
 
     //Khai báo các biến với giá trị ban đầu bằng 0
     //active: vị trí slide hiện tại
-    const [active, setActive] = useState(0);
+    const [active, setActive] = useState(configs.active);
     //khai báo biến trạng thái của hai nút
     const [disableNext, setDisableNext] = useState(false);
     const [disablePrev, setDisablePrev] = useState(true);
@@ -40,18 +43,19 @@ const Slider = ({
 
     //Nếu độ rộng của trình duyệt > 768 => sliderPerRow = sliderPerRow (3) còn không thì sẽ là sliderPerMobile (2.5)
     //dùng configs để ghi đè giá trị tương ứng của defaultConfigs
-    var sliderPerRow = window?.outerWidth > 768 ? configs.sliderPerRow : configs.sliderPerRowMobile;
-    var scrollLeft = refContent.current?.scrollLeft;
+    let sliderPerRow = window?.outerWidth > 768 ? configs.sliderPerRow : configs.sliderPerRowMobile;
+    let scrollLeft = refContent.current?.scrollLeft;
 
     //Tính toán số lượng slide tối đa có thể di  (tổng số slide - số slide hiển thị/ row)
-    var maxSlide = countChildren > sliderPerRow ? countChildren - sliderPerRow : sliderPerRow;
+    let maxSlide = countChildren > sliderPerRow ? countChildren - sliderPerRow : 0;
+
     //Tính toán kích thước của một slide (100% / số slide hiển thị trên một hàng)
-    var gap = window?.outerWidth > 768 ? configs.gap : configs.gapMobile;
+    let gap = window?.outerWidth > 768 ? configs.gap : configs.gapMobile;
 
     useEffect(() => {
         handleResize();
     }, [window.outerWidth]);
-
+    
 
     //giá trị trong hàm callback (active) thay đổi thì hàm callback sẽ được gọi tới để kích hoạt hàm runSlider
     useEffect(() => {
@@ -63,7 +67,6 @@ const Slider = ({
         // window.addEventListener('resize', handleResize);
         window.addEventListener('orientationchange', handleResize);
         if (refProcess.current) {
-            console.log();
             refProcess.current.style.width = `${(100 / countChildren) * sliderPerRow}%`;
         }
         refContent.current.addEventListener('scroll', handleScroll);
@@ -94,14 +97,14 @@ const Slider = ({
         //tính số lượng slide sẽ hiển thị trên một hàng, cách tính như ở trên
         //configs ghi đè thuộc tính của defaultConfigs width trình duyệt > 768
         sliderPerRow = window.innerWidth > 768 ? configs.sliderPerRow : configs.sliderPerRowMobile;
-        maxSlide = countChildren > sliderPerRow ? countChildren - sliderPerRow : sliderPerRow;
+        maxSlide = countChildren > sliderPerRow ? countChildren - sliderPerRow : 0;
         gap = window.innerWidth > 768 ? configs.gap : configs.gapMobile;
         runSlider();
     }
 
     //hàm run slider
     const runSlider = () => {
-        var slides = ref.current.children;
+        let slides = ref.current.children;
         if (slides.length === 0) return;
         // Cập nhật chiều rộng của slider container
         ref.current.style.width = `calc(${(countChildren / sliderPerRow) * 100 + '%'} + ${(gap * maxSlide) / sliderPerRow + 'px'})`;
@@ -113,7 +116,7 @@ const Slider = ({
                 behavior: "smooth",
             });
         }
-
+        
 
         //nếu có auto slide thì thiết lập timeout
         if (configs.auto) {
@@ -130,13 +133,12 @@ const Slider = ({
     }
 
     const resolveButton = () => {
-        console.log(isDisablePrev())
         if (isDisablePrev()) {
             setDisablePrev(true);
         } else {
             setDisablePrev(false);
         }
-
+        
         if (isDisableNext()) {
             setDisableNext(true);
         } else {
@@ -196,40 +198,52 @@ const Slider = ({
             className="slider-wrp"
             ref={refWrp}
         >   <div className="overflow-hidden">
-            <div className="slider-content" ref={refContent}>
-                <div
-                    className="slider-items"
-                    ref={ref}
-                    style={{
-                        width: `var(${(countChildren / configs.sliderPerRow) * 100}% + ${(gap * maxSlide) / configs.sliderPerRow}px)`,
-                        "--transition-duration": `${configs.duration ?? 400}ms`,
-                        "--slide-gap": `${configs.gap ?? 0}px`,
-                        "--slide-gap-mobile": `${configs.gapMobile ?? 0}px`,
-                    }}
-                >
-                    {Children.map(children, (child, index) => {
-                        return cloneElement(child, {
-                            className: `slider-item ${child.props.className} ${active === index ? 'slide-active' : ''}`,
-                        })
-                    })}
+                <div className="slider-content" ref={refContent}>
+                    <div
+                        className="slider-items"
+                        ref={ref}
+                        style={{ 
+                            width: `var(${(countChildren / configs.sliderPerRow) * 100}% + ${(gap * maxSlide) / configs.sliderPerRow}px)`, 
+                            "--transition-duration": `${configs.duration ?? 400}ms`,
+                            "--slide-gap": `${configs.gap ?? 0}px`,
+                            "--slide-gap-mobile": `${configs.gapMobile ?? 0}px`,
+                        }}
+                    >
+                        {Children.map(children, (child, index) => {
+                            return cloneElement(child, {
+                                className: `slider-item ${child.props.className} ${active === index ? 'slide-active' : ''}`,
+                            })
+                        })}
+                    </div>
                 </div>
             </div>
-        </div>
-
-            <div className="slider-control">
-                <div className={`prev-button ${ disablePrev ? 'btn-disable': '' }`}>
-                    <button className="my-prev-btn bg-white dark:bg-black" onClick={prevSlide}>
-                        <img className="w-full icon-sm dark:hidden" src="/img/icon/chevron-left-black.svg" alt="smile" loading="lazy"/>
-                        <img className="w-full icon-sm hidden dark:block" src="/img/icon/chevron-left.svg" alt="smile" loading="lazy"/>
-                    </button>
+            {configs.navigator && (
+                <div className="slider-control">
+                    <div className={`prev-button ${ disablePrev ? 'btn-disable': '' }`}>
+                        <button className="my-prev-btn bg-white dark:bg-black" onClick={prevSlide}>
+                            <img className="w-full icon-sm dark:hidden" src="/img/icon/chevron-left-black.svg" alt="smile" loading="lazy"/>
+                            <img className="w-full icon-sm hidden dark:block" src="/img/icon/chevron-left.svg" alt="smile" loading="lazy"/>
+                        </button>
+                    </div>
+                    <div className={`next-button ${ disableNext ? 'btn-disable': ''}`}>
+                        <button className="my-next-btn bg-white dark:bg-black" onClick={nextSlide}>
+                            <img className="w-full icon-sm dark:hidden" src="/img/icon/chevron-right-black.svg" alt="smile" loading="lazy"/>
+                            <img className="w-full icon-sm hidden dark:block" src="/img/icon/chevron-right.svg" alt="smile" loading="lazy"/>
+                        </button>
+                    </div>
                 </div>
-                <div className={`next-button ${ disableNext ? 'btn-disable': ''}`}>
-                    <button className="my-next-btn bg-white dark:bg-black" onClick={nextSlide}>
-                        <img className="w-full icon-sm dark:hidden" src="/img/icon/chevron-right-black.svg" alt="smile" loading="lazy"/>
-                        <img className="w-full icon-sm hidden dark:block" src="/img/icon/chevron-right.svg" alt="smile" loading="lazy"/>
-                    </button>
+            )}
+            {configs.paginate && (
+                <div className="slider-paginate">
+                    {Array.from({ length: countChildren }, (_, i) => (
+                        <div
+                            key={i}
+                            className={`paginate-item ${active === i ? 'active' : ''}`}
+                            onClick={() => changeSlide(i)}
+                        ></div>
+                    ))}
                 </div>
-            </div>
+            )}
             {configs.process && (
                 <div className="slider-process" >
                     <div ref={refProcess} className="process-wrp bg-black dark:bg-white" ></div>

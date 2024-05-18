@@ -61,7 +61,7 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      <div className="page-element home-info container-fluid">
+      <div className="section page-element home-info">
         <div className="md:grid md:grid-cols-12">
           <div className="col-span-8 md:flex">
             <img className="md:block hidden main-logo" src="./images/home/logo-icon.svg" alt="logo" loading="lazy" />
@@ -84,7 +84,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="container-fluid ntd-showcase hidden sm:block">
+      <div className="section ntd-showcase hidden sm:block">
         <div className="showcase-img">
           <div className="sentence-container">
             <CardSlider
@@ -116,10 +116,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div>
-
-      </div>
-      <div className="container-fluid mt-2 mb-4 md:mt-5 md:mb-7">
+      <div className="section mt-2 mb-4 md:mt-5 md:mb-7">
         <div className="md:grid md:grid-cols-12 gap-4">
           <div className="col-span-5 d-flex">
             <div className="info-content body_text flex sm:block justify-between items-center">
@@ -140,8 +137,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="page-element">
-        <div className="container-fluid home-info3">
+      <div className="section-full page-element bg-[#E7E4DE]">
+        <div className="home-info3 m-w">
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12 sm:col-span-6 child1">
               <div>
@@ -178,9 +175,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="section">
         <div className="my-design">
-          <div className="container-fluid">
+          <div className="">
             <div className="grid grid-cols-12 my-des-title">
               <div className="col-span-10 sm:col-span-6">
                 <div className="flex">
@@ -221,7 +218,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container-fluid">
+        <div className="">
           <div className="my-project">
             <div className="grid grid-cols-12 gap-4">
               <div className="col-span-6 sm:col-span-3 project-odd">
@@ -358,7 +355,7 @@ const Home = () => {
           </div>
         </div> */}
       {/*DECOR TEXT*/}
-      <div className="scroll-container text-decor mt-8">
+      <div className="section-full scroll-container text-decor mt-8">
         <Scroller>
           <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
           <div className="heading_4 cursor-text-wrp">HELLO MY NAME IS NGUYEN THUY DUONG</div>
@@ -370,8 +367,8 @@ const Home = () => {
         </Scroller>
       </div>
       {/*Contact me*/}
-      <div className="send_message">
-        <div className="container-fluid">
+      <div className="section send_message mt-8">
+        <div className="">
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12 sm:col-span-4 flex flex-row-reverse sm:flex-col gap-2">
               <div className="flex flex-col-reverse sm:flex-row gap-4 w-full">

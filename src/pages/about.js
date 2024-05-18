@@ -1,6 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, act } from "react";
+import Slider from "../components/common/slider";
 
 const About = () => {
+
+  const skills = [
+    {
+      title: 'Design Tools',
+      skills: ['Figma', 'Adobe Illustrator', 'Adobe Photoshop', 'Adobe Indesign', 'Adobe XD', 'Shopify', 'Wordpress']
+    },
+    {
+      title: 'Tech Stack',
+      skills: ['HTML/SCSS', 'Tailwind/Bootstrap', 'JavaScript', 'ReactJS / Nextjs', 'Angular']
+    }
+  ]
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -85,8 +97,8 @@ const About = () => {
           </div>
         </div>
       </div> */}
-      <div className="page-element mt-4 md:mt-9">
-        <div className="container-fluid about2">
+      <div className="page-element section mt-4 md:mt-9">
+        <div className="about2">
           <div className="md:grid md:grid-cols-12 gap-5">
             <div className="col-span-3">
               <div className="img-container">
@@ -134,7 +146,7 @@ const About = () => {
       <div className="page-element py-8 bg-primary mt-4 md:mt-9">
         <div className="container-fluid">
           <div className="md:grid md:grid-cols-12 gap-5">
-            <div className="col-span-4 skill-common">
+            <div className="col-span-4 skill-common mb-2">
               <div className="heading_3 mb-4 cursor-text-wrp">
                 My Skills
               </div>
@@ -145,67 +157,49 @@ const About = () => {
                 “Learning new things brings me joy and satisfaction, as it allows me to grow, become more knowledgeable, and improve myself every day”
               </div>
             </div>
-            <div className="col-span-1" />
-            <div className="col-span-1 skill-title body_text cursor-text-wrp">
-              DESIGN SOFTWARE
-            </div>
-            <div className="col-span-2 skill-container">
-              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
-                <div className="cursor-text-wrp body_text mr-auto">01/</div>
-                <div className="cursor-text-wrp skill-name body_text">Figma</div>
+            {skills.map((skill, index) => (
+              <div className="col-span-4 flex flex-col gap-2" key={index}>
+                <div className="hidden sm:flex flex-col gap-2">
+                  <div className="skill-title body_text cursor-text-wrp font-bold">
+                    {skill.title}
+                  </div>
+                  <div className="skill-container w-[70%] self-end">
+                    {skill.skills.map((skill, index) => (
+                      <div className="flex pb-1 border-b border-solid border-ccc mb-2" key={index}>
+                        <div className="cursor-text-wrp body_text mr-auto">{index + 1}/</div>
+                        <div className="cursor-text-wrp skill-name body_text">{skill}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className={`my-collapse dark:border-b dark:border-ccc ${index == 0 ? 'expanded': ''}`}>
+                  <div className="question-container flex">
+                    <div className="question mr-auto font-bold">
+                      {skill.title}
+                    </div>
+                    <div className="btn-question flex justify-center items-center">
+                        <svg role="presentation" focusable="false" width="12" height="9"
+                            className="icon icon-chevron-bottom-small" viewBox="0 0 8 6">
+                            <path d="m1 1.5 3 3 3-3" fill="none" stroke="currentColor"
+                                strokeWidth="1.5"></path>
+                        </svg>
+                    </div>
+                  </div>
+                  <div className={`content-container block sm:hidden`}>
+                    <div className="flex justify-end">
+                      <div className="skill-container w-[70%] pt-2">
+                        {skill.skills.map((skill, index) => (
+                          <div className="flex pb-1 border-b border-solid border-ccc mb-2" key={index}>
+                            <div className="cursor-text-wrp body_text mr-auto">{index + 1}/</div>
+                            <div className="cursor-text-wrp skill-name body_text">{skill}</div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
-                <div className="cursor-text-wrp body_text mr-auto">02/</div>
-                <div className="cursor-text-wrp skill-name body_text">Adobe Illustrator</div>
-              </div>
-              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
-                <div className="cursor-text-wrp body_text mr-auto">03/</div>
-                <div className="cursor-text-wrp skill-name body_text">Adobe Photoshop</div>
-              </div>
-              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
-                <div className="cursor-text-wrp body_text mr-auto">04/</div>
-                <div className="cursor-text-wrp skill-name body_text">Adobe Indesign</div>
-              </div>
-              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
-                <div className="cursor-text-wrp body_text mr-auto">05/</div>
-                <div className="cursor-text-wrp skill-name body_text">Adobe XD</div>
-              </div>
-              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
-                <div className="cursor-text-wrp body_text mr-auto">06/</div>
-                <div className="cursor-text-wrp skill-name body_text">Shopify</div>
-              </div>
-              <div className="flex">
-                <div className="cursor-text-wrp body_text mr-auto">07/</div>
-                <div className="cursor-text-wrp skill-name body_text">Wordpress</div>
-              </div>
-              
-            </div>
-            <div className="col-span-1" />
-            <div className="col-1 skill-title body_text">
-              TECH STACK
-            </div>
-            <div className="col-span-2 skill-container">
-              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
-                <div className="cursor-text-wrp body_text mr-auto">01/</div>
-                <div className="cursor-text-wrp skill-name body_text">HTML/SCSS</div>
-              </div>
-              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
-                <div className="cursor-text-wrp body_text mr-auto">02/</div>
-                <div className="cursor-text-wrp skill-name body_text">Tailwind/Bootstrap</div>
-              </div>
-              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
-                <div className="cursor-text-wrp body_text mr-auto">03/</div>
-                <div className="cursor-text-wrp skill-name body_text">JavaScript</div>
-              </div>
-              <div className="flex pb-1 border-b border-solid border-ccc mb-2">
-                <div className="cursor-text-wrp body_text mr-auto">04/</div>
-                <div className="cursor-text-wrpskill-name body_text">ReactJS / Nextjs</div>
-              </div>
-              <div className="flex pb-1 border-b border-solid border-ccc mb-2 boder-none">
-                <div className="cursor-text-wrp body_text mr-auto">05/</div>
-                <div className="cursor-text-wrp skill-name body_text">Angular</div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
@@ -220,12 +214,14 @@ const About = () => {
           <div className="col-span-3"></div>
         </div>
       </div>
-      <div className="timeline">
-        <div className="page-element container-fluid my-9">
-          <div className="heading_3 mb-7 cursor-text-wrp">
-            Educational Background
-          </div>
-          <div className="flex">
+      <div className="section pt-9">
+        <div className="timeline-title heading_3 mb-7 cursor-text-wrp">
+          Educational Background
+        </div>
+      </div>
+      <div className="section-full timeline page-element pb-9">
+        <div className="m-w">
+          <div className="flex timeline-wrp">
             <div className="w-full flex flex-col gap-3 timeline-card">
               <div className="timeline-top small_text cursor-text-wrp">
                 Past - 2016
@@ -278,55 +274,73 @@ const About = () => {
 
         </div>
       </div>
-      <div className="page-element container-fluid mt-4 md:my-9">
-        <div className="heading_3 mb-5 cursor-text-wrp">
-          My Core Values
+      <div className="mt-4 md:my-6 section-full core-value px-0">
+        <div className="m-w">
+          <div className="heading_3 mb-5 cursor-text-wrp core-value-title">
+            My Core Values
+          </div>
+          <Slider
+            configs={{
+              sliderPerRow: 3,
+              sliderPerRowMobile: 1.1,
+              allowDrag: true,
+              duration: 400,
+              auto: false,
+              autoDuration: 1000,
+              gap: 30,
+              gapMobile: 10,
+              process: true,
+              paginate: false,
+              navigator: false,
+              active: 1
+          }}
+          >
+            <div className="col-span-4 border border-solid border-ccc flex-col flex h-full core-hover">
+              <div>
+                <img className="w-full" src="./images/about/core1.png" alt="logo" loading="lazy" />
+              </div>
+              <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border-x border-b border-solid border-ccc">
+                <div className="h-full">
+                  <div className="medium_text mb-3 cursor-text-wrp">Live with passion</div>
+                  <div className="body_text cursor-text-wrp">
+                    Passion is the driving force behind success and happiness that pushes you to reach your highest potential.
+                    “Nothing great in the world has ever been accomplished without passion.” ~ George Hegel
+                  </div>
+                </div>
+                <div className="heading_6 mt-4 cursor-text-wrp">01.</div>
+              </div>
+            </div>
+            <div className="col-span-4 border border-solid border-ccc flex-col flex h-full core-hover">
+              <div>
+                <img className="w-full" src="./images/about/core2.png" alt="logo" loading="lazy" />
+              </div>
+              <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border-x border-b border-solid border-ccc">
+                <div className="h-full">
+                  <div className="medium_text mb-3 cursor-text-wrp">Eager to learn</div>
+                  <div className="body_text cursor-text-wrp">
+                    "Learn from yesterday, live for today, hope for tomorrow. The important thing is to not stop questioning." ~ Arthur Wellesley
+                  </div>
+                </div>
+                <div className="heading_6 cursor-text-wrp">02.</div>
+              </div>
+            </div>
+            <div className="col-span-4 border border-solid border-ccc flex-col flex h-full core-hover">
+              <div>
+                <img className="w-full" src="./images/about/core3.png" alt="logo" loading="lazy" />
+              </div>
+              <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border-x border-b border-solid border-ccc">
+                <div className="h-full">
+                  <div className="medium_text mb-3 cursor-text-wrp">Undeterred by the hardships</div>
+                  <div className="body_text cursor-text-wrp">
+                    “Life doesn't require that we be the best, only that we try our best.” ~ H.Jackson Brown, Jr
+                  </div>
+                </div>
+                <div className="heading_6 cursor-text-wrp">03.</div>
+              </div>
+            </div>
+          </Slider>
         </div>
-        <div className="md:grid md:grid-cols-12 gap-5">
-          <div className="col-span-4 border border-solid border-ccc flex-col flex h-full core-hover">
-            <div>
-              <img className="w-full" src="./images/about/core1.png" alt="logo" loading="lazy" />
-            </div>
-            <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border-x border-b border-solid border-ccc">
-              <div className="h-full">
-                <div className="medium_text mb-3 cursor-text-wrp">Live with passion</div>
-                <div className="body_text cursor-text-wrp">
-                  Passion is the driving force behind success and happiness that pushes you to reach your highest potential.
-                  “Nothing great in the world has ever been accomplished without passion.” ~ George Hegel
-                </div>
-              </div>
-              <div className="heading_6 mt-4 cursor-text-wrp">01.</div>
-            </div>
-          </div>
-          <div className="col-span-4 border border-solid border-ccc flex-col flex h-full core-hover">
-            <div>
-              <img className="w-full" src="./images/about/core2.png" alt="logo" loading="lazy" />
-            </div>
-            <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border-x border-b border-solid border-ccc">
-              <div className="h-full">
-                <div className="medium_text mb-3 cursor-text-wrp">Eager to learn</div>
-                <div className="body_text cursor-text-wrp">
-                  "Learn from yesterday, live for today, hope for tomorrow. The important thing is to not stop questioning." ~ Arthur Wellesley
-                </div>
-              </div>
-              <div className="heading_6 cursor-text-wrp">02.</div>
-            </div>
-          </div>
-          <div className="col-span-4 border border-solid border-ccc flex-col flex h-full core-hover">
-            <div>
-              <img className="w-full" src="./images/about/core3.png" alt="logo" loading="lazy" />
-            </div>
-            <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border-x border-b border-solid border-ccc">
-              <div className="h-full">
-                <div className="medium_text mb-3 cursor-text-wrp">Undeterred by the hardships</div>
-                <div className="body_text cursor-text-wrp">
-                  “Life doesn't require that we be the best, only that we try our best.” ~ H.Jackson Brown, Jr
-                </div>
-              </div>
-              <div className="heading_6 cursor-text-wrp">03.</div>
-            </div>
-          </div>
-        </div>
+        
       </div>
       <div className="mb-2 md:mb-6 text-center">
         <div className="last-content heading_4">

@@ -53,7 +53,6 @@
     }
   }
   .core-value {
-    padding: 130px 65px 200px 65px;
     .core-img {
       background-image: url("../img/core.jpg");
       padding-top:100px;
@@ -114,11 +113,11 @@
   .core-hover{
     transition: all 0.3s ease;
     box-sizing: border-box;
-    border: 10px solid transparent;
+    outline: 10px solid transparent;
   }
   .core-hover:hover{
     background-color: #F0EEEB;
-    border: 10px solid #F0EEEB; 
+    outline: 10px solid #F0EEEB;
   }
 }
 //ABOUT TEST
@@ -182,10 +181,17 @@
   }
 }
 .timeline {
+  overflow-x: auto;
+  position: relative;
+  .timeline-title {
+    position: sticky;
+    left: 0;
+  }
   .timeline-line {
     height: 2px;
     background-color: #ccc;
     position: relative;
+   
   }
   .timeline-content {
     transition: all 1s linear;
@@ -195,6 +201,7 @@
     background: #000000;
   }
   .timeline-card {
+    min-width: 300px;
     .timeline-bottom {
       transition: all 0.4s ease;
       color: #ccc;
@@ -252,6 +259,30 @@
 .timeline-active.timeline-card:last-child {
   .timeline-content {
     width: 200%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .core-value-title {
+    padding: 15px;
+  }
+  .core-value {
+    .slider-content {
+      padding: 0 45px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .core-value {
+    .overflow-hidden {
+      overflow: unset!important;
+    }
+    .slider-content {
+      overflow: unset!important;
+    }
+    .slider-items {
+      overflow: unset!important;
+    }
   }
   
 }

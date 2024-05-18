@@ -138,3 +138,34 @@
   background-color: transparent;
   opacity: 0 !important;
 }
+.my-collapse{
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(56, 47, 45, 0.2);
+  .question-container{
+    cursor: pointer;
+  }
+  .btn-question {
+    transition: all 0.35s ease;
+  }
+  .content-container {
+    transition: all 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
+    div, p {
+      transition: all 0.7s ease;
+      transform: translateY(10px);
+      opacity: 0;
+    }
+  }
+}
+.my-collapse.expanded{
+  .btn-question {
+    transform: rotate(180deg);
+  }
+  .content-container {
+    div,p {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
