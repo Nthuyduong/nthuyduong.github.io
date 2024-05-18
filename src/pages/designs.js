@@ -21,14 +21,14 @@ const Designs = () => {
     return (
         <div className="project-page pb-8">
             <div className="design-banner">
-                <img src="/images/design/banner-design.png" alt="design-banner2" />
-                <div className="design-banner-content flex justify-center items-center">
+                <img className="" src="/images/design/banner-design.png" alt="design-banner2" />
+                <div className="design-banner-content flex justify-center items-center px-2">
                     <div className="flex m-w gap-2 items-center">
-                        <img className="mr-7" style={{width: '100px', height: '100px'}} src="./images/flower-icon.png" alt="logo" loading="lazy" />
+                        <img className="mr-7 w-[50px] h-[50px] sm:w-[200px] sm:h-[200px]" src="./images/flower-icon.png" alt="logo" loading="lazy" />
                         <div className="text-white w-full">
-                            <div className="heading_4">Welcome to my</div>
-                            <img className="mt-3 mb-6 w-2/3" src="./images/Creative Place.png" alt="logo" />
-                            <div className="heading_6">“May the flowers remind us why the rain was so necessary”</div>
+                            <div className="text-xl sm:text-4xl">Welcome to my</div>
+                            <img className="sm:mt-3 sm:mb-6 w-2/3" src="./images/Creative Place.png" alt="logo" />
+                            <div className="text-sm sm:text-xl">“May the flowers remind us why the rain was so necessary”</div>
                         </div>
                     </div>
                 </div>
@@ -36,95 +36,102 @@ const Designs = () => {
 
             <div></div>
             {/* All project here */}
-            <div className="all-my-projects">
-                <div className="grid grid-cols-12 gap-5">
-                    <div className="col-span-2"></div>
-                    <div className="col-span-8">
+            <div className="all-my-projects section">
+                <div className="">
+                    <div className="">
                         <div className="project-section mt-6">
-                            <div className="project-inner py-5 border-y border-solid border-ccc">
-                                <div className="grid grid-cols-8 gap-5">
-                                    <div className="col-span-2 flex">
-                                        <div className="heading_5 mr-auto cursor-text-wrp">01.</div>
+                            <div className="project-inner py-5 border-y border-solid border-ccc design-item">
+                                <div className="sm:flex grid grid-cols-12 gap-2 sm:gap-0">
+                                    <div className="col-span-6 flex design-item-1">
+                                        <div className="heading_5 mr-auto cursor-text-wrp font-bold">01.</div>
                                         <div>
                                             <div className="mb-1 cursor-text-wrp">UX/UI Design</div>
                                             <div className="cursor-text-wrp">Apr 2024</div>
                                         </div>
                                     </div>
-                                    <div className="col-span-2">
+                                    <div className="col-span-6 design-item-2">
                                         <img
                                             className="w-full" src="./images/design/des-1.png"
                                             alt="logo"
                                             loading="lazy"
                                         />
                                     </div>
-                                    <div className="col-span-4">
-                                        <div>
+                                    <div className="col-span-12 design-item-3 flex flex-col justify-between w-full">
+                                        <div className="max-w-[500px]">
                                             <div className="heading_4 mb-3 cursor-text-wrp">Aguri Jewelry Website</div>
-                                            <div className="body_text cursor-text-wrp">
+                                            <span className="body_text cursor-text-wrp">
                                                 User testing was an iterative process that was conducted at every milestone of the project to identify the
-                                            </div>
+                                            </span>
                                         </div>
-                                        <div>View the project</div>
+                                        <div className="des-item-view">
+                                            <Link className="des-item-view-link" to="to">View the project</Link>
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="project-inner py-5 border-b border-solid border-ccc">
-                                <div className="grid grid-cols-8 gap-5">
-                                    <div className="col-span-2 flex">
-                                        <div className="heading_5 mr-auto cursor-text-wrp">01.</div>
+                            <div className="project-inner py-5 border-y border-solid border-ccc design-item">
+                                <div className="flex">
+                                    <div className="flex design-item-1">
+                                        <div className="heading_5 mr-auto cursor-text-wrp font-bold">01.</div>
                                         <div>
                                             <div className="mb-1 cursor-text-wrp">UX/UI Design</div>
                                             <div className="cursor-text-wrp">Apr 2024</div>
                                         </div>
                                     </div>
-                                    <div className="col-span-2">
+                                    <div className="design-item-2">
                                         <img
                                             className="w-full" src="./images/design/des-1.png"
                                             alt="logo"
                                             loading="lazy"
                                         />
                                     </div>
-                                    <div className="col-span-4">
-                                        <div>
+                                    <div className="design-item-3 flex flex-col justify-between w-full">
+                                        <div className="max-w-[500px]">
                                             <div className="heading_4 mb-3 cursor-text-wrp">Aguri Jewelry Website</div>
-                                            <div className="body_text cursor-text-wrp">
+                                            <span className="body_text cursor-text-wrp">
                                                 User testing was an iterative process that was conducted at every milestone of the project to identify the
-                                            </div>
+                                            </span>
                                         </div>
-                                        <div>View the project</div>
+                                        <div className="des-item-view">
+                                            <Link className="des-item-view-link" to="to">View the project</Link>
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="project-inner py-5 border-b border-solid border-ccc">
-                                <div className="grid grid-cols-8 gap-5">
-                                    <div className="col-span-2 flex">
-                                        <div className="heading_5 mr-auto cursor-text-wrp">01.</div>
+                            <div className="project-inner py-5 border-y border-solid border-ccc design-item">
+                                <div className="flex">
+                                    <div className="flex design-item-1">
+                                        <div className="heading_5 mr-auto cursor-text-wrp font-bold">01.</div>
                                         <div>
                                             <div className="mb-1 cursor-text-wrp">UX/UI Design</div>
                                             <div className="cursor-text-wrp">Apr 2024</div>
                                         </div>
                                     </div>
-                                    <div className="col-span-2">
+                                    <div className="design-item-2">
                                         <img
                                             className="w-full" src="./images/design/des-1.png"
                                             alt="logo"
                                             loading="lazy"
                                         />
                                     </div>
-                                    <div className="col-span-4">
-                                        <div>
+                                    <div className="design-item-3 flex flex-col justify-between w-full">
+                                        <div className="max-w-[500px]">
                                             <div className="heading_4 mb-3 cursor-text-wrp">Aguri Jewelry Website</div>
-                                            <div className="body_text cursor-text-wrp">
+                                            <span className="body_text cursor-text-wrp">
                                                 User testing was an iterative process that was conducted at every milestone of the project to identify the
-                                            </div>
+                                            </span>
                                         </div>
-                                        <div>View the project</div>
+                                        <div className="des-item-view">
+                                            <Link className="des-item-view-link" to="to">View the project</Link>
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-2"></div>
                 </div>
             </div>
 
