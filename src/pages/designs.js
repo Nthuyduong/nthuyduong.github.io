@@ -36,11 +36,11 @@ const Designs = () => {
 
             <div></div>
             {/* All project here */}
-            <div className="all-my-projects section">
+            <div className="all-my-projects">
                 <div className="">
                     <div className="">
                         <div className="project-section mt-6">
-                            <div className="project-inner py-5 border-y border-solid border-ccc design-item">
+                            <div className="project-inner py-5 border-b border-solid border-ccc design-item">
                                 <div className="sm:flex grid grid-cols-12 gap-2 sm:gap-0">
                                     <div className="col-span-6 flex design-item-1">
                                         <div className="heading_5 mr-auto cursor-text-wrp font-bold">01.</div>
@@ -70,7 +70,7 @@ const Designs = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="project-inner py-5 border-y border-solid border-ccc design-item">
+                            <div className="project-inner py-5 design-item">
                                 <div className="flex">
                                     <div className="flex design-item-1">
                                         <div className="heading_5 mr-auto cursor-text-wrp font-bold">01.</div>
