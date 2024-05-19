@@ -272,6 +272,10 @@
     }
   }
 }
+.slider-items {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 @media (min-width: 768px) {
   .core-value {
     .overflow-hidden {
@@ -284,5 +288,5 @@
       overflow: unset!important;
     }
   }
-  
+ 
 }

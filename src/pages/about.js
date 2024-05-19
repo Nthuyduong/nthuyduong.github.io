@@ -172,7 +172,7 @@ const About = () => {
                     ))}
                   </div>
                 </div>
-                <div className={`my-collapse dark:border-b dark:border-ccc ${index == 0 ? 'expanded': ''}`}>
+                <div className={`block sm:hidden my-collapse dark:border-b dark:border-ccc ${index == 0 ? 'expanded': ''}`}>
                   <div className="question-container flex">
                     <div className="question mr-auto font-bold">
                       {skill.title}
@@ -295,7 +295,7 @@ const About = () => {
               active: 1
           }}
           >
-            <div className="col-span-4 border border-solid border-ccc flex-col flex h-full core-hover">
+            <div className="border border-solid border-ccc flex-col flex h-full core-hover">
               <div>
                 <img className="w-full" src="./images/about/core1.png" alt="logo" loading="lazy" />
               </div>
@@ -310,7 +310,7 @@ const About = () => {
                 <div className="heading_6 mt-4 cursor-text-wrp">01.</div>
               </div>
             </div>
-            <div className="col-span-4 border border-solid border-ccc flex-col flex h-full core-hover">
+            <div className="border border-solid border-ccc flex-col flex h-full core-hover">
               <div>
                 <img className="w-full" src="./images/about/core2.png" alt="logo" loading="lazy" />
               </div>
@@ -324,7 +324,7 @@ const About = () => {
                 <div className="heading_6 cursor-text-wrp">02.</div>
               </div>
             </div>
-            <div className="col-span-4 border border-solid border-ccc flex-col flex h-full core-hover">
+            <div className="border border-solid border-ccc flex-col flex h-full core-hover">
               <div>
                 <img className="w-full" src="./images/about/core3.png" alt="logo" loading="lazy" />
               </div>

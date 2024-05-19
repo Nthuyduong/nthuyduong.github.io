@@ -44,7 +44,9 @@ a{
 ::-webkit-scrollbar-thumb {
   background-color: darkgrey;
 }
-
+.page-body-wrapper {
+  height: calc(100vh - 68px);
+}
 //FONT-STYLE
 .heading_1 {
   font-family: 'AmericanaBT',serif;
