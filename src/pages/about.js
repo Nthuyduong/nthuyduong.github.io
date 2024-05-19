@@ -49,7 +49,7 @@ const About = () => {
       </div> */}
       {/* New banner */}
       <div className="page-element bg-primary">
-        <div className="container-fluid about1 md:py-0 py-6">
+        <div className="section about1 md:py-0 py-6">
           <div className="md:grid md:grid-cols-12 gap-5">
             <div className="col-span-1"></div>
             <div className="col-span-4">
@@ -144,7 +144,7 @@ const About = () => {
         </div>
       </div>
       <div className="page-element py-8 bg-primary mt-4 md:mt-9">
-        <div className="container-fluid">
+        <div className="section">
           <div className="md:grid md:grid-cols-12 gap-5">
             <div className="col-span-4 skill-common mb-2">
               <div className="heading_3 mb-4 cursor-text-wrp">
@@ -344,7 +344,7 @@ const About = () => {
       </div>
       <div className="mb-2 md:mb-6 text-center">
         <div className="last-content heading_4">
-          <div className="container-fluid">
+          <div className="section">
             <div className="grid grid-cols-12">
               <div className="col-span-1"></div>
               <div className="col-span-10 heading_4 cursor-text-wrp">

@@ -585,7 +585,7 @@ body:has(.header-mobile-open) {
   justify-content: center;
 }
 .section {
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -596,6 +596,7 @@ body:has(.header-mobile-open) {
   
 }
 .m-w{
+  padding: 0 15px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1300px;
 }
