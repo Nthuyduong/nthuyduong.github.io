@@ -24,7 +24,7 @@ const Designs = () => {
                 <img className="" src="/images/design/banner-design.png" alt="design-banner2" />
                 <div className="design-banner-content flex justify-center items-center px-2">
                     <div className="flex m-w gap-2 items-center">
-                        <img className="mr-7 w-[50px] h-[50px] sm:w-[200px] sm:h-[200px]" src="./images/flower-icon.png" alt="logo" loading="lazy" />
+                        <img className="mr-7 w-[50px] h-[50px] md:w-[100px] md:h-[100px]" src="./images/flower-icon.png" alt="logo" loading="lazy" />
                         <div className="text-white w-full">
                             <div className="text-xl sm:text-4xl">Welcome to my</div>
                             <img className="sm:mt-3 sm:mb-6 w-2/3" src="./images/Creative Place.png" alt="logo" />

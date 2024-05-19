@@ -97,7 +97,7 @@ const About = () => {
           </div>
         </div>
       </div> */}
-      <div className="page-element section mt-4 md:mt-9">
+      <div className="page-element section mt-6 md:mt-9">
         <div className="about2">
           <div className="md:grid md:grid-cols-12 gap-5">
             <div className="col-span-3">
@@ -111,13 +111,13 @@ const About = () => {
 
             <div className="col-span-6">
               <div className="">
-                <div className=" body_text">
+                <div className="mb-4 body_text">
                   At just 24 years old, I was always driven to find my true passion in life. After trying a few different jobs, I discovered UX/UI design and suddenly everything fell into place. I realized that this was my true passion and I was determined to pursue a career in this field. Although I am relatively new to this industry, I have worked hard to learn a lot during the past 2 years. Now I am eager to gain hands-on experience and contribute to real-world projects in the field of UX/UI Design. I believe that with a strong sense of purpose and passion for design, I can make a valuable contribution to any organization looking for a dedicated and dynamic UX/UI Designer.
                 </div>
                 <div className="medium_text mb-2 cursor-text-wrp">
                   Basic Information
                 </div>
-                <div className="flex items-center body_text">
+                <div className="flex items-center body_text mb-4">
                   Birthday: 19/08/1998
                   <img className="about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   Nationality: Local Vietnamese
@@ -143,7 +143,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="page-element py-8 bg-primary mt-4 md:mt-9">
+      <div className="page-element py-6 md:py-8 bg-primary mt-6 md:mt-9">
         <div className="section">
           <div className="md:grid md:grid-cols-12 gap-5">
             <div className="col-span-4 skill-common mb-2">
@@ -160,10 +160,10 @@ const About = () => {
             {skills.map((skill, index) => (
               <div className="col-span-4 flex flex-col gap-2" key={index}>
                 <div className="hidden sm:flex flex-col gap-2">
-                  <div className="skill-title body_text cursor-text-wrp font-bold">
+                  <div className="skill-title heading_6 cursor-text-wrp">
                     {skill.title}
                   </div>
-                  <div className="skill-container w-[70%] self-end">
+                  <div className="skill-container w-[60%] self-end">
                     {skill.skills.map((skill, index) => (
                       <div className="flex pb-1 border-b border-solid border-ccc mb-2" key={index}>
                         <div className="cursor-text-wrp body_text mr-auto">{index + 1}/</div>
@@ -174,7 +174,7 @@ const About = () => {
                 </div>
                 <div className={`block sm:hidden my-collapse dark:border-b dark:border-ccc ${index == 0 ? 'expanded': ''}`}>
                   <div className="question-container flex">
-                    <div className="question mr-auto font-bold">
+                    <div className="question mr-auto heading_6">
                       {skill.title}
                     </div>
                     <div className="btn-question flex justify-center items-center">
@@ -187,7 +187,7 @@ const About = () => {
                   </div>
                   <div className={`content-container block sm:hidden`}>
                     <div className="flex justify-end">
-                      <div className="skill-container w-[70%] pt-2">
+                      <div className="skill-container w-[60%] pt-2">
                         {skill.skills.map((skill, index) => (
                           <div className="flex pb-1 border-b border-solid border-ccc mb-2" key={index}>
                             <div className="cursor-text-wrp body_text mr-auto">{index + 1}/</div>
@@ -214,12 +214,12 @@ const About = () => {
           <div className="col-span-3"></div>
         </div>
       </div>
-      <div className="section pt-9">
-        <div className="timeline-title heading_3 mb-7 cursor-text-wrp">
+      <div className="section pt-6 md:pt-9">
+        <div className="timeline-title heading_3 mb-5 md:mb-8 cursor-text-wrp">
           Educational Background
         </div>
       </div>
-      <div className="section-full timeline page-element pb-9">
+      <div className="section-full timeline page-element pb-6 md:pb-9">
         <div className="m-w">
           <div className="flex timeline-wrp">
             <div className="w-full flex flex-col gap-3 timeline-card">
@@ -230,7 +230,7 @@ const About = () => {
                 <div className="timeline-content"></div>
               </div>
               <div className="timeline-bottom mt-3">
-                <p className="medium_text mb-3 cursor-text-wrp">Phung Khac Khoan High School</p>
+                <p className="heading_6 mb-3 cursor-text-wrp">Phung Khac Khoan High School</p>
                 <p className="body_text cursor-text-wrp">Thach That district, Hanoi</p>
               </div>
             </div>
@@ -242,7 +242,7 @@ const About = () => {
                 <div className="timeline-content"></div>
               </div>
               <div className="timeline-bottom mt-3">
-                <p className="medium_text mb-3 cursor-text-wrp">HUNRE</p>
+                <p className="heading_6 mb-3 cursor-text-wrp">HUNRE</p>
                 <p className="body_text cursor-text-wrp">Very good degree, GPA 3.4</p>
               </div>
             </div>
@@ -254,7 +254,7 @@ const About = () => {
                 <div className="timeline-content"></div>
               </div>
               <div className="timeline-bottom mt-3">
-                <p className="medium_text mb-3 cursor-text-wrp">Arena Multimedia</p>
+                <p className="heading_6 mb-3 cursor-text-wrp">Arena Multimedia</p>
                 <p className="body_text cursor-text-wrp">Graphic Design | UX/UI Design</p>
               </div>
             </div>
@@ -266,7 +266,7 @@ const About = () => {
                 <div className="timeline-content"></div>
               </div>
               <div className="timeline-bottom mt-3">
-                <p className="medium_text mb-3 cursor-text-wrp">FPT Aptech VietNam</p>
+                <p className="heading_6 mb-3 cursor-text-wrp">FPT Aptech VietNam</p>
                 <p className="body_text cursor-text-wrp">Developer</p>
               </div>
             </div>
@@ -274,9 +274,9 @@ const About = () => {
 
         </div>
       </div>
-      <div className="mt-4 md:my-6 section-full core-value px-0">
+      <div className=" md:my-6 section-full core-value px-0">
         <div className="m-w">
-          <div className="heading_3 mb-5 cursor-text-wrp core-value-title">
+          <div className="heading_3 md:mb-6 mb-5 cursor-text-wrp core-value-title">
             My Core Values
           </div>
           <Slider
@@ -295,7 +295,7 @@ const About = () => {
               active: 1
           }}
           >
-            <div className="border border-solid border-ccc flex-col flex h-full core-hover">
+            <div className="flex-col flex h-full core-hover">
               <div>
                 <img className="w-full" src="./images/about/core1.png" alt="logo" loading="lazy" />
               </div>
@@ -307,10 +307,10 @@ const About = () => {
                     “Nothing great in the world has ever been accomplished without passion.” ~ George Hegel
                   </div>
                 </div>
-                <div className="heading_6 mt-4 cursor-text-wrp">01.</div>
+                <div className="heading_5 mt-4 cursor-text-wrp">01.</div>
               </div>
             </div>
-            <div className="border border-solid border-ccc flex-col flex h-full core-hover">
+            <div className="flex-col flex h-full core-hover">
               <div>
                 <img className="w-full" src="./images/about/core2.png" alt="logo" loading="lazy" />
               </div>
@@ -321,10 +321,10 @@ const About = () => {
                     "Learn from yesterday, live for today, hope for tomorrow. The important thing is to not stop questioning." ~ Arthur Wellesley
                   </div>
                 </div>
-                <div className="heading_6 cursor-text-wrp">02.</div>
+                <div className="heading_5 cursor-text-wrp">02.</div>
               </div>
             </div>
-            <div className="border border-solid border-ccc flex-col flex h-full core-hover">
+            <div className="flex-col flex h-full core-hover">
               <div>
                 <img className="w-full" src="./images/about/core3.png" alt="logo" loading="lazy" />
               </div>
@@ -335,7 +335,7 @@ const About = () => {
                     “Life doesn't require that we be the best, only that we try our best.” ~ H.Jackson Brown, Jr
                   </div>
                 </div>
-                <div className="heading_6 cursor-text-wrp">03.</div>
+                <div className="heading_5 cursor-text-wrp">03.</div>
               </div>
             </div>
           </Slider>
@@ -347,7 +347,7 @@ const About = () => {
           <div className="section">
             <div className="grid grid-cols-12">
               <div className="col-span-1"></div>
-              <div className="col-span-10 heading_4 cursor-text-wrp">
+              <div className="col-span-10 heading_4 cursor-text-wrp mb-2 md:mb-3">
                 “The surest way to make your dreams come true is to live them. Dreams don’t work unless you take action.”
               </div>
               <div className="col-span-1"></div>
@@ -357,7 +357,7 @@ const About = () => {
         </div>
       </div>
       <div class="">
-        <div class="roll overflow-hidden mb-5">
+        <div class="roll overflow-hidden">
           <div class="circle">
             <img className="h-[200px] w-full" src="./images/about/roll.svg" alt="logo" loading="lazy" />
           </div>

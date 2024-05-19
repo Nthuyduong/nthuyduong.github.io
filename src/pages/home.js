@@ -355,7 +355,7 @@ const Home = () => {
           </div>
         </div> */}
       {/*DECOR TEXT*/}
-      <div className="section-full scroll-container text-decor mt-8">
+      <div className="section-full scroll-container text-decor mt-5 md:mt-8 py-0 md:py-3">
         <Scroller>
           <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
           <div className="heading_4 cursor-text-wrp">HELLO MY NAME IS NGUYEN THUY DUONG</div>
@@ -367,7 +367,7 @@ const Home = () => {
         </Scroller>
       </div>
       {/*Contact me*/}
-      <div className="section send_message mt-8">
+      <div className="section send_message mt-5 md:mt-8">
         <div className="">
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12 sm:col-span-4 flex flex-row-reverse sm:flex-col gap-2">
