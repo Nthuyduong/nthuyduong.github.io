@@ -61,8 +61,45 @@ const Home = () => {
 
   return (
     <div className="home-page">
+
+      {/* NEW banner */}
+      <div className="bg-background pt-6 pb-7">
+        <div className="section relative">
+          <div className="md:grid md:grid-cols-12">
+            <div className="col-span-8 md:flex">
+              <img className="h-[90px] md:block hidden main-logo mr-4" src="./images/home/logo-icon.svg" alt="logo" loading="lazy" />
+              <div className="info-content medium_text cursor-text-wrp">
+                Hello, My name is
+                <div className="ntd-name sm:mt-3 heading_3 cursor-text-wrp">
+                  Nguyen Thuy Duong
+                </div>
+              </div>
+            </div>
+            <div className="sm:hidden showcase-img"></div>
+            <div className="col-span-4 body_text text-right border-b border-[#ccc] sm:border-none">
+              <div className="mt-3 md:mt-0 mb-3 cursor-text-wrp text-center sm:text-left">
+                “I'm creative, open-minded and a fast learner. I have a strong desire to know, to understand, to grow,
+                to create, to transform, to improve and to share. My dream is to improve people's lives through my designs”
+              </div>
+              {/* <div className="text-right hidden sm:block">
+                <a className="" href="https://www.behance.net/gallery/174317119/Thuy-Duongs-Portfolio/modules/984307513" target="_blank">SEE PORTFOLIO ON BEHANCE?</a>
+              </div> */}
+            </div>
+          </div>
+          <div className="flex justify-center mt-5 z-20">
+            <img className="h-[320px] img-smile" src="./images/bannerhome.svg" alt="smile" loading="lazy" />
+          </div>
+          <div className="flex justify-center mt-5">
+            <img className="h-[130px] img-smile" src="./images/bannertext.svg" alt="smile" loading="lazy" />
+          </div>
+        </div>
+        <div className="absolute top-[35%] z-10">
+          <img className="img-smile" src="./images/Sunflowers.svg" alt="smile" loading="lazy" />
+        </div>
+      </div>
+      
       <div className="section page-element home-info">
-        <div className="md:grid md:grid-cols-12">
+        {/* <div className="md:grid md:grid-cols-12">
           <div className="col-span-8 md:flex">
             <img className="md:block hidden main-logo" src="./images/home/logo-icon.svg" alt="logo" loading="lazy" />
             <div className="info-content medium_text cursor-text-wrp">
@@ -82,10 +119,10 @@ const Home = () => {
               <a className="" href="https://www.behance.net/gallery/174317119/Thuy-Duongs-Portfolio/modules/984307513" target="_blank">SEE PORTFOLIO ON BEHANCE?</a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="section ntd-showcase hidden sm:block">
-        <div className="showcase-img">
+        {/* <div className="showcase-img">
           <div className="sentence-container">
             <CardSlider
               configs={{
@@ -108,13 +145,13 @@ const Home = () => {
               </div>
               <div className="slide-card-item heading_1 text-center">
                 <div className="heading_3 text-center text-white">"I'm delighted to share my portfolio with you!"</div>
-              </div>
-            </CardSlider>
-            {/* <span className="heading_5 text-white">Hello</span><span><img className="img-smile" src="./images/icons/smile.svg" alt="smile" loading="lazy"/></span>
+              </div> */}
+        {/* </CardSlider> */}
+        {/* <span className="heading_5 text-white">Hello</span><span><img className="img-smile" src="./images/icons/smile.svg" alt="smile" loading="lazy"/></span>
               <span><img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/></span><span className="heading_5 text-white">Welcome to my website.</span>
               <span><img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/></span><span className="heading_5 text-white">I'm delighted to share my portfolio with you!</span> */}
-          </div>
-        </div>
+        {/* </div>
+        </div> */}
       </div>
       <div className="section mt-2 mb-4 md:mt-5 md:mb-7">
         <div className="md:grid md:grid-cols-12 gap-4">
