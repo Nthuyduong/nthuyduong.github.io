@@ -6,8 +6,23 @@
   position: relative;
   .showcase-content{
     position: absolute;
-    top:68%;
+    bottom: 5%;
   }
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 768px){
+  .cake-banner{
+    .showcase-content{
+      // position: relative;
+      bottom: 15px;
+    }
+  }
+  .cake-page {
+    .ag-line6 .inner {
+      padding: 15px;
+    }
+  }
+  
 }
 //
 .cake-abtpage{

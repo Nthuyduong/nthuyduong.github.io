@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {ROUTER} from "../utils/constants";
+import Slider from "../components/common/slider";
 
 const Fashion = () => {
     const [currentimg, setCurrentimg] = useState(0);
@@ -24,25 +25,24 @@ const Fashion = () => {
             <div className="container-fluid">
                 <div className="product-showcase">
                     <div className="showcase pdb-60">
-                        <img className="w-100" src="./images/Pj04_fashion/banner2.webp" alt="#" loading="lazy"/>
+                        <img className="w-100 show-case-bg" src="./images/Pj04_fashion/banner2.webp" alt="#" loading="lazy"/>
                         <div className="showcase-inner">
-                            <div className="grid grid-cols-12">
+                            <div className="flex justify-end">
                                 <div className="col-span-1"/>
-                                <div className="col-span-4 image-left">
-                                    <img className="w-100" src="./images/Pj04_fashion/line1.webp" alt="#" loading="lazy"/>
-                                </div>
-                                <div className="col-span-7 content-right">
+                                <img className="img-inside" src="./images/Pj04_fashion/line1.webp" alt="#" loading="lazy"/>
+
+                                <div className="banner-content pt-3 sm:pt-0 px-3">
                                     <img className="mb-5" src="./images/Pj04_fashion/logo.svg" alt="#" loading="lazy"/>
                                     <div className="heading_4 light-text">LUXURY FASHION BRAND</div>
                                     <div className="line my-4"></div>
-                                    <div className="flex text-line">
+                                    <div className="flex text-line justify-between items-center">
                                         <div className="heading_6 light-text">Be Free</div>
-                                        <div className="dot mx-max">
-                                            <img className="mb-4" src="./images/Pj04_fashion/ellipse.png" alt="#" loading="lazy"/>
+                                        <div className="dot flex items-center">
+                                            <img className="" src="./images/Pj04_fashion/ellipse.png" alt="#" loading="lazy"/>
                                         </div>
                                         <div className="heading_6 light-text">Be Bold</div>
-                                        <div className="dot mx-max">
-                                            <img className="mb-4" src="./images/Pj04_fashion/ellipse.png" alt="#" loading="lazy"/>
+                                        <div className="dot">
+                                            <img className="" src="./images/Pj04_fashion/ellipse.png" alt="#" loading="lazy"/>
                                         </div>
                                         <div className="heading_6 light-text">Be You</div>
                                     </div>
@@ -52,8 +52,8 @@ const Fashion = () => {
                     </div>
                     <div className="verite_line2 pdb-60">
                         <div className="grid grid-cols-12">
-                            <div className="col-span-6">
-                                <div className="">
+                            <div className="col-span-12 sm:col-span-6 flex items-end">
+                                <div className="p-2">
                                     <div className="heading_4">Introduction</div>
                                     <div className="body_text">
                                         Discover the essence of French luxury fashion. Our brand captures the essence of
@@ -65,7 +65,7 @@ const Fashion = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-span-6">
+                            <div className="col-span-12 sm:col-span-6">
                                 <img className="w-100" src="./images/Pj04_fashion/line2-01.webp" alt="#" loading="lazy"/>
                             </div>
                         </div>
@@ -75,10 +75,10 @@ const Fashion = () => {
                     </div>
                     <div className="verite_line3 pdb-60">
                         <div className="grid grid-cols-12">
-                            <div className="col-span-6">
+                            <div className="col-span-12 sm:col-span-6">
                                 <img className="w-100" src="./images/Pj04_fashion/line3-01.webp" alt="#" loading="lazy"/>
                             </div>
-                            <div className="col-span-6">
+                            <div className="col-span-12 sm:col-span-6">
                                 <img className="w-100" src="./images/Pj04_fashion/line3-02.webp" alt="#" loading="lazy"/>
                             </div>
                         </div>
@@ -100,8 +100,23 @@ const Fashion = () => {
             </div>
             <div className="more-project mb-8">
                 <div className="container-fluid">
-                    <div className="grid grid-cols-12 gap-4 more-pj">
-                        <div className="col-span-4 more-1">
+                    <Slider
+                        configs={{
+                            sliderPerRow: 3,
+                            sliderPerRowMobile: 1.25,
+                            allowDrag: true,
+                            duration: 400,
+                            auto: false,
+                            autoDuration: 1000,
+                            gap: 30,
+                            gapMobile: 10,
+                            process: true,
+                            paginate: false,
+                            navigator: false,
+                            active: 1
+                        }}
+                    >
+                        <div className="more-1">
                             <div className="img-des">
                                 <Link to={ROUTER.AGURI}>
                                     <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
@@ -119,7 +134,7 @@ const Fashion = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-4">
+                        <div className="">
                             <div className="img-des">
                                 <Link to={ROUTER.CAKE}>
                                     <img className="w-100" src="./images/home/more-4.png" alt="logo" loading="lazy"/>
@@ -137,7 +152,7 @@ const Fashion = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-4 more-2">
+                        <div className="more-2">
                             <div className="img-des">
                                 <Link to={ROUTER.ALIO}>
                                     <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
@@ -155,7 +170,7 @@ const Fashion = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Slider>
                 </div>
             </div>
         </div>

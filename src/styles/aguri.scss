@@ -4,22 +4,27 @@
 .line1-left{
   position: relative;
   .line1-left-inner{
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-  }
-  .content-top{
-    position: relative;
-    top: 70px;
-    z-index: 2;
-    .heading_3{
-      width: max-content;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    .img-bg {
+      position: absolute;
+      height: 50%;
+      width: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      z-index: 1;
     }
   }
+  .content-top{
+    z-index: 2;
+    margin-top: 20%;
+  }
   .content-bottom{
-    position:relative;
-    bottom:30px;
   }
 }
 .line1-right{

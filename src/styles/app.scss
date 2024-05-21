@@ -659,6 +659,7 @@ a {
 }
 
 .header-mobile-open {
+  z-index: 10000;
   .btn-header-mobile {
     transform: rotate(-180deg);
   }
@@ -676,13 +677,14 @@ a {
   height: 0;
   transform: translateY(-20px);
   z-index: -1;
+  pointer-events: none;
 }
 
 .navdrop-mobile-inner-open {
   transform: translateY(0);
   opacity: 1;
   height: 130px;
-
+  pointer-events: all;
 }
 
 body:has(.header-mobile-open) {

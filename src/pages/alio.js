@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import {ROUTER} from "../utils/constants";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import Slider from "../components/common/slider";
 
 const Alio = () => {
     const [currentMbl, setCurrentMbl] = useState(0);
@@ -102,7 +103,7 @@ const Alio = () => {
                             </div>
                             <div className="col-span-6 r1-right">
                                 <img className="w-100" src="./images/Pj02_yoga/line1-02.webp" alt="#" loading="lazy"/>
-                                <div className="slide-content">
+                                <div className="slide-content z-10">
                                     <div className="heading_5">You will</div>
                                     <div className="heading_1 my-2">Be Your Best</div>
                                     <div className="heading_5">If you never stop</div>
@@ -114,7 +115,7 @@ const Alio = () => {
                     <div className="alio2 pdb-60">
                         <div className="grid grid-cols-12">
                             <div className="col-span-6 r2-left">
-                                <div className="">
+                                <div className="p-2">
                                     <div className="heading_4">Introduction</div>
                                     <div className="body_text">
                                         Welcome to Alio, Pilate, and Meditation! Our website is your sanctuary for holistic
@@ -142,8 +143,8 @@ const Alio = () => {
                                 <img className="w-100" src={require(`../../public/images/Pj02_yoga/${images[currentImageIndex]}`)}
                                      alt="carousel image" />
                             </div>
-                            <div className="col-span-6 r3-right">
-                                <div className="">
+                            <div className="col-span-6 r3-right flex items-end">
+                                <div className="p-2">
                                     <div className="heading_4">The Logotype</div>
                                     <div className="body_text">
                                         The logo for a yoga website embodies the essence of tranquility and self-discovery.
@@ -210,8 +211,23 @@ const Alio = () => {
             </div>
             <div className="more-project mb-8">
                 <div className="container-fluid">
-                    <div className="grid grid-cols-12 gap-4 more-pj">
-                        <div className="col-span-4 more-1">
+                        <Slider
+                            configs={{
+                                sliderPerRow: 3,
+                                sliderPerRowMobile: 1.25,
+                                allowDrag: true,
+                                duration: 400,
+                                auto: false,
+                                autoDuration: 1000,
+                                gap: 30,
+                                gapMobile: 10,
+                                process: true,
+                                paginate: false,
+                                navigator: false,
+                                active: 1
+                            }}
+                        >
+                        <div className="more-1">
                             <div className="img-des">
                                 <Link to={ROUTER.AGURI}>
                                     <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
@@ -229,7 +245,7 @@ const Alio = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-4">
+                        <div className="">
                             <div className="img-des">
                                 <Link to={ROUTER.FASHION}>
                                     <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
@@ -247,7 +263,7 @@ const Alio = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-4 more-2">
+                        <div className=" more-2">
                             <div className="img-des">
                                 <Link to={ROUTER.CAKE}>
                                     <img className="w-100" src="./images/home/more-4.png" alt="logo" loading="lazy"/>
@@ -265,7 +281,7 @@ const Alio = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        </Slider>
                 </div>
             </div>
         </div>

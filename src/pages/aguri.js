@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ROUTER } from "../utils/constants";
+import Slider from "../components/common/slider";
 // import Carousel from 'react-bootstrap/Carousel';
 
 const Aguri = () => {
@@ -32,13 +33,13 @@ const Aguri = () => {
                 <div className="product-showcase">
                     <div className="ag-line1 pdb-60">
                         <div className="grid grid-cols-12">
-                            <div className="col-span-6 line1-left">
+                            <div className="col-span-12 sm:col-span-6 line1-left">
                                 <div className="line1-left-inner">
                                     <div className="content-top text-center">
-                                        <div className="heading_3 mb-1">RADIANT ELEGANCE</div>
                                         <div className="heading_4">Our Utmost Pride</div>
+                                        <div className="heading_3 mb-1 w-full">RADIANT ELEGANCE</div>
                                     </div>
-                                    <img className="" src="./images/Pj03_aguri/line1-center.png" alt="#"
+                                    <img className="img-bg" src="./images/Pj03_aguri/line1-center.png" alt="#"
                                         loading="lazy" />
                                     <div className="content-bottom text-center">
                                         <div className="heading_2 mb-5">JOIN US</div>
@@ -49,7 +50,7 @@ const Aguri = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-span-6 line1-right">
+                            <div className="col-span-12 sm:col-span-6 line1-right">
                                 <img className="w-100" src="./images/Pj03_aguri/line1-02.png" alt="#"
                                     loading="lazy" />
 
@@ -98,12 +99,11 @@ const Aguri = () => {
                     <div className="ag-line2 pdb-60">
                         <div className="grid grid-cols-12">
 
-                            <div className="col-span-6 line2-right">
+                            <div className="col-span-12 sm:col-span-6 line2-right">
                                 <img className="w-100" src="./images/Pj03_aguri/line3-02.png" alt="#"
                                     loading="lazy" />
-
                             </div>
-                            <div className="col-span-6 line2-left bg-tertiary">
+                            <div className="col-span-12 sm:col-span-6 line2-left bg-tertiary">
                                 <div className="p-6 flex h-full items-end">
                                     <div>
                                         <div className="heading_4 mb-4">Introduction</div>
@@ -238,66 +238,81 @@ const Aguri = () => {
             </div>
             <div className="more-project mb-8">
                 <div className="container-fluid">
-                    <div className="grid grid-cols-12 gap-4 more-pj">
-                        <div className="col-span-4 more-1">
-                            <div className="img-des">
-                                <Link to={ROUTER.CAKE}>
-                                    <img className="w-100" src="./images/home/more-4.png" alt="logo"
-                                        loading="lazy" />
-                                </Link>
-                                <div className="d-flex title-pj">
-                                    <div className="medium_text pj_name">
-                                        <Link to={ROUTER.CAKE}>
-                                            Season Cake Blog
-                                        </Link>
+                        <Slider
+                            configs={{
+                                sliderPerRow: 3,
+                                sliderPerRowMobile: 1.25,
+                                allowDrag: true,
+                                duration: 400,
+                                auto: false,
+                                autoDuration: 1000,
+                                gap: 30,
+                                gapMobile: 10,
+                                process: true,
+                                paginate: false,
+                                navigator: false,
+                                active: 1
+                            }}
+                        >
+                            <div className=" more-1">
+                                <div className="img-des">
+                                    <Link to={ROUTER.CAKE}>
+                                        <img className="w-100" src="./images/home/more-4.png" alt="logo"
+                                            loading="lazy" />
+                                    </Link>
+                                    <div className="d-flex title-pj">
+                                        <div className="medium_text pj_name">
+                                            <Link to={ROUTER.CAKE}>
+                                                Season Cake Blog
+                                            </Link>
+                                        </div>
+                                        <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                     </div>
-                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
-                                </div>
-                                <div className="w-100 body_text pj_intro">
-                                    Indulge in the delectable world of Cake Blog, where sweetness and creativity
-                                    come together.
+                                    <div className="w-100 body_text pj_intro">
+                                        Indulge in the delectable world of Cake Blog, where sweetness and creativity
+                                        come together.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-span-4">
-                            <div className="img-des">
-                                <Link to={ROUTER.FASHION}>
-                                    <img className="w-100" src="./images/home/more-2.png" alt="logo"
-                                        loading="lazy" />
-                                </Link>
-                                <div className="d-flex title-pj">
-                                    <div className="medium_text pj_name">
-                                        <Link to={ROUTER.FASHION}>Verite Fashion App</Link>
+                            <div className="">
+                                <div className="img-des">
+                                    <Link to={ROUTER.FASHION}>
+                                        <img className="w-100" src="./images/home/more-2.png" alt="logo"
+                                            loading="lazy" />
+                                    </Link>
+                                    <div className="d-flex title-pj">
+                                        <div className="medium_text pj_name">
+                                            <Link to={ROUTER.FASHION}>Verite Fashion App</Link>
+                                        </div>
+                                        <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                     </div>
-                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
-                                </div>
-                                <div className="w-100 body_text pj_intro">
-                                    Indulge in luxury and style with our timeless fashion brand, redefining elegance
-                                    and sophistication.
+                                    <div className="w-100 body_text pj_intro">
+                                        Indulge in luxury and style with our timeless fashion brand, redefining elegance
+                                        and sophistication.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-span-4 more-2">
-                            <div className="img-des">
-                                <Link to={ROUTER.ALIO}>
-                                    <img className="w-100" src="./images/home/more-3.png" alt="logo"
-                                        loading="lazy" />
-                                </Link>
-                                <div className="d-flex title-pj">
-                                    <div className="medium_text pj_name">
-                                        <Link to={ROUTER.ALIO}>
-                                            Alio Yoga Website
-                                        </Link>
+                            <div className="more-2">
+                                <div className="img-des">
+                                    <Link to={ROUTER.ALIO}>
+                                        <img className="w-100" src="./images/home/more-3.png" alt="logo"
+                                            loading="lazy" />
+                                    </Link>
+                                    <div className="d-flex title-pj">
+                                        <div className="medium_text pj_name">
+                                            <Link to={ROUTER.ALIO}>
+                                                Alio Yoga Website
+                                            </Link>
+                                        </div>
+                                        <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
                                     </div>
-                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
-                                </div>
-                                <div className="w-100 body_text pj_intro">
-                                    Discover a serene oasis at our Yoga, Pilates, and Meditation website, where
-                                    tranquility awaits.
+                                    <div className="w-100 body_text pj_intro">
+                                        Discover a serene oasis at our Yoga, Pilates, and Meditation website, where
+                                        tranquility awaits.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </Slider>
                 </div>
             </div>
         </div>
