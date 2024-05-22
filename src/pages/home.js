@@ -78,7 +78,7 @@ const Home = () => {
             <div className="sm:hidden showcase-img"></div>
             <div className="col-span-4 body_text text-right border-b border-[#ccc] sm:border-none">
               <div className="mt-3 md:mt-0 mb-3 cursor-text-wrp text-center sm:text-left">
-                “I'm creative, open-minded and a fast learner. I have a strong desire to know, to understand, to grow,
+                “Hello and welcome to my Portfolio. I’m a Junior UX/UI Designer. I'm creative, open-minded and a fast learner. I have a strong desire to know, to understand, to grow,
                 to create, to transform, to improve and to share. My dream is to improve people's lives through my designs”
               </div>
               {/* <div className="text-right hidden sm:block">
@@ -97,7 +97,7 @@ const Home = () => {
           <img className="img-smile" src="./images/Sunflowers.svg" alt="smile" loading="lazy" />
         </div>
       </div>
-      
+
       <div className="section page-element home-info">
         {/* <div className="md:grid md:grid-cols-12">
           <div className="col-span-8 md:flex">
@@ -153,7 +153,7 @@ const Home = () => {
         {/* </div>
         </div> */}
       </div>
-      <div className="section mt-2 mb-4 md:mt-5 md:mb-7">
+      {/* <div className="section mt-2 mb-4 md:mt-5 md:mb-7">
         <div className="md:grid md:grid-cols-12 gap-4">
           <div className="col-span-5 d-flex">
             <div className="info-content body_text flex sm:block justify-between items-center">
@@ -173,8 +173,8 @@ const Home = () => {
             Don't just imagine, create
           </div>
         </div>
-      </div>
-      <div className="section-full page-element bg-[#E7E4DE]">
+      </div> */}
+      <div className="section-full page-element bg-primary">
         <div className="home-info3 m-w">
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12 sm:col-span-6 child1">
@@ -209,6 +209,54 @@ const Home = () => {
             <div className="col-6 small-img child4">
               <img className="" src="./images/home/Rectangle440.webp" alt="Rectangle35" loading="lazy" />
             </div>
+          </div>
+        </div>
+      </div>
+      {/* New section */}
+      <div className="section relative md:py-9">
+        <div className="grid grid-cols-12 gap-5 mb-3">
+          <div className="col-span-1"></div>
+          <div className="col-span-4 self-center">
+            <div className="text-large-2 cursor-text-wrp">Let's Create</div>
+          </div>
+          <div className="col-span-2">
+            <img className="img-ellipe-bl" src="./images/design-section1.png" alt="smile" loading="lazy" />
+          </div>
+          <div className="col-span-4">
+            <img className="img-ellipe-bl" src="./images/design-section2.png" alt="smile" loading="lazy" />
+          </div>
+          <div className="col-span-1"></div>
+        </div>
+        <div className="absolute top-[50%]">
+          <div className="grid grid-cols-12 gap-5">
+            <div className="col-pan-1"></div>
+            <div className="col-span-10">
+              <div className="flex items-center">
+                <div className="text-[180px] leading-[100px] mr-3">
+                  *
+                </div>
+                <div className="text-large">
+                  {currentText}
+                </div>
+              </div>
+            </div>
+            <div className="col-span-1"></div>
+          </div>
+        </div>
+        <div className="grid grid-cols-12 gap-5 mt-3">
+          <div className="col-span-2">
+
+          </div>
+          <div className="col-span-4">
+            <div>
+              If you like my work and want to work with me. Just contact me and we will agree on cooperation
+            </div>
+          </div>
+          <div className="col-span-1">
+
+          </div>
+          <div className="col-span-5">
+            <div className="text-large-2 cursor-text-wrp">Brand</div>
           </div>
         </div>
       </div>

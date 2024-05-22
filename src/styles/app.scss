@@ -30,11 +30,11 @@ body {
   font-family: 'SFUFutura', sans-serif;
   min-height: 100vh;
   margin: 0;
-  color: #373737 !important;
+  color: #221E1F !important;
 }
 
 a {
-  color: #333 !important;
+  color: #221E1F;
 }
 
 //SCROLL BAR
@@ -304,21 +304,21 @@ a {
 .my-header {
   z-index: 1000;
   transition: top .3s linear, opacity 0s;
-  background: #fff;
+  background: #221e1f;
 
   .header-navdrop {
     .navdrop-inner {
       z-index: 3000;
       display: none;
       width: max-content;
-      background: #fff;
+      background: #221e1f;
 
       .sub-menu {
-        color: #666666;
+        color: #fff;
       }
 
       .sub-menu:hover {
-        color: #000;
+        color: #fff;
       }
     }
   }
@@ -541,7 +541,9 @@ a {
 @media screen and (max-width: 768px) {
   .my-header {
     display: none !important;
+  
   }
+
 
   .slide-card-item.before {
     z-index: 2;
