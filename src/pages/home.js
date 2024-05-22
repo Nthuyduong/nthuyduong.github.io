@@ -98,7 +98,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="section page-element home-info">
+      {/* <div className="section page-element home-info"> */}
         {/* <div className="md:grid md:grid-cols-12">
           <div className="col-span-8 md:flex">
             <img className="md:block hidden main-logo" src="./images/home/logo-icon.svg" alt="logo" loading="lazy" />
@@ -120,7 +120,7 @@ const Home = () => {
             </div>
           </div>
         </div> */}
-      </div>
+      {/* </div> */}
       <div className="section ntd-showcase hidden sm:block">
         {/* <div className="showcase-img">
           <div className="sentence-container">
@@ -174,7 +174,7 @@ const Home = () => {
           </div>
         </div>
       </div> */}
-      <div className="section-full page-element bg-primary">
+      {/* <div className="section-full page-element bg-primary">
         <div className="home-info3 m-w">
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12 sm:col-span-6 child1">
@@ -211,52 +211,54 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* New section */}
-      <div className="section relative md:py-9">
-        <div className="grid grid-cols-12 gap-5 mb-3">
-          <div className="col-span-1"></div>
-          <div className="col-span-4 self-center">
-            <div className="text-large-2 cursor-text-wrp">Let's Create</div>
-          </div>
-          <div className="col-span-2">
-            <img className="img-ellipe-bl" src="./images/design-section1.png" alt="smile" loading="lazy" />
-          </div>
-          <div className="col-span-4">
-            <img className="img-ellipe-bl" src="./images/design-section2.png" alt="smile" loading="lazy" />
-          </div>
-          <div className="col-span-1"></div>
-        </div>
-        <div className="absolute top-[50%]">
-          <div className="grid grid-cols-12 gap-5">
-            <div className="col-pan-1"></div>
-            <div className="col-span-10">
-              <div className="flex items-center">
-                <div className="text-[180px] leading-[100px] mr-3">
-                  *
-                </div>
-                <div className="text-large">
-                  {currentText}
-                </div>
-              </div>
+      <div className="relative md:py-9 bg-tertiary">
+        <div className="section">
+          <div className="grid grid-cols-12 gap-5 mb-3">
+            <div className="col-span-1"></div>
+            <div className="col-span-4 self-center">
+              <div className="text-large-2 cursor-text-wrp">Let's Create</div>
+            </div>
+            <div className="col-span-2">
+              <img className="img-ellipe-bl" src="./images/design-section1.png" alt="smile" loading="lazy" />
+            </div>
+            <div className="col-span-4">
+              <img className="img-ellipe-bl" src="./images/design-section2.png" alt="smile" loading="lazy" />
             </div>
             <div className="col-span-1"></div>
           </div>
-        </div>
-        <div className="grid grid-cols-12 gap-5 mt-3">
-          <div className="col-span-2">
-
-          </div>
-          <div className="col-span-4">
-            <div>
-              If you like my work and want to work with me. Just contact me and we will agree on cooperation
+          <div className="absolute top-[50%]">
+            <div className="grid grid-cols-12 gap-5">
+              <div className="col-pan-1"></div>
+              <div className="col-span-10">
+                <div className="flex items-center">
+                  <div className="text-[180px] leading-[100px] mr-3">
+                    *
+                  </div>
+                  <div className="text-large">
+                    {currentText}
+                  </div>
+                </div>
+              </div>
+              <div className="col-span-1"></div>
             </div>
           </div>
-          <div className="col-span-1">
+          <div className="grid grid-cols-12 gap-5 mt-3">
+            <div className="col-span-2">
 
-          </div>
-          <div className="col-span-5">
-            <div className="text-large-2 cursor-text-wrp">Brand</div>
+            </div>
+            <div className="col-span-4">
+              <div>
+                If you like my work and want to work with me. Just contact me and we will agree on cooperation
+              </div>
+            </div>
+            <div className="col-span-1">
+
+            </div>
+            <div className="col-span-5">
+              <div className="text-large-2 cursor-text-wrp">Brand</div>
+            </div>
           </div>
         </div>
       </div>

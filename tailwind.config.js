@@ -7,7 +7,7 @@ module.exports = {
       'background': '#F0EEEB',
       'primary': '#F0EEEB',
       'white': '#ffffff',
-      'tertiary': '#F0EEEB',
+      'tertiary': '#C7C9C0',
       'black': '#000000',
       'ccc': '#cccccc',
       '999': '#999999',

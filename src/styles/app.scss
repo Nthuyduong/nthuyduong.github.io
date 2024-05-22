@@ -304,21 +304,21 @@ a {
 .my-header {
   z-index: 1000;
   transition: top .3s linear, opacity 0s;
-  background: #221e1f;
+  background: #fff;
 
   .header-navdrop {
     .navdrop-inner {
       z-index: 3000;
       display: none;
       width: max-content;
-      background: #221e1f;
+      background: #fff;
 
       .sub-menu {
-        color: #fff;
+        color: #221e1f;
       }
 
       .sub-menu:hover {
-        color: #fff;
+        color: #221e1f;
       }
     }
   }

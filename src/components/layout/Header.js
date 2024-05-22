@@ -90,17 +90,17 @@ const Header = () => {
         <div className="hidden w-full md:block">
           <div className="flex space-x-4 justify-center w-full">
             {/*Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"*/}
-            <Link to="/" className="text-white cursor-text-wrp hover:bg-gray-700 rounded-md px-3 py-4 text-sm " aria-current="page">Home</Link>
-            <Link to={ROUTER.ABOUT} className="text-white navdrop-title cursor-text-wrp rounded-md px-3 py-4 text-sm ">
+            <Link to="/" className="cursor-text-wrp hover:bg-gray-700 rounded-md px-3 py-4 text-sm " aria-current="page">Home</Link>
+            <Link to={ROUTER.ABOUT} className="navdrop-title cursor-text-wrp rounded-md px-3 py-4 text-sm ">
               About
             </Link>
             {/* Dropdown menu */}
             <div className="header-nav-item relative header-navdrop">
-              <div className="navdrop-title z-50 text-white rounded-md pr-3 py-4">
-                <Link to={ROUTER.DESIGNS} className="text-sm dark:text-white flex nav-link"><span className="nav-text">Projects</span></Link>
+              <div className="navdrop-title z-50 rounded-md pr-3 py-4">
+                <Link to={ROUTER.DESIGNS} className="text-sm flex nav-link"><span className="nav-text">Projects</span></Link>
               </div>
               <div className="navdrop-inner absolute left-30 w-48 py-1 border-solid border-x border-b border-ccc">
-                <div className="sub-menu block px-4 py-2 text-sm text-white">
+                <div className="sub-menu block px-4 py-2 text-sm">
                   <Link to={ROUTER.AGURI} className="body_text nav-link">Jewelry Website</Link>
                 </div>
                 <div className="sub-menu block px-4 py-2 text-sm text-white">
@@ -115,7 +115,7 @@ const Header = () => {
               </div>
             </div>
 
-            <Link to={ROUTER.CONTACT} className="text-white rounded-md px-3 py-4 text-sm cursor-text-wrp">Contact</Link>
+            <Link to={ROUTER.CONTACT} className="rounded-md px-3 py-4 text-sm cursor-text-wrp">Contact</Link>
           </div>
         </div>
       </div>
