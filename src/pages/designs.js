@@ -45,27 +45,29 @@ const Designs = () => {
                                     <div className="col-span-6 flex design-item-1">
                                         <div className="heading_5 mr-auto cursor-text-wrp font-bold">01.</div>
                                         <div>
-                                            <div className="mb-1 cursor-text-wrp">UX/UI Design</div>
-                                            <div className="cursor-text-wrp">Apr 2024</div>
+                                            <div className="mb-1 cursor-text-wrp body_text">UX/UI Design</div>
+                                            <div className="cursor-text-wrp body_text">Apr 2024</div>
                                         </div>
                                     </div>
                                     <div className="col-span-6 design-item-2">
                                         <img
-                                            className="w-full" src="./images/design/des-1.png"
+                                            className="w-full h-[160px] object-cover" src="./images/design/des-1.png"
                                             alt="logo"
                                             loading="lazy"
                                         />
                                     </div>
                                     <div className="col-span-12 design-item-3 flex flex-col justify-between w-full">
                                         <div className="max-w-[500px]">
-                                            <div className="heading_4 mb-3 cursor-text-wrp">Aguri Jewelry Website</div>
+                                            <Link to={ROUTER.AGURI}>
+                                                <div className="heading_4 mb-3 cursor-text-wrp">Aguri Jewelry Website</div>
+                                            </Link>
                                             <span className="body_text cursor-text-wrp">
                                                 User testing was an iterative process that was conducted at every milestone of the project to identify the
                                             </span>
                                         </div>
                                         <div className="des-item-view">
-                                            <Link className="des-item-view-link" to="to">View the project</Link>
-                                            
+                                            <Link className="des-item-view-link" to={ROUTER.AGURI}>View the project</Link>
+
                                         </div>
                                     </div>
                                 </div>
@@ -73,29 +75,31 @@ const Designs = () => {
                             <div className="project-inner py-5 design-item">
                                 <div className="flex">
                                     <div className="flex design-item-1">
-                                        <div className="heading_5 mr-auto cursor-text-wrp font-bold">01.</div>
+                                        <div className="heading_5 mr-auto cursor-text-wrp font-bold">02.</div>
                                         <div>
-                                            <div className="mb-1 cursor-text-wrp">UX/UI Design</div>
-                                            <div className="cursor-text-wrp">Apr 2024</div>
+                                            <div className="mb-1 cursor-text-wrp body_text">UX/UI Design</div>
+                                            <div className="cursor-text-wrp body_text">Apr 2024</div>
                                         </div>
                                     </div>
                                     <div className="design-item-2">
                                         <img
-                                            className="w-full" src="./images/design/des-1.png"
+                                            className="w-full h-[160px] object-cover" src="./images/design/des-2.png"
                                             alt="logo"
                                             loading="lazy"
                                         />
                                     </div>
                                     <div className="design-item-3 flex flex-col justify-between w-full">
                                         <div className="max-w-[500px]">
-                                            <div className="heading_4 mb-3 cursor-text-wrp">Aguri Jewelry Website</div>
+                                            <Link to={ROUTER.CAKE}>
+                                                <div className="heading_4 mb-3 cursor-text-wrp">Season Cake Blog</div>
+                                            </Link>
                                             <span className="body_text cursor-text-wrp">
                                                 User testing was an iterative process that was conducted at every milestone of the project to identify the
                                             </span>
                                         </div>
                                         <div className="des-item-view">
-                                            <Link className="des-item-view-link" to="to">View the project</Link>
-                                            
+                                            <Link className="des-item-view-link" to={ROUTER.CAKE}>View the project</Link>
+
                                         </div>
                                     </div>
                                 </div>
@@ -103,29 +107,63 @@ const Designs = () => {
                             <div className="project-inner py-5 border-y border-solid border-ccc design-item">
                                 <div className="flex">
                                     <div className="flex design-item-1">
-                                        <div className="heading_5 mr-auto cursor-text-wrp font-bold">01.</div>
+                                        <div className="heading_5 mr-auto cursor-text-wrp font-bold">03.</div>
                                         <div>
-                                            <div className="mb-1 cursor-text-wrp">UX/UI Design</div>
-                                            <div className="cursor-text-wrp">Apr 2024</div>
+                                            <div className="mb-1 cursor-text-wrp body_text">UX/UI Design</div>
+                                            <div className="cursor-text-wrp body_text">Apr 2024</div>
                                         </div>
                                     </div>
                                     <div className="design-item-2">
                                         <img
-                                            className="w-full" src="./images/design/des-1.png"
+                                            className="w-full h-[160px] object-cover" src="./images/design/des-3.png"
                                             alt="logo"
                                             loading="lazy"
                                         />
                                     </div>
                                     <div className="design-item-3 flex flex-col justify-between w-full">
                                         <div className="max-w-[500px]">
-                                            <div className="heading_4 mb-3 cursor-text-wrp">Aguri Jewelry Website</div>
+                                            <Link to={ROUTER.FASHION}>
+                                                <div className="heading_4 mb-3 cursor-text-wrp">Fashion Brand App</div>
+                                            </Link>
                                             <span className="body_text cursor-text-wrp">
                                                 User testing was an iterative process that was conducted at every milestone of the project to identify the
                                             </span>
                                         </div>
                                         <div className="des-item-view">
-                                            <Link className="des-item-view-link" to="to">View the project</Link>
-                                            
+                                            <Link className="des-item-view-link" to={ROUTER.FASHION}>View the project</Link>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="project-inner py-5 border-b border-solid border-ccc design-item">
+                                <div className="flex">
+                                    <div className="flex design-item-1">
+                                        <div className="heading_5 mr-auto cursor-text-wrp font-bold">04.</div>
+                                        <div>
+                                            <div className="mb-1 cursor-text-wrp body_text">UX/UI Design</div>
+                                            <div className="cursor-text-wrp body_text">Apr 2024</div>
+                                        </div>
+                                    </div>
+                                    <div className="design-item-2">
+                                        <img
+                                            className="w-full h-[160px] object-cover" src="./images/design/des-4.png"
+                                            alt="logo"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                    <div className="design-item-3 flex flex-col justify-between w-full">
+                                        <div className="max-w-[500px]">
+                                            <Link to={ROUTER.ALIO}>
+                                                <div className="heading_5 mb-3 cursor-text-wrp">Yoga App & Website</div>
+                                            </Link>
+                                            <span className="body_text cursor-text-wrp">
+                                                User testing was an iterative process that was conducted at every milestone of the project to identify the
+                                            </span>
+                                        </div>
+                                        <div className="des-item-view">
+                                            <Link className="des-item-view-link" to={ROUTER.ALIO}>View the project</Link>
+
                                         </div>
                                     </div>
                                 </div>
