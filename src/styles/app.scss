@@ -723,3 +723,15 @@ body:has(.header-mobile-open) {
   max-width: 950px;
   margin: auto;
 }
+// .image-container::before{
+//   content: "";
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         background-color: rgba(255, 255, 255, 0.4);
+//         backdrop-filter: blur(30px);
+//         z-index: 1;
+//         margin-bottom: 60px;
+// }

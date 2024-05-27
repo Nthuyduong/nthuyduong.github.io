@@ -27,6 +27,23 @@ const Aguri = () => {
         return () => clearInterval(interval);
     }, [buy.length]);
 
+    const [currentMockupIndex, setCurrentMockupIndex] = useState(0);
+    const [mockupp] = useState(
+        [
+            "mockupp1.png",
+            "mockupp2.png",
+            "mockupp3.png",
+            "mockupp4.png",
+        ]
+    )
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentMockupIndex((prevIndex) =>
+                prevIndex === mockupp.length - 1 ? 0 : prevIndex + 1);
+        }, 950);
+        return () => clearInterval(interval);
+    }, [mockupp.length]);
+
     return (
         <div>
             <div className="container-fluid">
@@ -124,10 +141,10 @@ const Aguri = () => {
                                             excelling clarity,
                                             look and feature, and luster.
                                         </div>
-                                        <div className="small_text text-right font-italic">
+                                        {/* <div className="small_text text-right font-italic">
                                             <a href="https://nthuyduong.github.io/aguri/#/" target="_blank">Visit:
                                                 https://nthuyduong.github.io/aguri/#/</a>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
@@ -136,6 +153,28 @@ const Aguri = () => {
                     <div className="ag-line4 pdb-60">
                         <img className="w-100" src="./images/Pj03_aguri/mockup.png" alt="#" loading="lazy" />
                     </div>
+                    <div className="pdb-60">
+                        <img className="w-full" src="./images/Pj03_aguri/jewelry-bg.png" alt="#" loading="lazy" />
+                    </div>
+                    {/* <div className="pdb-60">
+                        <div className="grid grid-cols-12">
+
+                            <div className="col-span-12 sm:col-span-6 line2-right relative">
+                                <img className="w-100" src="./images/Pj03_aguri/phone-bg.png" alt="#"
+                                    loading="lazy" />
+                                <div className="absolute top-[50%] left-[50%]">
+                                    <img className="w-100"
+                                        src={require(`../../public/images/Pj03_aguri/${mockupp[currentMockupIndex]}`)} alt="#"
+                                        loading="lazy" />
+                                </div>
+                            </div>
+                            <div className="col-span-12 sm:col-span-6 line2-left">
+                                <img className="w-100" src="./images/Pj03_aguri/phone2-bg.png" alt="#"
+                                    loading="lazy" />
+
+                            </div>
+                        </div>
+                    </div> */}
                     <div className="ag-line5 pdb-60">
                         <img className="w-100" src="./images/Pj03_aguri/product-page.png" alt="#" loading="lazy" />
                     </div>
@@ -238,81 +277,81 @@ const Aguri = () => {
             </div>
             <div className="more-project mb-8">
                 <div className="container-fluid">
-                        <Slider
-                            configs={{
-                                sliderPerRow: 3,
-                                sliderPerRowMobile: 1.25,
-                                allowDrag: true,
-                                duration: 400,
-                                auto: false,
-                                autoDuration: 1000,
-                                gap: 30,
-                                gapMobile: 10,
-                                process: true,
-                                paginate: false,
-                                navigator: false,
-                                active: 1
-                            }}
-                        >
-                            <div className=" more-1">
-                                <div className="img-des">
-                                    <Link to={ROUTER.CAKE}>
-                                        <img className="w-100" src="./images/home/more-4.png" alt="logo"
-                                            loading="lazy" />
-                                    </Link>
-                                    <div className="d-flex title-pj">
-                                        <div className="medium_text pj_name">
-                                            <Link to={ROUTER.CAKE}>
-                                                Season Cake Blog
-                                            </Link>
-                                        </div>
-                                        <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                    <Slider
+                        configs={{
+                            sliderPerRow: 3,
+                            sliderPerRowMobile: 1.25,
+                            allowDrag: true,
+                            duration: 400,
+                            auto: false,
+                            autoDuration: 1000,
+                            gap: 30,
+                            gapMobile: 10,
+                            process: true,
+                            paginate: false,
+                            navigator: false,
+                            active: 1
+                        }}
+                    >
+                        <div className=" more-1">
+                            <div className="img-des">
+                                <Link to={ROUTER.CAKE}>
+                                    <img className="w-100" src="./images/home/more-4.png" alt="logo"
+                                        loading="lazy" />
+                                </Link>
+                                <div className="d-flex title-pj">
+                                    <div className="medium_text pj_name">
+                                        <Link to={ROUTER.CAKE}>
+                                            Season Cake Blog
+                                        </Link>
                                     </div>
-                                    <div className="w-100 body_text pj_intro">
-                                        Indulge in the delectable world of Cake Blog, where sweetness and creativity
-                                        come together.
-                                    </div>
+                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                </div>
+                                <div className="w-100 body_text pj_intro">
+                                    Indulge in the delectable world of Cake Blog, where sweetness and creativity
+                                    come together.
                                 </div>
                             </div>
-                            <div className="">
-                                <div className="img-des">
-                                    <Link to={ROUTER.FASHION}>
-                                        <img className="w-100" src="./images/home/more-2.png" alt="logo"
-                                            loading="lazy" />
-                                    </Link>
-                                    <div className="d-flex title-pj">
-                                        <div className="medium_text pj_name">
-                                            <Link to={ROUTER.FASHION}>Verite Fashion App</Link>
-                                        </div>
-                                        <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                        </div>
+                        <div className="">
+                            <div className="img-des">
+                                <Link to={ROUTER.FASHION}>
+                                    <img className="w-100" src="./images/home/more-2.png" alt="logo"
+                                        loading="lazy" />
+                                </Link>
+                                <div className="d-flex title-pj">
+                                    <div className="medium_text pj_name">
+                                        <Link to={ROUTER.FASHION}>Verite Fashion App</Link>
                                     </div>
-                                    <div className="w-100 body_text pj_intro">
-                                        Indulge in luxury and style with our timeless fashion brand, redefining elegance
-                                        and sophistication.
-                                    </div>
+                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                </div>
+                                <div className="w-100 body_text pj_intro">
+                                    Indulge in luxury and style with our timeless fashion brand, redefining elegance
+                                    and sophistication.
                                 </div>
                             </div>
-                            <div className="more-2">
-                                <div className="img-des">
-                                    <Link to={ROUTER.ALIO}>
-                                        <img className="w-100" src="./images/home/more-3.png" alt="logo"
-                                            loading="lazy" />
-                                    </Link>
-                                    <div className="d-flex title-pj">
-                                        <div className="medium_text pj_name">
-                                            <Link to={ROUTER.ALIO}>
-                                                Alio Yoga Website
-                                            </Link>
-                                        </div>
-                                        <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                        </div>
+                        <div className="more-2">
+                            <div className="img-des">
+                                <Link to={ROUTER.ALIO}>
+                                    <img className="w-100" src="./images/home/more-3.png" alt="logo"
+                                        loading="lazy" />
+                                </Link>
+                                <div className="d-flex title-pj">
+                                    <div className="medium_text pj_name">
+                                        <Link to={ROUTER.ALIO}>
+                                            Alio Yoga Website
+                                        </Link>
                                     </div>
-                                    <div className="w-100 body_text pj_intro">
-                                        Discover a serene oasis at our Yoga, Pilates, and Meditation website, where
-                                        tranquility awaits.
-                                    </div>
+                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                </div>
+                                <div className="w-100 body_text pj_intro">
+                                    Discover a serene oasis at our Yoga, Pilates, and Meditation website, where
+                                    tranquility awaits.
                                 </div>
                             </div>
-                        </Slider>
+                        </div>
+                    </Slider>
                 </div>
             </div>
         </div>
