@@ -174,8 +174,8 @@ const Home = () => {
           </div>
         </div>
       </div> */}
-      {/* <div className="section-full page-element bg-primary">
-        <div className="home-info3 m-w">
+      <div className="section-full page-element bg-tertiary">
+        <div className="home-info3 pb-7 m-w">
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12 sm:col-span-6 child1">
               <div>
@@ -196,7 +196,7 @@ const Home = () => {
               </div>
             </div>
             <div className="col-span-4 child2">
-              <img className="w-full" src="./images/home/Rectangle36.webp" alt="Rectangle35" loading="lazy" />
+              <img className="w-full" src="./images/design-section2.png" alt="Rectangle35" loading="lazy" />
             </div>
             <div className="col-span-2 child3">
               <div className="img-box">
@@ -204,16 +204,16 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="row row-bt hidden sm:block">
+          {/* <div className="row row-bt hidden sm:block">
             <div className="col-6"></div>
             <div className="col-6 small-img child4">
               <img className="" src="./images/home/Rectangle440.webp" alt="Rectangle35" loading="lazy" />
             </div>
-          </div>
+          </div> */}
         </div>
-      </div> */}
+      </div>
       {/* New section */}
-      <div className="relative md:py-9 bg-tertiary">
+      {/* <div className="relative md:py-9 bg-tertiary">
         <div className="section">
           <div className="grid grid-cols-12 gap-5 mb-3">
             <div className="col-span-1"></div>
@@ -261,7 +261,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="section">
         <div className="my-design">
           <div className="">
@@ -313,7 +313,7 @@ const Home = () => {
 
                 <Link to={ROUTER.CAKE}>
                   <img
-                    className="w-full project-img" src="./images/design/des-1.webp"
+                    className="w-full project-img" src="./images/design/des-1.png"
                     alt="logo"
                     loading="lazy"
                   />
@@ -333,7 +333,7 @@ const Home = () => {
                 <Link to={ROUTER.AGURI}>
                   <img
                     className="w-full project-img"
-                    src="./images/design/des-2.webp"
+                    src="./images/design/des-2.png"
                     alt="logo"
                     loading="lazy"
                   />
@@ -351,7 +351,7 @@ const Home = () => {
               <div className="col-span-6 sm:col-span-3 project-odd">
                 <div className="heading_3 mb-2 cursor-text-wrp">03.</div>
                 <Link to={ROUTER.FASHION}>
-                  <img className="w-full project-img" src="./images/design/des-3.webp" alt="logo" loading="lazy" />
+                  <img className="w-full project-img" src="./images/design/des-3.png" alt="logo" loading="lazy" />
                 </Link>
                 <div className="heading_6 mt-3 cursor-text-wrp">
                   <Link to={ROUTER.FASHION}>Fashion App</Link>
@@ -363,7 +363,7 @@ const Home = () => {
               <div className="col-span-6 sm:col-span-3 project-even">
                 <div className="heading_3 mb-2 cursor-text-wrp">04.</div>
                 <Link to={ROUTER.ALIO}>
-                  <img className="w-full project-img" src="./images/design/des-4.webp" alt="logo" loading="lazy" />
+                  <img className="w-full project-img" src="./images/design/des-4.png" alt="logo" loading="lazy" />
                 </Link>
                 <div className="heading_6 mt-3 cursor-text-wrp">
                   <Link to={ROUTER.ALIO}>
