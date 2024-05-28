@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from "react";
-import {Link} from "react-router-dom";
-import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {ROUTER} from "../utils/constants";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ROUTER } from "../utils/constants";
 import Slider from "../components/common/slider";
 
 const Cake = () => {
@@ -23,64 +23,54 @@ const Cake = () => {
         return () => clearInterval(interval);
     }, [show.length]);
 
+    const [currentPhoneIndex, setCurrentPhoneIndex] = useState(0);
+    const [phone] = useState(
+        [
+            "ssc-phone2.png",
+            "ssc-phone3.png",
+            "ssc-phone4.png",
+            "ssc-phone5.png",
+        ]
+    )
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentPhoneIndex((prevIndex) =>
+                prevIndex === phone.length - 1 ? 0 : prevIndex + 1);
+        }, 1100);
+        return () => clearInterval(interval);
+    }, [phone.length]);
+
+
     const [currentCakeIndex, setCurrentCakeIndex] = useState(0);
     const [cake] = useState(
         [
-            "cake1.webp",
-            "cake2.webp",
-            "cake3.webp",
-            "cake4.webp",
-            "cake5.webp",
-            "cake6.webp",
-            "cake7.webp",
-            "cake8.webp",
+            "cake1.png",
+            "cake2.png",
+            "cake3.png",
+            "cake4.png",
         ]
     )
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentCakeIndex((prevIndex) =>
                 prevIndex === cake.length - 1 ? 0 : prevIndex + 1);
-        }, 950);
+        }, 1100);
         return () => clearInterval(interval);
     }, [cake.length]);
 
-    return(
+    return (
         <div className="cake-page">
             <div className="container-fluid">
                 <div className="product-showcase">
-                    <div className="cake-banner">
-                        <img className="w-100" src="./images/Pj01_cake/cake-banner.webp" alt="#" loading="lazy"/>
-                        <div className="showcase-content">
-                            <div className="grid grid-cols-12">
-                                <div className="sm:col-span-1 md:col-span-3"></div>
-                                <div className="col-span-12 sm:col-span-10 md:col-span-6 text-center">
-                                    <div className="heading_4 mb-3">SEASON CAKE BLOG</div>
-                                    <div className="body-text">
-                                        There are many food blog websites existing, but over the years I gained more experience
-                                        in baking and this is where I am now, sharing my passion for creative special cakes,
-                                        my favorite recipes and healthy baking.
-                                    </div>
-                                </div>
-                                <div className="sm:col-span-1 ms:col-span-3"></div>
-                            </div>
-                        </div>
-                        {/* <img className="w-100" src="https://i.imgur.com/RLSInkn.png"/> */}
-                    </div>
-                    <div className="">
-                        <div className="grid grid-cols-12">
-                            <div className="col-span-6"></div>
-                            <div className="col-span-6"></div>
-                        </div>
-                    </div>
                     <div className="pdb-60">
                         <div className="grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6">
-                                <img className="w-100" src="./images/Pj01_cake/line2-01.webp" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj01_cake/line2-01.png" alt="#" loading="lazy" />
                             </div>
                             <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end">
                                 <div className="p-1 sm:p-8 pb-0">
-                                    <div className="heading_4">Introduction</div>
-                                    <div className="body_text mb-5">
+                                    <div className="heading_4 mb-4">About project</div>
+                                    <div className="body_text">
                                         Season Cake Blog is a vibrant platform dedicated to all things cake. We are passionate
                                         about sharing the artistry, creativity, and joy of cake baking. Through our curated
                                         content, tantalizing recipes, and expert tips, we aim to inspire and empower bakers
@@ -117,15 +107,42 @@ const Cake = () => {
                         </div>
                     </div> */}
 
-                    <div className="ag-line6 mdb-60">
+                    {/* <div className="ag-line6 mdb-60">
                         <div className="inner">
                             <img className="w-100" src={require(`../../public/images/Pj01_cake/${cake[currentCakeIndex]}`)} alt="#" loading="lazy"/>
+                        </div>
+                    </div> */}
+                    <div className="mdb-60">
+                        <div className="">
+                            <img className="w-100" src="./images/Pj01_cake/ssc-mockup.png" alt="#" loading="lazy" />
+                        </div>
+                    </div>
+                    <div className="pdb-60">
+                        <div className="grid grid-cols-12">
+                            <div className="col-span-12 sm:col-span-6">
+                            <img className="w-100" src={require(`../../public/images/Pj01_cake/${cake[currentCakeIndex]}`)} alt="#" loading="lazy"/>
+                            </div>
+                            <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end relative">
+                                <img className="w-100" src="./images/Pj01_cake/cake-bg.png" alt="#" loading="lazy" />
+                                <div className="absolute top-[50%] left-[50%] phone-inner">
+                                    <img className="w-100" src={require(`../../public/images/Pj01_cake/${phone[currentPhoneIndex]}`)} alt="#" loading="lazy" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="pdb-60">
                         <div className="">
                             <div className="">
-                                <img className="w-100" src="./images/Pj01_cake/detail.webp" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj01_cake/category-cake.png" alt="#" loading="lazy" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="pdb-60">
+                        <div className="">
+                            <div className="">
+                                <img className="w-100" src="./images/Pj01_cake/detail.webp" alt="#" loading="lazy" />
+
                             </div>
                         </div>
                     </div>
@@ -133,26 +150,26 @@ const Cake = () => {
             </div>
             <div className="more-project mb-8">
                 <div className="container-fluid">
-                        <Slider
-                            configs={{
-                                sliderPerRow: 3,
-                                sliderPerRowMobile: 1.25,
-                                allowDrag: true,
-                                duration: 400,
-                                auto: false,
-                                autoDuration: 1000,
-                                gap: 30,
-                                gapMobile: 10,
-                                process: true,
-                                paginate: false,
-                                navigator: false,
-                                active: 1
-                            }}
-                        >
+                    <Slider
+                        configs={{
+                            sliderPerRow: 3,
+                            sliderPerRowMobile: 1.25,
+                            allowDrag: true,
+                            duration: 400,
+                            auto: false,
+                            autoDuration: 1000,
+                            gap: 30,
+                            gapMobile: 10,
+                            process: true,
+                            paginate: false,
+                            navigator: false,
+                            active: 1
+                        }}
+                    >
                         <div className="more-1">
                             <div className="img-des">
                                 <Link to={ROUTER.AGURI}>
-                                    <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
+                                    <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy" />
                                 </Link>
                                 <div className="d-flex title-pj">
                                     <div className="medium_text pj_name">
@@ -170,7 +187,7 @@ const Cake = () => {
                         <div className="">
                             <div className="img-des">
                                 <Link to={ROUTER.FASHION}>
-                                    <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
+                                    <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy" />
                                 </Link>
                                 <div className="d-flex title-pj">
                                     <div className="medium-text pj_name">
@@ -186,7 +203,7 @@ const Cake = () => {
                         <div className="more-2">
                             <div className="img-des">
                                 <Link to={ROUTER.ALIO}>
-                                    <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
+                                    <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy" />
                                 </Link>
                                 <div className="d-flex title-pj">
                                     <div className="medium_text pj_name">

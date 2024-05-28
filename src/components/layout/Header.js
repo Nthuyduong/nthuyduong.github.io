@@ -64,7 +64,7 @@ const Header = () => {
               className="navdrop-title z-50 text-gray-300 hover:text-gray rounded-md pr-3 flex w-full"
               onClick={() => setOpenNavDropdown(!openNavDropdown)}
             >
-              <Link to={ROUTER.DESIGNS} className="text-4xl font-medium dark:text-white flex nav-link"><span className="nav-text">Projects</span></Link>
+              <Link to={ROUTER.DESIGNS} className="text-4xl font-medium flex nav-link"><span className="nav-text">Projects</span></Link>
               <span className="w-full">(04)</span>
             </div>
             <div className={`navdrop-mobile-inner left-30 w-48 ${openNavDropdown ? 'navdrop-mobile-inner-open': ''}`}>
