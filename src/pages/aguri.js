@@ -50,7 +50,7 @@ const Aguri = () => {
                 <div className="product-showcase">
                     <div className="ag-line1 pdb-60">
                         <div className="grid grid-cols-12">
-                            <div className="col-span-12 sm:col-span-6 line1-left">
+                            <div className="col-span-12 sm:col-span-6 line1-left bg-primary">
                                 <div className="line1-left-inner">
                                     <div className="content-top text-center">
                                         <div className="heading_4">Our Utmost Pride</div>
@@ -58,13 +58,13 @@ const Aguri = () => {
                                     </div>
                                     <img className="img-bg" src="./images/Pj03_aguri/line1-center.png" alt="#"
                                         loading="lazy" />
-                                    <div className="content-bottom text-center">
-                                        <div className="heading_2 mb-5">JOIN US</div>
-                                        <div className="body_text">
+                                    {/* <div className="content-bottom text-center">
+                                        <div className="heading_2 mb-5">JOIN US</div> */}
+                                        {/* <div className="body_text">
                                             <a href="https://nthuyduong.github.io/aguri/#/" target="_blank">Visit website:
                                                 https://nthuyduong.github.io/aguri/#/</a>
-                                        </div>
-                                    </div>
+                                        </div> */}
+                                    {/* </div> */}
                                 </div>
                             </div>
                             <div className="col-span-12 sm:col-span-6 line1-right">
@@ -121,7 +121,7 @@ const Aguri = () => {
                                     loading="lazy" />
                             </div>
                             <div className="col-span-12 sm:col-span-6 line2-left bg-tertiary">
-                                <div className="p-6 flex h-full items-end">
+                                <div className="p-7 flex h-full items-end">
                                     <div>
                                         <div className="heading_4 mb-4">Introduction</div>
                                         <div className="body_text mb-5">

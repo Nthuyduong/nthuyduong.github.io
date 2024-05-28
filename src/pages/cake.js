@@ -67,8 +67,8 @@ const Cake = () => {
                             <div className="col-span-12 sm:col-span-6">
                                 <img className="w-100" src="./images/Pj01_cake/line2-01.png" alt="#" loading="lazy" />
                             </div>
-                            <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end">
-                                <div className="p-1 sm:p-8 pb-0">
+                            <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end bg-tertiary">
+                                <div className="p-7">
                                     <div className="heading_4 mb-4">About project</div>
                                     <div className="body_text">
                                         Season Cake Blog is a vibrant platform dedicated to all things cake. We are passionate

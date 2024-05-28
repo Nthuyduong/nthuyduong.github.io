@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import {Link} from "react-router-dom";
-import {ROUTER} from "../utils/constants";
-import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
+import { ROUTER } from "../utils/constants";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Slider from "../components/common/slider";
 
 const Alio = () => {
@@ -15,12 +15,12 @@ const Alio = () => {
             "mbl4.webp",
         ]
     )
-    useEffect(()=> {
+    useEffect(() => {
         const interval = setInterval(() => {
             setCurrentMbl((prevIndex) =>
-            prevIndex === mbl.length - 1 ? 0 : prevIndex + 1);
+                prevIndex === mbl.length - 1 ? 0 : prevIndex + 1);
         }, 950);
-    return () => clearInterval(interval);
+        return () => clearInterval(interval);
     }, [mbl.length]);
 
     const [currentMobile, setCurrentMobile] = useState(0);
@@ -99,10 +99,10 @@ const Alio = () => {
                     <div className="alio1 pdb-60">
                         <div className="grid grid-cols-12">
                             <div className="col-span-6">
-                                <img className="w-100" src="./images/Pj02_yoga/line1-01.webp" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj02_yoga/line1-01.webp" alt="#" loading="lazy" />
                             </div>
                             <div className="col-span-6 r1-right">
-                                <img className="w-100" src="./images/Pj02_yoga/line1-02.webp" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj02_yoga/line1-02.webp" alt="#" loading="lazy" />
                                 <div className="slide-content z-10">
                                     <div className="heading_5">You will</div>
                                     <div className="heading_1 my-2">Be Your Best</div>
@@ -112,11 +112,11 @@ const Alio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="alio2 pdb-60">
+                    <div className="pdb-60">
                         <div className="grid grid-cols-12">
-                            <div className="col-span-6 r2-left">
-                                <div className="p-2">
-                                    <div className="heading_4">Introduction</div>
+                            <div className="col-span-6 r2-left flex items-end bg-primary">
+                                <div className="p-7">
+                                    <div className="heading_4 mb-4">Introduction</div>
                                     <div className="body_text">
                                         Welcome to Alio, Pilate, and Meditation! Our website is your sanctuary for holistic
                                         wellness and mindful living. Discover the power of Alio for dynamic fitness, Pilate
@@ -127,13 +127,8 @@ const Alio = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-span-6 relative">
-                                <div className="alio2-left">
-                                    <img className="w-100" src="./images/Pj02_yoga/line2-02-lg.webp" alt="#" loading="lazy"/>
-                                    <div className="absolute top-1/2 bottom-1/2 -translate-x-1/2 -translate-y-1/2">
-                                        <img className="" src="./images/Pj02_yoga/line2-02-sm.webp" alt="#" loading="lazy"/>
-                                    </div>
-                                </div>
+                            <div className="col-span-6">
+                                <img className="w-full" src="./images/Pj02_yoga/line2-02-sm.webp" alt="#" loading="lazy" />
                             </div>
                         </div>
                     </div>
@@ -141,11 +136,11 @@ const Alio = () => {
                         <div className="grid grid-cols-12">
                             <div className="col-span-6 r3-left">
                                 <img className="w-100" src={require(`../../public/images/Pj02_yoga/${images[currentImageIndex]}`)}
-                                     alt="carousel image" />
+                                    alt="carousel image" />
                             </div>
-                            <div className="col-span-6 r3-right flex items-end">
-                                <div className="p-2">
-                                    <div className="heading_4">The Logotype</div>
+                            <div className="col-span-6 r3-right flex items-end bg-tertiary">
+                                <div className="p-7">
+                                    <div className="heading_4 mb-4">The Logotype</div>
                                     <div className="body_text">
                                         The logo for a yoga website embodies the essence of tranquility and self-discovery.
                                         Designed to cater to users seeking to learn yoga, meditation, and pilates, the
@@ -163,22 +158,22 @@ const Alio = () => {
 
                     </div>
                     <div className="alio5 pdb-60">
-                        <img className="w-100" src={require(`../../public/images/Pj02_yoga/${Showcase[currentLogoIndex]}`)}/>
+                        <img className="w-100" src={require(`../../public/images/Pj02_yoga/${Showcase[currentLogoIndex]}`)} />
                     </div>
                     <div className="alio5.1 pdb-60">
-                        <img className="w-100" src="./images/Pj02_yoga/line5.1.webp" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj02_yoga/line5.1.webp" loading="lazy" />
                     </div>
                     <div className="alio6 pdb-60 h-full">
                         <div className="grid grid-cols-12">
                             <div className="col-span-6">
-                                <img className="w-100" src="./images/Pj02_yoga/line6-01.png" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj02_yoga/line6-01.png" alt="#" loading="lazy" />
                             </div>
                             <div className="col-span-6">
-                                <img className="w-100" src="./images/Pj02_yoga/line6-02.png" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj02_yoga/line6-02.png" alt="#" loading="lazy" />
                                 <div className="sm-img">
                                     <div className="absolute">
                                         <img className="mb-5" src={require(`../../public/images/Pj02_yoga/${logo[currentLogoIndex]}`)}
-                                             alt="carousel image" />
+                                            alt="carousel image" />
                                         <div className="medium_text text-light text-center">BE WITH YOU ANYWHERE, ANYTIME</div>
                                     </div>
                                 </div>
@@ -188,49 +183,49 @@ const Alio = () => {
                     <div className="alio7 pdb-60">
                         <div className="inner">
                             <img className="w-100"
-                                 src={require(`../../public/images/Pj02_yoga/${mobile[currentMobile]}`)} alt="#"
-                                 loading="lazy"/>
+                                src={require(`../../public/images/Pj02_yoga/${mobile[currentMobile]}`)} alt="#"
+                                loading="lazy" />
                         </div>
                     </div>
                     <div className="alio8 pdb-60">
                         <div className="grid grid-cols-12">
                             <div className="col-span-6">
-                                <img className="w-100" src="./images/Pj02_yoga/line7-01.webp" alt="#" loading="lazy"/>
+                                <img className="w-100" src="./images/Pj02_yoga/line7-01.webp" alt="#" loading="lazy" />
                             </div>
                             <div className="col-span-6">
                                 <img className="w-100"
-                                     src={require(`../../public/images/Pj02_yoga/${mbl[currentMbl]}`)} alt="#"
-                                     loading="lazy"/>
+                                    src={require(`../../public/images/Pj02_yoga/${mbl[currentMbl]}`)} alt="#"
+                                    loading="lazy" />
                             </div>
                         </div>
                     </div>
                     <div className="alio9 pdb-60">
-                        <img className="w-100" src="./images/Pj02_yoga/line9.webp" alt="#" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj02_yoga/line9.webp" alt="#" loading="lazy" />
                     </div>
                 </div>
             </div>
             <div className="more-project mb-8">
                 <div className="container-fluid">
-                        <Slider
-                            configs={{
-                                sliderPerRow: 3,
-                                sliderPerRowMobile: 1.25,
-                                allowDrag: true,
-                                duration: 400,
-                                auto: false,
-                                autoDuration: 1000,
-                                gap: 30,
-                                gapMobile: 10,
-                                process: true,
-                                paginate: false,
-                                navigator: false,
-                                active: 1
-                            }}
-                        >
+                    <Slider
+                        configs={{
+                            sliderPerRow: 3,
+                            sliderPerRowMobile: 1.25,
+                            allowDrag: true,
+                            duration: 400,
+                            auto: false,
+                            autoDuration: 1000,
+                            gap: 30,
+                            gapMobile: 10,
+                            process: true,
+                            paginate: false,
+                            navigator: false,
+                            active: 1
+                        }}
+                    >
                         <div className="more-1">
                             <div className="img-des">
                                 <Link to={ROUTER.AGURI}>
-                                    <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
+                                    <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy" />
                                 </Link>
                                 <div className="d-flex title-pj">
                                     <div className="medium_text pj_name">
@@ -248,7 +243,7 @@ const Alio = () => {
                         <div className="">
                             <div className="img-des">
                                 <Link to={ROUTER.FASHION}>
-                                    <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy"/>
+                                    <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy" />
                                 </Link>
                                 <div className="d-flex title-pj">
                                     <div className="medium_text pj_name">
@@ -266,7 +261,7 @@ const Alio = () => {
                         <div className=" more-2">
                             <div className="img-des">
                                 <Link to={ROUTER.CAKE}>
-                                    <img className="w-100" src="./images/home/more-4.png" alt="logo" loading="lazy"/>
+                                    <img className="w-100" src="./images/home/more-4.png" alt="logo" loading="lazy" />
                                 </Link>
                                 <div className="d-flex title-pj">
                                     <div className="medium_text pj_name">
@@ -281,7 +276,7 @@ const Alio = () => {
                                 </div>
                             </div>
                         </div>
-                        </Slider>
+                    </Slider>
                 </div>
             </div>
         </div>
