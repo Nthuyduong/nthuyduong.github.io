@@ -156,13 +156,13 @@ const Aguri = () => {
                     <div className="pdb-60">
                         <img className="w-full" src="./images/Pj03_aguri/jewelry-bg.png" alt="#" loading="lazy" />
                     </div>
-                    {/* <div className="pdb-60">
+                    <div className="pdb-60">
                         <div className="grid grid-cols-12">
 
                             <div className="col-span-12 sm:col-span-6 line2-right relative">
                                 <img className="w-100" src="./images/Pj03_aguri/phone-bg.png" alt="#"
                                     loading="lazy" />
-                                <div className="absolute top-[50%] left-[50%]">
+                                <div className="phone-inner absolute top-[50%] left-[50%]">
                                     <img className="w-100"
                                         src={require(`../../public/images/Pj03_aguri/${mockupp[currentMockupIndex]}`)} alt="#"
                                         loading="lazy" />
@@ -174,7 +174,7 @@ const Aguri = () => {
 
                             </div>
                         </div>
-                    </div> */}
+                    </div>
                     <div className="ag-line5 pdb-60">
                         <img className="w-100" src="./images/Pj03_aguri/product-page.png" alt="#" loading="lazy" />
                     </div>

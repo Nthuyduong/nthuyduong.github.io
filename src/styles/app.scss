@@ -735,3 +735,6 @@ body:has(.header-mobile-open) {
 //         z-index: 1;
 //         margin-bottom: 60px;
 // }
+.phone-inner{
+  transform: translate(-50%, -50%);
+}
