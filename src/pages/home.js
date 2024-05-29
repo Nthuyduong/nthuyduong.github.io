@@ -63,21 +63,21 @@ const Home = () => {
     <div className="home-page">
 
       {/* NEW banner */}
-      <div className="bg-background pt-6 pb-7">
+      <div className="bg-background pt-4 md:pt-6 pb-5 md:pb-7">
         <div className="section relative">
           <div className="md:grid md:grid-cols-12">
             <div className="col-span-8 md:flex">
               <img className="h-[90px] md:block hidden main-logo mr-4" src="./images/home/logo-icon.svg" alt="logo" loading="lazy" />
-              <div className="info-content medium_text cursor-text-wrp">
+              <div className="info-content medium_text text-center md:text-left cursor-text-wrp">
                 Hello, My name is
-                <div className="ntd-name sm:mt-3 heading_3 cursor-text-wrp">
+                <div className="ntd-name sm:mt-3 text-center md:text-left heading_3 cursor-text-wrp mt-1 md:mt-0">
                   Nguyen Thuy Duong
                 </div>
               </div>
             </div>
             {/* <div className="sm:hidden showcase-img"></div> */}
             <div className="col-span-4 body_text text-right border-b border-[#ccc] sm:border-none">
-              <div className="mt-3 md:mt-0 mb-3 cursor-text-wrp text-center sm:text-left">
+              <div className="mt-3 md:mt-0 md:mb-3 mb-5 cursor-text-wrp text-center sm:text-left">
                 “Hello and welcome to my Portfolio. I’m a Junior UX/UI Designer. I'm creative, open-minded and a fast learner. I have a strong desire to know, to understand, to grow,
                 to create, to transform, to improve and to share. My dream is to improve people's lives through my designs”
               </div>
@@ -87,13 +87,13 @@ const Home = () => {
             </div>
           </div>
           <div className="flex justify-center mt-5 z-20">
-            <img className="h-[320px] img-smile" src="./images/bannerhome.svg" alt="smile" loading="lazy" />
+            <img className="h-[200px] md:h-[320px] img-smile" src="./images/bannerhome.svg" alt="smile" loading="lazy" />
           </div>
-          <div className="flex justify-center mt-5">
-            <img className="h-[130px] img-smile" src="./images/bannertext.svg" alt="smile" loading="lazy" />
+          <div className="flex justify-center mt-2 md:mt-5">
+            <img className="h-[80px] md:h-[130px] img-smile" src="./images/bannertext.svg" alt="smile" loading="lazy" />
           </div>
         </div>
-        <div className="absolute top-[90%] md:top-[35%] z-10">
+        <div className="absolute top-[95%] md:top-[35%] z-10">
           <img className="img-smile" src="./images/Sunflowers.svg" alt="smile" loading="lazy" />
         </div>
       </div>
