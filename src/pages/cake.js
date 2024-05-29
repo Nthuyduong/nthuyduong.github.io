@@ -138,7 +138,7 @@ const Cake = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="pdb-60">
+                    <div className="">
                         <div className="">
                             <div className="">
                                 <img className="w-100" src="./images/Pj01_cake/detail.webp" alt="#" loading="lazy" />

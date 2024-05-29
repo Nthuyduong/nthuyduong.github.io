@@ -185,7 +185,7 @@ const Aguri = () => {
                                 loading="lazy" />
                         </div>
                     </div> */}
-                    <div className="ag-line4 pdb-60">
+                    <div className="ag-line4">
                         <div className="grid grid-cols-12">
                             <div className="col-span-6 fix-img">
                                 {/*<img className="w-100" src="./images/Pj03_aguri/line2-01.png" alt="#" loading="lazy"/>*/}

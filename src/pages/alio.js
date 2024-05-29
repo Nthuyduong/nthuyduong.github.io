@@ -168,13 +168,13 @@ const Alio = () => {
                             <div className="col-span-6">
                                 <img className="w-100" src="./images/Pj02_yoga/line6-01.png" alt="#" loading="lazy" />
                             </div>
-                            <div className="col-span-6">
+                            <div className="col-span-6 relative">
                                 <img className="w-100" src="./images/Pj02_yoga/line6-02.png" alt="#" loading="lazy" />
                                 <div className="sm-img">
-                                    <div className="absolute">
-                                        <img className="mb-5" src={require(`../../public/images/Pj02_yoga/${logo[currentLogoIndex]}`)}
+                                    <div className="absolute top-[50%] left-[50%] phone-inner">
+                                        <img className="" src={require(`../../public/images/Pj02_yoga/${logo[currentLogoIndex]}`)}
                                             alt="carousel image" />
-                                        <div className="medium_text text-light text-center">BE WITH YOU ANYWHERE, ANYTIME</div>
+                                        {/* <div className="medium_text text-light text-center">BE WITH YOU ANYWHERE, ANYTIME</div> */}
                                     </div>
                                 </div>
                             </div>
@@ -199,7 +199,7 @@ const Alio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="alio9 pdb-60">
+                    <div className="alio9">
                         <img className="w-100" src="./images/Pj02_yoga/line9.webp" alt="#" loading="lazy" />
                     </div>
                 </div>
