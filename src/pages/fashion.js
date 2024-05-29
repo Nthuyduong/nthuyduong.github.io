@@ -17,7 +17,7 @@ const Fashion = () => {
         const interval = setInterval(() => {
             setCurrentimg((prevIndex) =>
             prevIndex === img.length - 1 ? 0 : prevIndex + 1);
-        }, 950);
+        }, 1050);
     }, [img.length]);
 
     return(
@@ -50,11 +50,11 @@ const Fashion = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="verite_line2 pdb-60">
+                    <div className="verite_line2 pdb-60 pt-6">
                         <div className="grid grid-cols-12">
-                            <div className="col-span-12 sm:col-span-6 flex items-end">
-                                <div className="p-2">
-                                    <div className="heading_4">Introduction</div>
+                            <div className="col-span-12 sm:col-span-6 flex items-end bg-primary">
+                                <div className="p-7">
+                                    <div className="heading_4 mb-4">Introduction</div>
                                     <div className="body_text">
                                         Discover the essence of French luxury fashion. Our brand captures the essence of
                                         timeless elegance and refined craftsmanship. With meticulous attention to detail and
@@ -70,9 +70,13 @@ const Fashion = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="verite-show1 pdb-60">
-                        <img className="mb-4 w-100" src={require(`../../public/images/Pj04_fashion/${img[currentimg]}`)} alt="#" loading="lazy"/>
+                    <div className="pdb-60">
+                        <img className="mb-4 w-100" src="./images/Pj04_fashion/img1.webp" alt="#" loading="lazy"/>
                     </div>
+                    
+                    {/* <div className="verite-show1 pdb-60">
+                        <img className="mb-4 w-100" src={require(`../../public/images/Pj04_fashion/${img[currentimg]}`)} alt="#" loading="lazy"/>
+                    </div> */}
                     <div className="verite_line3 pdb-60">
                         <div className="grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6">
@@ -83,10 +87,13 @@ const Fashion = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="pdb-60">
+                        <img className="mb-4 w-100" src="./images/Pj04_fashion/img2.webp" alt="#" loading="lazy"/>
+                    </div>
                     <div className="verite_line4 pdb-60">
                         <img className="w-100" src="./images/Pj04_fashion/line4.webp" alt="#" loading="lazy"/>
                     </div>
-                    <div className="verite_line5 pdb-60">
+                    <div className="verite_line5">
                         <div className="grid grid-cols-12">
                             <div className="col-span-6">
                                 <img className="w-100" src="./images/Pj04_fashion/line5-01.webp" alt="#" loading="lazy"/>
@@ -122,7 +129,7 @@ const Fashion = () => {
                                     <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
                                 </Link>
                                 <div className="flex title-pj">
-                                    <div className="medium_text pj_name">
+                                    <div className="medium_text pj_name my-2">
                                         <Link to={ROUTER.AGURI}>
                                             Aguri Jewellery Website
                                         </Link>
@@ -140,7 +147,7 @@ const Fashion = () => {
                                     <img className="w-100" src="./images/home/more-4.png" alt="logo" loading="lazy"/>
                                 </Link>
                                 <div className="flex title-pj">
-                                    <div className="medium_text pj_name">
+                                    <div className="medium_text pj_name my-2">
                                         <Link to={ROUTER.CAKE}>
                                             Season Cake Blog
                                         </Link>
@@ -158,7 +165,7 @@ const Fashion = () => {
                                     <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
                                 </Link>
                                 <div className="flex title-pj">
-                                    <div className="medium_text pj_name">
+                                    <div className="medium_text pj_name my-2">
                                         <Link to={ROUTER.ALIO}>
                                             Alio Yoga Website
                                         </Link>
