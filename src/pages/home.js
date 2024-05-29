@@ -86,8 +86,11 @@ const Home = () => {
               </div> */}
             </div>
           </div>
-          <div className="flex justify-center mt-5 z-20">
+          <div className="flex justify-center mt-5 z-20 md:block hidden">
             <img className="h-[200px] md:h-[320px] img-smile" src="./images/bannerhome.svg" alt="smile" loading="lazy" />
+          </div>
+          <div className="flex justify-center mt-5 z-20 block md:hidden">
+            <img className="h-[200px] md:h-[320px] img-smile" src="./images/bannerhome2.png" alt="smile" loading="lazy" />
           </div>
           <div className="flex justify-center mt-2 md:mt-5">
             <img className="h-[80px] md:h-[130px] img-smile" src="./images/bannertext.svg" alt="smile" loading="lazy" />
