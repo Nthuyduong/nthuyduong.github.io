@@ -47,9 +47,9 @@ a {
   background-color: darkgrey;
 }
 
-.page-body-wrapper {
-  min-height: calc(100vh - 68px);
-}
+// .page-body-wrapper {
+//   min-height: calc(100vh - 68px);
+// }
 
 //FONT-STYLE
 .heading_1 {
@@ -141,11 +141,11 @@ a {
   background: $primary_color;
 }
 
-.page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+// .page {
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+// }
 
 .sec_color {
   color: $secondary_color;
@@ -360,6 +360,7 @@ a {
     .slider-control {
       display: none;
     }
+
   }
 
   .slider-control {
@@ -640,7 +641,8 @@ a {
 .header-mobile {
   transition: top .3s linear, opacity 0s;
   background: #fff;
-  z-index: 1;
+  z-index: 9999;
+
 
   .header-mobile-menu {
     position: fixed;

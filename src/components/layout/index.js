@@ -75,8 +75,8 @@ const Layout = ({ children }) => {
                 </div>
                 <Footer />
 
-                <div className="back-to-top btt2 body_text" onClick={() => { scrollToTop() }}>Back to top</div>
-                <div className="top-to-btm">
+                <div className="back-to-top btt2 body_text hidden md:block" onClick={() => { scrollToTop() }}>Back to top</div>
+                <div className="top-to-btm hidden md:block">
                     <FontAwesomeIcon className="icon-up" icon={faArrowUp} onClick={handleScrollUp}/>
                     <div className="">
                         <div className="body_text position">{countdown}/10</div>

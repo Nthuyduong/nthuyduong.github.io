@@ -75,7 +75,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="sm:hidden showcase-img"></div>
+            {/* <div className="sm:hidden showcase-img"></div> */}
             <div className="col-span-4 body_text text-right border-b border-[#ccc] sm:border-none">
               <div className="mt-3 md:mt-0 mb-3 cursor-text-wrp text-center sm:text-left">
                 “Hello and welcome to my Portfolio. I’m a Junior UX/UI Designer. I'm creative, open-minded and a fast learner. I have a strong desire to know, to understand, to grow,
@@ -93,7 +93,7 @@ const Home = () => {
             <img className="h-[130px] img-smile" src="./images/bannertext.svg" alt="smile" loading="lazy" />
           </div>
         </div>
-        <div className="absolute top-[35%] z-10">
+        <div className="absolute top-[90%] md:top-[35%] z-10">
           <img className="img-smile" src="./images/Sunflowers.svg" alt="smile" loading="lazy" />
         </div>
       </div>
