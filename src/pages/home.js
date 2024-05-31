@@ -445,7 +445,7 @@ const Home = () => {
           </div>
         </div> */}
       {/*DECOR TEXT*/}
-      <div className="section-full scroll-container text-decor mt-5 md:mt-8 py-0 md:py-3">
+      <div className="px-0 section-full scroll-container text-decor mt-5 md:mt-8 py-0 md:py-3">
         <Scroller>
           <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
           <div className="heading_4 cursor-text-wrp">HELLO MY NAME IS NGUYEN THUY DUONG</div>
