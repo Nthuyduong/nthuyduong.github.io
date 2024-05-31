@@ -261,14 +261,6 @@
     width: 200%;
   }
 }
-
-@media screen and (max-width: 768px){
-  .core-value {
-    .slider-content {
-      padding: 0 35px;
-    }
-  }
-}
 .slider-items {
   display: grid !important;
   grid-template-columns: repeat(3, minmax(0, 1fr));
