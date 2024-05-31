@@ -102,7 +102,7 @@ const Home = () => {
       </div>
 
       {/* <div className="section page-element home-info"> */}
-        {/* <div className="md:grid md:grid-cols-12">
+      {/* <div className="md:grid md:grid-cols-12">
           <div className="col-span-8 md:flex">
             <img className="md:block hidden main-logo" src="./images/home/logo-icon.svg" alt="logo" loading="lazy" />
             <div className="info-content medium_text cursor-text-wrp">
@@ -505,8 +505,11 @@ const Home = () => {
                 <label className="mb-1 cursor-text-wrp">Message *</label>
                 <textarea className="border-solid border-b border-ccc focus:outline-none focus:border-b focus:border-333" rows="4" required></textarea>
               </div>
-              <div className="heading_3 send-msg-btn mt-6">
+              <div className="heading_3 send-msg-btn mt-6 flex float-right">
                 <button type="submit cursor-text-wrp">Send Message</button>
+                <div className="ml-3">
+                  <img className="h-[50px] w-full" src="./images/icons/arrow-up-right-l.svg" alt="logo" loading="lazy" />
+                </div>
               </div>
               {/*</form>*/}
             </div>

@@ -19,14 +19,14 @@ const Designs = () => {
     }, []);
 
     return (
-        <div className="project-page pb-8">
+        <div className="project-page pb-6">
             <div className="design-banner">
                 <img className="design-banner-bg" src="/images/design/banner-design.png" alt="design-banner2" />
                 <div className="design-banner-content flex justify-center items-center px-2">
                     <div className="flex m-w gap-2 sm:items-center flex-col sm:flex-row">
-                        <img className="mr-7 w-[200px] h-[200px] md:w-[100px] md:h-[100px]" src="./images/flower-icon.png" alt="logo" loading="lazy" />
+                        {/* <img className="mr-7 w-[200px] h-[200px] md:w-[100px] md:h-[100px]" src="./images/flower-icon.png" alt="logo" loading="lazy" /> */}
                         <div className="text-white w-full flex flex-col gap-2 sm:gap-0">
-                            <div className="text-3xl sm:text-4xl">Welcome to my</div>
+                            <div className="text-2xl sm:text-3xl">Welcome to my</div>
                             <img className="sm:mt-3 sm:mb-6 sm:w-2/3" src="./images/Creative Place.png" alt="logo" />
                             <div className="text-base sm:text-xl">“May the flowers remind us why the rain was so necessary”</div>
                         </div>
