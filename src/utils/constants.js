@@ -8,4 +8,5 @@ export const ROUTER = {
   CAKE: '/cake',
   DESIGNS: '/designs',
   ABOUTTEST: '/abouttest',
+  BEAUTYBLOG: '/beautyblog',
 }

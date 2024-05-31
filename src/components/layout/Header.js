@@ -104,6 +104,9 @@ const Header = () => {
                   <Link to={ROUTER.AGURI} className="body_text nav-link">Jewelry Website</Link>
                 </div>
                 <div className="sub-menu block px-4 py-2 text-sm text-white">
+                  <Link to={ROUTER.BEAUTYBLOG} className="body_text nav-link">Beauty Blog</Link>
+                </div>
+                <div className="sub-menu block px-4 py-2 text-sm text-white">
                   <Link to={ROUTER.ALIO} className="body_text nav-link">Yoga App & Website</Link>
                 </div>
                 <div className="sub-menu block px-4 py-2 text-sm text-white">

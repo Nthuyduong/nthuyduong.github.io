@@ -96,7 +96,7 @@ const Home = () => {
             <img className="h-[80px] md:h-[130px] img-smile" src="./images/bannertext.svg" alt="smile" loading="lazy" />
           </div>
         </div>
-        <div className="absolute top-[95%] md:top-[35%] z-10">
+        <div className="absolute top-[60%] md:top-[35%] z-10">
           <img className="img-smile" src="./images/Sunflowers.svg" alt="smile" loading="lazy" />
         </div>
       </div>
