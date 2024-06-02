@@ -3,9 +3,68 @@ import { Link } from "react-router-dom";
 import { ROUTER } from "../utils/constants";
 import Scroller from "../components/common/scroller";
 import CardSlider from "../components/common/CardSlider";
+import { sendContactForm } from "../services/app";
+import Loading from "../components/common/loading";
 
 
 const Home = () => {
+  const [loading, setLoading] = useState(false);
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    message: '',
+  });
+  const [success, setSuccess] = useState(false);
+
+  const validateEmail = (email) => {
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  }
+
+  const validatePhone = (phone) => {
+    const re = /^[0-9\b]+$/;
+    return re.test(phone);
+  }
+
+  const handleSubmit = async (e) => {
+    if (success) return;
+    e.preventDefault();
+    let isError = false;
+    let tmpError = { name: '', phone: '', email: '', message: '' };
+    if (!name) {
+      tmpError.name = 'Name is required';
+      isError = true;
+    }
+    if (!phone || !validatePhone(phone) || phone.length < 10 || phone.length > 11) {
+      tmpError.phone = 'Phone is required';
+      isError = true;
+    }
+    if (!email || !validateEmail(email)) {
+      tmpError.email = 'Email is required';
+      isError = true;
+    }
+    if (!message) {
+      tmpError.message = 'Message is required';
+      isError = true;
+    }
+
+    if (isError) {
+      setError(tmpError);
+      return;
+    }
+    setLoading(true);
+    const res = await sendContactForm({ name, phone, email, message });
+    setLoading(false);
+    if (res.status) {
+      setSuccess(true);
+    }
+  }
+
   // const sentence1 = "HELLO MY NAME IS NGUYEN THUY DUONG.";
   // const sentence2 = "WELCOME TO MY PORTFOLIO!";
   // const sentence3 = "LET'S CONTACT WITH ME";
@@ -490,27 +549,60 @@ const Home = () => {
               <div className="md:grid md:grid-cols-12 gap-4 first-line-contact">
                 <div className="mb-4 md:mb-0 col-span-6 customer-name contact_field">
                   <label className="mb-1 cursor-text-wrp">Your Name *</label>
-                  <input className="border-solid border-b border-ccc focus:outline-none focus:border-b focus:border-333" type="text" required />
+                  <input 
+                    className={`border-solid border-b focus:outline-none focus:border-b focus:border-333 ${error?.name ? 'border-[red]': 'border-ccc'}`} 
+                    type="text" 
+                    required
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
                 </div>
                 <div className="col-span-6 customer-phone contact_field">
                   <label className="mb-1 cursor-text-wrp">Phone number *</label>
-                  <input className="border-solid border-b border-ccc focus:outline-none focus:border-b focus:border-333" type="text" required />
+                  <input
+                    className={`border-solid border-b focus:outline-none focus:border-b focus:border-333 ${error?.phone ? 'border-[red]': 'border-ccc'}`}
+                    type="text" 
+                    required
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)} 
+                  />
                 </div>
               </div>
               <div className="customer-email contact_field">
                 <label className="mb-1 cursor-text-wrp">Email address *</label>
-                <input className="border-solid border-b border-ccc focus:outline-none focus:border-b focus:border-333" type="text" required />
+                <input
+                  className={`border-solid border-b focus:outline-none focus:border-b focus:border-333 ${error?.email ? 'border-[red]': 'border-ccc'}`}
+                  type="text" 
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
               </div>
               <div className="customer-mess contact_field">
                 <label className="mb-1 cursor-text-wrp">Message *</label>
-                <textarea className="border-solid border-b border-ccc focus:outline-none focus:border-b focus:border-333" rows="4" required></textarea>
+                <textarea
+                  className={`border-solid border-b focus:outline-none focus:border-b focus:border-333 ${error?.message ? 'border-[red]': 'border-ccc'}`}
+                  rows="4"
+                  required
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                ></textarea>
               </div>
               <div className="heading_3 send-msg-btn mt-6 flex float-right">
-                <button type="submit cursor-text-wrp">Send Message</button>
+                <button
+                  type="submit "
+                  className="cursor-pointer cursor-text-wrp flex gap-2"
+                  onClick={handleSubmit}
+                  disabled={loading}
+                >
+                  {loading && <Loading/>}
+                  Send Message
+                </button>
                 <div className="ml-3">
                   <img className="h-[50px] w-full" src="./images/icons/arrow-up-right-l.svg" alt="logo" loading="lazy" />
                 </div>
               </div>
+              {success && <div className="text-green-500">Send successfully</div>}
               {/*</form>*/}
             </div>
           </div>
