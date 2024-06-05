@@ -5,7 +5,18 @@ import Scroller from "../components/common/scroller";
 import CardSlider from "../components/common/CardSlider";
 import { sendContactForm } from "../services/app";
 import Loading from "../components/common/loading";
+import LoadingMail from "../components/common/loadingMail";
 
+const emojis = [
+  "😤", "😠", "😡", "😶", "😪",
+  "😳", "🥵", "🥶", "😧", "😮",
+  "😨", "😰", "😥", "🤤", "🤢", "🤒",
+  "🤔", "🤭", "😦", "🤯", "🤕", "🥴",
+  "🤫", "🤥", "😴", "😱", "😵", "😷",
+  "😐", "😑", "🤬", "🤗", "🤮", "🤐",
+  "🙄", "😯", "😶", "😬", "🤑", "🤠",
+  "😲", "🥱", "😓", "😮", "🤧",
+];
 
 const Home = () => {
   const [loading, setLoading] = useState(false);
@@ -32,6 +43,11 @@ const Home = () => {
   }
 
   const handleSubmit = async (e) => {
+    // setLoading(true);
+    // setTimeout(() => {
+    //   setLoading(false);
+    // }, 2000);
+    // return;
     if (success) return;
     e.preventDefault();
     let isError = false;
@@ -117,6 +133,14 @@ const Home = () => {
       setIndex(index === texts.length - 1 ? 0 : index + 1)
     }, 1000);
   }, [currentText])
+
+  function changeEmoji() {
+    const currentEmojis = document.querySelectorAll(".emoji");
+    currentEmojis.forEach((emoji) => {
+      const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+      emoji.innerHTML = '<div class="px-4">' + randomEmoji + '</div>';
+    });
+  }
 
   return (
     <div className="home-page">
@@ -504,15 +528,25 @@ const Home = () => {
           </div>
         </div> */}
       {/*DECOR TEXT*/}
-      <div className="px-0 section-full scroll-container text-decor mt-5 md:mt-8 py-0 md:py-3">
+      <div
+        className="home-contact-scroller px-0 section-full scroll-container text-decor mt-5 md:mt-8 py-0 md:py-3"
+        onMouseEnter={changeEmoji}
+      >
         <Scroller>
-          <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
-          <div className="heading_4 cursor-text-wrp">HELLO MY NAME IS NGUYEN THUY DUONG</div>
-          <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
-          <div className="heading_4 cursor-text-wrp">WELCOME TO MY PORTFOLIO!</div>
-          <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
-          <div className="heading_4 cursor-text-wrp">LET'S CONTACT WITH ME</div>
-
+          <Link to='/contact' className="flex">
+            <div className="emoji flex items-center">
+              <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
+            </div>
+            <div className="heading_4 cursor-text-wrp">HELLO MY NAME IS NGUYEN THUY DUONG</div>
+            <div className="emoji flex items-center">
+              <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
+            </div>
+            <div className="heading_4 cursor-text-wrp">WELCOME TO MY PORTFOLIO!</div>
+            <div className="emoji flex items-center">
+              <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
+            </div>
+            <div className="heading_4 cursor-text-wrp">LET'S CONTACT WITH ME</div>
+          </Link>
         </Scroller>
       </div>
       {/*Contact me*/}
@@ -547,60 +581,62 @@ const Home = () => {
             <div className="col-span-12 sm:col-span-7 contact-form">
               {/*<form className="contact-form" onSubmit={sendEmail}>*/}
               <div className="md:grid md:grid-cols-12 gap-4 first-line-contact">
-                <div className="mb-4 md:mb-0 col-span-6 customer-name contact_field">
+                <div className="relative mb-4 md:mb-0 col-span-6 customer-name contact_field">
                   <label className="mb-1 cursor-text-wrp">Your Name *</label>
                   <input 
-                    className={`border-solid border-b focus:outline-none focus:border-b focus:border-333 ${error?.name ? 'border-[red]': 'border-ccc'}`} 
+                    className={`input-form ${error?.name ? 'border-[red]': ''}`} 
                     type="text" 
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
+                  <span class="focus-border"></span>
                 </div>
-                <div className="col-span-6 customer-phone contact_field">
+                <div className="relative col-span-6 customer-phone contact_field">
                   <label className="mb-1 cursor-text-wrp">Phone number *</label>
                   <input
-                    className={`border-solid border-b focus:outline-none focus:border-b focus:border-333 ${error?.phone ? 'border-[red]': 'border-ccc'}`}
+                    className={`input-form ${error?.phone ? 'border-[red]': ''}`}
                     type="text" 
                     required
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)} 
                   />
+                  <span class="focus-border"></span>
                 </div>
               </div>
-              <div className="customer-email contact_field">
-                <label className="mb-1 cursor-text-wrp">Email address *</label>
+              <div className="relative my-[32px] contact_field">
+                <label className=" mb-1 cursor-text-wrp">Email address *</label>
                 <input
-                  className={`border-solid border-b focus:outline-none focus:border-b focus:border-333 ${error?.email ? 'border-[red]': 'border-ccc'}`}
+                  className={`input-form ${error?.email ? 'border-[red]': ''}`}
                   type="text" 
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
+                <span class="focus-border"></span>
               </div>
-              <div className="customer-mess contact_field">
+              <div className="relative customer-mess contact_field">
                 <label className="mb-1 cursor-text-wrp">Message *</label>
                 <textarea
-                  className={`border-solid border-b focus:outline-none focus:border-b focus:border-333 ${error?.message ? 'border-[red]': 'border-ccc'}`}
+                  className={`input-form ${error?.message ? 'border-[red]': ''}`}
                   rows="4"
                   required
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
+                <span class="focus-border"></span>
               </div>
               <div className="heading_3 send-msg-btn mt-6 flex float-right">
                 <button
-                  type="submit "
-                  className="cursor-pointer cursor-text-wrp flex gap-2"
+                  type="submit"
+                  className={`relative cursor-pointer cursor-text-wrp flex gap-2 btn-contact ${loading ? 'btn-wrp-loading' : ''}`}
                   onClick={handleSubmit}
                   disabled={loading}
                 >
-                  {loading && <Loading/>}
-                  Send Message
+                  <div className="btn-loading"><LoadingMail/></div>   
+                  <div className="btn-contact-text flex items-center">Send Message <img className="h-[50px]" src="./images/icons/arrow-up-right-l.svg" alt="logo" loading="lazy" /></div>      
+                  
                 </button>
-                <div className="ml-3">
-                  <img className="h-[50px] w-full" src="./images/icons/arrow-up-right-l.svg" alt="logo" loading="lazy" />
-                </div>
               </div>
               {success && <div className="text-green-500">Send successfully</div>}
               {/*</form>*/}

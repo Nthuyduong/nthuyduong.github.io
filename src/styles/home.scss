@@ -450,3 +450,35 @@
 .dropdown-toggle::after{
   align-self: center;
 }
+.home-contact-scroller {
+  .emoji {
+    font-size: 30px;
+  }
+}
+.home-contact-scroller:hover {
+  .scroller {
+    .scroller__inner {
+      animation-play-state: paused;
+    }
+  }
+}
+.btn-loading {
+  opacity: 0;
+  transition: all 0.5s ease;
+  position: absolute;
+  transform: translateY(50%);
+  right: 10%;
+}
+.btn-contact-text {
+  transition: all 0.5s ease;
+}
+.btn-wrp-loading {
+  .btn-contact-text {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  .btn-loading {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

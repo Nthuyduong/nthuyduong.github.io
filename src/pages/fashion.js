@@ -24,7 +24,7 @@ const Fashion = () => {
         <div>
             <div className="container-fluid">
                 <div className="product-showcase">
-                    <div className="showcase md:pb-6 pb-4">
+                    <div className="project-item showcase md:pb-6 pb-4">
                         <img className="w-100 show-case-bg" src="./images/Pj04_fashion/banner2.webp" alt="#" loading="lazy"/>
                         <div className="showcase-inner">
                             <div className="flex justify-end">
@@ -50,7 +50,7 @@ const Fashion = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="verite_line2 md:py-6 py-4">
+                    <div className="project-item verite_line2 md:py-6 py-4">
                         <div className="grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6 flex items-end bg-primary">
                                 <div className="p-7">
@@ -70,14 +70,14 @@ const Fashion = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="md:pb-6 pb-4">
+                    <div className="project-item md:pb-6 pb-4">
                         <img className="mb-4 w-100" src="./images/Pj04_fashion/img1.webp" alt="#" loading="lazy"/>
                     </div>
                     
                     {/* <div className="verite-show1 pdb-60">
                         <img className="mb-4 w-100" src={require(`../../public/images/Pj04_fashion/${img[currentimg]}`)} alt="#" loading="lazy"/>
                     </div> */}
-                    <div className="verite_line3 md:pb-6 pb-4">
+                    <div className="project-item verite_line3 md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6">
                                 <img className="w-100" src="./images/Pj04_fashion/line3-01.webp" alt="#" loading="lazy"/>
@@ -87,13 +87,13 @@ const Fashion = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="md:pb-6 pb-4">
+                    <div className="project-item md:pb-6 pb-4">
                         <img className="mb-4 w-100" src="./images/Pj04_fashion/img2.webp" alt="#" loading="lazy"/>
                     </div>
-                    <div className="verite_line4 md:pb-6 pb-4">
+                    <div className="project-item verite_line4 md:pb-6 pb-4">
                         <img className="w-100" src="./images/Pj04_fashion/line4.webp" alt="#" loading="lazy"/>
                     </div>
-                    <div className="verite_line5">
+                    <div className="project-item verite_line5">
                         <div className="grid grid-cols-12">
                             <div className="col-span-6">
                                 <img className="w-100" src="./images/Pj04_fashion/line5-01.webp" alt="#" loading="lazy"/>

@@ -62,7 +62,7 @@ const Cake = () => {
         <div className="cake-page">
             <div className="container-fluid">
                 <div className="product-showcase">
-                    <div className="md:pb-6 pb-4">
+                    <div className="project-item md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6">
                                 <img className="w-100" src="./images/Pj01_cake/line2-01.png" alt="#" loading="lazy" />
@@ -112,12 +112,12 @@ const Cake = () => {
                             <img className="w-100" src={require(`../../public/images/Pj01_cake/${cake[currentCakeIndex]}`)} alt="#" loading="lazy"/>
                         </div>
                     </div> */}
-                    <div className="md:pb-6 pb-4">
+                    <div className="project-item md:pb-6 pb-4">
                         <div className="">
                             <img className="w-100" src="./images/Pj01_cake/ssc-mockup.png" alt="#" loading="lazy" />
                         </div>
                     </div>
-                    <div className="md:pb-6 pb-4">
+                    <div className="project-item md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6">
                             <img className="w-100" src={require(`../../public/images/Pj01_cake/${cake[currentCakeIndex]}`)} alt="#" loading="lazy"/>
@@ -130,7 +130,7 @@ const Cake = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="md:pb-6 pb-4">
+                    <div className="project-item md:pb-6 pb-4">
                         <div className="">
                             <div className="">
                                 <img className="w-100" src="./images/Pj01_cake/category-cake.png" alt="#" loading="lazy" />
@@ -138,7 +138,7 @@ const Cake = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="">
+                    <div className="project-item ">
                         <div className="">
                             <div className="">
                                 <img className="w-100" src="./images/Pj01_cake/detail.webp" alt="#" loading="lazy" />

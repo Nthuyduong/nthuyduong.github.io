@@ -48,7 +48,7 @@ const Aguri = () => {
         <div>
             <div className="container-fluid">
                 <div className="product-showcase">
-                    <div className="ag-line1 md:pb-6 pb-4">
+                    <div className="project-item ag-line1 md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6 line1-left bg-primary">
                                 <div className="line1-left-inner">
@@ -113,7 +113,7 @@ const Aguri = () => {
                             </div>
                         </div> */}
 
-                    <div className="ag-line2 md:pb-6 pb-4">
+                    <div className="project-item ag-line2 md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
 
                             <div className="col-span-12 sm:col-span-6 line2-right">
@@ -150,13 +150,13 @@ const Aguri = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="ag-line4 md:pb-6 pb-4">
+                    <div className="project-item ag-line4 md:pb-6 pb-4">
                         <img className="w-100" src="./images/Pj03_aguri/mockup.png" alt="#" loading="lazy" />
                     </div>
-                    <div className="md:pb-6 pb-4">
+                    <div className="project-item md:pb-6 pb-4">
                         <img className="w-full" src="./images/Pj03_aguri/jewelry-bg.png" alt="#" loading="lazy" />
                     </div>
-                    <div className="md:pb-6 pb-4">
+                    <div className="project-item md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
 
                             <div className="col-span-12 sm:col-span-6 line2-right relative">
@@ -175,7 +175,7 @@ const Aguri = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="ag-line5 md:pb-6 pb-4">
+                    <div className="project-item ag-line5 md:pb-6 pb-4">
                         <img className="w-100" src="./images/Pj03_aguri/product-page.png" alt="#" loading="lazy" />
                     </div>
                     {/* <div className="ag-line6 mdb-60">
@@ -185,7 +185,7 @@ const Aguri = () => {
                                 loading="lazy" />
                         </div>
                     </div> */}
-                    <div className="ag-line4">
+                    <div className="project-item ag-line4">
                         <div className="grid grid-cols-12">
                             <div className="col-span-6 fix-img">
                                 {/*<img className="w-100" src="./images/Pj03_aguri/line2-01.png" alt="#" loading="lazy"/>*/}

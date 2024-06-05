@@ -96,7 +96,7 @@ const Alio = () => {
         <div>
             <div className="container-fluid">
                 <div className="product-showcase">
-                    <div className="alio1 md:pb-6 pb-4">
+                    <div className="project-item alio1 md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
                             <div className="sm:col-span-6 col-span-12 mb-4 md:mb-0">
                                 <img className="w-100" src="./images/Pj02_yoga/line1-01.webp" alt="#" loading="lazy" />
@@ -112,7 +112,7 @@ const Alio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="md:pb-6 pb-4">
+                    <div className="project-item md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
                             <div className="col-span-12 md:col-span-6 r2-left flex items-end bg-primary mb-4 md:mb-0">
                                 <div className="p-5 md:p-7">
@@ -132,7 +132,7 @@ const Alio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="alio3 md:pb-6 pb-4">
+                    <div className="project-item alio3 md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
                             <div className="col-span-12 md:col-span-6 r3-left mb-4 md:mb-0">
                                 <img className="w-100" src={require(`../../public/images/Pj02_yoga/${images[currentImageIndex]}`)}
@@ -154,16 +154,16 @@ const Alio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="alio4">
+                    {/* <div className="alio4">
 
-                    </div>
-                    <div className="alio5 md:pb-6 pb-4">
+                    </div> */}
+                    <div className="project-item alio5 md:pb-6 pb-4">
                         <img className="w-100" src={require(`../../public/images/Pj02_yoga/${Showcase[currentLogoIndex]}`)} />
                     </div>
-                    <div className="alio5.1 md:pb-6 pb-4">
+                    <div className="project-item alio5.1 md:pb-6 pb-4">
                         <img className="w-100" src="./images/Pj02_yoga/line5.1.webp" loading="lazy" />
                     </div>
-                    <div className="alio6 md:pb-6 pb-4 h-full">
+                    <div className="project-item alio6 md:pb-6 pb-4 h-full">
                         <div className="grid grid-cols-12">
                             <div className="col-span-6">
                                 <img className="w-100" src="./images/Pj02_yoga/line6-01.png" alt="#" loading="lazy" />
@@ -180,14 +180,14 @@ const Alio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="alio7 md:pb-6 pb-4">
+                    <div className="project-item alio7 md:pb-6 pb-4">
                         <div className="inner">
                             <img className="w-100"
                                 src={require(`../../public/images/Pj02_yoga/${mobile[currentMobile]}`)} alt="#"
                                 loading="lazy" />
                         </div>
                     </div>
-                    <div className="alio8 md:pb-6 pb-4">
+                    <div className="project-item alio8 md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
                             <div className="col-span-6">
                                 <img className="w-100" src="./images/Pj02_yoga/line7-01.webp" alt="#" loading="lazy" />
@@ -199,7 +199,7 @@ const Alio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="alio9">
+                    <div className="project-item alio9">
                         <img className="w-100" src="./images/Pj02_yoga/line9.webp" alt="#" loading="lazy" />
                     </div>
                 </div>

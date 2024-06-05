@@ -183,6 +183,12 @@ a {
   bottom: 20%;
   cursor: pointer;
   transform: rotate(90deg);
+  transition: all 0.3s ease;
+}
+.back-to-top:hover {
+  color: #666;
+  transform: rotate(90deg) scale(1.2);
+  font-weight: bold;
 }
 
 .get-in-touch {
@@ -192,15 +198,14 @@ a {
   bottom: 20%;
   cursor: pointer;
   transform: rotate(-90deg);
+  transition: all 0.3s ease;
 }
 
 .get-in-touch:hover {
   color: #666;
   text-decoration: none;
-}
-
-.back-to-top:hover {
-  color: #666;
+  transform: rotate(-90deg) scale(1.2);
+  font-weight: bold;
 }
 
 .boder-none {
