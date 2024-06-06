@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 import { ROUTER } from "../utils/constants";
 import Scroller from "../components/common/scroller";
 import CardSlider from "../components/common/CardSlider";
+<<<<<<< Updated upstream
 import { sendContactForm } from "../services/app";
 import Loading from "../components/common/loading";
 import LoadingMail from "../components/common/loadingMail";
+=======
+>>>>>>> Stashed changes
 
 const emojis = [
   "😤", "😠", "😡", "😶", "😪",
@@ -19,6 +22,7 @@ const emojis = [
 ];
 
 const Home = () => {
+<<<<<<< Updated upstream
   const [loading, setLoading] = useState(false);
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
@@ -81,6 +85,8 @@ const Home = () => {
     }
   }
 
+=======
+>>>>>>> Stashed changes
   // const sentence1 = "HELLO MY NAME IS NGUYEN THUY DUONG.";
   // const sentence2 = "WELCOME TO MY PORTFOLIO!";
   // const sentence3 = "LET'S CONTACT WITH ME";
@@ -260,7 +266,7 @@ const Home = () => {
           </div>
         </div>
       </div> */}
-      <div className="section-full page-element bg-tertiary">
+      <div className="section-full page-element">
         <div className="home-info3 pb-7 m-w">
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12 sm:col-span-6 child1">
@@ -297,6 +303,19 @@ const Home = () => {
             </div>
           </div> */}
         </div>
+      </div>
+
+      {/*DECOR TEXT*/}
+      <div className="px-0 section-full scroll-container text-decor py-0 md:py-3">
+        <Scroller>
+          <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
+          <div className="heading_3 cursor-text-wrp">HELLO MY NAME IS NGUYEN THUY DUONG</div>
+          <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
+          <div className="heading_3 cursor-text-wrp">WELCOME TO MY PORTFOLIO!</div>
+          <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
+          <div className="heading_3 cursor-text-wrp">LET'S CONTACT WITH ME</div>
+
+        </Scroller>
       </div>
       {/* New section */}
       {/* <div className="relative md:py-9 bg-tertiary">
@@ -527,11 +546,16 @@ const Home = () => {
             </div>
           </div>
         </div> */}
+
       {/*DECOR TEXT*/}
+<<<<<<< Updated upstream
       <div
         className="home-contact-scroller px-0 section-full scroll-container text-decor mt-5 md:mt-8 py-0 md:py-3"
         onMouseEnter={changeEmoji}
       >
+=======
+      {/* <div className="px-0 section-full scroll-container text-decor mt-5 md:mt-8 py-0 md:py-3">
+>>>>>>> Stashed changes
         <Scroller>
           <Link to='/contact' className="flex">
             <div className="emoji flex items-center">
@@ -548,9 +572,10 @@ const Home = () => {
             <div className="heading_4 cursor-text-wrp">LET'S CONTACT WITH ME</div>
           </Link>
         </Scroller>
-      </div>
+      </div> */}
+
       {/*Contact me*/}
-      <div className="section send_message mt-5 md:mt-8">
+      {/* <div className="section send_message mt-5 md:mt-8">
         <div className="">
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12 sm:col-span-4 flex flex-row-reverse sm:flex-col gap-2">
@@ -579,10 +604,11 @@ const Home = () => {
             </div>
             <div className="col-span-1"></div>
             <div className="col-span-12 sm:col-span-7 contact-form">
-              {/*<form className="contact-form" onSubmit={sendEmail}>*/}
+              
               <div className="md:grid md:grid-cols-12 gap-4 first-line-contact">
                 <div className="relative mb-4 md:mb-0 col-span-6 customer-name contact_field">
                   <label className="mb-1 cursor-text-wrp">Your Name *</label>
+<<<<<<< Updated upstream
                   <input 
                     className={`input-form ${error?.name ? 'border-[red]': ''}`} 
                     type="text" 
@@ -591,9 +617,13 @@ const Home = () => {
                     onChange={(e) => setName(e.target.value)}
                   />
                   <span class="focus-border"></span>
+=======
+                  <input className="border-solid border-b border-ccc focus:outline-none focus:border-b focus:border-333" type="text" required />
+>>>>>>> Stashed changes
                 </div>
                 <div className="relative col-span-6 customer-phone contact_field">
                   <label className="mb-1 cursor-text-wrp">Phone number *</label>
+<<<<<<< Updated upstream
                   <input
                     className={`input-form ${error?.phone ? 'border-[red]': ''}`}
                     type="text" 
@@ -614,9 +644,18 @@ const Home = () => {
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 <span class="focus-border"></span>
+=======
+                  <input className="border-solid border-b border-ccc focus:outline-none focus:border-b focus:border-333" type="text" required />
+                </div>
+              </div>
+              <div className="customer-email contact_field">
+                <label className="mb-1 cursor-text-wrp">Email address *</label>
+                <input className="border-solid border-b border-ccc focus:outline-none focus:border-b focus:border-333" type="text" required />
+>>>>>>> Stashed changes
               </div>
               <div className="relative customer-mess contact_field">
                 <label className="mb-1 cursor-text-wrp">Message *</label>
+<<<<<<< Updated upstream
                 <textarea
                   className={`input-form ${error?.message ? 'border-[red]': ''}`}
                   rows="4"
@@ -637,13 +676,21 @@ const Home = () => {
                   <div className="btn-contact-text flex items-center">Send Message <img className="h-[50px]" src="./images/icons/arrow-up-right-l.svg" alt="logo" loading="lazy" /></div>      
                   
                 </button>
+=======
+                <textarea className="border-solid border-b border-ccc focus:outline-none focus:border-b focus:border-333" rows="4" required></textarea>
               </div>
-              {success && <div className="text-green-500">Send successfully</div>}
-              {/*</form>*/}
+              <div className="heading_3 send-msg-btn mt-6 flex float-right">
+                <button type="submit cursor-text-wrp">Send Message</button>
+                <div className="ml-3">
+                  <img className="h-[50px] w-full" src="./images/icons/arrow-up-right-l.svg" alt="logo" loading="lazy" />
+                </div>
+>>>>>>> Stashed changes
+              </div>
+              
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
