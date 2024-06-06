@@ -108,7 +108,7 @@ const Header = () => {
                   <span className="nav-text">PROJECTS</span>
                 </Link>
               </div>
-              <div className="navdrop-inner absolute left-30 w-48 py-1 border-solid border-x border-b border-ccc">
+              {/* <div className="navdrop-inner absolute left-30 w-48 py-1 border-solid border-x border-b border-ccc">
                 <div className="sub-menu block px-4 py-2 text-sm">
                   <Link to={ROUTER.AGURI} className="body_text nav-link">Jewelry Website</Link>
                 </div>
@@ -124,7 +124,7 @@ const Header = () => {
                 <div className="sub-menu block px-4 py-2 text-sm text-white">
                   <Link to={ROUTER.FASHION} className="body_text nav-link">Fashion Brand App</Link>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <Link to={ROUTER.CONTACT} className="rounded-md px-3 py-4 text-sm cursor-text-wrp">Contact</Link>
