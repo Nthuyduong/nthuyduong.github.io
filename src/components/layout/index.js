@@ -94,15 +94,10 @@ const Layout = ({ children }) => {
     });
   }
 
-<<<<<<< Updated upstream
-  const withoutElement = [ROUTER.ALIO, ROUTER.CAKE, ROUTER.AGURI, ROUTER.FASHION];
 
-=======
   //Hide and Display side nav bar
   const discardElement = [ROUTER.CONTACT];
   const withoutElement = [ROUTER.ALIO, ROUTER.CAKE, ROUTER.AGURI, ROUTER.FASHION];
-
-  const { pathname } = useLocation();
 
   // Hide Footer
   if (discardElement.some((route) => pathname.includes(route))) {
@@ -118,7 +113,7 @@ const Layout = ({ children }) => {
     }
 
   //Display Side Nav
->>>>>>> Stashed changes
+
   if (withoutElement.some((route) => pathname.includes(route))) {
     return (
       <div className="page">

@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 import { ROUTER } from "../utils/constants";
 import Scroller from "../components/common/scroller";
 import CardSlider from "../components/common/CardSlider";
-<<<<<<< Updated upstream
+
 import { sendContactForm } from "../services/app";
 import Loading from "../components/common/loading";
 import LoadingMail from "../components/common/loadingMail";
-=======
->>>>>>> Stashed changes
+
 
 const emojis = [
   "😤", "😠", "😡", "😶", "😪",
@@ -22,7 +21,7 @@ const emojis = [
 ];
 
 const Home = () => {
-<<<<<<< Updated upstream
+
   const [loading, setLoading] = useState(false);
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
@@ -84,41 +83,6 @@ const Home = () => {
       setSuccess(true);
     }
   }
-
-=======
->>>>>>> Stashed changes
-  // const sentence1 = "HELLO MY NAME IS NGUYEN THUY DUONG.";
-  // const sentence2 = "WELCOME TO MY PORTFOLIO!";
-  // const sentence3 = "LET'S CONTACT WITH ME";
-  // const sentences = [
-  //   "HELLO MY NAME IS NGUYEN THUY DUONG.",
-  //   "WELCOME TO MY PORTFOLIO.",
-  //   "LET'S CONTACT WITH ME"
-  // ];
-  // const [content, setContent] = useState(sentences.join(" "));
-  // useEffect(() => {
-  //   const container = document.getElementById("scroll-container");
-  //
-  //   if (container) {
-  //     const scrollWidth = container.scrollWidth;
-  //     const containerWidth = container.clientWidth;
-  //
-  //     const scroll = () => {
-  //       if (container.scrollLeft <= 0) {
-  //         container.scrollLeft = scrollWidth;
-  //       } else {
-  //         container.scrollLeft -= 1;
-  //       }
-  //     };
-  //
-  //     const scrollInterval = setInterval(scroll, 20);
-  //
-  //     return () => {
-  //       clearInterval(scrollInterval);
-  //     };
-  //   }
-  // }, []);
-
 
   //Change text
   const texts = [
@@ -266,7 +230,9 @@ const Home = () => {
           </div>
         </div>
       </div> */}
-      <div className="section-full page-element">
+
+      {/* Let's create responsive design */}
+      {/* <div className="section-full page-element">
         <div className="home-info3 pb-7 m-w">
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12 sm:col-span-6 child1">
@@ -282,7 +248,7 @@ const Home = () => {
                     <img className="w-full" src="./images/home/Rectangle35.webp" alt="Rectangle35" loading="lazy" />
                   </div>
                   <div className="col-span-3 brands heading_2">
-                    Brands <span className="brands-line hidden sm:block"></span>
+                    Brands
                   </div>
                 </div>
               </div>
@@ -295,18 +261,18 @@ const Home = () => {
                 <img className="w-full" src="./images/home/Rectangle34.webp" alt="Rectangle35" loading="lazy" />
               </div>
             </div>
-          </div>
+          </div> */}
           {/* <div className="row row-bt hidden sm:block">
             <div className="col-6"></div>
             <div className="col-6 small-img child4">
               <img className="" src="./images/home/Rectangle440.webp" alt="Rectangle35" loading="lazy" />
             </div>
           </div> */}
-        </div>
-      </div>
+        {/* </div>
+      </div> */}
 
       {/*DECOR TEXT*/}
-      <div className="px-0 section-full scroll-container text-decor py-0 md:py-3">
+      {/* <div className="px-0 section-full scroll-container text-decor py-0 md:py-3">
         <Scroller>
           <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
           <div className="heading_3 cursor-text-wrp">HELLO MY NAME IS NGUYEN THUY DUONG</div>
@@ -316,7 +282,10 @@ const Home = () => {
           <div className="heading_3 cursor-text-wrp">LET'S CONTACT WITH ME</div>
 
         </Scroller>
-      </div>
+      </div> */}
+
+      
+
       {/* New section */}
       {/* <div className="relative md:py-9 bg-tertiary">
         <div className="section">
@@ -367,6 +336,8 @@ const Home = () => {
           </div>
         </div>
       </div> */}
+
+      {/* My design  */}
       <div className="section">
         <div className="my-design">
           <div className="">
@@ -483,6 +454,33 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/*DECOR TEXT*/}
+
+      <div
+        className="home-contact-scroller px-0 section-full scroll-container text-decor mt-5 md:mt-8 py-0 md:py-3"
+        onMouseEnter={changeEmoji}
+      >
+
+        <div className="bg-primary px-0 section-full scroll-container text-decor py-0 md:py-3">
+          <Scroller>
+            <Link to='/contact' className="flex">
+              <div className="emoji flex items-center">
+                <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
+              </div>
+              <div className="heading_3 cursor-text-wrp">HELLO MY NAME IS NGUYEN THUY DUONG</div>
+              <div className="emoji flex items-center">
+                <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
+              </div>
+              <div className="heading_3 cursor-text-wrp">WELCOME TO MY PORTFOLIO!</div>
+              <div className="emoji flex items-center">
+                <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
+              </div>
+              <div className="heading_3 cursor-text-wrp">LET'S CONTACT WITH ME</div>
+            </Link>
+          </Scroller>
+        </div>
+      </div>
       {/* <div className="my-services">
           <div className="services container-fluid ">
             <div className="py-7 border-solid border-y border-ccc">
@@ -547,152 +545,102 @@ const Home = () => {
           </div>
         </div> */}
 
-      {/*DECOR TEXT*/}
-<<<<<<< Updated upstream
-      <div
-        className="home-contact-scroller px-0 section-full scroll-container text-decor mt-5 md:mt-8 py-0 md:py-3"
-        onMouseEnter={changeEmoji}
-      >
-=======
-      {/* <div className="px-0 section-full scroll-container text-decor mt-5 md:mt-8 py-0 md:py-3">
->>>>>>> Stashed changes
-        <Scroller>
-          <Link to='/contact' className="flex">
-            <div className="emoji flex items-center">
-              <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
-            </div>
-            <div className="heading_4 cursor-text-wrp">HELLO MY NAME IS NGUYEN THUY DUONG</div>
-            <div className="emoji flex items-center">
-              <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
-            </div>
-            <div className="heading_4 cursor-text-wrp">WELCOME TO MY PORTFOLIO!</div>
-            <div className="emoji flex items-center">
-              <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
-            </div>
-            <div className="heading_4 cursor-text-wrp">LET'S CONTACT WITH ME</div>
-          </Link>
-        </Scroller>
-      </div> */}
-
       {/*Contact me*/}
       {/* <div className="section send_message mt-5 md:mt-8">
-        <div className="">
-          <div className="grid grid-cols-12 gap-4">
-            <div className="col-span-12 sm:col-span-4 flex flex-row-reverse sm:flex-col gap-2">
-              <div className="flex flex-col-reverse sm:flex-row gap-4 w-full">
-                <div className="col-span-3">
-                  <div className="body_text cursor-text-wrp">
-                    “I welcome any potential recruiters to contact me regarding job opportunities that match my skillset and
-                    interests. I am excited to explore new opportunities and connect with professionals in my field”
+          <div className="">
+            <div className="grid grid-cols-12 gap-4">
+              <div className="col-span-12 sm:col-span-4 flex flex-row-reverse sm:flex-col gap-2">
+                <div className="flex flex-col-reverse sm:flex-row gap-4 w-full">
+                  <div className="col-span-3">
+                    <div className="body_text cursor-text-wrp">
+                      “I welcome any potential recruiters to contact me regarding job opportunities that match my skillset and
+                      interests. I am excited to explore new opportunities and connect with professionals in my field”
+                    </div>
+                  </div>
+                  <div className="flex justify-end sm:block">
+                    <img className="w-[50%] sm:w-full" src="./images/home/home-contact2.png" alt="logo" loading="lazy" />
                   </div>
                 </div>
-                <div className="flex justify-end sm:block">
-                  <img className="w-[50%] sm:w-full" src="./images/home/home-contact2.png" alt="logo" loading="lazy" />
-                </div>
-              </div>
-              <div className="flex flex-col-reverse gap-4 sm:mt-4 justify-end sm:flex-row sm:justify-between w-full">
-                <div className="col-span-2 w-full">
-                  <img className="w-full" src="./images/home/contact-home.png" alt="logo" loading="lazy" />
-                </div>
-                <div className="col-span-2 flex sm:self-end w-full">
-                  <div className="w-full sm:text-right">
-                    <div className="small_text cursor-text-wrp">From Nth.Duong</div>
-                    <div className="small_text cursor-text-wrp">Portfolio 2024</div>
+                <div className="flex flex-col-reverse gap-4 sm:mt-4 justify-end sm:flex-row sm:justify-between w-full">
+                  <div className="col-span-2 w-full">
+                    <img className="w-full" src="./images/home/contact-home.png" alt="logo" loading="lazy" />
+                  </div>
+                  <div className="col-span-2 flex sm:self-end w-full">
+                    <div className="w-full sm:text-right">
+                      <div className="small_text cursor-text-wrp">From Nth.Duong</div>
+                      <div className="small_text cursor-text-wrp">Portfolio 2024</div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-span-1"></div>
-            <div className="col-span-12 sm:col-span-7 contact-form">
-              
-              <div className="md:grid md:grid-cols-12 gap-4 first-line-contact">
-                <div className="relative mb-4 md:mb-0 col-span-6 customer-name contact_field">
-                  <label className="mb-1 cursor-text-wrp">Your Name *</label>
-<<<<<<< Updated upstream
-                  <input 
-                    className={`input-form ${error?.name ? 'border-[red]': ''}`} 
-                    type="text" 
-                    required
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                  />
-                  <span class="focus-border"></span>
-=======
-                  <input className="border-solid border-b border-ccc focus:outline-none focus:border-b focus:border-333" type="text" required />
->>>>>>> Stashed changes
+              <div className="col-span-1"></div>
+              <div className="col-span-12 sm:col-span-7 contact-form">
+
+                <div className="md:grid md:grid-cols-12 gap-4 first-line-contact">
+                  <div className="relative mb-4 md:mb-0 col-span-6 customer-name contact_field">
+                    <label className="mb-1 cursor-text-wrp">Your Name *</label>
+                    <input
+                      className={`input-form ${error?.name ? 'border-[red]' : ''}`}
+                      type="text"
+                      required
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                    />
+                    <span class="focus-border"></span>
+                  </div>
+                  <div className="relative col-span-6 customer-phone contact_field">
+                    <label className="mb-1 cursor-text-wrp">Phone number *</label>
+
+                    <input
+                      className={`input-form ${error?.phone ? 'border-[red]' : ''}`}
+                      type="text"
+                      required
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
+                    />
+                    <span class="focus-border"></span>
+                  </div>
                 </div>
-                <div className="relative col-span-6 customer-phone contact_field">
-                  <label className="mb-1 cursor-text-wrp">Phone number *</label>
-<<<<<<< Updated upstream
+                <div className="relative my-[32px] contact_field">
+                  <label className=" mb-1 cursor-text-wrp">Email address *</label>
                   <input
-                    className={`input-form ${error?.phone ? 'border-[red]': ''}`}
-                    type="text" 
+                    className={`input-form ${error?.email ? 'border-[red]' : ''}`}
+                    type="text"
                     required
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)} 
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                   <span class="focus-border"></span>
                 </div>
-              </div>
-              <div className="relative my-[32px] contact_field">
-                <label className=" mb-1 cursor-text-wrp">Email address *</label>
-                <input
-                  className={`input-form ${error?.email ? 'border-[red]': ''}`}
-                  type="text" 
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                <span class="focus-border"></span>
-=======
-                  <input className="border-solid border-b border-ccc focus:outline-none focus:border-b focus:border-333" type="text" required />
+                <div className="relative customer-mess contact_field">
+                  <label className="mb-1 cursor-text-wrp">Message *</label>
+                  <textarea
+                    className={`input-form ${error?.message ? 'border-[red]' : ''}`}
+                    rows="4"
+                    required
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                  ></textarea>
+                  <span class="focus-border"></span>
                 </div>
-              </div>
-              <div className="customer-email contact_field">
-                <label className="mb-1 cursor-text-wrp">Email address *</label>
-                <input className="border-solid border-b border-ccc focus:outline-none focus:border-b focus:border-333" type="text" required />
->>>>>>> Stashed changes
-              </div>
-              <div className="relative customer-mess contact_field">
-                <label className="mb-1 cursor-text-wrp">Message *</label>
-<<<<<<< Updated upstream
-                <textarea
-                  className={`input-form ${error?.message ? 'border-[red]': ''}`}
-                  rows="4"
-                  required
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                ></textarea>
-                <span class="focus-border"></span>
-              </div>
-              <div className="heading_3 send-msg-btn mt-6 flex float-right">
-                <button
-                  type="submit"
-                  className={`relative cursor-pointer cursor-text-wrp flex gap-2 btn-contact ${loading ? 'btn-wrp-loading' : ''}`}
-                  onClick={handleSubmit}
-                  disabled={loading}
-                >
-                  <div className="btn-loading"><LoadingMail/></div>   
-                  <div className="btn-contact-text flex items-center">Send Message <img className="h-[50px]" src="./images/icons/arrow-up-right-l.svg" alt="logo" loading="lazy" /></div>      
-                  
-                </button>
-=======
-                <textarea className="border-solid border-b border-ccc focus:outline-none focus:border-b focus:border-333" rows="4" required></textarea>
-              </div>
-              <div className="heading_3 send-msg-btn mt-6 flex float-right">
-                <button type="submit cursor-text-wrp">Send Message</button>
-                <div className="ml-3">
-                  <img className="h-[50px] w-full" src="./images/icons/arrow-up-right-l.svg" alt="logo" loading="lazy" />
+                <div className="heading_3 send-msg-btn mt-6 flex float-right">
+                  <button
+                    type="submit"
+                    className={`relative cursor-pointer cursor-text-wrp flex gap-2 btn-contact ${loading ? 'btn-wrp-loading' : ''}`}
+                    onClick={handleSubmit}
+                    disabled={loading}
+                  >
+                    <div className="btn-loading"><LoadingMail /></div>
+                    <div className="btn-contact-text flex items-center">Send Message <img className="h-[50px]" src="./images/icons/arrow-up-right-l.svg" alt="logo" loading="lazy" /></div>
+
+                  </button>
                 </div>
->>>>>>> Stashed changes
+
               </div>
-              
             </div>
           </div>
-        </div>
-      </div> */}
+        </div> */}
     </div>
   )
 }
-
 export default Home;
