@@ -19,16 +19,16 @@ const Designs = () => {
     }, []);
 
     return (
-        <div className="project-page pb-6">
+        <div className="project-page">
             <div className="design-banner">
                 <img className="design-banner-bg" src="/images/design/banner-design.png" alt="design-banner2" />
                 <div className="design-banner-content flex justify-center items-center px-2">
                     <div className="flex m-w gap-2 sm:items-center flex-col sm:flex-row">
                         {/* <img className="mr-7 w-[200px] h-[200px] md:w-[100px] md:h-[100px]" src="./images/flower-icon.png" alt="logo" loading="lazy" /> */}
                         <div className="text-white w-full flex flex-col gap-2 sm:gap-0">
-                            <div className="text-2xl sm:text-3xl">Welcome to my</div>
+                            {/* <div className="text-2xl sm:text-3xl">Welcome to my</div> */}
                             <img className="sm:mt-3 sm:mb-6 sm:w-2/3" src="./images/Creative Place.png" alt="logo" />
-                            <div className="text-base sm:text-xl">“May the flowers remind us why the rain was so necessary”</div>
+                            {/* <div className="text-base sm:text-xl">“May the flowers remind us why the rain was so necessary”</div> */}
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ const Designs = () => {
 
             <div></div>
             {/* All project here */}
-            <div className="all-my-projects">
+            <div className="section">
                 <div className="">
                     <div className="">
                         <div className="project-section mt-6">
@@ -136,7 +136,7 @@ const Designs = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="project-inner py-5 border-b border-solid border-ccc design-item">
+                            <div className="project-inner py-5 design-item">
                                 <div className="flex">
                                     <div className="flex design-item-1">
                                         <div className="heading_5 mr-auto cursor-text-wrp font-bold">04.</div>
@@ -168,6 +168,23 @@ const Designs = () => {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Contact section */}
+            <div class="colorDiv border-y border-solid border-ccc py-7 w-full md:mt-7 mt-5 ">
+                <div>
+
+                    <div className="text-[60px] leading-[130%]">Unleashing The Potential Of Your Brand</div>
+                    <div className="flex justify-center w-full">
+                        <div className="mt-6 bg-black py-2 px-6 rounded-[60px] text-white">
+                            <Link className="scroll-text" data-replace="CONTACT WITH ME">
+                                <span>
+                                    CONTACT WITH ME
+                                </span>
+                            </Link>
                         </div>
                     </div>
                 </div>

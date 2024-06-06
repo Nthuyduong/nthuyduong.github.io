@@ -123,7 +123,7 @@ const Home = () => {
               <img className="h-[90px] md:block hidden main-logo mr-4" src="./images/home/logo-icon.svg" alt="logo" loading="lazy" />
               <div className="info-content medium_text text-center md:text-left cursor-text-wrp">
                 Hello, My name is
-                <div className="ntd-name sm:mt-3 text-center md:text-left heading_3 cursor-text-wrp mt-1 md:mt-0">
+                <div className="ntd-name md:mt-3 mt-2 text-center md:text-left heading_3 cursor-text-wrp mt-1 md:mt-0">
                   Nguyen Thuy Duong
                 </div>
               </div>
@@ -139,13 +139,13 @@ const Home = () => {
               </div> */}
             </div>
           </div>
-          <div className="md:flex justify-center mt-5 z-20 hidden">
+          <div className="md:flex justify-center mt-5 z-20 hidden animate slideInUp animate--delay-fast">
             <img className="h-[200px] md:h-[320px] img-smile" src="./images/bannerhome.svg" alt="smile" loading="lazy" />
           </div>
           <div className="flex justify-center mt-5 z-20 md:hidden">
             <img className="h-[200px] md:h-[320px] img-smile" src="./images/bannerhome2.png" alt="smile" loading="lazy" />
           </div>
-          <div className="flex justify-center mt-2 md:mt-5">
+          <div className="flex justify-center mt-2 md:mt-5 animate slideInUp animate--delay-fast">
             <img className="h-[80px] md:h-[130px] img-smile" src="./images/bannertext.svg" alt="smile" loading="lazy" />
           </div>
         </div>
@@ -342,7 +342,7 @@ const Home = () => {
         <div className="my-design">
           <div className="">
             <div className="grid grid-cols-12 my-des-title">
-              <div className="col-span-10 sm:col-span-6">
+              <div className="col-span-10 sm:col-span-6 animate slideInUp">
                 <div className="flex">
                   <div className="text-large-2 cursor-text-wrp">My</div>
                   <div className="dot-bl">
@@ -362,7 +362,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-span-2 hidden sm:block"></div>
-              <div className="col-span-10 sm:col-span-4 hidden sm:block">
+              <div className="col-span-10 sm:col-span-4 hidden sm:block animate slideInUp">
                 <div className="byme">
                   <div className="flex">
                     <div className="text-large-2 byme2 cursor-text-wrp">By</div>
@@ -381,7 +381,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="">
+        <div className="animate slideInUp animate--delay-fast">
           <div className="my-project">
             <div className="grid grid-cols-12 gap-4">
               <div className="col-span-6 sm:col-span-3 project-odd">

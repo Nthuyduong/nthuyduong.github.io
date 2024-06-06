@@ -83,27 +83,27 @@ const Header = () => {
             </div>
           </div>
 
-          <Link to={ROUTER.CONTACT} className="text-gray-300 hover:text-white rounded-md px-3 text-4xl font-medium cursor-text-wrp">Contact</Link>
+          <Link to={ROUTER.CONTACT} className="text-gray-300 hover:text-white rounded-md px-4 text-4xl font-medium cursor-text-wrp">Contact</Link>
         </div>
       </div>
       <div ref={headerRef} className="my-header sticky flex flex-1 items-center justify-center sm:items-stretch sm:justify-start border-b border-ccc border-solid">
         <div className="hidden w-full md:block">
           <div className="flex space-x-4 justify-center w-full">
             {/*Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"*/}
-            <div className="px-3 py-4">
+            <div className="px-4 py-4">
               <Link to="/" className="cursor-text-wrp text-sm scroll-text" data-replace="HOME" aria-current="page">
                 <span className="">HOME
                 </span>
               </Link>
             </div>
-            <div className="px-3 py-4">
+            <div className="px-4 py-4">
               <Link to={ROUTER.ABOUT} className="navdrop-title cursor-text-wrp rounded-md text-sm scroll-text" data-replace="ABOUT">
                 <span className="">ABOUT</span>
               </Link>
             </div>
             {/* Dropdown menu */}
             <div className="header-nav-item relative header-navdrop">
-              <div className="navdrop-title z-50 rounded-md pr-3 py-4">
+              <div className="navdrop-title z-50 rounded-md pr-4 py-4">
                 <Link to={ROUTER.DESIGNS} className="text-sm flex nav-link scroll-text" data-replace="PROJECTS">
                   <span className="nav-text">PROJECTS</span>
                 </Link>
@@ -126,8 +126,13 @@ const Header = () => {
                 </div>
               </div> */}
             </div>
-
-            <Link to={ROUTER.CONTACT} className="rounded-md px-3 py-4 text-sm cursor-text-wrp">Contact</Link>
+            <div className="px-3 py-4">
+              <Link to={ROUTER.CONTACT} className="rounded-md text-sm cursor-text-wrp scroll-text" data-replace="CONTACT">
+                <span className="">
+                  CONTACT
+                </span>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

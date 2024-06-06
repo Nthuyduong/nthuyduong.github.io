@@ -61,7 +61,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="px-3 md:px-0 contact-page mt-4 md:mt-7">
+    <div className="px-3 md:px-0 contact-page mt-4 md:mt-7 md:mb-9 mb-4">
       <div className="md:grid grid-cols-12 gap-4 mb-2 md:mb-5">
         <div className="col-span-1"></div>
         <div className="col-span-11">

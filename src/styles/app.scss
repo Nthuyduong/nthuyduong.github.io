@@ -185,6 +185,7 @@ a {
   transform: rotate(90deg);
   transition: all 0.3s ease;
 }
+
 .back-to-top:hover {
   color: #666;
   transform: rotate(90deg) scale(1.2);
@@ -547,7 +548,7 @@ a {
 @media screen and (max-width: 768px) {
   .my-header {
     display: none !important;
-  
+
   }
 
 
@@ -590,25 +591,32 @@ a {
       transform: translateY(30%) scale(.8);
     }
   }
-  .heading_1{
+
+  .heading_1 {
     font-size: 43px
   }
-  .heading_2{
+
+  .heading_2 {
     font-size: 32px
   }
-  .heading_3{
+
+  .heading_3 {
     font-size: 28px
   }
-  .heading_4{
+
+  .heading_4 {
     font-size: 24px
   }
-  .heading_5{
+
+  .heading_5 {
     font-size: 20px
   }
-  .heading_6{
+
+  .heading_6 {
     font-size: 16px
   }
 }
+
 .control-left {
   position: absolute;
   left: 0;
@@ -669,6 +677,7 @@ a {
 
 .header-mobile-open {
   z-index: 10000;
+
   .btn-header-mobile {
     transform: rotate(-180deg);
   }
@@ -715,8 +724,21 @@ body:has(.header-mobile-open) {
 }
 
 @media screen and (max-width: 768px) {
-  .all-my-projects, .section {
+
+  .all-my-projects,
+  .section {
     padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  // About page
+  .skill-card:last-child {
+    background: #C7C9C0;
+  }
+
+  .skill-card {
+    background: #F0EEEB;
   }
 }
 
@@ -730,6 +752,7 @@ body:has(.header-mobile-open) {
   max-width: 950px;
   margin: auto;
 }
+
 // .image-container::before{
 //   content: "";
 //         position: absolute;
@@ -742,9 +765,10 @@ body:has(.header-mobile-open) {
 //         z-index: 1;
 //         margin-bottom: 60px;
 // }
-.phone-inner{
+.phone-inner {
   transform: translate(-50%, -50%);
 }
+
 .loader {
   width: 40px;
   height: 40px;
@@ -755,11 +779,29 @@ body:has(.header-mobile-open) {
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
 }
+
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
+}
+
+// PROJECT PAGE
+// automatic change color in each 5s
+@keyframes colorChange {
+  0% { background-color: #EBF7F5; }
+  25% { background-color: #FADFF7; }
+  50% { background-color: #E2E9F0; }
+  75% { background-color: #FEEDC9; }
+  100% { background-color: #EBF7F5; }
+}
+
+.colorDiv {
+  text-align: center;
+  cursor: pointer;
+  animation: colorChange 8s infinite;
 }
