@@ -90,10 +90,17 @@ const Header = () => {
         <div className="hidden w-full md:block">
           <div className="flex space-x-4 justify-center w-full">
             {/*Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"*/}
-            <Link to="/" className="cursor-text-wrp hover:bg-gray-700 rounded-md px-3 py-4 text-sm scroll-text" data-replace="HOME" aria-current="page">HOME</Link>
-            <Link to={ROUTER.ABOUT} className="navdrop-title cursor-text-wrp rounded-md px-3 py-4 text-sm scroll-text" data-replace="ABOUT">
-              ABOUT
-            </Link>
+            <div className="px-3 py-4">
+              <Link to="/" className="cursor-text-wrp text-sm scroll-text" data-replace="HOME" aria-current="page">
+                <span className="">HOME
+                </span>
+              </Link>
+            </div>
+            <div className="px-3 py-4">
+              <Link to={ROUTER.ABOUT} className="navdrop-title cursor-text-wrp rounded-md text-sm scroll-text" data-replace="ABOUT">
+                <span className="">ABOUT</span>
+              </Link>
+            </div>
             {/* Dropdown menu */}
             <div className="header-nav-item relative header-navdrop">
               <div className="navdrop-title z-50 rounded-md pr-3 py-4">
