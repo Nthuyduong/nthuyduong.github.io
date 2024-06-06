@@ -80,8 +80,15 @@ const Contact = () => {
             </div>
             <div className="cols-span-1 flex self-end">
               <div className="w-full text-right">
-                <div className="small_text mb-1 cursor-text-wrp">Send me a mail</div>
-                <div className="small_text cursor-text-wrp">Follow me on Behance</div>
+                <div className="small_text mb-1 cursor-text-wrp">
+                  Behance
+                </div>
+                <div className="small_text mb-1 cursor-text-wrp">
+                  Facebook
+                </div>
+                <div className="small_text cursor-text-wrp">
+                  Instagram
+                </div>
               </div>
             </div>
           </div>
@@ -100,7 +107,7 @@ const Contact = () => {
             <div className="md:pb-0 mb-4 col-span-1 grid">
               <label className="mb-1 cursor-text-wrp">Your Name *</label>
               <input
-                className={`border-solid border-b focus:outline-none focus:border-b focus:border-333 ${error?.name ? 'border-[red]': 'border-ccc'}`} 
+                className={`border-solid border-b focus:outline-none focus:border-b focus:border-333 ${error?.name ? 'border-[red]' : 'border-ccc'}`}
                 type="text"
                 required
                 value={name}
@@ -110,7 +117,7 @@ const Contact = () => {
             <div className="md:pb-0 mb-4 col-span-1 grid">
               <label className="mb-1 cursor-text-wrp">Phone number *</label>
               <input
-                className={`border-solid border-b focus:outline-none focus:border-b focus:border-333 ${error?.phone ? 'border-[red]': 'border-ccc'}`}
+                className={`border-solid border-b focus:outline-none focus:border-b focus:border-333 ${error?.phone ? 'border-[red]' : 'border-ccc'}`}
                 type="text"
                 required
                 value={phone}
@@ -121,7 +128,7 @@ const Contact = () => {
           <div className="grid my-4">
             <label className="mb-1 cursor-text-wrp">Email address *</label>
             <input
-              className={`border-solid border-b focus:outline-none focus:border-b focus:border-333 ${error?.email ? 'border-[red]': 'border-ccc'}`}
+              className={`border-solid border-b focus:outline-none focus:border-b focus:border-333 ${error?.email ? 'border-[red]' : 'border-ccc'}`}
               type="text"
               required
               value={email}
@@ -131,26 +138,29 @@ const Contact = () => {
           <div className="grid">
             <label className="mb-1 cursor-text-wrp">Message *</label>
             <textarea
-              className={`border-solid border-b focus:outline-none focus:border-b focus:border-333 ${error?.message ? 'border-[red]': 'border-ccc'}`}
+              className={`border-solid border-b focus:outline-none focus:border-b focus:border-333 ${error?.message ? 'border-[red]' : 'border-ccc'}`}
               rows="4"
               required
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </div>
-          <div className="heading_3 send-msg-btn mt-6">
+          <div className="text-[42px] send-msg-btn mt-6">
             <div className="flex float-right">
-                <button
-                  type="submit "
-                  className="cursor-pointer cursor-text-wrp flex gap-2"
-                  onClick={handleSubmit}
-                  disabled={loading}
-                >
-                  {loading && <Loading/>}
-                  Send Message
-                </button>
+              <button
+                type="submit"
+                className="cursor-pointer cursor-text-wrp flex gap-2 scroll-text"
+                onClick={handleSubmit}
+                disabled={loading}
+                data-replace="SEND MESSAGE"
+              >
+                {loading && <Loading />}
+                <span>
+                  SEND MESSAGE
+                </span>
+              </button>
               <div className="ml-3">
-                <img className="h-[50px] w-full" src="./images/icons/arrow-up-right-l.svg" alt="logo" loading="lazy" />
+                <img className="h-[63px] w-full" src="./images/icons/arrow-up-right-l.svg" alt="logo" loading="lazy" />
               </div>
             </div>
           </div>

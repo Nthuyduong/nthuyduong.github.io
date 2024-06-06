@@ -14,6 +14,15 @@ const About = () => {
       skills: ['HTML/SCSS', 'Tailwind/Bootstrap', 'JavaScript', 'ReactJS / Nextjs', 'Angular']
     }
   ]
+  const [iconVisible, setIconVisible] = useState(true);
+
+  const handleMouseEnter = () => {
+    setIconVisible(false);
+  };
+
+  const handleMouseLeave = () => {
+    setIconVisible(true);
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -53,9 +62,12 @@ const About = () => {
       <div className="section page-element border-b border-solid border-999">
         <div className="md:grid grid-cols-12 gap-5 md:py-6 py-4">
           <div className="col-span-6 md:flex flex-col">
-            <div className="md:text-[106px] font-medium">DUONG.NT</div>
-            <div className="md:text-[42px] h-full">HELLO AND WELCOME TO MY UX/UI PORTFOLIO.</div>
-            <div>
+            <div className="md:text-[106px] font-medium animate slideInUp">DUONG.NT</div>
+            <div className="md:text-[42px] h-full animate slideInUp">HELLO AND WELCOME TO MY UX/UI PORTFOLIO.</div>
+            <div className="flex items-center">
+              <div className="bg-black mr-2 p-1 rounded-full">
+                <img className="" src="./images/icons/arrow-down.svg" alt="logo" loading="lazy" />
+              </div>
               <div className="scroll-text medium_text" data-replace="MORE ABOUT ME">
                 <span>MORE ABOUT ME</span>
               </div>
@@ -394,6 +406,7 @@ const About = () => {
           </div>
         </div>
       </div>
+
       {/* <div class="">
         <div class="roll overflow-hidden">
           <div class="circle">
