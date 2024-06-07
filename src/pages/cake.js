@@ -67,7 +67,7 @@ const Cake = () => {
                             <div className="col-span-12 sm:col-span-6">
                                 <img className="w-100" src="./images/Pj01_cake/line2-01.png" alt="#" loading="lazy" />
                             </div>
-                            <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end bg-tertiary">
+                            <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end bg-primary">
                                 <div className="p-7">
                                     <div className="heading_4 mb-4">About project</div>
                                     <div className="body_text">
@@ -172,14 +172,14 @@ const Cake = () => {
                                     <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy" />
                                 </Link>
                                 <div className="d-flex title-pj">
-                                    <div className="medium_text pj_name">
+                                    <div className="medium_text pj_name mt-3">
                                         <Link to={ROUTER.AGURI}>
                                             Aguri Jewellery Website
                                         </Link>
                                     </div>
-                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                    {/* <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} /> */}
                                 </div>
-                                <div className="w-100 body_text pj_intro">
+                                <div className="w-100 body_text pj_intro text-color-muted mt-4">
                                     Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
                                 </div>
                             </div>
@@ -190,12 +190,12 @@ const Cake = () => {
                                     <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy" />
                                 </Link>
                                 <div className="d-flex title-pj">
-                                    <div className="medium-text pj_name">
+                                    <div className="medium-text pj_name mt-3">
                                         <Link to={ROUTER.FASHION}>Verite Fashion App</Link>
                                     </div>
-                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                    
                                 </div>
-                                <div className="w-100 body_text pj_intro">
+                                <div className="w-100 body_text pj_intro text-color-muted mt-4">
                                     Indulge in luxury and style with our timeless fashion brand, redefining elegance and sophistication.
                                 </div>
                             </div>
@@ -206,12 +206,12 @@ const Cake = () => {
                                     <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy" />
                                 </Link>
                                 <div className="d-flex title-pj">
-                                    <div className="medium_text pj_name">
+                                    <div className="medium_text pj_name mt-3">
                                         <Link to={ROUTER.ALIO}>Alio Yoga Website</Link>
                                     </div>
-                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                    
                                 </div>
-                                <div className=" w-100 body_text pj_intro">
+                                <div className=" w-100 body_text pj_intro text-color-muted mt-4">
                                     Discover a serene oasis at our Yoga, Pilates, and Meditation website, where tranquility awaits.
                                 </div>
                             </div>

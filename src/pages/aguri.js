@@ -300,14 +300,14 @@ const Aguri = () => {
                                         loading="lazy" />
                                 </Link>
                                 <div className="d-flex title-pj">
-                                    <div className="medium_text pj_name">
+                                    <div className="medium_text pj_name mt-3 cursor-text-wrp">
                                         <Link to={ROUTER.CAKE}>
                                             Season Cake Blog
                                         </Link>
                                     </div>
-                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                    
                                 </div>
-                                <div className="w-100 body_text pj_intro">
+                                <div className="w-100 body_text mt-4 pj_intro text-color-muted cursor-text-wrp">
                                     Indulge in the delectable world of Cake Blog, where sweetness and creativity
                                     come together.
                                 </div>
@@ -320,12 +320,12 @@ const Aguri = () => {
                                         loading="lazy" />
                                 </Link>
                                 <div className="d-flex title-pj">
-                                    <div className="medium_text pj_name">
+                                    <div className="medium_text pj_name mt-3 cursor-text-wrp">
                                         <Link to={ROUTER.FASHION}>Verite Fashion App</Link>
                                     </div>
-                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                    
                                 </div>
-                                <div className="w-100 body_text pj_intro">
+                                <div className="w-100 body_text pj_intro mt-4 text-color-muted cursor-text-wrp">
                                     Indulge in luxury and style with our timeless fashion brand, redefining elegance
                                     and sophistication.
                                 </div>
@@ -338,14 +338,14 @@ const Aguri = () => {
                                         loading="lazy" />
                                 </Link>
                                 <div className="d-flex title-pj">
-                                    <div className="medium_text pj_name">
+                                    <div className="medium_text pj_name mt-3 cursor-text-wrp">
                                         <Link to={ROUTER.ALIO}>
                                             Alio Yoga Website
                                         </Link>
                                     </div>
-                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                    
                                 </div>
-                                <div className="w-100 body_text pj_intro">
+                                <div className="w-100 body_text mt-4 pj_intro text-color-muted cursor-text-wrp">
                                     Discover a serene oasis at our Yoga, Pilates, and Meditation website, where
                                     tranquility awaits.
                                 </div>

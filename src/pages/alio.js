@@ -228,14 +228,14 @@ const Alio = () => {
                                     <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy" />
                                 </Link>
                                 <div className="d-flex title-pj">
-                                    <div className="medium_text pj_name">
+                                    <div className="medium_text pj_name mt-3">
                                         <Link to={ROUTER.AGURI}>
                                             Aguri Jewellery Website
                                         </Link>
                                     </div>
-                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                    
                                 </div>
-                                <div className="w-100 body_text pj_intro w-100">
+                                <div className="w-100 body_text pj_intro w-100 text-color-muted mt-4">
                                     Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
                                 </div>
                             </div>
@@ -246,14 +246,14 @@ const Alio = () => {
                                     <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy" />
                                 </Link>
                                 <div className="d-flex title-pj">
-                                    <div className="medium_text pj_name">
+                                    <div className="medium_text pj_name mt-3">
                                         <Link to={ROUTER.FASHION}>
                                             Verite Fashion App
                                         </Link>
                                     </div>
-                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                    
                                 </div>
-                                <div className="w-100 body_text pj_intro w-100">
+                                <div className="w-100 body_text pj_intro w-100 text-color-muted mt-4">
                                     Indulge in luxury and style with our timeless fashion brand, redefining elegance and sophistication.
                                 </div>
                             </div>
@@ -264,14 +264,14 @@ const Alio = () => {
                                     <img className="w-100" src="./images/home/more-4.png" alt="logo" loading="lazy" />
                                 </Link>
                                 <div className="d-flex title-pj">
-                                    <div className="medium_text pj_name">
+                                    <div className="medium_text pj_name mt-3">
                                         <Link to={ROUTER.CAKE}>
                                             Season Cake Blog
                                         </Link>
                                     </div>
-                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                    
                                 </div>
-                                <div className="w-100 body_text pj_intro w-100">
+                                <div className="w-100 body_text pj_intro w-100 text-color-muted mt-4">
                                     Indulge in the delectable world of Cake Blog, where sweetness and creativity come together.
                                 </div>
                             </div>

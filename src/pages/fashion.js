@@ -24,7 +24,7 @@ const Fashion = () => {
         <div>
             <div className="container-fluid">
                 <div className="product-showcase">
-                    <div className="project-item showcase md:pb-6 pb-4">
+                    {/* <div className="project-item showcase md:pb-6 pb-4">
                         <img className="w-100 show-case-bg" src="./images/Pj04_fashion/banner2.webp" alt="#" loading="lazy"/>
                         <div className="showcase-inner">
                             <div className="flex justify-end">
@@ -49,8 +49,8 @@ const Fashion = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="project-item verite_line2 md:py-6 py-4">
+                    </div> */}
+                    <div className="project-item verite_line2 md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6 flex items-end bg-primary">
                                 <div className="p-7">
@@ -129,14 +129,14 @@ const Fashion = () => {
                                     <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy"/>
                                 </Link>
                                 <div className="flex title-pj">
-                                    <div className="medium_text pj_name my-2">
+                                    <div className="medium_text pj_name mt-3">
                                         <Link to={ROUTER.AGURI}>
                                             Aguri Jewellery Website
                                         </Link>
                                     </div>
-                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                    
                                 </div>
-                                <div className="body_text pj_intro w-100">
+                                <div className="body_text pj_intro w-100 text-color-muted mt-4">
                                     Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
                                 </div>
                             </div>
@@ -147,14 +147,14 @@ const Fashion = () => {
                                     <img className="w-100" src="./images/home/more-4.png" alt="logo" loading="lazy"/>
                                 </Link>
                                 <div className="flex title-pj">
-                                    <div className="medium_text pj_name my-2">
+                                    <div className="medium_text pj_name mt-3">
                                         <Link to={ROUTER.CAKE}>
                                             Season Cake Blog
                                         </Link>
                                     </div>
-                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                    
                                 </div>
-                                <div className="body_text pj_intro w-100">
+                                <div className="body_text pj_intro w-100 text-color-muted mt-4">
                                     Indulge in the delectable world of Cake Blog, where sweetness and creativity come together.
                                 </div>
                             </div>
@@ -165,14 +165,14 @@ const Fashion = () => {
                                     <img className="w-100" src="./images/home/more-3.png" alt="logo" loading="lazy"/>
                                 </Link>
                                 <div className="flex title-pj">
-                                    <div className="medium_text pj_name my-2">
+                                    <div className="medium_text pj_name mt-3">
                                         <Link to={ROUTER.ALIO}>
                                             Alio Yoga Website
                                         </Link>
                                     </div>
-                                    <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} />
+                                    
                                 </div>
-                                <div className="body_text pj_intro w-100">
+                                <div className="body_text pj_intro w-100 text-color-muted mt-4">
                                     Discover a serene oasis at our Yoga, Pilates, and Meditation website, where tranquility awaits.
                                 </div>
                             </div>
