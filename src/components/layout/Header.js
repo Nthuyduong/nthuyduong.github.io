@@ -83,7 +83,7 @@ const Header = () => {
             </div>
           </div>
 
-          <Link to={ROUTER.CONTACT} className="text-gray-300 hover:text-white rounded-md px-4 text-4xl font-medium cursor-text-wrp">Contact</Link>
+          <Link to={ROUTER.CONTACT} className="text-gray-300 hover:text-white rounded-md px-3 text-4xl font-medium cursor-text-wrp">Contact</Link>
         </div>
       </div>
       <div ref={headerRef} className="my-header sticky flex flex-1 items-center justify-center sm:items-stretch sm:justify-start border-b border-ccc border-solid">
