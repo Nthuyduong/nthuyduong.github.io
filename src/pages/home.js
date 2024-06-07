@@ -262,13 +262,13 @@ const Home = () => {
               </div>
             </div>
           </div> */}
-          {/* <div className="row row-bt hidden sm:block">
+      {/* <div className="row row-bt hidden sm:block">
             <div className="col-6"></div>
             <div className="col-6 small-img child4">
               <img className="" src="./images/home/Rectangle440.webp" alt="Rectangle35" loading="lazy" />
             </div>
           </div> */}
-        {/* </div>
+      {/* </div>
       </div> */}
 
       {/*DECOR TEXT*/}
@@ -284,7 +284,7 @@ const Home = () => {
         </Scroller>
       </div> */}
 
-      
+
 
       {/* New section */}
       {/* <div className="relative md:py-9 bg-tertiary">
@@ -337,8 +337,57 @@ const Home = () => {
         </div>
       </div> */}
 
-      {/* My design  */}
+      {/* ABOUT ME */}
       <div className="section">
+        <div className="md:grid grid-cols-12 gap-5 pt-6 md:pt-7">
+          <div className="col-span-4"></div>
+          <div className="col-span-8">
+            <div className="heading_2">
+              Welcome to my portfolio! Excited to share UX/UI design projects and
+              experiences here. Always ready to embrace new opportunities and challenges
+              for continuous growth.
+            </div>
+            <div className="flex items-center mt-6">
+              <div className="bg-black mr-2 p-1 rounded-full">
+                <img className="" src="./images/icons/arrow-up-right.svg" alt="logo" loading="lazy" />
+              </div>
+              <div className="scroll-text medium_text" data-replace="MORE ABOUT ME">
+                <span>MORE ABOUT ME</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/*DECOR TEXT*/}
+
+      <div
+        className="home-contact-scroller px-0 section-full scroll-container text-decor mt-5 md:mt-8 py-0 md:py-3"
+        onMouseEnter={changeEmoji}
+      >
+
+        <div className="bg-primary px-0 section-full scroll-container text-decor py-0 md:py-2">
+          <Scroller>
+            <Link to='/contact' className="flex">
+              <div className="emoji flex items-center">
+                <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
+              </div>
+              <div className="heading_3 cursor-text-wrp">HELLO</div>
+              <div className="emoji flex items-center">
+                <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
+              </div>
+              <div className="heading_3 cursor-text-wrp">WELCOME TO MY PORTFOLIO!</div>
+              <div className="emoji flex items-center">
+                <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
+              </div>
+              <div className="heading_3 cursor-text-wrp">LET'S CONTACT WITH ME</div>
+            </Link>
+          </Scroller>
+        </div>
+      </div>
+
+      {/* My design  */}
+      <div className="section md:my-7 my-5">
         <div className="my-design">
           <div className="">
             <div className="grid grid-cols-12 my-des-title">
@@ -399,7 +448,7 @@ const Home = () => {
                     Season Cake Blog
                   </Link>
                 </div>
-                <div className="body_text w-full mt-4 cursor-text-wrp hidden sm:block text-color-muted">
+                <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
                   Indulge in the delectable world of Cake Blog, where sweetness and creativity come together.
                 </div>
               </div>
@@ -420,7 +469,7 @@ const Home = () => {
                     Aguri Jewellery Website
                   </Link>
                 </div>
-                <div className="body_text w-full mt-4 cursor-text-wrp hidden sm:block text-color-muted">
+                <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
                   Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
                 </div>
               </div>
@@ -432,7 +481,7 @@ const Home = () => {
                 <div className="medium_text mt-3 cursor-text-wrp">
                   <Link to={ROUTER.FASHION}>Fashion App</Link>
                 </div>
-                <div className="body_text w-full mt-4 cursor-text-wrp hidden sm:block text-color-muted">
+                <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
                   Indulge in luxury and style with our timeless fashion brand, redefining elegance and sophistication.
                 </div>
               </div>
@@ -446,7 +495,7 @@ const Home = () => {
                     Alio Yoga Website & App
                   </Link>
                 </div>
-                <div className="body_text w-full mt-4 cursor-text-wrp hidden sm:block text-color-muted">
+                <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
                   Discover a serene oasis at our Yoga, Pilates, and Meditation website, where tranquility awaits.
                 </div>
               </div>
@@ -455,32 +504,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/*DECOR TEXT*/}
-
-      <div
-        className="home-contact-scroller px-0 section-full scroll-container text-decor mt-5 md:mt-8 py-0 md:py-3"
-        onMouseEnter={changeEmoji}
-      >
-
-        <div className="bg-primary px-0 section-full scroll-container text-decor py-0 md:py-3">
-          <Scroller>
-            <Link to='/contact' className="flex">
-              <div className="emoji flex items-center">
-                <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
-              </div>
-              <div className="heading_3 cursor-text-wrp">HELLO MY NAME IS NGUYEN THUY DUONG</div>
-              <div className="emoji flex items-center">
-                <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
-              </div>
-              <div className="heading_3 cursor-text-wrp">WELCOME TO MY PORTFOLIO!</div>
-              <div className="emoji flex items-center">
-                <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
-              </div>
-              <div className="heading_3 cursor-text-wrp">LET'S CONTACT WITH ME</div>
-            </Link>
-          </Scroller>
-        </div>
-      </div>
       {/* <div className="my-services">
           <div className="services container-fluid ">
             <div className="py-7 border-solid border-y border-ccc">
