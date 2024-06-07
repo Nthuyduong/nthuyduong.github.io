@@ -183,10 +183,10 @@ const About = () => {
               <div className="heading_3 mb-4 cursor-text-wrp">
                 My Skills
               </div>
-              <div className="medium_text mid-text mb-3 cursor-text-wrp">
+              <div className="medium_text mid-text mb-4 cursor-text-wrp">
                 Skills that I have so far, to provide my clients
               </div>
-              <div className="body_text cursor-text-wrp">
+              <div className="body_text cursor-text-wrp text-color-muted">
                 “Learning new things brings me joy and satisfaction, as it allows me to grow, become more knowledgeable, and improve myself every day”
               </div>
             </div>
@@ -336,7 +336,7 @@ const About = () => {
               <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border-x border-b border-solid border-ccc">
                 <div className="h-full">
                   <div className="medium_text mb-3 cursor-text-wrp">Live with passion</div>
-                  <div className="body_text cursor-text-wrp">
+                  <div className="body_text cursor-text-wrp text-color-muted">
                     Passion is the driving force behind success and happiness that pushes you to reach your highest potential.
                     “Nothing great in the world has ever been accomplished without passion.” ~ George Hegel
                   </div>
@@ -351,7 +351,7 @@ const About = () => {
               <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border-x border-b border-solid border-ccc">
                 <div className="h-full">
                   <div className="medium_text mb-3 cursor-text-wrp">Eager to learn</div>
-                  <div className="body_text cursor-text-wrp">
+                  <div className="body_text cursor-text-wrp text-color-muted">
                     "Learn from yesterday, live for today, hope for tomorrow. The important thing is to not stop questioning." ~ Arthur Wellesley
                   </div>
                 </div>
@@ -365,7 +365,7 @@ const About = () => {
               <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border-x border-b border-solid border-ccc">
                 <div className="h-full">
                   <div className="medium_text mb-3 cursor-text-wrp">Undeterred by the hardships</div>
-                  <div className="body_text cursor-text-wrp">
+                  <div className="body_text cursor-text-wrp text-color-muted">
                     “Life doesn't require that we be the best, only that we try our best.” ~ H.Jackson Brown, Jr
                   </div>
                 </div>
