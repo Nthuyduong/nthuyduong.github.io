@@ -97,7 +97,7 @@ const Layout = ({ children }) => {
 
   //Hide and Display side nav bar
   const discardElement = [ROUTER.CONTACT];
-  const withoutElement = [ROUTER.ALIO, ROUTER.CAKE, ROUTER.AGURI, ROUTER.FASHION];
+  const withoutElement = [ROUTER.ALIO, ROUTER.CAKE, ROUTER.AGURI, ROUTER.FASHION, ROUTER.BEAUTYBLOG];
 
   // Hide Footer
   if (discardElement.some((route) => pathname.includes(route))) {

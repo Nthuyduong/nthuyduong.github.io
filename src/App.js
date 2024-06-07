@@ -16,6 +16,7 @@ import Fashion from "./pages/fashion"
 import Cake from "./pages/cake";
 import Designs from "./pages/designs";
 import Abouttest from "./pages/abouttest";
+import BeautyBlog from "./pages/beauty_blog";
 import "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/react-fontawesome"
 import { AnimationProvider } from "./provider/animation";
@@ -36,6 +37,7 @@ const App = () => {
             <Route path={ROUTER.CAKE} component={Cake}/>
             <Route path={ROUTER.DESIGNS} component={Designs}/>
             <Route path={ROUTER.ABOUTTEST} component={Abouttest}/>
+            <Route path={ROUTER.BEAUTYBLOG} component={BeautyBlog}/>
           </Layout>
         </AnimationProvider>
       </Switch>  
