@@ -62,8 +62,8 @@ const About = () => {
       <div className="section page-element border-b border-solid border-999">
         <div className="md:grid grid-cols-12 gap-5 md:py-6 py-4">
           <div className="col-span-6 md:flex flex-col">
-            <div className="md:text-[106px] font-medium animate slideInUp">DUONG.NT</div>
-            <div className="md:text-[42px] h-full animate slideInUp">HELLO AND WELCOME TO MY UX/UI PORTFOLIO.</div>
+            <div className="md:text-[106px] font-medium animate slideInUp cursor-text-wrp">DUONG.NT</div>
+            <div className="md:text-[42px] h-full animate slideInUp cursor-text-wrp">HELLO AND WELCOME TO MY UX/UI PORTFOLIO.</div>
             <div className="flex items-center">
               <div className="bg-black mr-2 p-1 rounded-full">
                 <img className="" src="./images/icons/arrow-down.svg" alt="logo" loading="lazy" />
@@ -142,7 +142,7 @@ const About = () => {
               <div className="heading_2 md:py-0 py-4 cursor-text-wrp animate slideInUp">Self - Introduce</div>
             </div>
 
-            <div className="col-span-6 animate slideInUp">
+            <div className="col-span-6 animate slideInUp cursor-text-wrp">
               <div className="">
                 <div className="mb-4 body_text">
                   At just 24 years old, I was always driven to find my true passion in life. After trying a few different jobs, I discovered UX/UI design and suddenly everything fell into place. I realized that this was my true passion and I was determined to pursue a career in this field. Although I am relatively new to this industry, I have worked hard to learn a lot during the past 2 years. Now I am eager to gain hands-on experience and contribute to real-world projects in the field of UX/UI Design. I believe that with a strong sense of purpose and passion for design, I can make a valuable contribution to any organization looking for a dedicated and dynamic UX/UI Designer.
@@ -255,7 +255,7 @@ const About = () => {
       </div>
       <div className="section-full timeline page-element pb-6 md:pb-9">
         <div className="m-w">
-          <div className="flex timeline-wrp">
+          <div className="flex timeline-wrp cursor-text-wrp">
             <div className="w-full flex flex-col gap-3 timeline-card">
               <div className="timeline-top small_text cursor-text-wrp">
                 Past - 2016

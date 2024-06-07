@@ -383,9 +383,9 @@ const Home = () => {
         </div>
         <div className="animate slideInUp animate--delay-fast">
           <div className="my-project">
-            <div className="grid grid-cols-12 gap-4">
+            <div className="grid grid-cols-12 gap-4 md:flex items-center">
               <div className="col-span-6 sm:col-span-3 project-odd">
-                <div className="heading_3 mb-2 cursor-text-wrp">01.</div>
+                <div className="heading_4 mb-2 cursor-text-wrp">01.</div>
 
                 <Link to={ROUTER.CAKE}>
                   <img
@@ -394,17 +394,17 @@ const Home = () => {
                     loading="lazy"
                   />
                 </Link>
-                <div className="heading_6 mt-3 cursor-text-wrp">
+                <div className="medium_text mt-3 cursor-text-wrp">
                   <Link to={ROUTER.CAKE}>
                     Season Cake Blog
                   </Link>
                 </div>
-                <div className="body_text w-full mt-2 cursor-text-wrp hidden sm:block">
+                <div className="body_text w-full mt-4 cursor-text-wrp hidden sm:block text-color-muted">
                   Indulge in the delectable world of Cake Blog, where sweetness and creativity come together.
                 </div>
               </div>
               <div className="col-span-6 sm:col-span-3 project-even">
-                <div className="heading_3 mb-2 cursor-text-wrp">02.</div>
+                <div className="heading_4 mb-2 cursor-text-wrp">02.</div>
 
                 <Link to={ROUTER.AGURI}>
                   <img
@@ -415,38 +415,38 @@ const Home = () => {
                   />
                 </Link>
 
-                <div className="heading_6 mt-3 cursor-text-wrp">
+                <div className="medium_text mt-3 cursor-text-wrp">
                   <Link to={ROUTER.AGURI}>
                     Aguri Jewellery Website
                   </Link>
                 </div>
-                <div className="body_text w-full mt-2 cursor-text-wrp hidden sm:block">
+                <div className="body_text w-full mt-4 cursor-text-wrp hidden sm:block text-color-muted">
                   Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
                 </div>
               </div>
               <div className="col-span-6 sm:col-span-3 project-odd">
-                <div className="heading_3 mb-2 cursor-text-wrp">03.</div>
+                <div className="heading_4 mb-2 cursor-text-wrp">03.</div>
                 <Link to={ROUTER.FASHION}>
                   <img className="w-full project-img" src="./images/design/des-3.png" alt="logo" loading="lazy" />
                 </Link>
-                <div className="heading_6 mt-3 cursor-text-wrp">
+                <div className="medium_text mt-3 cursor-text-wrp">
                   <Link to={ROUTER.FASHION}>Fashion App</Link>
                 </div>
-                <div className="body_text w-full mt-2 cursor-text-wrp hidden sm:block">
+                <div className="body_text w-full mt-4 cursor-text-wrp hidden sm:block text-color-muted">
                   Indulge in luxury and style with our timeless fashion brand, redefining elegance and sophistication.
                 </div>
               </div>
               <div className="col-span-6 sm:col-span-3 project-even">
-                <div className="heading_3 mb-2 cursor-text-wrp">04.</div>
+                <div className="heading_4 mb-2 cursor-text-wrp">04.</div>
                 <Link to={ROUTER.ALIO}>
                   <img className="w-full project-img" src="./images/design/des-4.png" alt="logo" loading="lazy" />
                 </Link>
-                <div className="heading_6 mt-3 cursor-text-wrp">
+                <div className="medium_text mt-3 cursor-text-wrp">
                   <Link to={ROUTER.ALIO}>
                     Alio Yoga Website & App
                   </Link>
                 </div>
-                <div className="body_text w-full mt-2 cursor-text-wrp hidden sm:block">
+                <div className="body_text w-full mt-4 cursor-text-wrp hidden sm:block text-color-muted">
                   Discover a serene oasis at our Yoga, Pilates, and Meditation website, where tranquility awaits.
                 </div>
               </div>
