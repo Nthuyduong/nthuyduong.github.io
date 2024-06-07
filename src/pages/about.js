@@ -60,10 +60,10 @@ const About = () => {
       {/* New banner */}
 
       <div className="section page-element border-b border-solid border-999">
-        <div className="md:grid grid-cols-12 gap-5 md:py-6 py-4">
+        <div className="md:grid grid-cols-12 gap-5 md:py-7 py-5">
           <div className="col-span-6 md:flex flex-col">
             <div className="md:text-[106px] font-medium animate slideInUp cursor-text-wrp">DUONG.NT</div>
-            <div className="md:text-[42px] h-full animate slideInUp cursor-text-wrp">HELLO AND WELCOME TO MY UX/UI PORTFOLIO.</div>
+            <div className="heading_2 h-full animate slideInUp cursor-text-wrp">HELLO AND WELCOME TO MY UX/UI PORTFOLIO.</div>
             <div className="flex items-center">
               <div className="bg-black mr-2 p-1 rounded-full">
                 <img className="" src="./images/icons/arrow-down.svg" alt="logo" loading="lazy" />
@@ -129,8 +129,45 @@ const About = () => {
           </div>
         </div>
       </div> */}
+      <div className="section">
+        <div className="py-6 md:grid grid-cols-12 gap-5 w-full border-b border-solid border-999">
+          <div className="col-span-3 md:flex items-center">
+            <div className="heading_2 md:py-0 py-4 cursor-text-wrp animate slideInUp">ABOUT ME</div>
+          </div>
+          <div className="col-span-9">
+            <div className="md:flex flex-row justify-end items-center gap-6 w-full">
+              <div className="">
+                <div className="medium_text mb-3 cursor-text-wrp">
+                  Basic Information
+                </div>
+                <div className="flex items-center justify-end body_text">
+                  <div>BOD: 08/19/1998</div>
+                  <img className="mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                  <div>Nationality: Local Vietnamese</div>
+                  <img className="mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                  <div>Maritality:Single</div>
+                  <img className="mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                  <div>Gender: Female</div>
+                </div>
+              </div>
+              <div className="">
+                <div className="medium_text mb-3 cursor-text-wrp">
+                  Hobbies
+                </div>
+                <div className="flex items-center justify-end pb-0 body_text cursor-text-wrp">
+                  Learning
+                  <img className="mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                  Reading
+                  <img className="mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                  Drawing
 
-      <div className="page-element section mt-6 md:mt-9">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="page-element section mt-5 md:mt-7">
         <div className="about2">
           <div className="md:grid md:grid-cols-12 gap-5">
             <div className="col-span-3 animate slideInUp">
@@ -138,46 +175,36 @@ const About = () => {
                 <img className="w-100" src="./images/about/me.webp" alt="#" loading="lazy"></img>
               </div>
             </div>
-            <div className="col-span-3">
-              <div className="heading_2 md:py-0 py-4 cursor-text-wrp animate slideInUp">Self - Introduce</div>
+            <div className="col-span-1">
+              {/* <div className="heading_2 md:py-0 py-4 cursor-text-wrp animate slideInUp">Self - Introduce</div> */}
             </div>
 
-            <div className="col-span-6 animate slideInUp cursor-text-wrp">
-              <div className="">
-                <div className="mb-4 body_text">
-                  At just 24 years old, I was always driven to find my true passion in life. After trying a few different jobs, I discovered UX/UI design and suddenly everything fell into place. I realized that this was my true passion and I was determined to pursue a career in this field. Although I am relatively new to this industry, I have worked hard to learn a lot during the past 2 years. Now I am eager to gain hands-on experience and contribute to real-world projects in the field of UX/UI Design. I believe that with a strong sense of purpose and passion for design, I can make a valuable contribution to any organization looking for a dedicated and dynamic UX/UI Designer.
-                </div>
-                <div className="medium_text mb-2 cursor-text-wrp">
-                  Basic Information
-                </div>
-                <div className="flex items-center body_text mb-4">
-                  Birthday: 19/08/1998
-                  <img className="about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
-                  Nationality: Local Vietnamese
-                  <img className="about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
-                  Maritality: Single
-                  <img className="about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
-                  Gender: Female
-                </div>
-                <div className="medium_text mb-2 md:mt-5 cursor-text-wrp">
-                  Hobbies
-                </div>
-                <div className="flex items-center pb-0 body_text cursor-text-wrp">
-                  Reading
-                  <img className="about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
-                  Drawing
-                  <img className="about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
-                  Travelling
-                  <img className="about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
-                  Swimming
+            <div className="col-span-8 animate body_text slideInUp cursor-text-wrp md:flex items-end">
+              <div>
+                <div className="heading_6 mb-5">Hello. My name is Duong.</div>
+                <div className="md:flex flex-row gap-5">
+                  <div>With 2 years of experience in UX/UI design, I've refined my skills in creating user-centric designs that balance aesthetics
+                    and functionality. My journey in the field has given me a strong foundation in diverse design principles and methodologies.
+                    Currently, I handle both Designer and Developer tasks, seamlessly blending design and development processes.
+                    This dual role enables me to approach projects comprehensively, bridging the gap between design and implementation
+                    to ensure that design visions translate effectively into responsive, high-performance digital products that are
+                    both functional and visually engaging.
+                  </div>
+                  <div>
+                    I am confident in my ability to quickly grasp work, meet all requirements, and ensure timely completion.
+                    My approach is holistic, considering both the visual and technical aspects of web development, which helps
+                    in delivering cohesive and polished end products. Throughout my career, I have continuously sought to improve my skills and
+                    stay updated with industry trends. My commitment to excellence drives me to deliver
+                    high-quality work that not only meets but also anticipates user needs.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="page-element py-6 md:py-8 border-y border-solid border-ccc mt-6 md:mt-9">
-        <div className="section">
+      <div className="page-element mt-4 md:mt-7">
+        <div className="section py-4 md:py-7 border-t border-solid border-ccc">
           <div className="md:grid md:grid-cols-12 gap-5">
             <div className="col-span-4 skill-common mb-2 animate slideInUp">
               <div className="heading_3 mb-4 cursor-text-wrp">
@@ -248,7 +275,7 @@ const About = () => {
           <div className="col-span-3"></div>
         </div>
       </div>
-      <div className="section pt-6 md:pt-9">
+      <div className="section pt-5 md:pt-7">
         <div className="timeline-title heading_3 mb-5 md:mb-8 cursor-text-wrp">
           Educational Background
         </div>
@@ -414,7 +441,7 @@ const About = () => {
           </div>
         </div>
       </div> */}
-    </div>
+    </div >
   )
 }
 

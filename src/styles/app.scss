@@ -7,7 +7,7 @@ $heading_2: 46px;
 $heading_3: 38px;
 $heading_4: 32px;
 $heading_5: 28px;
-$heading_6: 18px;
+$heading_6: 20px;
 $medium_text: 16px;
 $body_text: 14px;
 $small_text: 13px;
@@ -59,15 +59,15 @@ a {
 }
 
 .heading_2 {
-  font-family: 'AmericanaBT', serif;
+  font-family: 'SFUFutura', sans-serif;
   font-size: $heading_2;
-  line-height: $heading_2*1.15;
+  line-height: $heading_2*1.25;
 }
 
 .heading_3 {
   font-family: 'AmericanaBT', serif;
   font-size: $heading_3;
-  line-height: $heading_3*1.15;
+  line-height: $heading_3*1.25;
 }
 
 .heading_4 {
@@ -718,9 +718,8 @@ body:has(.header-mobile-open) {
 }
 
 .section {
-  max-width: 1300px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 @media screen and (max-width: 768px) {
