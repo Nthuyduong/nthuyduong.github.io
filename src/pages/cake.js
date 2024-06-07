@@ -63,6 +63,11 @@ const Cake = () => {
             <div className="container-fluid">
                 <div className="product-showcase">
                     <div className="project-item md:pb-6 pb-4">
+                        <div className="">
+                            <img className="w-100" src="./images/Pj01_cake/cakebanner.png" alt="#" loading="lazy" />
+                        </div>
+                    </div>
+                    <div className="project-item md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6">
                                 <img className="w-100" src="./images/Pj01_cake/line2-01.png" alt="#" loading="lazy" />
@@ -118,9 +123,9 @@ const Cake = () => {
                         </div>
                     </div>
                     <div className="project-item md:pb-6 pb-4">
-                        <div className="grid grid-cols-12">
+                        <div className="md:grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6">
-                            <img className="w-100" src={require(`../../public/images/Pj01_cake/${cake[currentCakeIndex]}`)} alt="#" loading="lazy"/>
+                                <img className="w-100" src={require(`../../public/images/Pj01_cake/${cake[currentCakeIndex]}`)} alt="#" loading="lazy" />
                             </div>
                             <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end relative">
                                 <img className="w-100" src="./images/Pj01_cake/cake-bg.png" alt="#" loading="lazy" />
@@ -138,13 +143,26 @@ const Cake = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="project-item ">
+                    <div className="project-item md:pb-6 pb-4">
+                        <div className="md:grid grid-cols-12">
+                            <div className="col-span-12 sm:col-span-6">
+                                <img className="w-100" src="./images/Pj01_cake/cakephone.png" alt="#" loading="lazy" />
+                            </div>
+                            <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end relative">
+                                <img className="w-100" src="./images/Pj01_cake/cakephone2.png" alt="#" loading="lazy" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="project-item md:pb-6 pb-4">
                         <div className="">
                             <div className="">
-                                <img className="w-100" src="./images/Pj01_cake/detail.webp" alt="#" loading="lazy" />
+                                <img className="w-100" src="./images/Pj01_cake/detail.png" alt="#" loading="lazy" />
 
                             </div>
                         </div>
+                    </div>
+                    <div className="project-item md:pb-6 pb-4">
+                        <img className="w-100" src="./images/Pj01_cake/cakebg.png" alt="#" loading="lazy" />
                     </div>
                 </div>
             </div>
@@ -193,7 +211,7 @@ const Cake = () => {
                                     <div className="medium-text pj_name mt-3">
                                         <Link to={ROUTER.FASHION}>Verite Fashion App</Link>
                                     </div>
-                                    
+
                                 </div>
                                 <div className="w-100 body_text pj_intro text-color-muted mt-4">
                                     Indulge in luxury and style with our timeless fashion brand, redefining elegance and sophistication.
@@ -209,7 +227,7 @@ const Cake = () => {
                                     <div className="medium_text pj_name mt-3">
                                         <Link to={ROUTER.ALIO}>Alio Yoga Website</Link>
                                     </div>
-                                    
+
                                 </div>
                                 <div className=" w-100 body_text pj_intro text-color-muted mt-4">
                                     Discover a serene oasis at our Yoga, Pilates, and Meditation website, where tranquility awaits.
