@@ -36,7 +36,193 @@ const Designs = () => {
 
             <div></div>
             {/* All project here */}
-            <div className="section">
+
+            <div className="section py-7">
+                <div className="border-y border-solid border-ccc">
+                    <div className="design-scale-out md:flex flex-row gap-6">
+                        <div className="md:flex flex-row gap-6 w-full py-4">
+                            <div className="heading_3 mb-3 cursor-text-wrp">01</div>
+                            <div>
+                                <div className="flex">
+                                    <div className="mb-1 cursor-text-wrp body_text">UX/UI Design</div>
+                                    <div className="cursor-text-wrp body_text">Apr 2024</div>
+                                </div>
+                                <div>
+                                    <Link to={ROUTER.AGURI}>
+                                        <div className="heading_4 mb-3 cursor-text-wrp">Aguri Jewelry Website</div>
+                                    </Link>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className="w-full md:flex flex-row justify-end relative">
+                            <div className="absolute left-[0] h-full">
+                                <img
+                                    className="design-scale-img w-full h-full w-auto object-cover" src="./images/design/des-1.png"
+                                    alt="logo"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <Link className="py-4" to={ROUTER.AGURI}>
+                                <div className="md:flex items-center">
+                                    <div className="mr-2">Explore now</div>
+                                    <div>
+                                        <img className="" src="./images/icons/arrow.svg" alt="smile" loading="lazy" />
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="border-b border-solid border-ccc">
+                    <div className="md:flex flex-row gap-6 py-4">
+                        <div className="md:flex flex-row gap-6 w-full">
+                            <div className="heading_3 mb-3 cursor-text-wrp">02</div>
+                            <div>
+                                <div className="flex">
+                                    <div className="mb-1 cursor-text-wrp body_text">UX/UI Design</div>
+                                    <div className="cursor-text-wrp body_text">Apr 2024</div>
+                                </div>
+                                <div>
+                                    <Link to={ROUTER.BEAUTYBLOG}>
+                                        <div className="heading_4 mb-3 cursor-text-wrp">Beauty Blog</div>
+                                    </Link>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className="w-full md:flex flex-row justify-end">
+                            <div>
+                                <img
+                                    className="w-full h-[160px] object-cover" src="./images/design/des-1.png"
+                                    alt="logo"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <Link to={ROUTER.AGURI}>
+                                <div className="md:flex items-center">
+                                    <div className="mr-2">Explore now</div>
+                                    <div>
+                                        <img className="" src="./images/icons/arrow.svg" alt="smile" loading="lazy" />
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="border-b border-solid border-ccc">
+                    <div className="md:flex flex-row gap-5 py-4">
+                        <div className="md:flex flex-row gap-6 w-full">
+                            <div className="heading_3 mb-3 cursor-text-wrp">03</div>
+                            <div>
+                                <div className="flex">
+                                    <div className="mb-1 cursor-text-wrp body_text">UX/UI Design</div>
+                                    <div className="cursor-text-wrp body_text">Apr 2024</div>
+                                </div>
+                                <div>
+                                    <Link to={ROUTER.CAKE}>
+                                        <div className="heading_4 mb-3 cursor-text-wrp">Season Cake Blog</div>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="w-full md:flex flex-row justify-end">
+                            <div>
+                                <img
+                                    className="w-full h-[160px] object-cover" src="./images/design/des-1.png"
+                                    alt="logo"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <Link to={ROUTER.AGURI}>
+                                <div className="md:flex items-center">
+                                    <div className="mr-2">Explore now</div>
+                                    <div>
+                                        <img className="" src="./images/icons/arrow.svg" alt="smile" loading="lazy" />
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="border-b border-solid border-ccc">
+                    <div className="md:flex flex-row gap-6 py-4">
+                        <div className="md:flex flex-row gap-6 w-full">
+                            <div className="heading_3 mb-3 cursor-text-wrp">04</div>
+                            <div>
+                                <div className="flex">
+                                    <div className="mb-1 cursor-text-wrp body_text">UX/UI Design</div>
+                                    <div className="cursor-text-wrp body_text">Apr 2024</div>
+                                </div>
+                                <div>
+                                    <Link to={ROUTER.ALIO}>
+                                        <div className="heading_4 mb-3 cursor-text-wrp">Yoga App & Website</div>
+                                    </Link>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className="w-full md:flex flex-row justify-end">
+                            <div>
+                                <img
+                                    className="w-full h-[160px] object-cover" src="./images/design/des-1.png"
+                                    alt="logo"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <Link to={ROUTER.AGURI}>
+                                <div className="md:flex items-center">
+                                    <div className="mr-2">Explore now</div>
+                                    <div>
+                                        <img className="" src="./images/icons/arrow.svg" alt="smile" loading="lazy" />
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="">
+                    <div className="md:flex flex-row gap-5 py-4">
+                        <div className="md:flex flex-row gap-6 w-full">
+                            <div className="heading_3 mb-3 cursor-text-wrp">05</div>
+                            <div>
+                                <div className="flex">
+                                    <div className="mb-1 cursor-text-wrp body_text">UX/UI Design</div>
+                                    <div className="cursor-text-wrp body_text">Apr 2024</div>
+                                </div>
+                                <div>
+                                    <Link to={ROUTER.FASHION}>
+                                        <div className="heading_4 mb-3 cursor-text-wrp">Fashion Brand App</div>
+                                    </Link>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className="w-full md:flex flex-row justify-end">
+                            <div>
+                                <img
+                                    className="w-full h-[160px] object-cover" src="./images/design/des-1.png"
+                                    alt="logo"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <Link to={ROUTER.AGURI}>
+                                <div className="md:flex items-center">
+                                    <div className="mr-2">Explore now</div>
+                                    <div>
+                                        <img className="" src="./images/icons/arrow.svg" alt="smile" loading="lazy" />
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* <div className="section">
                 <div className="">
                     <div className="">
                         <div className="project-section mt-6">
@@ -171,10 +357,10 @@ const Designs = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* Contact section */}
-            <div class="colorDiv border-y border-solid border-ccc py-7 w-full md:mt-7 mt-5 ">
+            {/* <div class="colorDiv border-y border-solid border-ccc py-7 w-full md:mt-7 mt-5 ">
                 <div>
 
                     <div className="text-[60px] leading-[130%]">Unleashing The Potential Of Your Brand</div>
@@ -188,7 +374,7 @@ const Designs = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
         </div>
     )
