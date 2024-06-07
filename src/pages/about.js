@@ -206,8 +206,8 @@ const About = () => {
         <div className="section py-4 md:py-7 border-t border-solid border-ccc">
           <div className="md:grid md:grid-cols-12 gap-5">
             <div className="col-span-4 skill-common mb-2 animate slideInUp">
-              <div className="heading_3 mb-4 cursor-text-wrp">
-                My Skills
+              <div className="heading_2 mb-4 cursor-text-wrp">
+                MY SKILLS
               </div>
               <div className="medium_text mid-text mb-4 cursor-text-wrp">
                 Skills that I have so far, to provide my clients
@@ -218,14 +218,14 @@ const About = () => {
             </div>
 
             {skills.map((skill, index) => (
-              <div className="skill-card col-span-4 flex flex-col gap-2 p-5 border border-solid border-ccc" key={index}>
+              <div className="skill-card col-span-4 flex flex-col gap-2 p-5 " key={index}>
                 <div className="hidden sm:flex flex-col gap-2">
                   <div className="skill-title heading_6 cursor-text-wrp md:mb-3 md:0">
                     {skill.title}
                   </div>
                   <div className="skill-container">
                     {skill.skills.map((skill, index) => (
-                      <div className="flex pb-1 border-b border-solid border-ccc mb-2" key={index}>
+                      <div className="flex pb-1 border-b border-solid border-999 mb-2" key={index}>
                         <div className="cursor-text-wrp body_text mr-auto">{index + 1}/</div>
                         <div className="cursor-text-wrp skill-name body_text">{skill}</div>
                       </div>
@@ -264,80 +264,73 @@ const About = () => {
         </div>
       </div>
       {/* Educational background */}
-      <div>
-        <div className="md:grid md:grid-cols-12 gap-4">
-          <div className="col-span-3">
-            <div></div>
+      <div className="bg-primary">
+        <div className="section pt-5 md:pt-7">
+          <div className="timeline-title heading_2 mb-5 md:mb-8 cursor-text-wrp">
+            ACADEMIC PROFILE
           </div>
-          <div className="col-span-3"></div>
-          <div className="col-span-3"></div>
-          <div className="col-span-3"></div>
         </div>
-      </div>
-      <div className="section pt-5 md:pt-7">
-        <div className="timeline-title heading_3 mb-5 md:mb-8 cursor-text-wrp">
-          Educational Background
-        </div>
-      </div>
-      <div className="section-full timeline page-element pb-6 md:pb-9">
-        <div className="m-w">
-          <div className="flex timeline-wrp cursor-text-wrp">
-            <div className="w-full flex flex-col gap-3 timeline-card">
-              <div className="timeline-top small_text cursor-text-wrp">
-                Past - 2016
+        <div className="section-full timeline page-element pb-6 md:pb-9">
+          <div className="m-w">
+            <div className="flex timeline-wrp cursor-text-wrp">
+              <div className="w-full flex flex-col gap-3 timeline-card">
+                <div className="timeline-top small_text cursor-text-wrp">
+                  Past - 2016
+                </div>
+                <div className="timeline-line">
+                  <div className="timeline-content"></div>
+                </div>
+                <div className="timeline-bottom mt-3">
+                  <p className="heading_6 mb-3 cursor-text-wrp">Phung Khac Khoan High School</p>
+                  <p className="body_text cursor-text-wrp">Thach That district, Hanoi</p>
+                </div>
               </div>
-              <div className="timeline-line">
-                <div className="timeline-content"></div>
+              <div className="w-full flex flex-col gap-3 timeline-card">
+                <div className="timeline-top small_text cursor-text-wrp">
+                  2016 - 7/2020
+                </div>
+                <div className="timeline-line">
+                  <div className="timeline-content"></div>
+                </div>
+                <div className="timeline-bottom mt-3">
+                  <p className="heading_6 mb-3 cursor-text-wrp">HUNRE</p>
+                  <p className="body_text cursor-text-wrp">Very good degree, GPA 3.4</p>
+                </div>
               </div>
-              <div className="timeline-bottom mt-3">
-                <p className="heading_6 mb-3 cursor-text-wrp">Phung Khac Khoan High School</p>
-                <p className="body_text cursor-text-wrp">Thach That district, Hanoi</p>
+              <div className="w-full flex flex-col gap-3 timeline-card">
+                <div className="timeline-top small_text cursor-text-wrp">
+                  8/2020 - 2022
+                </div>
+                <div className="timeline-line">
+                  <div className="timeline-content"></div>
+                </div>
+                <div className="timeline-bottom mt-3">
+                  <p className="heading_6 mb-3 cursor-text-wrp">Arena Multimedia</p>
+                  <p className="body_text cursor-text-wrp">Graphic Design | UX/UI Design</p>
+                </div>
               </div>
-            </div>
-            <div className="w-full flex flex-col gap-3 timeline-card">
-              <div className="timeline-top small_text cursor-text-wrp">
-                2016 - 7/2020
-              </div>
-              <div className="timeline-line">
-                <div className="timeline-content"></div>
-              </div>
-              <div className="timeline-bottom mt-3">
-                <p className="heading_6 mb-3 cursor-text-wrp">HUNRE</p>
-                <p className="body_text cursor-text-wrp">Very good degree, GPA 3.4</p>
-              </div>
-            </div>
-            <div className="w-full flex flex-col gap-3 timeline-card">
-              <div className="timeline-top small_text cursor-text-wrp">
-                8/2020 - 2022
-              </div>
-              <div className="timeline-line">
-                <div className="timeline-content"></div>
-              </div>
-              <div className="timeline-bottom mt-3">
-                <p className="heading_6 mb-3 cursor-text-wrp">Arena Multimedia</p>
-                <p className="body_text cursor-text-wrp">Graphic Design | UX/UI Design</p>
-              </div>
-            </div>
-            <div className="w-full flex flex-col gap-3 timeline-card">
-              <div className="timeline-top small_text cursor-text-wrp">
-                Past - 5/2022 - 2023
-              </div>
-              <div className="timeline-line">
-                <div className="timeline-content"></div>
-              </div>
-              <div className="timeline-bottom mt-3">
-                <p className="heading_6 mb-3 cursor-text-wrp">FPT Aptech VietNam</p>
-                <p className="body_text cursor-text-wrp">Developer</p>
+              <div className="w-full flex flex-col gap-3 timeline-card">
+                <div className="timeline-top small_text cursor-text-wrp">
+                  Past - 5/2022 - 2023
+                </div>
+                <div className="timeline-line">
+                  <div className="timeline-content"></div>
+                </div>
+                <div className="timeline-bottom mt-3">
+                  <p className="heading_6 mb-3 cursor-text-wrp">FPT Aptech VietNam</p>
+                  <p className="body_text cursor-text-wrp">Developer</p>
+                </div>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
-      <div className=" md:my-6 section-full core-value px-0">
+
+      <div className="md:my-7 my-4 section-full core-value px-0">
         <div className="m-w">
-          <div className="heading_3 md:mb-6 mb-5 cursor-text-wrp core-value-title">
-            My Core Values
+          <div className="heading_2 md:mb-6 mb-5 cursor-text-wrp core-value-title">
+            MY CORE VALUES
           </div>
           <Slider
             configs={{
