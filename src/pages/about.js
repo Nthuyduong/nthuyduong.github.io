@@ -60,11 +60,11 @@ const About = () => {
       {/* New banner */}
 
       <div className="section page-element border-b border-solid border-999">
-        <div className="md:grid grid-cols-12 gap-5 md:py-7 py-5">
+        <div className="md:grid grid-cols-12 gap-5 md:py-7 py-4">
           <div className="col-span-6 md:flex flex-col">
-            <div className="md:text-[106px] font-medium animate slideInUp cursor-text-wrp">DUONG.NT</div>
-            <div className="heading_2 h-full animate slideInUp cursor-text-wrp">HELLO AND WELCOME TO MY UX/UI PORTFOLIO.</div>
-            <div className="flex items-center">
+            <div className="md:text-[106px] text-[60px] mb-1 font-medium animate slideInUp cursor-text-wrp">DUONG.NT</div>
+            <div className="heading_2 h-full animate slideInUp cursor-text-wrp md:mb-0 mb-4">HELLO AND WELCOME TO MY UX/UI PORTFOLIO.</div>
+            <div className="flex items-center md:mb-0 mb-4">
               <div className="bg-black mr-2 p-1 rounded-full">
                 <img className="" src="./images/icons/arrow-down.svg" alt="logo" loading="lazy" />
               </div>
@@ -130,23 +130,23 @@ const About = () => {
         </div>
       </div> */}
       <div className="section">
-        <div className="py-6 md:grid grid-cols-12 gap-5 w-full border-b border-solid border-999">
+        <div className="py-4 md:py-6 md:grid grid-cols-12 gap-5 w-full border-b border-solid border-999">
           <div className="col-span-3 md:flex items-center">
-            <div className="heading_2 md:py-0 py-4 cursor-text-wrp animate slideInUp">ABOUT ME</div>
+            <div className="heading_2 md:pb-0 pb-4 cursor-text-wrp animate slideInUp">ABOUT ME</div>
           </div>
           <div className="col-span-9">
-            <div className="md:flex flex-row justify-end items-center gap-6 w-full">
+            <div className="flex flex-row md:justify-end md:items-center gap-6 w-full">
               <div className="">
                 <div className="medium_text mb-3 cursor-text-wrp">
                   Basic Information
                 </div>
-                <div className="flex items-center justify-end body_text">
-                  <div>BOD: 08/19/1998</div>
-                  <img className="mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
-                  <div>Nationality: Local Vietnamese</div>
-                  <img className="mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
-                  <div>Maritality:Single</div>
-                  <img className="mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                <div className="md:flex items-center md:justify-end body_text">
+                  <div className="md:mb-0 mb-2">BOD: 08/19/1998</div>
+                  <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                  <div className="md:mb-0 mb-2">Nationality: Local Vietnamese</div>
+                  <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                  <div className="md:mb-0 mb-2">Maritality: Single</div>
+                  <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   <div>Gender: Female</div>
                 </div>
               </div>
@@ -154,13 +154,12 @@ const About = () => {
                 <div className="medium_text mb-3 cursor-text-wrp">
                   Hobbies
                 </div>
-                <div className="flex items-center justify-end pb-0 body_text cursor-text-wrp">
-                  Learning
-                  <img className="mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
-                  Reading
-                  <img className="mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
-                  Drawing
-
+                <div className="md:flex items-center justify-end pb-0 body_text cursor-text-wrp">
+                  <div className="md:mb-0 mb-2">Learning</div>
+                  <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                  <div className="md:mb-0 mb-2">Reading</div>
+                  <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                  <div>Drawing</div>
                 </div>
               </div>
             </div>
@@ -181,9 +180,9 @@ const About = () => {
 
             <div className="col-span-8 animate body_text slideInUp cursor-text-wrp md:flex items-end">
               <div>
-                <div className="heading_6 mb-5">Hello. My name is Duong.</div>
+                <div className="text-[20px] mb-4 md:mb-5 md:mt-0 mt-4">Hello. My name is Duong.</div>
                 <div className="md:flex flex-row gap-5">
-                  <div>With 2 years of experience in UX/UI design, I've refined my skills in creating user-centric designs that balance aesthetics
+                  <div className="md:mb-0 mb-3">With 2 years of experience in UX/UI design, I've refined my skills in creating user-centric designs that balance aesthetics
                     and functionality. My journey in the field has given me a strong foundation in diverse design principles and methodologies.
                     Currently, I handle both Designer and Developer tasks, seamlessly blending design and development processes.
                     This dual role enables me to approach projects comprehensively, bridging the gap between design and implementation
