@@ -38,7 +38,7 @@ const Designs = () => {
             {/* All project here */}
 
             <div className="section py-7">
-                <div className="border-y border-solid border-ccc">
+                <div className="border-b border-solid border-ccc">
                     <div className="design-scale-out md:flex flex-row gap-6">
                         <div className="md:flex flex-row gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp">01</div>
