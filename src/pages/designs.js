@@ -40,7 +40,7 @@ const Designs = () => {
             <div className="section py-7">
                 <div className="border-y border-solid border-ccc">
                     <div className="design-scale-out md:flex flex-row gap-6">
-                        <div className="md:flex flex-row gap-6 w-full py-4">
+                        <div className="md:flex flex-row gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp">01</div>
                             <div>
                                 <div className="flex">
@@ -49,7 +49,7 @@ const Designs = () => {
                                 </div>
                                 <div>
                                     <Link to={ROUTER.AGURI}>
-                                        <div className="heading_4 mb-3 cursor-text-wrp">Aguri Jewelry Website</div>
+                                        <div className="heading_4 cursor-text-wrp">Aguri Jewelry Website</div>
                                     </Link>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@ const Designs = () => {
                                     loading="lazy"
                                 />
                             </div>
-                            <Link className="py-4" to={ROUTER.AGURI}>
+                            <Link className="py-5" to={ROUTER.AGURI}>
                                 <div className="md:flex items-center">
                                     <div className="mr-2">Explore now</div>
                                     <div>
@@ -75,8 +75,8 @@ const Designs = () => {
                     </div>
                 </div>
                 <div className="border-b border-solid border-ccc">
-                    <div className="md:flex flex-row gap-6 py-4">
-                        <div className="md:flex flex-row gap-6 w-full">
+                    <div className="design-scale-out md:flex flex-row gap-6">
+                        <div className="md:flex flex-row gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp">02</div>
                             <div>
                                 <div className="flex">
@@ -85,21 +85,21 @@ const Designs = () => {
                                 </div>
                                 <div>
                                     <Link to={ROUTER.BEAUTYBLOG}>
-                                        <div className="heading_4 mb-3 cursor-text-wrp">Beauty Blog</div>
+                                        <div className="heading_4 cursor-text-wrp">Beauty Blog</div>
                                     </Link>
                                 </div>
                             </div>
 
                         </div>
-                        <div className="w-full md:flex flex-row justify-end">
-                            <div>
+                        <div className="w-full md:flex flex-row justify-end relative">
+                            <div className="absolute left-[0] h-full">
                                 <img
-                                    className="w-full h-[160px] object-cover" src="./images/design/des-1.png"
+                                    className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
                                     alt="logo"
                                     loading="lazy"
                                 />
                             </div>
-                            <Link to={ROUTER.AGURI}>
+                            <Link className="py-5" to={ROUTER.AGURI}>
                                 <div className="md:flex items-center">
                                     <div className="mr-2">Explore now</div>
                                     <div>
@@ -111,8 +111,8 @@ const Designs = () => {
                     </div>
                 </div>
                 <div className="border-b border-solid border-ccc">
-                    <div className="md:flex flex-row gap-5 py-4">
-                        <div className="md:flex flex-row gap-6 w-full">
+                    <div className="design-scale-out md:flex flex-row gap-6">
+                        <div className="md:flex flex-row gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp">03</div>
                             <div>
                                 <div className="flex">
@@ -121,21 +121,21 @@ const Designs = () => {
                                 </div>
                                 <div>
                                     <Link to={ROUTER.CAKE}>
-                                        <div className="heading_4 mb-3 cursor-text-wrp">Season Cake Blog</div>
+                                        <div className="heading_4 cursor-text-wrp">Season Cake Blog</div>
                                     </Link>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="w-full md:flex flex-row justify-end">
-                            <div>
+                        <div className="w-full md:flex flex-row justify-end relative">
+                            <div className="absolute left-[0] h-full">
                                 <img
-                                    className="w-full h-[160px] object-cover" src="./images/design/des-1.png"
+                                    className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
                                     alt="logo"
                                     loading="lazy"
                                 />
                             </div>
-                            <Link to={ROUTER.AGURI}>
+                            <Link className="py-5" to={ROUTER.AGURI}>
                                 <div className="md:flex items-center">
                                     <div className="mr-2">Explore now</div>
                                     <div>
@@ -147,8 +147,8 @@ const Designs = () => {
                     </div>
                 </div>
                 <div className="border-b border-solid border-ccc">
-                    <div className="md:flex flex-row gap-6 py-4">
-                        <div className="md:flex flex-row gap-6 w-full">
+                    <div className="design-scale-out md:flex flex-row gap-6">
+                        <div className="md:flex flex-row gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp">04</div>
                             <div>
                                 <div className="flex">
@@ -157,22 +157,22 @@ const Designs = () => {
                                 </div>
                                 <div>
                                     <Link to={ROUTER.ALIO}>
-                                        <div className="heading_4 mb-3 cursor-text-wrp">Yoga App & Website</div>
+                                        <div className="heading_4 cursor-text-wrp">Yoga App & Website</div>
                                     </Link>
                                 </div>
                             </div>
 
                         </div>
 
-                        <div className="w-full md:flex flex-row justify-end">
-                            <div>
+                        <div className="w-full md:flex flex-row justify-end relative">
+                            <div className="absolute left-[0] h-full">
                                 <img
-                                    className="w-full h-[160px] object-cover" src="./images/design/des-1.png"
+                                    className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
                                     alt="logo"
                                     loading="lazy"
                                 />
                             </div>
-                            <Link to={ROUTER.AGURI}>
+                            <Link className="py-5" to={ROUTER.AGURI}>
                                 <div className="md:flex items-center">
                                     <div className="mr-2">Explore now</div>
                                     <div>
@@ -184,8 +184,8 @@ const Designs = () => {
                     </div>
                 </div>
                 <div className="">
-                    <div className="md:flex flex-row gap-5 py-4">
-                        <div className="md:flex flex-row gap-6 w-full">
+                    <div className="design-scale-out md:flex flex-row gap-6">
+                        <div className="md:flex flex-row gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp">05</div>
                             <div>
                                 <div className="flex">
@@ -201,15 +201,15 @@ const Designs = () => {
 
                         </div>
 
-                        <div className="w-full md:flex flex-row justify-end">
-                            <div>
+                        <div className="w-full md:flex flex-row justify-end relative">
+                            <div className="absolute left-[0] h-full">
                                 <img
-                                    className="w-full h-[160px] object-cover" src="./images/design/des-1.png"
+                                    className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
                                     alt="logo"
                                     loading="lazy"
                                 />
                             </div>
-                            <Link to={ROUTER.AGURI}>
+                            <Link className="py-5" to={ROUTER.AGURI}>
                                 <div className="md:flex items-center">
                                     <div className="mr-2">Explore now</div>
                                     <div>
