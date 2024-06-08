@@ -64,7 +64,9 @@ const About = () => {
           <div className="col-span-6 md:flex flex-col">
             <div className="md:text-[106px] text-[60px] mb-1 font-medium animate slideInUp cursor-text-wrp">DUONG.NT</div>
             <div className="heading_2 h-full animate slideInUp cursor-text-wrp md:mb-0 mb-4">HELLO AND WELCOME TO MY UX/UI PORTFOLIO.</div>
-            <div className="flex items-center md:mb-0 mb-4">
+
+            {/* Old button */}
+            <div className="flex items-center md:mb-0 mb-4 arrow-down-hover">
               <div className="bg-black mr-2 p-1 rounded-full">
                 <img className="" src="./images/icons/arrow-down.svg" alt="logo" loading="lazy" />
               </div>
@@ -72,6 +74,7 @@ const About = () => {
                 <span>MORE ABOUT ME</span>
               </div>
             </div>
+
           </div>
           <div className="col-span-6">
             <img className="w-100" src="./images/about/abtme.png" alt="#" loading="lazy"></img>

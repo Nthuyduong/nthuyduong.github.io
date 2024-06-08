@@ -342,19 +342,33 @@ const Home = () => {
         <div className="md:grid grid-cols-12 gap-5 pt-6 md:pt-7">
           <div className="col-span-4"></div>
           <div className="col-span-8">
-            <div className="heading_2">
+            <div className="heading_6 mb-4">About me</div>
+            <div className="heading_2 md:mb-6 mb-4">
               Welcome to my portfolio! Excited to share UX/UI design projects and
               experiences here. Always ready to embrace new opportunities and challenges
               for continuous growth.
             </div>
-            <div className="flex items-center mt-6">
+
+            {/* animation button */}
+            <Link to={ROUTER.ABOUT}>
+              <div id="container">
+                <button class="learn-more">
+                  <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                  </span>
+                  <span class="button-text medium_text">MORE ABOUT ME</span>
+                </button>
+              </div>
+            </Link>
+
+            {/* <div className="flex items-center mt-6">
               <div className="bg-black mr-2 p-1 rounded-full">
                 <img className="" src="./images/icons/arrow-up-right.svg" alt="logo" loading="lazy" />
               </div>
               <div className="scroll-text medium_text" data-replace="MORE ABOUT ME">
                 <span>MORE ABOUT ME</span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
