@@ -221,7 +221,7 @@ const About = () => {
             </div>
 
             {skills.map((skill, index) => (
-              <div className="skill-card col-span-4 flex flex-col gap-2 p-5 " key={index}>
+              <div className="skill-card col-span-4 flex flex-col gap-2 md:p-5 p-0 " key={index}>
                 <div className="hidden sm:flex flex-col gap-2">
                   <div className="skill-title heading_6 cursor-text-wrp md:mb-3 md:0">
                     {skill.title}
@@ -398,7 +398,7 @@ const About = () => {
         </div>
 
       </div>
-      <div className="mb-2 md:mb-6 text-center">
+      <div className="mb-5 md:mb-6 text-center">
         <div className="last-content heading_4">
           <div className="section">
             <div className="grid grid-cols-12">
@@ -413,17 +413,17 @@ const About = () => {
         </div>
       </div>
       <div>
-        <div className="flex justify-center md:mb-9 mb-4">
+        <div className="flex justify-center md:mb-9 mb-6">
           <div className="flex border-b border-solid border-black">
             <div className="">
-              <Link className="scroll-text md:text-[60px]" data-replace="GET IN TOUCH">
+              <Link className="scroll-text md:text-[60px] text-[40px]" data-replace="GET IN TOUCH">
                 <span>
                   GET IN TOUCH
                 </span>
               </Link>
             </div>
-            <div className="ml-3">
-              <img className="h-[90px] w-full" src="./images/icons/arrow-up-right-l.svg" alt="logo" loading="lazy" />
+            <div className="ml-1 md:ml-3">
+              <img className="md:h-[90px] h-[65px] w-full" src="./images/icons/arrow-up-right-l.svg" alt="logo" loading="lazy" />
             </div>
           </div>
         </div>
