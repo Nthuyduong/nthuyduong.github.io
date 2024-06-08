@@ -37,26 +37,26 @@ const Designs = () => {
             <div></div>
             {/* All project here */}
 
-            <div className="section py-7">
-                <div className="border-b border-solid border-ccc">
+            <div className="section md:py-7 py-4">
+                <div className="border-b border-solid border-ccc md:pb-0 pb-5">
                     <div className="design-scale-out md:flex flex-row gap-6">
                         <div className="md:flex flex-row gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp">01</div>
                             <div>
                                 <div className="flex">
-                                    <div className="mb-1 cursor-text-wrp body_text">UX/UI Design</div>
+                                    <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
                                     <div className="cursor-text-wrp body_text">Apr 2024</div>
                                 </div>
                                 <div>
                                     <Link to={ROUTER.AGURI}>
-                                        <div className="heading_4 cursor-text-wrp">Aguri Jewelry Website</div>
+                                        <div className="heading_3 cursor-text-wrp">Aguri Jewelry Website</div>
                                     </Link>
                                 </div>
                             </div>
 
                         </div>
                         <div className="w-full md:flex flex-row justify-end relative">
-                            <div className="absolute left-[0] h-full">
+                            <div className="md:mb-0 mb-4 md:absolute left-[0] h-full">
                                 <img
                                     className="design-scale-img w-full h-full w-auto object-cover" src="./images/design/des-1.png"
                                     alt="logo"
@@ -64,7 +64,7 @@ const Designs = () => {
                                 />
                             </div>
                             <Link className="py-5" to={ROUTER.AGURI}>
-                                <div className="md:flex items-center">
+                                <div className="flex items-center">
                                     <div className="mr-2">Explore now</div>
                                     <div>
                                         <img className="" src="./images/icons/arrow.svg" alt="smile" loading="lazy" />
@@ -74,25 +74,25 @@ const Designs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="border-b border-solid border-ccc">
+                <div className="border-b border-solid border-ccc md:pb-0 pb-5">
                     <div className="design-scale-out md:flex flex-row gap-6">
                         <div className="md:flex flex-row gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp">02</div>
                             <div>
                                 <div className="flex">
-                                    <div className="mb-1 cursor-text-wrp body_text">UX/UI Design</div>
+                                    <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
                                     <div className="cursor-text-wrp body_text">Apr 2024</div>
                                 </div>
                                 <div>
                                     <Link to={ROUTER.BEAUTYBLOG}>
-                                        <div className="heading_4 cursor-text-wrp">Beauty Blog</div>
+                                        <div className="heading_3 cursor-text-wrp">Beauty Blog</div>
                                     </Link>
                                 </div>
                             </div>
 
                         </div>
                         <div className="w-full md:flex flex-row justify-end relative">
-                            <div className="absolute left-[0] h-full">
+                            <div className="md:mb-0 mb-4 md:absolute left-[0] h-full">
                                 <img
                                     className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
                                     alt="logo"
@@ -100,7 +100,7 @@ const Designs = () => {
                                 />
                             </div>
                             <Link className="py-5" to={ROUTER.AGURI}>
-                                <div className="md:flex items-center">
+                                <div className="flex items-center">
                                     <div className="mr-2">Explore now</div>
                                     <div>
                                         <img className="" src="./images/icons/arrow.svg" alt="smile" loading="lazy" />
@@ -110,25 +110,25 @@ const Designs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="border-b border-solid border-ccc">
+                <div className="border-b border-solid border-ccc md:pb-0 pb-5">
                     <div className="design-scale-out md:flex flex-row gap-6">
                         <div className="md:flex flex-row gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp">03</div>
                             <div>
                                 <div className="flex">
-                                    <div className="mb-1 cursor-text-wrp body_text">UX/UI Design</div>
+                                    <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
                                     <div className="cursor-text-wrp body_text">Apr 2024</div>
                                 </div>
                                 <div>
                                     <Link to={ROUTER.CAKE}>
-                                        <div className="heading_4 cursor-text-wrp">Season Cake Blog</div>
+                                        <div className="heading_3 cursor-text-wrp">Season Cake Blog</div>
                                     </Link>
                                 </div>
                             </div>
                         </div>
 
                         <div className="w-full md:flex flex-row justify-end relative">
-                            <div className="absolute left-[0] h-full">
+                            <div className="md:mb-0 mb-4 md:absolute left-[0] h-full">
                                 <img
                                     className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
                                     alt="logo"
@@ -136,7 +136,7 @@ const Designs = () => {
                                 />
                             </div>
                             <Link className="py-5" to={ROUTER.AGURI}>
-                                <div className="md:flex items-center">
+                                <div className="flex items-center">
                                     <div className="mr-2">Explore now</div>
                                     <div>
                                         <img className="" src="./images/icons/arrow.svg" alt="smile" loading="lazy" />
@@ -146,18 +146,18 @@ const Designs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="border-b border-solid border-ccc">
+                <div className="border-b border-solid border-ccc md:pb-0 pb-5">
                     <div className="design-scale-out md:flex flex-row gap-6">
                         <div className="md:flex flex-row gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp">04</div>
                             <div>
                                 <div className="flex">
-                                    <div className="mb-1 cursor-text-wrp body_text">UX/UI Design</div>
+                                    <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
                                     <div className="cursor-text-wrp body_text">Apr 2024</div>
                                 </div>
                                 <div>
                                     <Link to={ROUTER.ALIO}>
-                                        <div className="heading_4 cursor-text-wrp">Yoga App & Website</div>
+                                        <div className="heading_3 cursor-text-wrp">Yoga App & Website</div>
                                     </Link>
                                 </div>
                             </div>
@@ -165,7 +165,7 @@ const Designs = () => {
                         </div>
 
                         <div className="w-full md:flex flex-row justify-end relative">
-                            <div className="absolute left-[0] h-full">
+                            <div className="md:mb-0 mb-4 md:absolute left-[0] h-full">
                                 <img
                                     className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
                                     alt="logo"
@@ -173,7 +173,7 @@ const Designs = () => {
                                 />
                             </div>
                             <Link className="py-5" to={ROUTER.AGURI}>
-                                <div className="md:flex items-center">
+                                <div className="flex items-center">
                                     <div className="mr-2">Explore now</div>
                                     <div>
                                         <img className="" src="./images/icons/arrow.svg" alt="smile" loading="lazy" />
@@ -183,18 +183,18 @@ const Designs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="">
+                <div className="md:pb-0 pb-5">
                     <div className="design-scale-out md:flex flex-row gap-6">
                         <div className="md:flex flex-row gap-6 w-full py-5">
-                            <div className="heading_3 mb-3 cursor-text-wrp">05</div>
+                            <div className="heading_3 cursor-text-wrp">05</div>
                             <div>
                                 <div className="flex">
-                                    <div className="mb-1 cursor-text-wrp body_text">UX/UI Design</div>
+                                    <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
                                     <div className="cursor-text-wrp body_text">Apr 2024</div>
                                 </div>
                                 <div>
                                     <Link to={ROUTER.FASHION}>
-                                        <div className="heading_4 mb-3 cursor-text-wrp">Fashion Brand App</div>
+                                        <div className="heading_3 mb-3 cursor-text-wrp">Fashion Brand App</div>
                                     </Link>
                                 </div>
                             </div>
@@ -202,7 +202,7 @@ const Designs = () => {
                         </div>
 
                         <div className="w-full md:flex flex-row justify-end relative">
-                            <div className="absolute left-[0] h-full">
+                            <div className="md:mb-0 mb-4 md:absolute left-[0] h-full">
                                 <img
                                     className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
                                     alt="logo"
@@ -210,7 +210,7 @@ const Designs = () => {
                                 />
                             </div>
                             <Link className="py-5" to={ROUTER.AGURI}>
-                                <div className="md:flex items-center">
+                                <div className="flex items-center">
                                     <div className="mr-2">Explore now</div>
                                     <div>
                                         <img className="" src="./images/icons/arrow.svg" alt="smile" loading="lazy" />

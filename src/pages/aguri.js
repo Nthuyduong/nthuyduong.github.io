@@ -275,7 +275,7 @@ const Aguri = () => {
                     {/*</div>*/}
                 </div>
             </div>
-            <div className="more-project mb-8">
+            <div className="more-project md:mb-8 mb-4">
                 <div className="container-fluid">
                     <Slider
                         configs={{
@@ -290,7 +290,7 @@ const Aguri = () => {
                             process: true,
                             paginate: false,
                             navigator: false,
-                            active: 1
+                            active: 0
                         }}
                     >
                         <div className=" more-1">

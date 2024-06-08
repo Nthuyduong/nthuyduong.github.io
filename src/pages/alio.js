@@ -204,7 +204,7 @@ const Alio = () => {
                     </div>
                 </div>
             </div>
-            <div className="more-project md:mb-5 mb-3">
+            <div className="more-project md:mb-8 mb-4">
                 <div className="container-fluid">
                     <Slider
                         configs={{
@@ -219,7 +219,7 @@ const Alio = () => {
                             process: true,
                             paginate: false,
                             navigator: false,
-                            active: 1
+                            active: 0
                         }}
                     >
                         <div className="more-1">

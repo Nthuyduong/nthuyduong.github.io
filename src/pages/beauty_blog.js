@@ -69,8 +69,8 @@ const BeautyBlog = () => {
                     </div>
                     <div className="project-item md:pb-6 pb-4">
                         <div className="md:grid grid-cols-12">
-                            <div className="col-span-6 cake-intro-content flex items-end bg-primary">
-                                <div className="p-7">
+                            <div className="col-span-6 cake-intro-content flex items-end bg-primary md:mb-0 mb-4">
+                                <div className="p-5 md:p-7">
                                     <div className="heading_4 mb-4">About project</div>
                                     <div className="body_text">
                                         Season Cake Blog is a vibrant platform dedicated to all things cake. We are passionate
@@ -108,7 +108,7 @@ const BeautyBlog = () => {
                     </div> */}
                     <div className="project-item md:pb-6 pb-4">
                         <div className="md:grid grid-cols-12">
-                            <div className="col-span-12 sm:col-span-6">
+                            <div className="col-span-12 sm:col-span-6 md:mb-0 mb-4">
                                 <img className="w-100" src="./images/Pj05_beauty/beauty-mockup4.png" alt="#" loading="lazy" />
                             </div>
                             <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end relative">
@@ -126,7 +126,7 @@ const BeautyBlog = () => {
                     </div>
                     <div className="project-item md:pb-6 pb-4">
                         <div className="md:grid grid-cols-12">
-                            <div className="col-span-12 sm:col-span-6">
+                            <div className="col-span-12 sm:col-span-6 md:mb-0 mb-4">
                                 <img className="w-100" src="./images/Pj05_beauty/homepage.png" alt="#" loading="lazy" />
                             </div>
                             <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end relative">
@@ -135,12 +135,12 @@ const BeautyBlog = () => {
                         </div>
                     </div>
                     
-                    <div className="project-item md:pb-6 pb-4">
+                    <div className="project-item">
                         <img className="w-100" src="./images/Pj05_beauty/beauty-mockup3.png" alt="#" loading="lazy" />
                     </div>
                 </div>
             </div>
-            <div className="more-project mb-8">
+            <div className="more-project md:mb-8 mb-4">
                 <div className="container-fluid">
                     <Slider
                         configs={{
@@ -155,7 +155,7 @@ const BeautyBlog = () => {
                             process: true,
                             paginate: false,
                             navigator: false,
-                            active: 1
+                            active: 0
                         }}
                     >
                         <div className="more-1">
