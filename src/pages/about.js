@@ -1,4 +1,4 @@
-import React, { useState, useEffect, act } from "react";
+import React, { useState, useEffect, act, useRef } from "react";
 import Slider from "../components/common/slider";
 import { Link } from "react-router-dom";
 
@@ -52,6 +52,15 @@ const About = () => {
 
   }, []);
 
+  const ref = useRef();
+
+  const handleScrollToAbout = () => {
+    if(ref.current){
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+
   return (
     <div className="about-page">
       {/* <div className="img-container">
@@ -70,7 +79,11 @@ const About = () => {
               <div className="bg-black mr-2 p-1 rounded-full">
                 <img className="" src="./images/icons/arrow-down.svg" alt="logo" loading="lazy" />
               </div>
-              <div className="scroll-text medium_text" data-replace="MORE ABOUT ME">
+              <div
+                className="scroll-text medium_text"
+                data-replace="MORE ABOUT ME"
+                onClick={handleScrollToAbout}
+              >
                 <span>MORE ABOUT ME</span>
               </div>
             </div>
@@ -132,7 +145,7 @@ const About = () => {
           </div>
         </div>
       </div> */}
-      <div className="section">
+      <div className="section" ref={ref}>
         <div className="py-4 md:py-6 md:grid grid-cols-12 gap-5 w-full border-b border-solid border-999">
           <div className="col-span-3 md:flex items-center">
             <div className="heading_2 md:pb-0 pb-4 cursor-text-wrp animate slideInUp">ABOUT ME</div>
