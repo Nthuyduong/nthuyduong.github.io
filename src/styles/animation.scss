@@ -169,31 +169,32 @@
     }
   }
 }
-
 .loader-mail {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
   position: relative;
-  border-style: solid;
+  background: #FFF;
+  margin-bottom: 15px;
+  box-shadow: -24px 0 #FFF, 24px 0 #FFF;
   box-sizing: border-box;
-  border-width: 20px 30px 15px 30px;
-  border-color: #3760C9 #96DDFC #96DDFC #36BBF7;
-  animation: envFloating 1s ease-in infinite alternate;
+  animation: shadowPulse 2s linear infinite;
 }
 
-.loader-mail:after{
-  content:"";
-  position: absolute;
-  right: 35px;
-  top: -20px;
-  height: 35px;
-  width: 50px;
-  background-image:
-            linear-gradient(#0044ff 15px, transparent 0),
-            linear-gradient(#0044ff 15px, transparent 0),
-            linear-gradient(#0044ff 15px, transparent 0);
-  background-repeat: no-repeat;
-  background-size: 30px 4px;
-  background-position: 0px 11px , 8px 10px, 0px 30px;
-  animation: envDropping 0.75s linear infinite;
+@keyframes shadowPulse {
+  33% {
+    background: #FFF;
+    box-shadow: -24px 0 #000000, 24px 0 #FFF;
+  }
+  66% {
+    background: #000000;
+    box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+  }
+  100% {
+    background: #FFF;
+    box-shadow: -24px 0 #FFF, 24px 0 #000000;
+  }
 }
 
 @keyframes envFloating {
@@ -327,6 +328,24 @@ button.learn-more {
   animation: rundown 0.5s;
 }
 
+input{
+  cursor: none !important;
+}
+textarea {
+  cursor: none !important;
+}
+.text-cuccess {
+  color: #4CAF50;
+}
+.arrow-down-hover {
+  overflow: hidden;
+}
+.arrow-down-hover:hover {
+  img {
+    animation: arrowDown 0.5s none;
+  }
+}
+
 @keyframes rundown {
   0% {
     transform: translateY(0);
@@ -342,5 +361,59 @@ button.learn-more {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes arrowDown {
+  0% {
+    transform: translateY(0);
+  }
+  49.5% {
+    transform: translateY(200%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  51.9% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes arrowRight {
+  0% {
+    transform: translateX(0);
+  }
+  49.5% {
+    transform: translateX(200%);
+  }
+  50% {
+    transform: translateX(200%);
+  }
+  50.5% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes arrowCheo {
+  0% {
+    transform: translate(0, 0);
+  }
+  49.5% {
+    transform: translate(200%, 200%);
+  }
+  50% {
+    transform: translate(200%, 200%);
+  }
+  50.5% {
+    transform: translate(-200%, -200%);
+  }
+  100% {
+    transform: translate(0%, 0%);
   }
 }

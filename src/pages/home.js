@@ -394,7 +394,7 @@ const Home = () => {
               <div className="emoji flex items-center">
                 <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
               </div>
-              <div className="heading_3 cursor-text-wrp">LET'S CONTACT WITH ME</div>
+              <div className="heading_3 cursor-text-wrp home-contact-scroller-text">LET'S CONTACT WITH ME</div>
             </Link>
           </Scroller>
         </div>

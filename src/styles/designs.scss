@@ -175,3 +175,18 @@
   }
 }
 
+.design-scale-out:hover{
+  .design-scale-img{
+    transform: scale(1.2);
+  }
+}
+.design-scale-wrp {
+  left: 0;
+  transform: translate(var(--image-x, 0), var(--image-y, 0));
+  transition: all 0.3s ease;
+}
+.design-scale-img{
+  cursor: pointer;
+  transform: scale(0);
+  transition: all 0.4s ease-out;
+}

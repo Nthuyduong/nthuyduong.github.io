@@ -16,7 +16,26 @@ const Designs = () => {
                 banner.style.setProperty('--y1', `${(y - 30)}%`);
             });
         }
+        const images = document.querySelectorAll('.design-scale-out');
+        images.forEach((image) => {
+            image.addEventListener('mousemove', (e) => handleHoverImage(e, image));
+        });
+        return () => {
+            images.forEach((image) => {
+                image.removeEventListener('mousemove', (e) => handleHoverImage(e, image));
+            });
+        }
     }, []);
+
+    const handleHoverImage = (e, wpr) => {
+        const  { offsetX, offsetY, target } = e;
+
+        if (!wpr) return;
+        const x =  Math.min(Math.min(offsetX / window.innerWidth * 50, 70), 15);
+        const y = offsetY / window.innerHeight * 100 - 5;
+        wpr.style.setProperty('--image-x', `${x}%`);
+        wpr.style.setProperty('--image-y', `${y}%`);
+    }
 
     return (
         <div className="project-page">
@@ -56,7 +75,7 @@ const Designs = () => {
 
                         </div>
                         <div className="w-full md:flex flex-row justify-end relative">
-                            <div className="md:mb-0 mb-4 md:absolute left-[0] h-full">
+                            <div className="design-scale-wrp absolute h-full">
                                 <img
                                     className="design-scale-img w-full h-full w-auto object-cover" src="./images/design/des-1.png"
                                     alt="logo"
@@ -89,10 +108,9 @@ const Designs = () => {
                                     </Link>
                                 </div>
                             </div>
-
                         </div>
                         <div className="w-full md:flex flex-row justify-end relative">
-                            <div className="md:mb-0 mb-4 md:absolute left-[0] h-full">
+                            <div className="design-scale-wrp absolute h-full">
                                 <img
                                     className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
                                     alt="logo"
@@ -128,7 +146,7 @@ const Designs = () => {
                         </div>
 
                         <div className="w-full md:flex flex-row justify-end relative">
-                            <div className="md:mb-0 mb-4 md:absolute left-[0] h-full">
+                            <div className="design-scale-wrp absolute h-full">
                                 <img
                                     className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
                                     alt="logo"
@@ -165,7 +183,7 @@ const Designs = () => {
                         </div>
 
                         <div className="w-full md:flex flex-row justify-end relative">
-                            <div className="md:mb-0 mb-4 md:absolute left-[0] h-full">
+                            <div className="design-scale-wrp absolute h-full">
                                 <img
                                     className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
                                     alt="logo"
@@ -202,7 +220,7 @@ const Designs = () => {
                         </div>
 
                         <div className="w-full md:flex flex-row justify-end relative">
-                            <div className="md:mb-0 mb-4 md:absolute left-[0] h-full">
+                            <div className="design-scale-wrp absolute h-full">
                                 <img
                                     className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
                                     alt="logo"
