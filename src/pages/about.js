@@ -7,11 +7,11 @@ const About = () => {
   const skills = [
     {
       title: 'Design Tools',
-      skills: ['Figma', 'Adobe Illustrator', 'Adobe Photoshop', 'Adobe Indesign', 'Adobe XD', 'Shopify', 'Wordpress']
+      skills: ['Figma/Adobe XD', 'Adobe Illustrator', 'Adobe Photoshop', 'Adobe Indesign', 'Shopify', 'Wordpress']
     },
     {
       title: 'Tech Stack',
-      skills: ['HTML/SCSS', 'Tailwind/Bootstrap', 'JavaScript', 'ReactJS / Nextjs', 'Angular']
+      skills: ['HTML/SCSS', 'Bootstrap' ,'Tailwind', 'JavaScript', 'ReactJS', 'Angular']
     }
   ]
   const [iconVisible, setIconVisible] = useState(true);
@@ -231,7 +231,7 @@ const About = () => {
             </div>
 
             {skills.map((skill, index) => (
-              <div className="skill-card col-span-4 flex flex-col gap-2 md:p-5 p-0 " key={index}>
+              <div className="skill-card col-span-4 flex flex-col gap-2 md:p-5 p-0 border-animation-hover" key={index}>
                 <div className="hidden sm:flex flex-col gap-2">
                   <div className="skill-title heading_6 cursor-text-wrp md:mb-3 md:0">
                     {skill.title}
