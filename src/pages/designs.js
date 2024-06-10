@@ -46,19 +46,19 @@ const Designs = () => {
                         {/* <img className="mr-7 w-[200px] h-[200px] md:w-[100px] md:h-[100px]" src="./images/flower-icon.png" alt="logo" loading="lazy" /> */}
                         <div className="text-white w-full flex flex-col gap-2 sm:gap-0">
                             <div className="">
-                                <div className="md:flex justify-center items-center">
-                                    <div className="md:text-[120px]">LET'S</div>
-                                    <img className="h-[110px] mx-5" src="./images/sao.svg" alt="logo" />
-                                    <div className="md:text-[120px]">CREATE</div>
+                                <div className="flex justify-center items-center">
+                                    <div className="ml:text-[120px] md:text-[80px] text-[34px]">LET'S</div>
+                                    <img className="ml:h-[110px] md:h-[70px] h-[30px] ml:mx-5 md:mx-3 mx-2" src="./images/sao.svg" alt="logo" />
+                                    <div className="ml:text-[120px] md:text-[80px] text-[34px]">CREATE</div>
                                 </div>
-                                <div className="md:flex justify-center items-center">
-                                    <div className="md:text-[125px] bighead">STAND</div>
+                                <div className="flex justify-center items-center">
+                                    <div className="ml:text-[125px] md:text-[80px] bighead text-[34px]">STAND</div>
                                     {/* <div className="ellip ml-4 relative">
                         <div className="absolute heading_5 text-ellipse">2024</div>
                     </div> */}
-                                    <img className="h-[150px] ml-5" src="./images/ellipse.svg" alt="logo" />
-                                    <div className="md:text-[125px] bighead mr-5">UT</div>
-                                    <div className="md:text-[125px] bighead">BRAND</div>
+                                    <img className="ml:h-[150px] md:h-[90px] h-[50px] ml:ml-5 md:ml-3 ml-2" src="./images/ellipse.svg" alt="logo" />
+                                    <div className="ml:text-[125px] md:text-[80px] bighead ml:mr-5 md:mr-3 mr-2 text-[34px]">UT</div>
+                                    <div className="ml:text-[125px] md:text-[80px] bighead text-[34px]">BRAND</div>
                                 </div>
                             </div>
                             {/* <div className="text-2xl sm:text-3xl">Welcome to my</div> */}

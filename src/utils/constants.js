@@ -9,4 +9,5 @@ export const ROUTER = {
   DESIGNS: '/designs',
   ABOUTTEST: '/abouttest',
   BEAUTYBLOG: '/beautyblog',
+  NOTFOUND : '/404',
 }

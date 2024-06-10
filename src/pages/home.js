@@ -402,7 +402,7 @@ const Home = () => {
 
       {/* My design  */}
       <div className="section md:my-7 my-5">
-        <div className="my-design">
+        <div className="md:mb-7 ml:mb-8 mb-6">
           <div className="">
             <div className="grid grid-cols-12 my-des-title">
               <div className="col-span-10 sm:col-span-6 animate slideInUp">

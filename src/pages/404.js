@@ -5,7 +5,9 @@ import Slider from "../components/common/slider";
 
 const NotFound = () => {
     return (
-        <div></div>
+        <div className="section">
+            <div className="md:text-[120px] bighead">404</div>
+        </div>
     )
 }
 

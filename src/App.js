@@ -17,6 +17,7 @@ import Cake from "./pages/cake";
 import Designs from "./pages/designs";
 import Abouttest from "./pages/abouttest";
 import BeautyBlog from "./pages/beauty_blog";
+import NotFound from "./pages/404";
 import "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/react-fontawesome"
 import { AnimationProvider } from "./provider/animation";
@@ -38,6 +39,7 @@ const App = () => {
             <Route path={ROUTER.DESIGNS} component={Designs}/>
             <Route path={ROUTER.ABOUTTEST} component={Abouttest}/>
             <Route path={ROUTER.BEAUTYBLOG} component={BeautyBlog}/>
+            <Route path={ROUTER.NOTFOUND} component={NotFound}/>
           </Layout>
         </AnimationProvider>
       </Switch>  

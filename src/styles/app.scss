@@ -555,7 +555,6 @@ a {
 
   }
 
-
   .slide-card-item.before {
     z-index: 2;
     opacity: 1;
@@ -622,6 +621,14 @@ a {
 
   .heading_6 {
     font-size: 16px;
+    line-height: 125%;
+  }
+  .text-large{
+    font-size: 48px;
+    line-height: 125%;
+  }
+  .text-large-2{
+    font-size: 48px;
     line-height: 125%;
   }
 }
@@ -755,6 +762,27 @@ body:has(.header-mobile-open) {
   .design-scale-img{
     transform: scale(0);
     transition: all 0.4s ease-out;
+  }
+}
+@media screen and (max-width: 1024px){
+  .section {
+    padding: 0 45px;
+  }
+  .heading_1 {
+    font-size: 42px
+  }
+
+  .heading_2 {
+    font-size: 32px;
+    line-height: 125%;
+  }
+  .text-large{
+    font-size: 42px;
+    line-height: 125%;
+  }
+  .text-large-2{
+    font-size: 42px;
+    line-height: 125%;
   }
 }
 
