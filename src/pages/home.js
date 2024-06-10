@@ -3,21 +3,20 @@ import { Link } from "react-router-dom";
 import { ROUTER } from "../utils/constants";
 import Scroller from "../components/common/scroller";
 import CardSlider from "../components/common/CardSlider";
-
+import Slider from "../components/common/slider";
 import { sendContactForm } from "../services/app";
 import Loading from "../components/common/loading";
 import LoadingMail from "../components/common/loadingMail";
 
 
 const emojis = [
-  "😤", "😠", "😡", "😶", "😪",
-  "😳", "🥵", "🥶", "😧", "😮",
-  "😨", "😰", "😥", "🤤", "🤢", "🤒",
-  "🤔", "🤭", "😦", "🤯", "🤕", "🥴",
-  "🤫", "🤥", "😴", "😱", "😵", "😷",
-  "😐", "😑", "🤬", "🤗", "🤮", "🤐",
+  "😶", "😪",
+  "😳", "🥶", "😧", "😮", "🤤",
+  "🤔", "🤭", "😦", "🤯", "🥴",
+  "🤫", "🤥", "😴", "😱", "😵",
+  "😐", "😑", "🤗",
   "🙄", "😯", "😶", "😬", "🤑", "🤠",
-  "😲", "🥱", "😓", "😮", "🤧",
+  "😲", "😮", "🤧",
 ];
 
 const Home = () => {
@@ -386,15 +385,16 @@ const Home = () => {
               <div className="emoji flex items-center">
                 <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
               </div>
-              <div className="heading_3 cursor-text-wrp">HELLO</div>
-              <div className="emoji flex items-center">
-                <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
-              </div>
+              {/* <div className="heading_3 cursor-text-wrp">HELLO</div> */}
+
               <div className="heading_3 cursor-text-wrp">WELCOME TO MY PORTFOLIO!</div>
               <div className="emoji flex items-center">
                 <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
               </div>
               <div className="heading_3 cursor-text-wrp home-contact-scroller-text">LET'S CONTACT WITH ME</div>
+              {/* <div className="emoji flex items-center">
+                <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
+              </div> */}
             </Link>
           </Scroller>
         </div>
@@ -436,10 +436,24 @@ const Home = () => {
                     <div></div>
                   </div>
                 </div>
-                <div className="body_text text-right mt-4 cursor-text-wrp">
+                <div className="body_text text-right mt-4 cursor-text-wrp mb-4">
                   "Step into the world of a passionate UI designer's portfolio. Witness the evolution of my skills as I
                   create intuitive interfaces and explore the realm of captivating design."
                 </div>
+                {/* animation button */}
+                <div className="md:flex justify-end">
+                  <Link to={ROUTER.DESIGNS}>
+                    <div id="container">
+                      <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                          <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text medium_text">ALL MY PROJECTS</span>
+                      </button>
+                    </div>
+                  </Link>
+                </div>
+
               </div>
             </div>
           </div>
@@ -449,7 +463,6 @@ const Home = () => {
             <div className="grid grid-cols-12 gap-4 md:flex items-center">
               <div className="col-span-6 sm:col-span-3 project-odd">
                 <div className="heading_4 mb-2 cursor-text-wrp">01.</div>
-
                 <Link to={ROUTER.CAKE}>
                   <img
                     className="w-full project-img" src="./images/design/des-1.png"
