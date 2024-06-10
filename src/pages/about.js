@@ -71,7 +71,7 @@ const About = () => {
       <div className="section page-element border-b border-solid border-999">
         <div className="md:grid grid-cols-12 gap-5 md:py-7 py-4">
           <div className="col-span-6 md:flex flex-col">
-            <div className="md:text-[106px] text-[60px] mb-1 font-medium animate slideInUp cursor-text-wrp">DUONG.NT</div>
+            <div className="md:text-[106px] sm:text-[70px] text-[40px] mb-1 font-medium animate slideInUp cursor-text-wrp">DUONG.NT</div>
             <div className="heading_2 h-full animate slideInUp cursor-text-wrp md:mb-0 mb-4">HELLO AND WELCOME TO MY UX/UI PORTFOLIO.</div>
             <div className="flex items-center md:mb-0 mb-4" onClick={handleScrollToAbout}>
               <div className="bg-black mr-2 p-1 rounded-full arrow-down-hover">
@@ -148,18 +148,18 @@ const About = () => {
             <div className="heading_2 md:pb-0 pb-4 cursor-text-wrp animate slideInUp">ABOUT ME</div>
           </div>
           <div className="col-span-9">
-            <div className="flex flex-row md:justify-end md:items-center gap-6 w-full">
+            <div className="md:flex flex-row md:justify-end md:items-center gap-6 w-full">
               <div className="">
                 <div className="medium_text mb-3 cursor-text-wrp">
                   Basic Information
                 </div>
-                <div className="md:flex items-center md:justify-end body_text cursor-text-wrp">
-                  <div className="md:mb-0 mb-2 ">BOD: 08/19/1998</div>
-                  <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                <div className="sm:flex md:flex items-center md:justify-end body_text cursor-text-wrp">
+                  <div className="md:mb-0 mb-2">BOD: 08/19/1998</div>
+                  <img className="md:block hidden md:mx-3 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   <div className="md:mb-0 mb-2">Nationality: Local Vietnamese</div>
-                  <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                  <img className="md:block hidden md:mx-3 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   <div className="md:mb-0 mb-2">Maritality: Single</div>
-                  <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                  <img className="md:block hidden md:mx-3 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   <div>Gender: Female</div>
                 </div>
               </div>
@@ -167,7 +167,7 @@ const About = () => {
                 <div className="medium_text mb-3 cursor-text-wrp">
                   Hobbies
                 </div>
-                <div className="md:flex items-center justify-end pb-0 body_text cursor-text-wrp">
+                <div className="sm:flex md:flex items-center justify-end pb-0 body_text cursor-text-wrp">
                   <div className="md:mb-0 mb-2">Learning</div>
                   <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   <div className="md:mb-0 mb-2">Reading</div>
@@ -217,8 +217,8 @@ const About = () => {
       </div>
       <div className="page-element mt-4 md:mt-7">
         <div className="section py-4 md:py-7 border-t border-solid border-ccc">
-          <div className="md:grid md:grid-cols-12 gap-5">
-            <div className="col-span-4 skill-common mb-2 animate slideInUp">
+          <div className="md:grid grid-cols-12 gap-5">
+            <div className="md:col-span-12 lg:col-span-4 skill-common mb-2 animate slideInUp">
               <div className="heading_2 mb-4 cursor-text-wrp">
                 MY SKILLS
               </div>
@@ -231,7 +231,7 @@ const About = () => {
             </div>
 
             {skills.map((skill, index) => (
-              <div className="skill-card col-span-4 flex flex-col gap-2 md:p-5 p-0 border-animation-hover" key={index}>
+              <div className="skill-card md:col-span-6 lg:col-span-4 flex flex-col gap-2 md:p-5 p-0 border-animation-hover" key={index}>
                 <div className="hidden sm:flex flex-col gap-2">
                   <div className="skill-title heading_6 cursor-text-wrp md:mb-3 md:0">
                     {skill.title}

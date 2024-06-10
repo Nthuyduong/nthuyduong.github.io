@@ -742,7 +742,7 @@ body:has(.header-mobile-open) {
 
   .all-my-projects,
   .section {
-    padding: 0 15px;
+    padding: 0 25px;
   }
 }
 
@@ -763,10 +763,18 @@ body:has(.header-mobile-open) {
     transform: scale(0);
     transition: all 0.4s ease-out;
   }
-}
-@media screen and (max-width: 1024px){
   .section {
-    padding: 0 45px;
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 640px){
+  .section {
+    padding: 0 25px;
+  }
+}
+@media screen and (min-width: 1024px){
+  .section {
+    padding: 0 10px;
   }
   .heading_1 {
     font-size: 42px

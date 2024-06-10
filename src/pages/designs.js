@@ -78,10 +78,10 @@ const Designs = () => {
                 </div>
                 <div className="md:flex justify-center items-center">
                     <div className="md:text-[120px] bighead">STAND</div> */}
-                    {/* <div className="ellip ml-4 relative">
+            {/* <div className="ellip ml-4 relative">
                         <div className="absolute heading_5 text-ellipse">2024</div>
                     </div> */}
-                    {/* <img className="h-[160px] ml-5" src="./images/ellipse.svg" alt="logo" />
+            {/* <img className="h-[160px] ml-5" src="./images/ellipse.svg" alt="logo" />
                     <div className="md:text-[120px] bighead mr-5">UT</div>
                     <div className="md:text-[120px] bighead">BRAND</div>
                 </div>
@@ -94,7 +94,12 @@ const Designs = () => {
                 <div className="border-b border-solid border-ccc md:pb-0 pb-5">
                     <div className="design-scale-out md:flex flex-row gap-6">
                         <div className="md:flex flex-row gap-6 w-full py-5">
-                            <div className="heading_3 mb-3 cursor-text-wrp">01</div>
+                            <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">01</div>
+                            <img
+                                className="md:w-[50%] block lg:hidden" src="./images/design/des-1.png"
+                                alt="logo"
+                                loading="lazy"
+                            />
                             <div>
                                 <div className="flex">
                                     <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
@@ -130,7 +135,12 @@ const Designs = () => {
                 <div className="border-b border-solid border-ccc md:pb-0 pb-5">
                     <div className="design-scale-out md:flex flex-row gap-6">
                         <div className="md:flex flex-row gap-6 w-full py-5">
-                            <div className="heading_3 mb-3 cursor-text-wrp">02</div>
+                            <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">02</div>
+                            <img
+                                className="md:w-[50%] block lg:hidden" src="./images/design/mydes2.png"
+                                alt="logo"
+                                loading="lazy"
+                            />
                             <div>
                                 <div className="flex">
                                     <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
@@ -165,7 +175,12 @@ const Designs = () => {
                 <div className="border-b border-solid border-ccc md:pb-0 pb-5">
                     <div className="design-scale-out md:flex flex-row gap-6">
                         <div className="md:flex flex-row gap-6 w-full py-5">
-                            <div className="heading_3 mb-3 cursor-text-wrp">03</div>
+                            <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">03</div>
+                            <img
+                                className="w-[50%] block lg:hidden" src="./images/design/mydes1.png"
+                                alt="logo"
+                                loading="lazy"
+                            />
                             <div>
                                 <div className="flex">
                                     <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
@@ -201,7 +216,12 @@ const Designs = () => {
                 <div className="border-b border-solid border-ccc md:pb-0 pb-5">
                     <div className="design-scale-out md:flex flex-row gap-6">
                         <div className="md:flex flex-row gap-6 w-full py-5">
-                            <div className="heading_3 mb-3 cursor-text-wrp">04</div>
+                            <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">04</div>
+                            <img
+                                className="block lg:hidden w-[50%]" src="./images/design/des-1.png"
+                                alt="logo"
+                                loading="lazy"
+                            />
                             <div>
                                 <div className="flex">
                                     <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
@@ -238,7 +258,12 @@ const Designs = () => {
                 <div className="md:pb-0 pb-5">
                     <div className="design-scale-out md:flex flex-row gap-6">
                         <div className="md:flex flex-row gap-6 w-full py-5">
-                            <div className="heading_3 cursor-text-wrp">05</div>
+                            <div className="heading_3 cursor-text-wrp hidden lg:block">05</div>
+                            <img
+                                className="block lg:hidden w-[50%]" src="./images/design/mydes3.png"
+                                alt="logo"
+                                loading="lazy"
+                            />
                             <div>
                                 <div className="flex">
                                     <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
