@@ -112,7 +112,7 @@ const Designs = () => {
                         <div className="w-full md:flex flex-row justify-end relative">
                             <div className="design-scale-wrp absolute h-full">
                                 <img
-                                    className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
+                                    className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/mydes2.png"
                                     alt="logo"
                                     loading="lazy"
                                 />
@@ -148,7 +148,7 @@ const Designs = () => {
                         <div className="w-full md:flex flex-row justify-end relative">
                             <div className="design-scale-wrp absolute h-full">
                                 <img
-                                    className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
+                                    className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/mydes1.png"
                                     alt="logo"
                                     loading="lazy"
                                 />
@@ -222,7 +222,7 @@ const Designs = () => {
                         <div className="w-full md:flex flex-row justify-end relative">
                             <div className="design-scale-wrp absolute h-full">
                                 <img
-                                    className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
+                                    className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/mydes3.png"
                                     alt="logo"
                                     loading="lazy"
                                 />

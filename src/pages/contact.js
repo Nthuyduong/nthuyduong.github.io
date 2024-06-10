@@ -95,13 +95,13 @@ const Contact = () => {
                       Behance
                     </a>
                   </div>
-                  <div className="small_text mb-1 cursor-text-wrp">
-                    Facebook
-                  </div>
                   <div className="small_text cursor-text-wrp">
                     <a href="https://www.instagram.com/nth_d9">
                       Instagram
                     </a>
+                  </div>
+                  <div className="small_text mb-1 cursor-text-wrp">
+                    Facebook
                   </div>
                 </div>
               </div>

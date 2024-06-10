@@ -465,7 +465,7 @@ const Home = () => {
                 <div className="heading_4 mb-2 cursor-text-wrp">01.</div>
                 <Link to={ROUTER.CAKE}>
                   <img
-                    className="w-full project-img" src="./images/design/des-1.png"
+                    className="w-full project-img" src="./images/design/cakemain.png"
                     alt="logo"
                     loading="lazy"
                   />
@@ -485,7 +485,7 @@ const Home = () => {
                 <Link to={ROUTER.AGURI}>
                   <img
                     className="w-full project-img"
-                    src="./images/design/des-2.png"
+                    src="./images/design/jewelrymain.png"
                     alt="logo"
                     loading="lazy"
                   />
@@ -503,7 +503,7 @@ const Home = () => {
               <div className="col-span-6 sm:col-span-3 project-odd">
                 <div className="heading_4 mb-2 cursor-text-wrp">03.</div>
                 <Link to={ROUTER.FASHION}>
-                  <img className="w-full project-img" src="./images/design/des-3.png" alt="logo" loading="lazy" />
+                  <img className="w-full project-img" src="./images/design/fashionmain.png" alt="logo" loading="lazy" />
                 </Link>
                 <div className="medium_text mt-3 cursor-text-wrp">
                   <Link to={ROUTER.FASHION}>Fashion App</Link>
