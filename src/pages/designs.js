@@ -28,10 +28,10 @@ const Designs = () => {
     }, []);
 
     const handleHoverImage = (e, wpr) => {
-        const  { offsetX, offsetY, target } = e;
+        const { offsetX, offsetY, target } = e;
 
         if (!wpr) return;
-        const x =  Math.min(Math.min(offsetX / window.innerWidth * 50, 70), 15);
+        const x = Math.min(Math.min(offsetX / window.innerWidth * 50, 70), 15);
         const y = offsetY / window.innerHeight * 100 - 5;
         wpr.style.setProperty('--image-x', `${x}%`);
         wpr.style.setProperty('--image-y', `${y}%`);
@@ -45,13 +45,47 @@ const Designs = () => {
                     <div className="flex m-w gap-2 sm:items-center flex-col sm:flex-row">
                         {/* <img className="mr-7 w-[200px] h-[200px] md:w-[100px] md:h-[100px]" src="./images/flower-icon.png" alt="logo" loading="lazy" /> */}
                         <div className="text-white w-full flex flex-col gap-2 sm:gap-0">
+                            <div className="">
+                                <div className="md:flex justify-center items-center">
+                                    <div className="md:text-[120px]">LET'S</div>
+                                    <img className="h-[110px] mx-5" src="./images/sao.svg" alt="logo" />
+                                    <div className="md:text-[120px]">CREATE</div>
+                                </div>
+                                <div className="md:flex justify-center items-center">
+                                    <div className="md:text-[125px] bighead">STAND</div>
+                                    {/* <div className="ellip ml-4 relative">
+                        <div className="absolute heading_5 text-ellipse">2024</div>
+                    </div> */}
+                                    <img className="h-[150px] ml-5" src="./images/ellipse.svg" alt="logo" />
+                                    <div className="md:text-[125px] bighead mr-5">UT</div>
+                                    <div className="md:text-[125px] bighead">BRAND</div>
+                                </div>
+                            </div>
                             {/* <div className="text-2xl sm:text-3xl">Welcome to my</div> */}
-                            <img className="sm:mt-3 sm:mb-6 sm:w-2/3" src="./images/Creative Place.png" alt="logo" />
+                            {/* <img className="sm:mt-3 sm:mb-6 sm:w-2/3" src="./images/Creative Place.png" alt="logo" /> */}
                             {/* <div className="text-base sm:text-xl">“May the flowers remind us why the rain was so necessary”</div> */}
                         </div>
                     </div>
                 </div>
             </div>
+
+            {/* NEW BANNER */}
+            {/* <div className="">
+                <div className="md:flex justify-center items-center">
+                    <div className="md:text-[120px]">LET'S</div>
+                    <img className="h-[110px] mx-5" src="./images/sao.svg" alt="logo" />
+                    <div className="md:text-[120px]">CREATE</div>
+                </div>
+                <div className="md:flex justify-center items-center">
+                    <div className="md:text-[120px] bighead">STAND</div> */}
+                    {/* <div className="ellip ml-4 relative">
+                        <div className="absolute heading_5 text-ellipse">2024</div>
+                    </div> */}
+                    {/* <img className="h-[160px] ml-5" src="./images/ellipse.svg" alt="logo" />
+                    <div className="md:text-[120px] bighead mr-5">UT</div>
+                    <div className="md:text-[120px] bighead">BRAND</div>
+                </div>
+            </div> */}
 
             <div></div>
             {/* All project here */}

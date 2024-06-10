@@ -73,14 +73,12 @@ const About = () => {
           <div className="col-span-6 md:flex flex-col">
             <div className="md:text-[106px] text-[60px] mb-1 font-medium animate slideInUp cursor-text-wrp">DUONG.NT</div>
             <div className="heading_2 h-full animate slideInUp cursor-text-wrp md:mb-0 mb-4">HELLO AND WELCOME TO MY UX/UI PORTFOLIO.</div>
-            <div className="flex items-center md:mb-0 mb-4">
+            <div className="flex items-center md:mb-0 mb-4" onClick={handleScrollToAbout}>
               <div className="bg-black mr-2 p-1 rounded-full arrow-down-hover">
                 <img className="" src="./images/icons/arrow-down.svg" alt="logo" loading="lazy" />
               </div>
               <div
-                className="scroll-text medium_text"
-                data-replace="MORE ABOUT ME"
-                onClick={handleScrollToAbout}
+                className="medium_text"
               >
                 <span>MORE ABOUT ME</span>
               </div>
@@ -143,6 +141,20 @@ const About = () => {
           </div>
         </div>
       </div> */}
+
+      {/* NEW BANNER */}
+      <div>
+        <div className="md:flex">
+          <div className="md:text-[120px]">LET'S</div>
+          <div className="md:text-[120px]">CREATE</div>
+        </div>
+        <div className="md:flex">
+          <div className="md:text-[120px]">STAND</div>
+          <div className="md:text-[120px]">OUT</div>
+          <div className="md:text-[120px]">BRAND</div>
+        </div>
+      </div>
+
       <div className="section" ref={ref}>
         <div className="py-4 md:py-6 md:grid grid-cols-12 gap-5 w-full border-b border-solid border-999">
           <div className="col-span-3 md:flex items-center">
@@ -154,8 +166,8 @@ const About = () => {
                 <div className="medium_text mb-3 cursor-text-wrp">
                   Basic Information
                 </div>
-                <div className="md:flex items-center md:justify-end body_text">
-                  <div className="md:mb-0 mb-2">BOD: 08/19/1998</div>
+                <div className="md:flex items-center md:justify-end body_text cursor-text-wrp">
+                  <div className="md:mb-0 mb-2 ">BOD: 08/19/1998</div>
                   <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   <div className="md:mb-0 mb-2">Nationality: Local Vietnamese</div>
                   <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>

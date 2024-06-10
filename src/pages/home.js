@@ -436,22 +436,19 @@ const Home = () => {
                     <div></div>
                   </div>
                 </div>
-                <div className="body_text text-right mt-4 cursor-text-wrp mb-4">
+                <div className="body_text text-right mt-3 cursor-text-wrp mb-5">
                   "Step into the world of a passionate UI designer's portfolio. Witness the evolution of my skills as I
                   create intuitive interfaces and explore the realm of captivating design."
                 </div>
                 {/* animation button */}
                 <div className="md:flex justify-end">
-                  <Link to={ROUTER.DESIGNS}>
-                    <div id="container">
-                      <button class="learn-more">
-                        <span class="circle" aria-hidden="true">
-                          <span class="icon arrow"></span>
-                        </span>
-                        <span class="button-text medium_text">ALL MY PROJECTS</span>
-                      </button>
-                    </div>
-                  </Link>
+                  <div className="">
+                    <Link className="text-link heading_6">
+                      <span>
+                        VIEW ALL PROJECTS
+                      </span>
+                    </Link>
+                  </div>
                 </div>
 
               </div>
@@ -485,7 +482,7 @@ const Home = () => {
                 <Link to={ROUTER.AGURI}>
                   <img
                     className="w-full project-img"
-                    src="./images/design/jewelrymain.png"
+                    src="./images/design/beautymain.png"
                     alt="logo"
                     loading="lazy"
                   />
@@ -493,7 +490,7 @@ const Home = () => {
 
                 <div className="medium_text mt-3 cursor-text-wrp">
                   <Link to={ROUTER.AGURI}>
-                    Aguri Jewellery Website
+                    Beauty Blog
                   </Link>
                 </div>
                 <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
@@ -512,7 +509,7 @@ const Home = () => {
                   Indulge in luxury and style with our timeless fashion brand, redefining elegance and sophistication.
                 </div>
               </div>
-              <div className="col-span-6 sm:col-span-3 project-even">
+              {/* <div className="col-span-6 sm:col-span-3 project-even">
                 <div className="heading_4 mb-2 cursor-text-wrp">04.</div>
                 <Link to={ROUTER.ALIO}>
                   <img className="w-full project-img" src="./images/design/des-4.png" alt="logo" loading="lazy" />
@@ -524,6 +521,27 @@ const Home = () => {
                 </div>
                 <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
                   Discover a serene oasis at our Yoga, Pilates, and Meditation website, where tranquility awaits.
+                </div>
+              </div> */}
+              <div className="col-span-6 sm:col-span-3 project-even">
+                <div className="heading_4 mb-2 cursor-text-wrp">04.</div>
+
+                <Link to={ROUTER.AGURI}>
+                  <img
+                    className="w-full project-img"
+                    src="./images/design/jewelrymain.png"
+                    alt="logo"
+                    loading="lazy"
+                  />
+                </Link>
+
+                <div className="medium_text mt-3 cursor-text-wrp">
+                  <Link to={ROUTER.AGURI}>
+                    Aguri Jewellery Website
+                  </Link>
+                </div>
+                <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
+                  Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
                 </div>
               </div>
             </div>
