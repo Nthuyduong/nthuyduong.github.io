@@ -164,7 +164,7 @@ const Contact = () => {
               <span className="focus-border"></span>
             </div>
             <div className="text-[42px] send-msg-btn mt-6">
-              <div className="flex float-right">
+              <div className="flex justify-end">
                 <button
                   type="submit"
                   className={`relative cursor-pointer cursor-text-wrp flex gap-2 btn-contact ${loading ? 'btn-wrp-loading' : ''} ${success ? 'btn-wrp-success' : ''}`}

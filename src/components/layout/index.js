@@ -147,8 +147,8 @@ const Layout = ({ children }) => {
         {children}
       </div>
       <Footer />
-        <div className="md:block hidden back-to-top body_text" onClick={() => { scrollToTop() }}>Back to top</div>
-        <Link to="/contact" className="md:block hidden get-in-touch body_text">Get in touch</Link>
+        <div className="lg:block hidden back-to-top body_text" onClick={() => { scrollToTop() }}>Back to top</div>
+        <Link to="/contact" className="lg:block hidden get-in-touch body_text">Get in touch</Link>
     </div>
   )
 }

@@ -107,7 +107,7 @@ const Home = () => {
     const currentEmojis = document.querySelectorAll(".emoji");
     currentEmojis.forEach((emoji) => {
       const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
-      emoji.innerHTML = '<div class="px-4">' + randomEmoji + '</div>';
+      emoji.innerHTML = '<div className="px-4">' + randomEmoji + '</div>';
     });
   }
 
@@ -339,8 +339,8 @@ const Home = () => {
       {/* ABOUT ME */}
       <div className="section">
         <div className="md:grid grid-cols-12 gap-5 pt-6 md:pt-7">
-          <div className="col-span-4"></div>
-          <div className="col-span-8">
+          <div className="col-span-12 lg:col-span-4"></div>
+          <div className="col-span-12 lg:col-span-8">
             <div className="heading_6 mb-4">About me</div>
             <div className="heading_2 md:mb-6 mb-4">
               Welcome to my portfolio! Excited to share UX/UI design projects and
@@ -351,11 +351,11 @@ const Home = () => {
             {/* animation button */}
             <Link to={ROUTER.ABOUT}>
               <div id="container">
-                <button class="learn-more">
-                  <span class="circle" aria-hidden="true">
-                    <span class="icon arrow"></span>
+                <button className="learn-more">
+                  <span className="circle" aria-hidden="true">
+                    <span className="icon arrow"></span>
                   </span>
-                  <span class="button-text medium_text">MORE ABOUT ME</span>
+                  <span className="button-text medium_text">MORE ABOUT ME</span>
                 </button>
               </div>
             </Link>
@@ -411,7 +411,7 @@ const Home = () => {
                   <div className="dot-bl">
                     <img className="img-ellipe-bl mx-1 sm:mx-4" src="./images/icons/ellipse-bl.svg" alt="smile" loading="lazy" />
                   </div>
-                  <div className="heading_1 cursor-text-wrp">DESIGNS</div>
+                  <div className="heading_design heading_1 cursor-text-wrp">DESIGNS</div>
                 </div>
                 <div className="flex">
                   <div className="text-large-2">for</div>
@@ -425,12 +425,12 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-span-2 hidden sm:block"></div>
-              <div className="col-span-10 sm:col-span-4 hidden sm:block animate slideInUp">
+              <div className="col-span-10 sm:col-span-4 hidden md:block animate slideInUp">
                 <div className="byme">
                   <div className="flex">
                     <div className="text-large-2 byme2 cursor-text-wrp">By</div>
-                    <div className="dot-bl">
-                      <img className="img-ellipe-99 mx-4" src="./images/icons/ellipse-99.svg" alt="smile" loading="lazy" />
+                    <div className="dot-bl w-[50px]">
+                      <img className="img-ellipe-bl " src="./images/icons/ellipse-bl.svg" alt="smile" loading="lazy" />
                     </div>
                     <div className="heading_1 myname byme2 cursor-text-wrp">NthDuong</div>
                     <div></div>
@@ -457,8 +457,23 @@ const Home = () => {
         </div>
         <div className="animate slideInUp animate--delay-fast">
           <div className="my-project">
-            <div className="grid grid-cols-12 gap-4 md:flex items-center">
-              <div className="col-span-6 sm:col-span-3 project-odd">
+            <Slider
+              configs={{
+                sliderPerRow: 4,
+                sliderPerRowMobile: 1.25,
+                allowDrag: true,
+                duration: 400,
+                auto: false,
+                autoDuration: 1000,
+                gap: 30,
+                gapMobile: 10,
+                process: true,
+                paginate: false,
+                navigator: false,
+                active: 0
+              }}
+            >
+              <div className="project-odd">
                 <div className="heading_4 mb-2 cursor-text-wrp">01.</div>
                 <Link to={ROUTER.CAKE}>
                   <img
@@ -476,9 +491,8 @@ const Home = () => {
                   Indulge in the delectable world of Cake Blog, where sweetness and creativity come together.
                 </div>
               </div>
-              <div className="col-span-6 sm:col-span-3 project-even">
+              <div className="project-even">
                 <div className="heading_4 mb-2 cursor-text-wrp">02.</div>
-
                 <Link to={ROUTER.AGURI}>
                   <img
                     className="w-full project-img"
@@ -497,7 +511,7 @@ const Home = () => {
                   Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
                 </div>
               </div>
-              <div className="col-span-6 sm:col-span-3 project-odd">
+              <div className="project-odd">
                 <div className="heading_4 mb-2 cursor-text-wrp">03.</div>
                 <Link to={ROUTER.FASHION}>
                   <img className="w-full project-img" src="./images/design/fashionmain.png" alt="logo" loading="lazy" />
@@ -509,7 +523,7 @@ const Home = () => {
                   Indulge in luxury and style with our timeless fashion brand, redefining elegance and sophistication.
                 </div>
               </div>
-              {/* <div className="col-span-6 sm:col-span-3 project-even">
+              <div className="project-even">
                 <div className="heading_4 mb-2 cursor-text-wrp">04.</div>
                 <Link to={ROUTER.ALIO}>
                   <img className="w-full project-img" src="./images/design/des-4.png" alt="logo" loading="lazy" />
@@ -522,8 +536,8 @@ const Home = () => {
                 <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
                   Discover a serene oasis at our Yoga, Pilates, and Meditation website, where tranquility awaits.
                 </div>
-              </div> */}
-              <div className="col-span-6 sm:col-span-3 project-even">
+              </div>
+              <div className="project-even">
                 <div className="heading_4 mb-2 cursor-text-wrp">04.</div>
 
                 <Link to={ROUTER.AGURI}>
@@ -544,7 +558,7 @@ const Home = () => {
                   Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
                 </div>
               </div>
-            </div>
+            </Slider>
           </div>
         </div>
       </div>
@@ -654,7 +668,7 @@ const Home = () => {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                     />
-                    <span class="focus-border"></span>
+                    <span className="focus-border"></span>
                   </div>
                   <div className="relative col-span-6 customer-phone contact_field">
                     <label className="mb-1 cursor-text-wrp">Phone number *</label>
@@ -666,7 +680,7 @@ const Home = () => {
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
                     />
-                    <span class="focus-border"></span>
+                    <span className="focus-border"></span>
                   </div>
                 </div>
                 <div className="relative my-[32px] contact_field">
@@ -678,7 +692,7 @@ const Home = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
-                  <span class="focus-border"></span>
+                  <span className="focus-border"></span>
                 </div>
                 <div className="relative customer-mess contact_field">
                   <label className="mb-1 cursor-text-wrp">Message *</label>
@@ -689,7 +703,7 @@ const Home = () => {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
-                  <span class="focus-border"></span>
+                  <span className="focus-border"></span>
                 </div>
                 <div className="heading_3 send-msg-btn mt-6 flex float-right">
                   <button

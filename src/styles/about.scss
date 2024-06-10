@@ -261,9 +261,14 @@
     width: 200%;
   }
 }
-.slider-items {
-  display: grid !important;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.about-title {
+  font-size: clamp(60px, 8.5vw, 104px);
+}
+.about-page {
+  .slider-items {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 @media (min-width: 768px) {
   .core-value {

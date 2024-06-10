@@ -73,7 +73,7 @@ const Slider = ({
 
         //loại bỏ sử kiện, lý do thì chưa biết
         return () => {
-            window.removeEventListener('resize', handleResize, false)
+            // window.removeEventListener('resize', handleResize, false)
             window.removeEventListener('orientationchange', handleResize, false)
             if(refContent.current) refContent.current.removeEventListener('scroll', handleScroll, false)
         };
@@ -246,7 +246,7 @@ const Slider = ({
             )}
             {configs.process && (
                 <div className="slider-process" >
-                    <div ref={refProcess} className="process-wrp bg-black dark:bg-white" ></div>
+                    <div ref={refProcess} className="process-wrp" ></div>
                 </div>
             )}
         </div>

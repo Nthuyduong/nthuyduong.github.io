@@ -71,7 +71,7 @@ const About = () => {
       <div className="section page-element border-b border-solid border-999">
         <div className="md:grid grid-cols-12 gap-5 md:py-7 py-4">
           <div className="col-span-6 md:flex flex-col">
-            <div className="md:text-[106px] sm:text-[70px] text-[40px] mb-1 font-medium animate slideInUp cursor-text-wrp">DUONG.NT</div>
+            <div className="about-title mb-1 font-medium animate slideInUp cursor-text-wrp">DUONG.NT</div>
             <div className="heading_2 h-full animate slideInUp cursor-text-wrp md:mb-0 mb-4">HELLO AND WELCOME TO MY UX/UI PORTFOLIO.</div>
             <div className="flex items-center md:mb-0 mb-4" onClick={handleScrollToAbout}>
               <div className="bg-black mr-2 p-1 rounded-full arrow-down-hover">
@@ -144,35 +144,35 @@ const About = () => {
 
       <div className="section" ref={ref}>
         <div className="py-4 md:py-6 md:grid grid-cols-12 gap-5 w-full border-b border-solid border-999">
-          <div className="col-span-3 md:flex items-center">
+          <div className="col-span-12 lg:col-span-3 md:flex items-center">
             <div className="heading_2 md:pb-0 pb-4 cursor-text-wrp animate slideInUp">ABOUT ME</div>
           </div>
-          <div className="col-span-9">
-            <div className="md:flex flex-row md:justify-end md:items-center gap-6 w-full">
+          <div className="col-span-12 lg:col-span-9">
+            <div className="lg:flex flex-row md:justify-end md:items-center gap-6 w-full">
               <div className="">
                 <div className="medium_text mb-3 cursor-text-wrp">
                   Basic Information
                 </div>
-                <div className="sm:flex md:flex items-center md:justify-end body_text cursor-text-wrp">
+                <div className="sm:flex md:flex items-center md:justify-start gap-5 lg:gap-0 body_text cursor-text-wrp">
                   <div className="md:mb-0 mb-2">BOD: 08/19/1998</div>
                   <img className="md:block hidden md:mx-3 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   <div className="md:mb-0 mb-2">Nationality: Local Vietnamese</div>
                   <img className="md:block hidden md:mx-3 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   <div className="md:mb-0 mb-2">Maritality: Single</div>
                   <img className="md:block hidden md:mx-3 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
-                  <div>Gender: Female</div>
+                  <div className="md:mb-0 mb-2">Gender: Female</div>
                 </div>
               </div>
-              <div className="">
+              <div className="md:pt-5 lg:pt-0">
                 <div className="medium_text mb-3 cursor-text-wrp">
                   Hobbies
                 </div>
-                <div className="sm:flex md:flex items-center justify-end pb-0 body_text cursor-text-wrp">
+                <div className="sm:flex md:flex items-center lg:justify-end pb-0 body_text cursor-text-wrp gap-5 md:gap-0">
                   <div className="md:mb-0 mb-2">Learning</div>
                   <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   <div className="md:mb-0 mb-2">Reading</div>
                   <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
-                  <div>Drawing</div>
+                  <div className="md:mb-0 mb-2">Drawing</div>
                 </div>
               </div>
             </div>
@@ -439,9 +439,9 @@ const About = () => {
         </div>
       </div>
 
-      {/* <div class="">
-        <div class="roll overflow-hidden">
-          <div class="circle">
+      {/* <div className="">
+        <div className="roll overflow-hidden">
+          <div className="circle">
             <img className="h-[200px] w-full" src="./images/about/roll.svg" alt="logo" loading="lazy" />
           </div>
         </div>

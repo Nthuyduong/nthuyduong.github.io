@@ -41,6 +41,7 @@
   padding: 20px;
 }
 .design-banner {
+  height: 50vh;
   position: relative;
 }
 .design-banner::after {
@@ -55,9 +56,10 @@
   background-size: cover;
   background-position: center bottom;
 }
+
 @media (max-width: 768px) {
   .design-banner {
-    height: 100vh;
+    height: 80vh;
     .design-banner-bg {
       height: 100%;
       width: auto;
@@ -173,6 +175,9 @@
       max-width: 100%;
     }
   }
+}
+.design-title {
+  font-size: clamp(70px, 5vw, 120px);
 }
 
 .design-scale-out:hover{

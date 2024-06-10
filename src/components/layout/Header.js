@@ -45,7 +45,7 @@ const Header = () => {
 
   return (
     <>
-      <div ref={headerMobileRef} className={`sticky header-mobile inset-y-0 left-0 flex items-center sm:hidden flex-col w-full border-b border-ccc border-solid ${openMobileMenu ? 'header-mobile-open' : ''}`}>
+      <div ref={headerMobileRef} className={`sticky header-mobile inset-y-0 left-0 flex items-center md:hidden flex-col w-full border-b border-ccc border-solid ${openMobileMenu ? 'header-mobile-open' : ''}`}>
         {/*Mobile menu button*/}
         <div
           className="mobile-menu-btn w-full relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -83,7 +83,7 @@ const Header = () => {
             </div>
           </div>
 
-          <Link to={ROUTER.CONTACT} className="text-gray-300 hover:text-white rounded-md px-3 text-4xl font-medium cursor-text-wrp">Contact</Link>
+          <Link to={ROUTER.CONTACT} className="text-gray-300 rounded-md px-3 text-4xl font-medium cursor-text-wrp">Contact</Link>
         </div>
       </div>
       <div ref={headerRef} className="my-header sticky flex flex-1 items-center justify-center sm:items-stretch sm:justify-start border-b border-ccc border-solid">
