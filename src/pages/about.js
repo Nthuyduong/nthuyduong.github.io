@@ -142,19 +142,6 @@ const About = () => {
         </div>
       </div> */}
 
-      {/* NEW BANNER */}
-      <div>
-        <div className="md:flex">
-          <div className="md:text-[120px]">LET'S</div>
-          <div className="md:text-[120px]">CREATE</div>
-        </div>
-        <div className="md:flex">
-          <div className="md:text-[120px]">STAND</div>
-          <div className="md:text-[120px]">OUT</div>
-          <div className="md:text-[120px]">BRAND</div>
-        </div>
-      </div>
-
       <div className="section" ref={ref}>
         <div className="py-4 md:py-6 md:grid grid-cols-12 gap-5 w-full border-b border-solid border-999">
           <div className="col-span-3 md:flex items-center">
