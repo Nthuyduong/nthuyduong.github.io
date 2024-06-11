@@ -40,25 +40,25 @@ const Designs = () => {
     return (
         <div className="project-page">
             <div className="design-banner">
-                <img className="design-banner-bg h-full object-cover" src="/images/design/banner-design.png" alt="design-banner2" />
+                <img className="design-banner-bg" src="/images/design/banner-design.png" alt="design-banner2" />
                 <div className="design-banner-content flex justify-center items-center px-2">
                     <div className="flex m-w gap-2 sm:items-center flex-col sm:flex-row">
                         {/* <img className="mr-7 w-[200px] h-[200px] md:w-[100px] md:h-[100px]" src="./images/flower-icon.png" alt="logo" loading="lazy" /> */}
                         <div className="text-white w-full flex flex-col gap-2 sm:gap-0">
-                            <div className="design-title">
+                            <div className="">
                                 <div className="flex justify-center items-center">
-                                    <div className="">LET'S</div>
+                                    <div className="ml:text-[120px] md:text-[90px] text-[34px]">LET'S</div>
                                     <img className="ml:h-[110px] md:h-[70px] h-[30px] ml:mx-5 md:mx-3 mx-2" src="./images/sao.svg" alt="logo" />
-                                    <div className="">CREATE</div>
+                                    <div className="ml:text-[120px] md:text-[90px] text-[34px]">CREATE</div>
                                 </div>
                                 <div className="flex justify-center items-center">
-                                    <div className="">STAND</div>
+                                    <div className="ml:text-[125px] md:text-[90px] bighead text-[34px]">STAND</div>
                                     {/* <div className="ellip ml-4 relative">
                         <div className="absolute heading_5 text-ellipse">2024</div>
                     </div> */}
                                     <img className="ml:h-[150px] md:h-[90px] h-[50px] ml:ml-5 md:ml-3 ml-2" src="./images/ellipse.svg" alt="logo" />
-                                    <div className="">UT</div>
-                                    <div className="">BRAND</div>
+                                    <div className="ml:text-[125px] md:text-[90px] bighead ml:mr-5 md:mr-3 mr-2 text-[34px]">UT</div>
+                                    <div className="ml:text-[125px] md:text-[90px] bighead text-[34px]">BRAND</div>
                                 </div>
                             </div>
                             {/* <div className="text-2xl sm:text-3xl">Welcome to my</div> */}
@@ -96,7 +96,7 @@ const Designs = () => {
                         <div className="md:flex flex-row gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">01</div>
                             <img
-                                className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/des-1.png"
+                                className="md:w-[50%] block lg:hidden" src="./images/design/des-1.png"
                                 alt="logo"
                                 loading="lazy"
                             />
@@ -113,8 +113,8 @@ const Designs = () => {
                             </div>
 
                         </div>
-                        <div className="md:flex flex-row justify-end relative w-[30%] lg:w-full">
-                            <div className="design-scale-wrp absolute h-full hidden lg:block">
+                        <div className="w-full md:flex flex-row justify-end relative">
+                            <div className="design-scale-wrp absolute h-full">
                                 <img
                                     className="design-scale-img w-full h-full w-auto object-cover" src="./images/design/des-1.png"
                                     alt="logo"
@@ -137,7 +137,7 @@ const Designs = () => {
                         <div className="md:flex flex-row gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">02</div>
                             <img
-                                className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/mydes2.png"
+                                className="md:w-[50%] block lg:hidden" src="./images/design/mydes2.png"
                                 alt="logo"
                                 loading="lazy"
                             />
@@ -153,8 +153,8 @@ const Designs = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="md:flex flex-row justify-end relative w-[30%] lg:w-full">
-                            <div className="design-scale-wrp absolute h-full hidden lg:block">
+                        <div className="w-full md:flex flex-row justify-end relative">
+                            <div className="design-scale-wrp absolute h-full">
                                 <img
                                     className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/mydes2.png"
                                     alt="logo"
@@ -177,7 +177,7 @@ const Designs = () => {
                         <div className="md:flex flex-row gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">03</div>
                             <img
-                                className="w-full w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/mydes1.png"
+                                className="w-[50%] block lg:hidden" src="./images/design/mydes1.png"
                                 alt="logo"
                                 loading="lazy"
                             />
@@ -193,8 +193,9 @@ const Designs = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="md:flex flex-row justify-end relative w-[30%] lg:w-full">
-                            <div className="design-scale-wrp absolute h-full hidden lg:block">
+
+                        <div className="w-full md:flex flex-row justify-end relative">
+                            <div className="design-scale-wrp absolute h-full">
                                 <img
                                     className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/mydes1.png"
                                     alt="logo"
@@ -217,7 +218,7 @@ const Designs = () => {
                         <div className="md:flex flex-row gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">04</div>
                             <img
-                                className="w-full block lg:hidden w-[50%] md:max-w-[214px]" src="./images/design/des-1.png"
+                                className="block lg:hidden w-[50%]" src="./images/design/des-1.png"
                                 alt="logo"
                                 loading="lazy"
                             />
@@ -234,8 +235,9 @@ const Designs = () => {
                             </div>
 
                         </div>
-                        <div className="md:flex flex-row justify-end relative w-[30%] lg:w-full">
-                            <div className="design-scale-wrp absolute h-full hidden lg:block">
+
+                        <div className="w-full md:flex flex-row justify-end relative">
+                            <div className="design-scale-wrp absolute h-full">
                                 <img
                                     className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
                                     alt="logo"
@@ -258,7 +260,7 @@ const Designs = () => {
                         <div className="md:flex flex-row gap-6 w-full py-5">
                             <div className="heading_3 cursor-text-wrp hidden lg:block">05</div>
                             <img
-                                className="w-full block lg:hidden w-[50%] md:max-w-[214px]" src="./images/design/mydes3.png"
+                                className="block lg:hidden w-[50%]" src="./images/design/mydes3.png"
                                 alt="logo"
                                 loading="lazy"
                             />
@@ -273,9 +275,11 @@ const Designs = () => {
                                     </Link>
                                 </div>
                             </div>
+
                         </div>
-                        <div className="md:flex flex-row justify-end relative w-[30%] lg:w-full">
-                            <div className="design-scale-wrp absolute h-full hidden lg:block">
+
+                        <div className="w-full md:flex flex-row justify-end relative">
+                            <div className="design-scale-wrp absolute h-full">
                                 <img
                                     className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/mydes3.png"
                                     alt="logo"
@@ -433,7 +437,7 @@ const Designs = () => {
             </div> */}
 
             {/* Contact section */}
-            {/* <div className="colorDiv border-y border-solid border-ccc py-7 w-full md:mt-7 mt-5 ">
+            {/* <div class="colorDiv border-y border-solid border-ccc py-7 w-full md:mt-7 mt-5 ">
                 <div>
 
                     <div className="text-[60px] leading-[130%]">Unleashing The Potential Of Your Brand</div>
