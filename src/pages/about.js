@@ -355,7 +355,7 @@ const About = () => {
               autoDuration: 1000,
               gap: 30,
               gapMobile: 10,
-              process: true,
+              // process: true,
               paginate: false,
               navigator: false,
               active: 1
