@@ -339,8 +339,8 @@ const Home = () => {
       {/* ABOUT ME */}
       <div className="section">
         <div className="md:grid grid-cols-12 gap-5 pt-6 md:pt-7">
-          <div className="col-span-12 lg:col-span-4"></div>
-          <div className="col-span-12 lg:col-span-8">
+          <div className="col-span-12 lg:col-span-5"></div>
+          <div className="col-span-12 lg:col-span-7">
             <div className="heading_6 mb-4">About me</div>
             <div className="heading_2 md:mb-6 mb-4">
               Welcome to my portfolio! Excited to share UX/UI design projects and
@@ -382,8 +382,8 @@ const Home = () => {
         <div className="bg-primary px-0 section-full scroll-container text-decor py-0 md:py-2">
           <Scroller>
             <Link to='/contact' className="flex">
-              <div className="emoji flex items-center">
-                <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
+              <div className="emoji flex items-center px-4">
+                <img className="w-full" src="./images/design/star.svg" alt="logo" loading="lazy" />
               </div>
               {/* <div className="heading_3 cursor-text-wrp">HELLO</div> */}
 
