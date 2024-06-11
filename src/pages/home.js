@@ -409,28 +409,28 @@ const Home = () => {
                 <div className="flex">
                   <div className="text-large-2 cursor-text-wrp">My</div>
                   <div className="dot-bl">
-                    <img className="img-ellipe-bl mx-1 sm:mx-4" src="./images/icons/ellipse-bl.svg" alt="smile" loading="lazy" />
+                    <img className="img-ellipe-bl mx-2 md:mx-2 lg:mx-3" src="./images/icons/ellipse-bl.svg" alt="smile" loading="lazy" />
                   </div>
                   <div className="heading_design heading_1 cursor-text-wrp">DESIGNS</div>
                 </div>
                 <div className="flex">
                   <div className="text-large-2">for</div>
-                  <div className="line decor-line mx-1 sm:mx-3"></div>
-                  <div className="heading_1 cursor-text-wrp">UNIQUE</div>
+                  <div className="line decor-line mx-2 md:mx-3"></div>
+                  <div className="heading_1 heading_design cursor-text-wrp">UNIQUE</div>
                 </div>
                 <div className="flex">
-                  <div className="heading_1 cursor-text-wrp">&</div>
-                  <div className="text-large-2 mx-1 sm:mx-4 cursor-text-wrp">soulful</div>
-                  <div className="heading_1 cursor-text-wrp">BRANDS</div>
+                  <div className="heading_1 heading_design cursor-text-wrp">&</div>
+                  <div className="text-large-2 mx-2 md:mx-2 lg:mx-3 cursor-text-wrp">soulful</div>
+                  <div className="heading_1 heading_design cursor-text-wrp">BRANDS</div>
                 </div>
               </div>
               <div className="col-span-2 hidden sm:block"></div>
               <div className="col-span-10 sm:col-span-4 hidden md:block animate slideInUp">
                 <div className="byme">
-                  <div className="flex">
+                  <div className="flex justify-end">
                     <div className="text-large-2 byme2 cursor-text-wrp">By</div>
                     <div className="dot-bl w-[50px] flex justify-center">
-                      <img className="img-ellipe-bl " src="./images/icons/ellipse-bl.svg" alt="smile" loading="lazy" />
+                      <img className="img-ellipe-bl mx-2 md:mx-2 lg:mx-3" src="./images/icons/ellipse-bl.svg" alt="smile" loading="lazy" />
                     </div>
                     <div className="heading_1 myname byme2 cursor-text-wrp">NthDuong</div>
                     <div></div>

@@ -846,7 +846,9 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
-
+.text-large-2{
+  font-size: clamp(43px, 7.5vw, 60px);
+}
 .heading_design {
-  font-size: clamp(30px, 5vw, 60px);
+  font-size: clamp(43px, 7.5vw, 60px);
 }
