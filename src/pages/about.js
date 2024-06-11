@@ -72,7 +72,7 @@ const About = () => {
         <div className="md:grid grid-cols-12 gap-5 md:py-7 py-4">
           <div className="col-span-6 md:flex flex-col">
             <div className="about-title mb-1 font-medium animate slideInUp cursor-text-wrp">DUONG.NT</div>
-            <div className="heading_2 h-full animate slideInUp cursor-text-wrp md:mb-0 mb-4">HELLO AND WELCOME TO MY UX/UI PORTFOLIO.</div>
+            <div className="heading_2 h-full animate slideInUp cursor-text-wrp lg:mb-0 mb-4">HELLO AND WELCOME TO MY UX/UI PORTFOLIO.</div>
             <div className="flex items-center md:mb-0 mb-4" onClick={handleScrollToAbout}>
               <div className="bg-black mr-2 p-1 rounded-full arrow-down-hover">
                 <img className="" src="./images/icons/arrow-down.svg" alt="logo" loading="lazy" />
@@ -148,26 +148,26 @@ const About = () => {
             <div className="heading_2 md:pb-0 pb-4 cursor-text-wrp animate slideInUp">ABOUT ME</div>
           </div>
           <div className="col-span-12 lg:col-span-9">
-            <div className="lg:flex flex-row md:justify-end md:items-center gap-6 w-full">
-              <div className="">
+            <div className="flex sm:block md:blog lg:flex flex-row gap-6 w-full">
+              <div className="sm:mb-4 mb-0 lg:mb-0">
                 <div className="medium_text mb-3 cursor-text-wrp">
                   Basic Information
                 </div>
-                <div className="sm:flex md:flex items-center md:justify-start gap-5 lg:gap-0 body_text cursor-text-wrp">
+                <div className="block sm:flex md:flex lg:flex items-center md:justify-start gap-5 lg:gap-0 body_text cursor-text-wrp">
                   <div className="md:mb-0 mb-2">BOD: 08/19/1998</div>
-                  <img className="md:block hidden md:mx-3 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                  <img className="md:block hidden lg:mx-3 md:mx-0 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   <div className="md:mb-0 mb-2">Nationality: Local Vietnamese</div>
-                  <img className="md:block hidden md:mx-3 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                  <img className="md:block hidden lg:mx-3 md:mx-0 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   <div className="md:mb-0 mb-2">Maritality: Single</div>
-                  <img className="md:block hidden md:mx-3 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                  <img className="md:block hidden lg:mx-3 md:mx-0 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   <div className="md:mb-0 mb-2">Gender: Female</div>
                 </div>
               </div>
-              <div className="md:pt-5 lg:pt-0">
+              <div className="">
                 <div className="medium_text mb-3 cursor-text-wrp">
                   Hobbies
                 </div>
-                <div className="sm:flex md:flex items-center lg:justify-end pb-0 body_text cursor-text-wrp gap-5 md:gap-0">
+                <div className="block sm:flex md:flex lg:flex items-center lg:justify-end pb-0 body_text cursor-text-wrp gap-5 md:gap-0">
                   <div className="md:mb-0 mb-2">Learning</div>
                   <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                   <div className="md:mb-0 mb-2">Reading</div>
@@ -182,20 +182,20 @@ const About = () => {
       <div className="page-element section mt-5 md:mt-7">
         <div className="about2">
           <div className="md:grid md:grid-cols-12 gap-5">
-            <div className="col-span-3 animate slideInUp">
+            <div className="lg:col-span-3 md:col-span-6 animate slideInUp">
               <div className="img-container">
-                <img className="w-100" src="./images/about/me.webp" alt="#" loading="lazy"></img>
+                <img className="w-full" src="./images/about/me.webp" alt="#" loading="lazy"></img>
               </div>
             </div>
-            <div className="col-span-1">
+            <div className="lg:col-span-1 hidden lg:block">
               {/* <div className="heading_2 md:py-0 py-4 cursor-text-wrp animate slideInUp">Self - Introduce</div> */}
             </div>
 
-            <div className="col-span-8 animate body_text slideInUp cursor-text-wrp md:flex items-end">
+            <div className="lg:col-span-8 md:col-span-6 animate body_text slideInUp cursor-text-wrp md:flex items-end">
               <div>
                 <div className="text-[20px] mb-4 md:mb-5 md:mt-0 mt-4">Hello. My name is Duong.</div>
-                <div className="md:flex flex-row gap-5">
-                  <div className="md:mb-0 mb-3">With 2 years of experience in UX/UI design, I've refined my skills in creating user-centric designs that balance aesthetics
+                <div className="lg:flex flex-row gap-5">
+                  <div className="md:mb-3 mb-3">With 2 years of experience in UX/UI design, I've refined my skills in creating user-centric designs that balance aesthetics
                     and functionality. My journey in the field has given me a strong foundation in diverse design principles and methodologies.
                     Currently, I handle both Designer and Developer tasks, seamlessly blending design and development processes.
                     This dual role enables me to approach projects comprehensively, bridging the gap between design and implementation
@@ -225,7 +225,7 @@ const About = () => {
               <div className="medium_text mid-text mb-4 cursor-text-wrp">
                 Skills that I have so far, to provide my clients
               </div>
-              <div className="body_text cursor-text-wrp text-color-muted">
+              <div className="body_text cursor-text-wrp text-color-muted md:w-[50%] lg:w-[100%]">
                 “Learning new things brings me joy and satisfaction, as it allows me to grow, become more knowledgeable, and improve myself every day”
               </div>
             </div>

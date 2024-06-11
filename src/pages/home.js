@@ -388,8 +388,8 @@ const Home = () => {
               {/* <div className="heading_3 cursor-text-wrp">HELLO</div> */}
 
               <div className="heading_3 cursor-text-wrp">WELCOME TO MY PORTFOLIO!</div>
-              <div className="emoji flex items-center">
-                <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
+              <div className="emoji flex items-center px-4">
+                <img className="w-full" src="./images/design/star.svg" alt="logo" loading="lazy" />
               </div>
               <div className="heading_3 cursor-text-wrp home-contact-scroller-text">LET'S CONTACT WITH ME</div>
               {/* <div className="emoji flex items-center">
@@ -429,7 +429,7 @@ const Home = () => {
                 <div className="byme">
                   <div className="flex">
                     <div className="text-large-2 byme2 cursor-text-wrp">By</div>
-                    <div className="dot-bl w-[50px]">
+                    <div className="dot-bl w-[50px] flex justify-center">
                       <img className="img-ellipe-bl " src="./images/icons/ellipse-bl.svg" alt="smile" loading="lazy" />
                     </div>
                     <div className="heading_1 myname byme2 cursor-text-wrp">NthDuong</div>
@@ -467,7 +467,7 @@ const Home = () => {
                 autoDuration: 1000,
                 gap: 30,
                 gapMobile: 10,
-                process: true,
+                // process: true,
                 paginate: false,
                 navigator: false,
                 active: 0
