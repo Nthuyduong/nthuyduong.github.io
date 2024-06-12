@@ -91,17 +91,19 @@ const Contact = () => {
               <div className="cols-span-1 flex self-end">
                 <div className="w-full text-right">
                   <div className="small_text mb-1 cursor-text-wrp">
-                    <a className="" href="https://www.behance.net/duongthuy13" target="_blank">
+                    <a className="text-link" href="https://www.behance.net/duongthuy13" target="_blank">
                       Behance
                     </a>
                   </div>
-                  <div className="small_text cursor-text-wrp">
-                    <a href="https://www.instagram.com/nth_d9">
+                  <div className="small_text cursor-text-wrp mb-1">
+                    <a className="text-link" href="https://www.instagram.com/nth_d9">
                       Instagram
                     </a>
                   </div>
-                  <div className="small_text mb-1 cursor-text-wrp">
-                    Facebook
+                  <div className="small_text cursor-text-wrp">
+                    <a className="text-link">
+                      Facebook
+                    </a>
                   </div>
                 </div>
               </div>

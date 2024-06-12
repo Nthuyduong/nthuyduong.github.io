@@ -148,7 +148,7 @@ const About = () => {
             <div className="heading_2 md:pb-0 pb-4 cursor-text-wrp animate slideInUp">ABOUT ME</div>
           </div>
           <div className="col-span-12 lg:col-span-9">
-            <div className="flex sm:block md:blog lg:flex flex-row gap-6 w-full">
+            <div className="flex sm:block md:blog lg:flex flex-row gap-6 w-full animate slideInUp">
               <div className="sm:mb-4 mb-0 lg:mb-0">
                 <div className="medium_text mb-3 cursor-text-wrp">
                   Basic Information
@@ -192,7 +192,7 @@ const About = () => {
             </div>
 
             <div className="lg:col-span-8 md:col-span-6 animate body_text slideInUp cursor-text-wrp md:flex items-end">
-              <div>
+              <div className="animate slideInUp">
                 <div className="text-[20px] mb-4 md:mb-5 md:mt-0 mt-4">Hello. My name is Duong.</div>
                 <div className="lg:flex flex-row gap-5">
                   <div className="md:mb-3 mb-3">With 2 years of experience in UX/UI design, I've refined my skills in creating user-centric designs that balance aesthetics
@@ -279,7 +279,7 @@ const About = () => {
       {/* Educational background */}
       <div className="bg-primary">
         <div className="section pt-5 md:pt-7">
-          <div className="timeline-title heading_2 mb-5 md:mb-8 cursor-text-wrp">
+          <div className="timeline-title heading_2 mb-5 md:mb-8 cursor-text-wrp animate slideInUp">
             ACADEMIC PROFILE
           </div>
         </div>
@@ -342,7 +342,7 @@ const About = () => {
 
       <div className="md:my-7 my-4 section-full core-value px-0">
         <div className="m-w">
-          <div className="heading_2 md:mb-6 mb-5 cursor-text-wrp core-value-title">
+          <div className="heading_2 md:mb-6 mb-5 cursor-text-wrp core-value-title animate slideInUp" >
             MY CORE VALUES
           </div>
           <Slider
@@ -353,7 +353,7 @@ const About = () => {
               duration: 400,
               auto: false,
               autoDuration: 1000,
-              gap: 30,
+              gap: 60,
               gapMobile: 10,
               // process: true,
               paginate: false,

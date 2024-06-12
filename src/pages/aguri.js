@@ -120,7 +120,7 @@ const Aguri = () => {
                                 <img className="w-100" src="./images/Pj03_aguri/line3-02.png" alt="#"
                                     loading="lazy" />
                             </div>
-                            <div className="col-span-12 sm:col-span-6 line2-left bg-tertiary">
+                            <div className="col-span-12 sm:col-span-6 line2-left bg-primary">
                                 <div className="p-7 flex h-full items-end">
                                     <div>
                                         <div className="heading_4 mb-4">Introduction</div>

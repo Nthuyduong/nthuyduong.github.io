@@ -546,7 +546,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="project-even">
-                <div className="heading_4 mb-2 cursor-text-wrp">04.</div>
+                <div className="heading_4 mb-2 cursor-text-wrp">05.</div>
                 <Link to={ROUTER.ALIO}>
                   <img className="w-full project-img" src="./images/design/des-4.png" alt="logo" loading="lazy" />
                 </Link>
