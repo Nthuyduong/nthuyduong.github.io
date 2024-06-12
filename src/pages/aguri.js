@@ -178,6 +178,9 @@ const Aguri = () => {
                     <div className="project-item ag-line5 md:pb-6 pb-4">
                         <img className="w-100" src="./images/Pj03_aguri/product-page.png" alt="#" loading="lazy" />
                     </div>
+                    <div className="project-item ag-line5 md:pb-6 pb-4">
+                        <img className="w-100" src="./images/Pj03_aguri/aguri-mockup.png" alt="#" loading="lazy" />
+                    </div>
                     {/* <div className="ag-line6 mdb-60">
                         <div className="inner">
                             <img className="w-100"

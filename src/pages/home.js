@@ -523,27 +523,14 @@ const Home = () => {
                   Indulge in luxury and style with our timeless fashion brand, redefining elegance and sophistication.
                 </div>
               </div>
-              <div className="project-even">
-                <div className="heading_4 mb-2 cursor-text-wrp">04.</div>
-                <Link to={ROUTER.ALIO}>
-                  <img className="w-full project-img" src="./images/design/des-4.png" alt="logo" loading="lazy" />
-                </Link>
-                <div className="medium_text mt-3 cursor-text-wrp">
-                  <Link to={ROUTER.ALIO}>
-                    Alio Yoga Website & App
-                  </Link>
-                </div>
-                <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
-                  Discover a serene oasis at our Yoga, Pilates, and Meditation website, where tranquility awaits.
-                </div>
-              </div>
+              
               <div className="project-even">
                 <div className="heading_4 mb-2 cursor-text-wrp">04.</div>
 
                 <Link to={ROUTER.AGURI}>
                   <img
                     className="w-full project-img"
-                    src="./images/design/jewelrymain.png"
+                    src="./images/design/agurimain.png"
                     alt="logo"
                     loading="lazy"
                   />
@@ -556,6 +543,20 @@ const Home = () => {
                 </div>
                 <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
                   Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
+                </div>
+              </div>
+              <div className="project-even">
+                <div className="heading_4 mb-2 cursor-text-wrp">04.</div>
+                <Link to={ROUTER.ALIO}>
+                  <img className="w-full project-img" src="./images/design/des-4.png" alt="logo" loading="lazy" />
+                </Link>
+                <div className="medium_text mt-3 cursor-text-wrp">
+                  <Link to={ROUTER.ALIO}>
+                    Alio Yoga Website & App
+                  </Link>
+                </div>
+                <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
+                  Discover a serene oasis at our Yoga, Pilates, and Meditation website, where tranquility awaits.
                 </div>
               </div>
             </Slider>

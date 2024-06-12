@@ -114,13 +114,15 @@ const Designs = () => {
 
                         </div>
                         <div className="w-full md:flex flex-row justify-end relative">
-                            <div className="design-scale-wrp absolute h-full">
-                                <img
-                                    className="design-scale-img w-full h-full w-auto object-cover" src="./images/design/des-1.png"
-                                    alt="logo"
-                                    loading="lazy"
-                                />
-                            </div>
+                            <Link to={ROUTER.AGURI}>
+                                <div className="design-scale-wrp absolute h-full">
+                                    <img
+                                        className="design-scale-img w-full h-full w-auto object-cover" src="./images/design/mydes4.png"
+                                        alt="logo"
+                                        loading="lazy"
+                                    />
+                                </div>
+                            </Link>
                             <Link className="py-5" to={ROUTER.AGURI}>
                                 <div className="flex items-center">
                                     <div className="mr-2">Explore now</div>
@@ -154,13 +156,15 @@ const Designs = () => {
                             </div>
                         </div>
                         <div className="w-full md:flex flex-row justify-end relative">
-                            <div className="design-scale-wrp absolute h-full">
-                                <img
-                                    className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/mydes2.png"
-                                    alt="logo"
-                                    loading="lazy"
-                                />
-                            </div>
+                            <Link to={ROUTER.BEAUTYBLOG}>
+                                <div className="design-scale-wrp absolute h-full">
+                                    <img
+                                        className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/mydes2.png"
+                                        alt="logo"
+                                        loading="lazy"
+                                    />
+                                </div>
+                            </Link>
                             <Link className="py-5" to={ROUTER.AGURI}>
                                 <div className="flex items-center">
                                     <div className="mr-2">Explore now</div>
@@ -195,13 +199,15 @@ const Designs = () => {
                         </div>
 
                         <div className="w-full md:flex flex-row justify-end relative">
-                            <div className="design-scale-wrp absolute h-full">
-                                <img
-                                    className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/mydes1.png"
-                                    alt="logo"
-                                    loading="lazy"
-                                />
-                            </div>
+                            <Link to={ROUTER.CAKE}>
+                                <div className="design-scale-wrp absolute h-full">
+                                    <img
+                                        className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/mydes1.png"
+                                        alt="logo"
+                                        loading="lazy"
+                                    />
+                                </div>
+                            </Link>
                             <Link className="py-5" to={ROUTER.AGURI}>
                                 <div className="flex items-center">
                                     <div className="mr-2">Explore now</div>
@@ -237,13 +243,15 @@ const Designs = () => {
                         </div>
 
                         <div className="w-full md:flex flex-row justify-end relative">
-                            <div className="design-scale-wrp absolute h-full">
-                                <img
-                                    className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
-                                    alt="logo"
-                                    loading="lazy"
-                                />
-                            </div>
+                            <Link to={ROUTER.ALIO}>
+                                <div className="design-scale-wrp absolute h-full">
+                                    <img
+                                        className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
+                                        alt="logo"
+                                        loading="lazy"
+                                    />
+                                </div>
+                            </Link>
                             <Link className="py-5" to={ROUTER.AGURI}>
                                 <div className="flex items-center">
                                     <div className="mr-2">Explore now</div>
@@ -279,13 +287,15 @@ const Designs = () => {
                         </div>
 
                         <div className="w-full md:flex flex-row justify-end relative">
-                            <div className="design-scale-wrp absolute h-full">
-                                <img
-                                    className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/mydes3.png"
-                                    alt="logo"
-                                    loading="lazy"
-                                />
-                            </div>
+                            <Link to={ROUTER.FASHION}>
+                                <div className="design-scale-wrp absolute h-full">
+                                    <img
+                                        className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/mydes3.png"
+                                        alt="logo"
+                                        loading="lazy"
+                                    />
+                                </div>
+                            </Link>
                             <Link className="py-5" to={ROUTER.AGURI}>
                                 <div className="flex items-center">
                                     <div className="mr-2">Explore now</div>
