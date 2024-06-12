@@ -358,7 +358,7 @@ const About = () => {
               // process: true,
               paginate: false,
               navigator: false,
-              active: 1
+              active: 0
             }}
           >
             <div className="flex-col flex h-full core-hover">
