@@ -40,7 +40,7 @@ const Designs = () => {
     return (
         <div className="project-page">
             <div className="design-banner">
-                <img className="design-banner-bg" src="/images/design/banner-design.png" alt="design-banner2" />
+                <img className="design-banner-bg h-full w-full object-cover object object-bottom" src="/images/design/banner-design.png" alt="design-banner2" />
                 <div className="design-banner-content flex justify-center items-center px-2">
                     <div className="flex m-w gap-2 sm:items-center flex-col sm:flex-row">
                         {/* <img className="mr-7 w-[200px] h-[200px] md:w-[100px] md:h-[100px]" src="./images/flower-icon.png" alt="logo" loading="lazy" /> */}
