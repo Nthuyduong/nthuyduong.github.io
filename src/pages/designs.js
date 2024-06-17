@@ -96,7 +96,7 @@ const Designs = () => {
                         <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">01</div>
                             <img
-                                className="md:w-[50%] block lg:hidden" src="./images/design/des-1.png"
+                                className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/des-1.png"
                                 alt="logo"
                                 loading="lazy"
                             />
@@ -113,9 +113,9 @@ const Designs = () => {
                             </div>
 
                         </div>
-                        <div className="lg:w-full md:flex flex-row justify-end relative w-[30%]">
+                        <div className="md:flex flex-row justify-end relative w-[30%] lg:w-full">
                             <Link to={ROUTER.AGURI}>
-                                <div className="design-scale-wrp absolute h-full">
+                                <div className="design-scale-wrp absolute h-full hidden lg:block">
                                     <img
                                         className="design-scale-img w-full h-full w-auto object-cover" src="./images/design/mydes4.png"
                                         alt="logo"
@@ -139,7 +139,7 @@ const Designs = () => {
                         <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">02</div>
                             <img
-                                className="md:w-[50%] block lg:hidden" src="./images/design/mydes2.png"
+                                className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/mydes2.png"
                                 alt="logo"
                                 loading="lazy"
                             />
@@ -155,9 +155,9 @@ const Designs = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="lg:w-full md:flex flex-row justify-end relative w-[30%]">
+                        <div className="md:flex flex-row justify-end relative w-[30%] lg:w-full">
                             <Link to={ROUTER.BEAUTYBLOG}>
-                                <div className="design-scale-wrp absolute h-full">
+                            <div className="design-scale-wrp absolute h-full hidden lg:block">
                                     <img
                                         className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/mydes2.png"
                                         alt="logo"
@@ -181,7 +181,7 @@ const Designs = () => {
                         <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">03</div>
                             <img
-                                className="md:w-[50%] block lg:hidden" src="./images/design/mydes1.png"
+                                className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/mydes1.png"
                                 alt="logo"
                                 loading="lazy"
                             />
@@ -198,9 +198,9 @@ const Designs = () => {
                             </div>
                         </div>
 
-                        <div className="ld:w-full md:flex flex-row justify-end relative w-[30%]">
+                        <div className="md:flex flex-row justify-end relative w-[30%] lg:w-full">
                             <Link to={ROUTER.CAKE}>
-                                <div className="design-scale-wrp absolute h-full">
+                                <div className="design-scale-wrp absolute h-full hidden lg:block">
                                     <img
                                         className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/mydes1.png"
                                         alt="logo"
@@ -224,7 +224,7 @@ const Designs = () => {
                         <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">04</div>
                             <img
-                                className="block lg:hidden md:w-[50%]" src="./images/design/des-1.png"
+                                className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/des-1.png"
                                 alt="logo"
                                 loading="lazy"
                             />
@@ -242,9 +242,9 @@ const Designs = () => {
 
                         </div>
 
-                        <div className="w-[30%] lg:w-full md:flex flex-row justify-end relative">
+                        <div className="md:flex flex-row justify-end relative w-[30%] lg:w-full">
                             <Link to={ROUTER.ALIO}>
-                                <div className="design-scale-wrp absolute h-full">
+                            <div className="design-scale-wrp absolute h-full hidden lg:block">
                                     <img
                                         className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
                                         alt="logo"
@@ -268,7 +268,7 @@ const Designs = () => {
                         <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
                             <div className="heading_3 cursor-text-wrp hidden lg:block">05</div>
                             <img
-                                className="block lg:hidden md:w-[50%]" src="./images/design/mydes3.png"
+                               className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/mydes3.png"
                                 alt="logo"
                                 loading="lazy"
                             />
@@ -286,9 +286,9 @@ const Designs = () => {
 
                         </div>
 
-                        <div className="w-[30%] lg:w-full md:flex flex-row justify-end relative">
+                        <div className="md:flex flex-row justify-end relative w-[30%] lg:w-full">
                             <Link to={ROUTER.FASHION}>
-                                <div className="design-scale-wrp absolute h-full">
+                                <div className="design-scale-wrp absolute h-full hidden lg:block">
                                     <img
                                         className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/mydes3.png"
                                         alt="logo"
