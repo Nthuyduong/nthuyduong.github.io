@@ -41,7 +41,6 @@
   padding: 20px;
 }
 .design-banner {
-  height: 50vh;
   position: relative;
 }
 .design-banner::after {
@@ -56,10 +55,9 @@
   background-size: cover;
   background-position: center bottom;
 }
-
 @media (max-width: 768px) {
   .design-banner {
-    height: 80vh;
+    height: 100vh;
     .design-banner-bg {
       height: 100%;
       width: auto;
@@ -176,13 +174,10 @@
     }
   }
 }
-.design-title {
-  font-size: clamp(70px, 5vw, 120px);
-}
 
 .design-scale-out:hover{
   .design-scale-img{
-    transform: scale(1.2);
+    transform: scale(3);
   }
 }
 .design-scale-wrp {
@@ -195,16 +190,16 @@
   transform: scale(0);
   transition: all 0.4s ease-out;
 }
-.ellip {
-  height: 100px;
-  width: 220px;
-  border-radius: 50%;
-  transform: rotate(-20deg);
-  border: 5px solid;
-  .text-ellipse{
-    transform: rotate(20deg);
-    left: 30%;
-    top: 30%;
-  }
-}
+// .ellip {
+//   height: 100px;
+//   width: 220px;
+//   border-radius: 50%;
+//   transform: rotate(-20deg);
+//   border: 5px solid;
+//   .text-ellipse{
+//     transform: rotate(20deg);
+//     left: 30%;
+//     top: 30%;
+//   }
+// }
 

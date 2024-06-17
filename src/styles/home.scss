@@ -165,14 +165,22 @@
   }
 
 }
-.my-project{
-  img{
-    filter: grayscale(100%);
+// .my-project{
+//   img{
+//     filter: grayscale(100%);
+//     transition: all 0.5s ease;
+//   }
+//   img:hover{
+//     filter: grayscale(0);
+//   }
+// }
+
+.project-img{
+  filter: grayscale(100%);
     transition: all 0.5s ease;
-  }
-  img:hover{
-    filter: grayscale(0);
-  }
+}
+.project-img:hover{
+  filter: grayscale(0);
 }
 
 @media only screen and (max-width: 1920px){

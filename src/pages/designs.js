@@ -100,7 +100,7 @@ const Designs = () => {
                                 alt="logo"
                                 loading="lazy"
                             />
-                            <div>
+                            <div className="sm:pt-0 pt-4">
                                 <div className="flex">
                                     <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
                                     <div className="cursor-text-wrp body_text">Apr 2024</div>
@@ -143,7 +143,7 @@ const Designs = () => {
                                 alt="logo"
                                 loading="lazy"
                             />
-                            <div>
+                            <div className="sm:pt-0 pt-4">
                                 <div className="flex">
                                     <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
                                     <div className="cursor-text-wrp body_text">Apr 2024</div>
@@ -181,11 +181,11 @@ const Designs = () => {
                         <div className="md:flex flex-row gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">03</div>
                             <img
-                                className="w-[50%] block lg:hidden" src="./images/design/mydes1.png"
+                                className="md:w-[50%] block lg:hidden" src="./images/design/mydes1.png"
                                 alt="logo"
                                 loading="lazy"
                             />
-                            <div>
+                            <div className="sm:pt-0 pt-4">
                                 <div className="flex">
                                     <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
                                     <div className="cursor-text-wrp body_text">Apr 2024</div>
@@ -224,11 +224,11 @@ const Designs = () => {
                         <div className="md:flex flex-row gap-6 w-full py-5">
                             <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">04</div>
                             <img
-                                className="block lg:hidden w-[50%]" src="./images/design/des-1.png"
+                                className="block lg:hidden md:w-[50%]" src="./images/design/des-1.png"
                                 alt="logo"
                                 loading="lazy"
                             />
-                            <div>
+                            <div className="sm:pt-0 pt-4">
                                 <div className="flex">
                                     <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
                                     <div className="cursor-text-wrp body_text">Apr 2024</div>
@@ -268,11 +268,11 @@ const Designs = () => {
                         <div className="md:flex flex-row gap-6 w-full py-5">
                             <div className="heading_3 cursor-text-wrp hidden lg:block">05</div>
                             <img
-                                className="block lg:hidden w-[50%]" src="./images/design/mydes3.png"
+                                className="block lg:hidden md:w-[50%]" src="./images/design/mydes3.png"
                                 alt="logo"
                                 loading="lazy"
                             />
-                            <div>
+                            <div className="sm:pt-0 pt-4">
                                 <div className="flex">
                                     <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
                                     <div className="cursor-text-wrp body_text">Apr 2024</div>
