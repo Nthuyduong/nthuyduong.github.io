@@ -90,7 +90,7 @@ const Designs = () => {
             <div></div>
             {/* All project here */}
 
-            <div className="section md:py-7 py-4">
+            <div className="section md:py-5 lg:py-7 py-4">
                 <div className="border-b border-solid border-ccc md:pb-0 pb-5">
                     <div className="design-scale-out md:flex flex-row gap-6">
                         <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
@@ -113,7 +113,7 @@ const Designs = () => {
                             </div>
 
                         </div>
-                        <div className="md:flex flex-row justify-end relative w-[30%] lg:w-full">
+                        <div className="md:flex flex-row justify-end relative w-[40%] sm:w-[25%] lg:w-full">
                             <Link to={ROUTER.AGURI}>
                                 <div className="design-scale-wrp absolute h-full hidden lg:block">
                                     <img
@@ -155,7 +155,7 @@ const Designs = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="md:flex flex-row justify-end relative w-[30%] lg:w-full">
+                        <div className="md:flex flex-row justify-end relative w-[40%] sm:w-[25%] lg:w-full">
                             <Link to={ROUTER.BEAUTYBLOG}>
                             <div className="design-scale-wrp absolute h-full hidden lg:block">
                                     <img
@@ -198,7 +198,7 @@ const Designs = () => {
                             </div>
                         </div>
 
-                        <div className="md:flex flex-row justify-end relative w-[30%] lg:w-full">
+                        <div className="md:flex flex-row justify-end relative w-[40%] sm:w-[25%] lg:w-full">
                             <Link to={ROUTER.CAKE}>
                                 <div className="design-scale-wrp absolute h-full hidden lg:block">
                                     <img
@@ -242,7 +242,7 @@ const Designs = () => {
 
                         </div>
 
-                        <div className="md:flex flex-row justify-end relative w-[30%] lg:w-full">
+                        <div className="md:flex flex-row justify-end relative w-[40%] sm:w-[25%] lg:w-full">
                             <Link to={ROUTER.ALIO}>
                             <div className="design-scale-wrp absolute h-full hidden lg:block">
                                     <img
@@ -286,7 +286,7 @@ const Designs = () => {
 
                         </div>
 
-                        <div className="md:flex flex-row justify-end relative w-[30%] lg:w-full">
+                        <div className="md:flex flex-row justify-end relative w-[40%] sm:w-[25%] lg:w-full">
                             <Link to={ROUTER.FASHION}>
                                 <div className="design-scale-wrp absolute h-full hidden lg:block">
                                     <img
