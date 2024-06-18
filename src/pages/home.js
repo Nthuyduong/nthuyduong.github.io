@@ -120,7 +120,7 @@ const Home = () => {
           <div className="md:grid md:grid-cols-12">
             <div className="col-span-8 md:flex">
               <img className="h-[90px] md:block hidden main-logo mr-4" src="./images/home/logo-icon.svg" alt="logo" loading="lazy" />
-              <div className="info-content medium_text text-center md:text-left cursor-text-wrp">
+              <div className="info-content heading_6 text-center md:text-left cursor-text-wrp">
                 Hello, My name is
                 <div className="ntd-name md:mt-3 mt-2 text-center md:text-left heading_3 cursor-text-wrp mt-1 md:mt-0">
                   Nguyen Thuy Duong
@@ -144,7 +144,7 @@ const Home = () => {
           <div className="flex justify-center mt-5 z-20 md:hidden">
             <img className="h-[200px] md:h-[320px] img-smile" src="./images/bannerhome2.png" alt="smile" loading="lazy" />
           </div>
-          <div className="flex justify-center mt-2 md:mt-5 animate slideInUp animate--delay-fast">
+          <div className="flex justify-center mt-2 md:mt-6 animate slideInUp animate--delay-fast">
             <img className="h-[80px] md:h-[130px] img-smile" src="./images/bannertext.svg" alt="smile" loading="lazy" />
           </div>
         </div>
