@@ -117,7 +117,7 @@ const Designs = () => {
                             <Link to={ROUTER.AGURI}>
                                 <div className="design-scale-wrp absolute h-full hidden lg:block">
                                     <img
-                                        className="design-scale-img w-full h-full w-auto object-cover" src="./images/design/mydes4.png"
+                                        className="design-scale-img h-full w-auto object-cover" src="./images/design/mydes4.png"
                                         alt="logo"
                                         loading="lazy"
                                     />
@@ -159,7 +159,7 @@ const Designs = () => {
                             <Link to={ROUTER.BEAUTYBLOG}>
                             <div className="design-scale-wrp absolute h-full hidden lg:block">
                                     <img
-                                        className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/mydes2.png"
+                                        className="design-scale-img w-auto h-full object-cover" src="./images/design/mydes2.png"
                                         alt="logo"
                                         loading="lazy"
                                     />
@@ -202,7 +202,7 @@ const Designs = () => {
                             <Link to={ROUTER.CAKE}>
                                 <div className="design-scale-wrp absolute h-full hidden lg:block">
                                     <img
-                                        className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/mydes1.png"
+                                        className="design-scale-img w-auto h-full object-cover" src="./images/design/mydes1.png"
                                         alt="logo"
                                         loading="lazy"
                                     />
@@ -246,7 +246,7 @@ const Designs = () => {
                             <Link to={ROUTER.ALIO}>
                             <div className="design-scale-wrp absolute h-full hidden lg:block">
                                     <img
-                                        className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/des-1.png"
+                                        className="design-scale-img w-auto h-full object-cover" src="./images/design/des-1.png"
                                         alt="logo"
                                         loading="lazy"
                                     />
@@ -290,7 +290,7 @@ const Designs = () => {
                             <Link to={ROUTER.FASHION}>
                                 <div className="design-scale-wrp absolute h-full hidden lg:block">
                                     <img
-                                        className="design-scale-img w-full w-auto h-full object-cover" src="./images/design/mydes3.png"
+                                        className="design-scale-img w-auto h-full object-cover" src="./images/design/mydes3.png"
                                         alt="logo"
                                         loading="lazy"
                                     />
