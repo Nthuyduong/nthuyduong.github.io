@@ -11,7 +11,7 @@ const About = () => {
     },
     {
       title: 'Tech Stack',
-      skills: ['HTML/SCSS', 'Bootstrap' ,'Tailwind', 'JavaScript', 'ReactJS', 'Angular']
+      skills: ['HTML/SCSS', 'Bootstrap', 'Tailwind', 'JavaScript', 'ReactJS', 'Angular']
     }
   ]
   const [iconVisible, setIconVisible] = useState(true);
@@ -55,7 +55,7 @@ const About = () => {
   const ref = useRef();
 
   const handleScrollToAbout = () => {
-    if(ref.current){
+    if (ref.current) {
       ref.current.scrollIntoView({ behavior: 'smooth' });
     }
   }
@@ -283,8 +283,8 @@ const About = () => {
             ACADEMIC PROFILE
           </div>
         </div>
-        <div className="section-full timeline page-element pb-6 md:pb-9">
-          <div className="m-w">
+        <div className="timeline page-element pb-6 md:pb-9">
+          <div className="section">
             <div className="flex timeline-wrp cursor-text-wrp">
               <div className="w-full flex flex-col gap-3 timeline-card">
                 <div className="timeline-top small_text cursor-text-wrp">
@@ -341,7 +341,7 @@ const About = () => {
       </div>
 
       <div className="md:my-7 my-4 section-full core-value px-0">
-        <div className="m-w">
+        <div className="section">
           <div className="heading_2 md:mb-6 mb-5 cursor-text-wrp core-value-title animate slideInUp" >
             MY CORE VALUES
           </div>
