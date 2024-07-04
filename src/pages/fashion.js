@@ -117,7 +117,7 @@ const Fashion = () => {
                             autoDuration: 1000,
                             gap: 30,
                             gapMobile: 10,
-                            process: true,
+                            process: false,
                             paginate: false,
                             navigator: false,
                             active: 0
