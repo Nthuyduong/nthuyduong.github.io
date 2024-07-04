@@ -9,8 +9,8 @@ const Footer = () => {
 
   const location = useLocation();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);}, [location.pathname]);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);}, [location.pathname]);
 
     return (
       <div className="py-[30px] md:pt-[40px] md:pb-[80px] border-t border-solid border-[#ccc]">
