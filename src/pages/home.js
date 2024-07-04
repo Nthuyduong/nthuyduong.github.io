@@ -491,7 +491,7 @@ const Home = () => {
               </div>
               <div className="project-even">
                 <div className="heading_4 mb-2 cursor-text-wrp">02.</div>
-                <Link to={ROUTER.AGURI}>
+                <Link to={ROUTER.BEAUTYBLOG}>
                   <img
                     className="w-full project-img"
                     src="./images/design/beautymain.png"
@@ -501,12 +501,12 @@ const Home = () => {
                 </Link>
 
                 <div className="medium_text mt-3 cursor-text-wrp">
-                  <Link to={ROUTER.AGURI}>
+                  <Link to={ROUTER.BEAUTYBLOG}>
                     Beauty Blog
                   </Link>
                 </div>
                 <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
-                  Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
+                Welcome to my Beauty Blog! Find skincare tips, makeup tutorials, and the latest beauty trends for radiant skin.
                 </div>
               </div>
               <div className="project-odd">
@@ -521,7 +521,7 @@ const Home = () => {
                   Indulge in luxury and style with our timeless fashion brand, redefining elegance and sophistication.
                 </div>
               </div>
-              
+
               <div className="project-even">
                 <div className="heading_4 mb-2 cursor-text-wrp">04.</div>
 

@@ -208,6 +208,24 @@ const BeautyBlog = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="more-1">
+                            <div className="img-des">
+                                <Link to={ROUTER.BEAUTYBLOG}>
+                                    <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy" />
+                                </Link>
+                                <div className="d-flex title-pj">
+                                    <div className="medium_text pj_name mt-3">
+                                        <Link to={ROUTER.BEAUTYBLOG}>
+                                        Beauty Blog
+                                        </Link>
+                                    </div>
+                                    {/* <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} /> */}
+                                </div>
+                                <div className="w-100 body_text pj_intro text-color-muted mt-4">
+                                Welcome to my Beauty Blog! Find skincare tips, makeup tutorials, and the latest beauty trends for radiant skin.
+                                </div>
+                            </div>
+                        </div>
                     </Slider>
                 </div>
             </div>
