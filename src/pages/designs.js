@@ -37,6 +37,14 @@ const Designs = () => {
         wpr.style.setProperty('--image-y', `${y}%`);
     }
 
+    // MY TABS
+    const tabItems = ['UX/UI DESIGN (6)', 'E - COMMERCE (0)', 'GRAPHIC DESIGN (0)', 'PERSONAL ART (0)'];
+    const [activeTab, setActiveTab] = useState(tabItems[0]);
+
+    const handleActive = (item) => {
+        setActiveTab(item);
+    };
+
     return (
         <div className="project-page">
             <div className="design-banner">
@@ -87,10 +95,269 @@ const Designs = () => {
                 </div>
             </div> */}
 
-            <div></div>
+            {/* MY TABS */}
+            <div className="section my-tabs mt-5 lg:mt-6 lg:flex justify-center">
+                <div className="w-full">
+                    <ul className="tab-list w-full lg:flex">
+                        {tabItems.map((item) => (
+                            <li
+                                key={item}
+                                className={`lg:mb-0 mb-3 w-full text-center tab-list-item ${activeTab === item ? 'tabactive' : ''}`}
+                                onClick={() => handleActive(item)}
+                            >
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
+                    <div className="tab-content lg:py-8 py-5">
+                        {activeTab === 'UX/UI DESIGN (6)' &&
+                            <div>
+                                <div className="border-b border-solid border-ccc md:pb-0 pb-5">
+                                    <div className="design-scale-out md:flex flex-row gap-6">
+                                        <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
+                                            <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">01</div>
+                                            <img
+                                                className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/des-1.png"
+                                                alt="logo"
+                                                loading="lazy"
+                                            />
+                                            <div className="sm:pt-0 pt-4">
+                                                <div className="flex">
+                                                    <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
+                                                    <div className="cursor-text-wrp body_text">Apr 2024</div>
+                                                </div>
+                                                <div>
+                                                    <Link to={ROUTER.AGURI}>
+                                                        <div className="heading_3 cursor-text-wrp">Aguri Jewelry Website</div>
+                                                    </Link>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div className="md:flex flex-row justify-end relative w-[40%] sm:w-[25%] lg:w-full">
+                                            <Link to={ROUTER.AGURI}>
+                                                <div className="design-scale-wrp absolute h-full hidden lg:block">
+                                                    <img
+                                                        className="design-scale-img h-full w-auto object-cover" src="./images/design/mydes4.png"
+                                                        alt="logo"
+                                                        loading="lazy"
+                                                    />
+                                                </div>
+                                            </Link>
+                                            <Link className="py-5" to={ROUTER.AGURI}>
+                                                <div className="flex items-center">
+                                                    <div className="mr-2">Explore now</div>
+                                                    <div>
+                                                        <img className="" src="./images/icons/arrow.svg" alt="smile" loading="lazy" />
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="border-b border-solid border-ccc md:pb-0 pb-5">
+                                    <div className="design-scale-out md:flex flex-row gap-6">
+                                        <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
+                                            <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">02</div>
+                                            <img
+                                                className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/mydes2.png"
+                                                alt="logo"
+                                                loading="lazy"
+                                            />
+                                            <div className="sm:pt-0 pt-4">
+                                                <div className="flex">
+                                                    <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
+                                                    <div className="cursor-text-wrp body_text">Apr 2024</div>
+                                                </div>
+                                                <div>
+                                                    <Link to={ROUTER.BEAUTYBLOG}>
+                                                        <div className="heading_3 cursor-text-wrp">Beauty Blog</div>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="md:flex flex-row justify-end relative w-[40%] sm:w-[25%] lg:w-full">
+                                            <Link to={ROUTER.BEAUTYBLOG}>
+                                                <div className="design-scale-wrp absolute h-full hidden lg:block">
+                                                    <img
+                                                        className="design-scale-img w-auto h-full object-cover" src="./images/design/mydes2.png"
+                                                        alt="logo"
+                                                        loading="lazy"
+                                                    />
+                                                </div>
+                                            </Link>
+                                            <Link className="py-5" to={ROUTER.AGURI}>
+                                                <div className="flex items-center">
+                                                    <div className="mr-2">Explore now</div>
+                                                    <div>
+                                                        <img className="" src="./images/icons/arrow.svg" alt="smile" loading="lazy" />
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="border-b border-solid border-ccc md:pb-0 pb-5">
+                                    <div className="design-scale-out md:flex flex-row gap-6">
+                                        <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
+                                            <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">03</div>
+                                            <img
+                                                className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/mydes1.png"
+                                                alt="logo"
+                                                loading="lazy"
+                                            />
+                                            <div className="sm:pt-0 pt-4">
+                                                <div className="flex">
+                                                    <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
+                                                    <div className="cursor-text-wrp body_text">Apr 2024</div>
+                                                </div>
+                                                <div>
+                                                    <Link to={ROUTER.CAKE}>
+                                                        <div className="heading_3 cursor-text-wrp">Season Cake Blog</div>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="md:flex flex-row justify-end relative w-[40%] sm:w-[25%] lg:w-full">
+                                            <Link to={ROUTER.CAKE}>
+                                                <div className="design-scale-wrp absolute h-full hidden lg:block">
+                                                    <img
+                                                        className="design-scale-img w-auto h-full object-cover" src="./images/design/mydes1.png"
+                                                        alt="logo"
+                                                        loading="lazy"
+                                                    />
+                                                </div>
+                                            </Link>
+                                            <Link className="py-5" to={ROUTER.AGURI}>
+                                                <div className="flex items-center">
+                                                    <div className="mr-2">Explore now</div>
+                                                    <div>
+                                                        <img className="" src="./images/icons/arrow.svg" alt="smile" loading="lazy" />
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="border-b border-solid border-ccc md:pb-0 pb-5">
+                                    <div className="design-scale-out md:flex flex-row gap-6">
+                                        <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
+                                            <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">04</div>
+                                            <img
+                                                className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/des-1.png"
+                                                alt="logo"
+                                                loading="lazy"
+                                            />
+                                            <div className="sm:pt-0 pt-4">
+                                                <div className="flex">
+                                                    <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
+                                                    <div className="cursor-text-wrp body_text">Apr 2024</div>
+                                                </div>
+                                                <div>
+                                                    <Link to={ROUTER.ALIO}>
+                                                        <div className="heading_3 cursor-text-wrp">Yoga App & Website</div>
+                                                    </Link>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div className="md:flex flex-row justify-end relative w-[40%] sm:w-[25%] lg:w-full">
+                                            <Link to={ROUTER.ALIO}>
+                                                <div className="design-scale-wrp absolute h-full hidden lg:block">
+                                                    <img
+                                                        className="design-scale-img w-auto h-full object-cover" src="./images/design/des-1.png"
+                                                        alt="logo"
+                                                        loading="lazy"
+                                                    />
+                                                </div>
+                                            </Link>
+                                            <Link className="py-5" to={ROUTER.AGURI}>
+                                                <div className="flex items-center">
+                                                    <div className="mr-2">Explore now</div>
+                                                    <div>
+                                                        <img className="" src="./images/icons/arrow.svg" alt="smile" loading="lazy" />
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="md:pb-0 pb-5">
+                                    <div className="design-scale-out md:flex flex-row gap-6">
+                                        <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
+                                            <div className="heading_3 cursor-text-wrp hidden lg:block">05</div>
+                                            <img
+                                                className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/mydes3.png"
+                                                alt="logo"
+                                                loading="lazy"
+                                            />
+                                            <div className="sm:pt-0 pt-4">
+                                                <div className="flex">
+                                                    <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
+                                                    <div className="cursor-text-wrp body_text">Apr 2024</div>
+                                                </div>
+                                                <div>
+                                                    <Link to={ROUTER.FASHION}>
+                                                        <div className="heading_3 mb-3 cursor-text-wrp">Fashion Brand App</div>
+                                                    </Link>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div className="md:flex flex-row justify-end relative w-[40%] sm:w-[25%] lg:w-full">
+                                            <Link to={ROUTER.FASHION}>
+                                                <div className="design-scale-wrp absolute h-full hidden lg:block">
+                                                    <img
+                                                        className="design-scale-img w-auto h-full object-cover" src="./images/design/mydes3.png"
+                                                        alt="logo"
+                                                        loading="lazy"
+                                                    />
+                                                </div>
+                                            </Link>
+                                            <Link className="py-5" to={ROUTER.AGURI}>
+                                                <div className="flex items-center">
+                                                    <div className="mr-2">Explore now</div>
+                                                    <div>
+                                                        <img className="" src="./images/icons/arrow.svg" alt="smile" loading="lazy" />
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        }
+                        {activeTab === 'E - COMMERCE (0)' &&
+                            <div className="text-center">
+                                <div className="mb-2 heading_3">Come Back Soon</div>
+                                <div>I'm getting ready to upload my designs</div>
+                            </div>
+                        }
+                        {activeTab === 'GRAPHIC DESIGN (0)' && <div>
+                            <div className="text-center">
+                                <div className="mb-2 heading_3">Come Back Soon</div>
+                                <div>I'm getting ready to upload my designs</div>
+                            </div>
+                        </div>
+                        }
+                        {activeTab === 'PERSONAL ART (0)' && <div>
+                            <div className="text-center">
+                                <div className="heading_3 mb-2">Come Back Soon</div>
+                                <div>I'm getting ready to upload my designs</div>
+                            </div>
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+
             {/* All project here */}
 
-            <div className="section md:py-5 lg:py-8 py-4">
+            {/* <div className="section md:py-5 lg:py-8 py-4">
                 <div className="border-b border-solid border-ccc md:pb-0 pb-5">
                     <div className="design-scale-out md:flex flex-row gap-6">
                         <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
@@ -157,7 +424,7 @@ const Designs = () => {
                         </div>
                         <div className="md:flex flex-row justify-end relative w-[40%] sm:w-[25%] lg:w-full">
                             <Link to={ROUTER.BEAUTYBLOG}>
-                            <div className="design-scale-wrp absolute h-full hidden lg:block">
+                                <div className="design-scale-wrp absolute h-full hidden lg:block">
                                     <img
                                         className="design-scale-img w-auto h-full object-cover" src="./images/design/mydes2.png"
                                         alt="logo"
@@ -244,7 +511,7 @@ const Designs = () => {
 
                         <div className="md:flex flex-row justify-end relative w-[40%] sm:w-[25%] lg:w-full">
                             <Link to={ROUTER.ALIO}>
-                            <div className="design-scale-wrp absolute h-full hidden lg:block">
+                                <div className="design-scale-wrp absolute h-full hidden lg:block">
                                     <img
                                         className="design-scale-img w-auto h-full object-cover" src="./images/design/des-1.png"
                                         alt="logo"
@@ -268,7 +535,7 @@ const Designs = () => {
                         <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
                             <div className="heading_3 cursor-text-wrp hidden lg:block">05</div>
                             <img
-                               className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/mydes3.png"
+                                className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/mydes3.png"
                                 alt="logo"
                                 loading="lazy"
                             />
@@ -307,7 +574,7 @@ const Designs = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* <div className="section">
                 <div className="">
