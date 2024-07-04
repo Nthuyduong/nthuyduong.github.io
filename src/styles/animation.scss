@@ -252,7 +252,7 @@ button.learn-more {
   background: transparent;
   padding: 0;
   &.learn-more {
-    width: 13.2rem;
+    width: 14.5rem;
     height: auto;
     .circle {
       @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
@@ -298,7 +298,7 @@ button.learn-more {
       right: 0;
       bottom: 0;
       padding: 0.75rem 0;
-      margin: 0 0 0 1.8rem;
+      margin: 0 0 0 2.5rem;
       color: $black;
       text-align: center;
       text-transform: uppercase;

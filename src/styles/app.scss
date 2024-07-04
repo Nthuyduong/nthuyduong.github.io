@@ -8,9 +8,9 @@ $heading_3: 38px;
 $heading_4: 32px;
 $heading_5: 28px;
 $heading_6: 20px;
-$medium_text: 16px;
-$body_text: 14px;
-$small_text: 13px;
+$medium_text: 18px;
+$body_text: 16px;
+$small_text: 14px;
 
 //IMPORT
 @import "layout";
@@ -801,11 +801,11 @@ body:has(.header-mobile-open) {
 // PROJECT PAGE
 // automatic change color in each 5s
 @keyframes colorChange {
-  0% { background-color: #EBF7F5; }
-  25% { background-color: #FADFF7; }
-  50% { background-color: #E2E9F0; }
-  75% { background-color: #FEEDC9; }
-  100% { background-color: #EBF7F5; }
+  0% { background-color: #F5FBFA; }
+  25% { background-color: #FDEFFB; }
+  50% { background-color: #F1F4F7; }
+  75% { background-color: #FFF6E4; }
+  100% { background-color: #F5FBFA; }
 }
 
 .colorDiv {

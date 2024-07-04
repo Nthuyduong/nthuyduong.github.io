@@ -90,7 +90,7 @@ const Designs = () => {
             <div></div>
             {/* All project here */}
 
-            <div className="section md:py-5 lg:py-7 py-4">
+            <div className="section md:py-5 lg:py-8 py-4">
                 <div className="border-b border-solid border-ccc md:pb-0 pb-5">
                     <div className="design-scale-out md:flex flex-row gap-6">
                         <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
@@ -447,13 +447,14 @@ const Designs = () => {
             </div> */}
 
             {/* Contact section */}
-            {/* <div class="colorDiv border-y border-solid border-ccc py-7 w-full md:mt-7 mt-5 ">
-                <div>
+            <div class="colorDiv py-7 w-full justify-center flex">
+                <div className="lg:w-[50%]">
 
-                    <div className="text-[60px] leading-[130%]">Unleashing The Potential Of Your Brand</div>
+                    <div className="text-[60px] leading-[130%] mb-4">Unleashing My Potential</div>
+                    <div class="body_text">If you are a recruiter or hiring manager, I would love to connect with you! Please feel free to reach out with any questions or potential opportunities.</div>
                     <div className="flex justify-center w-full">
                         <div className="mt-6 bg-black py-2 px-6 rounded-[60px] text-white">
-                            <Link className="scroll-text" data-replace="CONTACT WITH ME">
+                            <Link to={ROUTER.CONTACT} className="scroll-text" data-replace="CONTACT WITH ME">
                                 <span>
                                     CONTACT WITH ME
                                 </span>
@@ -461,7 +462,7 @@ const Designs = () => {
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
 
         </div>
     )

@@ -130,8 +130,7 @@ const Home = () => {
             {/* <div className="sm:hidden showcase-img"></div> */}
             <div className="col-span-4 body_text text-right border-b border-[#ccc] sm:border-none">
               <div className="mt-3 md:mt-0 md:mb-3 mb-5 cursor-text-wrp text-center sm:text-left">
-                “Hello and welcome to my Portfolio. I’m a Junior UX/UI Designer. I'm creative, open-minded and a fast learner. I have a strong desire to know, to understand, to grow,
-                to create, to transform, to improve and to share. My dream is to improve people's lives through my designs”
+                “I am a creative, open-minded, and fast learner with a strong desire to know, understand, grow, create, transform, improve, and share. My ultimate dream is to enhance people's lives through my designs.”
               </div>
               {/* <div className="text-right hidden sm:block">
                 <a className="" href="https://www.behance.net/gallery/174317119/Thuy-Duongs-Portfolio/modules/984307513" target="_blank">SEE PORTFOLIO ON BEHANCE?</a>
@@ -436,14 +435,13 @@ const Home = () => {
                     <div></div>
                   </div>
                 </div>
-                <div className="body_text text-right mt-3 cursor-text-wrp mb-5">
-                  "Step into the world of a passionate UI designer's portfolio. Witness the evolution of my skills as I
-                  create intuitive interfaces and explore the realm of captivating design."
+                <div className="body_text text-right mt-4 cursor-text-wrp mb-5">
+                  "Explore a passionate UI designer's evolving portfolio showcasing intuitive interfaces and captivating design."
                 </div>
                 {/* animation button */}
                 <div className="md:flex justify-end">
                   <div className="">
-                    <Link className="text-link heading_6">
+                    <Link to={ROUTER.DESIGNS} className="text-link heading_6">
                       <span>
                         VIEW ALL PROJECTS
                       </span>
