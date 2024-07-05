@@ -113,14 +113,14 @@ const Designs = () => {
                         ))}
                     </ul>
                     <div className="tab-content lg:py-8 py-5">
-                        {activeTab === 'UX/UI DESIGN (6)' &&
+                        {/* {activeTab === 'UX/UI DESIGN (6)' && */}
                             <div className={`content-tab ${activeTab === 'UX/UI DESIGN (6)' ? 'content-active' : ''}`}>
                                 <div className="border-b border-solid border-ccc md:pb-0 pb-5">
                                     <div className="design-scale-out md:flex flex-row gap-6">
                                         <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
                                             <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">01</div>
                                             <img
-                                                className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/des-1.png"
+                                                className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/des4.png"
                                                 alt="logo"
                                                 loading="lazy"
                                             />
@@ -248,7 +248,7 @@ const Designs = () => {
                                         <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
                                             <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">04</div>
                                             <img
-                                                className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/des-1.png"
+                                                className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/mydes5.png"
                                                 alt="logo"
                                                 loading="lazy"
                                             />
@@ -270,7 +270,7 @@ const Designs = () => {
                                             <Link to={ROUTER.ALIO}>
                                                 <div className="design-scale-wrp absolute h-full hidden lg:block">
                                                     <img
-                                                        className="design-scale-img w-auto h-full object-cover" src="./images/design/des-1.png"
+                                                        className="design-scale-img w-auto h-full object-cover" src="./images/design/mydes5.png"
                                                         alt="logo"
                                                         loading="lazy"
                                                     />
@@ -333,31 +333,31 @@ const Designs = () => {
                                 </div>
 
                             </div>
-                        }
-                        {activeTab === 'E - COMMERCE (0)' &&
+                        {/* } */}
+                        {/* {activeTab === 'E - COMMERCE (0)' && */}
                             <div className={`content-tab ${activeTab === 'E - COMMERCE (0)' ? 'content-active' : ''}`}>
                                 <div className="text-center">
                                     <div className="mb-2 heading_3">Come Back Soon</div>
                                     <div>I'm getting ready to upload my designs</div>
                                 </div>
                             </div>
-                        }
-                        {activeTab === 'GRAPHIC DESIGN (0)' &&
+                        {/* } */}
+                        {/* {activeTab === 'GRAPHIC DESIGN (0)' && */}
                             <div className={`content-tab ${activeTab === 'GRAPHIC DESIGN (0)' ? 'content-active' : ''}`}>
                                 <div className="text-center">
                                     <div className="mb-2 heading_3">Come Back Soon</div>
                                     <div>I'm getting ready to upload my designs</div>
                                 </div>
                             </div>
-                        }
-                        {activeTab === 'PERSONAL ART (0)' &&
+                        {/* } */}
+                        {/* {activeTab === 'PERSONAL ART (0)' && */}
                             <div className={`content-tab ${activeTab === 'PERSONAL ART (0)' ? 'content-active' : ''}`}>
                                 <div className="text-center">
                                     <div className="heading_3 mb-2">Come Back Soon</div>
                                     <div>I'm getting ready to upload my designs</div>
                                 </div>
                             </div>
-                        }
+                        {/* } */}
                     </div>
                 </div>
             </div>

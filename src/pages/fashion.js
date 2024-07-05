@@ -109,7 +109,7 @@ const Fashion = () => {
                 <div className="container-fluid">
                     <Slider
                         configs={{
-                            sliderPerRow: 3,
+                            sliderPerRow: 3.25,
                             sliderPerRowMobile: 1.25,
                             allowDrag: true,
                             duration: 400,
@@ -136,7 +136,7 @@ const Fashion = () => {
                                     </div>
                                     
                                 </div>
-                                <div className="body_text pj_intro w-100 text-color-muted mt-4">
+                                <div className="w-full body_text pj_intro w-100 text-color-muted mt-4">
                                     Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
                                 </div>
                             </div>
@@ -154,7 +154,7 @@ const Fashion = () => {
                                     </div>
                                     
                                 </div>
-                                <div className="body_text pj_intro w-100 text-color-muted mt-4">
+                                <div className="w-full body_text pj_intro w-100 text-color-muted mt-4">
                                     Indulge in the delectable world of Cake Blog, where sweetness and creativity come together.
                                 </div>
                             </div>
@@ -172,8 +172,26 @@ const Fashion = () => {
                                     </div>
                                     
                                 </div>
-                                <div className="body_text pj_intro w-100 text-color-muted mt-4">
+                                <div className="w-full body_text pj_intro w-100 text-color-muted mt-4">
                                     Discover a serene oasis at our Yoga, Pilates, and Meditation website, where tranquility awaits.
+                                </div>
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="img-des">
+                                <Link to={ROUTER.BEAUTYBLOG}>
+                                    <img className="w-100" src="./images/home/more-5.png" alt="logo" loading="lazy" />
+                                </Link>
+                                <div className="d-flex title-pj">
+                                    <div className="medium_text pj_name mt-3">
+                                        <Link to={ROUTER.BEAUTYBLOG}>
+                                        Beauty Blog
+                                        </Link>
+                                    </div>
+                                    {/* <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} /> */}
+                                </div>
+                                <div className="w-full body_text pj_intro text-color-muted mt-4">
+                                Welcome to my Beauty Blog! Find skincare tips, makeup tutorials, and the latest beauty trends for radiant skin.
                                 </div>
                             </div>
                         </div>

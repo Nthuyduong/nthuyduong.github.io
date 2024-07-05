@@ -457,7 +457,7 @@ const Home = () => {
           <div className="my-project">
             <Slider
               configs={{
-                sliderPerRow: 4,
+                sliderPerRow: 4.25,
                 sliderPerRowMobile: 1.25,
                 allowDrag: true,
                 duration: 400,
@@ -546,7 +546,7 @@ const Home = () => {
               <div className="project-even">
                 <div className="heading_4 mb-2 cursor-text-wrp">05.</div>
                 <Link to={ROUTER.ALIO}>
-                  <img className="w-full project-img" src="./images/design/des-4.png" alt="logo" loading="lazy" />
+                  <img className="w-full project-img" src="./images/design/aliomain.png" alt="logo" loading="lazy" />
                 </Link>
                 <div className="medium_text mt-3 cursor-text-wrp">
                   <Link to={ROUTER.ALIO}>

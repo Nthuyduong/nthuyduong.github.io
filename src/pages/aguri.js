@@ -282,7 +282,7 @@ const Aguri = () => {
                 <div className="container-fluid">
                     <Slider
                         configs={{
-                            sliderPerRow: 3,
+                            sliderPerRow: 3.25,
                             sliderPerRowMobile: 1.25,
                             allowDrag: true,
                             duration: 400,
@@ -310,7 +310,7 @@ const Aguri = () => {
                                     </div>
                                     
                                 </div>
-                                <div className="w-100 body_text mt-4 pj_intro text-color-muted cursor-text-wrp">
+                                <div className="w-full body_text mt-4 pj_intro text-color-muted cursor-text-wrp">
                                     Indulge in the delectable world of Cake Blog, where sweetness and creativity
                                     come together.
                                 </div>
@@ -328,7 +328,7 @@ const Aguri = () => {
                                     </div>
                                     
                                 </div>
-                                <div className="w-100 body_text pj_intro mt-4 text-color-muted cursor-text-wrp">
+                                <div className="w-full body_text pj_intro mt-4 text-color-muted cursor-text-wrp">
                                     Indulge in luxury and style with our timeless fashion brand, redefining elegance
                                     and sophistication.
                                 </div>
@@ -348,9 +348,27 @@ const Aguri = () => {
                                     </div>
                                     
                                 </div>
-                                <div className="w-100 body_text mt-4 pj_intro text-color-muted cursor-text-wrp">
+                                <div className="w-full body_text mt-4 pj_intro text-color-muted cursor-text-wrp">
                                     Discover a serene oasis at our Yoga, Pilates, and Meditation website, where
                                     tranquility awaits.
+                                </div>
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="img-des">
+                                <Link to={ROUTER.BEAUTYBLOG}>
+                                    <img className="w-100" src="./images/home/more-5.png" alt="logo" loading="lazy" />
+                                </Link>
+                                <div className="d-flex title-pj">
+                                    <div className="medium_text pj_name mt-3">
+                                        <Link to={ROUTER.BEAUTYBLOG}>
+                                        Beauty Blog
+                                        </Link>
+                                    </div>
+                                    {/* <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} /> */}
+                                </div>
+                                <div className="w-full body_text pj_intro text-color-muted mt-4">
+                                Welcome to my Beauty Blog! Find skincare tips, makeup tutorials, and the latest beauty trends for radiant skin.
                                 </div>
                             </div>
                         </div>

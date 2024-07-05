@@ -170,7 +170,7 @@ const Cake = () => {
                 <div className="container-fluid">
                     <Slider
                         configs={{
-                            sliderPerRow: 3,
+                            sliderPerRow: 3.25,
                             sliderPerRowMobile: 1.25,
                             allowDrag: true,
                             duration: 400,
@@ -178,7 +178,7 @@ const Cake = () => {
                             autoDuration: 1000,
                             gap: 30,
                             gapMobile: 10,
-                            process: true,
+                            process: false,
                             paginate: false,
                             navigator: false,
                             active: 0
@@ -197,7 +197,7 @@ const Cake = () => {
                                     </div>
                                     {/* <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} /> */}
                                 </div>
-                                <div className="w-100 body_text pj_intro text-color-muted mt-4">
+                                <div className="w-full body_text pj_intro text-color-muted mt-4">
                                     Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
                                 </div>
                             </div>
@@ -208,12 +208,12 @@ const Cake = () => {
                                     <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy" />
                                 </Link>
                                 <div className="d-flex title-pj">
-                                    <div className="medium-text pj_name mt-3">
+                                    <div className="medium_text pj_name mt-3">
                                         <Link to={ROUTER.FASHION}>Verite Fashion App</Link>
                                     </div>
 
                                 </div>
-                                <div className="w-100 body_text pj_intro text-color-muted mt-4">
+                                <div className="w-full body_text pj_intro text-color-muted mt-4">
                                     Indulge in luxury and style with our timeless fashion brand, redefining elegance and sophistication.
                                 </div>
                             </div>
@@ -229,8 +229,26 @@ const Cake = () => {
                                     </div>
 
                                 </div>
-                                <div className=" w-100 body_text pj_intro text-color-muted mt-4">
+                                <div className=" w-full body_text pj_intro text-color-muted mt-4">
                                     Discover a serene oasis at our Yoga, Pilates, and Meditation website, where tranquility awaits.
+                                </div>
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="img-des">
+                                <Link to={ROUTER.BEAUTYBLOG}>
+                                    <img className="w-100" src="./images/home/more-5.png" alt="logo" loading="lazy" />
+                                </Link>
+                                <div className="d-flex title-pj">
+                                    <div className="medium_text pj_name mt-3">
+                                        <Link to={ROUTER.BEAUTYBLOG}>
+                                        Beauty Blog
+                                        </Link>
+                                    </div>
+                                    {/* <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} /> */}
+                                </div>
+                                <div className="w-full body_text pj_intro text-color-muted mt-4">
+                                Welcome to my Beauty Blog! Find skincare tips, makeup tutorials, and the latest beauty trends for radiant skin.
                                 </div>
                             </div>
                         </div>
