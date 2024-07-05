@@ -104,7 +104,7 @@ const Designs = () => {
                                 key={item}
                                 className={`lg:mb-0 mb-3 w-full text-center tab-list-item ${activeTab === item ? 'tabactive' : ''}`}
                                 onClick={() => handleActive(item)}
-                                
+
                             >
                                 <div className="scroll-text" data-replace={item}>
                                     <span>{item}</span>
@@ -114,7 +114,7 @@ const Designs = () => {
                     </ul>
                     <div className="tab-content lg:py-8 py-5">
                         {activeTab === 'UX/UI DESIGN (6)' &&
-                            <div>
+                            <div className={`content-tab ${activeTab === 'UX/UI DESIGN (6)' ? 'content-active' : ''}`}>
                                 <div className="border-b border-solid border-ccc md:pb-0 pb-5">
                                     <div className="design-scale-out md:flex flex-row gap-6">
                                         <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
@@ -335,24 +335,28 @@ const Designs = () => {
                             </div>
                         }
                         {activeTab === 'E - COMMERCE (0)' &&
-                            <div className="text-center">
-                                <div className="mb-2 heading_3">Come Back Soon</div>
-                                <div>I'm getting ready to upload my designs</div>
+                            <div className={`content-tab ${activeTab === 'E - COMMERCE (0)' ? 'content-active' : ''}`}>
+                                <div className="text-center">
+                                    <div className="mb-2 heading_3">Come Back Soon</div>
+                                    <div>I'm getting ready to upload my designs</div>
+                                </div>
                             </div>
                         }
-                        {activeTab === 'GRAPHIC DESIGN (0)' && <div>
-                            <div className="text-center">
-                                <div className="mb-2 heading_3">Come Back Soon</div>
-                                <div>I'm getting ready to upload my designs</div>
+                        {activeTab === 'GRAPHIC DESIGN (0)' &&
+                            <div className={`content-tab ${activeTab === 'GRAPHIC DESIGN (0)' ? 'content-active' : ''}`}>
+                                <div className="text-center">
+                                    <div className="mb-2 heading_3">Come Back Soon</div>
+                                    <div>I'm getting ready to upload my designs</div>
+                                </div>
                             </div>
-                        </div>
                         }
-                        {activeTab === 'PERSONAL ART (0)' && <div>
-                            <div className="text-center">
-                                <div className="heading_3 mb-2">Come Back Soon</div>
-                                <div>I'm getting ready to upload my designs</div>
+                        {activeTab === 'PERSONAL ART (0)' &&
+                            <div className={`content-tab ${activeTab === 'PERSONAL ART (0)' ? 'content-active' : ''}`}>
+                                <div className="text-center">
+                                    <div className="heading_3 mb-2">Come Back Soon</div>
+                                    <div>I'm getting ready to upload my designs</div>
+                                </div>
                             </div>
-                        </div>
                         }
                     </div>
                 </div>

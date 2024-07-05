@@ -225,4 +225,11 @@
   padding: 12px 40px;
   border-radius: 40px;
 }
+.content-tab{
+  opacity: 0;
+}
+.content-tab.content-active{
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+}
 
