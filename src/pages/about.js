@@ -1,6 +1,7 @@
 import React, { useState, useEffect, act, useRef } from "react";
 import Slider from "../components/common/slider";
 import { Link } from "react-router-dom";
+import { ROUTER } from "../utils/constants";
 
 const About = () => {
 
@@ -430,7 +431,7 @@ const About = () => {
         <div className="flex justify-center md:mb-9 mb-6">
           <div className="flex border-b border-solid border-black">
             <div className="">
-              <Link className="scroll-text md:text-[60px] text-[40px]" data-replace="GET IN TOUCH">
+              <Link to={ROUTER.CONTACT} className="scroll-text md:text-[60px] text-[40px]" data-replace="GET IN TOUCH">
                 <span>
                   GET IN TOUCH
                 </span>

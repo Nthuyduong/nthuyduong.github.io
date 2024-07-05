@@ -120,7 +120,7 @@ const Designs = () => {
                                         <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
                                             <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">01</div>
                                             <img
-                                                className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/des4.png"
+                                                className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/mydes4.png"
                                                 alt="logo"
                                                 loading="lazy"
                                             />
