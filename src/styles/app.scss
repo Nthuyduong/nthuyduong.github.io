@@ -9,8 +9,8 @@ $heading_4: 32px;
 $heading_5: 28px;
 $heading_6: 20px;
 $medium_text: 18px;
-$body_text: 16px;
-$small_text: 14px;
+$body_text: 15px;
+$small_text: 13px;
 
 //IMPORT
 @import "layout";
@@ -850,3 +850,5 @@ input[type=number] {
 .heading_design {
   font-size: clamp(43px, 7.5vw, 60px);
 }
+
+
