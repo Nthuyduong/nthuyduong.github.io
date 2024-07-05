@@ -195,8 +195,8 @@ const About = () => {
               <div className="animate slideInUp">
 
               <div className="text-[20px] mb-4 md:mb-5 md:mt-0 mt-4">Hello. My name is Duong.</div>
-                <div className="grid grid-cols-8 gap-6">
-                  <div className="col-span-4">
+                <div className="grid grid-cols-8 lg:gap-6">
+                  <div className="col-span-8 lg:col-span-4">
                     <div className="md:mb-3 mb-3">With 2 years of experience in UX/UI design, I've refined my skills in creating user-centric designs that balance aesthetics
                       and functionality. My journey in the field has given me a strong foundation in diverse design principles and methodologies.
                       Currently, I handle both Designer & Developer tasks, seamlessly blending design and development processes.
@@ -206,7 +206,7 @@ const About = () => {
                     </div>
 
                   </div>
-                  <div className="col-span-4">
+                  <div className="col-span-8 lg:col-span-4">
                       I am confident in my ability to quickly grasp work, meet all requirements, and ensure timely completion.
                       My approach is holistic, considering both the visual and technical aspects of web development, which helps
                       in delivering cohesive and polished end products. Throughout my career, I have continuously sought to improve my skills and
