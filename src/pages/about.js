@@ -193,22 +193,26 @@ const About = () => {
 
             <div className="lg:col-span-8 md:col-span-6 animate body_text slideInUp cursor-text-wrp md:flex items-end">
               <div className="animate slideInUp">
-                <div className="text-[20px] mb-4 md:mb-5 md:mt-0 mt-4">Hello. My name is Duong.</div>
-                <div className="lg:flex flex-row gap-5">
-                  <div className="md:mb-3 mb-3">With 2 years of experience in UX/UI design, I've refined my skills in creating user-centric designs that balance aesthetics
-                    and functionality. My journey in the field has given me a strong foundation in diverse design principles and methodologies.
-                    Currently, I handle both Designer and Developer tasks, seamlessly blending design and development processes.
-                    This dual role enables me to approach projects comprehensively, bridging the gap between design and implementation
-                    to ensure that design visions translate effectively into responsive, high-performance digital products that are
-                    both functional and visually engaging.
+
+              <div className="text-[20px] mb-4 md:mb-5 md:mt-0 mt-4">Hello. My name is Duong.</div>
+                <div className="grid grid-cols-8 gap-6">
+                  <div className="col-span-4">
+                    <div className="md:mb-3 mb-3">With 2 years of experience in UX/UI design, I've refined my skills in creating user-centric designs that balance aesthetics
+                      and functionality. My journey in the field has given me a strong foundation in diverse design principles and methodologies.
+                      Currently, I handle both Designer & Developer tasks, seamlessly blending design and development processes.
+                      This dual role enables me to approach projects comprehensively, bridging the gap between design and implementation
+                      to ensure that design visions translate effectively into responsive, high-performance digital products that are
+                      both functional and visually engaging.
+                    </div>
+
                   </div>
-                  <div>
-                    I am confident in my ability to quickly grasp work, meet all requirements, and ensure timely completion.
-                    My approach is holistic, considering both the visual and technical aspects of web development, which helps
-                    in delivering cohesive and polished end products. Throughout my career, I have continuously sought to improve my skills and
-                    stay updated with industry trends. My commitment to excellence drives me to deliver
-                    high-quality work that not only meets but also anticipates user needs.
-                  </div>
+                  <div className="col-span-4">
+                      I am confident in my ability to quickly grasp work, meet all requirements, and ensure timely completion.
+                      My approach is holistic, considering both the visual and technical aspects of web development, which helps
+                      in delivering cohesive and polished end products. Throughout my career, I have continuously sought to improve my skills and
+                      stay updated with industry trends. My commitment to excellence drives me to deliver
+                      high-quality work that not only meets but also anticipates user needs.
+                    </div>
                 </div>
               </div>
             </div>
@@ -217,7 +221,7 @@ const About = () => {
       </div>
       <div className="page-element mt-4 md:mt-7">
         <div className="section py-4 md:py-7 border-t border-solid border-ccc">
-          <div className="md:grid grid-cols-12 gap-5">
+          <div className="md:grid grid-cols-12 gap-6">
             <div className="md:col-span-12 lg:col-span-4 skill-common mb-2 animate slideInUp">
               <div className="heading_2 mb-4 cursor-text-wrp">
                 MY SKILLS

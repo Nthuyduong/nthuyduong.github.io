@@ -104,8 +104,11 @@ const Designs = () => {
                                 key={item}
                                 className={`lg:mb-0 mb-3 w-full text-center tab-list-item ${activeTab === item ? 'tabactive' : ''}`}
                                 onClick={() => handleActive(item)}
+                                
                             >
-                                {item}
+                                <div className="scroll-text" data-replace={item}>
+                                    <span>{item}</span>
+                                </div>
                             </li>
                         ))}
                     </ul>
