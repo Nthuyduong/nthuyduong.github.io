@@ -3,6 +3,7 @@ import {
   Route,
   BrowserRouter as Router,
   Switch,
+  Redirect,
 } from "react-router-dom";
 
 import { ROUTER } from "./utils/constants";
@@ -26,23 +27,27 @@ const App = () => {
 
   return (
     <Router>
-      <Switch>
         <AnimationProvider>
           <Layout>
-            <Route exact path={ROUTER.HOME} component={Home}/>
-            <Route path={ROUTER.ABOUT} component={About}/>
-            <Route path={ROUTER.CONTACT} component={Contact}/>
-            <Route path={ROUTER.AGURI} component={Aguri}/>
-            <Route path={ROUTER.ALIO} component={Alio}/>
-            <Route path={ROUTER.FASHION} component={Fashion}/>
-            <Route path={ROUTER.CAKE} component={Cake}/>
-            <Route path={ROUTER.DESIGNS} component={Designs}/>
-            <Route path={ROUTER.ABOUTTEST} component={Abouttest}/>
-            <Route path={ROUTER.BEAUTYBLOG} component={BeautyBlog}/>
-            <Route path={ROUTER.NOTFOUND} component={NotFound}/>
+            <Switch>
+              <Route exact path={ROUTER.HOME} component={Home}/>
+              <Route path={ROUTER.ABOUT} component={About}/>
+              <Route path={ROUTER.CONTACT} component={Contact}/>
+              <Route path={ROUTER.AGURI} component={Aguri}/>
+              <Route path={ROUTER.ALIO} component={Alio}/>
+              <Route path={ROUTER.FASHION} component={Fashion}/>
+              <Route path={ROUTER.CAKE} component={Cake}/>
+              <Route path={ROUTER.DESIGNS} component={Designs}/>
+              <Route path={ROUTER.ABOUTTEST} component={Abouttest}/>
+              <Route path={ROUTER.BEAUTYBLOG} component={BeautyBlog}/>
+              <Route path={ROUTER.NOTFOUND} component={NotFound}/>
+              <Route path="/*">
+                <Redirect to={ROUTER.NOTFOUND}/>
+              </Route>
+            </Switch>
           </Layout>
         </AnimationProvider>
-      </Switch>  
+      
     </Router>
   );
 }
