@@ -96,10 +96,10 @@ const Layout = ({ children }) => {
 
 
   //Hide and Display side nav bar
-  const discardElement = [ROUTER.CONTACT];
+  const discardElement = [ROUTER.CONTACT, ROUTER.NOTFOUND];
   const withoutElement = [ROUTER.ALIO, ROUTER.CAKE, ROUTER.AGURI, ROUTER.FASHION, ROUTER.BEAUTYBLOG];
 
-  // Hide Footer
+  // Hide back to top and contact
   if (discardElement.some((route) => pathname.includes(route))) {
         return (
             <div className="page">
