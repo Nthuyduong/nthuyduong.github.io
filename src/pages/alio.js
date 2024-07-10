@@ -105,9 +105,9 @@ const Alio = () => {
                                 <img className="w-100" src="./images/Pj02_yoga/line1-02.webp" alt="#" loading="lazy" />
                                 <div className="slide-content z-10">
                                     <div className="heading_5">You will</div>
-                                    <div className="md:heading_1 heading_2 my-0 md:my-2">Be Your Best</div>
+                                    <div className="heading_1 my-1 md:my-3">Be Your Best</div>
                                     <div className="heading_5">If you never stop</div>
-                                    <div className="md:heading_1 heading_2 my-0 md:mt-2">Trying & Being You</div>
+                                    <div className="heading_1 my-1 md:mt-3">Trying & Being You</div>
                                 </div>
                             </div>
                         </div>
@@ -116,7 +116,7 @@ const Alio = () => {
                         <div className="grid grid-cols-12">
                             <div className="col-span-12 md:col-span-6 r2-left flex items-end bg-primary mb-4 md:mb-0">
                                 <div className="p-5 md:p-7">
-                                    <div className="heading_4 mb-3 md:mb-4">Introduction</div>
+                                    <div className="heading_4 mb-3 md:mb-6">Introduction</div>
                                     <div className="body_text">
                                         Welcome to Alio, Pilate, and Meditation! Our website is your sanctuary for holistic
                                         wellness and mindful living. Discover the power of Alio for dynamic fitness, Pilate
@@ -135,12 +135,13 @@ const Alio = () => {
                     <div className="project-item alio3 md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
                             <div className="col-span-12 md:col-span-6 r3-left mb-4 md:mb-0">
-                                <img className="w-100" src={require(`../../public/images/Pj02_yoga/${images[currentImageIndex]}`)}
-                                    alt="carousel image" />
+                                <img className="w-100" src="./images/Pj02_yoga/logogrid.png" loading="lazy" />
+                                {/* <img className="w-100" src={require(`../../public/images/Pj02_yoga/${images[currentImageIndex]}`)}
+                                    alt="carousel image" /> */}
                             </div>
-                            <div className="col-span-12 md:col-span-6 r3-right flex items-end bg-tertiary">
+                            <div className="col-span-12 md:col-span-6 r3-right flex items-end bg-primary">
                                 <div className="p-5 md:p-7">
-                                    <div className="heading_4 mb-4">The Logotype</div>
+                                    <div className="heading_4 mb-3 md:mb-6">The Logotype</div>
                                     <div className="body_text">
                                         The logo for a yoga website embodies the essence of tranquility and self-discovery.
                                         Designed to cater to users seeking to learn yoga, meditation, and pilates, the
@@ -154,14 +155,17 @@ const Alio = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="project-item md:pb-6 pb-4">
+                        <img className="w-100" src="./images/Pj02_yoga/homep.png" loading="lazy" />
+                    </div>
                     {/* <div className="alio4">
-
+                    
                     </div> */}
                     <div className="project-item alio5 md:pb-6 pb-4">
                         <img className="w-100" src={require(`../../public/images/Pj02_yoga/${Showcase[currentLogoIndex]}`)} />
                     </div>
                     <div className="project-item alio5.1 md:pb-6 pb-4">
-                        <img className="w-100" src="./images/Pj02_yoga/line5.1.webp" loading="lazy" />
+                        <img className="w-100" src="./images/Pj02_yoga/mobile-first.png" loading="lazy" />
                     </div>
                     <div className="project-item alio6 md:pb-6 pb-4 h-full">
                         <div className="grid grid-cols-12">
@@ -233,7 +237,7 @@ const Alio = () => {
                                             Aguri Jewellery Website
                                         </Link>
                                     </div>
-                                    
+
                                 </div>
                                 <div className="w-100 body_text pj_intro w-100 text-color-muted mt-4">
                                     Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
@@ -251,7 +255,7 @@ const Alio = () => {
                                             Verite Fashion App
                                         </Link>
                                     </div>
-                                    
+
                                 </div>
                                 <div className="w-100 body_text pj_intro w-100 text-color-muted mt-4">
                                     Indulge in luxury and style with our timeless fashion brand, redefining elegance and sophistication.
@@ -269,7 +273,7 @@ const Alio = () => {
                                             Season Cake Blog
                                         </Link>
                                     </div>
-                                    
+
                                 </div>
                                 <div className="w-100 body_text pj_intro w-100 text-color-muted mt-4">
                                     Indulge in the delectable world of Cake Blog, where sweetness and creativity come together.

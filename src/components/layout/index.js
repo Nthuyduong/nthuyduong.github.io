@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import Naviga from "./naviga";
 import { Link, useHistory } from "react-router-dom";
 import { ROUTER } from "../../utils/constants";
 import { useLocation } from 'react-router-dom';
@@ -99,6 +100,7 @@ const Layout = ({ children }) => {
   const discardElement = [ROUTER.CONTACT, ROUTER.NOTFOUND];
   const withoutElement = [ROUTER.ALIO, ROUTER.CAKE, ROUTER.AGURI, ROUTER.FASHION, ROUTER.BEAUTYBLOG];
 
+
   // Hide back to top and contact
   if (discardElement.some((route) => pathname.includes(route))) {
         return (
@@ -117,7 +119,7 @@ const Layout = ({ children }) => {
   if (withoutElement.some((route) => pathname.includes(route))) {
     return (
       <div className="page">
-        <Header />
+        <Naviga />
         <div className={`page-body-wrapper`}>
           {children}
         </div>
@@ -125,16 +127,16 @@ const Layout = ({ children }) => {
 
         <div className="back-to-top btt2 body_text hidden md:block" onClick={() => { scrollToTop() }}>Back to top</div>
         <div className="top-to-btm hidden md:block">
-          <button onClick={handleScrollUp}>
+          {/* <button onClick={handleScrollUp}>
             <FontAwesomeIcon className="icon-up" icon={faArrowUp} />
-          </button>
+          </button> */}
           
           <div className="">
             <div className="body_text position">{active + 1}/{total}</div>
           </div>
-          <button onClick={handleScrollDown}>
+          {/* <button onClick={handleScrollDown}>
             <FontAwesomeIcon className="icon-down" icon={faArrowDown} />
-          </button>
+          </button> */}
         </div>
       </div>
     );
