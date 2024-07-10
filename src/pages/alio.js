@@ -23,6 +23,7 @@ const Alio = () => {
         return () => clearInterval(interval);
     }, [mbl.length]);
 
+
     const [currentMobile, setCurrentMobile] = useState(0);
     const [mobile] = useState(
         [
@@ -86,6 +87,21 @@ const Alio = () => {
         return () => clearInterval(interval);
     }, [Showcase.length]);
 
+
+    const [currentMobi, setCurrentMobi] = useState(0);
+    const [mobi] = useState(
+        [
+            "mobi1.png",
+            "mobi2.png",
+        ]
+    )
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentMobi((prevIndex) =>
+                prevIndex === mobi.length - 1 ? 0 : prevIndex + 1);
+        }, 1000);
+        return () => clearInterval(interval);
+    }, [mobi.length]);
 
     const [index, setIndex] = useState(0);
     const handleSelect = (selectedIndex, e) => {
@@ -156,6 +172,9 @@ const Alio = () => {
                         </div>
                     </div>
                     <div className="project-item md:pb-6 pb-4">
+                        <img className="w-100" src="./images/Pj02_yoga/Showcase4.webp" loading="lazy" />
+                    </div>
+                    <div className="project-item md:pb-6 pb-4">
                         <img className="w-100" src="./images/Pj02_yoga/homep.png" loading="lazy" />
                     </div>
                     {/* <div className="alio4">
@@ -169,18 +188,22 @@ const Alio = () => {
                     </div>
                     <div className="project-item alio6 md:pb-6 pb-4 h-full">
                         <div className="grid grid-cols-12">
-                            <div className="col-span-6">
-                                <img className="w-100" src="./images/Pj02_yoga/line6-01.png" alt="#" loading="lazy" />
-                            </div>
-                            <div className="col-span-6 relative">
-                                <img className="w-100" src="./images/Pj02_yoga/line6-02.png" alt="#" loading="lazy" />
-                                <div className="sm-img">
-                                    <div className="absolute top-[50%] left-[50%] phone-inner">
-                                        <img className="" src={require(`../../public/images/Pj02_yoga/${logo[currentLogoIndex]}`)}
-                                            alt="carousel image" />
-                                        {/* <div className="medium_text text-light text-center">BE WITH YOU ANYWHERE, ANYTIME</div> */}
+
+                            <div className="col-span-6 relative bg-primary flex items-end">
+                                <div className="p-5 md:p-7">
+                                    <div className="heading_4 mb-3 md:mb-6">Alio Mobile App</div>
+                                    <div className="body_text">
+                                    Introducing the Alio App, your perfect companion to our website. Designed for members and users,
+                                    the app enhances your practice by offering easy access to schedules, class registrations, and personal
+                                    training updates. Whether you've purchased an Alio plan or are just exploring, you can learn and practice at
+                                    home with our extensive library of free videos. Stay connected and make the most of your wellness journey with the Alio App.
                                     </div>
                                 </div>
+                            </div>
+                            <div className="col-span-6">
+                            <img className="w-100" src={require(`../../public/images/Pj02_yoga/${mobi[currentMobi]}`)} loading="lazy" />
+                                {/* <img className="w-100" src="./images/Pj02_yoga/mobile-right.png" alt="#" loading="lazy" /> */}
+                                {/* <img className="w-100" src="./images/Pj02_yoga/mobile-clay.png" alt="#" loading="lazy" /> */}
                             </div>
                         </div>
                     </div>
