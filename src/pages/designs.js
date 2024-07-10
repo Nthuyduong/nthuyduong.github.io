@@ -38,7 +38,7 @@ const Designs = () => {
     }
 
     // MY TABS
-    const tabItems = ['UX/UI DESIGN (6)', 'E - COMMERCE (0)', 'GRAPHIC DESIGN (0)', 'PERSONAL ART (0)'];
+    const tabItems = ['UX/UI DESIGN (6)', 'E - COMMERCE (0)', 'GRAPHIC DESIGN (0)', 'PERSONAL ART (2)'];
     const [activeTab, setActiveTab] = useState(tabItems[0]);
 
     const handleActive = (item) => {
@@ -351,7 +351,7 @@ const Designs = () => {
                         </div>
                         {/* } */}
                         {/* {activeTab === 'PERSONAL ART (0)' && */}
-                        <div className={`content-tab ${activeTab === 'PERSONAL ART (0)' ? 'content-active' : ''}`}>
+                        <div className={`content-tab ${activeTab === 'PERSONAL ART (2)' ? 'content-active' : ''}`}>
                             <div className="lg:pt-7">
                                 <div className="my-gallery">
                                     <div className="one gallery-item">

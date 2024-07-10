@@ -87,7 +87,7 @@ const About = () => {
 
           </div>
           <div className="col-span-6">
-            <img className="w-100" src="./images/about/abtme.png" alt="#" loading="lazy"></img>
+            <img className="w-100" src="./images/about/abtme.png" alt="#" loading="lazy" width="630" height="430"></img>
           </div>
         </div>
       </div>

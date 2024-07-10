@@ -120,7 +120,7 @@ const Contact = () => {
           <div className="col-span-6">
             {/* <div className="heading_6 mb-5 cursor-text-wrp">Send me a message</div> */}
             <div className="md:grid grid-cols-2 gap-4">
-              <div className="md:pb-0 mb-4 col-span-1 grid contact_field relative">
+              <div className="md:mb-0 mb-4 col-span-1 grid contact_field relative">
                 <label className="mb-1 cursor-text-wrp">Your Name *</label>
                 <input
                   className={`input-form ${error?.name ? 'border-[red]' : 'border-ccc'}`}
@@ -131,7 +131,7 @@ const Contact = () => {
                 />
                 <span className="focus-border"></span>
               </div>
-              <div className="md:pb-0 mb-4 col-span-1 grid contact_field relative">
+              <div className="col-span-1 grid contact_field relative">
                 <label className="mb-1 cursor-text-wrp">Phone number *</label>
                 <input
                   className={`input-form ${error?.phone ? 'border-[red]' : 'border-ccc'}`}
@@ -143,7 +143,7 @@ const Contact = () => {
                 <span className="focus-border"></span>
               </div>
             </div>
-            <div className="grid my-4 contact_field relative">
+            <div className="grid my-4 md:my-5 contact_field relative">
               <label className="mb-1 cursor-text-wrp">Email address *</label>
               <input
                 className={`input-form ${error?.email ? 'border-[red]' : 'border-ccc'}`}
