@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ROUTER } from "../utils/constants";
 import Slider from "../components/common/slider";
 // import Carousel from 'react-bootstrap/Carousel';
@@ -56,8 +54,7 @@ const Aguri = () => {
                                         <div className="heading_4">Our Utmost Pride</div>
                                         <div className="heading_3 mb-1 w-full">RADIANT ELEGANCE</div>
                                     </div>
-                                    <img className="img-bg" src="./images/Pj03_aguri/line1-center.png" alt="#"
-                                        loading="lazy" />
+                                    <img className="img-bg w-full" src="./images/Pj03_aguri/line1-center.png" alt="#" loading="eager" height={500} width={500} />
                                     {/* <div className="content-bottom text-center">
                                         <div className="heading_2 mb-5">JOIN US</div> */}
                                         {/* <div className="body_text">
@@ -68,8 +65,7 @@ const Aguri = () => {
                                 </div>
                             </div>
                             <div className="col-span-12 sm:col-span-6 line1-right">
-                                <img className="w-100" src="./images/Pj03_aguri/line1-02.png" alt="#"
-                                    loading="lazy" />
+                                <img className="w-100 w-full" src="./images/Pj03_aguri/line1-02.png" alt="#"loading="eager" height={500} width={500} />
 
                             </div>
                         </div>

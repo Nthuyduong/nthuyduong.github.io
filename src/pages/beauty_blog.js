@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ROUTER } from "../utils/constants";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Slider from "../components/common/slider";
+import HorizontalScroll from "../components/common/HorizontalScroll";
 
 const BeautyBlog = () => {
 
@@ -64,7 +63,7 @@ const BeautyBlog = () => {
                 <div className="product-showcase">
                     <div className="project-item md:pb-6 pb-4">
                         <div className="">
-                            <img className="w-100" src="./images/Pj05_beauty/beautybanner.png" alt="#" loading="lazy" />
+                            <img className="w-100 w-full" src="./images/Pj05_beauty/beautybanner.png" alt="#" loading="eager" height={500} width={500} />
                         </div>
                     </div>
                     <div className="project-item md:pb-6 pb-4">
@@ -83,16 +82,23 @@ const BeautyBlog = () => {
                                 </div>
                             </div>
                             <div className="col-span-6">
-                                <img className="w-100" src="./images/Pj05_beauty/intro.png" alt="#" loading="lazy" />
+                                <img className="w-100 w-full" src="./images/Pj05_beauty/intro.png" alt="#" loading="lazy" height={500} width={500}/>
                             </div>
                         </div>
                     </div>
                     
                     <div className="project-item md:pb-6 pb-4">
                         <div className="">
-                            <img className="w-100" src="./images/Pj05_beauty/beauty-mockup.png" alt="#" loading="lazy" />
+                            <img className="w-100 w-full" src="./images/Pj05_beauty/beauty-mockup.png" alt="#" loading="lazy" height={500} width={500}/>
                         </div>
                     </div>
+                    <HorizontalScroll>
+                        <img className="w-100" src="./images/Pj05_beauty/hz1.png" alt="#" loading="lazy" height={500} width={500}/>
+                        
+                        <img className="w-100" src="./images/Pj05_beauty/hz2.png" alt="#" loading="lazy" height={500} width={500}/>
+                        <img className="w-100" src="./images/Pj05_beauty/hz3.png" alt="#" loading="lazy" height={500} width={500}/>
+                    </HorizontalScroll>
+                    
                     {/* <div className="project-item md:pb-6 pb-4">
                         <div className="md:grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6">
@@ -109,10 +115,10 @@ const BeautyBlog = () => {
                     <div className="project-item md:pb-6 pb-4">
                         <div className="md:grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6 md:mb-0 mb-4">
-                                <img className="w-100" src="./images/Pj05_beauty/beauty-mockup4.png" alt="#" loading="lazy" />
+                                <img className="w-100" src="./images/Pj05_beauty/beauty-mockup4.png" alt="#" loading="lazy" height={500} width={500}/>
                             </div>
                             <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end relative">
-                                <img className="w-100" src="./images/Pj05_beauty/aboutpage.png" alt="#" loading="lazy" />
+                                <img className="w-100" src="./images/Pj05_beauty/aboutpage.png" alt="#" loading="lazy" height={500} width={500}/>
                             </div>
                         </div>
                     </div>

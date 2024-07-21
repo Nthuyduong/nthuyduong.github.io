@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ROUTER } from "../utils/constants";
 import Slider from "../components/common/slider";
 
@@ -64,7 +62,7 @@ const Cake = () => {
                 <div className="product-showcase">
                     <div className="project-item md:pb-6 pb-4">
                         <div className="">
-                            <img className="w-100" src="./images/Pj01_cake/cakebanner.png" alt="#" loading="lazy" />
+                            <img className="w-100 w-full" src="./images/Pj01_cake/cakebanner.png" alt="#" loading="eager" height={500} width={500} />
                         </div>
                     </div>
                     <div className="project-item md:pb-6 pb-4">

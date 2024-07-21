@@ -1,7 +1,5 @@
 import React, {useEffect, useState,} from "react";
 import {Link} from "react-router-dom";
-import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {ROUTER} from "../utils/constants";
 import Slider from "../components/common/slider";
 
@@ -66,7 +64,7 @@ const Fashion = () => {
                                 </div>
                             </div>
                             <div className="col-span-12 sm:col-span-6">
-                                <img className="w-100" src="./images/Pj04_fashion/line2-01.webp" alt="#" loading="lazy"/>
+                                <img className="w-100 w-full" src="./images/Pj04_fashion/line2-01.webp" alt="#" loading="eager" height={500} width={500}/>
                             </div>
                         </div>
                     </div>

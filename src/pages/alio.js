@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ROUTER } from "../utils/constants";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Slider from "../components/common/slider";
 
 const Alio = () => {
@@ -115,10 +113,10 @@ const Alio = () => {
                     <div className="project-item alio1 md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
                             <div className="sm:col-span-6 col-span-12 mb-4 md:mb-0">
-                                <img className="w-100" src="./images/Pj02_yoga/line1-01.webp" alt="#" loading="lazy" />
+                                <img className="w-100 w-full" src="./images/Pj02_yoga/line1-01.webp" alt="#" loading="eager" height={500} width={500} />
                             </div>
                             <div className="sm:col-span-6 col-span-12 r1-right">
-                                <img className="w-100" src="./images/Pj02_yoga/line1-02.webp" alt="#" loading="lazy" />
+                                <img className="w-100 w-full" src="./images/Pj02_yoga/line1-02.webp" alt="#" loading="eager" height={500} width={500} />
                                 <div className="slide-content z-10">
                                     <div className="heading_5">You will</div>
                                     <div className="heading_1 my-1 md:my-3">Be Your Best</div>

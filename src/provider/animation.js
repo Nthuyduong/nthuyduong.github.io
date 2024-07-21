@@ -59,7 +59,7 @@ export const AnimationProvider = ({ children }) => {
         animates.forEach((animate) => {
             observer.observe(animate);
         })
-        if (router.includes(pathname)) {
+        if (showCursor()) {
             handleCursor();
         }
         
@@ -67,7 +67,7 @@ export const AnimationProvider = ({ children }) => {
             animates.forEach((animate) => {
                 observer.unobserve(animate);
             });
-            if (router.includes(pathname)) {
+            if (showCursor()) {
                 handleCursor();
             }
         }
@@ -75,66 +75,82 @@ export const AnimationProvider = ({ children }) => {
 
     const handleCursor = () => {
         var cursor = document.getElementById('custom-cursor');
-        if (!cursor) return;
+        var follower = document.getElementById('custom-follow');
 
-        document.addEventListener('mouseover', () => {
-            cursor.style.opacity = 1;
-        })
-        document.addEventListener('mouseleave', () => {
-            cursor.style.opacity = 0;
-        })
+        var mouseX = 0;
+        var mouseY = 0;
+
+        if (!cursor) return;
 
         document.addEventListener('mousemove', moveCursor)
 
-
         function moveCursor(e) {
-            let x = e.clientX;
-            let y = e.clientY;
-            cursor.style.left = `${x}px`;
-            cursor.style.top = `${y}px`;
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            cursor.style.left = `${mouseX}px`;
+            cursor.style.top = `${mouseY}px`;
         }
+
+        var xp = 0, yp = 0;
+
+        var loop = setInterval(function(){
+            // change 12 to alter damping higher is slower
+            xp += (mouseX - xp) / 5;
+            yp += (mouseY - yp) / 5;
+            follower.style.left = xp + 'px';
+            follower.style.top = yp + 'px';
+        }, 20);
 
         var text = Array.from(document.querySelectorAll('p, span, body_text, .cursor-text-wrp'));  
 
         text.forEach(text => {
             text.addEventListener('mousemove', function() {
-                cursor.classList.add('cursor-text');
+                cursor.classList.add('custom-cursor-hidden');
+                follower.classList.add('cursor-text');
             })
             text.addEventListener('mouseleave', function () {
-                cursor.classList.remove('cursor-text');
+                cursor.classList.remove('custom-cursor-hidden');
+                follower.classList.remove('cursor-text');
             })
         })
 
         var images = Array.from(document.querySelectorAll('img'));
         images.forEach(image => {
             image.addEventListener('mousemove', function () {
-                cursor.classList.add('cursor-img');
+                cursor.classList.add('custom-cursor-hidden');
+                follower.classList.add('cursor-img');
             })
 
             image.addEventListener('mouseleave', function () {
-                cursor.classList.remove('cursor-img');
+                cursor.classList.remove('custom-cursor-hidden');
+                follower.classList.remove('cursor-img');
             })
         })
 
         var images = Array.from(document.querySelectorAll('input'));
         images.forEach(image => {
             image.addEventListener('mousemove', function () {
-                cursor.classList.add('cursor-input');
+                cursor.classList.add('custom-cursor-hidden');
+                follower.classList.add('cursor-input');
             })
 
             image.addEventListener('mouseleave', function () {
-                cursor.classList.remove('cursor-input');
+                cursor.classList.remove('custom-cursor-hidden');
+                follower.classList.remove('cursor-input');
             })
         })
     }
-
+    const showCursor = () => {
+        return true;
+    }
     return (
         <AnimationContext.Provider value={null}>
-            {router.includes(pathname) ? (
+            {showCursor() ? (
                 <div className="animation-wrp">
                     {children}
-                <div id="custom-cursor" className="custom-cursor"></div>
-            </div>
+                    <div id="custom-cursor" className="custom-cursor"></div>
+                    <div id="custom-follow" className="custom-follow"></div>
+                </div>
             ) : (
                 <>{children}</>
             )}

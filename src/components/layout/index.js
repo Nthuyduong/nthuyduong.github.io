@@ -2,14 +2,10 @@ import React, { useRef, useEffect, useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Naviga from "./naviga";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { ROUTER } from "../../utils/constants";
-import { useLocation } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import "@fortawesome/fontawesome-svg-core"
-import "@fortawesome/react-fontawesome"
-import {faArrowDown, faArrowRight, faArrowUp} from "@fortawesome/free-solid-svg-icons";
 import { throttle } from "../../utils/common";
+import { TransitionProvider } from "../../provider/transition";
 
 let isAction = false;
 const Layout = ({ children }) => {
@@ -98,7 +94,16 @@ const Layout = ({ children }) => {
 
   //Hide and Display side nav bar
   const discardElement = [ROUTER.CONTACT, ROUTER.NOTFOUND];
-  const withoutElement = [ROUTER.ALIO, ROUTER.CAKE, ROUTER.AGURI, ROUTER.FASHION, ROUTER.BEAUTYBLOG];
+  const withoutElement = [ROUTER.ALIO, ROUTER.CAKE, ROUTER.AGURI, ROUTER.FASHION, ROUTER.BEAUTYBLOG, ROUTER.PROJECT_DETAIL];
+
+  if (pathname.includes('/designs') && pathname !== ROUTER.DESIGNS) {
+    return (
+      <div className="page">
+        {children}
+        <Footer />
+      </div>
+    )
+  }
 
 
   // Hide back to top and contact
@@ -106,9 +111,9 @@ const Layout = ({ children }) => {
         return (
             <div className="page">
                 <Header />
-                <div className={`page-body-wrapper`}>
+                  <div className={`page-body-wrapper`}>
                     {children}
-                </div>
+                  </div>
                 <Footer />
             </div>
         );
@@ -120,23 +125,20 @@ const Layout = ({ children }) => {
     return (
       <div className="page">
         <Naviga />
-        <div className={`page-body-wrapper`}>
-          {children}
-        </div>
+        {/* <TransitionProvider> */}
+          <div className={`page-body-wrapper`}>
+            {children}
+          </div>
+        {/* </TransitionProvider> */}
+        
         <Footer />
 
         <div className="back-to-top btt2 body_text hidden md:block" onClick={() => { scrollToTop() }}>Back to top</div>
         <div className="top-to-btm hidden md:block">
-          {/* <button onClick={handleScrollUp}>
-            <FontAwesomeIcon className="icon-up" icon={faArrowUp} />
-          </button> */}
           
           <div className="">
             <div className="body_text position">{active + 1}/{total}</div>
           </div>
-          {/* <button onClick={handleScrollDown}>
-            <FontAwesomeIcon className="icon-down" icon={faArrowDown} />
-          </button> */}
         </div>
       </div>
     );

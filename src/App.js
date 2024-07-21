@@ -19,35 +19,57 @@ import Designs from "./pages/designs";
 import Abouttest from "./pages/abouttest";
 import BeautyBlog from "./pages/beauty_blog";
 import NotFound from "./pages/404";
-import "@fortawesome/fontawesome-svg-core";
-import "@fortawesome/react-fontawesome"
+import ProjectDetail from "./pages/project";
 import { AnimationProvider } from "./provider/animation";
+import { TransitionProvider } from "./provider/transition";
 
 const App = () => {
 
   return (
     <Router>
-        <AnimationProvider>
-          <Layout>
-            <Switch>
-              <Route exact path={ROUTER.HOME} component={Home}/>
-              <Route path={ROUTER.ABOUT} component={About}/>
-              <Route path={ROUTER.CONTACT} component={Contact}/>
-              <Route path={ROUTER.AGURI} component={Aguri}/>
-              <Route path={ROUTER.ALIO} component={Alio}/>
-              <Route path={ROUTER.FASHION} component={Fashion}/>
-              <Route path={ROUTER.CAKE} component={Cake}/>
-              <Route path={ROUTER.DESIGNS} component={Designs}/>
-              <Route path={ROUTER.ABOUTTEST} component={Abouttest}/>
-              <Route path={ROUTER.BEAUTYBLOG} component={BeautyBlog}/>
-              <Route path={ROUTER.NOTFOUND} component={NotFound}/>
-              <Route path="/*">
-                <Redirect to={ROUTER.NOTFOUND}/>
-              </Route>
-            </Switch>
-          </Layout>
-        </AnimationProvider>
-      
+      <AnimationProvider>
+        <Layout>
+          <Switch>
+            <Route exact path={ROUTER.HOME} component={Home}/>
+            <Route path={ROUTER.ABOUT} component={About}/>
+            <Route path={ROUTER.CONTACT} component={Contact}/>
+            <Route path={ROUTER.AGURI}>
+              <TransitionProvider>
+                <Aguri/>
+              </TransitionProvider>
+            </Route>
+            <Route path={ROUTER.ALIO} >
+              <TransitionProvider>
+                <Alio/>
+              </TransitionProvider>
+            </Route>
+            <Route path={ROUTER.FASHION}>
+              <TransitionProvider>
+                <Fashion/>
+              </TransitionProvider>
+            </Route>
+            <Route path={ROUTER.CAKE} >
+              <TransitionProvider>
+                <Cake/>
+              </TransitionProvider>
+            </Route>
+            <Route path={ROUTER.BEAUTYBLOG} >
+              <TransitionProvider>
+                <BeautyBlog/>
+              </TransitionProvider>
+            </Route>
+            
+            <Route path={ROUTER.ABOUTTEST} component={Abouttest}/>
+            
+            <Route path={ROUTER.NOTFOUND} component={NotFound}/>
+            <Route path={ROUTER.PROJECT_DETAIL} component={ProjectDetail}/>
+            <Route path={ROUTER.DESIGNS} component={Designs}/>
+            <Route path="/*">
+              <Redirect to={ROUTER.NOTFOUND}/>
+            </Route>
+          </Switch>
+        </Layout>
+      </AnimationProvider>
     </Router>
   );
 }
