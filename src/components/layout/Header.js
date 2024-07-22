@@ -111,7 +111,7 @@ const Header = () => {
             </div>
           </div>
           <div>
-            <div className="w-full flex justify-center mt-[160px]">
+            <div className="w-full flex justify-center mt-[120px]">
               <div className="heading_4">
                 <Link>Instagram</Link>
               </div>
