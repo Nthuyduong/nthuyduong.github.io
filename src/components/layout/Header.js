@@ -51,7 +51,7 @@ const Header = () => {
         >
           <div className="section w-full">
             <div className="flex gap-1 w-full justify-between">
-              <span>Menu</span>
+              <span>Nthuyduong</span>
               {/* <img className='btn-header-mobile' src="/images/arrow-down.png" alt="" /> */}
               <div className="header-close-wrp justify-center">
                 <div className="header-close header-close-1" ></div>
@@ -60,24 +60,25 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex flex-col header-mobile-menu py-6" style={{"--delay" : !openMobileMenu ? "450ms" : '0ms'}}>
-          <div className="section w-full">
-            <div className="overflow-hidden">
-              <div style={{"--delay" : openMobileMenu ? "500ms": '0ms'}} className="header-text cursor-text-wrp text-gray-300 hover:bg-gray-700 rounded-md text-4xl font-medium" aria-current="page">
-                <Link to="/">Home</Link>
+        <div className="w-full flex flex-col header-mobile-menu py-5" style={{ "--delay": !openMobileMenu ? "450ms" : '0ms' }}>
+          <div>
+            <div className="section w-full">
+              <div className="overflow-hidden">
+                <div style={{ "--delay": openMobileMenu ? "500ms" : '0ms' }} className="text-center header-text f-menu cursor-text-wrp text-gray-300 hover:bg-gray-700 rounded-md" aria-current="page">
+                  <Link to="/">Home</Link>
+                </div>
               </div>
-            </div>
-            <div className="overflow-hidden">
-              <div style={{"--delay" : openMobileMenu ? "600ms": '100ms'}} className="header-text cursor-text-wrp text-gray-300 hover:bg-gray-700 rounded-md text-4xl font-medium" aria-current="page">
-                <Link to={ROUTER.ABOUT}>About</Link>
+              <div className="overflow-hidden">
+                <div style={{ "--delay": openMobileMenu ? "600ms" : '100ms' }} className="my-3 text-center header-text cursor-text-wrp text-gray-300 hover:bg-gray-700 rounded-md" aria-current="page">
+                  <Link to={ROUTER.ABOUT}>About</Link>
+                </div>
               </div>
-            </div>
-            <div className="overflow-hidden">
-              <div style={{"--delay" : openMobileMenu ? "600ms": '100ms'}} className="header-text cursor-text-wrp text-gray-300 hover:bg-gray-700 rounded-md text-4xl font-medium" aria-current="page">
-                <Link to={ROUTER.DESIGNS}>Projects</Link>
+              <div className="overflow-hidden">
+                <div style={{ "--delay": openMobileMenu ? "600ms" : '100ms' }} className="mb-3 text-center header-text cursor-text-wrp text-gray-300 hover:bg-gray-700 rounded-md" aria-current="page">
+                  <Link to={ROUTER.DESIGNS}>My Projects</Link>
+                </div>
               </div>
-            </div>
-            {/* <div className="overflow-hidden">
+              {/* <div className="overflow-hidden">
               <div style={{"--delay" : openMobileMenu ? "700ms": '200ms'}} className="header-text header-nav-item relative header-mobile-navdrop px-3">
                 <div
                   className="navdrop-title z-50 text-gray-300 hover:text-gray rounded-md pr-3 flex w-full"
@@ -102,13 +103,28 @@ const Header = () => {
                 </div>
               </div>
             </div> */}
-            <div className="overflow-hidden">
-              <div style={{"--delay" : openMobileMenu ? "800ms": '300ms'}} className="header-text cursor-text-wrp text-gray-300 hover:bg-gray-700 rounded-md text-4xl font-medium" aria-current="page">
-                <Link to={ROUTER.CONTACT}>Contact</Link>
+              <div className="overflow-hidden">
+                <div style={{ "--delay": openMobileMenu ? "800ms" : '300ms' }} className="text-center header-text cursor-text-wrp text-gray-300 hover:bg-gray-700 rounded-md" aria-current="page">
+                  <Link to={ROUTER.CONTACT}>Contact</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="w-full flex justify-center mt-[160px]">
+              <div className="heading_4">
+                <Link>Instagram</Link>
+              </div>
+              <div className="heading_4 mx-5">
+                <Link>Behance</Link>
+              </div>
+              <div className="heading_4">
+                <Link>Facebook</Link>
               </div>
             </div>
           </div>
         </div>
+
       </div>
       {/*<div ref={headerRef} className="my-header sticky flex flex-1 items-center justify-center sm:items-stretch sm:justify-start border-b border-ccc border-solid">
         <div className="hidden w-full md:block">

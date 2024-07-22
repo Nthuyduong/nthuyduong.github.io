@@ -386,11 +386,11 @@ const Home = () => {
               </div>
               {/* <div className="heading_3 cursor-text-wrp">HELLO</div> */}
 
-              <div className="heading_3 cursor-text-wrp">WELCOME TO MY PORTFOLIO!</div>
+              <div className="heading_2 cursor-text-wrp">WELCOME TO MY PORTFOLIO!</div>
               <div className="emoji flex items-center px-4">
                 <img className="w-full" src="./images/design/star.svg" alt="logo" loading="lazy" />
               </div>
-              <div className="heading_3 cursor-text-wrp home-contact-scroller-text">LET'S CONTACT WITH ME</div>
+              <div className="heading_2 cursor-text-wrp home-contact-scroller-text">LET'S CONTACT WITH ME</div>
               {/* <div className="emoji flex items-center">
                 <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
               </div> */}
@@ -440,8 +440,8 @@ const Home = () => {
                 </div>
                 {/* animation button */}
                 <div className="md:flex justify-end">
-                  <div className="">
-                    <Link to={ROUTER.DESIGNS} className="text-link heading_6">
+                  <div className=""> 
+                    <Link to={ROUTER.DESIGNS} className="text-link heading_6" >
                       <span>
                         VIEW ALL PROJECTS
                       </span>

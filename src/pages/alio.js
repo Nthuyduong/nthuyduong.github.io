@@ -178,9 +178,9 @@ const Alio = () => {
                     {/* <div className="alio4">
                     
                     </div> */}
-                    <div className="project-item alio5 md:pb-6 pb-4">
+                    {/* <div className="project-item alio5 md:pb-6 pb-4">
                         <img className="w-100" src={require(`../../public/images/Pj02_yoga/${Showcase[currentLogoIndex]}`)} />
-                    </div>
+                    </div> */}
                     <div className="project-item alio5.1 md:pb-6 pb-4">
                         <img className="w-100" src="./images/Pj02_yoga/mobile-first.png" loading="lazy" />
                     </div>
