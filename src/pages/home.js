@@ -115,7 +115,7 @@ const Home = () => {
     <div className="home-page">
 
       {/* NEW banner */}
-      <div className="bg-background pt-4 md:pt-6 pb-5 md:pb-7">
+      <div className="homep-banner pt-4 md:pt-6 pb-5 md:pb-7">
         <div className="section relative">
           <div className="md:grid md:grid-cols-12">
             <div className="col-span-8 md:flex">
@@ -378,7 +378,7 @@ const Home = () => {
         onMouseEnter={changeEmoji}
       >
 
-        <div className="bg-primary px-0 section-full scroll-container text-decor py-0 md:py-2">
+        <div className="bg-pink px-0 section-full scroll-container text-decor py-0 md:py-2">
           <Scroller>
             <Link to='/contact' className="flex">
               <div className="emoji flex items-center px-4">
@@ -386,11 +386,11 @@ const Home = () => {
               </div>
               {/* <div className="heading_3 cursor-text-wrp">HELLO</div> */}
 
-              <div className="heading_2 cursor-text-wrp">WELCOME TO MY PORTFOLIO!</div>
+              <div className="heading_1 cursor-text-wrp">WELCOME TO MY PORTFOLIO!</div>
               <div className="emoji flex items-center px-4">
                 <img className="w-full" src="./images/design/star.svg" alt="logo" loading="lazy" />
               </div>
-              <div className="heading_2 cursor-text-wrp home-contact-scroller-text">LET'S CONTACT WITH ME</div>
+              <div className="heading_1 cursor-text-wrp home-contact-scroller-text">LET'S CONTACT WITH ME</div>
               {/* <div className="emoji flex items-center">
                 <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
               </div> */}
@@ -440,7 +440,7 @@ const Home = () => {
                 </div>
                 {/* animation button */}
                 <div className="md:flex justify-end">
-                  <div className=""> 
+                  <div className="">
                     <Link to={ROUTER.DESIGNS} className="text-link heading_6" >
                       <span>
                         VIEW ALL PROJECTS
@@ -506,7 +506,7 @@ const Home = () => {
                   </Link>
                 </div>
                 <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
-                Welcome to my Beauty Blog! Find skincare tips, makeup tutorials, and the latest beauty trends for radiant skin.
+                  Welcome to my Beauty Blog! Find skincare tips, makeup tutorials, and the latest beauty trends for radiant skin.
                 </div>
               </div>
               <div className="project-odd">

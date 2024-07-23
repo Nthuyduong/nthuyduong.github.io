@@ -55,18 +55,18 @@ const Designs = () => {
                         <div className="text-white w-full flex flex-col gap-2 sm:gap-0">
                             <div className="">
                                 <div className="flex justify-center items-center">
-                                    <div className="ml:text-[120px] md:text-[90px] text-[34px]">LET'S</div>
+                                    <div className="ml:text-[160px] md:text-[100px] text-[34px]">LET'S</div>
                                     <img className="ml:h-[110px] md:h-[70px] h-[30px] ml:mx-5 md:mx-3 mx-2" src="./images/sao.svg" alt="logo" />
-                                    <div className="ml:text-[120px] md:text-[90px] text-[34px]">CREATE</div>
+                                    <div className="ml:text-[160px] md:text-[100px] text-[34px]">CREATE</div>
                                 </div>
                                 <div className="flex justify-center items-center">
-                                    <div className="ml:text-[125px] md:text-[90px] bighead text-[34px]">STAND</div>
+                                    <div className="ml:text-[150px] md:text-[100px] bighead text-[34px]">STAND</div>
                                     {/* <div className="ellip ml-4 relative">
                         <div className="absolute heading_5 text-ellipse">2024</div>
                     </div> */}
-                                    <img className="ml:h-[150px] md:h-[90px] h-[50px] ml:ml-5 md:ml-3 ml-2" src="./images/ellipse.svg" alt="logo" />
-                                    <div className="ml:text-[125px] md:text-[90px] bighead ml:mr-5 md:mr-3 mr-2 text-[34px]">UT</div>
-                                    <div className="ml:text-[125px] md:text-[90px] bighead text-[34px]">BRAND</div>
+                                    <img className="ml:h-[150px] md:h-[110px] h-[50px] ml:ml-5 md:ml-3 ml-2" src="./images/ellipse.svg" alt="logo" />
+                                    <div className="ml:text-[150px] md:text-[100px] bighead ml:mr-5 md:mr-3 mr-2 text-[34px]">UT</div>
+                                    <div className="ml:text-[150px] md:text-[100px] bighead text-[34px]">BRAND</div>
                                 </div>
                             </div>
                             {/* <div className="text-2xl sm:text-3xl">Welcome to my</div> */}

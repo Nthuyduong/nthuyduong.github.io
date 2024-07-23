@@ -87,7 +87,7 @@
   background-size: cover;
   background-position: center bottom;
 }
-.design-banner img {
+.design-banner img.design-banner-bg {
   filter: grayscale(100%);
 }
 .design-banner::before {

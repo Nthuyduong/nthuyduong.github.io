@@ -64,17 +64,17 @@ const Header = () => {
           <div>
             <div className="section w-full">
               <div className="overflow-hidden">
-                <div style={{ "--delay": openMobileMenu ? "500ms" : '0ms' }} className="text-center header-text f-menu cursor-text-wrp text-gray-300 hover:bg-gray-700 rounded-md" aria-current="page">
+                <div style={{ "--delay": openMobileMenu ? "500ms" : '0ms' }} className="text-center header-text f-menu cursor-text-wrp text-gray-300 hover:bg-gray-700" aria-current="page">
                   <Link to="/">Home</Link>
                 </div>
               </div>
               <div className="overflow-hidden">
-                <div style={{ "--delay": openMobileMenu ? "600ms" : '100ms' }} className="my-3 text-center header-text cursor-text-wrp text-gray-300 hover:bg-gray-700 rounded-md" aria-current="page">
+                <div style={{ "--delay": openMobileMenu ? "600ms" : '100ms' }} className="py-3 text-center header-text cursor-text-wrp text-gray-300 hover:bg-gray-700 rounded-md" aria-current="page">
                   <Link to={ROUTER.ABOUT}>About</Link>
                 </div>
               </div>
               <div className="overflow-hidden">
-                <div style={{ "--delay": openMobileMenu ? "600ms" : '100ms' }} className="mb-3 text-center header-text cursor-text-wrp text-gray-300 hover:bg-gray-700 rounded-md" aria-current="page">
+                <div style={{ "--delay": openMobileMenu ? "600ms" : '100ms' }} className="pb-3 text-center header-text cursor-text-wrp text-gray-300 hover:bg-gray-700 rounded-md" aria-current="page">
                   <Link to={ROUTER.DESIGNS}>My Projects</Link>
                 </div>
               </div>
