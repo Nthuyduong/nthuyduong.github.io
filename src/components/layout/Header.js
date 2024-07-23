@@ -43,7 +43,7 @@ const Header = () => {
 
   return (
     <>
-      <div ref={headerMobileRef} className={`sticky header-mobile inset-y-0 left-0 flex items-center flex-col w-full ${openMobileMenu ? 'header-mobile-open' : ''}`}>
+      <div ref={headerMobileRef} className={`sticky header-mobile inset-y-0 left-0 flex items-center flex-col w-full border-b border-solid border-ccc ${openMobileMenu ? 'header-mobile-open' : ''}`}>
         {/*Mobile menu button*/}
         <div
           className="mobile-menu-btn w-full relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
