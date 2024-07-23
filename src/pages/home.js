@@ -10,13 +10,12 @@ import LoadingMail from "../components/common/loadingMail";
 
 
 const emojis = [
-  "😶", "😪",
-  "😳", "🥶", "😧", "😮", "🤤",
-  "🤔", "🤭", "😦", "🤯", "🥴",
-  "🤫", "🤥", "😴", "😱", "😵",
-  "😐", "😑", "🤗",
-  "🙄", "😯", "😶", "😬", "🤑", "🤠",
-  "😲", "😮", "🤧",
+  '<img src="./images/fl1.svg"/>',
+  '<img src="./images/fl2.svg"/>',
+  '<img src="./images/fl3.svg"/>',
+  '<img src="./images/fl4.svg"/>',
+  '<img src="./images/fl5.svg"/>'
+  
 ];
 
 const Home = () => {
@@ -340,7 +339,7 @@ const Home = () => {
         <div className="md:grid grid-cols-12 gap-5 pt-6 md:pt-7">
           <div className="col-span-12 lg:col-span-5"></div>
           <div className="col-span-12 lg:col-span-7">
-            <div className="heading_6 mb-4">About me</div>
+            
             <div className="heading_2 md:mb-6 mb-4">
               Welcome to my portfolio! Excited to share UX/UI design projects and
               experiences here. Always ready to embrace new opportunities and challenges
@@ -378,19 +377,19 @@ const Home = () => {
         onMouseEnter={changeEmoji}
       >
 
-        <div className="bg-pink px-0 section-full scroll-container text-decor py-0 md:py-2">
+        <div className="bg-purple px-0 section-full scroll-container text-decor py-0 md:py-2">
           <Scroller>
             <Link to='/contact' className="flex">
               <div className="emoji flex items-center px-4">
-                <img className="w-full" src="./images/design/star.svg" alt="logo" loading="lazy" />
+              <img className="w-full" src="./images/fl1.svg" alt="logo" loading="lazy" />
               </div>
               {/* <div className="heading_3 cursor-text-wrp">HELLO</div> */}
 
-              <div className="heading_1 cursor-text-wrp">WELCOME TO MY PORTFOLIO!</div>
+              <div className="heading_1 cursor-text-wrp scroll-txt">WELCOME TO MY PORTFOLIO!</div>
               <div className="emoji flex items-center px-4">
-                <img className="w-full" src="./images/design/star.svg" alt="logo" loading="lazy" />
+                <img className="w-full" src="./images/fl2.svg" alt="logo" loading="lazy" />
               </div>
-              <div className="heading_1 cursor-text-wrp home-contact-scroller-text">LET'S CONTACT WITH ME</div>
+              <div className="heading_1 cursor-text-wrp home-contact-scroller-text scroll-txt">LET'S CONTACT WITH ME</div>
               {/* <div className="emoji flex items-center">
                 <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
               </div> */}

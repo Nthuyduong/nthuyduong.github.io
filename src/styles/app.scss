@@ -3,7 +3,7 @@ $primary_color: #E7E4DE;
 $secondary_color: #808285;
 $subcolor: #E4E4E4;
 $heading_1: 62px;
-$heading_2: 46px;
+$heading_2: 48px;
 $heading_3: 40px;
 $heading_4: 32px;
 $heading_5: 28px;
@@ -681,7 +681,7 @@ a {
 
   .mobile-menu-btn {
     z-index: 10001;
-    height: 52px;
+    // height: 52px;
   }
 
   .header-mobile-menu {
@@ -703,7 +703,7 @@ a {
   }
 
   .header-text {
-    font-family: 'SFUFutura', serif;
+    font-family: 'Sentient-lt', serif;
     font-size: 86px;
     line-height: 110%;
   }

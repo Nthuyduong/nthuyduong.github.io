@@ -9,6 +9,7 @@ module.exports = {
       'pink': '#F3C1C0',
       'white': '#ffffff',
       'tertiary': '#C7C9C0',
+      'purple': '#4F3852',
       'black': '#000000',
       'ccc': '#cccccc',
       '999': '#999999',

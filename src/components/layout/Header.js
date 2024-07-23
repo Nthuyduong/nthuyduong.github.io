@@ -46,13 +46,16 @@ const Header = () => {
       <div ref={headerMobileRef} className={`sticky header-mobile inset-y-0 left-0 flex items-center flex-col w-full border-b border-solid border-ccc ${openMobileMenu ? 'header-mobile-open' : ''}`}>
         {/*Mobile menu button*/}
         <div
-          className="mobile-menu-btn w-full relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+          className="mobile-menu-btn w-full relative inline-flex items-center justify-center rounded-md py-4 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
           onClick={() => setOpenMobileMenu(!openMobileMenu)}
         >
           <div className="section w-full">
             <div className="flex gap-1 w-full justify-between">
-              <span>Nthuyduong</span>
+              <div>
+                <img className="" src="./images/mylogo.svg" alt="logo" />
+              </div>
               {/* <img className='btn-header-mobile' src="/images/arrow-down.png" alt="" /> */}
+              
               <div className="header-close-wrp justify-center">
                 <div className="header-close header-close-1" ></div>
                 <div className="header-close header-close-2"></div>
@@ -60,6 +63,7 @@ const Header = () => {
             </div>
           </div>
         </div>
+
         <div className="w-full flex flex-col header-mobile-menu py-5" style={{ "--delay": !openMobileMenu ? "450ms" : '0ms' }}>
           <div>
             <div className="section w-full">
