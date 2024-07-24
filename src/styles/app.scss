@@ -313,7 +313,7 @@ a {
 .my-header {
   z-index: 1000;
   transition: top .3s linear, opacity 0s;
-  background: #fff;
+  background: #F9F7F4;
 
   .header-navdrop {
     .navdrop-inner {
@@ -946,4 +946,36 @@ input[type=number] {
 
 .f-menu {
   padding-top: 120px;
+}
+
+
+.header-mobile-open{
+  
+  .nav-active a{
+    position: relative;
+  }
+  .nav-active a::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 4px;
+    background-color: #ccc;
+    animation: strike 1s liner forwards;
+    animation-play-state: running;
+  }
+  
+  @keyframes strike{
+   from{
+    width: 0;
+   }
+   to{
+    width: 100%;
+   }
+  }
+}
+.header-close{
+  .nav-active a::after{
+    animation-play-state: paused;
+  }
 }

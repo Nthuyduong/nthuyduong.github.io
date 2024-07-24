@@ -41,9 +41,17 @@ const Header = () => {
     }
   }
 
+
+  const location = useLocation();
+  const [currentPath, setCurrentPath] = useState(location.pathname);
+
+  useEffect(() => {
+    setCurrentPath(location.pathname);
+  }, [location]);
+
   return (
     <>
-      <div ref={headerMobileRef} className={`sticky header-mobile inset-y-0 left-0 flex items-center flex-col w-full border-b border-solid border-ccc ${openMobileMenu ? 'header-mobile-open' : ''}`}>
+      <div ref={headerMobileRef} className={`sticky header-mobile inset-y-0 left-0 flex items-center flex-col w-full border-b border-solid border-ccc ${openMobileMenu ? 'header-mobile-open' : 'header-close'}`}>
         {/*Mobile menu button*/}
         <div
           className="mobile-menu-btn w-full relative inline-flex items-center justify-center rounded-md py-4 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -55,7 +63,7 @@ const Header = () => {
                 <img className="" src="./images/mylogo.svg" alt="logo" />
               </div>
               {/* <img className='btn-header-mobile' src="/images/arrow-down.png" alt="" /> */}
-              
+
               <div className="header-close-wrp justify-center">
                 <div className="header-close header-close-1" ></div>
                 <div className="header-close header-close-2"></div>
@@ -68,48 +76,24 @@ const Header = () => {
           <div>
             <div className="section w-full">
               <div className="overflow-hidden">
-                <div style={{ "--delay": openMobileMenu ? "500ms" : '0ms' }} className="text-center header-text f-menu cursor-text-wrp text-gray-300 hover:bg-gray-700" aria-current="page">
-                  <Link to="/">Home</Link>
+                <div style={{ "--delay": openMobileMenu ? "500ms" : '0ms' }} className="text-center header-text f-menu cursor-text-wrp" aria-current="page">
+                  <Link to="/"><span className="heading_6 pr-3">01.</span>Home</Link>
                 </div>
               </div>
               <div className="overflow-hidden">
-                <div style={{ "--delay": openMobileMenu ? "600ms" : '100ms' }} className="py-3 text-center header-text cursor-text-wrp text-gray-300 hover:bg-gray-700 rounded-md" aria-current="page">
-                  <Link to={ROUTER.ABOUT}>About</Link>
+                <div style={{ "--delay": openMobileMenu ? "600ms" : '100ms' }} className={`py-3 text-center header-text cursor-text-wrp ${currentPath === ROUTER.ABOUT ? 'nav-active' : ''}`} aria-current="page">
+                  <Link to={ROUTER.ABOUT}>About<span className="heading_6 pl-3">02.</span></Link>
                 </div>
               </div>
               <div className="overflow-hidden">
-                <div style={{ "--delay": openMobileMenu ? "600ms" : '100ms' }} className="pb-3 text-center header-text cursor-text-wrp text-gray-300 hover:bg-gray-700 rounded-md" aria-current="page">
-                  <Link to={ROUTER.DESIGNS}>My Projects</Link>
+                <div style={{ "--delay": openMobileMenu ? "600ms" : '100ms' }} className={`pb-3 text-center header-text cursor-text-wrp ${currentPath === ROUTER.DESIGNS ? 'nav-active' : ''}`} aria-current="page">
+                  <Link to={ROUTER.DESIGNS}><span className="heading_6 pr-3">03.</span>My Projects</Link>
                 </div>
               </div>
-              {/* <div className="overflow-hidden">
-              <div style={{"--delay" : openMobileMenu ? "700ms": '200ms'}} className="header-text header-nav-item relative header-mobile-navdrop px-3">
-                <div
-                  className="navdrop-title z-50 text-gray-300 hover:text-gray rounded-md pr-3 flex w-full"
-                  onClick={() => setOpenNavDropdown(!openNavDropdown)}
-                >
-                  <Link to={ROUTER.DESIGNS} className="text-4xl font-medium flex nav-link"><span className="nav-text">Projects</span></Link>
-                  <span className="w-full">(04)</span>
-                </div>
-                <div className={`navdrop-mobile-inner left-30 w-48 ${openNavDropdown ? 'navdrop-mobile-inner-open' : ''}`}>
-                  <div className="sub-menu block px-4 text-xl text-gray-700">
-                    <Link to={ROUTER.AGURI} className="nav-link">Jewelry Website</Link>
-                  </div>
-                  <div className="sub-menu block px-4 text-xl text-gray-700">
-                    <Link to={ROUTER.ALIO} className="nav-link">Yoga App & Website</Link>
-                  </div>
-                  <div className="sub-menu block px-4 text-xl text-gray-700">
-                    <Link to={ROUTER.CAKE} className="nav-link">Cake Blog</Link>
-                  </div>
-                  <div className="sub-menu block px-4 text-xl text-gray-700">
-                    <Link to={ROUTER.FASHION} className="nav-link">Fashion Brand App</Link>
-                  </div>
-                </div>
-              </div>
-            </div> */}
+
               <div className="overflow-hidden">
-                <div style={{ "--delay": openMobileMenu ? "800ms" : '300ms' }} className="text-center header-text cursor-text-wrp text-gray-300 hover:bg-gray-700 rounded-md" aria-current="page">
-                  <Link to={ROUTER.CONTACT}>Contact</Link>
+                <div style={{ "--delay": openMobileMenu ? "800ms" : '300ms' }} className={`text-center header-text cursor-text-wrp ${currentPath === ROUTER.CONTACT ? 'nav-active' : ''}`} aria-current="page">
+                  <Link to={ROUTER.CONTACT}>Contact<span className="heading_6 pl-3">04.</span></Link>
                 </div>
               </div>
             </div>
@@ -130,55 +114,7 @@ const Header = () => {
         </div>
 
       </div>
-      {/*<div ref={headerRef} className="my-header sticky flex flex-1 items-center justify-center sm:items-stretch sm:justify-start border-b border-ccc border-solid">
-        <div className="hidden w-full md:block">
-          <div className="flex space-x-4 justify-center w-full">
-            <div className="px-4 py-4">
-              <Link to="/" className="cursor-text-wrp text-sm scroll-text" data-replace="HOME" aria-current="page">
-                <span className="">HOME
-                </span>
-              </Link>
-            </div>
-            <div className="px-4 py-4">
-              <Link to={ROUTER.ABOUT} className="navdrop-title cursor-text-wrp rounded-md text-sm scroll-text" data-replace="ABOUT">
-                <span className="">ABOUT</span>
-              </Link>
-            </div>
-            <div className="header-nav-item relative header-navdrop">
-              <div className="navdrop-title z-50 rounded-md pr-4 py-4">
-                <Link to={ROUTER.DESIGNS} className="text-sm flex nav-link scroll-text" data-replace="PROJECTS">
-                  <span className="nav-text">PROJECTS</span>
-                </Link>
-              </div>
-              <div className="navdrop-inner absolute left-30 w-48 py-1 border-solid border-x border-b border-ccc">
-                <div className="sub-menu block px-4 py-2 text-sm">
-                  <Link to={ROUTER.AGURI} className="body_text nav-link">Jewelry Website</Link>
-                </div>
-                <div className="sub-menu block px-4 py-2 text-sm text-white">
-                  <Link to={ROUTER.BEAUTYBLOG} className="body_text nav-link">Beauty Blog</Link>
-                </div>
-                <div className="sub-menu block px-4 py-2 text-sm text-white">
-                  <Link to={ROUTER.ALIO} className="body_text nav-link">Yoga App & Website</Link>
-                </div>
-                <div className="sub-menu block px-4 py-2 text-sm text-white">
-                  <Link to={ROUTER.CAKE} className="body_text nav-link">Cake Blog</Link>
-                </div>
-                <div className="sub-menu block px-4 py-2 text-sm text-white">
-                  <Link to={ROUTER.FASHION} className="body_text nav-link">Fashion Brand App</Link>
-                </div>
-              </div> 
-            </div>
-            <div className="px-3 py-4">
-              <Link to={ROUTER.CONTACT} className="rounded-md text-sm cursor-text-wrp scroll-text" data-replace="CONTACT">
-                <span className="">
-                  CONTACT
-                </span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-      */}
+
     </>
   )
 }

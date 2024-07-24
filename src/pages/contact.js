@@ -70,11 +70,48 @@ const Contact = () => {
   }
 
   return (
-    <div className="section">
-      <div className="px-3 md:px-0 contact-page mt-4 md:mt-7 md:mb-9 mb-4">
+    <div className="section mt-4 md:mt-7">
+      <div className="mb-7">
+        <div className="bighead cursor-text-wrp mb-4 text-center">Get in touch</div>
+        <div className="flex justify-center">
+          <div className="text-center mb-4 w-2/3">
+            “I welcome any potential recruiters to contact me regarding job opportunities
+            that match my skillset and interests. I am excited to explore new opportunities and connect
+            with professionals in my field”
+          </div>
+        </div>
+        <div className="heading_3 text-center mb-6">
+          <a href="mailto:Nthduong898@gmail.com">Nthduong898@gmail.com</a>
+        </div>
+        {/* <div className="roll-animation contact-roll absolute md:block hidden">
+          <div className="roll">
+            <div className="circle">
+              <img className="h-[200px] w-full" src="./images/contact/contact-roll.svg" alt="logo" loading="lazy" />
+            </div>
+          </div>
+        </div> */}
+        <div className="flex justify-center">
+          <div className="medium_text mb-1 cursor-text-wrp">
+            <a className="text-link" href="https://www.behance.net/duongthuy13" target="_blank">
+              Behance
+            </a>
+          </div>
+          <div className="medium_text cursor-text-wrp mx-3">
+            <a className="text-link" href="https://www.instagram.com/nth_d9">
+              Instagram
+            </a>
+          </div>
+          <div className="medium_text cursor-text-wrp">
+            <a className="text-link">
+              Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+      {/* <div className="px-3 md:px-0 contact-page mt-4 md:mt-7 md:mb-9 mb-4">
         <div className="md:grid grid-cols-12 gap-4 mb-2 md:mb-5">
-         
-          <div className="col-span-12">
+          <div className="col-span-1"></div>
+          <div className="col-span-11">
             <div className="heading_1 cursor-text-wrp">Get In Touch</div>
           </div>
         </div>
@@ -118,7 +155,7 @@ const Contact = () => {
           </div>
           <div className="col-span-1"></div>
           <div className="col-span-6">
-            {/* <div className="heading_6 mb-5 cursor-text-wrp">Send me a message</div> */}
+
             <div className="md:grid grid-cols-2 gap-4">
               <div className="md:mb-0 mb-4 col-span-1 grid contact_field relative">
                 <label className="mb-1 cursor-text-wrp">Your Name *</label>
@@ -187,9 +224,9 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          {/* <div className="col-span-1"></div> */}
+
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
