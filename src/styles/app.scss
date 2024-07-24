@@ -951,10 +951,10 @@ input[type=number] {
 
 .header-mobile-open{
   
-  .nav-active a{
+  .nav-active{
     position: relative;
   }
-  .nav-active a::after{
+  .nav-active::after{
     content: '';
     position: absolute;
     top: 50%;
@@ -964,18 +964,17 @@ input[type=number] {
     animation: strike 1s liner forwards;
     animation-play-state: running;
   }
-  
-  @keyframes strike{
-   from{
-    width: 0;
-   }
-   to{
-    width: 100%;
-   }
-  }
 }
 .header-close{
   .nav-active a::after{
     animation-play-state: paused;
   }
 }
+@keyframes strike{
+  from{
+   width: 0;
+  }
+  to{
+   width: 100%;
+  }
+ }

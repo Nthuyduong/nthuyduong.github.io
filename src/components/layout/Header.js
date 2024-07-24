@@ -76,7 +76,7 @@ const Header = () => {
           <div>
             <div className="section w-full">
               <div className="overflow-hidden">
-                <div style={{ "--delay": openMobileMenu ? "500ms" : '0ms' }} className="text-center header-text f-menu cursor-text-wrp" aria-current="page">
+                <div style={{ "--delay": openMobileMenu ? "500ms" : '0ms' }} className={`text-center header-text f-menu cursor-text-wrp ${currentPath === '/' ? 'nav-active' : ''}`} aria-current="page">
                   <Link to="/"><span className="heading_6 pr-3">01.</span>Home</Link>
                 </div>
               </div>
