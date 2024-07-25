@@ -77,23 +77,35 @@ const Header = () => {
             <div className="section w-full">
               <div className="overflow-hidden">
                 <div style={{ "--delay": openMobileMenu ? "500ms" : '0ms' }} className={`text-center header-text f-menu cursor-text-wrp ${currentPath === '/' ? 'nav-active' : ''}`} aria-current="page">
-                  <Link to="/"><span className="heading_6 pr-3">01.</span>Home</Link>
+                  <div className="flex justify-center items-baseline">
+                    <span className="heading_6 pr-3">01.</span>
+                    <Link to="/" className="nav-text">Home</Link>
+                  </div>
                 </div>
               </div>
               <div className="overflow-hidden">
                 <div style={{ "--delay": openMobileMenu ? "600ms" : '100ms' }} className={`py-3 text-center header-text cursor-text-wrp ${currentPath === ROUTER.ABOUT ? 'nav-active' : ''}`} aria-current="page">
-                  <Link to={ROUTER.ABOUT}>About<span className="heading_6 pl-3">02.</span></Link>
+                  <div className="flex justify-center items-baseline">
+                    <Link to={ROUTER.ABOUT} className="nav-text">About</Link>
+                    <div className="heading_6 pl-3">02.</div>
+                  </div>
                 </div>
               </div>
               <div className="overflow-hidden">
                 <div style={{ "--delay": openMobileMenu ? "600ms" : '100ms' }} className={`pb-3 text-center header-text cursor-text-wrp ${currentPath === ROUTER.DESIGNS ? 'nav-active' : ''}`} aria-current="page">
-                  <Link to={ROUTER.DESIGNS}><span className="heading_6 pr-3">03.</span>My Projects</Link>
+                  <div className="flex justify-center items-baseline">
+                    <span className="heading_6 pr-3">03.</span>
+                    <Link to={ROUTER.DESIGNS} className="nav-text">My Projects</Link>
+                  </div>
                 </div>
               </div>
 
               <div className="overflow-hidden">
                 <div style={{ "--delay": openMobileMenu ? "800ms" : '300ms' }} className={`text-center header-text cursor-text-wrp ${currentPath === ROUTER.CONTACT ? 'nav-active' : ''}`} aria-current="page">
-                  <Link to={ROUTER.CONTACT}>Contact<span className="heading_6 pl-3">04.</span></Link>
+                  <div className="flex justify-center items-baseline">
+                    <Link to={ROUTER.CONTACT} className="nav-text">Contact</Link>
+                    <span className="heading_6 pl-3">04.</span>
+                  </div>
                 </div>
               </div>
             </div>

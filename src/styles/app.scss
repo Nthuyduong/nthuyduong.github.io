@@ -950,19 +950,19 @@ input[type=number] {
 
 
 .header-mobile-open{
-  
-  .nav-active{
+  .nav-active .nav-text{
     position: relative;
   }
-  .nav-active::after{
+  .nav-active .nav-text::after{
     content: '';
     position: absolute;
     top: 50%;
     left: 0;
-    height: 4px;
-    background-color: #ccc;
-    animation: strike 1s liner forwards;
+    height: 9px;
+    background-color: #F3C1C0;
+    animation: strike linear 2s forwards;
     animation-play-state: running;
+    animation-duration: 1.5s;
   }
 }
 .header-close{
