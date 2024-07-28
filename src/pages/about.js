@@ -69,7 +69,7 @@ const About = () => {
       </div> */}
       {/* New banner */}
 
-      <div className="section page-element border-b border-solid border-ccc">
+      {/* <div className="section page-element border-b border-solid border-ccc">
         <div className="md:grid grid-cols-12 gap-5 md:py-7 py-4">
           <div className="col-span-6 md:flex flex-col">
             <div className="about-title mb-1 font-medium animate slideInUp cursor-text-wrp">DUONG.NT</div>
@@ -90,7 +90,7 @@ const About = () => {
             <img className="w-100" src="./images/about/abtme.png" alt="#" loading="lazy" width="630" height="430"></img>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* <div className="page-element bg-primary">
         <div className="section about1 md:py-0 py-6">
@@ -143,7 +143,7 @@ const About = () => {
         </div>
       </div> */}
 
-      <div className="section" ref={ref}>
+      {/* <div className="section" ref={ref}>
         <div className="py-4 md:py-6 md:grid grid-cols-12 gap-5 w-full border-b border-solid border-ccc">
           <div className="col-span-12 lg:col-span-3 md:flex items-center">
             <div className="heading_2 md:pb-0 pb-4 cursor-text-wrp animate slideInUp">ABOUT ME</div>
@@ -179,8 +179,82 @@ const About = () => {
             </div>
           </div>
         </div>
+      </div> */}
+
+      {/* ABOUT ME NEW */}
+      <div className="mt-5 md:mt-8">
+        <div className="md:grid grid-cols-12 gap-5">
+          <div className="col-span-2"></div>
+          <div className="col-span-2">
+            <div className="heading_5">About me</div>
+          </div>
+          <div className="col-span-6">
+
+            <div className="md:mb-3 mb-3">With 2 years of experience in UX/UI design, I've refined my skills in creating user-centric designs that balance aesthetics
+              and functionality. My journey in the field has given me a strong foundation in diverse design principles and methodologies.
+              Currently, I handle both Designer & Developer tasks, seamlessly blending design and development processes.
+              This dual role enables me to approach projects comprehensively, bridging the gap between design and implementation
+              to ensure that design visions translate effectively into responsive, high-performance digital products that are
+              both functional and visually engaging.
+            </div>
+            <div className="">
+              I am confident in my ability to quickly grasp work, meet all requirements, and ensure timely completion.
+              My approach is holistic, considering both the visual and technical aspects of web development, which helps
+              in delivering cohesive and polished end products. Throughout my career, I have continuously sought to improve my skills and
+              stay updated with industry trends. My commitment to excellence drives me to deliver
+              high-quality work that not only meets but also anticipates user needs.
+            </div>
+          </div>
+          <div className="col-span-2"></div>
+        </div>
       </div>
-      <div className="page-element section mt-5 md:mt-7">
+
+      <div>
+        <div className="mt-5 md:mt-8">
+          <div className="md:grid grid-cols-12 gap-5">
+            <div className="col-span-2"></div>
+            <div className="col-span-8">
+              <div className="mb-5 heading_5">Additional Informations</div>
+              <div className="md:grid grid-cols-8 py-4 items-center gap-5 border-t border-solid border-999">
+                <div className="col-span-2 medium_text cursor-text-wrp">
+                  Basic Information
+                </div>
+                <div className="col-span-6">
+                  <div className="block sm:flex md:flex lg:flex items-center md:justify-start gap-5 lg:gap-0 body_text cursor-text-wrp">
+                    <div className="md:mb-0 mb-2">BOD: 08/19/1998</div>
+                    <img className="md:block hidden lg:mx-3 md:mx-0 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                    <div className="md:mb-0 mb-2">Nationality: Local Vietnamese</div>
+                    <img className="md:block hidden lg:mx-3 md:mx-0 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                    <div className="md:mb-0 mb-2">Maritality: Single</div>
+                    <img className="md:block hidden lg:mx-3 md:mx-0 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                    <div className="md:mb-0 mb-2">Gender: Female</div>
+                  </div>
+                </div>
+
+              </div>
+              <div className="md:grid grid-cols-8 gap-5 pt-4 items-center border-t border-solid border-999">
+                <div className="col-span-2 medium_text cursor-text-wrp">
+                  Hobbies
+                </div>
+                <div className="col-span-6">
+                  <div className="block sm:flex md:flex lg:flex items-center lg:justify-start pb-0 body_text cursor-text-wrp gap-5 md:gap-0">
+                    <div className="md:mb-0 mb-2">Learning</div>
+                    <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                    <div className="md:mb-0 mb-2">Reading</div>
+                    <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                    <div className="md:mb-0 mb-2">Drawing</div>
+                    <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                    <div className="md:mb-0 mb-2">Swimming</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-span-2"></div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="page-element section mt-5 md:mt-7">
         <div className="about2">
           <div className="md:grid md:grid-cols-12 gap-5">
             <div className="lg:col-span-3 md:col-span-6 animate slideInUp">
@@ -189,13 +263,13 @@ const About = () => {
               </div>
             </div>
             <div className="lg:col-span-1 hidden lg:block">
-              {/* <div className="heading_2 md:py-0 py-4 cursor-text-wrp animate slideInUp">Self - Introduce</div> */}
+              <div className="heading_2 md:py-0 py-4 cursor-text-wrp animate slideInUp">Self - Introduce</div>
             </div>
 
             <div className="lg:col-span-8 md:col-span-6 animate body_text slideInUp cursor-text-wrp md:flex items-end">
               <div className="animate slideInUp">
 
-              <div className="text-[20px] mb-4 md:mb-5 md:mt-0 mt-4">Hello. My name is Duong.</div>
+                <div className="text-[20px] mb-4 md:mb-5 md:mt-0 mt-4">Hello. My name is Duong.</div>
                 <div className="grid grid-cols-8 lg:gap-6">
                   <div className="col-span-8 lg:col-span-4">
                     <div className="md:mb-3 mb-3">With 2 years of experience in UX/UI design, I've refined my skills in creating user-centric designs that balance aesthetics
@@ -205,26 +279,25 @@ const About = () => {
                       to ensure that design visions translate effectively into responsive, high-performance digital products that are
                       both functional and visually engaging.
                     </div>
-
                   </div>
                   <div className="col-span-8 lg:col-span-4">
-                      I am confident in my ability to quickly grasp work, meet all requirements, and ensure timely completion.
-                      My approach is holistic, considering both the visual and technical aspects of web development, which helps
-                      in delivering cohesive and polished end products. Throughout my career, I have continuously sought to improve my skills and
-                      stay updated with industry trends. My commitment to excellence drives me to deliver
-                      high-quality work that not only meets but also anticipates user needs.
-                    </div>
+                    I am confident in my ability to quickly grasp work, meet all requirements, and ensure timely completion.
+                    My approach is holistic, considering both the visual and technical aspects of web development, which helps
+                    in delivering cohesive and polished end products. Throughout my career, I have continuously sought to improve my skills and
+                    stay updated with industry trends. My commitment to excellence drives me to deliver
+                    high-quality work that not only meets but also anticipates user needs.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="page-element mt-4 md:mt-7">
-        <div className="section py-4 md:py-7 border-t border-solid border-ccc">
+        <div className="section py-4 md:py-7">
           <div className="md:grid grid-cols-12 gap-6">
             <div className="md:col-span-12 lg:col-span-4 skill-common mb-2 animate slideInUp">
-              <div className="heading_2 mb-4 cursor-text-wrp">
+              <div className="heading_5 mb-4 cursor-text-wrp">
                 MY SKILLS
               </div>
               <div className="medium_text mid-text mb-4 cursor-text-wrp">
@@ -281,8 +354,63 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      <div>
+        <div className="mt-5 md:mt-8">
+          <div className="md:grid grid-cols-12 gap-5">
+            <div className="col-span-2"></div>
+            <div className="col-span-8">
+              <div className="flex w-full">
+                <div className="mb-4 heading_5 mr-auto">EDUCATIONAL BACKGROUND</div>
+                {/* <div>[updating...]</div> */}
+              </div>
+
+              <div className="md:grid grid-cols-8 items-center py-4 gap-5 border-t border-solid border-999">
+                <div className="col-span-3 body_text cursor-text-wrp">
+                  Past - 2016
+                </div>
+                <div className="col-span-5">
+                  <div className="mb-1 medium_text">Phung Khac Khoan High School</div>
+                  <div className="">Thach That district, Hanoi</div>
+                </div>
+
+              </div>
+              <div className="md:grid grid-cols-8 gap-5 items-center py-4 border-t border-solid border-999">
+                <div className="col-span-3 body_text cursor-text-wrp">
+                  2016 - JULY 2020
+                </div>
+                <div className="col-span-5">
+                  <div className="mb-1 medium_text">HUNRE (Hanoi University of Natural Resources & Environment)</div>
+                  <div className="">Very good degree, GPA 3.4</div>
+                </div>
+              </div>
+              <div className="md:grid grid-cols-8 gap-5 items-center py-4 border-t border-solid border-999">
+                <div className="col-span-3 body_text cursor-text-wrp">
+                  AUGUST 2020 - JANUARY 2022
+                </div>
+                <div className="col-span-5">
+                  <div className="mb-1 medium_text">Arena Multimedia</div>
+                  <div className="md:mb-0">Graphic Design | UX/UI Design</div>
+                </div>
+              </div>
+              <div className="md:grid grid-cols-8 gap-5 items-center py-4 border-t border-solid border-999">
+                <div className="col-span-3 body_text cursor-text-wrp">
+                  MAY 2022 - NOVEMBER 2023
+                </div>
+                <div className="col-span-5">
+                  <div className="mb-1 medium_text">FPT Aptech VietNam</div>
+                  <div className="md:mb-0">Website Developer (FE & BE)</div>
+                </div>
+              </div>
+
+            </div>
+            <div className="col-span-2"></div>
+          </div>
+        </div>
+      </div>
+
       {/* Educational background */}
-      <div className="bg-primary">
+      {/* <div className="bg-primary">
         <div className="section pt-5 md:pt-7">
           <div className="timeline-title heading_2 mb-5 md:mb-8 cursor-text-wrp animate slideInUp">
             ACADEMIC PROFILE
@@ -343,11 +471,11 @@ const About = () => {
 
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="md:my-7 my-4 section-full core-value px-0">
+      <div className="md:my-8 my-4 section-full core-value px-0">
         <div className="section">
-          <div className="heading_2 md:mb-6 mb-5 cursor-text-wrp core-value-title animate slideInUp" >
+          <div className="heading_5 md:mb-6 mb-5 cursor-text-wrp core-value-title animate slideInUp" >
             MY CORE VALUES
           </div>
           <Slider
