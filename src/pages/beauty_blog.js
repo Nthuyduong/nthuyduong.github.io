@@ -93,10 +93,10 @@ const BeautyBlog = () => {
                         </div>
                     </div>
                     <HorizontalScroll>
-                        <img className="w-100" src="./images/Pj05_beauty/hz1.png" alt="#" loading="lazy" height={500} width={500}/>
+                        <img className="w-full" src="./images/Pj05_beauty/hz1.png" alt="#" loading="lazy" height={500} width={500}/>
                         
-                        <img className="w-100" src="./images/Pj05_beauty/hz2.png" alt="#" loading="lazy" height={500} width={500}/>
-                        <img className="w-100" src="./images/Pj05_beauty/hz3.png" alt="#" loading="lazy" height={500} width={500}/>
+                        <img className="w-full" src="./images/Pj05_beauty/hz2.png" alt="#" loading="lazy" height={500} width={500}/>
+                        <img className="w-full" src="./images/Pj05_beauty/hz3.png" alt="#" loading="lazy" height={500} width={500}/>
                     </HorizontalScroll>
                     
                     {/* <div className="project-item md:pb-6 pb-4">

@@ -10,6 +10,7 @@ const HorizontalScroll = ({ children }) => {
     const ref = useRef(null);
 
     useLayoutEffect(() => {
+        if (!ref.current) return;
         let sections = gsap.utils.toArray(ref.current.children);
 
         let scrollTween = gsap.to(sections, {

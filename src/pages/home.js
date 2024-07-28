@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import { ROUTER } from "../utils/constants";
 import Scroller from "../components/common/scroller";
@@ -8,6 +8,10 @@ import { sendContactForm } from "../services/app";
 import Loading from "../components/common/loading";
 import LoadingMail from "../components/common/loadingMail";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const emojis = [
   '<img src="./images/fl1.svg"/>',
@@ -101,6 +105,65 @@ const Home = () => {
       setIndex(index === texts.length - 1 ? 0 : index + 1)
     }, 1000);
   }, [currentText])
+
+  useLayoutEffect(() => {
+    const test1Height = document.querySelector(".test-pr").offsetHeight;
+    var tl = gsap.to('.test-pr', {
+      yPercent: -100,
+      ease: "power2",
+      duration: 0.5,
+      scrollTrigger: {
+        trigger: ".test-pr",
+        scrub: true,
+        // pin: true,
+        start: `top ${200 + test1Height * 0}`,
+        end: "+=" + test1Height,
+        markers: true,
+      }
+    });
+    const test2Height = document.querySelector(".test-pr-1").offsetHeight;
+    var tl1 = gsap.to('.test-pr-1', {
+      yPercent: -100,
+      ease: "power2",
+      duration: 0.5,
+      scrollTrigger: {
+        trigger: ".test-pr-1",
+        scrub: true,
+        // pin: true,
+        start: `top ${200 + test2Height * 1}`,
+        end: "+=" + test2Height * 2,
+        markers: true,
+      }
+    });
+    const test3Height = document.querySelector(".test-pr-2").offsetHeight;
+    var tl2 = gsap.to('.test-pr-2', {
+      yPercent: -100,
+      ease: "power2",
+      duration: 0.5,
+      scrollTrigger: {
+        trigger: ".test-pr-2",
+        scrub: true,
+        // pin: true,
+        start: `top ${200 + test3Height * 2}`,
+        end: "+=" + test3Height * 3,
+        markers: true,
+      }
+    });
+    const test4Height = document.querySelector(".test-pr-3").offsetHeight;
+    var tl3 = gsap.to('.test-pr-3', {
+      yPercent: -100,
+      ease: "power2",
+      duration: 0.5,
+      scrollTrigger: {
+        trigger: ".test-pr-3",
+        scrub: true,
+        // pin: true,
+        start: `top ${200 + test4Height * 3}`,
+        end: "+=" + test4Height * 4,
+        markers: true,
+      }
+    });
+  }, [])
 
   function changeEmoji() {
     const currentEmojis = document.querySelectorAll(".emoji");
@@ -369,7 +432,51 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      <div className="test bg-[#ccc] h-[50vh] flex justify-center items-center">
+        <div className="flex flex-col gap-[2px] items-center">
+          <div className="overflow-hidden relative">
+            <div className="test-pr">
+              <div className="heading_1 test-text byme2 cursor-text-wrp text-[black] w-fit">
+                NthDuong
+              </div>
+              <div className="heading_1 test-text-2 byme2 cursor-text-wrp text-[black] w-fit">
+                NthDuong
+              </div>
+            </div>
+          </div>
+          <div className="overflow-hidden relative">
+            <div className="test-pr-1">
+              <div className="heading_1 test-text byme2 cursor-text-wrp text-[black] w-fit">
+                NtGiang
+              </div>
+              <div className="heading_1 test-text-2 byme2 cursor-text-wrp text-[black] w-fit">
+                NtGiang
+              </div>
+            </div>
+          </div>
+          <div className="overflow-hidden relative">
+            <div className="test-pr-2">
+              <div className="heading_1 test-text byme2 cursor-text-wrp text-[black] w-fit">
+                NthDuong + NtGiang
+              </div>
+              <div className="heading_1 test-text-2 byme2 cursor-text-wrp text-[black] w-fit">
+                NthDuong + NtGiang
+              </div>
+            </div>
+          </div>
+          <div className="overflow-hidden relative">
+            <div className="test-pr-3">
+              <div className="heading_1 test-text byme2 cursor-text-wrp text-[black] w-fit">
+                NtGiang + NthDuong
+              </div>
+              <div className="heading_1 test-text-2 byme2 cursor-text-wrp text-[black] w-fit">
+                NtGiang + NthDuong
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
       {/*DECOR TEXT*/}
 
       <div
