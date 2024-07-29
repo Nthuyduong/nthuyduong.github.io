@@ -112,13 +112,13 @@ const BeautyBlog = () => {
                             </div>
                         </div>
                     </div> */}
-                    <div className="project-item md:pb-6 pb-4">
+                    <div className="project-item md:py-6 py-4">
                         <div className="md:grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6 md:mb-0 mb-4">
-                                <img className="w-100" src="./images/Pj05_beauty/beauty-mockup4.png" alt="#" loading="lazy" height={500} width={500}/>
+                                <img className="w-full" src="./images/Pj05_beauty/beauty-mockup4.png" alt="#" loading="lazy" height={500} width={500}/>
                             </div>
                             <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end relative">
-                                <img className="w-100" src="./images/Pj05_beauty/aboutpage.png" alt="#" loading="lazy" height={500} width={500}/>
+                                <img className="w-full" src="./images/Pj05_beauty/aboutpage.png" alt="#" loading="lazy" height={500} width={500}/>
                             </div>
                         </div>
                     </div>
@@ -133,10 +133,10 @@ const BeautyBlog = () => {
                     <div className="project-item md:pb-6 pb-4">
                         <div className="md:grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6 md:mb-0 mb-4">
-                                <img className="w-100" src="./images/Pj05_beauty/homepage.png" alt="#" loading="lazy" />
+                                <img className="w-full" src="./images/Pj05_beauty/homepage.png" alt="#" loading="lazy" />
                             </div>
                             <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end relative">
-                                <img className="w-100" src="./images/Pj05_beauty/beauty-mockup2.png" alt="#" loading="lazy" />
+                                <img className="w-full" src="./images/Pj05_beauty/beauty-mockup2.png" alt="#" loading="lazy" />
                             </div>
                         </div>
                     </div>
