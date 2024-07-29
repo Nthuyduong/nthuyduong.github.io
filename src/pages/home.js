@@ -344,8 +344,6 @@ const Home = () => {
         </Scroller>
       </div> */}
 
-
-
       {/* New section */}
       {/* <div className="relative md:py-9 bg-tertiary">
         <div className="section">
