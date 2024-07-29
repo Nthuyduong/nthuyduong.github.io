@@ -106,64 +106,64 @@ const Home = () => {
     }, 1000);
   }, [currentText])
 
-  useLayoutEffect(() => {
-    const test1Height = document.querySelector(".test-pr").offsetHeight;
-    var tl = gsap.to('.test-pr', {
-      yPercent: -100,
-      ease: "power2",
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: ".test-pr",
-        scrub: true,
-        // pin: true,
-        start: `top ${200 + test1Height * 0}`,
-        end: "+=" + test1Height,
-        markers: true,
-      }
-    });
-    const test2Height = document.querySelector(".test-pr-1").offsetHeight;
-    var tl1 = gsap.to('.test-pr-1', {
-      yPercent: -100,
-      ease: "power2",
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: ".test-pr-1",
-        scrub: true,
-        // pin: true,
-        start: `top ${200 + test2Height * 1}`,
-        end: "+=" + test2Height * 2,
-        markers: true,
-      }
-    });
-    const test3Height = document.querySelector(".test-pr-2").offsetHeight;
-    var tl2 = gsap.to('.test-pr-2', {
-      yPercent: -100,
-      ease: "power2",
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: ".test-pr-2",
-        scrub: true,
-        // pin: true,
-        start: `top ${200 + test3Height * 2}`,
-        end: "+=" + test3Height * 3,
-        markers: true,
-      }
-    });
-    const test4Height = document.querySelector(".test-pr-3").offsetHeight;
-    var tl3 = gsap.to('.test-pr-3', {
-      yPercent: -100,
-      ease: "power2",
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: ".test-pr-3",
-        scrub: true,
-        // pin: true,
-        start: `top ${200 + test4Height * 3}`,
-        end: "+=" + test4Height * 4,
-        markers: true,
-      }
-    });
-  }, [])
+  // useLayoutEffect(() => {
+  //   const test1Height = document.querySelector(".test-pr").offsetHeight;
+  //   var tl = gsap.to('.test-pr', {
+  //     yPercent: -100,
+  //     ease: "power2",
+  //     duration: 0.5,
+  //     scrollTrigger: {
+  //       trigger: ".test-pr",
+  //       scrub: true,
+  //       // pin: true,
+  //       start: `top ${200 + test1Height * 0}`,
+  //       end: "+=" + test1Height,
+  //       markers: true,
+  //     }
+  //   });
+  //   const test2Height = document.querySelector(".test-pr-1").offsetHeight;
+  //   var tl1 = gsap.to('.test-pr-1', {
+  //     yPercent: -100,
+  //     ease: "power2",
+  //     duration: 0.5,
+  //     scrollTrigger: {
+  //       trigger: ".test-pr-1",
+  //       scrub: true,
+  //       // pin: true,
+  //       start: `top ${200 + test2Height * 1}`,
+  //       end: "+=" + test2Height * 2,
+  //       markers: true,
+  //     }
+  //   });
+  //   const test3Height = document.querySelector(".test-pr-2").offsetHeight;
+  //   var tl2 = gsap.to('.test-pr-2', {
+  //     yPercent: -100,
+  //     ease: "power2",
+  //     duration: 0.5,
+  //     scrollTrigger: {
+  //       trigger: ".test-pr-2",
+  //       scrub: true,
+  //       // pin: true,
+  //       start: `top ${200 + test3Height * 2}`,
+  //       end: "+=" + test3Height * 3,
+  //       markers: true,
+  //     }
+  //   });
+  //   const test4Height = document.querySelector(".test-pr-3").offsetHeight;
+  //   var tl3 = gsap.to('.test-pr-3', {
+  //     yPercent: -100,
+  //     ease: "power2",
+  //     duration: 0.5,
+  //     scrollTrigger: {
+  //       trigger: ".test-pr-3",
+  //       scrub: true,
+  //       // pin: true,
+  //       start: `top ${200 + test4Height * 3}`,
+  //       end: "+=" + test4Height * 4,
+  //       markers: true,
+  //     }
+  //   });
+  // }, [])
 
   function changeEmoji() {
     const currentEmojis = document.querySelectorAll(".emoji");
@@ -430,7 +430,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="test bg-[#ccc] h-[50vh] flex justify-center items-center">
+      {/* <div className="test bg-[#ccc] h-[50vh] flex justify-center items-center">
         <div className="flex flex-col gap-[2px] items-center">
           <div className="overflow-hidden relative">
             <div className="test-pr">
@@ -474,7 +474,7 @@ const Home = () => {
           </div>
         </div>
         
-      </div>
+      </div> */}
       {/*DECOR TEXT*/}
 
       <div
