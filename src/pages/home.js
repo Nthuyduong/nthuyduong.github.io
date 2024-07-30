@@ -116,7 +116,7 @@ const Home = () => {
   //       trigger: ".test-pr",
   //       scrub: true,
   //       // pin: true,
-  //       start: `top ${200 + test1Height * 0}`,
+  //       start: `top ${200 + test1Height * 1}`,
   //       end: "+=" + test1Height,
   //       markers: true,
   //     }
@@ -130,7 +130,7 @@ const Home = () => {
   //       trigger: ".test-pr-1",
   //       scrub: true,
   //       // pin: true,
-  //       start: `top ${200 + test2Height * 1}`,
+  //       start: `top ${200 + test1Height * 2}`,
   //       end: "+=" + test2Height * 2,
   //       markers: true,
   //     }
@@ -144,7 +144,7 @@ const Home = () => {
   //       trigger: ".test-pr-2",
   //       scrub: true,
   //       // pin: true,
-  //       start: `top ${200 + test3Height * 2}`,
+  //       start: `top ${200 + test1Height * 3}`,
   //       end: "+=" + test3Height * 3,
   //       markers: true,
   //     }
@@ -158,7 +158,7 @@ const Home = () => {
   //       trigger: ".test-pr-3",
   //       scrub: true,
   //       // pin: true,
-  //       start: `top ${200 + test4Height * 3}`,
+  //       start: `top ${200 + test1Height * 4}`,
   //       end: "+=" + test4Height * 4,
   //       markers: true,
   //     }
@@ -175,7 +175,12 @@ const Home = () => {
 
   return (
     <div className="home-page">
-
+      {/* <div className="w-full flex justify-center">
+        <div className="drag">
+          Duong
+        </div>
+      </div> */}
+      
       {/* NEW banner */}
       <div className="homep-banner pt-4 md:pt-6 pb-5 md:pb-7">
         <div className="section relative">

@@ -59,8 +59,9 @@ export const AnimationProvider = ({ children }) => {
         animates.forEach((animate) => {
             observer.observe(animate);
         })
+        let loop;
         if (showCursor()) {
-            handleCursor();
+            loop = handleCursor();
         }
         
         return () => {
@@ -68,30 +69,42 @@ export const AnimationProvider = ({ children }) => {
                 observer.unobserve(animate);
             });
             if (showCursor()) {
-                handleCursor();
+                clearInterval(loop);
+                var cursor = document.getElementById('custom-cursor');
+                var follower = document.getElementById('custom-follow');
+                cursor.classList.add('hidden-cursor');
+                follower.classList.add('hidden-cursor');
             }
         }
     }, [pathname]);
 
     const handleCursor = () => {
+
         var cursor = document.getElementById('custom-cursor');
         var follower = document.getElementById('custom-follow');
 
-        var mouseX = 0;
-        var mouseY = 0;
+
+
+        var mouseX = window.innerWidth / 2;
+        var mouseY = window.innerHeight / 2;
 
         if (!cursor) return;
 
-        document.addEventListener('mousemove', moveCursor)
+        document.addEventListener('mousemove', moveCursor);
 
         function moveCursor(e) {
             mouseX = e.clientX;
             mouseY = e.clientY;
             cursor.style.left = `${mouseX}px`;
             cursor.style.top = `${mouseY}px`;
+
+            if (cursor.classList.contains('hidden-cursor')) {
+                cursor.classList.remove('hidden-cursor');
+                follower.classList.remove('hidden-cursor');
+            }
         }
 
-        var xp = 0, yp = 0;
+        var xp = window.innerWidth / 2, yp = window.innerHeight / 2;
 
         var loop = setInterval(function(){
             // change 12 to alter damping higher is slower
@@ -139,6 +152,21 @@ export const AnimationProvider = ({ children }) => {
                 follower.classList.remove('cursor-input');
             })
         })
+
+        // var drags = Array.from(document.querySelectorAll('.drag'));
+        // drags.forEach(drag => {
+        //     drag.addEventListener('mousemove', function () {
+        //         cursor.classList.add('custom-cursor-hidden');
+        //         follower.classList.add('cursor-drag');
+        //     })
+
+        //     drag.addEventListener('mouseleave', function () {
+        //         cursor.classList.remove('custom-cursor-hidden');
+        //         follower.classList.remove('cursor-drag');
+        //     })
+        // })
+
+        return loop;
     }
     const showCursor = () => {
         return true;
@@ -148,8 +176,16 @@ export const AnimationProvider = ({ children }) => {
             {showCursor() ? (
                 <div className="animation-wrp">
                     {children}
-                    <div id="custom-cursor" className="custom-cursor"></div>
-                    <div id="custom-follow" className="custom-follow"></div>
+                    <div
+                        id="custom-cursor"
+                        className="custom-cursor hidden-cursor"
+                        style={{ left: '50%', top: "50%" }}
+                    ></div>
+                    <div
+                        id="custom-follow"
+                        className="custom-follow hidden-cursor"
+                        style={{ left: '50%', top: "50%" }}
+                    ></div>
                 </div>
             ) : (
                 <>{children}</>

@@ -158,6 +158,27 @@
   background-color: transparent;
   opacity: 0 !important;
 }
+.cursor-drag {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: solid 1px black;
+  background-image: none;
+  color: black;
+  opacity: 1;
+  background: #4CAF50;
+}
+
+// drag cursor
+// .cursor-drag::after {
+//   content: 'Giang';
+//   font-size: 12px;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
 .my-collapse{
   padding: 14px 0;
   border-bottom: 1px solid rgba(56, 47, 45, 0.2);
@@ -485,4 +506,7 @@ textarea {
 
 .horizontal-scroll {
   overflow-x: scroll;
+}
+.hidden-cursor {
+  transform: scale(0);
 }
