@@ -696,6 +696,7 @@ a {
     pointer-events: none;
     transform: translateY(-100%);
     transition-delay: var(--delay);
+    overflow: hidden;
   }
 
   .btn-header-mobile {
@@ -704,7 +705,7 @@ a {
 
   .header-text {
     font-family: 'Sentient-lt', serif;
-    font-size: 86px;
+    font-size: clamp(44px, 10vw, 86px);
     line-height: 110%;
   }
 
@@ -737,6 +738,13 @@ a {
       transition: all 0.3s ease;
     }
   }
+  .header-social {
+    .heading_4 {
+      transform: translateY(100%);
+      transition: all 0.3s ease;
+      transition-delay: var(--delay);
+    }
+  }
 }
 
 .header-mobile-open {
@@ -754,6 +762,12 @@ a {
 
   .header-text {
     transform: translateY(0);
+  }
+
+  .header-social {
+    .heading_4 {
+      transform: translateY(0);
+    }
   }
 
   .header-close-1 {

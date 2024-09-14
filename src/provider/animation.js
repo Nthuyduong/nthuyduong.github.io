@@ -91,6 +91,7 @@ export const AnimationProvider = ({ children }) => {
         if (!cursor) return;
 
         document.addEventListener('mousemove', moveCursor);
+        var xp = window.innerWidth / 2, yp = window.innerHeight / 2;
 
         function moveCursor(e) {
             mouseX = e.clientX;
@@ -99,19 +100,32 @@ export const AnimationProvider = ({ children }) => {
             cursor.style.top = `${mouseY}px`;
 
             if (cursor.classList.contains('hidden-cursor')) {
+                follower.style.left = `${mouseX}px`;
+                follower.style.top = `${mouseY}px`;
+                xp = mouseX;
+                yp = mouseY;
                 cursor.classList.remove('hidden-cursor');
                 follower.classList.remove('hidden-cursor');
             }
         }
 
-        var xp = window.innerWidth / 2, yp = window.innerHeight / 2;
+       
+
+        var loop = null;
 
         var loop = setInterval(function(){
             // change 12 to alter damping higher is slower
-            xp += (mouseX - xp) / 5;
-            yp += (mouseY - yp) / 5;
-            follower.style.left = xp + 'px';
-            follower.style.top = yp + 'px';
+
+            if (!follower.classList.contains('hidden-cursor')) {
+                let newXp = xp + (mouseX - xp) / 5;
+                let newYp = yp + (mouseY - yp) / 5;
+                if (xp != newXp || yp != newYp) {
+                    xp = newXp;
+                    yp = newYp;
+                    follower.style.left = xp + 'px';
+                    follower.style.top = yp + 'px';
+                }
+            }
         }, 20);
 
         var text = Array.from(document.querySelectorAll('p, span, body_text, .cursor-text-wrp'));  

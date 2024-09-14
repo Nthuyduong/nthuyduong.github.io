@@ -55,7 +55,7 @@ const Header = () => {
         {/*Mobile menu button*/}
         <div
           className="mobile-menu-btn w-full relative inline-flex items-center justify-center rounded-md py-4 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-          onClick={() => setOpenMobileMenu(!openMobileMenu)}
+          
         >
           <div className="section w-full">
             <div className="flex gap-1 w-full justify-between">
@@ -64,7 +64,7 @@ const Header = () => {
               </div>
               {/* <img className='btn-header-mobile' src="/images/arrow-down.png" alt="" /> */}
 
-              <div className="header-close-wrp justify-center">
+              <div className="header-close-wrp justify-center" onClick={() => setOpenMobileMenu(!openMobileMenu)}>
                 <div className="header-close header-close-1" ></div>
                 <div className="header-close header-close-2"></div>
               </div>
@@ -110,8 +110,8 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div>
-            <div className="w-full flex justify-center mt-[120px]">
+          <div className="header-social overflow-hidden">
+            <div className="w-full flex justify-center mt-[120px]" style={{ "--delay": openMobileMenu ? "900ms" : '350ms' }}>
               <div className="heading_4">
                 <Link>Instagram</Link>
               </div>

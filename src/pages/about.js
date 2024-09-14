@@ -64,6 +64,22 @@ const About = () => {
 
   return (
     <div className="about-page">
+      <div className="md:my-6 my-4 section-full px-0">
+        <div className="section w-full relative">
+          <div className="about-hero-title">Hi! I'm Thuy <br />Duong.</div>
+          <div className="w-full flex justify-center relative">
+            <div className="w-[60%] sm:w-[50%] md:w-[30%] relative">
+              <img className="w-100" src="./images/about/me.webp" alt="#" loading="lazy" width="630" height="430"></img>
+              <div className="hero-img-small">
+                <img  src="./images/fl3.svg" alt="#" loading="lazy" width="100" height="100"></img>
+              </div>
+            </div>
+          </div>
+          <div className="hero-des mt-1">
+            I'm a UX/UI Designer. Welcome to <br /> my portfolio
+          </div>
+        </div>
+      </div>
       {/* <div className="img-container">
         <img className="w-100" src="./images/about/Showcase.webp" loading="lazy" alt="#"></img>
       </div> */}
@@ -182,34 +198,37 @@ const About = () => {
       </div> */}
 
       {/* ABOUT ME NEW */}
-      <div className="mt-5 md:mt-8">
-        <div className="md:grid grid-cols-12 gap-5">
-          <div className="col-span-2"></div>
-          <div className="col-span-2">
-            <div className="heading_5">About me</div>
-          </div>
-          <div className="col-span-6">
+      <div className="mt-4 md:mt-5">
+        <div className="section">
+          <div className="md:grid grid-cols-12 gap-5">
+            <div className="col-span-2"></div>
+            <div className="col-span-2">
+              <div className="heading_5">About me</div>
+            </div>
+            <div className="col-span-6">
 
-            <div className="md:mb-3 mb-3">With 2 years of experience in UX/UI design, I've refined my skills in creating user-centric designs that balance aesthetics
-              and functionality. My journey in the field has given me a strong foundation in diverse design principles and methodologies.
-              Currently, I handle both Designer & Developer tasks, seamlessly blending design and development processes.
-              This dual role enables me to approach projects comprehensively, bridging the gap between design and implementation
-              to ensure that design visions translate effectively into responsive, high-performance digital products that are
-              both functional and visually engaging.
+              <div className="md:mb-3 mb-3">With 2 years of experience in UX/UI design, I've refined my skills in creating user-centric designs that balance aesthetics
+                and functionality. My journey in the field has given me a strong foundation in diverse design principles and methodologies.
+                Currently, I handle both Designer & Developer tasks, seamlessly blending design and development processes.
+                This dual role enables me to approach projects comprehensively, bridging the gap between design and implementation
+                to ensure that design visions translate effectively into responsive, high-performance digital products that are
+                both functional and visually engaging.
+              </div>
+              <div className="">
+                I am confident in my ability to quickly grasp work, meet all requirements, and ensure timely completion.
+                My approach is holistic, considering both the visual and technical aspects of web development, which helps
+                in delivering cohesive and polished end products. Throughout my career, I have continuously sought to improve my skills and
+                stay updated with industry trends. My commitment to excellence drives me to deliver
+                high-quality work that not only meets but also anticipates user needs.
+              </div>
             </div>
-            <div className="">
-              I am confident in my ability to quickly grasp work, meet all requirements, and ensure timely completion.
-              My approach is holistic, considering both the visual and technical aspects of web development, which helps
-              in delivering cohesive and polished end products. Throughout my career, I have continuously sought to improve my skills and
-              stay updated with industry trends. My commitment to excellence drives me to deliver
-              high-quality work that not only meets but also anticipates user needs.
-            </div>
+            <div className="col-span-2"></div>
           </div>
-          <div className="col-span-2"></div>
         </div>
+       
       </div>
 
-      <div>
+      <div className="section">
         <div className="mt-5 md:mt-8">
           <div className="md:grid grid-cols-12 gap-5">
             <div className="col-span-2"></div>
