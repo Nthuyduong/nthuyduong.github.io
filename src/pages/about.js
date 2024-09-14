@@ -374,7 +374,7 @@ const About = () => {
         </div>
       </div>
 
-      <div>
+      <div className="section">
         <div className="mt-5 md:mt-8">
           <div className="md:grid grid-cols-12 gap-5">
             <div className="col-span-2"></div>
