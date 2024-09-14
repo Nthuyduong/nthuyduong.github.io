@@ -14,7 +14,7 @@ const Footer = () => {
   }, [location.pathname]);
 
   return (
-    <div className="py-[30px] md:pt-[40px] md:pb-[80px] border-t border-solid border-[#ccc]">
+    <div id="footer" className="py-[30px] md:pt-[40px] md:pb-[80px] border-t border-solid border-[#ccc]">
       <div className="section">
         <div className="flex flex-col-reverse gap-4 sm:grid sm:grid-cols-12 items-center">
           <div className="text-center sm:text-left col-span-8">

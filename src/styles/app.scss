@@ -631,8 +631,8 @@ a {
   }
 
   .text-large-2 {
-    font-size: 48px;
-    line-height: 125%;
+    font-size: 42px;
+    line-height: 120%;
   }
 
   .bighead {
@@ -937,7 +937,7 @@ input[type=number] {
 }
 
 .text-large-2 {
-  font-size: clamp(43px, 7.5vw, 60px);
+  font-size: clamp(43px, 7.5vw, 52px);
 }
 
 .heading_design {
@@ -980,7 +980,6 @@ input[type=number] {
 }
 .test .heading_1{
   line-height: 1.1;
-  font-family: fantasy;
   font-size: 80px;
 }
 .test-text-2 {
@@ -988,4 +987,7 @@ input[type=number] {
   bottom: 0;
   left: 0;
   transform: translateY(100%);
+}
+.page-body-wrapper{
+  min-height: calc(100vh - 98px - 200px);
 }

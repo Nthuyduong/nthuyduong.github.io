@@ -486,7 +486,7 @@ const About = () => {
               duration: 400,
               auto: false,
               autoDuration: 1000,
-              gap: 60,
+              gap: 40,
               gapMobile: 10,
               // process: true,
               paginate: false,
@@ -495,10 +495,10 @@ const About = () => {
             }}
           >
             <div className="flex-col flex h-full core-hover">
-              <div>
+              {/* <div>
                 <img className="w-full" src="./images/about/core1.png" alt="logo" loading="lazy" />
-              </div>
-              <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border-x border-b border-solid border-ccc">
+              </div> */}
+              <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border border-solid border-ccc">
                 <div className="h-full">
                   <div className="medium_text mb-3 cursor-text-wrp">Live with passion</div>
                   <div className="body_text cursor-text-wrp text-color-muted">
@@ -510,10 +510,10 @@ const About = () => {
               </div>
             </div>
             <div className="flex-col flex h-full core-hover">
-              <div>
+              {/* <div>
                 <img className="w-full" src="./images/about/core2.png" alt="logo" loading="lazy" />
-              </div>
-              <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border-x border-b border-solid border-ccc">
+              </div> */}
+              <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border border-solid border-ccc">
                 <div className="h-full">
                   <div className="medium_text mb-3 cursor-text-wrp">Eager to learn</div>
                   <div className="body_text cursor-text-wrp text-color-muted">
@@ -524,10 +524,10 @@ const About = () => {
               </div>
             </div>
             <div className="flex-col flex h-full core-hover">
-              <div>
+              {/* <div>
                 <img className="w-full" src="./images/about/core3.png" alt="logo" loading="lazy" />
-              </div>
-              <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border-x border-b border-solid border-ccc">
+              </div> */}
+              <div className="core-main pt-4 px-3 pb-5 flex-col flex h-full border border-solid border-ccc">
                 <div className="h-full">
                   <div className="medium_text mb-3 cursor-text-wrp">Undeterred by the hardships</div>
                   <div className="body_text cursor-text-wrp text-color-muted">

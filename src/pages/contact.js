@@ -70,8 +70,8 @@ const Contact = () => {
   }
 
   return (
-    <div className="section mt-4 md:mt-7">
-      <div className="mb-7">
+    <div className="section pt-4 md:pt-7">
+      <div className="pb-6 ">
         <div className="bighead cursor-text-wrp mb-4 text-center">Get in touch</div>
         <div className="flex justify-center">
           <div className="text-center mb-4 w-2/3">

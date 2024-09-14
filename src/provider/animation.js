@@ -153,18 +153,18 @@ export const AnimationProvider = ({ children }) => {
             })
         })
 
-        // var drags = Array.from(document.querySelectorAll('.drag'));
-        // drags.forEach(drag => {
-        //     drag.addEventListener('mousemove', function () {
-        //         cursor.classList.add('custom-cursor-hidden');
-        //         follower.classList.add('cursor-drag');
-        //     })
+        var drags = Array.from(document.querySelectorAll('.drag'));
+        drags.forEach(drag => {
+            drag.addEventListener('mousemove', function () {
+                cursor.classList.add('custom-cursor-hidden');
+                follower.classList.add('cursor-drag');
+            })
 
-        //     drag.addEventListener('mouseleave', function () {
-        //         cursor.classList.remove('custom-cursor-hidden');
-        //         follower.classList.remove('cursor-drag');
-        //     })
-        // })
+            drag.addEventListener('mouseleave', function () {
+                cursor.classList.remove('custom-cursor-hidden');
+                follower.classList.remove('cursor-drag');
+            })
+        })
 
         return loop;
     }
