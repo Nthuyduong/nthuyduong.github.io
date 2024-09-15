@@ -55,7 +55,7 @@ const Header = () => {
         {/*Mobile menu button*/}
         <div
           className="mobile-menu-btn w-full relative inline-flex items-center justify-center rounded-md py-4 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-          
+
         >
           <div className="section w-full">
             <div className="flex gap-1 w-full justify-between">
@@ -111,15 +111,15 @@ const Header = () => {
             </div>
           </div>
           <div className="header-social overflow-hidden">
-            <div className="w-full flex justify-center mt-[120px]" style={{ "--delay": openMobileMenu ? "900ms" : '350ms' }}>
+            <div className="w-full flex justify-center mt-[120px] mb-[10px]" style={{ "--delay": openMobileMenu ? "900ms" : '350ms' }}>
               <div className="heading_4">
-                <Link>Instagram</Link>
+                <a href="https://www.instagram.com/nth_d9/">Instagram</a>
               </div>
               <div className="heading_4 mx-5">
-                <Link>Behance</Link>
+                <a href="https://www.behance.net/duongthuy13">Behance</a>
               </div>
               <div className="heading_4">
-                <Link>Facebook</Link>
+                <a href="https://www.facebook.com/nthuyduong15113/">Facebook</a>
               </div>
             </div>
           </div>

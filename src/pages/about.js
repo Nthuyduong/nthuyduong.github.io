@@ -239,7 +239,7 @@ const About = () => {
       </div> */}
 
       {/* ABOUT ME NEW */}
-      <div className="mt-4 md:mt-5">
+      <div className="mt-5 md:mt-6">
         <div className="section">
           <div className="md:grid grid-cols-12 gap-5">
             <div className="col-span-2"></div>
@@ -270,57 +270,57 @@ const About = () => {
       </div>
 
       <div className="additional-info">
-        <div className="mt-5 md:mt-8 section">
-          <div className="md:grid grid-cols-12 gap-5 py-5">
-            <div className=""></div>
-            <div className="col-span-12">
+        <div className="mt-5 md:mt-7 section">
+          <div className="md:grid grid-cols-12 gap-5 py-4">
+            <div className="md:col-span-2"></div>
+            <div className="md:col-span-8">
               <div className="mb-5 heading_5">Additional Informations</div>
-              <div className="md:grid grid-cols-8 py-4 items-center gap-5 border-t border-solid border-999">
+              <div className="md:grid grid-cols-12 py-4 items-center gap-5 border-t border-solid border-ccc">
                 <div className="col-span-2 medium_text cursor-text-wrp">
-                  Basic Information
+                  Basic Info
                 </div>
-                <div className="col-span-6">
+                <div className="col-span-10">
                   <div className="block sm:flex md:flex lg:flex items-center md:justify-start gap-5 lg:gap-0 body_text cursor-text-wrp">
                     <div className="md:mb-0 mb-2">BOD: 08/19/1998</div>
-                    <img className="md:block hidden lg:mx-3 md:mx-0 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                    <img className="md:block hidden lg:mx-4 md:mx-0 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                     <div className="md:mb-0 mb-2">Nationality: Local Vietnamese</div>
-                    <img className="md:block hidden lg:mx-3 md:mx-0 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                    <img className="md:block hidden lg:mx-4 md:mx-0 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                     <div className="md:mb-0 mb-2">Maritality: Single</div>
-                    <img className="md:block hidden lg:mx-3 md:mx-0 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                    <img className="md:block hidden lg:mx-4 md:mx-0 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                     <div className="md:mb-0 mb-2">Gender: Female</div>
                   </div>
                 </div>
               </div>
-              <div className="md:grid grid-cols-8 gap-5 py-4 items-center border-t border-solid border-999">
+              <div className="md:grid grid-cols-12 gap-5 py-4 items-center border-t border-solid border-ccc">
                 <div className="col-span-2 medium_text cursor-text-wrp">
                   Hobbies
                 </div>
-                <div className="col-span-6">
+                <div className="col-span-10">
                   <div className="block sm:flex md:flex lg:flex items-center lg:justify-start pb-0 body_text cursor-text-wrp gap-5 md:gap-0">
                     <div className="md:mb-0 mb-2">Learning</div>
-                    <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                    <img className="md:block hidden md:mx-4 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                     <div className="md:mb-0 mb-2">Reading</div>
-                    <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                    <img className="md:block hidden md:mx-4 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                     <div className="md:mb-0 mb-2">Drawing</div>
-                    <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                    <img className="md:block hidden md:mx-4 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                     <div className="md:mb-0 mb-2">Swimming</div>
                   </div>
                 </div>
               </div>
-              <div className="md:grid grid-cols-8 gap-5 pt-4 items-center border-t border-solid border-999">
+              <div className="md:grid grid-cols-12 gap-5 pt-4 items-center border-t border-solid border-ccc">
                 <div className="col-span-2 medium_text cursor-text-wrp">
                   Languages
                 </div>
-                <div className="col-span-6">
+                <div className="col-span-10">
                   <div className="block sm:flex md:flex lg:flex items-center lg:justify-start pb-0 body_text cursor-text-wrp gap-5 md:gap-0">
                     <div className="md:mb-0 mb-2">Vietnamese</div>
-                    <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                    <img className="md:block hidden md:mx-4 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                     <div className="md:mb-0 mb-2">English</div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className=""></div>
+            <div className="md:col-span-2"></div>
           </div>
         </div>
       </div>
@@ -364,7 +364,7 @@ const About = () => {
           </div>
         </div>
       </div> */}
-      <div className="page-element mt-4 md:mt-7">
+      <div className="page-element mt-4 md:mt-6">
         <div className="section pt-4 md:pt-7">
           <div className="md:grid grid-cols-12 gap-6">
             <div className="md:col-span-12 lg:col-span-4 skill-common mb-2 animate slideInUp">
@@ -387,7 +387,7 @@ const About = () => {
                   </div>
                   <div className="skill-container">
                     {skill.skills.map((skill, index) => (
-                      <div className="flex pb-1 border-b border-solid border-999 mb-2" key={index}>
+                      <div className="flex pb-1 border-b border-solid border-ccc mb-2" key={index}>
                         <div className="cursor-text-wrp body_text mr-auto">{index + 1}/</div>
                         <div className="cursor-text-wrp skill-name body_text">{skill}</div>
                       </div>
@@ -426,17 +426,16 @@ const About = () => {
         </div>
       </div>
 
-      <div className="section">
+      {/* <div className="section">
         <div className="mt-6 md:mt-9">
           <div className="md:grid grid-cols-12 gap-5">
             <div className="col-span-2"></div>
             <div className="col-span-8">
               <div className="flex w-full">
                 <div className="mb-4 heading_5 mr-auto">EDUCATIONAL BACKGROUND</div>
-                {/* <div>[updating...]</div> */}
               </div>
 
-              <div className="md:grid grid-cols-8 items-center py-4 gap-5 border-t border-solid border-999">
+              <div className="md:grid grid-cols-8 items-center py-4 gap-5 border-t border-solid border-ccc">
                 <div className="col-span-3 body_text cursor-text-wrp">
                   Past - 2016
                 </div>
@@ -446,7 +445,7 @@ const About = () => {
                 </div>
 
               </div>
-              <div className="md:grid grid-cols-8 gap-5 items-center py-4 border-t border-solid border-999">
+              <div className="md:grid grid-cols-8 gap-5 items-center py-4 border-t border-solid border-ccc">
                 <div className="col-span-3 body_text cursor-text-wrp">
                   2016 - JULY 2020
                 </div>
@@ -455,7 +454,7 @@ const About = () => {
                   <div className="text-color-muted">Very good degree, GPA 3.4</div>
                 </div>
               </div>
-              <div className="md:grid grid-cols-8 gap-5 items-center py-4 border-t border-solid border-999">
+              <div className="md:grid grid-cols-8 gap-5 items-center py-4 border-t border-solid border-ccc">
                 <div className="col-span-3 body_text cursor-text-wrp">
                   AUGUST 2020 - JANUARY 2022
                 </div>
@@ -464,7 +463,7 @@ const About = () => {
                   <div className="md:mb-0 text-color-muted">Graphic Design | UX/UI Design</div>
                 </div>
               </div>
-              <div className="md:grid grid-cols-8 gap-5 items-center py-4 border-t border-solid border-999">
+              <div className="md:grid grid-cols-8 gap-5 items-center py-4 border-t border-solid border-ccc">
                 <div className="col-span-3 body_text cursor-text-wrp">
                   MAY 2022 - NOVEMBER 2023
                 </div>
@@ -478,16 +477,14 @@ const About = () => {
             <div className="col-span-2"></div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Educational background */}
-      {/* <div className="bg-primary">
-        <div className="section pt-5 md:pt-7">
-          <div className="timeline-title heading_2 mb-5 md:mb-8 cursor-text-wrp animate slideInUp">
-            ACADEMIC PROFILE
-          </div>
+      <div className="bg-primary">
+        <div className="section pt-5 md:pt-8 md:mt-8 mt-6">
+          <div className="mb-6 heading_5 mr-auto animate slideInUp">EDUCATIONAL BACKGROUND</div>
         </div>
-        <div className="timeline page-element pb-6 md:pb-9">
+        <div className="timeline page-element pb-5 md:pb-8">
           <div className="section">
             <div className="flex timeline-wrp cursor-text-wrp">
               <div className="w-full flex flex-col gap-3 timeline-card">
@@ -499,7 +496,7 @@ const About = () => {
                 </div>
                 <div className="timeline-bottom mt-3">
                   <p className="heading_6 mb-3 cursor-text-wrp">Phung Khac Khoan High School</p>
-                  <p className="body_text cursor-text-wrp">Thach That district, Hanoi</p>
+                  <p className="body_text cursor-text-wrp text-color-muted">Thach That district, Hanoi</p>
                 </div>
               </div>
               <div className="w-full flex flex-col gap-3 timeline-card">
@@ -511,7 +508,7 @@ const About = () => {
                 </div>
                 <div className="timeline-bottom mt-3">
                   <p className="heading_6 mb-3 cursor-text-wrp">HUNRE</p>
-                  <p className="body_text cursor-text-wrp">Very good degree, GPA 3.4</p>
+                  <p className="body_text cursor-text-wrp text-color-muted">Very good degree, GPA 3.4</p>
                 </div>
               </div>
               <div className="w-full flex flex-col gap-3 timeline-card">
@@ -523,7 +520,7 @@ const About = () => {
                 </div>
                 <div className="timeline-bottom mt-3">
                   <p className="heading_6 mb-3 cursor-text-wrp">Arena Multimedia</p>
-                  <p className="body_text cursor-text-wrp">Graphic Design | UX/UI Design</p>
+                  <p className="body_text cursor-text-wrp text-color-muted">Graphic Design | UX/UI Design</p>
                 </div>
               </div>
               <div className="w-full flex flex-col gap-3 timeline-card">
@@ -535,14 +532,14 @@ const About = () => {
                 </div>
                 <div className="timeline-bottom mt-3">
                   <p className="heading_6 mb-3 cursor-text-wrp">FPT Aptech VietNam</p>
-                  <p className="body_text cursor-text-wrp">Developer</p>
+                  <p className="body_text cursor-text-wrp text-color-muted">Website Developer (FE + BE)</p>
                 </div>
               </div>
             </div>
 
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className="md:my-8 my-4 section-full core-value px-0">
         <div className="section">
