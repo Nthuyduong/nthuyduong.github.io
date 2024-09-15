@@ -60,7 +60,7 @@
   animation-fill-mode: both;
   animation-play-state: paused;
 }
-.animated {
+.animate.animated {
   animation-play-state: running;
 }
 
@@ -85,6 +85,30 @@
   animation-duration: 3s;
 }
 
+/* text Typing */
+@keyframes textTyping {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  99% {
+    border-color: #888;
+  }
+  100% {
+    opacity: 1;
+    border-color: transparent;
+  }
+}
+.textTyping {
+  display: block;
+  animation: textTyping,  blink .5s step-end alternate;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  opacity: 0;
+}
 /* Animations */
 @keyframes slideInUp {
   0% {
