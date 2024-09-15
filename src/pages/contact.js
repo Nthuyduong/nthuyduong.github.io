@@ -102,7 +102,7 @@ const Contact = () => {
             </a>
           </div>
           <div className="medium_text cursor-text-wrp">
-            <a className="text-link">
+            <a className="text-link" href="https://www.facebook.com/nthuyduong15113/">
               Facebook
             </a>
           </div>
