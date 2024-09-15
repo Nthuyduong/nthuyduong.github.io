@@ -66,7 +66,31 @@ const About = () => {
     <div className="about-page">
       <div className="md:my-6 my-4 section-full px-0">
         <div className="section w-full relative">
-          <div className="about-hero-title">Hi! I'm Thuy <br />Duong.</div>
+          <div className="about-hero-title">
+            <span
+              className="animate textTyping"
+              style={{
+                animationDelay: '0s',
+                animationDuration: '1s',
+                width: '9ch',
+                animationTimingFunction: 'steps(9)',
+              }}
+            >
+              Hi! I'm Thuy
+            </span>
+            <span
+              className="animate textTyping"
+              style={{
+                animationDelay: '1s',
+                animationDuration: '0.5s',
+                width: '6ch',
+                animationTimingFunction: 'steps(6)',
+                marginTop: 'clamp(-1.5rem, 1.5vw, -1.5rem)',
+              }}
+            >
+              Duong.
+            </span>
+          </div>
           <div className="w-full flex justify-center relative">
             <div className="w-[60%] sm:w-[50%] md:w-[30%] relative">
               <img className="w-100" src="./images/about/me.webp" alt="#" loading="lazy" width="630" height="430"></img>
@@ -75,8 +99,25 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="hero-des mt-1">
-            I'm a UX/UI Designer. Welcome to <br /> my portfolio
+          <div className="hero-des mt-1 ">
+              <span 
+                className="animate textTyping"
+                style={{
+                  animationDelay: '1.5s',
+                  animationDuration: '2s',
+                  width: '27ch',
+                  animationTimingFunction: 'steps(27)',
+                }}
+              >I'm a UX/UI Designer. Welcome to</span>
+              <span
+                className="animate textTyping"
+                style={{
+                  animationDelay: '3.5s',
+                  animationDuration: '1s',
+                  width: '10ch',
+                  animationTimingFunction: 'steps(10)',
+                }}
+              >my portfolio</span>
           </div>
         </div>
       </div>
