@@ -19,7 +19,7 @@ const emojis = [
   '<img src="./images/fl3.svg"/>',
   '<img src="./images/fl4.svg"/>',
   '<img src="./images/fl5.svg"/>'
-  
+
 ];
 
 const Home = () => {
@@ -118,7 +118,7 @@ const Home = () => {
   //       // pin: true,
   //       start: `top ${200 + test1Height * 1}`,
   //       end: "+=" + test1Height,
-  //       markers: true,
+  //       // markers: true,
   //     }
   //   });
   //   const test2Height = document.querySelector(".test-pr-1").offsetHeight;
@@ -132,7 +132,7 @@ const Home = () => {
   //       // pin: true,
   //       start: `top ${200 + test1Height * 2}`,
   //       end: "+=" + test2Height * 2,
-  //       markers: true,
+  //       // markers: true,
   //     }
   //   });
   //   const test3Height = document.querySelector(".test-pr-2").offsetHeight;
@@ -146,7 +146,7 @@ const Home = () => {
   //       // pin: true,
   //       start: `top ${200 + test1Height * 3}`,
   //       end: "+=" + test3Height * 3,
-  //       markers: true,
+  //       // markers: true,
   //     }
   //   });
   //   const test4Height = document.querySelector(".test-pr-3").offsetHeight;
@@ -160,7 +160,21 @@ const Home = () => {
   //       // pin: true,
   //       start: `top ${200 + test1Height * 4}`,
   //       end: "+=" + test4Height * 4,
-  //       markers: true,
+  //       // markers: true,
+  //     }
+  //   });
+  //   const test5Height = document.querySelector(".test-pr-4").offsetHeight;
+  //   var tl3 = gsap.to('.test-pr-4', {
+  //     yPercent: -100,
+  //     ease: "power2",
+  //     duration: 0.5,
+  //     scrollTrigger: {
+  //       trigger: ".test-pr-4",
+  //       scrub: true,
+  //       // pin: true,
+  //       start: `top ${200 + test1Height * 5}`,
+  //       end: "+=" + test5Height * 5,
+  //       // markers: true,
   //     }
   //   });
   // }, [])
@@ -180,7 +194,7 @@ const Home = () => {
           Duong
         </div>
       </div> */}
-      
+
       {/* NEW banner */}
       <div className="homep-banner pt-4 md:pt-6 pb-5 md:pb-7">
         <div className="section relative">
@@ -401,11 +415,64 @@ const Home = () => {
       </div> */}
 
       {/* ABOUT ME */}
-      <div className="section">
+      {/* <div className="section">
         <div className="md:grid grid-cols-12 gap-5 pt-6 md:pt-7">
+          <div className="col-span-12 lg:col-span-1"></div>
+          <div className="col-span-12 lg:col-span-10">
+
+            <div className="text-large-2 md:mb-6 mb-4">
+              <div className="overflow-hidden relative">
+                <div className="test-pr">
+                  <div className="test-tex">WELCOME TO MY PORTFOLIO! EXCITED TO</div>
+                  <div className="test-text-2">WELCOME TO MY PORTFOLIO! EXCITED TO</div>
+                </div>
+              </div>
+              <div className="my-1 overflow-hidden relative">
+                <div className="test-pr-1">
+                  <div className="test-text">SHARE UX/UI DESIGN PROJECTS AND</div>
+                  <div className="test-text-2">SHARE UX/UI DESIGN PROJECTS AND</div>
+                </div>
+              </div>
+              <div className="overflow-hidden relative">
+                <div className="test-pr-2">
+                  <div className="test-text">EXPERIENCE HERE. ALWAYS READY TO</div>
+                  <div className="test-text-2">EXPERIENCE HERE. ALWAYS READY TO</div>
+                </div>
+              </div>
+              <div className="my-1 overflow-hidden relative">
+                <div className="test-pr-3">
+                  <div className="test-text">EMBRACE NEW OPPORTUNITIES AND</div>
+                  <div className="test-text-2">EMBRACE NEW OPPORTUNITIES AND</div>
+                </div>
+              </div>
+              <div className="overflow-hidden relative">
+                <div className="test-pr-4">
+                  <div className="test-text">CHALLENGES FOR CONTINUOUS GROWTH.</div>
+                  <div className="test-text-2">CHALLENGES FOR CONTINUOUS GROWTH.</div>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <Link to={ROUTER.ABOUT}>
+                <div id="container">
+                  <button className="learn-more">
+                    <span className="circle" aria-hidden="true">
+                      <span className="icon arrow"></span>
+                    </span>
+                    <span className="button-text medium_text">MORE ABOUT ME</span>
+                  </button>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className="col-span-12 lg:col-span-1"></div>
+        </div>
+      </div> */}
+      <div className="section">
+        <div className="md:grid grid-cols-12 gap-5">
           <div className="col-span-12 lg:col-span-5"></div>
           <div className="col-span-12 lg:col-span-7">
-            
+
             <div className="heading_2 md:mb-6 mb-4">
               Welcome to my portfolio! Excited to share UX/UI design projects and
               experiences here. Always ready to embrace new opportunities and challenges
@@ -435,6 +502,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       {/* <div className="test bg-[#ccc] h-[50vh] flex justify-center items-center">
         <div className="flex flex-col gap-[2px] items-center">
           <div className="overflow-hidden relative">
@@ -478,8 +546,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        
       </div> */}
+
       {/*DECOR TEXT*/}
 
       <div
@@ -491,7 +559,7 @@ const Home = () => {
           <Scroller>
             <Link to='/contact' className="flex">
               <div className="emoji flex items-center px-4">
-              <img className="w-full" src="./images/fl1.svg" alt="logo" loading="lazy" />
+                <img className="w-full" src="./images/fl1.svg" alt="logo" loading="lazy" />
               </div>
               {/* <div className="heading_3 cursor-text-wrp">HELLO</div> */}
 
@@ -563,7 +631,7 @@ const Home = () => {
           </div>
         </div>
         <div className="animate slideInUp animate--delay-fast">
-          <div className="my-project">
+          <div className="my-project drag">
             <Slider
               configs={{
                 sliderPerRow: 4.25,
@@ -716,24 +784,6 @@ const Home = () => {
           </div>
         </div> */}
       {/*My service*/}
-      {/* <div className="contact-info">
-          <div className="container-fluid">
-            <div className="grid grid-cols-12">
-              <div className="col-span-4">
-                <div className="contact-title">My Email addres</div>
-                <div>Nthduong898@gmail.com</div>
-              </div>
-              <div className="col-span-4">
-                <div className="contact-title">Phone Number</div>
-                <div>(84) 336256655</div>
-              </div>
-              <div className="col-span-4">
-                <div className="contact-title">My Email Addres</div>
-                <div>Gemek Tower, Le Trong Tan, An Khanh, Ha Noi</div>
-              </div>
-            </div>
-          </div>
-        </div> */}
 
       {/*Contact me*/}
       {/* <div className="section send_message mt-5 md:mt-8">

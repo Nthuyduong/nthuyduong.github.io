@@ -71,7 +71,7 @@ const About = () => {
             <div className="w-[60%] sm:w-[50%] md:w-[30%] relative">
               <img className="w-100" src="./images/about/me.webp" alt="#" loading="lazy" width="630" height="430"></img>
               <div className="hero-img-small">
-                <img  src="./images/fl3.svg" alt="#" loading="lazy" width="100" height="100"></img>
+                <img src="./images/fl3.svg" alt="#" loading="lazy" width="100" height="100"></img>
               </div>
             </div>
           </div>
@@ -225,14 +225,14 @@ const About = () => {
             <div className="col-span-2"></div>
           </div>
         </div>
-       
+
       </div>
 
-      <div className="section">
-        <div className="mt-5 md:mt-8">
-          <div className="md:grid grid-cols-12 gap-5">
-            <div className="col-span-2"></div>
-            <div className="col-span-8">
+      <div className="additional-info">
+        <div className="mt-5 md:mt-8 section">
+          <div className="md:grid grid-cols-12 gap-5 py-5">
+            <div className=""></div>
+            <div className="col-span-12">
               <div className="mb-5 heading_5">Additional Informations</div>
               <div className="md:grid grid-cols-8 py-4 items-center gap-5 border-t border-solid border-999">
                 <div className="col-span-2 medium_text cursor-text-wrp">
@@ -249,9 +249,8 @@ const About = () => {
                     <div className="md:mb-0 mb-2">Gender: Female</div>
                   </div>
                 </div>
-
               </div>
-              <div className="md:grid grid-cols-8 gap-5 pt-4 items-center border-t border-solid border-999">
+              <div className="md:grid grid-cols-8 gap-5 py-4 items-center border-t border-solid border-999">
                 <div className="col-span-2 medium_text cursor-text-wrp">
                   Hobbies
                 </div>
@@ -267,8 +266,20 @@ const About = () => {
                   </div>
                 </div>
               </div>
+              <div className="md:grid grid-cols-8 gap-5 pt-4 items-center border-t border-solid border-999">
+                <div className="col-span-2 medium_text cursor-text-wrp">
+                  Languages
+                </div>
+                <div className="col-span-6">
+                  <div className="block sm:flex md:flex lg:flex items-center lg:justify-start pb-0 body_text cursor-text-wrp gap-5 md:gap-0">
+                    <div className="md:mb-0 mb-2">Vietnamese</div>
+                    <img className="md:block hidden md:mx-3 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
+                    <div className="md:mb-0 mb-2">English</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="col-span-2"></div>
+            <div className=""></div>
           </div>
         </div>
       </div>
@@ -313,7 +324,7 @@ const About = () => {
         </div>
       </div> */}
       <div className="page-element mt-4 md:mt-7">
-        <div className="section py-4 md:py-7">
+        <div className="section pt-4 md:pt-7">
           <div className="md:grid grid-cols-12 gap-6">
             <div className="md:col-span-12 lg:col-span-4 skill-common mb-2 animate slideInUp">
               <div className="heading_5 mb-4 cursor-text-wrp">
@@ -375,7 +386,7 @@ const About = () => {
       </div>
 
       <div className="section">
-        <div className="mt-5 md:mt-8">
+        <div className="mt-6 md:mt-9">
           <div className="md:grid grid-cols-12 gap-5">
             <div className="col-span-2"></div>
             <div className="col-span-8">
@@ -390,7 +401,7 @@ const About = () => {
                 </div>
                 <div className="col-span-5">
                   <div className="mb-1 medium_text">Phung Khac Khoan High School</div>
-                  <div className="">Thach That district, Hanoi</div>
+                  <div className="text-color-muted">Thach That district, Hanoi</div>
                 </div>
 
               </div>
@@ -400,7 +411,7 @@ const About = () => {
                 </div>
                 <div className="col-span-5">
                   <div className="mb-1 medium_text">HUNRE (Hanoi University of Natural Resources & Environment)</div>
-                  <div className="">Very good degree, GPA 3.4</div>
+                  <div className="text-color-muted">Very good degree, GPA 3.4</div>
                 </div>
               </div>
               <div className="md:grid grid-cols-8 gap-5 items-center py-4 border-t border-solid border-999">
@@ -409,7 +420,7 @@ const About = () => {
                 </div>
                 <div className="col-span-5">
                   <div className="mb-1 medium_text">Arena Multimedia</div>
-                  <div className="md:mb-0">Graphic Design | UX/UI Design</div>
+                  <div className="md:mb-0 text-color-muted">Graphic Design | UX/UI Design</div>
                 </div>
               </div>
               <div className="md:grid grid-cols-8 gap-5 items-center py-4 border-t border-solid border-999">
@@ -418,7 +429,7 @@ const About = () => {
                 </div>
                 <div className="col-span-5">
                   <div className="mb-1 medium_text">FPT Aptech VietNam</div>
-                  <div className="md:mb-0">Website Developer (FE & BE)</div>
+                  <div className="md:mb-0 text-color-muted">Website Developer (FE & BE)</div>
                 </div>
               </div>
 
