@@ -11,4 +11,5 @@ export const ROUTER = {
   BEAUTYBLOG: '/beautyblog',
   NOTFOUND : '/404',
   PROJECT_DETAIL: '/designs/:id',
+  WORKOUT : '/workout',
 }

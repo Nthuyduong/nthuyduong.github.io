@@ -38,7 +38,7 @@ const Designs = () => {
     }
 
     // MY TABS
-    const tabItems = ['UX/UI DESIGN (6)', 'E - COMMERCE (0)', 'GRAPHIC DESIGN (0)', 'PERSONAL ART (2)'];
+    const tabItems = ['UX/UI DESIGN (6)', 'SHOPIFY (2)', 'GRAPHIC DESIGN (0)', 'PERSONAL ART (2)'];
     const [activeTab, setActiveTab] = useState(tabItems[0]);
 
     const handleActive = (item) => {
@@ -56,7 +56,7 @@ const Designs = () => {
                             <div className="">
                                 <div className="flex justify-center items-center">
                                     <div className="ml:text-[160px] md:text-[100px] text-[34px]">LET'S</div>
-                                    <img className="ml:h-[110px] md:h-[70px] h-[30px] ml:mx-5 md:mx-3 mx-2" src="./images/sao.svg" alt="logo" />
+                                    <img className="project-flower ml:h-[110px] md:h-[90px] h-[40px] ml:mx-5 md:mx-3 mx-2" src="./images/sao.svg" alt="logo" />
                                     <div className="ml:text-[160px] md:text-[100px] text-[34px]">CREATE</div>
                                 </div>
                                 <div className="flex justify-center items-center">
@@ -335,10 +335,29 @@ const Designs = () => {
                         </div>
                         {/* } */}
                         {/* {activeTab === 'E - COMMERCE (0)' && */}
-                        <div className={`content-tab ${activeTab === 'E - COMMERCE (0)' ? 'content-active' : ''}`}>
-                            <div className="lg:pt-7 text-center">
-                                <div className="mb-2 heading_3">Come Back Soon</div>
-                                <div>I'm getting ready to upload my designs</div>
+                        <div className={`content-tab ${activeTab === 'SHOPIFY (2)' ? 'content-active' : ''}`}>
+                            <div className="lg:mt-6 border-b border-solid border-ccc md:pb-0 pb-5">
+                                <div className="design-scale-out md:flex flex-row gap-6">
+                                    <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
+                                        <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">01</div>
+                                        <img
+                                            className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]" src="./images/design/mydes4.png"
+                                            alt="logo"
+                                            loading="lazy"
+                                        />
+                                        <div className="sm:pt-0 pt-4">
+                                            <div className="flex">
+                                                <div className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI Design</div>
+                                                <div className="cursor-text-wrp body_text">Apr 2024</div>
+                                            </div>
+                                            <div>
+                                                <Link to={ROUTER.WORKOUT}>
+                                                    <div className="heading_3 cursor-text-wrp">Workout clothes Website</div>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         {/* } */}

@@ -18,6 +18,7 @@ import Cake from "./pages/cake";
 import Designs from "./pages/designs";
 import Abouttest from "./pages/abouttest";
 import BeautyBlog from "./pages/beauty_blog";
+import Workout from "./pages/workout";
 import NotFound from "./pages/404";
 import ProjectDetail from "./pages/project";
 import { AnimationProvider } from "./provider/animation";
@@ -56,6 +57,11 @@ const App = () => {
             <Route path={ROUTER.BEAUTYBLOG} >
               <TransitionProvider>
                 <BeautyBlog/>
+              </TransitionProvider>
+            </Route>
+            <Route path={ROUTER.WORKOUT} >
+              <TransitionProvider>
+                <Workout/>
               </TransitionProvider>
             </Route>
             

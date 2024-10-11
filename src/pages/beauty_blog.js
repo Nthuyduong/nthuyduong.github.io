@@ -63,10 +63,16 @@ const BeautyBlog = () => {
                 <div className="product-showcase">
                     <div className="project-item md:pb-6 pb-4">
                         <div className="">
-                            <img className="w-100 w-full" src="./images/Pj05_beauty/beautybanner.png" alt="#" loading="eager" height={500} width={500} />
+                            <img className="w-100 w-full" src="./images/Pj05_beauty/beauty-top.png" alt="#" loading="lazy" height={500} width={500} />
                         </div>
                     </div>
                     <div className="project-item md:pb-6 pb-4">
+                        <div className="">
+                            <img className="w-100 w-full" src="./images/Pj05_beauty/about.png" alt="#" loading="lazy" height={500} width={500} />
+                        </div>
+                    </div>
+                    
+                    {/* <div className="project-item md:pb-6 pb-4">
                         <div className="md:grid grid-cols-12">
                             <div className="col-span-6 cake-intro-content flex items-end bg-primary md:mb-0 mb-4">
                                 <div className="p-5 md:p-7">
@@ -82,23 +88,23 @@ const BeautyBlog = () => {
                                 </div>
                             </div>
                             <div className="col-span-6">
-                                <img className="w-100 w-full" src="./images/Pj05_beauty/intro.png" alt="#" loading="lazy" height={500} width={500}/>
+                                <img className="w-100 w-full" src="./images/Pj05_beauty/intro.png" alt="#" loading="lazy" height={500} width={500} />
                             </div>
                         </div>
-                    </div>
-                    
+                    </div> */}
+
                     <div className="project-item md:pb-6 pb-4">
                         <div className="">
-                            <img className="w-100 w-full" src="./images/Pj05_beauty/beauty-mockup.png" alt="#" loading="lazy" height={500} width={500}/>
+                            <img className="w-100 w-full" src="./images/Pj05_beauty/beauty-mockup.png" alt="#" loading="lazy" height={500} width={500} />
                         </div>
                     </div>
-                    <HorizontalScroll>
+                    {/* <HorizontalScroll>
                         <img className="w-full" src="./images/Pj05_beauty/hz1.png" alt="#" loading="lazy" height={500} width={500}/>
                         
                         <img className="w-full" src="./images/Pj05_beauty/hz2.png" alt="#" loading="lazy" height={500} width={500}/>
                         <img className="w-full" src="./images/Pj05_beauty/hz3.png" alt="#" loading="lazy" height={500} width={500}/>
-                    </HorizontalScroll>
-                    
+                    </HorizontalScroll> */}
+
                     {/* <div className="project-item md:pb-6 pb-4">
                         <div className="md:grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6">
@@ -112,14 +118,19 @@ const BeautyBlog = () => {
                             </div>
                         </div>
                     </div> */}
-                    <div className="project-item md:py-6 py-4">
+                    <div className="project-item md:pb-6 py-4">
                         <div className="md:grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6 md:mb-0 mb-4">
-                                <img className="w-full" src="./images/Pj05_beauty/beauty-mockup4.png" alt="#" loading="lazy" height={500} width={500}/>
+                                <img className="w-full" src="./images/Pj05_beauty/beauty-mockup4.png" alt="#" loading="lazy" height={500} width={500} />
                             </div>
                             <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end relative">
-                                <img className="w-full" src="./images/Pj05_beauty/aboutpage.png" alt="#" loading="lazy" height={500} width={500}/>
+                                <img className="w-full" src="./images/Pj05_beauty/aboutpage.png" alt="#" loading="lazy" height={500} width={500} />
                             </div>
+                        </div>
+                    </div>
+                    <div className="project-item md:pb-6 pb-4">
+                        <div className="">
+                            <img className="w-100 w-full" src="./images/Pj05_beauty/beautybanner.png" alt="#" loading="eager" height={500} width={500} />
                         </div>
                     </div>
                     <div className="project-item md:pb-6 pb-4">
@@ -140,7 +151,7 @@ const BeautyBlog = () => {
                             </div>
                         </div>
                     </div>
-                    
+
                     <div className="project-item">
                         <img className="w-100" src="./images/Pj05_beauty/beauty-mockup3.png" alt="#" loading="lazy" />
                     </div>
@@ -226,7 +237,7 @@ const BeautyBlog = () => {
                                             Season Cake Blog
                                         </Link>
                                     </div>
-                                    
+
                                 </div>
                                 <div className="w-full body_text mt-4 pj_intro text-color-muted cursor-text-wrp">
                                     Indulge in the delectable world of Cake Blog, where sweetness and creativity

@@ -88,8 +88,8 @@ const Naviga = () => {
                     <div className="flex items-center justify-center w-full">
                         <div onClick={prevProject}><img className="icon-ssm img-smile" src="./images/icons/previous-page.svg" alt="smile" loading="lazy" /></div>
                         <div className="mx-auto px-4 py-4">
-                            <Link to="/" className="cursor-text-wrp text-sm scroll-text" data-replace="BACK HOME" aria-current="page">
-                                <span className="">BACK HOME
+                            <Link to={ROUTER.DESIGNS} className="cursor-text-wrp text-sm scroll-text" data-replace="BACK TO ALL RPOJECTS" aria-current="page">
+                                <span className="">BACK TO ALL PROJECTS
                                 </span>
                             </Link>
                         </div>

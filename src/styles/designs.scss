@@ -209,7 +209,7 @@
   margin-right: 0;
 }
 .tab-list-item.tabactive {
-  background-color: #000;
+  background-color: #4F3852;
   color: #fff;
   padding: 12px 40px;
   border-radius: 40px;
@@ -280,4 +280,9 @@
 .design-container {
   width: 100vw;
   overflow: hidden;
+}
+.project-page{
+  .project-flower{
+    animation: flowRotate 5s linear infinite;
+  }
 }

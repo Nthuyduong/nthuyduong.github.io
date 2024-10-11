@@ -64,22 +64,22 @@ const About = () => {
 
   return (
     <div className="about-page">
-      <div className="md:my-6 my-4 section-full px-0">
+      <div className="md:my-7 my-4 section-full px-0">
         <div className="section w-full relative">
           <div className="about-hero-title">
             <span
-              className="animate textTyping"
+              className="say-hi animate textTyping"
               style={{
                 animationDelay: '0s',
                 animationDuration: '1s',
-                width: '9ch',
+                width: '10ch',
                 animationTimingFunction: 'steps(9)',
               }}
             >
               Hi! I'm Thuy
             </span>
             <span
-              className="animate textTyping"
+              className="say-hi animate textTyping"
               style={{
                 animationDelay: '1s',
                 animationDuration: '0.5s',
@@ -99,9 +99,9 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="hero-des mt-1 ">
+          <div className="hero-des mt-4">
               <span 
-                className="animate textTyping"
+                className="say-hi animate textTyping"
                 style={{
                   animationDelay: '1.5s',
                   animationDuration: '2s',
@@ -110,7 +110,7 @@ const About = () => {
                 }}
               >I'm a UX/UI Designer. Welcome to</span>
               <span
-                className="animate textTyping"
+                className="say-hi animate textTyping"
                 style={{
                   animationDelay: '3.5s',
                   animationDuration: '1s',

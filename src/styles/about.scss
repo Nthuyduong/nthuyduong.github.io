@@ -1,10 +1,16 @@
 .about-page {
+  .say-hi{
+    line-height: 135%;
+  }
   .about-hero-title {
     font-size: clamp(48px, 8.5vw, 112px);
     position: absolute;
     color: #F3C1C0;
     // line-height: 110%;
     z-index: 2;
+    .say-hi{
+      font-weight: 700;
+    }
   }
   .hero-img-small {
     position: absolute;
@@ -22,6 +28,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
   }
   .about1 {
   
