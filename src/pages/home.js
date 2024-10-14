@@ -631,7 +631,7 @@ const Home = () => {
           </div>
         </div>
         <div className="animate slideInUp animate--delay-fast">
-          <div className="my-project drag">
+          <div className="my-project">
             <Slider
               configs={{
                 sliderPerRow: 4.25,

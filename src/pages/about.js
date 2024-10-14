@@ -241,7 +241,7 @@ const About = () => {
       {/* ABOUT ME NEW */}
       <div className="mt-5 md:mt-6">
         <div className="section">
-          <div className="md:grid grid-cols-12 gap-5">
+          <div className="md:grid grid-cols-12 gap-5 animate slideInUp animate--delay-slow">
             <div className="col-span-2"></div>
             <div className="col-span-2">
               <div className="heading_5">About me</div>
@@ -271,7 +271,7 @@ const About = () => {
 
       <div className="additional-info">
         <div className="mt-5 md:mt-7 section">
-          <div className="md:grid grid-cols-12 gap-5 py-4">
+          <div className="md:grid grid-cols-12 gap-5 py-4 animate slideInUp">
             <div className="md:col-span-2"></div>
             <div className="md:col-span-8">
               <div className="mb-5 heading_5">Additional Informations</div>

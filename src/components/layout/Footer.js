@@ -21,18 +21,16 @@ const Footer = () => {
             <p className="body_text">Get in touch for opportunities or just say hi!</p>
             <p className="mail-info body_text"><a href="mailto:Nthduong898@gmail.com">Nthduong898@gmail.com</a></p>
             <div className="pt-5 body_text flex">
-              <Link to="/">
-                <div className="body_text text-link">Home</div>
-              </Link>
-              <Link to={ROUTER.ABOUT}>
-                <div className="body_text mx-2 text-link">About</div>
-              </Link>
-              <Link to={ROUTER.DESIGNS}>
-                <div className="body_text text-link">My Projects</div>
-              </Link>
-              <Link to={ROUTER.CONTACT}>
-                <div className="body_text ml-2 text-link">Contact</div>
-              </Link>
+              <a href="https://www.facebook.com/nthuyduong15113/">
+                <div className="body_text text-link">Facebook</div>
+              </a>
+              <a href="https://www.behance.net/duongthuy13">
+                <div className="body_text mx-2 text-link">Behance</div>
+              </a>
+              <a href="https://www.instagram.com/nth_d9/">
+                <div className="body_text text-link">Instagram</div>
+              </a>
+
             </div>
           </div>
           <div className="block sm:hidden border-b border-solid border-[#ccc] w-[30%]"></div>
@@ -42,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

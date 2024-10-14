@@ -67,6 +67,9 @@
 .animate.animate--infinite {
   animation-iteration-count: infinite;
 }
+.animate.animate--delay-veryslow {
+  animation-delay: 3s;
+}
 .animate.animate--delay-slow {
   animation-delay: 1s;
 }
