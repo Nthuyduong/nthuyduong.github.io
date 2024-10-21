@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { ROUTER } from "../utils/constants";
+import Slider from "../components/common/slider";
+import { Link } from "react-router-dom";
 
 const Workout = () => {
     return (
-        <div className="container-fluid">
-            <div>
+        <div className="">
+            <div className="container-fluid">
                 <div className="project-item alio1">
                     <img className="w-100" src="./images/Pj06_workout/workout-banner.png" loading="lazy" />
                 </div>
@@ -67,7 +69,102 @@ const Workout = () => {
                 <div className="project-item alio3 md:pb-6 pb-4">
                     <img className="w-100" src="./images/Pj06_workout/workout-img1.png" loading="lazy" />
                 </div>
-                
+                <div className="project-item alio3">
+                    <img className="w-100" src="./images/Pj06_workout/product.webp" loading="lazy" />
+                </div>
+            </div>
+            <div className="more-project md:mb-8 mb-4">
+                <div className="container-fluid">
+                    <Slider
+                        configs={{
+                            sliderPerRow: 3.5,
+                            sliderPerRowMobile: 1.25,
+                            allowDrag: true,
+                            duration: 400,
+                            auto: false,
+                            autoDuration: 1000,
+                            gap: 30,
+                            gapMobile: 10,
+                            process: false,
+                            paginate: false,
+                            navigator: false,
+                            active: 0
+                        }}
+                    >
+                        <div className="">
+                            <div className="img-des">
+                                <Link to={ROUTER.BEAUTYBLOG}>
+                                    <img className="w-100" src="./images/home/more-5.png" alt="logo" loading="lazy" />
+                                </Link>
+                                <div className="d-flex title-pj">
+                                    <div className="medium_text pj_name mt-3">
+                                        <Link to={ROUTER.BEAUTYBLOG}>
+                                            Beauty Blog
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className="w-100 body_text pj_intro w-100 text-color-muted mt-4">
+                                Welcome to my Beauty Blog! Find skincare tips, makeup tutorials, and the latest beauty trends for radiant skin.
+                                </div>
+                            </div>
+                        </div>
+                        <div className="more-1">
+                            <div className="img-des">
+                                <Link to={ROUTER.AGURI}>
+                                    <img className="w-100" src="./images/home/more-1.png" alt="logo" loading="lazy" />
+                                </Link>
+                                <div className="d-flex title-pj">
+                                    <div className="medium_text pj_name mt-3">
+                                        <Link to={ROUTER.AGURI}>
+                                            Aguri Jewellery Website
+                                        </Link>
+                                    </div>
+
+                                </div>
+                                <div className="w-100 body_text pj_intro w-100 text-color-muted mt-4">
+                                    Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
+                                </div>
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="img-des">
+                                <Link to={ROUTER.FASHION}>
+                                    <img className="w-100" src="./images/home/more-2.png" alt="logo" loading="lazy" />
+                                </Link>
+                                <div className="d-flex title-pj">
+                                    <div className="medium_text pj_name mt-3">
+                                        <Link to={ROUTER.FASHION}>
+                                            Verite Fashion App
+                                        </Link>
+                                    </div>
+
+                                </div>
+                                <div className="w-100 body_text pj_intro w-100 text-color-muted mt-4">
+                                    Indulge in luxury and style with our timeless fashion brand, redefining elegance and sophistication.
+                                </div>
+                            </div>
+                        </div>
+                        <div className=" more-2">
+                            <div className="img-des">
+                                <Link to={ROUTER.CAKE}>
+                                    <img className="w-100" src="./images/home/more-4.png" alt="logo" loading="lazy" />
+                                </Link>
+                                <div className="d-flex title-pj">
+                                    <div className="medium_text pj_name mt-3">
+                                        <Link to={ROUTER.CAKE}>
+                                            Season Cake Blog
+                                        </Link>
+                                    </div>
+
+                                </div>
+                                <div className="w-100 body_text pj_intro w-100 text-color-muted mt-4">
+                                    Indulge in the delectable world of Cake Blog, where sweetness and creativity come together.
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </Slider>
+                </div>
             </div>
         </div>
     )

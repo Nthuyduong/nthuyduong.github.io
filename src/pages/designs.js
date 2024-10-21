@@ -363,7 +363,7 @@ const Designs = () => {
                                             <Link to={ROUTER.WORKOUT}>
                                                 <div className="design-scale-wrp absolute h-full hidden lg:block">
                                                     <img
-                                                        className="design-scale-img h-full w-auto object-cover" src="./images/design/mydes4.png"
+                                                        className="design-scale-img h-full w-auto object-cover" src="./images/design/mydes6.png"
                                                         alt="logo"
                                                         loading="lazy"
                                                     />

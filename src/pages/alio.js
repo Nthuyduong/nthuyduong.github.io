@@ -191,15 +191,15 @@ const Alio = () => {
                                 <div className="p-5 md:p-7">
                                     <div className="heading_4 mb-3 md:mb-6">Alio Mobile App</div>
                                     <div className="body_text">
-                                    Introducing the Alio App, your perfect companion to our website. Designed for members and users,
-                                    the app enhances your practice by offering easy access to schedules, class registrations, and personal
-                                    training updates. Whether you've purchased an Alio plan or are just exploring, you can learn and practice at
-                                    home with our extensive library of free videos. Stay connected and make the most of your wellness journey with the Alio App.
+                                        Introducing the Alio App, your perfect companion to our website. Designed for members and users,
+                                        the app enhances your practice by offering easy access to schedules, class registrations, and personal
+                                        training updates. Whether you've purchased an Alio plan or are just exploring, you can learn and practice at
+                                        home with our extensive library of free videos. Stay connected and make the most of your wellness journey with the Alio App.
                                     </div>
                                 </div>
                             </div>
                             <div className="col-span-6">
-                            <img className="w-100" src={require(`../../public/images/Pj02_yoga/${mobi[currentMobi]}`)} loading="lazy" />
+                                <img className="w-100" src={require(`../../public/images/Pj02_yoga/${mobi[currentMobi]}`)} loading="lazy" />
                                 {/* <img className="w-100" src="./images/Pj02_yoga/mobile-right.png" alt="#" loading="lazy" /> */}
                                 {/* <img className="w-100" src="./images/Pj02_yoga/mobile-clay.png" alt="#" loading="lazy" /> */}
                             </div>
@@ -233,7 +233,7 @@ const Alio = () => {
                 <div className="container-fluid">
                     <Slider
                         configs={{
-                            sliderPerRow: 3,
+                            sliderPerRow: 3.5,
                             sliderPerRowMobile: 1.25,
                             allowDrag: true,
                             duration: 400,
@@ -247,6 +247,40 @@ const Alio = () => {
                             active: 0
                         }}
                     >
+                        <div className="">
+                            <div className="img-des">
+                                <Link to={ROUTER.BEAUTYBLOG}>
+                                    <img className="w-100" src="./images/home/more-5.png" alt="logo" loading="lazy" />
+                                </Link>
+                                <div className="d-flex title-pj">
+                                    <div className="medium_text pj_name mt-3">
+                                        <Link to={ROUTER.BEAUTYBLOG}>
+                                            Beauty Blog
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className="w-100 body_text pj_intro w-100 text-color-muted mt-4">
+                                Welcome to my Beauty Blog! Find skincare tips, makeup tutorials, and the latest beauty trends for radiant skin.
+                                </div>
+                            </div>
+                        </div>
+                        <div className="">
+                            <div className="img-des">
+                                <Link to={ROUTER.WORKOUT}>
+                                    <img className="w-100" src="./images/home/more-6.png" alt="logo" loading="lazy" />
+                                </Link>
+                                <div className="d-flex title-pj">
+                                    <div className="medium_text pj_name mt-3">
+                                        <Link to={ROUTER.WORKOUT}>
+                                            Workout Clothes Website
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className="w-100 body_text pj_intro w-100 text-color-muted mt-4">
+                                Explore our workout clothes designed for comfort, performance, and effortless style.
+                                </div>
+                            </div>
+                        </div>
                         <div className="more-1">
                             <div className="img-des">
                                 <Link to={ROUTER.AGURI}>
