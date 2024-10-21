@@ -100,24 +100,24 @@ const About = () => {
             </div>
           </div>
           <div className="hero-des mt-4">
-              <span 
-                className="say-hi animate textTyping"
-                style={{
-                  animationDelay: '1.5s',
-                  animationDuration: '2s',
-                  width: '27ch',
-                  animationTimingFunction: 'steps(27)',
-                }}
-              >I'm a UX/UI Designer. Welcome to</span>
-              <span
-                className="say-hi animate textTyping"
-                style={{
-                  animationDelay: '3.5s',
-                  animationDuration: '1s',
-                  width: '10ch',
-                  animationTimingFunction: 'steps(10)',
-                }}
-              >my portfolio</span>
+            <span
+              className="say-hi animate textTyping"
+              style={{
+                animationDelay: '1.5s',
+                animationDuration: '2s',
+                width: '27ch',
+                animationTimingFunction: 'steps(27)',
+              }}
+            >I'm a UX/UI Designer. Welcome to</span>
+            <span
+              className="say-hi animate textTyping"
+              style={{
+                animationDelay: '3.5s',
+                animationDuration: '1s',
+                width: '10ch',
+                animationTimingFunction: 'steps(10)',
+              }}
+            >my portfolio</span>
           </div>
         </div>
       </div>
@@ -242,11 +242,11 @@ const About = () => {
       <div className="mt-5 md:mt-6">
         <div className="section">
           <div className="md:grid grid-cols-12 gap-5 animate slideInUp animate--delay-slow">
-            <div className="col-span-2"></div>
+            <div className="col-span-1"></div>
             <div className="col-span-2">
-              <div className="heading_5">About me</div>
+              <div className="heading_5 hidden md:block">ABOUT ME</div>
             </div>
-            <div className="col-span-6">
+            <div className="col-span-4">
 
               <div className="md:mb-3 mb-3">With 2 years of experience in UX/UI design, I've refined my skills in creating user-centric designs that balance aesthetics
                 and functionality. My journey in the field has given me a strong foundation in diverse design principles and methodologies.
@@ -255,15 +255,17 @@ const About = () => {
                 to ensure that design visions translate effectively into responsive, high-performance digital products that are
                 both functional and visually engaging.
               </div>
+              
+            </div>
+            <div className="col-span-4">
               <div className="">
                 I am confident in my ability to quickly grasp work, meet all requirements, and ensure timely completion.
                 My approach is holistic, considering both the visual and technical aspects of web development, which helps
                 in delivering cohesive and polished end products. Throughout my career, I have continuously sought to improve my skills and
                 stay updated with industry trends. My commitment to excellence drives me to deliver
                 high-quality work that not only meets but also anticipates user needs.
-              </div>
-            </div>
-            <div className="col-span-2"></div>
+              </div></div>
+            <div className="col-span-1"></div>
           </div>
         </div>
 
@@ -272,15 +274,18 @@ const About = () => {
       <div className="additional-info">
         <div className="mt-5 md:mt-7 section">
           <div className="md:grid grid-cols-12 gap-5 py-4 animate slideInUp">
-            <div className="md:col-span-2"></div>
-            <div className="md:col-span-8">
-              <div className="mb-5 heading_5">Additional Informations</div>
+            <div className="md:col-span-1"></div>
+            <div className="md:col-span-10">
+              <div className="mb-5 heading_5">ADDITIONAL INFORMATIONS</div>
               <div className="md:grid grid-cols-12 py-4 items-center gap-5 border-t border-solid border-ccc">
                 <div className="col-span-2 medium_text cursor-text-wrp">
+                  01/
+                </div>
+                <div className="col-span-2 medium_text cursor-text-wrp mb-3 md:mb-0">
                   Basic Info
                 </div>
-                <div className="col-span-10">
-                  <div className="block sm:flex md:flex lg:flex items-center md:justify-start gap-5 lg:gap-0 body_text cursor-text-wrp">
+                <div className="col-span-8">
+                  <div className="block md:flex lg:flex items-center md:justify-start gap-5 lg:gap-0 body_text cursor-text-wrp">
                     <div className="md:mb-0 mb-2">BOD: 08/19/1998</div>
                     <img className="md:block hidden lg:mx-4 md:mx-0 about-dot sm:mx-2 mx-0" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                     <div className="md:mb-0 mb-2">Nationality: Local Vietnamese</div>
@@ -293,9 +298,12 @@ const About = () => {
               </div>
               <div className="md:grid grid-cols-12 gap-5 py-4 items-center border-t border-solid border-ccc">
                 <div className="col-span-2 medium_text cursor-text-wrp">
+                  02/
+                </div>
+                <div className="col-span-2 medium_text cursor-text-wrp mb-3 md:mb-0">
                   Hobbies
                 </div>
-                <div className="col-span-10">
+                <div className="col-span-8">
                   <div className="block sm:flex md:flex lg:flex items-center lg:justify-start pb-0 body_text cursor-text-wrp gap-5 md:gap-0">
                     <div className="md:mb-0 mb-2">Learning</div>
                     <img className="md:block hidden md:mx-4 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
@@ -309,9 +317,12 @@ const About = () => {
               </div>
               <div className="md:grid grid-cols-12 gap-5 pt-4 items-center border-t border-solid border-ccc">
                 <div className="col-span-2 medium_text cursor-text-wrp">
+                  03/
+                </div>
+                <div className="col-span-2 medium_text cursor-text-wrp mb-3 md:mb-0">
                   Languages
                 </div>
-                <div className="col-span-10">
+                <div className="col-span-8">
                   <div className="block sm:flex md:flex lg:flex items-center lg:justify-start pb-0 body_text cursor-text-wrp gap-5 md:gap-0">
                     <div className="md:mb-0 mb-2">Vietnamese</div>
                     <img className="md:block hidden md:mx-4 about-dot" src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
@@ -320,7 +331,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="md:col-span-2"></div>
+            <div className="md:col-span-1"></div>
           </div>
         </div>
       </div>
@@ -388,7 +399,7 @@ const About = () => {
                   <div className="skill-container">
                     {skill.skills.map((skill, index) => (
                       <div className="flex pb-1 border-b border-solid border-ccc mb-2" key={index}>
-                        <div className="cursor-text-wrp body_text mr-auto">{index + 1}/</div>
+                        <div className="cursor-text-wrp body_text mr-auto">0{index + 1}.</div>
                         <div className="cursor-text-wrp skill-name body_text">{skill}</div>
                       </div>
                     ))}
@@ -412,7 +423,7 @@ const About = () => {
                       <div className="skill-container w-[60%] pt-2">
                         {skill.skills.map((skill, index) => (
                           <div className="flex pb-1 border-b border-solid border-ccc mb-2" key={index}>
-                            <div className="cursor-text-wrp body_text mr-auto">{index + 1}/</div>
+                            <div className="cursor-text-wrp body_text mr-auto">0{index + 1}.</div>
                             <div className="cursor-text-wrp skill-name body_text">{skill}</div>
                           </div>
                         ))}
@@ -482,7 +493,7 @@ const About = () => {
       {/* Educational background */}
       <div className="bg-primary">
         <div className="section pt-5 md:pt-8 md:mt-8 mt-6">
-          <div className="mb-6 heading_5 mr-auto animate slideInUp">EDUCATIONAL BACKGROUND</div>
+          <div className="mb-7 heading_5 mr-auto animate slideInUp">EDUCATIONAL BACKGROUND</div>
         </div>
         <div className="timeline page-element pb-5 md:pb-8">
           <div className="section">
