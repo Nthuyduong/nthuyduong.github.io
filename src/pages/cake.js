@@ -115,9 +115,14 @@ const Cake = () => {
                             <img className="w-100" src={require(`../../public/images/Pj01_cake/${cake[currentCakeIndex]}`)} alt="#" loading="lazy"/>
                         </div>
                     </div> */}
-                    <div className="project-item md:pb-6 pb-4">
+                    <div className="project-item">
                         <div className="">
                             <img className="w-100" src="./images/Pj01_cake/ssc-mockup.png" alt="#" loading="lazy" />
+                        </div>
+                    </div>
+                    <div className="project-item md:pb-6 pb-4">
+                        <div className="">
+                            <img className="w-100" src="./images/Pj01_cake/abt-cake.png" alt="#" loading="lazy" />
                         </div>
                     </div>
                     <div className="project-item md:pb-6 pb-4">

@@ -90,7 +90,7 @@ const Alio = () => {
     const [mobi] = useState(
         [
             "mobi1.png",
-            "mobi2.png",
+            // "mobi2.png",
         ]
     )
     useEffect(() => {
@@ -153,8 +153,8 @@ const Alio = () => {
                                 {/* <img className="w-100" src={require(`../../public/images/Pj02_yoga/${images[currentImageIndex]}`)}
                                     alt="carousel image" /> */}
                             </div>
-                            <div className="col-span-12 md:col-span-6 r3-right flex items-end bg-primary">
-                                <div className="p-5 md:p-7">
+                            <div className="col-span-12 md:col-span-6 r3-right flex items-end bg-[#5E604B]">
+                                <div className="p-5 md:p-7 text-white">
                                     <div className="heading_4 mb-3 md:mb-6">The Logotype</div>
                                     <div className="body_text">
                                         The logo for a yoga website embodies the essence of tranquility and self-discovery.
@@ -169,11 +169,33 @@ const Alio = () => {
                             </div>
                         </div>
                     </div>
+                    
+                    <div className="project-item">
+                        <img className="w-100" src="./images/Pj02_yoga/homep.png" loading="lazy" />
+                    </div>
+                    <div className="project-item">
+                        <img className="w-100" src="./images/Pj02_yoga/alio-home.png" loading="lazy" />
+                    </div>
                     <div className="project-item md:pb-6 pb-4">
                         <img className="w-100" src="./images/Pj02_yoga/Showcase4.webp" loading="lazy" />
                     </div>
+                    <div className="project-item">
+                        <img className="w-100" src="./images/Pj02_yoga/alio-plan.png" loading="lazy" />
+                    </div>
+                    <div className="project-item">
+                        <img className="w-100" src="./images/Pj02_yoga/alio-mockup.png" loading="lazy" />
+                    </div>
+                    <div className="project-item">
+                        <img className="w-100" src="./images/Pj02_yoga/group.png" loading="lazy" />
+                    </div>
+                    {/* <div className="project-item">
+                        <img className="w-100" src="./images/Pj02_yoga/typo.png" loading="lazy" />
+                    </div> */}
+                    <div className="project-item">
+                        <img className="w-100" src="./images/Pj02_yoga/colorr.png" loading="lazy" />
+                    </div>
                     <div className="project-item md:pb-6 pb-4">
-                        <img className="w-100" src="./images/Pj02_yoga/homep.png" loading="lazy" />
+                        <img className="w-100" src="./images/Pj02_yoga/mobi.png" loading="lazy" />
                     </div>
                     {/* <div className="alio4">
                     
@@ -181,13 +203,9 @@ const Alio = () => {
                     {/* <div className="project-item alio5 md:pb-6 pb-4">
                         <img className="w-100" src={require(`../../public/images/Pj02_yoga/${Showcase[currentLogoIndex]}`)} />
                     </div> */}
-                    <div className="project-item alio5.1 md:pb-6 pb-4">
-                        <img className="w-100" src="./images/Pj02_yoga/mobile-first.png" loading="lazy" />
-                    </div>
                     <div className="project-item alio6 md:pb-6 pb-4 h-full">
                         <div className="grid grid-cols-12">
-
-                            <div className="col-span-6 relative bg-primary flex items-end">
+                            <div className="col-span-12 md:col-span-6 relative bg-primary flex items-end">
                                 <div className="p-5 md:p-7">
                                     <div className="heading_4 mb-3 md:mb-6">Alio Mobile App</div>
                                     <div className="body_text">
@@ -198,20 +216,26 @@ const Alio = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-span-6">
+                            <div className="col-span-12 md:col-span-6">
                                 <img className="w-100" src={require(`../../public/images/Pj02_yoga/${mobi[currentMobi]}`)} loading="lazy" />
                                 {/* <img className="w-100" src="./images/Pj02_yoga/mobile-right.png" alt="#" loading="lazy" /> */}
                                 {/* <img className="w-100" src="./images/Pj02_yoga/mobile-clay.png" alt="#" loading="lazy" /> */}
                             </div>
                         </div>
                     </div>
-                    <div className="project-item alio7 md:pb-6 pb-4">
+                    <div className="project-item alio5.1 md:pb-6 pb-4">
+                        <img className="w-100" src="./images/Pj02_yoga/mobile-first.png" loading="lazy" />
+                    </div>
+                    <div className="project-item alio9 md:pb-6 pb-4">
+                        <img className="w-100" src="./images/Pj02_yoga/line9.webp" alt="#" loading="lazy" />
+                    </div>
+                    {/* <div className="project-item alio7 md:pb-6 pb-4">
                         <div className="inner">
                             <img className="w-100"
                                 src={require(`../../public/images/Pj02_yoga/${mobile[currentMobile]}`)} alt="#"
                                 loading="lazy" />
                         </div>
-                    </div>
+                    </div> */}
                     <div className="project-item alio8 md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
                             <div className="col-span-6">
@@ -224,9 +248,7 @@ const Alio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="project-item alio9">
-                        <img className="w-100" src="./images/Pj02_yoga/line9.webp" alt="#" loading="lazy" />
-                    </div>
+                    
                 </div>
             </div>
             <div className="more-project md:mb-8 mb-4">
