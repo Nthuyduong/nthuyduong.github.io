@@ -61,16 +61,19 @@ const Cake = () => {
             <div className="container-fluid">
                 <div className="product-showcase">
                     <div className="project-item md:pb-6 pb-4">
+                        <img className="w-full" src="./images/Pj01_cake/cake-b.png" alt="#" loading="eager" height={500} width={500} />
+                    </div>
+                    {/* <div className="project-item md:pb-6 pb-4">
                         <div className="">
                             <img className="w-100 w-full" src="./images/Pj01_cake/cakebanner.png" alt="#" loading="eager" height={500} width={500} />
                         </div>
-                    </div>
+                    </div> */}
                     <div className="project-item md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6">
                                 <img className="w-100" src="./images/Pj01_cake/line2-01.png" alt="#" loading="lazy" />
                             </div>
-                            <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end bg-primary">
+                            <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end bg-[#FFFDF8]">
                                 <div className="p-7">
                                     <div className="heading_4 mb-4">About project</div>
                                     <div className="body_text">
@@ -120,9 +123,35 @@ const Cake = () => {
                             <img className="w-100" src="./images/Pj01_cake/ssc-mockup.png" alt="#" loading="lazy" />
                         </div>
                     </div>
+                    <div className="project-item">
+                        <img className="w-100" src="./images/Pj01_cake/category-cake.png" alt="#" loading="lazy" />
+                    </div>
+                    <div className="project-item">
+                        <img className="w-100" src="./images/Pj01_cake/cake-list.png" alt="#" loading="lazy" />
+                    </div>
+                    <div className="project-item">
+                        <div className="">
+                            <img className="w-100" src="./images/Pj01_cake/cake-typo.png" alt="#" loading="lazy" />
+                        </div>
+                    </div>
+                    <div className="project-item">
+                        <div className="">
+                            <img className="w-100" src="./images/Pj01_cake/cake-color.png" alt="#" loading="lazy" />
+                        </div>
+                    </div>
                     <div className="project-item md:pb-6 pb-4">
                         <div className="">
                             <img className="w-100" src="./images/Pj01_cake/abt-cake.png" alt="#" loading="lazy" />
+                        </div>
+                    </div>
+                    <div className="project-item md:pb-6 pb-4">
+                        <div className="md:grid grid-cols-12">
+                            <div className="col-span-12 sm:col-span-6">
+                                <img className="w-100" src="./images/Pj01_cake/cakephone.png" alt="#" loading="lazy" />
+                            </div>
+                            <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end relative">
+                                <img className="w-100" src="./images/Pj01_cake/cakephone2.png" alt="#" loading="lazy" />
+                            </div>
                         </div>
                     </div>
                     <div className="project-item md:pb-6 pb-4">
@@ -138,32 +167,13 @@ const Cake = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="project-item md:pb-6 pb-4">
-                        <div className="">
-                            <div className="">
-                                <img className="w-100" src="./images/Pj01_cake/category-cake.png" alt="#" loading="lazy" />
-
-                            </div>
-                        </div>
-                    </div>
-                    <div className="project-item md:pb-6 pb-4">
-                        <div className="md:grid grid-cols-12">
-                            <div className="col-span-12 sm:col-span-6">
-                                <img className="w-100" src="./images/Pj01_cake/cakephone.png" alt="#" loading="lazy" />
-                            </div>
-                            <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end relative">
-                                <img className="w-100" src="./images/Pj01_cake/cakephone2.png" alt="#" loading="lazy" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="project-item md:pb-6 pb-4">
+                    {/* <div className="project-item md:pb-6 pb-4">
                         <div className="">
                             <div className="">
                                 <img className="w-100" src="./images/Pj01_cake/detail.png" alt="#" loading="lazy" />
-
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="project-item md:pb-6 pb-4">
                         <img className="w-100" src="./images/Pj01_cake/cakebg.png" alt="#" loading="lazy" />
                     </div>
@@ -218,7 +228,7 @@ const Cake = () => {
                                     </div>
                                 </div>
                                 <div className="w-100 body_text pj_intro w-100 text-color-muted mt-4">
-                                Explore our workout clothes designed for comfort, performance, and effortless style.
+                                    Explore our workout clothes designed for comfort, performance, and effortless style.
                                 </div>
                             </div>
                         </div>
@@ -261,13 +271,13 @@ const Cake = () => {
                                 <div className="d-flex title-pj">
                                     <div className="medium_text pj_name mt-3">
                                         <Link to={ROUTER.BEAUTYBLOG}>
-                                        Beauty Blog
+                                            Beauty Blog
                                         </Link>
                                     </div>
                                     {/* <FontAwesomeIcon className="ms-auto icon-right" icon={faArrowRight} /> */}
                                 </div>
                                 <div className="w-full body_text pj_intro text-color-muted mt-4">
-                                Welcome to my Beauty Blog! Find skincare tips, makeup tutorials, and the latest beauty trends for radiant skin.
+                                    Welcome to my Beauty Blog! Find skincare tips, makeup tutorials, and the latest beauty trends for radiant skin.
                                 </div>
                             </div>
                         </div>
