@@ -86,11 +86,18 @@ const Fashion = () => {
                         </div>
                     </div>
                     <div className="project-item md:pb-6 pb-4">
+                        <img className="mb-4 w-100" src="./images/Pj04_fashion/first-veri.png" alt="#" loading="lazy"/>
+                    </div>
+                    {/* <div className="project-item md:pb-6 pb-4">
                         <img className="mb-4 w-100" src="./images/Pj04_fashion/img2.webp" alt="#" loading="lazy"/>
-                    </div>
+                    </div> */}
                     <div className="project-item verite_line4 md:pb-6 pb-4">
-                        <img className="w-100" src="./images/Pj04_fashion/line4.webp" alt="#" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj04_fashion/veri.png" alt="#" loading="lazy"/>
                     </div>
+                    <div className="project-item md:pb-6 pb-4">
+                        <img className="mb-4 w-100" src="./images/Pj04_fashion/v-app.jpg" alt="#" loading="lazy"/>
+                    </div>
+                    
                     <div className="project-item verite_line5">
                         <div className="grid grid-cols-12">
                             <div className="col-span-6">
