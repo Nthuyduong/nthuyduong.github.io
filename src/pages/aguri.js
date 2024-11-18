@@ -54,10 +54,11 @@ const Aguri = () => {
                                         <div className="heading_4">Our Utmost Pride</div>
                                         <div className="heading_3 mb-1 w-full">RADIANT ELEGANCE</div>
                                     </div>
-                                    <img className="img-bg w-full" src="./images/Pj03_aguri/line1-center.png" alt="#" loading="eager" height={500} width={500} />
+                                    <img className="img-bg w-full" src="./images/Pj03_aguri/line1-center.png" alt="#"
+                                         loading="eager" height={500} width={500}/>
                                     {/* <div className="content-bottom text-center">
                                         <div className="heading_2 mb-5">JOIN US</div> */}
-                                        {/* <div className="body_text">
+                                    {/* <div className="body_text">
                                             <a href="https://nthuyduong.github.io/aguri/#/" target="_blank">Visit website:
                                                 https://nthuyduong.github.io/aguri/#/</a>
                                         </div> */}
@@ -65,7 +66,8 @@ const Aguri = () => {
                                 </div>
                             </div>
                             <div className="col-span-12 sm:col-span-6 line1-right">
-                                <img className="w-100 w-full" src="./images/Pj03_aguri/line1-02.png" alt="#"loading="eager" height={500} width={500} />
+                                <img className="w-100 w-full" src="./images/Pj03_aguri/line1-02.png" alt="#"
+                                     loading="eager" height={500} width={500}/>
 
                             </div>
                         </div>
@@ -114,7 +116,7 @@ const Aguri = () => {
 
                             <div className="col-span-12 sm:col-span-6 line2-right">
                                 <img className="w-100" src="./images/Pj03_aguri/line3-02.png" alt="#"
-                                    loading="lazy" />
+                                     loading="lazy"/>
                             </div>
                             <div className="col-span-12 sm:col-span-6 line2-left bg-primary">
                                 <div className="p-7 flex h-full items-end">
@@ -147,35 +149,39 @@ const Aguri = () => {
                         </div>
                     </div>
                     <div className="project-item ag-line4 md:pb-6 pb-4">
-                        <img className="w-100" src="./images/Pj03_aguri/mockup.png" alt="#" loading="lazy" />
+                        <img className="w-100" src="./images/Pj03_aguri/aguri-homepage.png" alt="#" loading="lazy"/>
+                    </div>
+                    <div className="project-item ag-line4 md:pb-6 pb-4">
+                        <img className="w-100" src="./images/Pj03_aguri/mockup.png" alt="#" loading="lazy"/>
                     </div>
                     <div className="project-item md:pb-6 pb-4">
-                        <img className="w-full" src="./images/Pj03_aguri/jewelry-bg.png" alt="#" loading="lazy" />
+                        <img className="w-full" src="./images/Pj03_aguri/jewelry-bg.png" alt="#" loading="lazy"/>
                     </div>
                     <div className="project-item md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
 
                             <div className="col-span-12 sm:col-span-6 line2-right relative">
                                 <img className="w-100" src="./images/Pj03_aguri/phone-bg.png" alt="#"
-                                    loading="lazy" />
+                                     loading="lazy"/>
                                 <div className="phone-inner absolute top-[50%] left-[50%]">
                                     <img className="w-100"
-                                        src={require(`../../public/images/Pj03_aguri/${mockupp[currentMockupIndex]}`)} alt="#"
-                                        loading="lazy" />
+                                         src={require(`../../public/images/Pj03_aguri/${mockupp[currentMockupIndex]}`)}
+                                         alt="#"
+                                         loading="lazy"/>
                                 </div>
                             </div>
                             <div className="col-span-12 sm:col-span-6 line2-left">
                                 <img className="w-100" src="./images/Pj03_aguri/phone2-bg.png" alt="#"
-                                    loading="lazy" />
+                                     loading="lazy"/>
 
                             </div>
                         </div>
                     </div>
                     <div className="project-item ag-line5 md:pb-6 pb-4">
-                        <img className="w-100" src="./images/Pj03_aguri/product-page.png" alt="#" loading="lazy" />
+                        <img className="w-100" src="./images/Pj03_aguri/product-page.png" alt="#" loading="lazy"/>
                     </div>
                     <div className="project-item ag-line5 md:pb-6 pb-4">
-                        <img className="w-100" src="./images/Pj03_aguri/aguri-mockup.png" alt="#" loading="lazy" />
+                        <img className="w-100" src="./images/Pj03_aguri/aguri-mockup.png" alt="#" loading="lazy"/>
                     </div>
                     {/* <div className="ag-line6 mdb-60">
                         <div className="inner">
@@ -190,7 +196,7 @@ const Aguri = () => {
                                 {/*<img className="w-100" src="./images/Pj03_aguri/line2-01.png" alt="#" loading="lazy"/>*/}
                             </div>
                             <div className="col-span-6 line4-left">
-                                <img className="w-100" src="./images/Pj03_aguri/cate.webp" alt="#" loading="lazy" />
+                                <img className="w-100" src="./images/Pj03_aguri/cate.webp" alt="#" loading="lazy"/>
                             </div>
                         </div>
                     </div>

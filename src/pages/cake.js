@@ -61,7 +61,8 @@ const Cake = () => {
             <div className="container-fluid">
                 <div className="product-showcase">
                     <div className="project-item md:pb-6 pb-4">
-                        <img className="w-full" src="./images/Pj01_cake/cake-b.png" alt="#" loading="eager" height={500} width={500} />
+                        <img className="w-full" src="./images/Pj01_cake/cake-b.png" alt="#" loading="eager" height={500}
+                             width={500}/>
                     </div>
                     {/* <div className="project-item md:pb-6 pb-4">
                         <div className="">
@@ -71,17 +72,22 @@ const Cake = () => {
                     <div className="project-item md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6">
-                                <img className="w-100" src="./images/Pj01_cake/line2-01.png" alt="#" loading="lazy" />
+                                <img className="w-100" src="./images/Pj01_cake/line2-01.png" alt="#" loading="lazy"/>
                             </div>
                             <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end bg-[#FFFDF8]">
                                 <div className="p-7">
                                     <div className="heading_4 mb-4">About project</div>
                                     <div className="body_text">
-                                        Season Cake Blog is a vibrant platform dedicated to all things cake. We are passionate
-                                        about sharing the artistry, creativity, and joy of cake baking. Through our curated
-                                        content, tantalizing recipes, and expert tips, we aim to inspire and empower bakers
-                                        of all levels to create extraordinary cakes that are not only visually stunning but
-                                        also deliciously unforgettable. Join our thriving community, unleash your inner baker,
+                                        Season Cake Blog is a vibrant platform dedicated to all things cake. We are
+                                        passionate
+                                        about sharing the artistry, creativity, and joy of cake baking. Through our
+                                        curated
+                                        content, tantalizing recipes, and expert tips, we aim to inspire and empower
+                                        bakers
+                                        of all levels to create extraordinary cakes that are not only visually stunning
+                                        but
+                                        also deliciously unforgettable. Join our thriving community, unleash your inner
+                                        baker,
                                         and embark on a sweet journey of endless possibilities.
                                     </div>
                                     {/* <div className="small_text text-right font-italic">
@@ -118,51 +124,60 @@ const Cake = () => {
                             <img className="w-100" src={require(`../../public/images/Pj01_cake/${cake[currentCakeIndex]}`)} alt="#" loading="lazy"/>
                         </div>
                     </div> */}
-                    <div className="project-item">
-                        <div className="">
-                            <img className="w-100" src="./images/Pj01_cake/ssc-mockup.png" alt="#" loading="lazy" />
-                        </div>
-                    </div>
-                    <div className="project-item">
-                        <img className="w-100" src="./images/Pj01_cake/category-cake.png" alt="#" loading="lazy" />
-                    </div>
-                    <div className="project-item">
-                        <img className="w-100" src="./images/Pj01_cake/cake-list.png" alt="#" loading="lazy" />
-                    </div>
-                    <div className="project-item">
-                        <div className="">
-                            <img className="w-100" src="./images/Pj01_cake/cake-typo.png" alt="#" loading="lazy" />
-                        </div>
-                    </div>
-                    <div className="project-item">
-                        <div className="">
-                            <img className="w-100" src="./images/Pj01_cake/cake-color.png" alt="#" loading="lazy" />
-                        </div>
+
+                    <div className="project-item md:pb-6 pb-4">
+                        <img className="w-100" src="./images/Pj01_cake/abtcake.png" alt="#" loading="lazy"/>
                     </div>
                     <div className="project-item md:pb-6 pb-4">
-                        <div className="">
-                            <img className="w-100" src="./images/Pj01_cake/abt-cake.png" alt="#" loading="lazy" />
-                        </div>
+                        <img className="w-100" src="./images/Pj01_cake/category-cake.png" alt="#" loading="lazy"/>
                     </div>
                     <div className="project-item md:pb-6 pb-4">
-                        <div className="md:grid grid-cols-12">
-                            <div className="col-span-12 sm:col-span-6">
-                                <img className="w-100" src="./images/Pj01_cake/cakephone.png" alt="#" loading="lazy" />
-                            </div>
-                            <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end relative">
-                                <img className="w-100" src="./images/Pj01_cake/cakephone2.png" alt="#" loading="lazy" />
-                            </div>
+                        <img className="w-100" src="./images/Pj01_cake/cake-blog.png" alt="#" loading="lazy"/>
+                    </div>
+                    <div className="project-item md:pb-6 pb-4">
+                        <img className="w-100" src="./images/Pj01_cake/cake-detail.png" alt="#" loading="lazy"/>
+                    </div>
+                    {/*<div className="project-item">*/}
+                    {/*    <img className="w-100" src="./images/Pj01_cake/cake-list.png" alt="#" loading="lazy" />*/}
+                    {/*</div>*/}
+                    {/*<div className="project-item md:pb-6 pb-4">*/}
+                    {/*    <div className="">*/}
+                    {/*        <img className="w-100" src="./images/Pj01_cake/cake-typo.png" alt="#" loading="lazy"/>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
+                    {/*<div className="project-item md:pb-6 pb-4">*/}
+                    {/*    <div className="">*/}
+                    {/*        <img className="w-100" src="./images/Pj01_cake/cake-color.png" alt="#" loading="lazy"/>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
+                    <div className="project-item md:pb-6 pb-4">
+                        <div className="">
+                            <img className="w-100" src="./images/Pj01_cake/abt-cake.png" alt="#" loading="lazy"/>
                         </div>
                     </div>
                     <div className="project-item md:pb-6 pb-4">
                         <div className="md:grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6">
-                                <img className="w-100" src={require(`../../public/images/Pj01_cake/${cake[currentCakeIndex]}`)} alt="#" loading="lazy" />
+                                <img className="w-100" src="./images/Pj01_cake/cakephone.png" alt="#" loading="lazy"/>
                             </div>
                             <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end relative">
-                                <img className="w-100" src="./images/Pj01_cake/cake-bg.png" alt="#" loading="lazy" />
+                                <img className="w-100" src="./images/Pj01_cake/cakephone2.png" alt="#" loading="lazy"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="project-item md:pb-6 pb-4">
+                        <div className="md:grid grid-cols-12">
+                            <div className="col-span-12 sm:col-span-6">
+                                <img className="w-100"
+                                     src={require(`../../public/images/Pj01_cake/${cake[currentCakeIndex]}`)} alt="#"
+                                     loading="lazy"/>
+                            </div>
+                            <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end relative">
+                                <img className="w-100" src="./images/Pj01_cake/cake-bg.png" alt="#" loading="lazy"/>
                                 <div className="absolute top-[50%] left-[50%] phone-inner">
-                                    <img className="w-100" src={require(`../../public/images/Pj01_cake/${phone[currentPhoneIndex]}`)} alt="#" loading="lazy" />
+                                    <img className="w-100"
+                                         src={require(`../../public/images/Pj01_cake/${phone[currentPhoneIndex]}`)}
+                                         alt="#" loading="lazy"/>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +190,7 @@ const Cake = () => {
                         </div>
                     </div> */}
                     <div className="project-item md:pb-6 pb-4">
-                        <img className="w-100" src="./images/Pj01_cake/cakebg.png" alt="#" loading="lazy" />
+                        <img className="w-100" src="./images/Pj01_cake/cakebg.png" alt="#" loading="lazy"/>
                     </div>
                 </div>
             </div>
