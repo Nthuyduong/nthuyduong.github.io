@@ -58,7 +58,7 @@ const Architec = () => {
                     <div className="project-item md:pb-6 pb-4">
                         <img className="w-100" src="./images/Pj07_architec/archi-abt.png" alt="#" loading="lazy"/>
                     </div>
-                    <div className="project-item md:pb-6 pb-4">
+                    <div className="project-item">
                         <img className="w-100" src="./images/Pj07_architec/archi-mobi.png" alt="#" loading="lazy"/>
                     </div>
                 </div>

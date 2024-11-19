@@ -68,22 +68,21 @@ const Alio = () => {
         return () => clearInterval(interval);
     }, [logo.length]);
 
-    const [currentShowcaseIndex, setCurrentShowcaseIndex] = useState(0);
-    const [Showcase] = useState(
+    const [currentYogahomeIndex, setCurrentYogahomeIndex] = useState(0);
+    const [yogahome] = useState(
         [
-            "Showcase1.webp",
-            "Showcase2.webp",
-            "Showcase3.webp",
-            "Showcase4.webp",
+            "yogahome1.webp",
+            "yogahome2.webp",
+            "yogahome3.webp",
         ]
     )
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentShowcaseIndex((prevIndex) =>
-                prevIndex === Showcase.length - 1 ? 0 : prevIndex + 1);
+            setCurrentYogahomeIndex((prevIndex) =>
+                prevIndex === yogahome.length - 1 ? 0 : prevIndex + 1);
         }, 1100);
         return () => clearInterval(interval);
-    }, [Showcase.length]);
+    }, [yogahome.length]);
 
 
     const [currentMobi, setCurrentMobi] = useState(0);
@@ -170,30 +169,19 @@ const Alio = () => {
                         </div>
                     </div>
                     
-                    <div className="project-item">
-                        <img className="w-100" src="./images/Pj02_yoga/homep.png" loading="lazy" />
-                    </div>
-                    <div className="project-item">
-                        <img className="w-100" src="./images/Pj02_yoga/alio-home.png" loading="lazy" />
-                    </div>
                     <div className="project-item md:pb-6 pb-4">
-                        <img className="w-100" src="./images/Pj02_yoga/Showcase4.webp" loading="lazy" />
+                        <img className="w-100" src={require(`../../public/images/Pj02_yoga/${yogahome[currentYogahomeIndex]}`)}
+                                    alt="carousel image" />
                     </div>
-                    <div className="project-item">
-                        <img className="w-100" src="./images/Pj02_yoga/alio-plan.png" loading="lazy" />
-                    </div>
-                    <div className="project-item">
-                        <img className="w-100" src="./images/Pj02_yoga/alio-mockup.png" loading="lazy" />
-                    </div>
-                    <div className="project-item">
-                        <img className="w-100" src="./images/Pj02_yoga/group.png" loading="lazy" />
-                    </div>
+                    {/*<div className="project-item">*/}
+                    {/*    <img className="w-100" src="./images/Pj02_yoga/group.png" loading="lazy" />*/}
+                    {/*</div>*/}
                     {/* <div className="project-item">
                         <img className="w-100" src="./images/Pj02_yoga/typo.png" loading="lazy" />
                     </div> */}
-                    <div className="project-item">
-                        <img className="w-100" src="./images/Pj02_yoga/colorr.png" loading="lazy" />
-                    </div>
+                    {/*<div className="project-item">*/}
+                    {/*    <img className="w-100" src="./images/Pj02_yoga/colorr.png" loading="lazy" />*/}
+                    {/*</div>*/}
                     <div className="project-item md:pb-6 pb-4">
                         <img className="w-100" src="./images/Pj02_yoga/mobi.png" loading="lazy" />
                     </div>
@@ -226,7 +214,7 @@ const Alio = () => {
                     <div className="project-item alio5.1 md:pb-6 pb-4">
                         <img className="w-100" src="./images/Pj02_yoga/mobile-first.png" loading="lazy" />
                     </div>
-                    <div className="project-item alio9 md:pb-6 pb-4">
+                    <div className="project-item alio9">
                         <img className="w-100" src="./images/Pj02_yoga/line9.webp" alt="#" loading="lazy" />
                     </div>
                     {/* <div className="project-item alio7 md:pb-6 pb-4">
@@ -236,18 +224,18 @@ const Alio = () => {
                                 loading="lazy" />
                         </div>
                     </div> */}
-                    <div className="project-item alio8 md:pb-6 pb-4">
-                        <div className="grid grid-cols-12">
-                            <div className="col-span-6">
-                                <img className="w-100" src="./images/Pj02_yoga/line7-01.webp" alt="#" loading="lazy" />
-                            </div>
-                            <div className="col-span-6">
-                                <img className="w-100"
-                                    src={require(`../../public/images/Pj02_yoga/${mbl[currentMbl]}`)} alt="#"
-                                    loading="lazy" />
-                            </div>
-                        </div>
-                    </div>
+                    {/*<div className="project-item alio8 md:pb-6 pb-4">*/}
+                    {/*    <div className="grid grid-cols-12">*/}
+                    {/*        <div className="col-span-6">*/}
+                    {/*            <img className="w-100" src="./images/Pj02_yoga/line7-01.webp" alt="#" loading="lazy" />*/}
+                    {/*        </div>*/}
+                    {/*        <div className="col-span-6">*/}
+                    {/*            <img className="w-100"*/}
+                    {/*                src={require(`../../public/images/Pj02_yoga/${mbl[currentMbl]}`)} alt="#"*/}
+                    {/*                loading="lazy" />*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                     
                 </div>
             </div>

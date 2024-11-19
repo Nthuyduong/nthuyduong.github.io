@@ -94,7 +94,7 @@ const Layout = ({ children }) => {
 
   //Hide and Display side nav bar
   const discardElement = [ROUTER.CONTACT, ROUTER.NOTFOUND];
-  const withoutElement = [ROUTER.ALIO, ROUTER.CAKE, ROUTER.AGURI, ROUTER.FASHION, ROUTER.BEAUTYBLOG, ROUTER.PROJECT_DETAIL, ROUTER.WORKOUT];
+  const withoutElement = [ROUTER.ALIO, ROUTER.CAKE, ROUTER.AGURI, ROUTER.FASHION, ROUTER.BEAUTYBLOG, ROUTER.PROJECT_DETAIL, ROUTER.WORKOUT, ROUTER.ARCHITEC];
 
   if (pathname.includes('/designs') && pathname !== ROUTER.DESIGNS) {
     return (
