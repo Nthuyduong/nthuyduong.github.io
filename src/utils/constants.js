@@ -12,4 +12,5 @@ export const ROUTER = {
   NOTFOUND : '/404',
   PROJECT_DETAIL: '/designs/:id',
   WORKOUT : '/workout',
+  ARCHITEC: '/architec',
 }

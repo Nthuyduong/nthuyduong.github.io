@@ -60,10 +60,10 @@ const Cake = () => {
         <div className="cake-page">
             <div className="container-fluid">
                 <div className="product-showcase">
-                    <div className="project-item md:pb-6 pb-4">
-                        <img className="w-full" src="./images/Pj01_cake/cake-b.png" alt="#" loading="eager" height={500}
-                             width={500}/>
-                    </div>
+                    {/*<div className="project-item md:pb-6 pb-4">*/}
+                    {/*    <img className="w-full" src="./images/Pj01_cake/cake-b.png" alt="#" loading="eager" height={500}*/}
+                    {/*         width={500}/>*/}
+                    {/*</div>*/}
                     {/* <div className="project-item md:pb-6 pb-4">
                         <div className="">
                             <img className="w-100 w-full" src="./images/Pj01_cake/cakebanner.png" alt="#" loading="eager" height={500} width={500} />

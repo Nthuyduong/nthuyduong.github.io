@@ -19,8 +19,8 @@ const Footer = () => {
         <div className="flex flex-col-reverse gap-4 sm:grid sm:grid-cols-12 items-center">
           <div className="text-center sm:text-left col-span-8">
             <p className="body_text">Get in touch for opportunities or just say hi!</p>
-            <p className="mail-info body_text"><a href="mailto:Nthduong898@gmail.com">Nthduong898@gmail.com</a></p>
-            <div className="pt-5 body_text flex">
+            <p className="mail-info body_text"><a className="text-link" href="mailto:Nthduong898@gmail.com">Nthduong898@gmail.com</a></p>
+            <div className="pt-5 body_text flex justify-center md:justify-normal">
               <a href="https://www.facebook.com/nthuyduong15113/">
                 <div className="body_text text-link">Facebook</div>
               </a>

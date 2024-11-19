@@ -562,15 +562,12 @@ a {
 @media screen and (max-width: 768px) {
   .my-header {
     display: none !important;
-
   }
-
   .slide-card-item.before {
     z-index: 2;
     opacity: 1;
     transform: translatex(-20%) scale(.8) translateY(-10%);
   }
-
   .slide-card-item.before2 {
     transform: translatex(-30%) scale(.8) translateY(-10%);
   }
@@ -609,22 +606,18 @@ a {
     font-size: 28px;
     line-height: 125%;
   }
-
   .heading_4 {
     font-size: 24px;
     line-height: 125%;
   }
-
   .heading_5 {
-    font-size: 20px;
+    font-size: 26px;
     line-height: 125%;
   }
-
   .heading_6 {
     font-size: 16px;
     line-height: 125%;
   }
-
   .text-large {
     font-size: 48px;
     line-height: 125%;

@@ -63,7 +63,9 @@ const Header = () => {
                 <img className="" src="./images/mylogo.svg" alt="logo" />
               </div>
               {/* <img className='btn-header-mobile' src="/images/arrow-down.png" alt="" /> */}
-
+              {/*<div className="w-[100vw] flex items-center justify-center absolute">*/}
+              {/*  <div className="">Thuy Duong - Product Designer</div>*/}
+              {/*</div>*/}
               <div className="header-close-wrp justify-center" onClick={() => setOpenMobileMenu(!openMobileMenu)}>
                 <div className="header-close header-close-1" ></div>
                 <div className="header-close header-close-2"></div>
@@ -78,7 +80,7 @@ const Header = () => {
               <div className="overflow-hidden">
                 <div style={{ "--delay": openMobileMenu ? "500ms" : '0ms' }} className={`text-center header-text f-menu cursor-text-wrp ${currentPath === '/' ? 'nav-active' : ''}`} aria-current="page">
                   <div className="flex justify-center items-baseline">
-                    <span className="heading_6 pr-3">01.</span>
+                    <span className="heading_6 pr-3 text-color-muted">01.</span>
                     <Link to="/" className="nav-text">Home</Link>
                   </div>
                 </div>
@@ -87,14 +89,14 @@ const Header = () => {
                 <div style={{ "--delay": openMobileMenu ? "600ms" : '100ms' }} className={`py-3 text-center header-text cursor-text-wrp ${currentPath === ROUTER.ABOUT ? 'nav-active' : ''}`} aria-current="page">
                   <div className="flex justify-center items-baseline">
                     <Link to={ROUTER.ABOUT} className="nav-text">About</Link>
-                    <div className="heading_6 pl-3">02.</div>
+                    <div className="heading_6 pl-3 text-color-muted">02.</div>
                   </div>
                 </div>
               </div>
               <div className="overflow-hidden">
                 <div style={{ "--delay": openMobileMenu ? "600ms" : '100ms' }} className={`pb-3 text-center header-text cursor-text-wrp ${currentPath === ROUTER.DESIGNS ? 'nav-active' : ''}`} aria-current="page">
                   <div className="flex justify-center items-baseline">
-                    <span className="heading_6 pr-3">03.</span>
+                    <span className="heading_6 pr-3 text-color-muted">03.</span>
                     <Link to={ROUTER.DESIGNS} className="nav-text">My Projects</Link>
                   </div>
                 </div>
@@ -104,7 +106,7 @@ const Header = () => {
                 <div style={{ "--delay": openMobileMenu ? "800ms" : '300ms' }} className={`text-center header-text cursor-text-wrp ${currentPath === ROUTER.CONTACT ? 'nav-active' : ''}`} aria-current="page">
                   <div className="flex justify-center items-baseline">
                     <Link to={ROUTER.CONTACT} className="nav-text">Contact</Link>
-                    <span className="heading_6 pl-3">04.</span>
+                    <span className="heading_6 pl-3 text-color-muted">04.</span>
                   </div>
                 </div>
               </div>
@@ -113,13 +115,13 @@ const Header = () => {
           <div className="header-social overflow-hidden">
             <div className="w-full flex justify-center mt-[120px] mb-[10px]" style={{ "--delay": openMobileMenu ? "900ms" : '350ms' }}>
               <div className="heading_4">
-                <a href="https://www.instagram.com/nth_d9/">Instagram</a>
+                <a className="text-link" href="https://www.instagram.com/nth_d9/">Instagram</a>
               </div>
               <div className="heading_4 mx-5">
-                <a href="https://www.behance.net/duongthuy13">Behance</a>
+                <a className="text-link" href="https://www.behance.net/duongthuy13">Behance</a>
               </div>
               <div className="heading_4">
-                <a href="https://www.facebook.com/nthuyduong15113/">Facebook</a>
+                <a className="text-link" href="https://www.facebook.com/nthuyduong15113/">Facebook</a>
               </div>
             </div>
           </div>

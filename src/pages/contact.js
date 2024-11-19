@@ -80,8 +80,8 @@ const Contact = () => {
             with professionals in my field”
           </div>
         </div>
-        <div className="heading_3 text-center mb-6">
-          <a href="mailto:Nthduong898@gmail.com">Nthduong898@gmail.com</a>
+        <div className="heading_4 text-center mb-6">
+          <a className="text-link" href="mailto:Nthduong898@gmail.com">Nthduong898@gmail.com</a>
         </div>
         {/* <div className="roll-animation contact-roll absolute md:block hidden">
           <div className="roll">

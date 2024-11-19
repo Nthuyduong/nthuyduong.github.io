@@ -23,6 +23,7 @@ import NotFound from "./pages/404";
 import ProjectDetail from "./pages/project";
 import { AnimationProvider } from "./provider/animation";
 import { TransitionProvider } from "./provider/transition";
+import Architec from "./pages/architec";
 
 const App = () => {
 
@@ -42,6 +43,11 @@ const App = () => {
             <Route path={ROUTER.ALIO} >
               <TransitionProvider>
                 <Alio/>
+              </TransitionProvider>
+            </Route>
+            <Route path={ROUTER.ARCHITEC} >
+              <TransitionProvider>
+                <Architec/>
               </TransitionProvider>
             </Route>
             <Route path={ROUTER.FASHION}>
