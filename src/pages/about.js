@@ -522,7 +522,60 @@ const About = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
 
+        <div className="additional-info">
+          <div className="mt-5 md:mt-7 section">
+            <div className="md:grid grid-cols-12 gap-5 py-4 animate slideInUp">
+              <div className="md:col-span-1"></div>
+              <div className="md:col-span-10">
+                <div className="mb-5 heading_5">COURSES & CERTIFICATES</div>
+                <div className="md:grid grid-cols-12 py-4 items-center gap-5 border-t border-solid border-ccc">
+                  <div className="col-span-2 cursor-text-wrp md:block hidden">
+                    2024
+                  </div>
+                  <div className="col-span-3 cursor-text-wrp mb-3 md:mb-0 md:block hidden">
+                    Coursera
+                  </div>
+                  <div className="col-span-7">
+                    <div
+                        className="block medium_text md:flex lg:flex items-center md:justify-start gap-5 lg:gap-0 body_text cursor-text-wrp">
+                      Google UX Design Professional Certificate
+                    </div>
+                  </div>
+                </div>
+                <div className="md:grid grid-cols-12 py-4 items-center gap-5 border-t border-solid border-ccc">
+                  <div className="col-span-2 cursor-text-wrp md:block hidden">
+                    2023
+                  </div>
+                  <div className="col-span-3 cursor-text-wrp mb-3 md:mb-0 md:block hidden">
+                    Domestika
+                  </div>
+                  <div className="col-span-7">
+                    <div
+                        className="block md:flex medium_text lg:flex items-center md:justify-start gap-5 lg:gap-0 body_text cursor-text-wrp">
+                      Introduction to Photoshop for Illustration
+                    </div>
+                  </div>
+                </div>
+                <div className="md:grid grid-cols-12 py-4 items-center gap-5 border-t border-solid border-ccc">
+                  <div className="col-span-2 cursor-text-wrp md:block hidden">
+                    2024
+                  </div>
+                  <div className="col-span-3 cursor-text-wrp mb-3 md:mb-0 md:block hidden">
+                    Art Workout Creative
+                  </div>
+                  <div className="col-span-7">
+                    <div
+                        className="block md:flex medium_text lg:flex items-center md:justify-start gap-5 lg:gap-0 body_text cursor-text-wrp">
+                      Hand-drawing course for beginners
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="md:col-span-1"></div>
             </div>
           </div>
         </div>
