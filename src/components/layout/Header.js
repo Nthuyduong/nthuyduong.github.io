@@ -115,13 +115,13 @@ const Header = () => {
           <div className="header-social overflow-hidden">
             <div className="w-full flex justify-center mt-[120px] mb-[10px]" style={{ "--delay": openMobileMenu ? "900ms" : '350ms' }}>
               <div className="heading_4">
-                <a className="text-link" href="https://www.instagram.com/nth_d9/">Instagram</a>
+                <a className="text-link" target="_blank" href="https://www.instagram.com/nth_d9/">Instagram</a>
               </div>
               <div className="heading_4 mx-5">
-                <a className="text-link" href="https://www.behance.net/duongthuy13">Behance</a>
+                <a className="text-link" target="_blank" href="https://www.behance.net/duongthuy13">Behance</a>
               </div>
               <div className="heading_4">
-                <a className="text-link" href="https://www.facebook.com/nthuyduong15113/">Facebook</a>
+                <a className="text-link" target="_blank" href="https://www.facebook.com/nthuyduong15113/">Facebook</a>
               </div>
             </div>
           </div>

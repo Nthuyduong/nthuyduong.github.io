@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { ROUTER } from "../utils/constants";
 import Slider from "../components/common/slider";
+import gsap from "gsap";
 
 const Designs = () => {
+
     useEffect(() => {
         let banner = document.querySelector('.design-banner');
         if (banner) {
@@ -38,7 +40,7 @@ const Designs = () => {
     }
 
     // MY TABS
-    const tabItems = ['UX/UI DESIGN (6)', 'SHOPIFY (2)', 'GRAPHIC DESIGN (0)', 'PERSONAL ART (2)'];
+    const tabItems = ['UX/UI DESIGN (6)', 'SHOPIFY (2)', 'GRAPHIC DESIGN (1)', 'PERSONAL ART (2)'];
     const [activeTab, setActiveTab] = useState(tabItems[0]);
 
     const handleActive = (item) => {
@@ -369,7 +371,7 @@ const Designs = () => {
                                         <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">06</div>
                                         <img
                                             className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]"
-                                            src="./images/design/mydes5.png"
+                                            src="./images/design/mydes7.png"
                                             alt="logo"
                                             loading="lazy"
                                         />
@@ -395,7 +397,7 @@ const Designs = () => {
                                             <div className="design-scale-wrp absolute h-full hidden lg:block">
                                                 <img
                                                     className="design-scale-img w-auto h-full object-cover"
-                                                    src="./images/design/mydes5.png"
+                                                    src="./images/design/mydes7.png"
                                                     alt="logo"
                                                     loading="lazy"
                                                 />
@@ -491,8 +493,7 @@ const Designs = () => {
                                                 </div>
                                                 <div>
                                                     <Link to={ROUTER.WORKOUT}>
-                                                        <div className="heading_3 cursor-text-wrp">Workout Clothes
-                                                            Website
+                                                        <div className="heading_3 cursor-text-wrp">Updating...
                                                         </div>
                                                     </Link>
                                                 </div>
@@ -527,10 +528,82 @@ const Designs = () => {
                         </div>
                         {/* } */}
                         {/* {activeTab === 'GRAPHIC DESIGN (0)' && */}
-                        <div className={`content-tab ${activeTab === 'GRAPHIC DESIGN (0)' ? 'content-active' : ''}`}>
+                        <div className={`content-tab ${activeTab === 'GRAPHIC DESIGN (1)' ? 'content-active' : ''}`}>
                             <div className="lg:pt-7 text-center">
-                                <div className="mb-2 heading_3">Come Back Soon</div>
-                                <div>I'm getting ready to upload my designs</div>
+                                <div className="my-graphic grid grid-cols-4 gap-1">
+
+                                    <div className="col-span-2 graphic">
+                                        <a className="lightbox" href="#graphic1">
+                                            <img
+                                                className="" src="./images/design/graphic1.png"
+                                                alt="logo"
+                                                loading="lazy"
+                                            />
+                                        </a>
+                                        <div className="lightbox-target" id="graphic1">
+                                            <img
+                                                className="" src="./images/design/graphic1.png"
+                                                alt="logo"
+                                                loading="lazy"
+                                            />
+                                            <a className="lightbox-close" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div className="col-span-2 graphic">
+                                        <a className="lightbox" href="#graphic2">
+                                            {/*<img*/}
+                                            {/*    className="" src="./images/design/graphic1.png"*/}
+                                            {/*    alt="logo"*/}
+                                            {/*    loading="lazy"*/}
+                                            {/*/>*/}
+                                        </a>
+                                        <div className="lightbox-target" id="graphic2">
+                                            {/*<img*/}
+                                            {/*    className="" src="./images/design/graphic1.png"*/}
+                                            {/*    alt="logo"*/}
+                                            {/*    loading="lazy"*/}
+                                            {/*/>*/}
+                                            <a className="lightbox-close" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div className="col-span-2 graphic">
+                                        <a className="lightbox" href="#graphic3">
+                                            {/*<img*/}
+                                            {/*    className="" src="./images/design/graphic1.png"*/}
+                                            {/*    alt="logo"*/}
+                                            {/*    loading="lazy"*/}
+                                            {/*/>*/}
+                                        </a>
+                                        <div className="lightbox-target" id="graphic3">
+                                            {/*<img*/}
+                                            {/*    className="" src="./images/design/graphic1.png"*/}
+                                            {/*    alt="logo"*/}
+                                            {/*    loading="lazy"*/}
+                                            {/*/>*/}
+                                            <a className="lightbox-close" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <div className="col-span-2 graphic">
+                                        <a className="lightbox" href="#graphic4">
+                                            {/*<img*/}
+                                            {/*    className="" src="./images/design/graphic1.png"*/}
+                                            {/*    alt="logo"*/}
+                                            {/*    loading="lazy"*/}
+                                            {/*/>*/}
+                                        </a>
+                                        <div className="lightbox-target" id="graphic4">
+                                            {/*<img*/}
+                                            {/*    className="" src="./images/design/graphic1.png"*/}
+                                            {/*    alt="logo"*/}
+                                            {/*    loading="lazy"*/}
+                                            {/*/>*/}
+                                            <a className="lightbox-close" href="#"></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                {/*<div className="mb-2 heading_3">Come Back Soon</div>*/}
+                                {/*<div>I'm getting ready to upload my designs</div>*/}
                             </div>
                         </div>
                         {/* } */}

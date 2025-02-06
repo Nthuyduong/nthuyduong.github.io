@@ -103,7 +103,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setTimeout(() => {
       setIndex(index === texts.length - 1 ? 0 : index + 1)
-    }, 1000);
+    }, 800);
   }, [currentText])
 
   // useLayoutEffect(() => {
@@ -118,7 +118,7 @@ const Home = () => {
   //       // pin: true,
   //       start: `top ${200 + test1Height * 1}`,
   //       end: "+=" + test1Height,
-  //       // markers: true,
+  //       //markers: true,
   //     }
   //   });
   //   const test2Height = document.querySelector(".test-pr-1").offsetHeight;
@@ -130,9 +130,9 @@ const Home = () => {
   //       trigger: ".test-pr-1",
   //       scrub: true,
   //       // pin: true,
-  //       start: `top ${200 + test1Height * 2}`,
-  //       end: "+=" + test2Height * 2,
-  //       // markers: true,
+  //       start: `top ${200 + test1Height * 1.5}`,
+  //       end: "+=" + test2Height * 1.5,
+  //       //markers: true,
   //     }
   //   });
   //   const test3Height = document.querySelector(".test-pr-2").offsetHeight;
@@ -144,9 +144,9 @@ const Home = () => {
   //       trigger: ".test-pr-2",
   //       scrub: true,
   //       // pin: true,
-  //       start: `top ${200 + test1Height * 3}`,
-  //       end: "+=" + test3Height * 3,
-  //       // markers: true,
+  //       start: `top ${200 + test1Height * 2}`,
+  //       end: "+=" + test3Height * 2,
+  //       //markers: true,
   //     }
   //   });
   //   const test4Height = document.querySelector(".test-pr-3").offsetHeight;
@@ -158,9 +158,9 @@ const Home = () => {
   //       trigger: ".test-pr-3",
   //       scrub: true,
   //       // pin: true,
-  //       start: `top ${200 + test1Height * 4}`,
-  //       end: "+=" + test4Height * 4,
-  //       // markers: true,
+  //       start: `top ${200 + test1Height * 2.5}`,
+  //       end: "+=" + test4Height * 2.5,
+  //       //markers: true,
   //     }
   //   });
   //   const test5Height = document.querySelector(".test-pr-4").offsetHeight;
@@ -172,9 +172,9 @@ const Home = () => {
   //       trigger: ".test-pr-4",
   //       scrub: true,
   //       // pin: true,
-  //       start: `top ${200 + test1Height * 5}`,
-  //       end: "+=" + test5Height * 5,
-  //       // markers: true,
+  //       start: `top ${200 + test1Height * 3}`,
+  //       end: "+=" + test5Height * 3,
+  //       //markers: true,
   //     }
   //   });
   // }, [])
@@ -219,10 +219,10 @@ const Home = () => {
             </div>
           </div>
           <div className="md:flex justify-center mt-5 z-20 hidden animate slideInUp animate--delay-fast">
-            <img className="h-[200px] md:h-[320px] img-smile" src="./images/bannerhome.svg" alt="smile" loading="lazy" />
+            <img className="h-[200px] md:h-[320px] img-smile" src="./images/bannerhome2.svg" alt="smile" loading="lazy" />
           </div>
           <div className="flex justify-center mt-5 z-20 md:hidden">
-            <img className="h-[200px] md:h-[320px] img-smile" src="./images/bannerhome2.png" alt="smile" loading="lazy" />
+            <img className="h-[200px] md:h-[320px] img-smile" src="./images/bannerhome2.svg" alt="smile" loading="lazy" />
           </div>
           <div className="flex justify-center mt-2 md:mt-6 animate slideInUp animate--delay-fast">
             <img className="h-[80px] md:h-[130px] img-smile" src="./images/bannertext.svg" alt="smile" loading="lazy" />
@@ -415,59 +415,59 @@ const Home = () => {
       </div> */}
 
       {/* ABOUT ME */}
-      {/* <div className="section">
-        <div className="md:grid grid-cols-12 gap-5 pt-6 md:pt-7">
-          <div className="col-span-12 lg:col-span-1"></div>
-          <div className="col-span-12 lg:col-span-10">
+      {/*<div className="section">*/}
+      {/*  <div className="md:grid grid-cols-12 gap-5 pt-6 md:pt-7">*/}
+      {/*    <div className="col-span-12 lg:col-span-1"></div>*/}
+      {/*    <div className="col-span-12 lg:col-span-10">*/}
 
-            <div className="text-large-2 md:mb-6 mb-4">
-              <div className="overflow-hidden relative">
-                <div className="test-pr">
-                  <div className="test-tex">WELCOME TO MY PORTFOLIO! EXCITED TO</div>
-                  <div className="test-text-2">WELCOME TO MY PORTFOLIO! EXCITED TO</div>
-                </div>
-              </div>
-              <div className="my-1 overflow-hidden relative">
-                <div className="test-pr-1">
-                  <div className="test-text">SHARE UX/UI DESIGN PROJECTS AND</div>
-                  <div className="test-text-2">SHARE UX/UI DESIGN PROJECTS AND</div>
-                </div>
-              </div>
-              <div className="overflow-hidden relative">
-                <div className="test-pr-2">
-                  <div className="test-text">EXPERIENCE HERE. ALWAYS READY TO</div>
-                  <div className="test-text-2">EXPERIENCE HERE. ALWAYS READY TO</div>
-                </div>
-              </div>
-              <div className="my-1 overflow-hidden relative">
-                <div className="test-pr-3">
-                  <div className="test-text">EMBRACE NEW OPPORTUNITIES AND</div>
-                  <div className="test-text-2">EMBRACE NEW OPPORTUNITIES AND</div>
-                </div>
-              </div>
-              <div className="overflow-hidden relative">
-                <div className="test-pr-4">
-                  <div className="test-text">CHALLENGES FOR CONTINUOUS GROWTH.</div>
-                  <div className="test-text-2">CHALLENGES FOR CONTINUOUS GROWTH.</div>
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <Link to={ROUTER.ABOUT}>
-                <div id="container">
-                  <button className="learn-more">
-                    <span className="circle" aria-hidden="true">
-                      <span className="icon arrow"></span>
-                    </span>
-                    <span className="button-text medium_text">MORE ABOUT ME</span>
-                  </button>
-                </div>
-              </Link>
-            </div>
-          </div>
-          <div className="col-span-12 lg:col-span-1"></div>
-        </div>
-      </div> */}
+      {/*      <div className="text-large-1 md:mb-6 mb-4">*/}
+      {/*        <div className="overflow-hidden relative">*/}
+      {/*          <div className="test-pr-4">*/}
+      {/*            <div className="test-tex">WELCOME TO MY PORTFOLIO! EXCITED TO</div>*/}
+      {/*            <div className="test-text-2">WELCOME TO MY PORTFOLIO! EXCITED TO</div>*/}
+      {/*          </div>*/}
+      {/*        </div>*/}
+      {/*        <div className="my-1 overflow-hidden relative">*/}
+      {/*          <div className="test-pr-3">*/}
+      {/*            <div className="test-text">SHARE UX/UI DESIGN PROJECTS AND</div>*/}
+      {/*            <div className="test-text-2">SHARE UX/UI DESIGN PROJECTS AND</div>*/}
+      {/*          </div>*/}
+      {/*        </div>*/}
+      {/*        <div className="overflow-hidden relative">*/}
+      {/*          <div className="test-pr-2">*/}
+      {/*            <div className="test-text">EXPERIENCE HERE. ALWAYS READY TO</div>*/}
+      {/*            <div className="test-text-2">EXPERIENCE HERE. ALWAYS READY TO</div>*/}
+      {/*          </div>*/}
+      {/*        </div>*/}
+      {/*        <div className="my-1 overflow-hidden relative">*/}
+      {/*          <div className="test-pr-1">*/}
+      {/*            <div className="test-text">EMBRACE NEW OPPORTUNITIES AND</div>*/}
+      {/*            <div className="test-text-2">EMBRACE NEW OPPORTUNITIES AND</div>*/}
+      {/*          </div>*/}
+      {/*        </div>*/}
+      {/*        <div className="overflow-hidden relative">*/}
+      {/*          <div className="test-pr">*/}
+      {/*            <div className="test-text">CHALLENGES FOR CONTINUOUS GROWTH.</div>*/}
+      {/*            <div className="test-text-2">CHALLENGES FOR CONTINUOUS GROWTH.</div>*/}
+      {/*          </div>*/}
+      {/*        </div>*/}
+      {/*      </div>*/}
+      {/*      <div className="flex justify-center">*/}
+      {/*        <Link to={ROUTER.ABOUT}>*/}
+      {/*          <div id="container">*/}
+      {/*            <button className="learn-more">*/}
+      {/*              <span className="circle" aria-hidden="true">*/}
+      {/*                <span className="icon arrow"></span>*/}
+      {/*              </span>*/}
+      {/*              <span className="button-text medium_text">MORE ABOUT ME</span>*/}
+      {/*            </button>*/}
+      {/*          </div>*/}
+      {/*        </Link>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*    <div className="col-span-12 lg:col-span-1"></div>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
       <div className="section">
         <div className="md:grid grid-cols-12 gap-5">
           <div className="col-span-12 lg:col-span-5"></div>
@@ -478,8 +478,6 @@ const Home = () => {
               experiences here. Always ready to embrace new opportunities and challenges
               for continuous growth.
             </div>
-
-            {/* animation button */}
             <Link to={ROUTER.ABOUT}>
               <div id="container">
                 <button className="learn-more">
