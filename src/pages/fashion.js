@@ -18,6 +18,21 @@ const Fashion = () => {
         }, 1050);
     }, [img.length]);
 
+    const [currentShowIndex, setCurrentShowIndex] = useState(0);
+    const [show] = useState(
+        [
+            "firstveri1.webp",
+            "firstveri2.webp",
+        ]
+    )
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentShowIndex((prevIndex) =>
+                prevIndex === show.length - 1 ? 0 : prevIndex + 1);
+        }, 1000);
+        return () => clearInterval(interval);
+    }, [show.length]);
+
     return(
         <div>
             <div className="container-fluid">
@@ -50,22 +65,28 @@ const Fashion = () => {
                     </div> */}
                     <div className="project-item verite_line2 md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
+                            <div className="col-span-12 sm:col-span-6">
+                                <img className="w-100 w-full" src="./images/Pj04_fashion/line3-02.webp" alt="#"
+                                     loading="eager" height={500} width={500}/>
+                            </div>
                             <div className="col-span-12 sm:col-span-6 flex items-end bg-primary">
                                 <div className="p-7">
                                     <div className="heading_4 mb-4">Introduction</div>
                                     <div className="body_text">
                                         Discover the essence of French luxury fashion. Our brand captures the essence of
-                                        timeless elegance and refined craftsmanship. With meticulous attention to detail and
-                                        a passion for exquisite design, we offer a curated selection of sophisticated pieces
-                                        that epitomize French style. Embrace effortless chic and indulge in the allure of
-                                        our collections. Experience the epitome of luxury with our brand, where sophistication
+                                        timeless elegance and refined craftsmanship. With meticulous attention to detail
+                                        and
+                                        a passion for exquisite design, we offer a curated selection of sophisticated
+                                        pieces
+                                        that epitomize French style. Embrace effortless chic and indulge in the allure
+                                        of
+                                        our collections. Experience the epitome of luxury with our brand, where
+                                        sophistication
                                         meets impeccable taste.
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-span-12 sm:col-span-6">
-                                <img className="w-100 w-full" src="./images/Pj04_fashion/line2-01.webp" alt="#" loading="eager" height={500} width={500}/>
-                            </div>
+
                         </div>
                     </div>
                     <div className="project-item md:pb-6 pb-4">
@@ -81,12 +102,15 @@ const Fashion = () => {
                                 <img className="w-100" src="./images/Pj04_fashion/line3-01.webp" alt="#" loading="lazy"/>
                             </div>
                             <div className="col-span-12 sm:col-span-6">
-                                <img className="w-100" src="./images/Pj04_fashion/line3-02.webp" alt="#" loading="lazy"/>
+                                <img className="w-100 w-full" src="./images/Pj04_fashion/line2-01.webp" alt="#"
+                                     loading="eager" height={500} width={500}/>
                             </div>
                         </div>
                     </div>
                     <div className="project-item md:pb-6 pb-4">
-                        <img className="mb-4 w-100" src="./images/Pj04_fashion/first-veri.png" alt="#" loading="lazy"/>
+                        <img className="w-100"
+                             src={require(`../../public/images/Pj04_fashion/${show[currentShowIndex]}`)}
+                             alt="#" loading="lazy"/>
                     </div>
                     {/* <div className="project-item md:pb-6 pb-4">
                         <img className="mb-4 w-100" src="./images/Pj04_fashion/img2.webp" alt="#" loading="lazy"/>
@@ -94,20 +118,20 @@ const Fashion = () => {
                     <div className="project-item verite_line4 md:pb-6 pb-4">
                         <img className="w-100" src="./images/Pj04_fashion/veri.png" alt="#" loading="lazy"/>
                     </div>
-                    <div className="project-item md:pb-6 pb-4">
+                    <div className="project-item">
                         <img className="mb-4 w-100" src="./images/Pj04_fashion/v-app.jpg" alt="#" loading="lazy"/>
                     </div>
                     
-                    <div className="project-item verite_line5">
-                        <div className="grid grid-cols-12">
-                            <div className="col-span-6">
-                                <img className="w-100" src="./images/Pj04_fashion/line5-01.webp" alt="#" loading="lazy"/>
-                            </div>
-                            <div className="col-span-6">
-                                <img className="w-100" src="./images/Pj04_fashion/line5-02.webp" alt="#" loading="lazy"/>
-                            </div>
-                        </div>
-                    </div>
+                    {/*<div className="project-item verite_line5">*/}
+                    {/*    <div className="grid grid-cols-12">*/}
+                    {/*        <div className="col-span-6">*/}
+                    {/*            <img className="w-100" src="./images/Pj04_fashion/line5-01.webp" alt="#" loading="lazy"/>*/}
+                    {/*        </div>*/}
+                    {/*        <div className="col-span-6">*/}
+                    {/*            <img className="w-100" src="./images/Pj04_fashion/line5-02.webp" alt="#" loading="lazy"/>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
             </div>
             <div className="more-project md:mb-8 mb-4">

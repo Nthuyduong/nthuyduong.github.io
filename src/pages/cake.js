@@ -135,7 +135,7 @@ const Cake = () => {
                         <img className="w-100" src="./images/Pj01_cake/cake-blog.png" alt="#" loading="lazy"/>
                     </div>
                     <div className="project-item md:pb-6 pb-4">
-                        <img className="w-100" src="./images/Pj01_cake/cake-detail.png" alt="#" loading="lazy"/>
+                        <img className="w-100" src="./images/Pj01_cake/cake-detail.webp" alt="#" loading="lazy"/>
                     </div>
                     {/*<div className="project-item">*/}
                     {/*    <img className="w-100" src="./images/Pj01_cake/cake-list.png" alt="#" loading="lazy" />*/}
