@@ -9,7 +9,6 @@ const Naviga = () => {
     const history = useHistory();
     const headerRef = useRef(null);
     const headerMobileRef = useRef(null);
-    
 
     const projects = [
         ROUTER.AGURI,
@@ -17,6 +16,7 @@ const Naviga = () => {
         ROUTER.CAKE,
         ROUTER.FASHION,
         ROUTER.BEAUTYBLOG,
+        ROUTER.SCHEDULE,
     ]
 
     const [openMobileMenu, setOpenMobileMenu] = useState(false);

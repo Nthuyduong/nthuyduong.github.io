@@ -12,7 +12,7 @@ const About = () => {
     },
     {
       title: 'Tech Stack',
-      skills: ['HTML/SCSS', 'Bootstrap', 'Tailwind', 'JavaScript', 'ReactJS', 'Angular']
+      skills: ['HTML/SCSS', 'Tailwind/Bootstrap', 'SQL', 'JavaScript', 'ReactJS', 'Angular', 'PHP']
     }
   ]
   const [iconVisible, setIconVisible] = useState(true);
