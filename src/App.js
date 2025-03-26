@@ -24,6 +24,7 @@ import ProjectDetail from "./pages/project";
 import { AnimationProvider } from "./provider/animation";
 import { TransitionProvider } from "./provider/transition";
 import Architec from "./pages/architec";
+import Schedule from "./pages/schedule";
 
 const App = () => {
 
@@ -35,6 +36,11 @@ const App = () => {
             <Route exact path={ROUTER.HOME} component={Home}/>
             <Route path={ROUTER.ABOUT} component={About}/>
             <Route path={ROUTER.CONTACT} component={Contact}/>
+            <Route path={ROUTER.SCHEDULE}>
+              <TransitionProvider>
+                <Schedule/>
+              </TransitionProvider>
+            </Route>
             <Route path={ROUTER.AGURI}>
               <TransitionProvider>
                 <Aguri/>

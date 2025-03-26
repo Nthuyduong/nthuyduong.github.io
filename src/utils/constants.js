@@ -13,4 +13,5 @@ export const ROUTER = {
   PROJECT_DETAIL: '/designs/:id',
   WORKOUT : '/workout',
   ARCHITEC: '/architec',
+  SCHEDULE: '/schedule',
 }

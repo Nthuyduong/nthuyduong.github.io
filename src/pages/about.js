@@ -109,7 +109,7 @@ const About = () => {
                   width: '27ch',
                   animationTimingFunction: 'steps(27)',
                 }}
-            >I'm a UX/UI Designer. Welcome to</span>
+            >I'm a Product Designer. Welcome to</span>
               <span
                   className="say-hi animate textTyping"
                   style={{
@@ -250,7 +250,7 @@ const About = () => {
               <div className="col-span-4">
 
                 <div className="md:mb-3 mb-3">With 2 years of experience in UX/UI design, I've refined my skills in
-                  creating user-centric designs that balance aesthetics
+                  creating user - centric designs that balance aesthetics
                   and functionality. My journey in the field has given me a strong foundation in diverse design
                   principles and methodologies.
                   Currently, I handle both Designer & Developer tasks, seamlessly blending design and development
@@ -358,10 +358,10 @@ const About = () => {
                   <div className="col-span-8">
                     <div
                         className="block sm:flex md:flex lg:flex items-center lg:justify-start pb-0 body_text cursor-text-wrp gap-5 md:gap-0">
-                      <div className="md:mb-0 mb-2">Vietnamese</div>
+                      <div className="md:mb-0 mb-2">Vietnamese (Native language)</div>
                       <img className="md:block hidden md:mx-4 about-dot" src="./images/about/Ellipse27.webp" alt="#"
                            loading="lazy"></img>
-                      <div className="md:mb-0 mb-2">English</div>
+                      <div className="md:mb-0 mb-2">English (B2 - Upper Intermediate)</div>
                     </div>
                   </div>
                 </div>
@@ -539,10 +539,25 @@ const About = () => {
                   <div className="col-span-3 cursor-text-wrp mb-3 md:mb-0 md:block hidden">
                     Coursera
                   </div>
-                  <div className="col-span-7">
+                  <div className="col-span-7 flex">
                     <div
                         className="block medium_text md:flex lg:flex items-center md:justify-start gap-5 lg:gap-0 body_text cursor-text-wrp">
                       Google UX Design Professional Certificate
+                    </div>
+                    <div className="ml-auto"><a className="text-link" href="https://coursera.org/share/fe7459f88ba159c702df14bd2adfb86d" target="_blank">View detail</a></div>
+                  </div>
+                </div>
+                <div className="md:grid grid-cols-12 py-4 items-center gap-5 border-t border-solid border-ccc">
+                  <div className="col-span-2 cursor-text-wrp md:block hidden">
+                    2025
+                  </div>
+                  <div className="col-span-3 cursor-text-wrp mb-3 md:mb-0 md:block hidden">
+                    Udemy
+                  </div>
+                  <div className="col-span-7">
+                    <div
+                        className="block md:flex medium_text lg:flex items-center md:justify-start gap-5 lg:gap-0 body_text cursor-text-wrp">
+                      Python Complete Course For Beginners
                     </div>
                   </div>
                 </div>
