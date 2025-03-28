@@ -648,20 +648,20 @@ const Home = () => {
             >
               <div className="project-odd">
                 <div className="heading_4 mb-2 cursor-text-wrp">01.</div>
-                <Link to={ROUTER.CAKE}>
+                <Link to={ROUTER.SCHEDULE}>
                   <img
-                    className="w-full project-img" src="./images/design/cakemain.png"
+                    className="w-full project-img" src="./images/design/schedulemain.png"
                     alt="logo"
                     loading="lazy"
                   />
                 </Link>
                 <div className="medium_text mt-3 cursor-text-wrp">
-                  <Link to={ROUTER.CAKE}>
-                    Season Cake Blog
+                  <Link to={ROUTER.SCHEDULE}>
+                    Family Schedule app
                   </Link>
                 </div>
                 <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
-                  Indulge in the delectable world of Cake Blog, where sweetness and creativity come together.
+                  Stay organized with the Family Schedule App, where simplicity meets efficiency for a smoother family life.
                 </div>
               </div>
               <div className="project-even">

@@ -122,7 +122,7 @@ const Designs = () => {
                                         <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">01</div>
                                         <img
                                             className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]"
-                                            src="./images/design/mydes4.png"
+                                            src="./images/design/mydes8.png"
                                             alt="logo"
                                             loading="lazy"
                                         />
@@ -132,7 +132,7 @@ const Designs = () => {
                                                     className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI
                                                     Design
                                                 </div>
-                                                <div className="cursor-text-wrp body_text">Apr 2024</div>
+                                                <div className="cursor-text-wrp body_text">March 2025</div>
                                             </div>
                                             <div>
                                                 <Link to={ROUTER.SCHEDULE}>
@@ -148,7 +148,7 @@ const Designs = () => {
                                             <div className="design-scale-wrp absolute h-full hidden lg:block">
                                                 <img
                                                     className="design-scale-img h-full w-auto object-cover"
-                                                    src="./images/design/mydes4.png"
+                                                    src="./images/design/mydes8.png"
                                                     alt="logo"
                                                     loading="lazy"
                                                 />

@@ -16,13 +16,29 @@ const Schedule = () => {
                 <div className="project-item md:pb-6 pb-4">
                     <div className="grid grid-cols-12">
                         <div className="col-span-12 sm:col-span-6">
-                            <img className="w-100" src="./images/Pj08_schedule/feature-l.webp" alt="#" loading="lazy"/>
+                            <img className="w-100 w-full" src="./images/Pj08_schedule/problem.webp" alt="#"
+                                 loading="lazy" height={500} width={500}/>
+                        </div>
+                        <div className="col-span-12 sm:col-span-6">
+                            <img className="w-100 w-full" src="./images/Pj08_schedule/goal.webp" alt="#"
+                                 loading="eager" height={500} width={500}/>
+                        </div>
+                    </div>
+                </div>
+                <div className="project-item md:pb-6 pb-4">
+                    <div className="grid grid-cols-12">
+                        <div className="col-span-12 sm:col-span-6">
+                            <img className="w-100 w-full" src="./images/Pj08_schedule/feature-l.webp" alt="#"
+                                 loading="lazy"/>
                         </div>
                         <div className="col-span-12 sm:col-span-6">
                             <img className="w-100 w-full" src="./images/Pj08_schedule/feature-r.webp" alt="#"
                                  loading="eager" height={500} width={500}/>
                         </div>
                     </div>
+                </div>
+                <div className="project-item md:pb-6 pb-4">
+                    <img className="w-100" src="./images/Pj08_schedule/persona.webp" loading="lazy"/>
                 </div>
                 <div className="project-item md:pb-6 pb-4">
                     <img className="w-100" src="./images/Pj08_schedule/schedule02.webp" loading="lazy"/>
@@ -37,6 +53,15 @@ const Schedule = () => {
                                  loading="eager" height={500} width={500}/>
                         </div>
                     </div>
+                </div>
+                <div className="project-item md:pb-6 pb-4">
+                    <img className="w-100" src="./images/Pj08_schedule/user-flow.png" loading="lazy"/>
+                </div>
+                <div className="project-item md:pb-6 pb-4">
+                    <img className="w-100" src="./images/Pj08_schedule/app-flow.webp" loading="lazy"/>
+                </div>
+                <div className="project-item md:pb-6 pb-4">
+                    <img className="w-100" src="./images/Pj08_schedule/schedule-mockup.webp" loading="lazy"/>
                 </div>
             </div>
         </div>

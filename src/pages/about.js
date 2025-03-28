@@ -12,7 +12,7 @@ const About = () => {
     },
     {
       title: 'Tech Stack',
-      skills: ['HTML/SCSS', 'Tailwind/Bootstrap', 'SQL', 'JavaScript', 'ReactJS', 'Angular', 'PHP']
+      skills: ['HTML/SCSS', 'Tailwind/Bootstrap', 'SQL', 'JavaScript', 'ReactJS', 'Angular', 'PHP/Laravel']
     }
   ]
   const [iconVisible, setIconVisible] = useState(true);
@@ -113,7 +113,7 @@ const About = () => {
               <span
                   className="say-hi animate textTyping"
                   style={{
-                    animationDelay: '3.5s',
+                    animationDelay: '2.5s',
                     animationDuration: '1s',
                     width: '22ch',
                     animationTimingFunction: 'steps(10)',
