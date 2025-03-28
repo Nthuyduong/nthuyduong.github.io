@@ -300,7 +300,7 @@ const About = () => {
                   <div className="col-span-8">
                     <div
                         className="block md:flex lg:flex items-center md:justify-start gap-5 lg:gap-0 body_text cursor-text-wrp">
-                      <div className="md:mb-0 mb-2">BOD: 08/19/1998</div>
+                      <div className="md:mb-0 mb-2">DOB: August 1998</div>
                       <img className="md:block hidden lg:mx-4 md:mx-0 about-dot sm:mx-2 mx-0"
                            src="./images/about/Ellipse27.webp" alt="#" loading="lazy"></img>
                       <div className="md:mb-0 mb-2">Nationality: Local Vietnamese</div>

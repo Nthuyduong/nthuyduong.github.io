@@ -219,10 +219,10 @@ const Home = () => {
             </div>
           </div>
           <div className="md:flex justify-center mt-5 z-20 hidden animate slideInUp animate--delay-fast">
-            <img className="h-[200px] md:h-[320px] img-smile" src="./images/bannerhome2.svg" alt="smile" loading="lazy" />
+            <img className="h-[200px] md:h-[320px] img-smile" src="./images/bannerhome2.webp" alt="smile" loading="lazy" />
           </div>
           <div className="flex justify-center mt-5 z-20 md:hidden">
-            <img className="h-[200px] md:h-[320px] img-smile" src="./images/bannerhome2.svg" alt="smile" loading="lazy" />
+            <img className="h-[200px] md:h-[320px] img-smile" src="./images/bannerhome2.webp" alt="smile" loading="lazy" />
           </div>
           <div className="flex justify-center mt-2 md:mt-6 animate slideInUp animate--delay-fast">
             <img className="h-[80px] md:h-[130px] img-smile" src="./images/bannertext.svg" alt="smile" loading="lazy" />
