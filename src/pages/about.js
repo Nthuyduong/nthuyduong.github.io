@@ -109,16 +109,16 @@ const About = () => {
                   width: '27ch',
                   animationTimingFunction: 'steps(27)',
                 }}
-            >I'm a Product Designer. Welcome to</span>
+            >I'm a Product Designer & Developer.</span>
               <span
                   className="say-hi animate textTyping"
                   style={{
-                    animationDelay: '2.0s',
+                    animationDelay: '3.5s',
                     animationDuration: '1s',
-                    width: '10ch',
+                    width: '22ch',
                     animationTimingFunction: 'steps(10)',
                   }}
-              >my portfolio</span>
+              >Welcome to my portfolio!</span>
             </div>
           </div>
         </div>
