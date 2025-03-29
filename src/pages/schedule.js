@@ -41,6 +41,9 @@ const Schedule = () => {
                     <img className="w-100" src="./images/Pj08_schedule/persona.webp" loading="lazy"/>
                 </div>
                 <div className="project-item md:pb-6 pb-4">
+                    <img className="w-100" src="./images/Pj08_schedule/journey-map.webp" loading="lazy"/>
+                </div>
+                <div className="project-item md:pb-6 pb-4">
                     <img className="w-100" src="./images/Pj08_schedule/schedule02.webp" loading="lazy"/>
                 </div>
                 <div className="project-item md:pb-6 pb-4">
@@ -61,7 +64,13 @@ const Schedule = () => {
                     <img className="w-100" src="./images/Pj08_schedule/app-flow.webp" loading="lazy"/>
                 </div>
                 <div className="project-item md:pb-6 pb-4">
+                    <img className="w-100" src="./images/Pj08_schedule/typography.webp" loading="lazy"/>
+                </div>
+                <div className="project-item md:pb-6 pb-4">
                     <img className="w-100" src="./images/Pj08_schedule/schedule-mockup.webp" loading="lazy"/>
+                </div>
+                <div className="project-item md:pb-6 pb-4">
+                    <img className="w-100" src="./images/Pj08_schedule/web-mockup.webp" loading="lazy"/>
                 </div>
             </div>
         </div>

@@ -25,6 +25,7 @@ import { AnimationProvider } from "./provider/animation";
 import { TransitionProvider } from "./provider/transition";
 import Architec from "./pages/architec";
 import Schedule from "./pages/schedule";
+import Test from "./pages/test";
 
 const App = () => {
 
@@ -36,6 +37,11 @@ const App = () => {
             <Route exact path={ROUTER.HOME} component={Home}/>
             <Route path={ROUTER.ABOUT} component={About}/>
             <Route path={ROUTER.CONTACT} component={Contact}/>
+            <Route path={ROUTER.TEST}>
+              <TransitionProvider>
+                <Test/>
+              </TransitionProvider>
+            </Route>
             <Route path={ROUTER.SCHEDULE}>
               <TransitionProvider>
                 <Schedule/>

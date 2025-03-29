@@ -61,7 +61,6 @@ const About = () => {
     }
   }
 
-
   return (
       <div className="about-page">
         <div className="md:my-7 my-4 section-full px-0">
