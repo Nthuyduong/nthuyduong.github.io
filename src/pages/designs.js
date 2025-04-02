@@ -159,57 +159,7 @@ const Designs = () => {
                                                 <div className="mr-2">Explore now</div>
                                                 <div>
                                                     <img className="" src="./images/icons/arrow.svg" alt="smile"
-                                                         loading="lazy"/>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="lg:mt-6 border-b border-solid border-ccc md:pb-0 pb-5">
-                                <div className="design-scale-out md:flex flex-row gap-6">
-                                    <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
-                                        <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">02</div>
-                                        <img
-                                            className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]"
-                                            src="./images/design/mydes4.png"
-                                            alt="logo"
-                                            loading="lazy"
-                                        />
-                                        <div className="sm:pt-0 pt-4">
-                                            <div className="flex">
-                                                <div
-                                                    className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI
-                                                    Design
-                                                </div>
-                                                <div className="cursor-text-wrp body_text">Apr 2024</div>
-                                            </div>
-                                            <div>
-                                                <Link to={ROUTER.AGURI}>
-                                                    <div className="heading_3 cursor-text-wrp">Aguri Jewelry Website
-                                                    </div>
-                                                </Link>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div className="md:flex flex-row justify-end relative w-[40%] sm:w-[25%] lg:w-full">
-                                        <Link to={ROUTER.AGURI}>
-                                            <div className="design-scale-wrp absolute h-full hidden lg:block">
-                                                <img
-                                                    className="design-scale-img h-full w-auto object-cover"
-                                                    src="./images/design/mydes4.png"
-                                                    alt="logo"
-                                                    loading="lazy"
-                                                />
-                                            </div>
-                                        </Link>
-                                        <Link className="py-5" to={ROUTER.AGURI}>
-                                            <div className="flex items-center">
-                                                <div className="mr-2">Explore now</div>
-                                                <div>
-                                                    <img className="" src="./images/icons/arrow.svg" alt="smile"
-                                                         loading="lazy"/>
+                                                        loading="lazy" />
                                                 </div>
                                             </div>
                                         </Link>
@@ -219,7 +169,7 @@ const Designs = () => {
                             <div className="border-b border-solid border-ccc md:pb-0 pb-5">
                                 <div className="design-scale-out md:flex flex-row gap-6">
                                     <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
-                                        <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">03</div>
+                                        <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">02</div>
                                         <img
                                             className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]"
                                             src="./images/design/mydes2.png"
@@ -257,7 +207,56 @@ const Designs = () => {
                                                 <div className="mr-2">Explore now</div>
                                                 <div>
                                                     <img className="" src="./images/icons/arrow.svg" alt="smile"
-                                                         loading="lazy"/>
+                                                        loading="lazy" />
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="lg:mt-6 border-b border-solid border-ccc md:pb-0 pb-5">
+                                <div className="design-scale-out md:flex flex-row gap-6">
+                                    <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
+                                        <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">03</div>
+                                        <img
+                                            className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]"
+                                            src="./images/design/mydes4.png"
+                                            alt="logo"
+                                            loading="lazy"
+                                        />
+                                        <div className="sm:pt-0 pt-4">
+                                            <div className="flex">
+                                                <div
+                                                    className="mb-1 cursor-text-wrp body_text pr-2 mr-2 border-r border-solid border-999">UX/UI
+                                                    Design
+                                                </div>
+                                                <div className="cursor-text-wrp body_text">Apr 2024</div>
+                                            </div>
+                                            <div>
+                                                <Link to={ROUTER.AGURI}>
+                                                    <div className="heading_3 cursor-text-wrp">Aguri Jewelry Website
+                                                    </div>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="md:flex flex-row justify-end relative w-[40%] sm:w-[25%] lg:w-full">
+                                        <Link to={ROUTER.AGURI}>
+                                            <div className="design-scale-wrp absolute h-full hidden lg:block">
+                                                <img
+                                                    className="design-scale-img h-full w-auto object-cover"
+                                                    src="./images/design/mydes4.png"
+                                                    alt="logo"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </Link>
+                                        <Link className="py-5" to={ROUTER.AGURI}>
+                                            <div className="flex items-center">
+                                                <div className="mr-2">Explore now</div>
+                                                <div>
+                                                    <img className="" src="./images/icons/arrow.svg" alt="smile"
+                                                        loading="lazy" />
                                                 </div>
                                             </div>
                                         </Link>
@@ -306,7 +305,7 @@ const Designs = () => {
                                                 <div className="mr-2">Explore now</div>
                                                 <div>
                                                     <img className="" src="./images/icons/arrow.svg" alt="smile"
-                                                         loading="lazy"/>
+                                                        loading="lazy" />
                                                 </div>
                                             </div>
                                         </Link>
@@ -356,7 +355,7 @@ const Designs = () => {
                                                 <div className="mr-2">Explore now</div>
                                                 <div>
                                                     <img className="" src="./images/icons/arrow.svg" alt="smile"
-                                                         loading="lazy"/>
+                                                        loading="lazy" />
                                                 </div>
                                             </div>
                                         </Link>
@@ -407,7 +406,7 @@ const Designs = () => {
                                                 <div className="mr-2">Explore now</div>
                                                 <div>
                                                     <img className="" src="./images/icons/arrow.svg" alt="smile"
-                                                         loading="lazy"/>
+                                                        loading="lazy" />
                                                 </div>
                                             </div>
                                         </Link>
@@ -458,7 +457,7 @@ const Designs = () => {
                                                 <div className="mr-2">Explore now</div>
                                                 <div>
                                                     <img className="" src="./images/icons/arrow.svg" alt="smile"
-                                                         loading="lazy"/>
+                                                        loading="lazy" />
                                                 </div>
                                             </div>
                                         </Link>
@@ -501,7 +500,7 @@ const Designs = () => {
                                         </div>
                                         <div
                                             className="md:flex flex-row justify-end relative w-[40%] sm:w-[25%] lg:w-full">
-                                            <Link to={ROUTER.WORKOUT}>
+                                            <Link to={ROUTER.TEST}>
                                                 <div className="design-scale-wrp absolute h-full hidden lg:block">
                                                     <img
                                                         className="design-scale-img h-full w-auto object-cover"
@@ -513,10 +512,10 @@ const Designs = () => {
                                             </Link>
                                             <Link className="py-5" to={ROUTER.WORKOUT}>
                                                 <div className="flex items-center">
-                                                <div className="mr-2">Explore now</div>
+                                                    <div className="mr-2">Explore now</div>
                                                     <div>
                                                         <img className="" src="./images/icons/arrow.svg" alt="smile"
-                                                             loading="lazy"/>
+                                                            loading="lazy" />
                                                     </div>
                                                 </div>
                                             </Link>
@@ -526,7 +525,7 @@ const Designs = () => {
                                 <div className="md:pb-0 pb-5 mb-7">
                                     <div className="design-scale-out md:flex flex-row gap-6">
                                         <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
-                                            <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">01</div>
+                                            <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">02</div>
                                             <img
                                                 className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]"
                                                 src="./images/design/mydes4.png"
@@ -542,8 +541,8 @@ const Designs = () => {
                                                     <div className="cursor-text-wrp body_text">Apr 2024</div>
                                                 </div>
                                                 <div>
-                                                    <Link to={ROUTER.WORKOUT}>
-                                                        <div className="heading_3 cursor-text-wrp">Updating...
+                                                    <Link to={ROUTER.TEST}>
+                                                        <div className="heading_3 cursor-text-wrp">Clothes Brand
                                                         </div>
                                                     </Link>
                                                 </div>
@@ -552,7 +551,7 @@ const Designs = () => {
                                         </div>
                                         <div
                                             className="md:flex flex-row justify-end relative w-[40%] sm:w-[25%] lg:w-full">
-                                            <Link to={ROUTER.WORKOUT}>
+                                            <Link to={ROUTER.TEST}>
                                                 <div className="design-scale-wrp absolute h-full hidden lg:block">
                                                     <img
                                                         className="design-scale-img h-full w-auto object-cover"
@@ -562,12 +561,12 @@ const Designs = () => {
                                                     />
                                                 </div>
                                             </Link>
-                                            <Link className="py-5" to={ROUTER.WORKOUT}>
+                                            <Link className="py-5" to={ROUTER.TEST}>
                                                 <div className="flex items-center">
                                                     <div className="mr-2">Explore now</div>
                                                     <div>
                                                         <img className="" src="./images/icons/arrow.svg" alt="smile"
-                                                             loading="lazy"/>
+                                                            loading="lazy" />
                                                     </div>
                                                 </div>
                                             </Link>

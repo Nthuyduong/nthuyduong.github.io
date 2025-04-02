@@ -66,6 +66,10 @@ const BeautyBlog = () => {
                             <img className="w-100 w-full" src="./images/Pj05_beauty/beauty-top.png" alt="#" loading="lazy" height={500} width={500} />
                         </div>
                     </div>
+                    <div className="md:pb-6 pb-4 text-center">
+                        <div className="mb-2 heading_6">PREVIEW MY DEMO UI CODE</div>
+                        <a className="text-link" href="https://radianceaura.vercel.app" target="_blank">https://radianceaura.vercel.app</a>
+                    </div>
                     <div className="project-item md:pb-6 pb-4">
                         <div className="">
                             <img className="w-100 w-full" src="./images/Pj05_beauty/about.png" alt="#" loading="lazy" height={500} width={500} />

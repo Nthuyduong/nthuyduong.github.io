@@ -6,6 +6,41 @@ import { Link } from "react-router-dom";
 const Test = () => {
     return (
         <div>
+            <div className="">
+                <div className="container-fluid">
+                    <div className="project-item alio1 md:mb-6 mb-4">
+                        <img className="w-100 w-full" src="./images/test/mockup.webp" loading="lazy" />
+                    </div>
+                    
+                    <div className="project-item md:pb-6 pb-4">
+                        <div className="grid grid-cols-12">
+                            <div className="col-span-12 sm:col-span-6">
+                                <img className="w-100" src="./images/test/deerly.webp" alt="#" loading="lazy" />
+                            </div>
+                            <div className="col-span-12 sm:col-span-6 cake-intro-content flex items-end bg-[#FFFDF8]">
+                                <div className="p-7">
+                                    <div className="heading_4 mb-4">About website</div>
+                                    <div className="body_text">
+                                        Welcome to The Deerly, a carefully curated online store
+                                        designed with both style and functionality in mind. As a UX/UI designer, I’ve focused on creating a seamless and visually appealing shopping experience. Our collection features unique, high-quality products that bring a touch of elegance to your home. From décor to accessories, each item is selected for its craftsmanship and beauty. Explore and shop with ease, and let us help you
+                                        transform your space into something truly special.
+                                    </div>
+                                    {/* <div className="small_text text-right font-italic">
+                                        <a href="https://nthuyduong.github.io/CakeBlog/#/" target="_blank">Comming soon: https://nthuyduong.github.io/CakeBlog/#/</a>
+                                    </div> */}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="md:pb-6 pb-4 text-center">
+                        <div className="mb-2 heading_6">VIEW THE WEBSITE</div>
+                        <a className="text-link" href="https://thedeerly.com/" target="_blank">https://thedeerly.com/</a>
+                    </div>
+                    <div className="project-item md:pb-6 pb-4">
+                        <img className="w-100 w-full" src="./images/test/deerly-mobile.webp" loading="lazy" />
+                    </div>
+                </div>
+            </div>
             {/* <div class="container-fluid m-w mx-auto w-full my-0 mb-4">
                 <div class="mb-6">We all know how stress can negatively impact our skin, leading to issues like breakouts, dark circles, and dryness. Chronic stress takes a toll on our skin health. However, the positive effects of happiness on our skin often go unnoticed. Happiness is a crucial factor in achieving a naturally radiant complexion that lasts.
                     In this post, we'll delve into how stress affects the skin negatively, explore the ways in which happiness can enhance your skin, and discuss practical tips for prioritizing joy in your daily life. Our aim is to empower you with insights that contribute to long-lasting skin wellness

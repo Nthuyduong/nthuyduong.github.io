@@ -61,6 +61,9 @@ const Schedule = () => {
                     <img className="w-100" src="./images/Pj08_schedule/user-flow.png" loading="lazy"/>
                 </div>
                 <div className="project-item md:pb-6 pb-4">
+                    <img className="w-100" src="./images/Pj08_schedule/wireframe.webp" loading="lazy"/>
+                </div>
+                <div className="project-item md:pb-6 pb-4">
                     <img className="w-100" src="./images/Pj08_schedule/app-flow.webp" loading="lazy"/>
                 </div>
                 <div className="project-item md:pb-6 pb-4">
