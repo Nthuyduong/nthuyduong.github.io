@@ -491,7 +491,7 @@ const Designs = () => {
                                                 <div>
                                                     <Link >
                                                         <div className="heading_3 cursor-text-wrp">Link Shortener Service comming...
-                                                            Website
+                                                        
                                                         </div>
                                                     </Link>
                                                 </div>
@@ -525,7 +525,7 @@ const Designs = () => {
                                 <div className="border-b border-solid border-ccc md:pb-0 pb-5">
                                     <div className="design-scale-out md:flex flex-row gap-6">
                                         <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
-                                            <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">01</div>
+                                            <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">02</div>
                                             <img
                                                 className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]"
                                                 src="./images/design/mydes4.png"
@@ -577,7 +577,7 @@ const Designs = () => {
                                 <div className="md:pb-0 pb-5 mb-7">
                                     <div className="design-scale-out md:flex flex-row gap-6">
                                         <div className="md:flex flex-row gap-5 lg:gap-6 w-full py-5">
-                                            <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">02</div>
+                                            <div className="heading_3 mb-3 cursor-text-wrp hidden lg:block">03</div>
                                             <img
                                                 className="w-full md:w-[50%] block lg:hidden md:max-w-[214px]"
                                                 src="./images/design/mydes10.png"
