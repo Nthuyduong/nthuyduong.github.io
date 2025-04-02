@@ -40,7 +40,7 @@ const Designs = () => {
     }
 
     // MY TABS
-    const tabItems = ['UX/UI DESIGN (6)', 'SHOPIFY (2)', 'GRAPHIC DESIGN (1)', 'PERSONAL ART (2)'];
+    const tabItems = ['UX/UI DESIGN (6)', 'SHOPIFY & APP (2)', 'GRAPHIC DESIGN (1)', 'PERSONAL ART (2)'];
     const [activeTab, setActiveTab] = useState(tabItems[0]);
 
     const handleActive = (item) => {
