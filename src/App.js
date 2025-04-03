@@ -37,6 +37,11 @@ const App = () => {
             <Route exact path={ROUTER.HOME} component={Home}/>
             <Route path={ROUTER.ABOUT} component={About}/>
             <Route path={ROUTER.CONTACT} component={Contact}/>
+            <Route path={ROUTER.SHORT}>
+              <TransitionProvider>
+                <Short/>
+              </TransitionProvider>
+            </Route>
             <Route path={ROUTER.TEST}>
               <TransitionProvider>
                 <Test/>

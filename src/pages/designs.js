@@ -40,7 +40,7 @@ const Designs = () => {
     }
 
     // MY TABS
-    const tabItems = ['UX/UI DESIGN (6)', 'SHOPIFY & APP (2)', 'GRAPHIC DESIGN (1)', 'PERSONAL ART (2)'];
+    const tabItems = ['UX/UI DESIGN (6)', 'SHOPIFY & APP (3)', 'GRAPHIC DESIGN (1)', 'PERSONAL ART (2)'];
     const [activeTab, setActiveTab] = useState(tabItems[0]);
 
     const handleActive = (item) => {
@@ -468,7 +468,7 @@ const Designs = () => {
                         </div>
                         {/* } */}
                         {/* {activeTab === 'E - COMMERCE (0)' && */}
-                        <div className={`content-tab ${activeTab === 'SHOPIFY & APP (2)' ? 'content-active' : ''}`}>
+                        <div className={`content-tab ${activeTab === 'SHOPIFY & APP (3)' ? 'content-active' : ''}`}>
                             <div className="lg:mt-6 md:pb-0 pb-5">
                             <div className="border-b border-solid border-ccc md:pb-0 pb-5">
                                     <div className="design-scale-out md:flex flex-row gap-6">
@@ -489,8 +489,8 @@ const Designs = () => {
                                                     <div className="cursor-text-wrp body_text">March 2025</div>
                                                 </div>
                                                 <div>
-                                                    <Link >
-                                                        <div className="heading_3 cursor-text-wrp">Link Shortener Service comming...
+                                                    <Link to={ROUTER.SHORT}>
+                                                        <div className="heading_3 cursor-text-wrp">Link Shortener Service
                                                         
                                                         </div>
                                                     </Link>
@@ -500,7 +500,7 @@ const Designs = () => {
                                         </div>
                                         <div
                                             className="md:flex flex-row justify-end relative w-[40%] sm:w-[25%] lg:w-full">
-                                            <Link >
+                                            <Link to={ROUTER.SHORT}>
                                                 <div className="design-scale-wrp absolute h-full hidden lg:block">
                                                     <img
                                                         className="design-scale-img h-full w-auto object-cover"
@@ -510,7 +510,7 @@ const Designs = () => {
                                                     />
                                                 </div>
                                             </Link>
-                                            <Link className="py-5" >
+                                            <Link className="py-5" to={ROUTER.SHORT}>
                                                 <div className="flex items-center">
                                                     <div className="mr-2">Explore now</div>
                                                     <div>

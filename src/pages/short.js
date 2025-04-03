@@ -9,7 +9,7 @@ const Short = () => {
             <div className="">
                 <div className="container-fluid">
                     <div className="project-item alio1 md:mb-6 mb-4">
-                        <img className="w-100 w-full" src="./images/test/mockup.webp" loading="lazy" />
+                        <img className="w-100 w-full" src="./images/Pj09_shortlink.webp" loading="lazy" />
                     </div>
                     
                     <div className="project-item md:pb-6 pb-4">
