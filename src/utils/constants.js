@@ -15,5 +15,5 @@ export const ROUTER = {
   ARCHITEC: '/architec',
   SCHEDULE: '/schedule',
   TEST: '/test',
-  SHORT: '/shortlink',
+  SHORT: '/short',
 }
