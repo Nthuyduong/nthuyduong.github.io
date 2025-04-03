@@ -26,6 +26,7 @@ import { TransitionProvider } from "./provider/transition";
 import Architec from "./pages/architec";
 import Schedule from "./pages/schedule";
 import Test from "./pages/test";
+import Short from "./pages/short";
 
 const App = () => {
 
