@@ -59,7 +59,7 @@ const Header = () => {
           <div className="section w-full">
             <div className="flex gap-1 w-full justify-between">
               <div>
-                <img className="" src="./images/ntdlg.png" alt="logo" />
+                <img className="" src="./images/ntdlg.svg" alt="logo" />
               </div>
               {/* <img className='btn-header-mobile' src="/images/arrow-down.png" alt="" /> */}
               {/*<div className="w-[100vw] flex items-center justify-center absolute">*/}
