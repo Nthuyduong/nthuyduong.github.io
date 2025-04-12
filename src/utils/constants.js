@@ -16,4 +16,5 @@ export const ROUTER = {
   SCHEDULE: '/schedule',
   TEST: '/test',
   SHORT: '/short',
+  SHOPIFYAPP: '/shopifyapp',
 }

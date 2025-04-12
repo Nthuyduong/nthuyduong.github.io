@@ -27,6 +27,7 @@ import Architec from "./pages/architec";
 import Schedule from "./pages/schedule";
 import Test from "./pages/test";
 import Short from "./pages/short";
+import Shopifyapp from "./pages/shopifyapp";
 
 const App = () => {
 
@@ -41,6 +42,11 @@ const App = () => {
             <Route path={ROUTER.SHORT}>
               <TransitionProvider>
                 <Short/>
+              </TransitionProvider>
+            </Route>
+            <Route path={ROUTER.SHOPIFYAPP}>
+              <TransitionProvider>
+                <Shopifyapp/>
               </TransitionProvider>
             </Route>
             <Route path={ROUTER.TEST}>

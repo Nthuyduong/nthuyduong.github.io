@@ -17,13 +17,23 @@ const Short = () => {
                     <div className="project-item alio1 md:mb-6 mb-4">
                         <img className="w-100 w-full" src="./images/Pj09_shortlink/core-features.webp" loading="lazy" />
                     </div>
+                    <div className="project-item alio3 md:pb-6 pb-4">
+                        <div className="grid grid-cols-12">
+                            <div className="col-span-12 md:col-span-6 r3-left mb-4 md:mb-0 relative">
+                                <img className="w-full" src="./images/Pj09_shortlink/short-left.webp" loading="lazy" />
+                            </div>
+                            <div className="col-span-12 md:col-span-6 r3-right flex items-end bg-primary">
+                                <img className="w-full" src="./images/Pj09_shortlink/short-right.webp" loading="lazy" />
+                            </div>
+                        </div>
+                    </div>
                     <div className="project-item alio1 md:mb-6 mb-4">
                         <img className="w-100 w-full" src="./images/Pj09_shortlink/branded-link.webp" loading="lazy" />
                     </div>
                     <div className="project-item alio1 md:mb-6 mb-4">
                         <img className="w-100 w-full" src="./images/Pj09_shortlink/create-qr.webp" loading="lazy" />
                     </div>
-                    
+
                     {/* <div className="project-item md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
                             <div className="col-span-12 sm:col-span-6">
@@ -42,7 +52,7 @@ const Short = () => {
                             </div>
                         </div>
                     </div> */}
-                    
+
                 </div>
             </div>
         </div>
