@@ -11,6 +11,18 @@ const Short = () => {
                     <div className="project-item alio1 md:mb-6 mb-4">
                         <img className="w-100 w-full" src="./images/Pj09_shortlink/shortlink.webp" loading="lazy" />
                     </div>
+                    <div className="project-item alio1 md:mb-6 mb-4">
+                        <img className="w-100 w-full" src="./images/Pj09_shortlink/short-intro.webp" loading="lazy" />
+                    </div>
+                    <div className="project-item alio1 md:mb-6 mb-4">
+                        <img className="w-100 w-full" src="./images/Pj09_shortlink/core-features.webp" loading="lazy" />
+                    </div>
+                    <div className="project-item alio1 md:mb-6 mb-4">
+                        <img className="w-100 w-full" src="./images/Pj09_shortlink/branded-link.webp" loading="lazy" />
+                    </div>
+                    <div className="project-item alio1 md:mb-6 mb-4">
+                        <img className="w-100 w-full" src="./images/Pj09_shortlink/create-qr.webp" loading="lazy" />
+                    </div>
                     
                     {/* <div className="project-item md:pb-6 pb-4">
                         <div className="grid grid-cols-12">
