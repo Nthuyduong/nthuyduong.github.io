@@ -8,7 +8,7 @@ const About = () => {
   const skills = [
     {
       title: 'Design Tools',
-      skills: ['Figma/Adobe XD', 'Adobe Illustrator', 'Adobe Photoshop', 'Adobe Indesign', 'Shopify', 'Wordpress']
+      skills: ['Figma/Adobe XD', 'Blender','Adobe Illustrator', 'Adobe Photoshop', 'Adobe Indesign', 'Shopify', 'Wordpress']
     },
     {
       title: 'Tech Stack',
