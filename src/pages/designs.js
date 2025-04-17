@@ -773,7 +773,11 @@ const Designs = () => {
                                         />
                                     </div>
                                     <div className="three gallery-item">
-                                        {/* Three */}
+                                        <img
+                                            className="" src="./images/design/art3.png"
+                                            alt="logo"
+                                            loading="lazy"
+                                        />
                                     </div>
                                     <div className="four gallery-item">
                                         <div className="top-img">
@@ -793,7 +797,11 @@ const Designs = () => {
 
                                     </div>
                                     <div className="five gallery-item">
-                                        {/* Five */}
+                                        <img
+                                            className="" src="./images/design/art5.png"
+                                            alt="logo"
+                                            loading="lazy"
+                                        />
                                     </div>
                                     <div className="six gallery-item">
                                         {/* Six */}
