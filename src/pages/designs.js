@@ -763,18 +763,38 @@ const Designs = () => {
                             <div className="lg:pt-7">
                                 <div className="my-gallery">
                                     <div className="one gallery-item">
+                                        <a className="lightbox" href="#art1">
                                         <img
                                             className="" src="./images/design/art6.png"
                                             alt="logo"
                                             loading="lazy"
                                         />
+                                        </a>
+                                        <div className="lightbox-target" id="art1">
+                                            <img
+                                                className="" src="./images/design/art6.png"
+                                                alt="logo"
+                                                loading="lazy"
+                                            />
+                                            <a className="lightbox-close" href="#"></a>
+                                        </div>
                                     </div>
                                     <div className="two gallery-item">
+                                        <a className="lightbox" href="#art2">
                                         <img
                                             className="" src="./images/design/art1.png"
                                             alt="logo"
                                             loading="lazy"
                                         />
+                                            </a>
+                                        <div className="lightbox-target" id="art2">
+                                            <img
+                                                className="" src="./images/design/art1.png"
+                                                alt="logo"
+                                                loading="lazy"
+                                            />
+                                            <a className="lightbox-close" href="#"></a>
+                                        </div>
                                     </div>
                                     <div className="three gallery-item">
                                         <img
@@ -809,13 +829,17 @@ const Designs = () => {
                                     </div>
                                     <div className="six gallery-item">
                                         <img
-                                            className="" src="./images/design/art4.png"
+                                            className="" src="./images/design/art7.png"
                                             alt="logo"
                                             loading="lazy"
                                         />
                                     </div>
                                     <div className="seven gallery-item">
-                                        {/* Seven */}
+                                        <img
+                                            className="" src="./images/design/art4.png"
+                                            alt="logo"
+                                            loading="lazy"
+                                        />
                                     </div>
                                 </div>
                             </div>

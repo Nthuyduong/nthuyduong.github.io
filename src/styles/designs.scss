@@ -63,7 +63,7 @@
       width: auto;
       object-fit: cover;
     }
-    
+
   }
   .design-banner::before {
     clip-path: inset(calc(20% - 1px) calc(5% - 1px) calc(20% - 1px) calc(5% - 1px)) !important;
@@ -244,7 +244,7 @@
     // }
     // .top-img{
     //   position: relative;
-      
+
     // }
     // .top-img:hover .bottom{
     //   opacity: 0;
@@ -317,7 +317,6 @@
   bottom: 0;
   max-height: 0%;
   max-width: 0%;
-  border: 3px solid white;
   box-shadow: 0px 0px 8px rgba(0,0,0,.8);
   box-sizing: border-box;
   -webkit-transition: .5s ease-in-out;
