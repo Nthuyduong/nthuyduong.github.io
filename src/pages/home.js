@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect, useMemo, useRef } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import { ROUTER } from "../utils/constants";
 import Scroller from "../components/common/scroller";
@@ -8,10 +8,8 @@ import { sendContactForm } from "../services/app";
 import Loading from "../components/common/loading";
 import LoadingMail from "../components/common/loadingMail";
 
-import ScrollReveal from '../components/common/ScrollReveal';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -190,53 +188,53 @@ const Home = () => {
   }
 
   return (
-    <div className="home-page">
-      {/* <div className="w-full flex justify-center">
+      <div className="home-page">
+        {/* <div className="w-full flex justify-center">
         <div className="drag">
           Duong
         </div>
       </div> */}
 
-      {/* NEW banner */}
-      <div className="homep-banner pt-4 md:pt-6 pb-5 md:pb-7">
-        <div className="section relative">
-          <div className="md:grid md:grid-cols-12">
-            <div className="col-span-8 md:flex">
-              <img className="h-[90px] md:block hidden main-logo mr-4" src="./images/home/logo-icon.svg" alt="logo" loading="lazy" />
-              <div className="info-content heading_6 text-center md:text-left cursor-text-wrp">
-                Hello, My name is
-                <div className="ntd-name md:mt-3 mt-2 text-center md:text-left heading_3 cursor-text-wrp mt-1 md:mt-0">
-                  Nguyen Thuy Duong
+        {/* NEW banner */}
+        <div className="homep-banner pt-4 md:pt-6 pb-5 md:pb-7">
+          <div className="section relative">
+            <div className="md:grid md:grid-cols-12">
+              <div className="col-span-8 md:flex">
+                <img className="h-[90px] md:block hidden main-logo mr-4" src="./images/home/logo-icon.svg" alt="logo" loading="lazy" />
+                <div className="info-content heading_6 text-center md:text-left cursor-text-wrp">
+                  Hello, My name is
+                  <div className="ntd-name md:mt-3 mt-2 text-center md:text-left heading_3 cursor-text-wrp mt-1 md:mt-0">
+                    Nguyen Thuy Duong
+                  </div>
                 </div>
               </div>
-            </div>
-            {/* <div className="sm:hidden showcase-img"></div> */}
-            <div className="col-span-4 body_text text-right border-b border-[#ccc] sm:border-none">
-              <div className="mt-3 md:mt-0 md:mb-3 mb-5 cursor-text-wrp text-center sm:text-left">
-                “I am a creative, open-minded, and fast learner with a strong desire to know, understand, grow, create, transform, improve, and share. My ultimate dream is to enhance people's lives through my designs.”
-              </div>
-              {/* <div className="text-right hidden sm:block">
+              {/* <div className="sm:hidden showcase-img"></div> */}
+              <div className="col-span-4 body_text text-right border-b border-[#ccc] sm:border-none">
+                <div className="mt-3 md:mt-0 md:mb-3 mb-5 cursor-text-wrp text-center sm:text-left">
+                  “I am a creative, open-minded, and fast learner with a strong desire to know, understand, grow, create, transform, improve, and share. My ultimate dream is to enhance people's lives through my designs.”
+                </div>
+                {/* <div className="text-right hidden sm:block">
                 <a className="" href="https://www.behance.net/gallery/174317119/Thuy-Duongs-Portfolio/modules/984307513" target="_blank">SEE PORTFOLIO ON BEHANCE?</a>
               </div> */}
+              </div>
+            </div>
+            <div className="md:flex justify-center mt-5 z-20 hidden animate slideInUp animate--delay-fast">
+              <img className="h-[200px] md:h-[320px] img-smile" src="./images/bannerhome2.webp" alt="smile" loading="lazy" />
+            </div>
+            <div className="flex justify-center mt-5 z-20 md:hidden">
+              <img className="h-[200px] md:h-[320px] img-smile" src="./images/bannerhome2.webp" alt="smile" loading="lazy" />
+            </div>
+            <div className="flex justify-center mt-2 md:mt-6 animate slideInUp animate--delay-fast">
+              <img className="h-[80px] md:h-[130px] img-smile" src="./images/bannertext.svg" alt="smile" loading="lazy" />
             </div>
           </div>
-          <div className="md:flex justify-center mt-5 z-20 hidden animate slideInUp animate--delay-fast">
-            <img className="h-[200px] md:h-[320px] img-smile" src="./images/bannerhome2.webp" alt="smile" loading="lazy" />
-          </div>
-          <div className="flex justify-center mt-5 z-20 md:hidden">
-            <img className="h-[200px] md:h-[320px] img-smile" src="./images/bannerhome2.webp" alt="smile" loading="lazy" />
-          </div>
-          <div className="flex justify-center mt-2 md:mt-6 animate slideInUp animate--delay-fast">
-            <img className="h-[80px] md:h-[130px] img-smile" src="./images/bannertext.svg" alt="smile" loading="lazy" />
+          <div className="absolute top-[55%] md:top-[40%] z-10">
+            <img className="img-smile" src="./images/Sunflowers.svg" alt="smile" loading="lazy" />
           </div>
         </div>
-        <div className="absolute top-[55%] md:top-[40%] z-10">
-          <img className="img-smile" src="./images/Sunflowers.svg" alt="smile" loading="lazy" />
-        </div>
-      </div>
 
-      {/* <div className="section page-element home-info"> */}
-      {/* <div className="md:grid md:grid-cols-12">
+        {/* <div className="section page-element home-info"> */}
+        {/* <div className="md:grid md:grid-cols-12">
           <div className="col-span-8 md:flex">
             <img className="md:block hidden main-logo" src="./images/home/logo-icon.svg" alt="logo" loading="lazy" />
             <div className="info-content medium_text cursor-text-wrp">
@@ -257,9 +255,9 @@ const Home = () => {
             </div>
           </div>
         </div> */}
-      {/* </div> */}
-      <div className="section ntd-showcase hidden sm:block">
-        {/* <div className="showcase-img">
+        {/* </div> */}
+        <div className="section ntd-showcase hidden sm:block">
+          {/* <div className="showcase-img">
           <div className="sentence-container">
             <CardSlider
               configs={{
@@ -283,14 +281,14 @@ const Home = () => {
               <div className="slide-card-item heading_1 text-center">
                 <div className="heading_3 text-center text-white">"I'm delighted to share my portfolio with you!"</div>
               </div> */}
-        {/* </CardSlider> */}
-        {/* <span className="heading_5 text-white">Hello</span><span><img className="img-smile" src="./images/icons/smile.svg" alt="smile" loading="lazy"/></span>
+          {/* </CardSlider> */}
+          {/* <span className="heading_5 text-white">Hello</span><span><img className="img-smile" src="./images/icons/smile.svg" alt="smile" loading="lazy"/></span>
               <span><img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/></span><span className="heading_5 text-white">Welcome to my website.</span>
               <span><img className="img-ellipe" src="./images/icons/ellipse.svg" alt="smile" loading="lazy"/></span><span className="heading_5 text-white">I'm delighted to share my portfolio with you!</span> */}
-        {/* </div>
+          {/* </div>
         </div> */}
-      </div>
-      {/* <div className="section mt-2 mb-4 md:mt-5 md:mb-7">
+        </div>
+        {/* <div className="section mt-2 mb-4 md:mt-5 md:mb-7">
         <div className="md:grid md:grid-cols-12 gap-4">
           <div className="col-span-5 d-flex">
             <div className="info-content body_text flex sm:block justify-between items-center">
@@ -312,8 +310,8 @@ const Home = () => {
         </div>
       </div> */}
 
-      {/* Let's create responsive design */}
-      {/* <div className="section-full page-element">
+        {/* Let's create responsive design */}
+        {/* <div className="section-full page-element">
         <div className="home-info3 pb-7 m-w">
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12 sm:col-span-6 child1">
@@ -343,17 +341,17 @@ const Home = () => {
               </div>
             </div>
           </div> */}
-      {/* <div className="row row-bt hidden sm:block">
+        {/* <div className="row row-bt hidden sm:block">
             <div className="col-6"></div>
             <div className="col-6 small-img child4">
               <img className="" src="./images/home/Rectangle440.webp" alt="Rectangle35" loading="lazy" />
             </div>
           </div> */}
-      {/* </div>
+        {/* </div>
       </div> */}
 
-      {/*DECOR TEXT*/}
-      {/* <div className="px-0 section-full scroll-container text-decor py-0 md:py-3">
+        {/*DECOR TEXT*/}
+        {/* <div className="px-0 section-full scroll-container text-decor py-0 md:py-3">
         <Scroller>
           <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
           <div className="heading_3 cursor-text-wrp">HELLO MY NAME IS NGUYEN THUY DUONG</div>
@@ -365,8 +363,8 @@ const Home = () => {
         </Scroller>
       </div> */}
 
-      {/* New section */}
-      {/* <div className="relative md:py-9 bg-tertiary">
+        {/* New section */}
+        {/* <div className="relative md:py-9 bg-tertiary">
         <div className="section">
           <div className="grid grid-cols-12 gap-5 mb-3">
             <div className="col-span-1"></div>
@@ -416,100 +414,82 @@ const Home = () => {
         </div>
       </div> */}
 
-      {/* ABOUT ME */}
-      {/*<div className="section">*/}
-      {/*  <div className="md:grid grid-cols-12 gap-5 pt-6 md:pt-7">*/}
-      {/*    <div className="col-span-12 lg:col-span-1"></div>*/}
-      {/*    <div className="col-span-12 lg:col-span-10">*/}
+        {/* ABOUT ME */}
+        {/*<div className="section">*/}
+        {/*  <div className="md:grid grid-cols-12 gap-5 pt-6 md:pt-7">*/}
+        {/*    <div className="col-span-12 lg:col-span-1"></div>*/}
+        {/*    <div className="col-span-12 lg:col-span-10">*/}
 
-      {/*      <div className="text-large-1 md:mb-6 mb-4">*/}
-      {/*        <div className="overflow-hidden relative">*/}
-      {/*          <div className="test-pr-4">*/}
-      {/*            <div className="test-tex">WELCOME TO MY PORTFOLIO! EXCITED TO</div>*/}
-      {/*            <div className="test-text-2">WELCOME TO MY PORTFOLIO! EXCITED TO</div>*/}
-      {/*          </div>*/}
-      {/*        </div>*/}
-      {/*        <div className="my-1 overflow-hidden relative">*/}
-      {/*          <div className="test-pr-3">*/}
-      {/*            <div className="test-text">SHARE UX/UI DESIGN PROJECTS AND</div>*/}
-      {/*            <div className="test-text-2">SHARE UX/UI DESIGN PROJECTS AND</div>*/}
-      {/*          </div>*/}
-      {/*        </div>*/}
-      {/*        <div className="overflow-hidden relative">*/}
-      {/*          <div className="test-pr-2">*/}
-      {/*            <div className="test-text">EXPERIENCE HERE. ALWAYS READY TO</div>*/}
-      {/*            <div className="test-text-2">EXPERIENCE HERE. ALWAYS READY TO</div>*/}
-      {/*          </div>*/}
-      {/*        </div>*/}
-      {/*        <div className="my-1 overflow-hidden relative">*/}
-      {/*          <div className="test-pr-1">*/}
-      {/*            <div className="test-text">EMBRACE NEW OPPORTUNITIES AND</div>*/}
-      {/*            <div className="test-text-2">EMBRACE NEW OPPORTUNITIES AND</div>*/}
-      {/*          </div>*/}
-      {/*        </div>*/}
-      {/*        <div className="overflow-hidden relative">*/}
-      {/*          <div className="test-pr">*/}
-      {/*            <div className="test-text">CHALLENGES FOR CONTINUOUS GROWTH.</div>*/}
-      {/*            <div className="test-text-2">CHALLENGES FOR CONTINUOUS GROWTH.</div>*/}
-      {/*          </div>*/}
-      {/*        </div>*/}
-      {/*      </div>*/}
-      {/*      <div className="flex justify-center">*/}
-      {/*        <Link to={ROUTER.ABOUT}>*/}
-      {/*          <div id="container">*/}
-      {/*            <button className="learn-more">*/}
-      {/*              <span className="circle" aria-hidden="true">*/}
-      {/*                <span className="icon arrow"></span>*/}
-      {/*              </span>*/}
-      {/*              <span className="button-text medium_text">MORE ABOUT ME</span>*/}
-      {/*            </button>*/}
-      {/*          </div>*/}
-      {/*        </Link>*/}
-      {/*      </div>*/}
-      {/*    </div>*/}
-      {/*    <div className="col-span-12 lg:col-span-1"></div>*/}
-      {/*  </div>*/}
-      {/*</div>*/}
-      <ScrollReveal
-              baseOpacity={0}
-              enableBlur={true}
-              baseRotation={5}
-              blurStrength={10}
-            >
+        {/*      <div className="text-large-1 md:mb-6 mb-4">*/}
+        {/*        <div className="overflow-hidden relative">*/}
+        {/*          <div className="test-pr-4">*/}
+        {/*            <div className="test-tex">WELCOME TO MY PORTFOLIO! EXCITED TO</div>*/}
+        {/*            <div className="test-text-2">WELCOME TO MY PORTFOLIO! EXCITED TO</div>*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*        <div className="my-1 overflow-hidden relative">*/}
+        {/*          <div className="test-pr-3">*/}
+        {/*            <div className="test-text">SHARE UX/UI DESIGN PROJECTS AND</div>*/}
+        {/*            <div className="test-text-2">SHARE UX/UI DESIGN PROJECTS AND</div>*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*        <div className="overflow-hidden relative">*/}
+        {/*          <div className="test-pr-2">*/}
+        {/*            <div className="test-text">EXPERIENCE HERE. ALWAYS READY TO</div>*/}
+        {/*            <div className="test-text-2">EXPERIENCE HERE. ALWAYS READY TO</div>*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*        <div className="my-1 overflow-hidden relative">*/}
+        {/*          <div className="test-pr-1">*/}
+        {/*            <div className="test-text">EMBRACE NEW OPPORTUNITIES AND</div>*/}
+        {/*            <div className="test-text-2">EMBRACE NEW OPPORTUNITIES AND</div>*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*        <div className="overflow-hidden relative">*/}
+        {/*          <div className="test-pr">*/}
+        {/*            <div className="test-text">CHALLENGES FOR CONTINUOUS GROWTH.</div>*/}
+        {/*            <div className="test-text-2">CHALLENGES FOR CONTINUOUS GROWTH.</div>*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*      </div>*/}
+        {/*      <div className="flex justify-center">*/}
+        {/*        <Link to={ROUTER.ABOUT}>*/}
+        {/*          <div id="container">*/}
+        {/*            <button className="learn-more">*/}
+        {/*              <span className="circle" aria-hidden="true">*/}
+        {/*                <span className="icon arrow"></span>*/}
+        {/*              </span>*/}
+        {/*              <span className="button-text medium_text">MORE ABOUT ME</span>*/}
+        {/*            </button>*/}
+        {/*          </div>*/}
+        {/*        </Link>*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*    <div className="col-span-12 lg:col-span-1"></div>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
+        <div className="section">
+          <div className="md:grid grid-cols-12 gap-5">
+            <div className="col-span-12 lg:col-span-5"></div>
+            <div className="col-span-12 lg:col-span-7">
+
               <div className="heading_2 md:mb-6 mb-4">
                 Welcome to my portfolio! Excited to share UX/UI design projects and
                 experiences here. Always ready to embrace new opportunities and challenges
                 for continuous growth.
               </div>
-            </ScrollReveal>
-      <div className="section">
-        <div className="md:grid grid-cols-12 gap-5">
-          <div className="col-span-12 lg:col-span-5"></div>
-          <div className="col-span-12 lg:col-span-7">
-            <ScrollReveal
-              baseOpacity={0}
-              enableBlur={true}
-              baseRotation={5}
-              blurStrength={10}
-            >
-              <div className="heading_2 md:mb-6 mb-4">
-                Welcome to my portfolio! Excited to share UX/UI design projects and
-                experiences here. Always ready to embrace new opportunities and challenges
-                for continuous growth.
-              </div>
-            </ScrollReveal>
-            <Link to={ROUTER.ABOUT}>
-              <div id="container">
-                <button className="learn-more">
+              <Link to={ROUTER.ABOUT}>
+                <div id="container">
+                  <button className="learn-more">
                   <span className="circle" aria-hidden="true">
                     <span className="icon arrow"></span>
                   </span>
-                  <span className="button-text medium_text">MORE ABOUT ME</span>
-                </button>
-              </div>
-            </Link>
+                    <span className="button-text medium_text">MORE ABOUT ME</span>
+                  </button>
+                </div>
+              </Link>
 
-            {/* <div className="flex items-center mt-6">
+              {/* <div className="flex items-center mt-6">
               <div className="bg-black mr-2 p-1 rounded-full">
                 <img className="" src="./images/icons/arrow-up-right.svg" alt="logo" loading="lazy" />
               </div>
@@ -517,11 +497,11 @@ const Home = () => {
                 <span>MORE ABOUT ME</span>
               </div>
             </div> */}
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* <div className="test bg-[#ccc] h-[50vh] flex justify-center items-center">
+        {/* <div className="test bg-[#ccc] h-[50vh] flex justify-center items-center">
         <div className="flex flex-col gap-[2px] items-center">
           <div className="overflow-hidden relative">
             <div className="test-pr">
@@ -566,198 +546,198 @@ const Home = () => {
         </div>
       </div> */}
 
-      {/*DECOR TEXT*/}
+        {/*DECOR TEXT*/}
 
-      <div
-        className="home-contact-scroller px-0 section-full scroll-container text-decor mt-5 md:mt-8 py-0 md:py-3"
-        onMouseEnter={changeEmoji}
-      >
+        <div
+            className="home-contact-scroller px-0 section-full scroll-container text-decor mt-5 md:mt-8 py-0 md:py-3"
+            onMouseEnter={changeEmoji}
+        >
 
-        <div className="bg-purple px-0 section-full scroll-container text-decor py-0 md:py-2">
-          <Scroller>
-            <Link to='/contact' className="flex">
-              <div className="emoji flex items-center px-4">
-                <img className="w-full" src="./images/fl1.svg" alt="logo" loading="lazy" />
-              </div>
-              {/* <div className="heading_3 cursor-text-wrp">HELLO</div> */}
+          <div className="bg-purple px-0 section-full scroll-container text-decor py-0 md:py-2">
+            <Scroller>
+              <Link to='/contact' className="flex">
+                <div className="emoji flex items-center px-4">
+                  <img className="w-full" src="./images/fl1.svg" alt="logo" loading="lazy" />
+                </div>
+                {/* <div className="heading_3 cursor-text-wrp">HELLO</div> */}
 
-              <div className="heading_1 cursor-text-wrp scroll-txt">WELCOME TO MY PORTFOLIO!</div>
-              <div className="emoji flex items-center px-4">
-                <img className="w-full" src="./images/fl2.svg" alt="logo" loading="lazy" />
-              </div>
-              <div className="heading_1 cursor-text-wrp home-contact-scroller-text scroll-txt">LET'S CONTACT WITH ME</div>
-              {/* <div className="emoji flex items-center">
+                <div className="heading_1 cursor-text-wrp scroll-txt">WELCOME TO MY PORTFOLIO!</div>
+                <div className="emoji flex items-center px-4">
+                  <img className="w-full" src="./images/fl2.svg" alt="logo" loading="lazy" />
+                </div>
+                <div className="heading_1 cursor-text-wrp home-contact-scroller-text scroll-txt">LET'S CONTACT WITH ME</div>
+                {/* <div className="emoji flex items-center">
                 <img className="w-full px-4" src="./images/design/star.svg" alt="logo" loading="lazy" />
               </div> */}
-            </Link>
-          </Scroller>
+              </Link>
+            </Scroller>
+          </div>
         </div>
-      </div>
 
-      {/* My design  */}
-      <div className="section md:my-7 my-5">
-        <div className="md:mb-7 ml:mb-8 mb-6">
-          <div className="">
-            <div className="grid grid-cols-12 my-des-title">
-              <div className="col-span-10 sm:col-span-6 animate slideInUp">
-                <div className="flex">
-                  <div className="text-large-2 cursor-text-wrp">My</div>
-                  <div className="dot-bl">
-                    <img className="img-ellipe-bl mx-2 md:mx-2 lg:mx-3" src="./images/icons/ellipse-bl.svg" alt="smile" loading="lazy" />
-                  </div>
-                  <div className="heading_design heading_1 cursor-text-wrp">DESIGNS</div>
-                </div>
-                <div className="flex">
-                  <div className="text-large-2">for</div>
-                  <div className="line decor-line mx-2 md:mx-3"></div>
-                  <div className="heading_1 heading_design cursor-text-wrp">UNIQUE</div>
-                </div>
-                <div className="flex">
-                  <div className="heading_1 heading_design cursor-text-wrp">&</div>
-                  <div className="text-large-2 mx-2 md:mx-2 lg:mx-3 cursor-text-wrp">soulful</div>
-                  <div className="heading_1 heading_design cursor-text-wrp">BRANDS</div>
-                </div>
-              </div>
-              <div className="col-span-2 hidden sm:block"></div>
-              <div className="col-span-10 sm:col-span-4 hidden md:block animate slideInUp">
-                <div className="byme">
-                  <div className="flex justify-end">
-                    <div className="text-large-2 byme2 cursor-text-wrp">By</div>
-                    <div className="dot-bl w-[50px] flex justify-center">
+        {/* My design  */}
+        <div className="section md:my-7 my-5">
+          <div className="md:mb-7 ml:mb-8 mb-6">
+            <div className="">
+              <div className="grid grid-cols-12 my-des-title">
+                <div className="col-span-10 sm:col-span-6 animate slideInUp">
+                  <div className="flex">
+                    <div className="text-large-2 cursor-text-wrp">My</div>
+                    <div className="dot-bl">
                       <img className="img-ellipe-bl mx-2 md:mx-2 lg:mx-3" src="./images/icons/ellipse-bl.svg" alt="smile" loading="lazy" />
                     </div>
-                    <div className="heading_1 myname byme2 cursor-text-wrp">NthDuong</div>
-                    <div></div>
+                    <div className="heading_design heading_1 cursor-text-wrp">DESIGNS</div>
+                  </div>
+                  <div className="flex">
+                    <div className="text-large-2">for</div>
+                    <div className="line decor-line mx-2 md:mx-3"></div>
+                    <div className="heading_1 heading_design cursor-text-wrp">UNIQUE</div>
+                  </div>
+                  <div className="flex">
+                    <div className="heading_1 heading_design cursor-text-wrp">&</div>
+                    <div className="text-large-2 mx-2 md:mx-2 lg:mx-3 cursor-text-wrp">soulful</div>
+                    <div className="heading_1 heading_design cursor-text-wrp">BRANDS</div>
                   </div>
                 </div>
-                <div className="body_text text-right mt-4 cursor-text-wrp mb-5">
-                  "Explore a passionate UI designer's evolving portfolio showcasing intuitive interfaces and captivating design."
-                </div>
-                {/* animation button */}
-                <div className="md:flex justify-end">
-                  <div className="">
-                    <Link to={ROUTER.DESIGNS} className="text-link heading_6" >
+                <div className="col-span-2 hidden sm:block"></div>
+                <div className="col-span-10 sm:col-span-4 hidden md:block animate slideInUp">
+                  <div className="byme">
+                    <div className="flex justify-end">
+                      <div className="text-large-2 byme2 cursor-text-wrp">By</div>
+                      <div className="dot-bl w-[50px] flex justify-center">
+                        <img className="img-ellipe-bl mx-2 md:mx-2 lg:mx-3" src="./images/icons/ellipse-bl.svg" alt="smile" loading="lazy" />
+                      </div>
+                      <div className="heading_1 myname byme2 cursor-text-wrp">NthDuong</div>
+                      <div></div>
+                    </div>
+                  </div>
+                  <div className="body_text text-right mt-4 cursor-text-wrp mb-5">
+                    "Explore a passionate UI designer's evolving portfolio showcasing intuitive interfaces and captivating design."
+                  </div>
+                  {/* animation button */}
+                  <div className="md:flex justify-end">
+                    <div className="">
+                      <Link to={ROUTER.DESIGNS} className="text-link heading_6" >
                       <span>
                         VIEW ALL PROJECTS
                       </span>
-                    </Link>
+                      </Link>
+                    </div>
                   </div>
-                </div>
 
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="animate slideInUp animate--delay-fast">
-          <div className="my-project">
-            <Slider
-              configs={{
-                sliderPerRow: 4.25,
-                sliderPerRowMobile: 1.25,
-                allowDrag: true,
-                duration: 400,
-                auto: false,
-                autoDuration: 1000,
-                gap: 30,
-                gapMobile: 10,
-                // process: true,
-                paginate: false,
-                navigator: false,
-                active: 0
-              }}
-            >
-              <div className="project-odd">
-                <div className="heading_4 mb-2 cursor-text-wrp">01.</div>
-                <Link to={ROUTER.SCHEDULE}>
-                  <img
-                    className="w-full project-img" src="./images/design/schedulemain.png"
-                    alt="logo"
-                    loading="lazy"
-                  />
-                </Link>
-                <div className="medium_text mt-3 cursor-text-wrp">
+          <div className="animate slideInUp animate--delay-fast">
+            <div className="my-project">
+              <Slider
+                  configs={{
+                    sliderPerRow: 4.25,
+                    sliderPerRowMobile: 1.25,
+                    allowDrag: true,
+                    duration: 400,
+                    auto: false,
+                    autoDuration: 1000,
+                    gap: 30,
+                    gapMobile: 10,
+                    // process: true,
+                    paginate: false,
+                    navigator: false,
+                    active: 0
+                  }}
+              >
+                <div className="project-odd">
+                  <div className="heading_4 mb-2 cursor-text-wrp">01.</div>
                   <Link to={ROUTER.SCHEDULE}>
-                    Family Schedule app
+                    <img
+                        className="w-full project-img" src="./images/design/schedulemain.png"
+                        alt="logo"
+                        loading="lazy"
+                    />
                   </Link>
+                  <div className="medium_text mt-3 cursor-text-wrp">
+                    <Link to={ROUTER.SCHEDULE}>
+                      Family Schedule app
+                    </Link>
+                  </div>
+                  <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
+                    Stay organized with the Family Schedule App, where simplicity meets efficiency for a smoother family life.
+                  </div>
                 </div>
-                <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
-                  Stay organized with the Family Schedule App, where simplicity meets efficiency for a smoother family life.
-                </div>
-              </div>
-              <div className="project-even">
-                <div className="heading_4 mb-2 cursor-text-wrp">02.</div>
-                <Link to={ROUTER.BEAUTYBLOG}>
-                  <img
-                    className="w-full project-img"
-                    src="./images/design/beautymain.png"
-                    alt="logo"
-                    loading="lazy"
-                  />
-                </Link>
-
-                <div className="medium_text mt-3 cursor-text-wrp">
+                <div className="project-even">
+                  <div className="heading_4 mb-2 cursor-text-wrp">02.</div>
                   <Link to={ROUTER.BEAUTYBLOG}>
-                    Beauty Blog
+                    <img
+                        className="w-full project-img"
+                        src="./images/design/beautymain.png"
+                        alt="logo"
+                        loading="lazy"
+                    />
                   </Link>
-                </div>
-                <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
-                  Welcome to my Beauty Blog! Find skincare tips, makeup tutorials, and the latest beauty trends for radiant skin.
-                </div>
-              </div>
-              <div className="project-odd">
-                <div className="heading_4 mb-2 cursor-text-wrp">03.</div>
-                <Link to={ROUTER.FASHION}>
-                  <img className="w-full project-img" src="./images/design/fashionmain.png" alt="logo" loading="lazy" />
-                </Link>
-                <div className="medium_text mt-3 cursor-text-wrp">
-                  <Link to={ROUTER.FASHION}>Fashion App</Link>
-                </div>
-                <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
-                  Indulge in luxury and style with our timeless fashion brand, redefining elegance and sophistication.
-                </div>
-              </div>
 
-              <div className="project-even">
-                <div className="heading_4 mb-2 cursor-text-wrp">04.</div>
+                  <div className="medium_text mt-3 cursor-text-wrp">
+                    <Link to={ROUTER.BEAUTYBLOG}>
+                      Beauty Blog
+                    </Link>
+                  </div>
+                  <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
+                    Welcome to my Beauty Blog! Find skincare tips, makeup tutorials, and the latest beauty trends for radiant skin.
+                  </div>
+                </div>
+                <div className="project-odd">
+                  <div className="heading_4 mb-2 cursor-text-wrp">03.</div>
+                  <Link to={ROUTER.FASHION}>
+                    <img className="w-full project-img" src="./images/design/fashionmain.png" alt="logo" loading="lazy" />
+                  </Link>
+                  <div className="medium_text mt-3 cursor-text-wrp">
+                    <Link to={ROUTER.FASHION}>Fashion App</Link>
+                  </div>
+                  <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
+                    Indulge in luxury and style with our timeless fashion brand, redefining elegance and sophistication.
+                  </div>
+                </div>
 
-                <Link to={ROUTER.AGURI}>
-                  <img
-                    className="w-full project-img"
-                    src="./images/design/agurimain.png"
-                    alt="logo"
-                    loading="lazy"
-                  />
-                </Link>
+                <div className="project-even">
+                  <div className="heading_4 mb-2 cursor-text-wrp">04.</div>
 
-                <div className="medium_text mt-3 cursor-text-wrp">
                   <Link to={ROUTER.AGURI}>
-                    Aguri Jewellery Website
+                    <img
+                        className="w-full project-img"
+                        src="./images/design/agurimain.png"
+                        alt="logo"
+                        loading="lazy"
+                    />
                   </Link>
+
+                  <div className="medium_text mt-3 cursor-text-wrp">
+                    <Link to={ROUTER.AGURI}>
+                      Aguri Jewellery Website
+                    </Link>
+                  </div>
+                  <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
+                    Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
+                  </div>
                 </div>
-                <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
-                  Discover the allure of our luxury jewellery brand, where elegance meets exquisite craftsmanship.
-                </div>
-              </div>
-              <div className="project-even">
-                <div className="heading_4 mb-2 cursor-text-wrp">05.</div>
-                <Link to={ROUTER.ALIO}>
-                  <img className="w-full project-img" src="./images/design/aliomain.png" alt="logo" loading="lazy" />
-                </Link>
-                <div className="medium_text mt-3 cursor-text-wrp">
+                <div className="project-even">
+                  <div className="heading_4 mb-2 cursor-text-wrp">05.</div>
                   <Link to={ROUTER.ALIO}>
-                    Alio Yoga Website & App
+                    <img className="w-full project-img" src="./images/design/aliomain.png" alt="logo" loading="lazy" />
                   </Link>
+                  <div className="medium_text mt-3 cursor-text-wrp">
+                    <Link to={ROUTER.ALIO}>
+                      Alio Yoga Website & App
+                    </Link>
+                  </div>
+                  <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
+                    Discover a serene oasis at our Yoga, Pilates, and Meditation website, where tranquility awaits.
+                  </div>
                 </div>
-                <div className="body_text w-full mt-4 cursor-text-wrp text-color-muted">
-                  Discover a serene oasis at our Yoga, Pilates, and Meditation website, where tranquility awaits.
-                </div>
-              </div>
-            </Slider>
+              </Slider>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* <div className="my-services">
+        {/* <div className="my-services">
           <div className="services container-fluid ">
             <div className="py-7 border-solid border-y border-ccc">
               <div className="heading_1">MY SERVICE</div>
@@ -801,10 +781,10 @@ const Home = () => {
             </div>
           </div>
         </div> */}
-      {/*My service*/}
+        {/*My service*/}
 
-      {/*Contact me*/}
-      {/* <div className="section send_message mt-5 md:mt-8">
+        {/*Contact me*/}
+        {/* <div className="section send_message mt-5 md:mt-8">
           <div className="">
             <div className="grid grid-cols-12 gap-4">
               <div className="col-span-12 sm:col-span-4 flex flex-row-reverse sm:flex-col gap-2">
@@ -898,7 +878,7 @@ const Home = () => {
             </div>
           </div>
         </div> */}
-    </div>
+      </div>
   )
 }
 export default Home;

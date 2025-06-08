@@ -59,7 +59,9 @@ const Header = () => {
           <div className="section w-full">
             <div className="flex gap-1 w-full justify-between">
               <div>
+                <Link to="/" className="nav-text">
                 <img className="" src="./images/ntdlg.svg" alt="logo" />
+                </Link>
               </div>
               {/* <img className='btn-header-mobile' src="/images/arrow-down.png" alt="" /> */}
               {/*<div className="w-[100vw] flex items-center justify-center absolute">*/}
