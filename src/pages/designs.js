@@ -40,7 +40,7 @@ const Designs = () => {
     }
 
     // MY TABS
-    const tabItems = ['UX/UI DESIGN (6)', 'SHOPIFY & APP (3)', 'GRAPHIC DESIGN (1)', 'PERSONAL ART (2)'];
+    const tabItems = ['UX/UI DESIGN (6)', 'SHOPIFY & APP (3)', 'GRAPHIC DESIGN (1)', 'PERSONAL ART (6)'];
     const [activeTab, setActiveTab] = useState(tabItems[0]);
 
     const handleActive = (item) => {
@@ -759,11 +759,15 @@ const Designs = () => {
                         </div>
                         {/* } */}
                         {/* {activeTab === 'PERSONAL ART (0)' && */}
-                        <div className={`content-tab ${activeTab === 'PERSONAL ART (2)' ? 'content-active' : ''}`}>
+                        <div className={`content-tab ${activeTab === 'PERSONAL ART (6)' ? 'content-active' : ''}`}>
                             <div className="lg:pt-7">
                                 <div className="my-gallery">
                                     <div className="one gallery-item">
-                                        {/* One */}
+                                        <img
+                                            className="" src="./images/design/art6.png"
+                                            alt="logo"
+                                            loading="lazy"
+                                        />
                                     </div>
                                     <div className="two gallery-item">
                                         <img
@@ -804,7 +808,11 @@ const Designs = () => {
                                         />
                                     </div>
                                     <div className="six gallery-item">
-                                        {/* Six */}
+                                        <img
+                                            className="" src="./images/design/art4.png"
+                                            alt="logo"
+                                            loading="lazy"
+                                        />
                                     </div>
                                     <div className="seven gallery-item">
                                         {/* Seven */}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect, useMemo, useRef } from "react";
 import { Link } from "react-router-dom";
 import { ROUTER } from "../utils/constants";
 import Scroller from "../components/common/scroller";
@@ -8,8 +8,10 @@ import { sendContactForm } from "../services/app";
 import Loading from "../components/common/loading";
 import LoadingMail from "../components/common/loadingMail";
 
+import ScrollReveal from '../components/common/ScrollReveal';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -468,16 +470,34 @@ const Home = () => {
       {/*    <div className="col-span-12 lg:col-span-1"></div>*/}
       {/*  </div>*/}
       {/*</div>*/}
+      <ScrollReveal
+              baseOpacity={0}
+              enableBlur={true}
+              baseRotation={5}
+              blurStrength={10}
+            >
+              <div className="heading_2 md:mb-6 mb-4">
+                Welcome to my portfolio! Excited to share UX/UI design projects and
+                experiences here. Always ready to embrace new opportunities and challenges
+                for continuous growth.
+              </div>
+            </ScrollReveal>
       <div className="section">
         <div className="md:grid grid-cols-12 gap-5">
           <div className="col-span-12 lg:col-span-5"></div>
           <div className="col-span-12 lg:col-span-7">
-
-            <div className="heading_2 md:mb-6 mb-4">
-              Welcome to my portfolio! Excited to share UX/UI design projects and
-              experiences here. Always ready to embrace new opportunities and challenges
-              for continuous growth.
-            </div>
+            <ScrollReveal
+              baseOpacity={0}
+              enableBlur={true}
+              baseRotation={5}
+              blurStrength={10}
+            >
+              <div className="heading_2 md:mb-6 mb-4">
+                Welcome to my portfolio! Excited to share UX/UI design projects and
+                experiences here. Always ready to embrace new opportunities and challenges
+                for continuous growth.
+              </div>
+            </ScrollReveal>
             <Link to={ROUTER.ABOUT}>
               <div id="container">
                 <button className="learn-more">
